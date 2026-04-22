@@ -36,23 +36,50 @@ aemo_nemweb_ls <- function(path) {
   }
   html <- httr2::resp_body_string(resp)
 
-  rx <- "<a href=\"([^\"/]+)\">[^<]+</a>\\s*</td><td[^>]*>([^<]+)</td><td[^>]*>([^<]+)</td>"
-  m <- regmatches(html, gregexpr(rx, html))[[1]]
+  # NEMweb uses IIS-style directory listings. Each entry is:
+  #   <date> <time> AM/PM <size> <A HREF="/path/FILE.zip">FILE.zip</A><br>
+  row_rx <- "(\\w+, \\w+ \\d+, \\d+\\s+\\d+:\\d+\\s+[AP]M)\\s+(\\d+)\\s+<A HREF=\"([^\"]+)\">([^<]+)</A>"
+  m <- regmatches(html, gregexpr(row_rx, html, ignore.case = TRUE))[[1]]
+
   if (length(m) == 0L) {
-    return(data.frame(name = character(0), modified = character(0),
-                      size = character(0), url = character(0),
-                      stringsAsFactors = FALSE))
+    # Fallback: grab any file-like <A HREF=...> without date/size.
+    # Drop the parent-directory navigation link.
+    plain_rx <- "<A HREF=\"([^\"]+)\">([^<]+)</A>"
+    m2 <- regmatches(html, gregexpr(plain_rx, html, ignore.case = TRUE))[[1]]
+    if (length(m2) == 0L) {
+      return(data.frame(name = character(0), modified = character(0),
+                        size = character(0), url = character(0),
+                        stringsAsFactors = FALSE))
+    }
+    parts <- regmatches(m2, regexec(plain_rx, m2, ignore.case = TRUE))
+    hrefs <- vapply(parts, function(x) x[2], character(1))
+    names_v <- vapply(parts, function(x) x[3], character(1))
+    keep <- !grepl("parent directory", names_v, ignore.case = TRUE)
+    hrefs <- hrefs[keep]; names_v <- names_v[keep]
+    urls <- ifelse(grepl("^https?://", hrefs), hrefs,
+                   paste0(aemo_base_url(), hrefs))
+    return(data.frame(
+      name = names_v,
+      modified = NA_character_,
+      size = NA_character_,
+      url = urls,
+      stringsAsFactors = FALSE
+    ))
   }
-  parts <- regmatches(m, regexec(rx, m))
-  names_v <- vapply(parts, function(x) x[2], character(1))
-  mod_v <- trimws(vapply(parts, function(x) x[3], character(1)))
-  size_v <- trimws(vapply(parts, function(x) x[4], character(1)))
+
+  parts <- regmatches(m, regexec(row_rx, m, ignore.case = TRUE))
+  mod_v <- vapply(parts, function(x) x[2], character(1))
+  size_v <- vapply(parts, function(x) x[3], character(1))
+  hrefs <- vapply(parts, function(x) x[4], character(1))
+  names_v <- vapply(parts, function(x) x[5], character(1))
+  urls <- ifelse(grepl("^https?://", hrefs), hrefs,
+                 paste0(aemo_base_url(), hrefs))
 
   data.frame(
     name = names_v,
     modified = mod_v,
     size = size_v,
-    url = paste0(url, names_v),
+    url = urls,
     stringsAsFactors = FALSE
   )
 }
