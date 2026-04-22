@@ -1,6 +1,6 @@
 # aemo
 
-[![CRAN status](https://www.r-pkg.org/badges/version/aemo)](https://CRAN.R-project.org/package=aemo) [![CRAN downloads](https://cranlogs.r-pkg.org/badges/aemo)](https://cran.r-project.org/package=aemo) [![Total Downloads](https://cranlogs.r-pkg.org/badges/grand-total/aemo)](https://CRAN.R-project.org/package=aemo) [![Lifecycle: stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![R-CMD-check](https://github.com/charlescoverdale/aemo/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/charlescoverdale/aemo/actions/workflows/R-CMD-check.yaml) [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 An R package for accessing public market data from the [Australian Energy Market Operator](https://aemo.com.au). Wholesale electricity prices, regional demand, dispatch, interconnector flows, rooftop PV, generator bids, predispatch forecasts, FCAS markets, and gas markets across the National Electricity Market.
 
@@ -37,6 +37,12 @@ aemo_price("NSW1", "2024-06-01", "2024-06-01 01:00:00")
 
 NEMweb directory listings are parsed into tidy data frames. The `C,/I,/D,/F,` row-dispatch format is handled per-file so schema drift is transparent. Base URL is configurable via `options(aemo.base_url = ...)` to handle the April 2026 migration. Rate-limiting and caching are in-box.
 
+## Package history and name reclaim
+
+The `aemo` package name was previously held by Imanuel Costigan's package, which was on CRAN from June 2014 to April 2020 (v0.1.0 to v0.3.0) and archived on 29 December 2021. That package implemented three functions covering prices and demand only. This rewrite is an independent implementation that shares only the package name and expands scope to the full NEMweb and MMSDM data surface.
+
+Because the old registry entry still exists, the standard CRAN status and download badges pull from Costigan's historical data (CRAN 0.3.0, ~5 downloads per month, 40K lifetime) rather than from this rewrite. Those three badges are omitted above until v0.1.0 of the new package lands on CRAN and the registry snaps to it.
+
 ## How does aemo compare to NEMOSIS and nemwebR?
 
 The authoritative tool for NEM data analysis is UNSW-CEEM's [**NEMOSIS**](https://github.com/UNSW-CEEM/NEMOSIS), written in Python. It is well-maintained, feature-rich, and used across the Australian energy research community. If you're already in Python, use it.
@@ -50,8 +56,6 @@ In R, [nemwebR](https://github.com/aleemon/nemwebR) is a single-author GitHub-on
 | **nempy** | Python (CEEM) | Active | NEM dispatch simulator, not a data wrapper |
 | [nemwebR](https://github.com/aleemon/nemwebR) | R | GitHub, no release | Prices, dispatch, bids, DUDETAILSUMMARY |
 | **aemo** (this package) | R | CRAN | Current NEMweb + reference data plus size-guarded bids |
-
-The archived `aemo` package (see [history](#history) below) covered 3 functions on prices and demand only. This rewrite is a fresh implementation.
 
 ## Installation
 
@@ -211,15 +215,15 @@ Attribution on derivative work: *Source: AEMO*.
 
 **R ecosystem:**
 
-- [**carbondata**](https://github.com/charlescoverdale/carbondata): global carbon markets (EU ETS, UK ETS, RGGI, California, Verra)
-- [**cer**](https://github.com/charlescoverdale/cer): Australian Clean Energy Regulator (ACCUs, Safeguard, NGER, LRET, SRES)
-- [**climatekit**](https://github.com/charlescoverdale/climatekit): climate and weather indices
-- [**readnoaa**](https://github.com/charlescoverdale/readnoaa): NOAA weather data
-- [**readaec**](https://github.com/charlescoverdale/readaec): Australian Electoral Commission
-
-## History
-
-The `aemo` package name was previously held by Imanuel Costigan's package, which was on CRAN from June 2014 to April 2020 (v0.1.0 to v0.3.0) and archived on 29 December 2021. That package implemented three functions covering prices and demand only. This rewrite is an independent implementation that shares only the package name, and expands scope to the full NEMweb and MMSDM data surface.
+| Package | Description |
+|---|---|
+| [`cer`](https://github.com/charlescoverdale/cer) | Australian Clean Energy Regulator (ACCUs, Safeguard, NGER, LRET, SRES) |
+| [`carbondata`](https://github.com/charlescoverdale/carbondata) | Global carbon markets (EU ETS, UK ETS, RGGI, California, Verra, Gold Standard) |
+| [`climatekit`](https://github.com/charlescoverdale/climatekit) | 35 climate indices (temperature, precipitation, drought) |
+| [`readnoaa`](https://github.com/charlescoverdale/readnoaa) | NOAA climate and weather data |
+| [`readaec`](https://github.com/charlescoverdale/readaec) | Australian Electoral Commission |
+| [`readabs`](https://github.com/mattcowgill/readabs) | Australian Bureau of Statistics |
+| [`readrba`](https://github.com/mattcowgill/readrba) | Reserve Bank of Australia |
 
 ## Citation
 
