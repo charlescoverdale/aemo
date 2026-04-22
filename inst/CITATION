@@ -1,0 +1,13 @@
+bibentry(
+  bibtype = "Manual",
+  title   = "aemo: Download Australian Energy Market Operator Data",
+  author  = person("Charles", "Coverdale"),
+  year    = format(Sys.Date(), "%Y"),
+  note    = sprintf("R package version %s", meta$Version),
+  url     = "https://cran.r-project.org/package=aemo",
+  textVersion = sprintf(
+    "Coverdale, C. (%s). aemo: Download Australian Energy Market Operator Data. R package version %s. https://cran.r-project.org/package=aemo",
+    format(Sys.Date(), "%Y"),
+    meta$Version
+  )
+)
