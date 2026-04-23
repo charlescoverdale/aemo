@@ -13,7 +13,7 @@ An \code{aemo_tbl} with columns \code{interconnector_id},
 \description{
 Returns a static table of the seven NEM interconnectors. The
 seventh entry is Project EnergyConnect (PEC), whose Stage 1
-was energised in April 2025 with full ~800 MW capability
+was energised on 30 April 2025 with full ~800 MW capability
 expected mid-2026.
 }
 \examples{
@@ -21,6 +21,9 @@ aemo_interconnectors()
 }
 \seealso{
 Other reference: 
+\code{\link{aemo_dlf}()},
+\code{\link{aemo_mlf}()},
+\code{\link{aemo_price_caps}()},
 \code{\link{aemo_regions}()},
 \code{\link{aemo_units}()}
 }

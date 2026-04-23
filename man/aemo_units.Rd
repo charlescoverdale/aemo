@@ -4,20 +4,31 @@
 \alias{aemo_units}
 \title{NEM generators (DUID registry)}
 \source{
-AEMO NEMweb \url{http://nemweb.com.au}, published under
-the AEMO Copyright Permissions Notice.
+AEMO NEMweb MMSDM archive, DUDETAILSUMMARY table,
+AEMO Copyright Permissions Notice.
 }
 \usage{
 aemo_units()
 }
 \value{
-An \code{aemo_tbl} with one row per DUID.
+An \code{aemo_tbl} keyed by \code{duid}. Columns include (from
+DUDETAILSUMMARY): \code{duid}, \code{stationid}, \code{regionid},
+\code{dispatchtype} (GENERATOR / LOAD), \code{connectionpointid},
+\code{schedule_type} (SCHEDULED / SEMI-SCHEDULED /
+NON-SCHEDULED), \code{start_date}, \code{end_date}.
 }
 \description{
-Downloads the current DUID (Dispatchable Unit Identifier)
-registry from NEMweb. Covers scheduled and semi-scheduled
-generators: DUID, station, region, fuel type, technology,
-nameplate capacity.
+Downloads the current DUDETAILSUMMARY table from the most
+recent MMSDM monthly archive and returns one row per
+registered DUID (Dispatchable Unit Identifier) with station,
+region, dispatch type, classification, and schedule type.
+Typical output is 500+ DUIDs covering scheduled,
+semi-scheduled, and non-scheduled generators, bidirectional
+storage (BESS), and loads.
+}
+\details{
+If the MMSDM archive is unreachable, the function returns a
+12-row fallback table of well-known DUIDs and emits a warning.
 }
 \examples{
 \donttest{
@@ -31,7 +42,10 @@ options(op)
 }
 \seealso{
 Other reference: 
+\code{\link{aemo_dlf}()},
 \code{\link{aemo_interconnectors}()},
+\code{\link{aemo_mlf}()},
+\code{\link{aemo_price_caps}()},
 \code{\link{aemo_regions}()}
 }
 \concept{reference}

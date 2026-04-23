@@ -4,29 +4,37 @@
 \alias{aemo_fcas}
 \title{Frequency control ancillary services (FCAS) prices}
 \usage{
-aemo_fcas(region, start, end, service = NULL)
+aemo_fcas(region, start, end, service = NULL, intervention = FALSE)
 }
 \arguments{
 \item{region}{NEM region code.}
 
-\item{start, end}{Window.}
+\item{start, end}{Window (inclusive).}
 
-\item{service}{Optional character vector of services (e.g.
-\code{"RAISE6SEC"}, \code{"LOWER60SEC"}). \code{NULL} returns all.}
+\item{service}{Optional character vector of service names
+(e.g. \code{"RAISE6SEC"}, \code{"LOWER60SEC"}, \code{"RAISE1SEC"}).}
+
+\item{intervention}{Logical. See \code{\link[=aemo_price]{aemo_price()}}.}
 }
 \value{
-An \code{aemo_tbl}.
+An \code{aemo_tbl} with one row per interval and columns
+for each requested FCAS RRP (AUD/MW).
 }
 \description{
-Returns regional FCAS market prices across the 8-10 FCAS
-services (raise/lower at 6s, 60s, 5min, plus 1s regulation
-services from 2023).
+Returns regional FCAS market prices across the eight
+contingency services plus the two regulation services. Ten
+services are live in the NEM since R1/L1 Very Fast commenced
+on 9 October 2023.
+}
+\details{
+Thin wrapper over \code{aemo_price(..., market = "fcas")}.
 }
 \examples{
 \donttest{
 op <- options(aemo.cache_dir = tempdir())
 try({
-  f <- aemo_fcas("NSW1", "2024-06-01", "2024-06-01 01:00:00")
+  now <- Sys.time()
+  f <- aemo_fcas("NSW1", now - 3600, now)
   head(f)
 })
 options(op)

@@ -1,11 +1,15 @@
 #' NEM interconnector flows
 #'
 #' Returns MW flows, losses, and limits for one or more NEM
-#' interconnectors from the `INTERCONNECTORRES` table.
+#' interconnectors from `DISPATCHINTERCONNECTORRES`.
 #'
-#' @param flow Optional character vector of interconnector IDs
-#'   (see [aemo_interconnectors()]). `NULL` returns all.
+#' AEMO's `METEREDMWFLOW` is positive when power flows from
+#' `REGIONFROM` to `REGIONTO`. For per-interconnector direction
+#' conventions see [aemo_interconnectors()].
+#'
+#' @param flow Optional character vector of interconnector IDs.
 #' @param start,end Window.
+#' @param intervention Logical. Default `FALSE`.
 #'
 #' @return An `aemo_tbl`.
 #'
@@ -15,30 +19,36 @@
 #' \donttest{
 #' op <- options(aemo.cache_dir = tempdir())
 #' try({
-#'   i <- aemo_interconnector(flow = "NSW1-QLD1",
-#'                             start = "2024-06-01",
-#'                             end = "2024-06-01 01:00:00")
+#'   now <- Sys.time()
+#'   i <- aemo_interconnector(flow = "V-SA",
+#'                             start = now - 3600, end = now)
 #'   head(i)
 #' })
 #' options(op)
 #' }
-aemo_interconnector <- function(flow = NULL, start, end) {
+aemo_interconnector <- function(flow = NULL, start, end,
+                                 intervention = FALSE) {
   start <- aemo_parse_time(start)
   end <- aemo_parse_time(end)
   stopifnot(end >= start)
 
-  files <- aemo_nemweb_ls("/Reports/Current/DispatchIS_Reports/")
-  files <- files[grepl("DISPATCHIS", files$name, ignore.case = TRUE), , drop = FALSE]
-  if (nrow(files) == 0L) cli::cli_abort("No interconnector files found.")
-  zip_url <- files$url[nrow(files)]
-  tables <- aemo_fetch_zip(zip_url)
-  df <- tables[["dispatch_interconnectorres"]] %||% tables[[1L]]
+  df <- aemo_fetch_report_range(
+    current_dir = "/Reports/Current/DispatchIS_Reports/",
+    archive_dir = "/Reports/Archive/DispatchIS_Reports/",
+    pattern = "DISPATCHIS",
+    start = start, end = end,
+    table = "dispatch_interconnectorres"
+  )
+  df <- aemo_coerce_types(df)
+  df <- aemo_apply_filters(df, start = start, end = end,
+                           intervention = intervention)
 
   if (!is.null(flow) && "interconnectorid" %in% names(df)) {
-    df <- df[toupper(df$interconnectorid) %in% toupper(flow), , drop = FALSE]
+    df <- df[toupper(df$interconnectorid) %in% toupper(flow), ,
+             drop = FALSE]
+    rownames(df) <- NULL
   }
-  rownames(df) <- NULL
   new_aemo_tbl(df,
-               source = zip_url,
+               source = "http://nemweb.com.au",
                title = "AEMO interconnector flows")
 }

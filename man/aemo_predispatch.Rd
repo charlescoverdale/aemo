@@ -2,36 +2,40 @@
 % Please edit documentation in R/forecasts.R
 \name{aemo_predispatch}
 \alias{aemo_predispatch}
-\title{Price and demand forecasts (P5MIN, PREDISPATCH, PD7DAY)}
+\title{Price and demand forecasts (P5MIN, PREDISPATCH)}
 \usage{
-aemo_predispatch(
-  region,
-  as_of = "latest",
-  horizon = c("predispatch", "p5min", "pd7day")
-)
+aemo_predispatch(region, start, end, horizon = c("predispatch", "p5min"))
 }
 \arguments{
 \item{region}{NEM region code.}
 
-\item{as_of}{Optional \code{POSIXct} or \code{"latest"}. Which forecast
-run to retrieve.}
+\item{start, end}{Window of forecast run-times.}
 
-\item{horizon}{One of \code{"p5min"}, \code{"predispatch"} (default), or
-\code{"pd7day"}.}
+\item{horizon}{One of \code{"predispatch"} (default) or \code{"p5min"}.}
 }
 \value{
 An \code{aemo_tbl}.
 }
 \description{
-Returns AEMO's forecast prices and demand for a region out to
-5 minutes (\code{P5MIN}), 40 hours (\code{PREDISPATCH}), or 7 days
-(\code{PD7DAY}).
+Returns AEMO's forecast prices and demand for a NEM region.
+Two horizons:
+\itemize{
+\item \code{"p5min"}: 5-minute-ahead forecast, 12 intervals ahead,
+published every 5 minutes.
+\item \code{"predispatch"}: 40-hour-ahead predispatch at 30-minute
+resolution, published every 30 minutes.
+}
+}
+\details{
+The 7-day predispatch publication was retired when 5-minute
+settlement commenced; for longer horizons use \code{\link[=aemo_pasa]{aemo_pasa()}}.
 }
 \examples{
 \donttest{
 op <- options(aemo.cache_dir = tempdir())
 try({
-  p <- aemo_predispatch("NSW1")
+  now <- Sys.time()
+  p <- aemo_predispatch("NSW1", start = now - 3600, end = now)
   head(p)
 })
 options(op)

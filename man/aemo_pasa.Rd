@@ -4,29 +4,33 @@
 \alias{aemo_pasa}
 \title{Projected Assessment of System Adequacy (PASA)}
 \usage{
-aemo_pasa(horizon = c("short", "medium"), region = NULL, as_of = "latest")
+aemo_pasa(
+  horizon = c("short", "medium"),
+  region = NULL,
+  start = NULL,
+  end = NULL
+)
 }
 \arguments{
-\item{horizon}{One of \code{"short"} (default, \code{STPASA}) or
-\code{"medium"} (\code{MTPASA}).}
+\item{horizon}{One of \code{"short"} (default) or \code{"medium"}.}
 
-\item{region}{Optional NEM region code to filter.}
+\item{region}{Optional NEM region code.}
 
-\item{as_of}{Optional \code{"latest"} or \code{POSIXct}.}
+\item{start, end}{Optional window of run-times. Defaults to
+the last 24 hours.}
 }
 \value{
 An \code{aemo_tbl}.
 }
 \description{
-Returns short-term (\code{STPASA}, 1-7 days) or medium-term
-(\code{MTPASA}, 2 years) system adequacy projections.
+Returns short-term (\code{STPASA}, 1-7 day) or medium-term
+(\code{MTPASA}, 2-year) system adequacy projections.
 }
 \examples{
 \donttest{
 op <- options(aemo.cache_dir = tempdir())
 try({
   p <- aemo_pasa(horizon = "short", region = "NSW1")
-  head(p)
 })
 options(op)
 }

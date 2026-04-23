@@ -4,28 +4,34 @@
 \alias{aemo_interconnector}
 \title{NEM interconnector flows}
 \usage{
-aemo_interconnector(flow = NULL, start, end)
+aemo_interconnector(flow = NULL, start, end, intervention = FALSE)
 }
 \arguments{
-\item{flow}{Optional character vector of interconnector IDs
-(see \code{\link[=aemo_interconnectors]{aemo_interconnectors()}}). \code{NULL} returns all.}
+\item{flow}{Optional character vector of interconnector IDs.}
 
 \item{start, end}{Window.}
+
+\item{intervention}{Logical. Default \code{FALSE}.}
 }
 \value{
 An \code{aemo_tbl}.
 }
 \description{
 Returns MW flows, losses, and limits for one or more NEM
-interconnectors from the \code{INTERCONNECTORRES} table.
+interconnectors from \code{DISPATCHINTERCONNECTORRES}.
+}
+\details{
+AEMO's \code{METEREDMWFLOW} is positive when power flows from
+\code{REGIONFROM} to \code{REGIONTO}. For per-interconnector direction
+conventions see \code{\link[=aemo_interconnectors]{aemo_interconnectors()}}.
 }
 \examples{
 \donttest{
 op <- options(aemo.cache_dir = tempdir())
 try({
-  i <- aemo_interconnector(flow = "NSW1-QLD1",
-                            start = "2024-06-01",
-                            end = "2024-06-01 01:00:00")
+  now <- Sys.time()
+  i <- aemo_interconnector(flow = "V-SA",
+                            start = now - 3600, end = now)
   head(i)
 })
 options(op)
@@ -34,7 +40,9 @@ options(op)
 \seealso{
 Other dispatch: 
 \code{\link{aemo_bids}()},
+\code{\link{aemo_constraints}()},
 \code{\link{aemo_dispatch_units}()},
+\code{\link{aemo_fcas_enablement}()},
 \code{\link{aemo_rooftop_pv}()}
 }
 \concept{dispatch}

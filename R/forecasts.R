@@ -1,16 +1,20 @@
 # Predispatch and PASA forecasts
 
-#' Price and demand forecasts (P5MIN, PREDISPATCH, PD7DAY)
+#' Price and demand forecasts (P5MIN, PREDISPATCH)
 #'
-#' Returns AEMO's forecast prices and demand for a region out to
-#' 5 minutes (`P5MIN`), 40 hours (`PREDISPATCH`), or 7 days
-#' (`PD7DAY`).
+#' Returns AEMO's forecast prices and demand for a NEM region.
+#' Two horizons:
+#' - `"p5min"`: 5-minute-ahead forecast, 12 intervals ahead,
+#'   published every 5 minutes.
+#' - `"predispatch"`: 40-hour-ahead predispatch at 30-minute
+#'   resolution, published every 30 minutes.
+#'
+#' The 7-day predispatch publication was retired when 5-minute
+#' settlement commenced; for longer horizons use [aemo_pasa()].
 #'
 #' @param region NEM region code.
-#' @param as_of Optional `POSIXct` or `"latest"`. Which forecast
-#'   run to retrieve.
-#' @param horizon One of `"p5min"`, `"predispatch"` (default), or
-#'   `"pd7day"`.
+#' @param start,end Window of forecast run-times.
+#' @param horizon One of `"predispatch"` (default) or `"p5min"`.
 #'
 #' @return An `aemo_tbl`.
 #'
@@ -20,45 +24,51 @@
 #' \donttest{
 #' op <- options(aemo.cache_dir = tempdir())
 #' try({
-#'   p <- aemo_predispatch("NSW1")
+#'   now <- Sys.time()
+#'   p <- aemo_predispatch("NSW1", start = now - 3600, end = now)
 #'   head(p)
 #' })
 #' options(op)
 #' }
-aemo_predispatch <- function(region, as_of = "latest",
-                              horizon = c("predispatch", "p5min", "pd7day")) {
+aemo_predispatch <- function(region, start, end,
+                              horizon = c("predispatch", "p5min")) {
   region <- aemo_validate_region(region)
   horizon <- match.arg(horizon)
+  start <- aemo_parse_time(start)
+  end <- aemo_parse_time(end)
+  stopifnot(end >= start)
 
-  dir <- switch(horizon,
-    predispatch = "PredispatchIS_Reports",
-    p5min       = "P5_Reports",
-    pd7day      = "PredispatchIS_Reports"
-  )
-  files <- aemo_nemweb_ls(paste0("/Reports/Current/", dir, "/"))
-  if (nrow(files) == 0L) cli::cli_abort("No {horizon} files found.")
-  zip_url <- files$url[nrow(files)]
-  tables <- aemo_fetch_zip(zip_url)
-  df <- tables[[1L]]
-
-  if ("regionid" %in% names(df)) {
-    df <- df[df$regionid %in% region, , drop = FALSE]
+  if (horizon == "predispatch") {
+    current <- "/Reports/Current/PredispatchIS_Reports/"
+    archive <- "/Reports/Archive/PredispatchIS_Reports/"
+    pattern <- "PREDISPATCHIS"
+  } else {
+    current <- "/Reports/Current/P5_Reports/"
+    archive <- "/Reports/Archive/P5_Reports/"
+    pattern <- "P5MIN"
   }
-  rownames(df) <- NULL
+
+  df <- aemo_fetch_report_range(
+    current_dir = current, archive_dir = archive,
+    pattern = pattern, start = start, end = end
+  )
+  df <- aemo_coerce_types(df)
+  df <- aemo_apply_filters(df, start = start, end = end, region = region)
   new_aemo_tbl(df,
-               source = zip_url,
-               title = paste0("AEMO ", horizon, " ", region))
+               source = "http://nemweb.com.au",
+               title = paste0("AEMO ", horizon, " ",
+                              paste(region, collapse = "+")))
 }
 
 #' Projected Assessment of System Adequacy (PASA)
 #'
-#' Returns short-term (`STPASA`, 1-7 days) or medium-term
-#' (`MTPASA`, 2 years) system adequacy projections.
+#' Returns short-term (`STPASA`, 1-7 day) or medium-term
+#' (`MTPASA`, 2-year) system adequacy projections.
 #'
-#' @param horizon One of `"short"` (default, `STPASA`) or
-#'   `"medium"` (`MTPASA`).
-#' @param region Optional NEM region code to filter.
-#' @param as_of Optional `"latest"` or `POSIXct`.
+#' @param horizon One of `"short"` (default) or `"medium"`.
+#' @param region Optional NEM region code.
+#' @param start,end Optional window of run-times. Defaults to
+#'   the last 24 hours.
 #'
 #' @return An `aemo_tbl`.
 #'
@@ -69,27 +79,35 @@ aemo_predispatch <- function(region, as_of = "latest",
 #' op <- options(aemo.cache_dir = tempdir())
 #' try({
 #'   p <- aemo_pasa(horizon = "short", region = "NSW1")
-#'   head(p)
 #' })
 #' options(op)
 #' }
 aemo_pasa <- function(horizon = c("short", "medium"),
-                       region = NULL, as_of = "latest") {
+                       region = NULL, start = NULL, end = NULL) {
   horizon <- match.arg(horizon)
   if (!is.null(region)) region <- aemo_validate_region(region)
+  if (is.null(start)) start <- Sys.time() - as.difftime(1, units = "days")
+  if (is.null(end))   end   <- Sys.time()
+  start <- aemo_parse_time(start)
+  end <- aemo_parse_time(end)
 
-  dir <- if (horizon == "short") "Short_Term_PASA_Reports" else "Medium_Term_PASA_Reports"
-  files <- aemo_nemweb_ls(paste0("/Reports/Current/", dir, "/"))
-  if (nrow(files) == 0L) cli::cli_abort("No PASA files found.")
-  zip_url <- files$url[nrow(files)]
-  tables <- aemo_fetch_zip(zip_url)
-  df <- tables[[1L]]
-
-  if (!is.null(region) && "regionid" %in% names(df)) {
-    df <- df[df$regionid %in% region, , drop = FALSE]
+  if (horizon == "short") {
+    current <- "/Reports/Current/Short_Term_PASA_Reports/"
+    archive <- "/Reports/Archive/Short_Term_PASA_Reports/"
+    pattern <- "STPASA"
+  } else {
+    current <- "/Reports/Current/Medium_Term_PASA_Reports/"
+    archive <- "/Reports/Archive/Medium_Term_PASA_Reports/"
+    pattern <- "MTPASA"
   }
-  rownames(df) <- NULL
+
+  df <- aemo_fetch_report_range(
+    current_dir = current, archive_dir = archive,
+    pattern = pattern, start = start, end = end
+  )
+  df <- aemo_coerce_types(df)
+  df <- aemo_apply_filters(df, start = start, end = end, region = region)
   new_aemo_tbl(df,
-               source = zip_url,
+               source = "http://nemweb.com.au",
                title = paste0("AEMO ", horizon, "-term PASA"))
 }

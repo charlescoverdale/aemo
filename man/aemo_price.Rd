@@ -13,39 +13,74 @@ aemo_price(
   start,
   end,
   interval = c("5min", "30min"),
-  market = c("energy", "fcas")
+  market = c("energy", "fcas"),
+  intervention = FALSE
 )
 }
 \arguments{
 \item{region}{One of \code{"NSW1"}, \code{"QLD1"}, \code{"SA1"}, \code{"TAS1"},
-\code{"VIC1"}.}
+\code{"VIC1"}. Accepts a vector.}
 
-\item{start, end}{Start and end times. Character (parsed as
-AEST) or \code{POSIXct}.}
+\item{start, end}{Start and end times (inclusive). Character
+(parsed as AEST) or \code{POSIXct}.}
 
 \item{interval}{One of \code{"5min"} (default) or \code{"30min"}.}
 
-\item{market}{One of \code{"energy"} (default) or \code{"fcas"}.}
+\item{market}{One of \code{"energy"} (default, returns RRP) or
+\code{"fcas"} (returns the FCAS service RRPs).}
+
+\item{intervention}{Logical. \code{FALSE} (default) returns only
+the market pricing run; \code{TRUE} returns both market and
+physical runs, with the \code{intervention} column preserved.}
 }
 \value{
-An \code{aemo_tbl} with one row per interval and columns
-including \code{settlementdate}, \code{region}, \code{rrp}.
+An \code{aemo_tbl}. Key columns include \code{settlementdate}
+(POSIXct AEST), \code{regionid}, \code{rrp} (AUD/MWh, energy) or the
+FCAS service RRPs (AUD/MW), and \code{intervention}.
 }
 \description{
 Returns 5-minute dispatch prices or 30-minute trading prices
-for a NEM region over a specified window.
+for a NEM region over a specified window. Filters intervention
+runs by default so the returned prices are the market clearing
+prices used in settlement.
 }
 \details{
-Data comes from AEMO's \code{DISPATCHPRICE} or \code{TRADINGPRICE}
-tables via the \code{DispatchIS_Reports} and \code{TradingIS_Reports}
-NEMweb directories (current) or MMSDM monthly archives
-(historical).
+\strong{Timestamps} are AEST (UTC+10, no daylight savings) to match
+AEMO's market clock. See the package-level documentation for
+the period-ending timestamp convention (a row stamped 00:05 is
+the 5-minute period ending at 00:05).
+
+\strong{Intervention.} \code{DISPATCHPRICE} contains both market pricing
+runs (\code{INTERVENTION = 0}) and physical / intervention runs
+(\code{INTERVENTION = 1}). The default filters to market runs.
+Pass \code{intervention = TRUE} to get both.
+
+\strong{30-minute settlement and the 5MS transition.} Before
+1 October 2021 the NEM settled on 30-minute trading prices
+from \code{TRADINGPRICE} (TRADINGIS). On 1 October 2021 five-minute
+settlement (5MS) commenced and settlement moved to native
+5-minute prices. When \code{interval = "30min"}:
+\itemize{
+\item For the pre-5MS period (\code{start < 2021-10-01}): prices are
+read from TRADINGIS (\code{TRADINGPRICE}).
+\item For the post-5MS period: prices are derived by taking the
+arithmetic mean of the six 5-minute dispatch prices within
+each 30-minute trading interval, consistent with how AEMO
+calculates the \code{TRADINGPRICE} column in TradingIS post-5MS.
+}
+
+\strong{Data availability.} NEMweb Current-directory files retain
+the last ~30 days of 5-minute dispatch files. Historical
+queries use the Archive daily-rollup files automatically; for
+queries older than the Archive window, use
+\code{\link[=aemo_nemweb_download]{aemo_nemweb_download()}} with an MMSDM URL directly.
 }
 \examples{
 \donttest{
 op <- options(aemo.cache_dir = tempdir())
 try({
-  p <- aemo_price("NSW1", "2024-06-01", "2024-06-01 01:00:00")
+  now <- Sys.time()
+  p <- aemo_price("NSW1", now - 3600, now)
   head(p)
 })
 options(op)

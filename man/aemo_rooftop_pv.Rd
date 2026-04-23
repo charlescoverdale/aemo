@@ -17,17 +17,22 @@ aemo_rooftop_pv(region, start, end, type = c("actual", "forecast"))
 An \code{aemo_tbl}.
 }
 \description{
-Returns AEMO's region-level estimate of rooftop PV generation
-(aggregate small-scale solar), either actuals or forecasts.
-Published at 30-minute resolution.
+Returns AEMO's region-level estimate of rooftop PV generation,
+either actuals or forecasts. Published at 30-minute resolution.
+}
+\details{
+The "actual" figure is an AEMO estimate derived from the APVI
+sampling model and weather data, not metered SCADA output. It
+is the best available public measure of aggregate rooftop PV
+generation but is subject to revision.
 }
 \examples{
 \donttest{
 op <- options(aemo.cache_dir = tempdir())
 try({
+  now <- Sys.time()
   r <- aemo_rooftop_pv("NSW1",
-                        start = "2024-06-01",
-                        end = "2024-06-01 12:00:00")
+                        start = now - 3600, end = now)
   head(r)
 })
 options(op)
@@ -36,7 +41,9 @@ options(op)
 \seealso{
 Other dispatch: 
 \code{\link{aemo_bids}()},
+\code{\link{aemo_constraints}()},
 \code{\link{aemo_dispatch_units}()},
+\code{\link{aemo_fcas_enablement}()},
 \code{\link{aemo_interconnector}()}
 }
 \concept{dispatch}

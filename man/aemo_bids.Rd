@@ -13,37 +13,39 @@ aemo_bids(
 )
 }
 \arguments{
-\item{duid}{Character vector of DUIDs. Required (no default).}
+\item{duid}{Character vector of DUIDs. Required.}
 
 \item{start, end}{Window.}
 
-\item{resolution}{One of \code{"day"} (default, uses
-\code{BIDDAYOFFER_D}) or \code{"period"} (uses \code{BIDPEROFFER_D}, much
-larger).}
+\item{resolution}{One of \code{"day"} (default, BIDDAYOFFER_D) or
+\code{"period"} (BIDPEROFFER_D, much larger).}
 
-\item{allow_large}{Logical. Default \code{FALSE}. Set \code{TRUE} to
-permit spans longer than 30 days.}
+\item{allow_large}{Logical. Default \code{FALSE}.}
 }
 \value{
 An \code{aemo_tbl}.
 }
 \description{
-Returns \code{BIDDAYOFFER_D} (daily bid summary) or \code{BIDPEROFFER_D}
-(per-interval bid prices and volumes across up to 10 bid
-bands) for specified generators.
+Returns \code{BIDDAYOFFER_D} (daily bid summary: MaxAvail, fixed
+load, 10 price bands) or \code{BIDPEROFFER_D} (per-interval
+availability and rebids) for specified generators.
 }
 \details{
-\strong{Size warning.} \code{BIDPEROFFER_D} monthly archives are 1.5-3 GB
-zipped. By default \code{aemo_bids()} refuses spans exceeding 30
-days to protect users. Set \code{allow_large = TRUE} to override.
+\strong{Size warning.} \code{BIDPEROFFER_D} monthly archives are
+multi-gigabyte. By default \code{aemo_bids()} refuses spans longer
+than 30 days; pass \code{allow_large = TRUE} to override.
+
+\strong{Upstream gap.} AEMO has a documented gap in
+\code{BIDPEROFFER_D} between March 2021 and July 2024. Rows in
+that range may be missing.
 }
 \examples{
 \donttest{
 op <- options(aemo.cache_dir = tempdir())
 try({
+  now <- Sys.time()
   b <- aemo_bids(duid = "BW01",
-                  start = "2024-06-01",
-                  end = "2024-06-02")
+                  start = now - 86400, end = now)
   head(b)
 })
 options(op)
@@ -51,7 +53,9 @@ options(op)
 }
 \seealso{
 Other dispatch: 
+\code{\link{aemo_constraints}()},
 \code{\link{aemo_dispatch_units}()},
+\code{\link{aemo_fcas_enablement}()},
 \code{\link{aemo_interconnector}()},
 \code{\link{aemo_rooftop_pv}()}
 }

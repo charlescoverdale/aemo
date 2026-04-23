@@ -12,30 +12,31 @@ aemo_dispatch_units(
 )
 }
 \arguments{
-\item{duid}{Optional character vector of DUIDs (e.g. \code{"BW01"},
-\code{c("ER01", "ER02")}). \code{NULL} returns all generators in the
-current snapshot.}
+\item{duid}{Optional character vector of DUIDs. \code{NULL} returns
+all generators.}
 
-\item{start, end}{Window.}
+\item{start, end}{Window (inclusive).}
 
-\item{measure}{One of \code{"scada_mw"} (actual output, default) or
-\code{"target_mw"} (dispatch target).}
+\item{measure}{One of \code{"scada_mw"} (actual output from
+DISPATCH_UNIT_SCADA, default) or \code{"target_mw"} (dispatch
+target from DISPATCHLOAD).}
 }
 \value{
-An \code{aemo_tbl} with columns including \code{settlementdate},
-\code{duid}, and the requested measure.
+An \code{aemo_tbl} with columns \code{settlementdate}, \code{duid},
+and the requested measure.
 }
 \description{
-Returns 5-minute SCADA or target MW for one or more generator
-units identified by DUID (Dispatchable Unit Identifier).
+Returns 5-minute SCADA output or dispatch target MW for one
+or more generator units identified by DUID (Dispatchable Unit
+Identifier). Timestamps are AEST (UTC+10, no DST).
 }
 \examples{
 \donttest{
 op <- options(aemo.cache_dir = tempdir())
 try({
-  d <- aemo_dispatch_units(duid = "BW01",
-                            start = "2024-06-01",
-                            end = "2024-06-01 01:00:00")
+  now <- Sys.time()
+  d <- aemo_dispatch_units(duid = "BW01", start = now - 3600,
+                            end = now)
   head(d)
 })
 options(op)
@@ -44,6 +45,8 @@ options(op)
 \seealso{
 Other dispatch: 
 \code{\link{aemo_bids}()},
+\code{\link{aemo_constraints}()},
+\code{\link{aemo_fcas_enablement}()},
 \code{\link{aemo_interconnector}()},
 \code{\link{aemo_rooftop_pv}()}
 }

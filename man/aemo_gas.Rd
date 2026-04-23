@@ -18,17 +18,17 @@ aemo_gas(market = c("sttm", "dwgm"), hub = NULL, start, end)
 An \code{aemo_tbl}.
 }
 \description{
-Returns Short Term Trading Market (\code{STTM}, Adelaide/Brisbane/
-Sydney) or Declared Wholesale Gas Market (\code{DWGM}, Victoria)
-prices and volumes.
+Returns Short Term Trading Market (\code{STTM}, Adelaide, Brisbane,
+Sydney hubs) or Declared Wholesale Gas Market (\code{DWGM},
+Victoria) prices and volumes.
 }
 \examples{
 \donttest{
 op <- options(aemo.cache_dir = tempdir())
 try({
+  now <- Sys.time()
   g <- aemo_gas(market = "sttm", hub = "sydney",
-                 start = "2024-06-01",
-                 end = "2024-06-02")
+                 start = now - 7 * 86400, end = now)
   head(g)
 })
 options(op)

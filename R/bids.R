@@ -1,20 +1,22 @@
 #' Generator bid stack
 #'
-#' Returns `BIDDAYOFFER_D` (daily bid summary) or `BIDPEROFFER_D`
-#' (per-interval bid prices and volumes across up to 10 bid
-#' bands) for specified generators.
+#' Returns `BIDDAYOFFER_D` (daily bid summary: MaxAvail, fixed
+#' load, 10 price bands) or `BIDPEROFFER_D` (per-interval
+#' availability and rebids) for specified generators.
 #'
-#' **Size warning.** `BIDPEROFFER_D` monthly archives are 1.5-3 GB
-#' zipped. By default `aemo_bids()` refuses spans exceeding 30
-#' days to protect users. Set `allow_large = TRUE` to override.
+#' **Size warning.** `BIDPEROFFER_D` monthly archives are
+#' multi-gigabyte. By default `aemo_bids()` refuses spans longer
+#' than 30 days; pass `allow_large = TRUE` to override.
 #'
-#' @param duid Character vector of DUIDs. Required (no default).
+#' **Upstream gap.** AEMO has a documented gap in
+#' `BIDPEROFFER_D` between March 2021 and July 2024. Rows in
+#' that range may be missing.
+#'
+#' @param duid Character vector of DUIDs. Required.
 #' @param start,end Window.
-#' @param resolution One of `"day"` (default, uses
-#'   `BIDDAYOFFER_D`) or `"period"` (uses `BIDPEROFFER_D`, much
-#'   larger).
-#' @param allow_large Logical. Default `FALSE`. Set `TRUE` to
-#'   permit spans longer than 30 days.
+#' @param resolution One of `"day"` (default, BIDDAYOFFER_D) or
+#'   `"period"` (BIDPEROFFER_D, much larger).
+#' @param allow_large Logical. Default `FALSE`.
 #'
 #' @return An `aemo_tbl`.
 #'
@@ -24,9 +26,9 @@
 #' \donttest{
 #' op <- options(aemo.cache_dir = tempdir())
 #' try({
+#'   now <- Sys.time()
 #'   b <- aemo_bids(duid = "BW01",
-#'                   start = "2024-06-01",
-#'                   end = "2024-06-02")
+#'                   start = now - 86400, end = now)
 #'   head(b)
 #' })
 #' options(op)
@@ -46,25 +48,33 @@ aemo_bids <- function(duid, start, end,
   if (span_days > 30 && !allow_large) {
     cli::cli_abort(c(
       "Requested span is {round(span_days)} days.",
-      "i" = "Bids data is large (BIDPEROFFER_D monthly = 1.5-3 GB zipped).",
+      "i" = "Bids data is large (BIDPEROFFER_D monthly archives are multi-GB zipped).",
       "i" = "Pass {.code allow_large = TRUE} to proceed."
     ))
   }
 
-  dir <- if (resolution == "day") "Next_Day_Offer_Energy" else "Bidmove_Complete"
-  files <- aemo_nemweb_ls(paste0("/Reports/Current/", dir, "/"))
-  if (nrow(files) == 0L) {
-    cli::cli_abort("No bid files found in {.val {dir}}.")
+  if (resolution == "day") {
+    current <- "/Reports/Current/Next_Day_Offer_Energy/"
+    archive <- "/Reports/Archive/Next_Day_Offer_Energy/"
+    pattern <- "NEXT_DAY_OFFER_ENERGY"
+  } else {
+    current <- "/Reports/Current/Bidmove_Complete/"
+    archive <- "/Reports/Archive/Bidmove_Complete/"
+    pattern <- "BIDMOVE_COMPLETE"
   }
-  zip_url <- files$url[nrow(files)]
-  tables <- aemo_fetch_zip(zip_url)
-  df <- tables[[1L]]
+
+  df <- aemo_fetch_report_range(
+    current_dir = current, archive_dir = archive,
+    pattern = pattern, start = start, end = end
+  )
+  df <- aemo_coerce_types(df)
+  df <- aemo_apply_filters(df, start = start, end = end)
 
   if ("duid" %in% names(df)) {
     df <- df[toupper(df$duid) %in% toupper(duid), , drop = FALSE]
+    rownames(df) <- NULL
   }
-  rownames(df) <- NULL
   new_aemo_tbl(df,
-               source = zip_url,
-               title = paste0("AEMO bids ", resolution))
+               source = "http://nemweb.com.au",
+               title = paste0("AEMO bids (", resolution, ")"))
 }

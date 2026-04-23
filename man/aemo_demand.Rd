@@ -11,29 +11,54 @@ aemo_demand(
   region,
   start,
   end,
-  measure = c("operational", "operational_less_snsg", "native")
+  measure = c("operational", "operational_less_snsg", "native"),
+  intervention = FALSE
 )
 }
 \arguments{
-\item{region}{NEM region code.}
+\item{region}{NEM region code. Vector accepted.}
 
-\item{start, end}{Window.}
+\item{start, end}{Window (inclusive), character or POSIXct.}
 
-\item{measure}{One of \code{"operational"} (total demand including
-auxiliary loads, default), \code{"operational_less_snsg"}
-(excluding small non-scheduled generation), or \code{"native"}.}
+\item{measure}{One of \code{"operational"} (default),
+\code{"operational_less_snsg"}, or \code{"native"}.}
+
+\item{intervention}{Logical. Default \code{FALSE} filters to market
+pricing runs.}
 }
 \value{
-An \code{aemo_tbl}.
+An \code{aemo_tbl} with columns \code{settlementdate},
+\code{regionid}, \code{demand_mw} (the requested measure), plus the
+underlying DISPATCHREGIONSUM columns used in the derivation.
 }
 \description{
 Returns 5-minute regional demand from \code{DISPATCHREGIONSUM}.
+Three demand measures are supported, aligned with AEMO's
+Demand Terms taxonomy:
+}
+\details{
+\itemize{
+\item \code{"operational"} (default): \code{TOTALDEMAND} — grid-measured
+demand met by scheduled and semi-scheduled generation plus
+net interchange. This is the quantity AEMO dispatches.
+\item \code{"operational_less_snsg"}: \code{TOTALDEMAND} minus small
+non-scheduled generation (SS_SOLAR_UIGF + SS_WIND_UIGF
+where present).
+\item \code{"native"}: \code{TOTALDEMAND} plus estimated rooftop PV
+generation. Closest to end-use consumption. If the rooftop
+PV component is not available in DISPATCHREGIONSUM the
+function warns and returns \code{TOTALDEMAND}; users should join
+with \code{aemo_rooftop_pv()} for a full native-demand estimate.
+}
+
+Timestamps are AEST (UTC+10, no DST).
 }
 \examples{
 \donttest{
 op <- options(aemo.cache_dir = tempdir())
 try({
-  d <- aemo_demand("VIC1", "2024-06-01", "2024-06-01 01:00:00")
+  now <- Sys.time()
+  d <- aemo_demand("VIC1", now - 3600, now)
   head(d)
 })
 options(op)

@@ -8,17 +8,24 @@ aemo_regions()
 }
 \value{
 An \code{aemo_tbl} with columns \code{region}, \code{name}, \code{state},
-\code{timezone}, \code{commenced}.
+\code{wall_timezone}, \code{market_timezone}, \code{commenced}.
 }
 \description{
 Returns a static table of the five NEM regions with metadata.
+The \code{market_timezone} column is the AEMO market clock (AEST,
+UTC+10, no DST, year-round) that applies to every timestamp
+in NEMweb files; \code{wall_timezone} is the local civil time zone
+consumers experience (observes DST in NSW/VIC/TAS/SA).
 }
 \examples{
 aemo_regions()
 }
 \seealso{
 Other reference: 
+\code{\link{aemo_dlf}()},
 \code{\link{aemo_interconnectors}()},
+\code{\link{aemo_mlf}()},
+\code{\link{aemo_price_caps}()},
 \code{\link{aemo_units}()}
 }
 \concept{reference}

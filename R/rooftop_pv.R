@@ -1,8 +1,12 @@
 #' Rooftop PV actuals and forecasts
 #'
-#' Returns AEMO's region-level estimate of rooftop PV generation
-#' (aggregate small-scale solar), either actuals or forecasts.
-#' Published at 30-minute resolution.
+#' Returns AEMO's region-level estimate of rooftop PV generation,
+#' either actuals or forecasts. Published at 30-minute resolution.
+#'
+#' The "actual" figure is an AEMO estimate derived from the APVI
+#' sampling model and weather data, not metered SCADA output. It
+#' is the best available public measure of aggregate rooftop PV
+#' generation but is subject to revision.
 #'
 #' @param region NEM region code.
 #' @param start,end Window.
@@ -16,9 +20,9 @@
 #' \donttest{
 #' op <- options(aemo.cache_dir = tempdir())
 #' try({
+#'   now <- Sys.time()
 #'   r <- aemo_rooftop_pv("NSW1",
-#'                         start = "2024-06-01",
-#'                         end = "2024-06-01 12:00:00")
+#'                         start = now - 3600, end = now)
 #'   head(r)
 #' })
 #' options(op)
@@ -31,20 +35,23 @@ aemo_rooftop_pv <- function(region, start, end,
   end <- aemo_parse_time(end)
   stopifnot(end >= start)
 
-  dir <- if (type == "actual") "ROOFTOP_PV/ACTUAL" else "ROOFTOP_PV/FORECAST"
-  files <- aemo_nemweb_ls(paste0("/Reports/Current/", dir, "/"))
-  if (nrow(files) == 0L) {
-    cli::cli_abort("No rooftop PV {type} files found.")
+  sub <- if (type == "actual") "ACTUAL" else "FORECAST"
+  df <- aemo_fetch_report_range(
+    current_dir = paste0("/Reports/Current/ROOFTOP_PV/", sub, "/"),
+    archive_dir = paste0("/Reports/Archive/ROOFTOP_PV/", sub, "/"),
+    pattern = "ROOFTOP_PV",
+    start = start, end = end
+  )
+  df <- aemo_coerce_types(df)
+  # Rooftop PV uses INTERVAL_DATETIME rather than SETTLEMENTDATE.
+  if (!"settlementdate" %in% names(df) &&
+      "interval_datetime" %in% names(df)) {
+    df$settlementdate <- df$interval_datetime
   }
-  zip_url <- files$url[nrow(files)]
-  tables <- aemo_fetch_zip(zip_url)
-  df <- tables[[1L]]
+  df <- aemo_apply_filters(df, start = start, end = end, region = region)
 
-  if ("regionid" %in% names(df)) {
-    df <- df[df$regionid %in% region, , drop = FALSE]
-  }
-  rownames(df) <- NULL
   new_aemo_tbl(df,
-               source = zip_url,
-               title = paste0("AEMO rooftop PV ", type, " ", region))
+               source = "http://nemweb.com.au",
+               title = paste0("AEMO rooftop PV ", type, " ",
+                              paste(region, collapse = "+")))
 }
