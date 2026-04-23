@@ -30,10 +30,13 @@ aemo_regions <- function() {
 
 #' NEM interconnectors
 #'
-#' Returns a static table of the six NEM interconnectors.
+#' Returns a static table of the seven NEM interconnectors. The
+#' seventh entry is Project EnergyConnect (PEC), whose Stage 1
+#' was energised in April 2025 with full ~800 MW capability
+#' expected mid-2026.
 #'
 #' @return An `aemo_tbl` with columns `interconnector_id`,
-#'   `from_region`, `to_region`, `name`.
+#'   `from_region`, `to_region`, `name`, `energised`.
 #'
 #' @family reference
 #' @export
@@ -42,12 +45,22 @@ aemo_regions <- function() {
 aemo_interconnectors <- function() {
   df <- data.frame(
     interconnector_id = c("NSW1-QLD1", "VIC1-NSW1", "V-S-MNSP1",
-                          "V-SA", "T-V-MNSP1", "N-Q-MNSP1"),
-    from_region = c("NSW1", "VIC1", "VIC1", "VIC1", "TAS1", "NSW1"),
-    to_region = c("QLD1", "NSW1", "SA1", "SA1", "VIC1", "QLD1"),
-    name = c("NSW-QLD Interconnector", "VIC-NSW Interconnector",
-             "Murraylink", "Heywood Interconnector", "Basslink",
-             "Terranora (Directlink)"),
+                          "V-SA", "T-V-MNSP1", "N-Q-MNSP1",
+                          "V-S-N"),
+    from_region = c("NSW1", "VIC1", "VIC1", "VIC1", "TAS1", "NSW1",
+                    "NSW1"),
+    to_region = c("QLD1", "NSW1", "SA1", "SA1", "VIC1", "QLD1",
+                  "SA1"),
+    name = c("NSW-QLD Interconnector (QNI)",
+             "VIC-NSW Interconnector (VNI)",
+             "Murraylink",
+             "Heywood Interconnector",
+             "Basslink",
+             "Terranora (Directlink)",
+             "Project EnergyConnect (PEC)"),
+    energised = as.Date(c("2001-02-18", "1989-01-01", "2002-10-03",
+                          "1990-11-01", "2006-04-29", "2000-12-14",
+                          "2025-04-30")),
     stringsAsFactors = FALSE
   )
   new_aemo_tbl(df,

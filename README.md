@@ -6,15 +6,15 @@ An R package for accessing public market data from the [Australian Energy Market
 
 ## What is AEMO?
 
-The Australian Energy Market Operator is the independent system operator and market operator for the **National Electricity Market (NEM)**, which serves the eastern and southern states of Australia, and the **Wholesale Electricity Market (WEM)** in Western Australia. AEMO also operates the Victorian gas transmission network and the Short Term Trading Markets for gas in Adelaide, Brisbane, and Sydney.
+The Australian Energy Market Operator is the independent system operator and market operator for the **National Electricity Market (NEM)**, which serves the eastern and southern states of Australia, and the **reformed Wholesale Electricity Market (WEM)** in Western Australia (SCED and essential system services markets, go-live 1 October 2023). AEMO also operates the Victorian Declared Transmission System and the Short Term Trading Market for gas (Adelaide, Brisbane, Sydney hubs), the Wallumbilla Gas Supply Hub, and the East Coast Gas System functions. The Australian Energy Regulator (**AER**) is the economic regulator; the Australian Energy Market Commission (**AEMC**) is the rule maker.
 
-The NEM is one of the longest interconnected transmission systems in the world and dispatches around 200 TWh of electricity a year across five regions (Queensland, New South Wales, Victoria, South Australia, and Tasmania). In a typical year the NEM settles AUD 20 billion or more in wholesale energy trades, plus several hundred million in frequency control ancillary services (FCAS). Dispatch runs on a 5-minute cycle: every five minutes AEMO publishes prices, demand, generator output, interconnector flows, bids, and forecasts.
+The NEM is one of the longest interconnected transmission systems in the world and generates around 200 TWh of electricity a year (2024 calendar year was 217 TWh including rooftop PV) across five regions (Queensland, New South Wales plus the ACT, Victoria, South Australia, and Tasmania). Annual NEM wholesale turnover typically falls in the **AUD 15 to 25 billion range**, with 2023-24 at AUD 18.6 billion (AER Wholesale Electricity Market Performance Report, December 2024), plus tens to a few hundred million in frequency control ancillary services (FCAS) depending on volatility. Since **1 October 2021** the NEM has run on a 5-minute dispatch *and* settlement cycle (previously 5-minute dispatch with 30-minute settlement); every five minutes AEMO publishes prices, demand, generator output, interconnector flows, bids, and forecasts.
 
-All of this is free and public. AEMO publishes the raw dispatch files to **NEMweb** (<http://nemweb.com.au>) within minutes of each dispatch interval, and retains historical archives in the **Market Management System Data Model (MMSDM)** going back to the start of the NEM in 1998. If you want to know what the wholesale price was at 14:35 on a particular Tuesday in 2008, NEMweb has it.
+All of this is free and public. AEMO publishes the raw dispatch files to **NEMweb** (<http://nemweb.com.au>) within minutes of each dispatch interval, and retains historical archives in the **Market Management System Data Model (MMSDM)** going back to the start of the NEM in December 1998. Flagship planning publications (the **Integrated System Plan (ISP)**, Electricity Statement of Opportunities, and Gas Statement of Opportunities) are released on aemo.com.au.
 
 ## Why does this package exist?
 
-NEMweb is generous but unfriendly. There are over 100 report folders. Files are zipped CSVs with a proprietary row-dispatch format (`C,` comments, `I,` column headers, `D,` data rows, `F,` footers) that many R-native CSV readers can't parse. A single dispatch file might contain four different tables (prices, demand, interconnector flows, unit output) all interleaved in one CSV. Monthly archives for some tables are multi-gigabyte. Schema versions change between MMSDM releases (the v4-to-v5 transition in October 2020 added columns to `DISPATCHLOAD`). And AEMO has flagged a NEMweb base URL migration for 30 April 2026.
+NEMweb is generous but unfriendly. There are over 100 report folders. Files are zipped CSVs with a proprietary row-dispatch format (`C,` comments, `I,` column headers, `D,` data rows, `F,` footers) that many R-native CSV readers can't parse. A single dispatch file might contain four different tables (prices, demand, interconnector flows, unit output) all interleaved in one CSV. Monthly archives for some tables are multi-gigabyte. Schema versions change between MMSDM releases (the v4-to-v5 transition in **April 2021**, coincident with the 5-minute settlement program, added columns to `DISPATCHLOAD`). AEMO is decommissioning the NEMweb HTTP endpoint on **7 April 2026** and migrating the base URL on **30 April 2026**.
 
 ```r
 # Without this package
@@ -51,7 +51,7 @@ In R, [nemwebR](https://github.com/aleemon/nemwebR) is a single-author GitHub-on
 
 | Package | Language | Status | Coverage |
 |---|---|---|---|
-| **NEMOSIS** | Python (CEEM) | Active, released on PyPI | Full MMSDM historical tables plus forecasts |
+| **NEMOSIS** | Python (CEEM) | Active, released on PyPI | Most MMSDM dynamic and static tables, plus forecast tables |
 | **NEMSEER** | Python (CEEM) | Active | Forecast tables (P5MIN, PREDISPATCH, PASA) |
 | **nempy** | Python (CEEM) | Active | NEM dispatch simulator, not a data wrapper |
 | [nemwebR](https://github.com/aleemon/nemwebR) | R | GitHub, no release | Prices, dispatch, bids, DUDETAILSUMMARY |
@@ -96,16 +96,16 @@ r <- aemo_rooftop_pv("NSW1",
 | `aemo_price()` | Regional wholesale price (DISPATCHPRICE or TRADINGPRICE) | 5-min or 30-min |
 | `aemo_demand()` | Regional demand (operational, operational less small non-scheduled, or native) | 5-min |
 | `aemo_dispatch_units()` | Per-DUID generator output (SCADA or target MW) | 5-min |
-| `aemo_interconnector()` | MW flow, losses, and limits on the six NEM interconnectors | 5-min |
+| `aemo_interconnector()` | MW flow, losses, and limits on the seven NEM interconnectors | 5-min |
 | `aemo_rooftop_pv()` | Region-level rooftop PV actual or forecast | 30-min |
 | `aemo_bids()` | Generator bid stack (daily or per-interval, with size guard) | Day or 5-min |
 | `aemo_predispatch()` | Price and demand forecasts out to 5 minutes, 40 hours, or 7 days | 5-min to 40-hour |
 | `aemo_pasa()` | Projected Assessment of System Adequacy (short 1-7 day or medium 2-year) | Hourly or daily |
-| `aemo_fcas()` | Frequency control ancillary services prices across eight services | 5-min |
+| `aemo_fcas()` | FCAS prices across ten services (eight contingency plus two regulation, including R1/L1 Very Fast from 9 October 2023) | 5-min |
 | `aemo_gas()` | STTM (Adelaide, Brisbane, Sydney) and DWGM (Victoria) gas markets | Daily |
 | `aemo_units()` | DUID registry with fuel, capacity, region, station, owner | - |
 | `aemo_regions()` | NEM region metadata (5 regions, static) | - |
-| `aemo_interconnectors()` | NEM interconnector topology and limits (6 links, static) | - |
+| `aemo_interconnectors()` | NEM interconnector topology and limits (7 links, static) | - |
 | `aemo_nemweb_ls()` | List files in any NEMweb directory | - |
 | `aemo_nemweb_download()` | Raw zipped-CSV download from NEMweb | - |
 | `aemo_cache_info()`, `aemo_clear_cache()` | Cache management | - |
@@ -113,7 +113,7 @@ r <- aemo_rooftop_pv("NSW1",
 
 ## Size guards
 
-AEMO's bid tables are large. `BIDPEROFFER_D` (per-interval bid price and volume bands) has monthly archives of 1.5 to 3 GB zipped. A naive full-year pull is tens of gigabytes of compressed data and tens of millions of rows.
+AEMO's bid tables are large. `BIDPEROFFER_D` (per-interval bid price and volume bands) has monthly archives on the order of 0.5 to 1.5 GB zipped (much larger uncompressed). A naive full-year pull is several gigabytes of compressed data and tens of millions of rows.
 
 `aemo_bids()` enforces a 30-day span guard by default and refuses longer spans without explicit consent:
 
@@ -124,7 +124,7 @@ aemo_bids(duid = "BW01", start = "2024-06-01", end = "2024-06-02")
 # Errors with a clear message
 aemo_bids(duid = "BW01", start = "2024-01-01", end = "2024-06-01")
 # Error: Requested span is 152 days.
-# Bids data is large (BIDPEROFFER_D monthly = 1.5-3 GB zipped).
+# Bids data is large (BIDPEROFFER_D monthly archives are multi-GB zipped).
 # Pass allow_large = TRUE to proceed.
 
 # Works with explicit opt-in
@@ -157,6 +157,11 @@ i <- aemo_interconnector(flow = "V-SA",
                           start = "2024-06-01",
                           end   = "2024-06-02")
 head(i)
+
+# Project EnergyConnect (V-S-N) Stage 1 went live in April 2025
+pec <- aemo_interconnector(flow = "V-S-N",
+                           start = "2025-06-01",
+                           end   = "2025-06-02")
 ```
 
 ### Compare regions
@@ -198,16 +203,17 @@ path
 
 Data is published by AEMO at <http://nemweb.com.au> under the **AEMO Copyright Permissions Notice** (not CC BY 4.0; the notice is similar but carries AEMO-specific attribution language). See <https://www.aemo.com.au/privacy-and-legal-notices/copyright-permissions> for the full terms. This package caches downloads to `tools::R_user_dir("aemo", "cache")`.
 
-Attribution on derivative work: *Source: AEMO*.
+Attribution on derivative work (AEMO's requirement in full): *Source: AEMO. AEMO makes no representation as to the accuracy or completeness of this data.*
 
 ## Known limitations
 
-- **No WEMDE (Western Australia post-October 2023).** The WEM uses a different data model. Planned for a future release.
-- **No 4-second FCAS.** The sub-second FCAS files are hundreds of MB per day and niche. Planned for a future release.
-- **No ISP, GSOO, or IASR forecast workbooks.** AEMO's long-run planning studies are published as XLSX supplements to multi-hundred-page PDFs. Each one is a bespoke scrape.
-- **Known upstream gap.** AEMO has a documented gap in `BIDPEROFFER_D` between March 2021 and July 2024. Expect missing observations across that span.
-- **NEMweb migration 30 April 2026.** AEMO has flagged base URL changes. The package uses `options(aemo.base_url = ...)` so you can point at a new host without reinstalling.
-- **Schema drift.** `DISPATCHLOAD` added columns in October 2020 (v4 to v5). The `I,` header row in each file is the source of truth, so the parser handles this transparently, but you should still inspect `names(df)` before any cross-MMSDM-version join.
+- **No reformed WEM.** The Wholesale Electricity Market in Western Australia runs on SCED and essential system services markets via WEMDE (go-live 1 October 2023), a separate data model from the NEM's MMSDM. WEM coverage is planned for a future release.
+- **No 4-second FCAS.** The sub-second FCAS files (`FCAS_4_SECOND`) are hundreds of MB per day and niche. Planned for a future release.
+- **No ISP, GSOO, or IASR forecast workbooks.** AEMO's long-run planning studies are published as XLSX supplements to multi-hundred-page PDFs. Each one is a bespoke scrape. Use AEMO's publications page directly.
+- **No Wallumbilla GSH or ECGS gas data.** These surfaces sit outside the NEMweb and DWGM paths this package wraps. Out of scope for v0.1.0.
+- **Known upstream gap.** AEMO has a documented gap in `BIDPEROFFER_D` between March 2021 and July 2024 that is not yet backfilled. Expect missing observations across that span.
+- **NEMweb HTTP decommissioning 7 April 2026 and base-URL migration 30 April 2026.** The package uses `options(aemo.base_url = ...)` so you can point at a new host without reinstalling.
+- **Schema drift.** `DISPATCHLOAD` added columns in April 2021 (MMSDM v5.0, coincident with 5-minute settlement). The `I,` header row in each file is the source of truth, so the parser handles this transparently, but you should still inspect `names(df)` before any cross-MMSDM-version join.
 
 ## Related packages
 

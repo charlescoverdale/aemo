@@ -5,11 +5,12 @@ test_that("aemo_regions returns all five NEM regions", {
   expect_setequal(r$region, c("NSW1", "QLD1", "SA1", "TAS1", "VIC1"))
 })
 
-test_that("aemo_interconnectors returns six interconnectors", {
+test_that("aemo_interconnectors returns seven interconnectors", {
   i <- aemo_interconnectors()
   expect_s3_class(i, "aemo_tbl")
-  expect_equal(nrow(i), 6L)
+  expect_equal(nrow(i), 7L)
   expect_true(all(c("interconnector_id", "from_region", "to_region") %in% names(i)))
+  expect_true("V-S-N" %in% i$interconnector_id)  # Project EnergyConnect
 })
 
 test_that("aemo_units returns the fallback table", {

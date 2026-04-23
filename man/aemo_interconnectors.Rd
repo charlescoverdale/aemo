@@ -8,10 +8,13 @@ aemo_interconnectors()
 }
 \value{
 An \code{aemo_tbl} with columns \code{interconnector_id},
-\code{from_region}, \code{to_region}, \code{name}.
+\code{from_region}, \code{to_region}, \code{name}, \code{energised}.
 }
 \description{
-Returns a static table of the six NEM interconnectors.
+Returns a static table of the seven NEM interconnectors. The
+seventh entry is Project EnergyConnect (PEC), whose Stage 1
+was energised in April 2025 with full ~800 MW capability
+expected mid-2026.
 }
 \examples{
 aemo_interconnectors()
