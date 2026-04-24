@@ -30,9 +30,27 @@ aemo_download_cached <- function(url, cache = TRUE) {
   d <- aemo_cache_dir()
   ext <- tools::file_ext(url)
   ext <- if (nzchar(ext)) paste0(".", ext) else ""
-  file <- file.path(d, paste0(aemo_digest_url(url), ext))
+  slug <- aemo_digest_url(url)
+  file <- file.path(d, paste0(slug, ext))
+  hash_file <- file.path(d, paste0(slug, ".sha256"))
 
-  if (cache && file.exists(file) && file.size(file) > 0L) return(file)
+  if (cache && file.exists(file) && file.size(file) > 0L) {
+    # Verify content hash if a sidecar exists; re-download on mismatch.
+    if (file.exists(hash_file)) {
+      stored <- trimws(readLines(hash_file, warn = FALSE)[1L])
+      actual <- aemo_sha256_file(file)
+      if (!identical(stored, actual)) {
+        cli::cli_warn("Cache integrity check failed for {.file {basename(file)}}; re-downloading.")
+        unlink(c(file, hash_file), force = TRUE)
+      } else {
+        return(file)
+      }
+    } else {
+      # No sidecar yet — write one so future calls can verify.
+      writeLines(aemo_sha256_file(file), hash_file)
+      return(file)
+    }
+  }
 
   cli::cli_progress_step("Downloading {.url {url}}")
 
@@ -46,10 +64,30 @@ aemo_download_cached <- function(url, cache = TRUE) {
   )
 
   if (!is.null(resp) && httr2::resp_status(resp) >= 400L) {
-    unlink(file, force = TRUE)
+    unlink(c(file, hash_file), force = TRUE)
     cli::cli_abort("HTTP {httr2::resp_status(resp)} from {.url {url}}.")
   }
+
+  if (file.exists(file) && file.size(file) > 0L) {
+    writeLines(aemo_sha256_file(file), hash_file)
+  }
   file
+}
+
+#' Compute a SHA-256 hex digest of a file.
+#'
+#' Uses `tools::md5sum()` as a fallback when `openssl` is absent.
+#' The digest is used for cache-integrity verification only, not
+#' cryptographic security, so MD5 is acceptable if SHA-256 is
+#' unavailable.
+#' @noRd
+aemo_sha256_file <- function(path) {
+  if (requireNamespace("openssl", quietly = TRUE)) {
+    as.character(openssl::sha256(file(path, "rb")))
+  } else {
+    # tools::md5sum is always available (base R)
+    paste0("md5:", unname(tools::md5sum(path)))
+  }
 }
 
 #' @noRd

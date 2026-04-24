@@ -4,7 +4,7 @@
 \alias{aemo_mlf}
 \title{Marginal Loss Factors (MLF) by DUID and financial year}
 \source{
-AEMO MMSDM archive, MARGINALLOSSFACTOR table.
+AEMO MMSDM archive, TRANSMISSIONLOSSFACTOR table.
 AEMO Copyright Permissions Notice.
 }
 \usage{
@@ -36,7 +36,7 @@ the regional RRP per MWh generated.
 MLFs are published annually by AEMO under NER 3.6.2 and are
 used in settlement calculations and in PPA revenue
 reconstruction. The function first attempts to download the
-\code{MARGINALLOSSFACTOR} table from the most recent MMSDM monthly
+\code{TRANSMISSIONLOSSFACTOR} table from the most recent MMSDM monthly
 archive; if that fails it returns a bundled static table
 covering FY 2020-21 to FY 2025-26 for ~20 well-known DUIDs.
 }
@@ -57,6 +57,7 @@ options(op)
 Other reference: 
 \code{\link{aemo_dlf}()},
 \code{\link{aemo_interconnectors}()},
+\code{\link{aemo_participants}()},
 \code{\link{aemo_price_caps}()},
 \code{\link{aemo_regions}()},
 \code{\link{aemo_units}()}

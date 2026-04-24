@@ -23,6 +23,7 @@ aemo_interconnectors()
 Other reference: 
 \code{\link{aemo_dlf}()},
 \code{\link{aemo_mlf}()},
+\code{\link{aemo_participants}()},
 \code{\link{aemo_price_caps}()},
 \code{\link{aemo_regions}()},
 \code{\link{aemo_units}()}

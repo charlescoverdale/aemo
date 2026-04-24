@@ -72,44 +72,144 @@ devtools::install_github("charlescoverdale/aemo")
 ```r
 library(aemo)
 
-# Reference data (no network)
+# Reference data (no network required)
 aemo_regions()
 aemo_interconnectors()
+aemo_price_caps()       # MPC / MPF / CPT by financial year
 
-# 5-minute wholesale price for NSW
-p <- aemo_price("NSW1", "2024-06-01", "2024-06-01 01:00:00")
+# 5-minute wholesale prices for NSW, last hour
+p <- aemo_price("NSW1", Sys.time() - 3600, Sys.time())
 head(p)
+# Key columns: settlementdate (POSIXct, AEST), regionid, rrp (AUD/MWh)
 
-# Regional demand
-d <- aemo_demand("VIC1", "2024-06-01", "2024-06-01 01:00:00")
+# Regional demand (operational)
+d <- aemo_demand("VIC1", Sys.time() - 3600, Sys.time())
 
-# Rooftop PV actual generation
-r <- aemo_rooftop_pv("NSW1",
-                     start = "2024-06-01",
-                     end = "2024-06-01 12:00:00")
+# FCAS prices across all 10 services
+f <- aemo_fcas("NSW1", Sys.time() - 3600, Sys.time())
+
+# Binding constraints with shadow prices (price-spike forensics)
+c <- aemo_constraints(Sys.time() - 3600, Sys.time())
+head(c[order(-c$marginalvalue), c("settlementdate", "constraintid",
+                                   "marginalvalue", "rhs")])
+```
+
+### Timestamps: AEST not AEDT
+
+All timestamps are AEST (UTC+10, fixed year-round) matching AEMO's market clock (NER clause 2.2.6). Using `"Australia/Sydney"` would silently shift every summer interval by one hour. The `tzone` attribute on every `settlementdate` column is `"Australia/Brisbane"`.
+
+Timestamps are **period-ending**: a row stamped `14:05:00` covers the 5-minute interval ending at 14:05.
+
+```r
+attr(p$settlementdate, "tzone")  # "Australia/Brisbane"
+```
+
+### Intervention runs
+
+`DISPATCHPRICE` contains two run types in every file: the **market pricing run** (`INTERVENTION = 0`, used in settlement) and the **physical/intervention run** (`INTERVENTION = 1`, issued during market directions or suspension). All functions default to `intervention = FALSE`, returning market pricing rows only.
+
+During the June 2022 NEM suspension AEMO issued directions across all regions for several days. Querying that period with the default settings returns only the market pricing run, not the direction-influenced run:
+
+```r
+# Default: market pricing run only (correct for settlement analysis)
+p_market <- aemo_price("NSW1", "2022-06-13", "2022-06-14")
+
+# Both runs (use for direction-cost analysis)
+p_both <- aemo_price("NSW1", "2022-06-13", "2022-06-14",
+                     intervention = TRUE)
+table(p_both$intervention)  # "0": market run rows, "1": intervention rows
+```
+
+### Worked example: price spike forensics
+
+```r
+library(aemo)
+
+# Step 1: find a high-price interval in SA
+p <- aemo_price("SA1", "2024-03-01", "2024-03-02")
+spike <- p[which.max(p$rrp), ]
+spike[, c("settlementdate", "rrp")]
+
+# Step 2: which constraint had the highest shadow price at that time?
+c <- aemo_constraints(
+  start = spike$settlementdate - 300,
+  end   = spike$settlementdate
+)
+head(c[order(-c$marginalvalue), c("constraintid", "marginalvalue", "rhs")])
+
+# Step 3: which generators were providing FCAS at that time?
+e <- aemo_fcas_enablement(
+  start = spike$settlementdate - 300,
+  end   = spike$settlementdate
+)
+# Aggregate raise6secmw across DUIDs to see market-wide enablement
+if ("raise6secmw" %in% names(e)) {
+  aggregate(e$raise6secmw, by = list(e$settlementdate), FUN = sum, na.rm = TRUE)
+}
+
+# Step 4: what loss factor applies to a generator in SA?
+mlf <- aemo_mlf(year = "2024-25")
+head(mlf[mlf$regionid == "SA1", c("duid", "mlf")])
 ```
 
 ## Functions
 
+### Prices
+
 | Function | Description | Interval |
 |---|---|---|
-| `aemo_price()` | Regional wholesale price (DISPATCHPRICE or TRADINGPRICE) | 5-min or 30-min |
-| `aemo_demand()` | Regional demand (operational, operational less small non-scheduled, or native) | 5-min |
-| `aemo_dispatch_units()` | Per-DUID generator output (SCADA or target MW) | 5-min |
-| `aemo_interconnector()` | MW flow, losses, and limits on the seven NEM interconnectors | 5-min |
-| `aemo_rooftop_pv()` | Region-level rooftop PV actual or forecast | 30-min |
-| `aemo_bids()` | Generator bid stack (daily or per-interval, with size guard) | Day or 5-min |
-| `aemo_predispatch()` | Price and demand forecasts out to 5 minutes, 40 hours, or 7 days | 5-min to 40-hour |
-| `aemo_pasa()` | Projected Assessment of System Adequacy (short 1-7 day or medium 2-year) | Hourly or daily |
+| `aemo_price()` | Regional wholesale price (DISPATCHPRICE or TRADINGPRICE). Pre-5MS (before 1 Oct 2021) uses TRADINGIS; post-5MS aggregates six 5-min prices per trading interval. | 5-min or 30-min |
 | `aemo_fcas()` | FCAS prices across ten services (eight contingency plus two regulation, including R1/L1 Very Fast from 9 October 2023) | 5-min |
+| `aemo_price_caps()` | Market Price Cap, Floor, CPT, and APC by financial year (FY 2015-16 onwards). Static reference table. | Annual |
+
+### Demand and generation
+
+| Function | Description | Interval |
+|---|---|---|
+| `aemo_demand()` | Regional demand: operational, operational-less-SNSG, or native (includes estimated rooftop PV) | 5-min |
+| `aemo_dispatch_units()` | Per-DUID generator output (SCADA actual or dispatch target MW) | 5-min |
+| `aemo_rooftop_pv()` | Region-level rooftop PV actual or forecast | 30-min |
+
+### Dispatch and constraints
+
+| Function | Description | Interval |
+|---|---|---|
+| `aemo_constraints()` | Binding transmission and system constraints with shadow prices (marginal values). Use this to answer "why was the RRP AUD 15,000?" | 5-min |
+| `aemo_fcas_enablement()` | FCAS enablement volumes (MW) per DUID across ten services (from DISPATCHLOAD). Quantity side of the FCAS market. | 5-min |
+| `aemo_interconnector()` | MW flow, losses, and limits on the seven NEM interconnectors | 5-min |
+| `aemo_bids()` | Generator bid stack: daily (BIDDAYOFFER_D) or per-interval (BIDPEROFFER_D, with size guard) | Day or 5-min |
+
+### Forecasts
+
+| Function | Description | Interval |
+|---|---|---|
+| `aemo_predispatch()` | Price and demand forecasts: 5-minute-ahead (P5MIN, 12 intervals) or 40-hour-ahead predispatch (30-min resolution) | 5-min or 30-min |
+| `aemo_pasa()` | Projected Assessment of System Adequacy: short-term (1-7 day) or medium-term (2-year) | Hourly or daily |
+
+### Reference data
+
+| Function | Description |
+|---|---|
+| `aemo_units()` | DUID registry downloaded from MMSDM DUDETAILSUMMARY (500+ DUIDs with region, schedule type, fuel class). Fallback to a 12-row sample if MMSDM is unreachable. |
+| `aemo_mlf()` | Marginal Loss Factors by DUID and financial year, from MMSDM MARGINALLOSSFACTOR. Used in PPA revenue reconstruction and settlement. |
+| `aemo_dlf()` | Distribution Loss Factors by connection point and financial year, from MMSDM LOSSFACTORMODEL. |
+| `aemo_regions()` | NEM region metadata (5 regions, static) |
+| `aemo_interconnectors()` | NEM interconnector topology and energisation dates (7 links, static) |
+
+### Low-level access and configuration
+
+| Function | Description |
+|---|---|
+| `aemo_nemweb_ls()` | List files in any NEMweb directory |
+| `aemo_nemweb_download()` | Raw zipped-CSV download from NEMweb |
+| `aemo_cache_info()`, `aemo_clear_cache()` | Cache management |
+| `aemo_throttle()` | Request-rate configuration |
+
+### Gas
+
+| Function | Description | Interval |
+|---|---|---|
 | `aemo_gas()` | STTM (Adelaide, Brisbane, Sydney) and DWGM (Victoria) gas markets | Daily |
-| `aemo_units()` | DUID registry with fuel, capacity, region, station, owner | - |
-| `aemo_regions()` | NEM region metadata (5 regions, static) | - |
-| `aemo_interconnectors()` | NEM interconnector topology and limits (7 links, static) | - |
-| `aemo_nemweb_ls()` | List files in any NEMweb directory | - |
-| `aemo_nemweb_download()` | Raw zipped-CSV download from NEMweb | - |
-| `aemo_cache_info()`, `aemo_clear_cache()` | Cache management | - |
-| `aemo_throttle()` | Request-rate configuration | - |
 
 ## Size guards
 
@@ -209,11 +309,12 @@ Attribution on derivative work (AEMO's requirement in full): *Source: AEMO. AEMO
 
 - **No reformed WEM.** The Wholesale Electricity Market in Western Australia runs on SCED and essential system services markets via WEMDE (go-live 1 October 2023), a separate data model from the NEM's MMSDM. WEM coverage is planned for a future release.
 - **No 4-second FCAS.** The sub-second FCAS files (`FCAS_4_SECOND`) are hundreds of MB per day and niche. Planned for a future release.
-- **No ISP, GSOO, or IASR forecast workbooks.** AEMO's long-run planning studies are published as XLSX supplements to multi-hundred-page PDFs. Each one is a bespoke scrape. Use AEMO's publications page directly.
-- **No Wallumbilla GSH or ECGS gas data.** These surfaces sit outside the NEMweb and DWGM paths this package wraps. Out of scope for v0.1.0.
+- **No settlement tables.** `SETCFM` and `SETRESIDUALS` (settlement reconciliation) are not yet wrapped. Gentailer reconciliation workflows need these. Use `aemo_nemweb_download()` with an MMSDM URL directly.
+- **No ISP, GSOO, or IASR forecast workbooks.** AEMO's long-run planning studies are published as XLSX supplements. Use AEMO's publications page directly.
+- **No Wallumbilla GSH or ECGS gas data.** Out of scope for v0.1.0.
 - **Known upstream gap.** AEMO has a documented gap in `BIDPEROFFER_D` between March 2021 and July 2024 that is not yet backfilled. Expect missing observations across that span.
 - **NEMweb HTTP decommissioning 7 April 2026 and base-URL migration 30 April 2026.** The package uses `options(aemo.base_url = ...)` so you can point at a new host without reinstalling.
-- **Schema drift.** `DISPATCHLOAD` added columns in April 2021 (MMSDM v5.0, coincident with 5-minute settlement). The `I,` header row in each file is the source of truth, so the parser handles this transparently, but you should still inspect `names(df)` before any cross-MMSDM-version join.
+- **Schema drift.** `DISPATCHLOAD` added columns in April 2021 (MMSDM v5.0, coincident with 5-minute settlement). The `I,` header row in each file is the source of truth, so the parser handles this transparently, but inspect `names(df)` before any cross-MMSDM-version join.
 
 ## Related packages
 

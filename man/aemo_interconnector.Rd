@@ -43,6 +43,8 @@ Other dispatch:
 \code{\link{aemo_constraints}()},
 \code{\link{aemo_dispatch_units}()},
 \code{\link{aemo_fcas_enablement}()},
+\code{\link{aemo_gencon}()},
+\code{\link{aemo_outages}()},
 \code{\link{aemo_rooftop_pv}()}
 }
 \concept{dispatch}

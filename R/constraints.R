@@ -1,4 +1,4 @@
-# Binding constraints (DISPATCHCONSTRAINT)
+# Binding constraints (DISPATCHCONSTRAINT) and constraint equations (GENCONDATA)
 
 #' Binding transmission and system constraints
 #'
@@ -77,4 +77,88 @@ aemo_constraints <- function(start, end, constraint_id = NULL,
   new_aemo_tbl(df,
                source = "http://nemweb.com.au",
                title = "AEMO dispatch constraints (shadow prices)")
+}
+
+#' Generic constraint equations and RHS terms (GENCONDATA)
+#'
+#' Downloads the `GENCONDATA` table from the most recent MMSDM
+#' monthly archive. `GENCONDATA` contains the equation
+#' definitions for every generic constraint active in the NEM:
+#' the constraint ID, the type (equality/inequality), a
+#' description of what the constraint models (thermal limit,
+#' voltage stability, system strength, etc.), and the default
+#' RHS value.
+#'
+#' Pair this with [aemo_constraints()] to go from a binding
+#' dispatch interval to the underlying network equation. The
+#' workflow is: `aemo_constraints()` tells you *which* constraint
+#' bound and *how hard* (marginalvalue = shadow price);
+#' `aemo_gencon()` tells you *what the constraint is* (which
+#' elements and why the RHS was set at that level).
+#'
+#' @param constraint_id Optional character vector of constraint
+#'   IDs to filter on. `NULL` returns all equations.
+#' @param type Optional constraint type filter (e.g.
+#'   `"LE"` for `<=`, `"GE"` for `>=`, `"EQ"` for `=`).
+#'   `NULL` returns all types.
+#'
+#' @return An `aemo_tbl` with columns including `genconid`
+#'   (constraint ID), `constrainttype`, `description`,
+#'   `genericconstraintrhs` (default RHS value). Additional
+#'   columns from GENCONDATA (effective dates, generic
+#'   constraint equation weights) will be present when
+#'   available.
+#'
+#' @source AEMO NEMweb MMSDM archive, GENCONDATA table.
+#'   AEMO Copyright Permissions Notice.
+#'
+#' @seealso [aemo_constraints()] for the real-time binding
+#'   constraint shadow prices.
+#'
+#' @family dispatch
+#' @export
+#' @examples
+#' \donttest{
+#' op <- options(aemo.cache_dir = tempdir())
+#' try({
+#'   # Find equations for the Heywood interconnector thermal limits
+#'   g <- aemo_gencon(constraint_id = c("V::S_NIL_TBSE", "V::S_NIL_FCSPS"))
+#'   head(g)
+#' })
+#' options(op)
+#' }
+aemo_gencon <- function(constraint_id = NULL, type = NULL) {
+  df <- tryCatch(aemo_fetch_gencondata(),
+                 error = function(e) NULL)
+
+  if (is.null(df) || nrow(df) == 0L) {
+    cli::cli_abort(c(
+      "Could not retrieve GENCONDATA from MMSDM.",
+      "i" = "Check your internet connection or use {.fn aemo_nemweb_download} with an MMSDM URL directly.",
+      "i" = "MMSDM path: DATA/Archive/Wholesale_Electricity/MMSDM/<YYYY>/<month>/MMSDM_Historical_Data_SQLLoader/DATA/PUBLIC_DVD_GENCONDATA_<YYYYMM>010000.zip"
+    ))
+  }
+
+  if (!is.null(constraint_id)) {
+    id_col <- intersect(c("genconid", "constraintid"), names(df))[1L]
+    if (!is.na(id_col)) {
+      df <- df[df[[id_col]] %in% constraint_id, , drop = FALSE]
+    }
+  }
+  if (!is.null(type) && "constrainttype" %in% names(df)) {
+    df <- df[toupper(df$constrainttype) %in% toupper(type), , drop = FALSE]
+  }
+  rownames(df) <- NULL
+
+  new_aemo_tbl(df,
+               source = "https://nemweb.com.au/Data_Archive/Wholesale_Electricity/MMSDM",
+               licence = "AEMO Copyright Permissions Notice",
+               title = "NEM generic constraint equations (GENCONDATA)")
+}
+
+#' Fetch GENCONDATA from the most recent MMSDM archive.
+#' @noRd
+aemo_fetch_gencondata <- function(max_months_back = 6L) {
+  aemo_fetch_mmsdm_table("GENCONDATA", min_rows = 1L,
+                          max_months_back = max_months_back)
 }

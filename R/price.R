@@ -196,10 +196,19 @@ aemo_aggregate_to_30min <- function(df) {
   if (!"rrp" %in% names(df)) return(df)
 
   ts <- df$settlementdate
-  # Trading interval end = ceiling to nearest 30 minutes
-  # epoch in seconds mod 1800; shift timestamps to 30-min boundaries
+  # Trading interval end: the 30-min period that contains this 5-min interval.
+  # NEM convention is period-ENDING timestamps throughout. A dispatch interval
+  # stamped 14:05 belongs to the trading interval ending 14:30; one stamped
+  # exactly 14:30 also belongs to the interval ending 14:30 (it IS that
+  # interval's final 5-min period).
+  #
+  # Arithmetic: use ((epoch - 1) %/% 1800 + 1) * 1800 so that the half-open
+  # boundary [14:00:01, 14:30:00] maps to 14:30 and [14:30:01, 15:00:00]
+  # maps to 15:00. ceiling(epoch/1800)*1800 is wrong for exactly-on-boundary
+  # timestamps: 14:00:00 would be assigned to the 14:00 interval rather than
+  # the correct 14:30 interval (14:00 is the last 5-min of 13:30-14:00).
   epoch <- as.numeric(ts)
-  ti_end <- as.POSIXct(ceiling(epoch / 1800) * 1800,
+  ti_end <- as.POSIXct(((epoch - 1L) %/% 1800L + 1L) * 1800L,
                        origin = "1970-01-01", tz = AEMO_TIMEZONE)
   df$.ti_end <- ti_end
 

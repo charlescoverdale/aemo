@@ -140,42 +140,104 @@ aemo_units <- function() {
 }
 
 #' Fetch DUDETAILSUMMARY from the most recent MMSDM archive.
-#'
-#' MMSDM publishes a monthly snapshot of all AEMO Market Systems
-#' tables. DUDETAILSUMMARY captures the registration metadata
-#' for every DUID. We try the last several months (MMSDM lags
-#' roughly two months) and parse the first zip that returns a
-#' table with `>= 50` rows.
 #' @noRd
 aemo_fetch_dudetailsummary <- function(max_months_back = 6L) {
-  now <- Sys.time()
-  attr(now, "tzone") <- AEMO_TIMEZONE
-  base <- "https://nemweb.com.au/Data_Archive/Wholesale_Electricity/MMSDM"
-  for (offset in 1:max_months_back) {
-    target <- seq(as.Date(now) - (offset * 30L),
-                  by = "day", length.out = 1L)
-    y <- format(target, "%Y")
-    m <- format(target, "%m")
-    url <- sprintf(
-      "%s/%s/MMSDM_%s_%s/MMSDM_Historical_Data_SQLLoader/DATA/PUBLIC_DVD_DUDETAILSUMMARY_%s%s010000.zip",
-      base, y, y, m, y, m
+  aemo_fetch_mmsdm_table("DUDETAILSUMMARY", min_rows = 50L,
+                          max_months_back = max_months_back)
+}
+
+#' NEM market participants and their registered DUIDs
+#'
+#' Returns a mapping of NEM market participants (companies) to
+#' their registered Dispatchable Unit Identifiers (DUIDs), joined
+#' from the MMSDM `PARTICIPANT` and `DUDETAILSUMMARY` tables.
+#' Use this for corporate ownership analysis: rolling up generator
+#' output or bids from DUID-level data to the company level.
+#'
+#' @return An `aemo_tbl` with columns `participantid`,
+#'   `participantclassid` (e.g. `GENERATOR`, `LOAD`, `TRADER`),
+#'   `name` (company name), `duid`, `stationid`, `regionid`,
+#'   `dispatchtype`, `schedule_type`. Rows are one per
+#'   participant-DUID combination. If MMSDM is unreachable,
+#'   returns an empty table with a warning.
+#'
+#' @source AEMO NEMweb MMSDM archive, PARTICIPANT and
+#'   DUDETAILSUMMARY tables. AEMO Copyright Permissions Notice.
+#'
+#' @seealso [aemo_units()] for DUID-level registry without
+#'   participant mapping.
+#'
+#' @family reference
+#' @export
+#' @examples
+#' \donttest{
+#' op <- options(aemo.cache_dir = tempdir())
+#' try({
+#'   pt <- aemo_participants()
+#'   # DUIDs owned by AGL
+#'   pt[grepl("AGL", pt$name, ignore.case = TRUE), ]
+#' })
+#' options(op)
+#' }
+aemo_participants <- function() {
+  duids <- tryCatch(aemo_fetch_dudetailsummary(),
+                    error = function(e) NULL)
+  parts <- tryCatch(aemo_fetch_participant(),
+                    error = function(e) NULL)
+
+  if (is.null(duids) || nrow(duids) < 50L) {
+    cli::cli_warn(c(
+      "Could not reach MMSDM DUDETAILSUMMARY; returning empty participant table.",
+      "i" = "Check your internet connection."
+    ))
+    empty <- data.frame(
+      participantid = character(0L), participantclassid = character(0L),
+      name = character(0L), duid = character(0L),
+      stationid = character(0L), regionid = character(0L),
+      dispatchtype = character(0L), schedule_type = character(0L),
+      stringsAsFactors = FALSE
     )
-    df <- tryCatch({
-      zip_path <- aemo_download_cached(url)
-      tmp <- tempfile("aemo_dudet_")
-      dir.create(tmp, recursive = TRUE)
-      on.exit(unlink(tmp, recursive = TRUE), add = TRUE)
-      utils::unzip(zip_path, exdir = tmp)
-      csvs <- list.files(tmp, pattern = "\\.[Cc][Ss][Vv]$",
-                         full.names = TRUE)
-      if (length(csvs) == 0L) stop("no csv in zip")
-      parsed <- aemo_parse_csv(csvs[1L])
-      parsed[[1L]]
-    }, error = function(e) NULL)
-    if (!is.null(df) && nrow(df) >= 50L) {
-      df <- aemo_coerce_types(df)
-      return(df)
-    }
+    return(new_aemo_tbl(empty,
+                        source = "https://nemweb.com.au",
+                        title = "NEM market participants (empty - MMSDM unreachable)"))
   }
-  NULL
+
+  # Join participant metadata onto DUID registry
+  if (!is.null(parts) && nrow(parts) >= 1L &&
+      "participantid" %in% names(parts) &&
+      "participantid" %in% names(duids)) {
+    # Keep only columns we want to expose from each table
+    part_cols <- intersect(c("participantid", "participantclassid", "name"),
+                           names(parts))
+    duid_cols <- intersect(c("participantid", "duid", "stationid",
+                              "regionid", "dispatchtype", "schedule_type",
+                              "start_date", "end_date"),
+                            names(duids))
+    df <- merge(
+      parts[, part_cols, drop = FALSE],
+      duids[, duid_cols, drop = FALSE],
+      by = "participantid", all.y = TRUE
+    )
+  } else {
+    # No participant table; return DUID registry with participantid only
+    duid_cols <- intersect(c("participantid", "duid", "stationid",
+                              "regionid", "dispatchtype", "schedule_type"),
+                            names(duids))
+    df <- duids[, duid_cols, drop = FALSE]
+    if (!"name" %in% names(df)) df$name <- NA_character_
+  }
+  rownames(df) <- NULL
+
+  new_aemo_tbl(df,
+               source = "https://nemweb.com.au/Data_Archive/Wholesale_Electricity/MMSDM",
+               licence = "AEMO Copyright Permissions Notice",
+               title = paste0("NEM participants + DUIDs (MMSDM, ",
+                              format(Sys.Date(), "%Y-%m"), ")"))
+}
+
+#' Fetch PARTICIPANT table from the most recent MMSDM archive.
+#' @noRd
+aemo_fetch_participant <- function(max_months_back = 6L) {
+  aemo_fetch_mmsdm_table("PARTICIPANT", min_rows = 1L,
+                          max_months_back = max_months_back)
 }

@@ -1,3 +1,13 @@
+test_that("aemo_mmsdm_url builds correct PUBLIC_ARCHIVE pattern", {
+  url <- aemo:::aemo_mmsdm_url("DUDETAILSUMMARY", "2025", "03")
+  expect_true(grepl("PUBLIC_ARCHIVE%23DUDETAILSUMMARY%23FILE01%232025030", url))
+  expect_true(grepl("^https://nemweb", url))
+
+  url2 <- aemo:::aemo_mmsdm_url("TRANSMISSIONLOSSFACTOR", "2024", "11")
+  expect_true(grepl("TRANSMISSIONLOSSFACTOR", url2))
+  expect_true(grepl("%23FILE01%23", url2))
+})
+
 test_that("aemo_validate_region accepts valid codes", {
   expect_equal(aemo:::aemo_validate_region("nsw1"), "NSW1")
   expect_equal(aemo:::aemo_validate_region(c("nsw1", "vic1")),

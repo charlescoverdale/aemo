@@ -14,7 +14,7 @@ FIVE_MS_DATE <- as.Date("2021-10-01")
 #' MLFs are published annually by AEMO under NER 3.6.2 and are
 #' used in settlement calculations and in PPA revenue
 #' reconstruction. The function first attempts to download the
-#' `MARGINALLOSSFACTOR` table from the most recent MMSDM monthly
+#' `TRANSMISSIONLOSSFACTOR` table from the most recent MMSDM monthly
 #' archive; if that fails it returns a bundled static table
 #' covering FY 2020-21 to FY 2025-26 for ~20 well-known DUIDs.
 #'
@@ -30,7 +30,7 @@ FIVE_MS_DATE <- as.Date("2021-10-01")
 #'   download additional columns (`participantid`,
 #'   `lastchanged`) may also be present.
 #'
-#' @source AEMO MMSDM archive, MARGINALLOSSFACTOR table.
+#' @source AEMO MMSDM archive, TRANSMISSIONLOSSFACTOR table.
 #'   AEMO Copyright Permissions Notice.
 #'
 #' @seealso [aemo_units()] for the DUID registry,
@@ -53,7 +53,7 @@ aemo_mlf <- function(year = NULL, duid = NULL) {
 
   if (is.null(df) || nrow(df) < 20L) {
     cli::cli_warn(c(
-      "Could not reach MMSDM MARGINALLOSSFACTOR; returning bundled fallback.",
+      "Could not reach MMSDM TRANSMISSIONLOSSFACTOR; returning bundled fallback.",
       "i" = "The fallback covers ~20 DUIDs for FY 2020-21 to FY 2025-26 only."
     ))
     df <- aemo_mlf_fallback()
@@ -148,79 +148,35 @@ aemo_dlf <- function(year = NULL, connection_point_id = NULL) {
                title = "NEM Distribution Loss Factors (DLF)")
 }
 
-#' Fetch MARGINALLOSSFACTOR from the most recent MMSDM archive.
+#' Fetch TRANSMISSIONLOSSFACTOR (MLF) from MMSDM archive.
+#'
+#' AEMO's MMSDM uses TRANSMISSIONLOSSFACTOR for marginal loss
+#' factors, not TRANSMISSIONLOSSFACTOR (which does not exist in the
+#' archive). The column is `transmissionlossfactor`.
 #' @noRd
 aemo_fetch_mlf_mmsdm <- function(max_months_back = 6L) {
-  base <- "https://nemweb.com.au/Data_Archive/Wholesale_Electricity/MMSDM"
-  now <- Sys.time()
-  attr(now, "tzone") <- AEMO_TIMEZONE
-  for (offset in 1:max_months_back) {
-    target <- seq(as.Date(now) - (offset * 30L), by = "day", length.out = 1L)
-    y <- format(target, "%Y")
-    m <- format(target, "%m")
-    url <- sprintf(
-      "%s/%s/MMSDM_%s_%s/MMSDM_Historical_Data_SQLLoader/DATA/PUBLIC_DVD_MARGINALLOSSFACTOR_%s%s010000.zip",
-      base, y, y, m, y, m
-    )
-    df <- tryCatch({
-      zip_path <- aemo_download_cached(url)
-      tmp <- tempfile("aemo_mlf_")
-      dir.create(tmp, recursive = TRUE)
-      on.exit(unlink(tmp, recursive = TRUE), add = TRUE)
-      utils::unzip(zip_path, exdir = tmp)
-      csvs <- list.files(tmp, pattern = "\\.[Cc][Ss][Vv]$", full.names = TRUE)
-      if (length(csvs) == 0L) stop("no csv in zip")
-      parsed <- aemo_parse_csv(csvs[[1L]])
-      parsed[[1L]]
-    }, error = function(e) NULL)
-
-    if (!is.null(df) && nrow(df) >= 20L) {
-      df <- aemo_coerce_types(df)
-      if ("effectivedate" %in% names(df)) {
-        df$financial_year <- aemo_fy_label(df$effectivedate)
-      }
-      return(df)
-    }
+  df <- aemo_fetch_mmsdm_table("TRANSMISSIONLOSSFACTOR", min_rows = 1L,
+                                max_months_back = max_months_back)
+  if (!is.null(df) && "effectivedate" %in% names(df)) {
+    df$financial_year <- aemo_fy_label(df$effectivedate)
   }
-  NULL
+  if (!is.null(df)) {
+    names(df)[names(df) == "transmissionlossfactor"] <- "mlf"
+  }
+  df
 }
 
-#' Fetch LOSSFACTORMODEL from the most recent MMSDM archive.
+#' Fetch LOSSFACTORMODEL (DLF) from MMSDM archive.
 #' @noRd
 aemo_fetch_dlf_mmsdm <- function(max_months_back = 6L) {
-  base <- "https://nemweb.com.au/Data_Archive/Wholesale_Electricity/MMSDM"
-  now <- Sys.time()
-  attr(now, "tzone") <- AEMO_TIMEZONE
-  for (offset in 1:max_months_back) {
-    target <- seq(as.Date(now) - (offset * 30L), by = "day", length.out = 1L)
-    y <- format(target, "%Y")
-    m <- format(target, "%m")
-    url <- sprintf(
-      "%s/%s/MMSDM_%s_%s/MMSDM_Historical_Data_SQLLoader/DATA/PUBLIC_DVD_LOSSFACTORMODEL_%s%s010000.zip",
-      base, y, y, m, y, m
-    )
-    df <- tryCatch({
-      zip_path <- aemo_download_cached(url)
-      tmp <- tempfile("aemo_dlf_")
-      dir.create(tmp, recursive = TRUE)
-      on.exit(unlink(tmp, recursive = TRUE), add = TRUE)
-      utils::unzip(zip_path, exdir = tmp)
-      csvs <- list.files(tmp, pattern = "\\.[Cc][Ss][Vv]$", full.names = TRUE)
-      if (length(csvs) == 0L) stop("no csv in zip")
-      parsed <- aemo_parse_csv(csvs[[1L]])
-      parsed[[1L]]
-    }, error = function(e) NULL)
-
-    if (!is.null(df) && nrow(df) >= 5L) {
-      df <- aemo_coerce_types(df)
-      if ("effectivedate" %in% names(df)) {
-        df$financial_year <- aemo_fy_label(df$effectivedate)
-      }
-      names(df)[names(df) == "distributionlossfactor"] <- "dlf"
-      return(df)
-    }
+  df <- aemo_fetch_mmsdm_table("LOSSFACTORMODEL", min_rows = 1L,
+                                max_months_back = max_months_back)
+  if (is.null(df)) return(NULL)
+  if ("effectivedate" %in% names(df)) {
+    df$financial_year <- aemo_fy_label(df$effectivedate)
   }
-  NULL
+  names(df)[names(df) == "distributionlossfactor"] <- "dlf"
+  df
 }
 
 #' Convert a date (or POSIXct) to a NEM financial-year label.

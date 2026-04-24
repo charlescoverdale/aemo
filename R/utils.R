@@ -3,6 +3,60 @@
 #' @noRd
 `%||%` <- function(x, y) if (is.null(x)) y else x
 
+#' Build a verified MMSDM archive URL for a named table.
+#'
+#' MMSDM monthly archives use the naming convention:
+#' `PUBLIC_ARCHIVE#TABLENAME#FILE01#YYYYMM010000.zip`
+#' (with `#` URL-encoded as `%23`). This helper constructs the
+#' URL and is the single source of truth for the pattern.
+#'
+#' @param table  AEMO table name in UPPER_CASE (e.g. "DUDETAILSUMMARY").
+#' @param year   4-digit year string (e.g. "2025").
+#' @param month  2-digit month string with leading zero (e.g. "03").
+#' @param base   MMSDM base URL.
+#' @return A fully-qualified URL string.
+#' @noRd
+aemo_mmsdm_url <- function(table, year, month,
+                             base = "https://nemweb.com.au/Data_Archive/Wholesale_Electricity/MMSDM") {
+  sprintf(
+    "%s/%s/MMSDM_%s_%s/MMSDM_Historical_Data_SQLLoader/DATA/PUBLIC_ARCHIVE%%23%s%%23FILE01%%23%s%s010000.zip",
+    base, year, year, month, table, year, month
+  )
+}
+
+#' Fetch one MMSDM table from recent monthly archives, trying back
+#' up to `max_months_back` months. Returns the first data frame
+#' with at least `min_rows` rows, or NULL.
+#' @noRd
+aemo_fetch_mmsdm_table <- function(table, min_rows = 1L,
+                                    max_months_back = 6L) {
+  now <- Sys.time()
+  attr(now, "tzone") <- AEMO_TIMEZONE
+  for (offset in seq_len(max_months_back)) {
+    target <- as.Date(now) - (offset * 30L)
+    y <- format(target, "%Y")
+    m <- format(target, "%m")
+    url <- aemo_mmsdm_url(table, y, m)
+    df <- tryCatch({
+      zip_path <- aemo_download_cached(url)
+      tmp <- tempfile(paste0("aemo_", tolower(table), "_"))
+      dir.create(tmp, recursive = TRUE)
+      on.exit(unlink(tmp, recursive = TRUE), add = TRUE)
+      utils::unzip(zip_path, exdir = tmp)
+      csvs <- list.files(tmp, pattern = "\\.[Cc][Ss][Vv]$",
+                         full.names = TRUE)
+      if (length(csvs) == 0L) stop("no csv in zip")
+      parsed <- aemo_parse_csv(csvs[[1L]])
+      if (length(parsed) == 0L) stop("empty parse")
+      parsed[[1L]]
+    }, error = function(e) NULL)
+    if (!is.null(df) && nrow(df) >= min_rows) {
+      return(aemo_coerce_types(df))
+    }
+  }
+  NULL
+}
+
 #' @noRd
 aemo_format_bytes <- function(x) {
   if (is.na(x) || x < 1024) return(paste0(x, " B"))
