@@ -1,0 +1,113 @@
+# NEM timestamps: AEST, period-ending, and the 5MS transition
+
+## The NEM market clock
+
+The National Electricity Market operates on **Australian Eastern
+Standard Time (AEST), UTC+10, year-round**. This is not the same as the
+wall-clock time in Sydney or Melbourne, which advance one hour to AEDT
+(UTC+11) during Daylight Saving Time (October to April each year).
+
+The legal basis is NER clause 2.2.6. Using wall-clock time for any AEMO
+data analysis is a common error: every summer timestamp will be parsed
+one hour ahead of the file clock, and timestamps at the DST transition
+boundaries will become ambiguous or `NA`.
+
+The `aemo` package uses `"Australia/Brisbane"` as the timezone for all
+data. Queensland observes AEST year-round (no DST), which gives the
+correct fixed UTC+10 offset:
+
+``` r
+library(aemo)
+
+# All timestamps come back in AEST (UTC+10, no DST).
+# The tzone attribute is "Australia/Brisbane" throughout.
+p <- aemo_price("NSW1", "2024-01-15 14:00", "2024-01-15 15:00")
+attr(p$settlementdate, "tzone")  # "Australia/Brisbane"
+
+# January is summer in Australia. Australia/Sydney would give UTC+11 here,
+# shifting every timestamp one hour ahead of the AEMO file clock.
+# Australia/Brisbane correctly gives UTC+10.
+format(p$settlementdate[1], "%Y-%m-%d %H:%M:%S %Z")
+```
+
+To display times in local wall-clock time for a specific state, convert
+explicitly:
+
+``` r
+# Convert market time to NSW wall clock (observes DST)
+p$local_time_nsw <- format(p$settlementdate, tz = "Australia/Sydney")
+
+# Convert market time to SA wall clock (UTC+9:30 / UTC+10:30 with DST)
+p$local_time_sa <- format(p$settlementdate, tz = "Australia/Adelaide")
+```
+
+## Period-ending timestamps
+
+Every interval in a NEMweb file is labelled with its **period-ending**
+timestamp. A row with `settlementdate = "2024-01-15 14:05:00"` covers
+the 5-minute dispatch interval from 14:00:01 to 14:05:00 (inclusive).
+
+This is the AEMO convention throughout: the timestamp marks when the
+interval closes, not when it opens. For 30-minute trading intervals the
+same rule applies: a row stamped `14:30:00` covers 14:00:01 to 14:30:00.
+
+When computing time-of-day statistics (e.g. peak demand by hour) use the
+interval end-time directly. When joining to external time series that
+use period-*start* timestamps, subtract the interval length:
+
+``` r
+# Period-start timestamps for 5-min intervals
+p$period_start <- p$settlementdate - as.difftime(5, units = "mins")
+
+# Period-start timestamps for 30-min trading intervals
+t$period_start <- t$settlementdate - as.difftime(30, units = "mins")
+```
+
+## The 5-minute settlement transition (1 October 2021)
+
+Before 1 October 2021 the NEM settled electricity on **30-minute trading
+intervals** using `TRADINGPRICE` from the TRADINGIS reports. On that
+date five-minute settlement (5MS) commenced under NER clause 3.15.1A,
+and settlement moved to native **5-minute dispatch prices** from
+DISPATCHPRICE.
+
+Practical implications:
+
+| Query                                        | What [`aemo_price()`](https://charlescoverdale.github.io/aemo/reference/aemo_price.md) returns |
+|----------------------------------------------|------------------------------------------------------------------------------------------------|
+| `interval = "5min"`, any date                | Native 5-min dispatch price from DISPATCHPRICE (DISPATCHIS)                                    |
+| `interval = "30min"`, date before 2021-10-01 | 30-min TRADINGPRICE from TRADINGIS                                                             |
+| `interval = "30min"`, date from 2021-10-01   | Arithmetic mean of six 5-min dispatch prices within the trading interval                       |
+| `interval = "30min"`, spanning 2021-10-01    | Pre-5MS portion from TRADINGIS; post-5MS aggregated from 5-min                                 |
+
+When constructing long historical 30-minute price series that span the
+transition, the aggregation method matches: both the pre-5MS
+TRADINGPRICE and the post-5MS arithmetic mean are simple unweighted
+averages of the six dispatch prices within the trading interval (pre-5MS
+dispatch prices were held constant at the trading-interval price;
+post-5MS they vary).
+
+## Intervention runs
+
+DISPATCHPRICE contains two types of dispatch runs in every file:
+
+- **INTERVENTION = 0**: the market pricing run. This is the price used
+  in settlement and the one most analyses want.
+- **INTERVENTION = 1**: the physical/intervention run, published when
+  AEMO has issued an intervention direction (e.g. the June 2022 market
+  suspension). Both runs coexist in the same file.
+
+All `aemo` data functions default to `intervention = FALSE`, which
+filters to market-pricing rows only. Pass `intervention = TRUE` when you
+need to analyse the intervention pricing itself (e.g. the cost of
+directions during a suspension period).
+
+``` r
+# Default: market pricing run only
+p_market <- aemo_price("NSW1", "2022-06-13", "2022-06-14")
+
+# Both runs (for intervention analysis)
+p_both <- aemo_price("NSW1", "2022-06-13", "2022-06-14",
+                     intervention = TRUE)
+table(p_both$intervention)
+```
