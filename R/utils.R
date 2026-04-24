@@ -10,14 +10,27 @@
 #' (with `#` URL-encoded as `%23`). This helper constructs the
 #' URL and is the single source of truth for the pattern.
 #'
+#' The base URL is read from `options("aemo.mmsdm_base")` so the
+#' 30 April 2026 NEMweb migration can be handled without a
+#' reinstall.
+#'
 #' @param table  AEMO table name in UPPER_CASE (e.g. "DUDETAILSUMMARY").
 #' @param year   4-digit year string (e.g. "2025").
 #' @param month  2-digit month string with leading zero (e.g. "03").
-#' @param base   MMSDM base URL.
+#' @param base   MMSDM base URL. Defaults to the current NEMweb path;
+#'   set `options(aemo.mmsdm_base = "...")` to override globally.
 #' @return A fully-qualified URL string.
 #' @noRd
+AEMO_MMSDM_BASE <- "https://nemweb.com.au/Data_Archive/Wholesale_Electricity/MMSDM"
+
+#' @noRd
+aemo_mmsdm_base <- function() {
+  getOption("aemo.mmsdm_base", default = AEMO_MMSDM_BASE)
+}
+
+#' @noRd
 aemo_mmsdm_url <- function(table, year, month,
-                             base = "https://nemweb.com.au/Data_Archive/Wholesale_Electricity/MMSDM") {
+                             base = aemo_mmsdm_base()) {
   sprintf(
     "%s/%s/MMSDM_%s_%s/MMSDM_Historical_Data_SQLLoader/DATA/PUBLIC_ARCHIVE%%23%s%%23FILE01%%23%s%s010000.zip",
     base, year, year, month, table, year, month
@@ -257,7 +270,7 @@ aemo_coerce_types <- function(df) {
                                       nm, value = TRUE))
   for (col in num_cols) {
     parsed <- suppressWarnings(as.numeric(df[[col]]))
-    # Only replace if a material share parses (>30%) — otherwise
+    # Only replace if a material share parses (>30%). Otherwise
     # the column is probably not numeric despite the name match.
     non_na_char <- sum(!is.na(df[[col]]) & nzchar(as.character(df[[col]])))
     if (non_na_char > 0L && sum(!is.na(parsed)) / non_na_char > 0.3) {

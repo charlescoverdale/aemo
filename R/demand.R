@@ -4,7 +4,7 @@
 #' Three demand measures are supported, aligned with AEMO's
 #' Demand Terms taxonomy:
 #'
-#' - `"operational"` (default): `TOTALDEMAND` — grid-measured
+#' - `"operational"` (default): `TOTALDEMAND`, the grid-measured
 #'   demand met by scheduled and semi-scheduled generation plus
 #'   net interchange. This is the quantity AEMO dispatches.
 #' - `"operational_less_snsg"`: `TOTALDEMAND` minus small

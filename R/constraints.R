@@ -10,7 +10,7 @@
 #' violation degree if any.
 #'
 #' This is the table that answers the question "why was the RRP
-#' so high at 17:35?" — the sum of marginal values across
+#' so high at 17:35?": the sum of marginal values across
 #' binding constraints at the Regional Reference Node equals the
 #' regional price component attributable to network limits.
 #'
@@ -161,4 +161,86 @@ aemo_gencon <- function(constraint_id = NULL, type = NULL) {
 aemo_fetch_gencondata <- function(max_months_back = 6L) {
   aemo_fetch_mmsdm_table("GENCONDATA", min_rows = 1L,
                           max_months_back = max_months_back)
+}
+
+#' SPD constraint tables (regions, interconnectors, connection points)
+#'
+#' Returns the SPD (Security and Projected Dispatch) constraint
+#' coefficient tables from MMSDM. Where `GENCONDATA` gives the
+#' high-level equation definition, the SPD tables give the
+#' per-term *coefficients* used in the NEMDE dispatch
+#' optimisation:
+#'
+#' - `"region"`: `SPDREGIONCONSTRAINT` (regional-demand and
+#'   regional-generation terms).
+#' - `"interconnector"`: `SPDINTERCONNECTORCONSTRAINT`
+#'   (interconnector-flow terms).
+#' - `"connection_point"`: `SPDCONNECTIONPOINTCONSTRAINT`
+#'   (per-DUID connection-point terms).
+#'
+#' These tables are required for NEM dispatch replication (the
+#' `nempy` Python package, Gorman, Bruce & MacGill 2022,
+#' *JOSS* 7(70) 3596, <doi:10.21105/joss.03596>, uses all three
+#' when reproducing NEMDE solves).
+#'
+#' @param table One of `"region"` (default), `"interconnector"`,
+#'   or `"connection_point"`.
+#' @param constraint_id Optional character vector of
+#'   `GENCONID`/`CONSTRAINTID` values.
+#'
+#' @return An `aemo_tbl` with columns from the requested SPD
+#'   table. `GENCONID` and `FACTOR` (the coefficient) are
+#'   always present; other columns vary by table.
+#'
+#' @source AEMO NEMweb MMSDM archive, SPDREGIONCONSTRAINT /
+#'   SPDINTERCONNECTORCONSTRAINT / SPDCONNECTIONPOINTCONSTRAINT.
+#'
+#' @seealso [aemo_gencon()] for the equation-level metadata,
+#'   [aemo_constraints()] for the 5-min binding-constraint
+#'   feed with shadow prices.
+#'
+#' @family dispatch
+#' @export
+#' @examples
+#' \donttest{
+#' op <- options(aemo.cache_dir = tempdir())
+#' try({
+#'   s <- aemo_spd_constraints(table = "interconnector")
+#'   head(s)
+#' })
+#' options(op)
+#' }
+aemo_spd_constraints <- function(table = c("region", "interconnector",
+                                            "connection_point"),
+                                  constraint_id = NULL) {
+  table <- match.arg(table)
+  mmsdm_table <- switch(table,
+    region            = "SPDREGIONCONSTRAINT",
+    interconnector    = "SPDINTERCONNECTORCONSTRAINT",
+    connection_point  = "SPDCONNECTIONPOINTCONSTRAINT"
+  )
+
+  df <- tryCatch(
+    aemo_fetch_mmsdm_table(mmsdm_table, min_rows = 1L),
+    error = function(e) NULL
+  )
+  if (is.null(df) || nrow(df) == 0L) {
+    cli::cli_abort(c(
+      "Could not retrieve {mmsdm_table} from MMSDM.",
+      "i" = "Try {.fn aemo_nemweb_download} with an MMSDM URL directly."
+    ))
+  }
+
+  if (!is.null(constraint_id)) {
+    id_col <- intersect(c("genconid", "constraintid"), names(df))[1L]
+    if (!is.na(id_col)) {
+      df <- df[df[[id_col]] %in% constraint_id, , drop = FALSE]
+      rownames(df) <- NULL
+    }
+  }
+  new_aemo_tbl(df,
+               source = "https://nemweb.com.au/Data_Archive/Wholesale_Electricity/MMSDM",
+               licence = "AEMO Copyright Permissions Notice",
+               title = paste0("NEM ", mmsdm_table,
+                              " (SPD constraint coefficients)"))
 }

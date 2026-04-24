@@ -33,6 +33,14 @@
 #' caps <- aemo_price_caps()
 #' head(caps)
 aemo_price_caps <- function() {
+  # Pre-2022 values from the AEMC 2018 Reliability Standard & Settings
+  # Review (RSSR); 2022-23 onwards from the AEMC's 2022 Reliability
+  # Settings Review which materially lifted the CPT after the June 2022
+  # NEM suspension. The CPT step-change from AUD 232,900 (2020-21) to
+  # AUD 1,359,100 (2021-22 revised / 2022-23) reflects the rule change
+  # from "7.5 x weekly CPT base" to the new formula.
+  # Per-row source: the row's CPT / MPC / APC comes from the AEMC
+  # determination cited in `source_doc`.
   df <- data.frame(
     year = c("2015-16", "2016-17", "2017-18", "2018-19",
              "2019-20", "2020-21", "2021-22", "2022-23",
@@ -49,7 +57,19 @@ aemo_price_caps <- function() {
       1502100, 1577100, 1626800
     ),
     administered_price_cap_aud_per_mwh = rep(300, 11),
-    source = rep("AEMC Reliability Standard & Settings review", 11),
+    source_doc = c(
+      "AEMC 2014 RSSR final determination (CPI-indexed annually)",
+      "AEMC 2014 RSSR final determination (CPI-indexed annually)",
+      "AEMC 2014 RSSR final determination (CPI-indexed annually)",
+      "AEMC 2018 RSSR final determination (CPI-indexed annually)",
+      "AEMC 2018 RSSR final determination (CPI-indexed annually)",
+      "AEMC 2018 RSSR final determination (CPI-indexed annually)",
+      "AEMC 2020 RSSR final determination; CPT revised per 2022 review",
+      "AEMC 2022 Reliability Settings Review final determination",
+      "AEMC 2022 Reliability Settings Review + 2023 CPI indexation",
+      "AEMC 2024 Reliability Settings Review final determination",
+      "AEMC 2024 Reliability Settings Review + 2025 CPI indexation"
+    ),
     stringsAsFactors = FALSE
   )
   new_aemo_tbl(df,

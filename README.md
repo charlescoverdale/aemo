@@ -41,7 +41,7 @@ NEMweb directory listings are parsed into tidy data frames. The `C,/I,/D,/F,` ro
 
 The `aemo` package name was previously held by Imanuel Costigan's package, which was on CRAN from June 2014 to April 2020 (v0.1.0 to v0.3.0) and archived on 29 December 2021. That package implemented three functions covering prices and demand only. This rewrite is an independent implementation that shares only the package name and expands scope to the full NEMweb and MMSDM data surface.
 
-Because the old registry entry still exists, the standard CRAN status and download badges pull from Costigan's historical data (CRAN 0.3.0, ~5 downloads per month, 40K lifetime) rather than from this rewrite. Those three badges are omitted above until v0.1.0 of the new package lands on CRAN and the registry snaps to it.
+Because the old registry entry still exists, the standard CRAN status and download badges pull from Costigan's historical data (CRAN 0.3.0, ~5 downloads per month, 40K lifetime) rather than from this rewrite. Those three badges are omitted above until v0.4.0 of the new package lands on CRAN and the registry snaps to it. The version starts at 0.4.0 so it sits strictly above the last archived version (0.3.0), per CRAN policy on reclaimed names.
 
 ## How does aemo compare to NEMOSIS and nemwebR?
 
@@ -311,7 +311,7 @@ Attribution on derivative work (AEMO's requirement in full): *Source: AEMO. AEMO
 - **No 4-second FCAS.** The sub-second FCAS files (`FCAS_4_SECOND`) are hundreds of MB per day and niche. Planned for a future release.
 - **No settlement tables.** `SETCFM` and `SETRESIDUALS` (settlement reconciliation) are not yet wrapped. Gentailer reconciliation workflows need these. Use `aemo_nemweb_download()` with an MMSDM URL directly.
 - **No ISP, GSOO, or IASR forecast workbooks.** AEMO's long-run planning studies are published as XLSX supplements. Use AEMO's publications page directly.
-- **No Wallumbilla GSH or ECGS gas data.** Out of scope for v0.1.0.
+- **No Wallumbilla GSH or ECGS gas data.** Out of scope for v0.4.0.
 - **Known upstream gap.** AEMO has a documented gap in `BIDPEROFFER_D` between March 2021 and July 2024 that is not yet backfilled. Expect missing observations across that span.
 - **NEMweb HTTP decommissioning 7 April 2026 and base-URL migration 30 April 2026.** The package uses `options(aemo.base_url = ...)` so you can point at a new host without reinstalling.
 - **Schema drift.** `DISPATCHLOAD` added columns in April 2021 (MMSDM v5.0, coincident with 5-minute settlement). The `I,` header row in each file is the source of truth, so the parser handles this transparently, but inspect `names(df)` before any cross-MMSDM-version join.
@@ -331,6 +331,28 @@ Attribution on derivative work (AEMO's requirement in full): *Source: AEMO. AEMO
 | [`readaec`](https://github.com/charlescoverdale/readaec) | Australian Electoral Commission |
 | [`readabs`](https://github.com/mattcowgill/readabs) | Australian Bureau of Statistics |
 | [`readrba`](https://github.com/mattcowgill/readrba) | Reserve Bank of Australia |
+
+## A note on GST
+
+All NEM wholesale prices in AEMO's published feeds, and hence in this package, are **exclusive of GST**. See National Electricity Rules, Chapter 10 (Definitions: "spot price"). When computing revenue figures for comparison against published financial statements or retail prices, gross up by 1.10 as appropriate.
+
+## References
+
+Methodology choices in this package follow the design conventions of the established NEM literature. Where a design decision is non-obvious, the docs cite the original:
+
+- Gorman, N., Haghdadi, N., Bruce, A., & MacGill, I. (2018). *NEMOSIS: NEM Open Source Information Service: open-source access to Australian National Electricity Market Data*. Asia-Pacific Solar Research Conference. The authoritative reference for NEM data-model conventions.
+- Gorman, N., Bruce, A., & MacGill, I. (2022). *Nempy: A Python package for modelling the Australian National Electricity Market dispatch procedure*. Journal of Open Source Software 7(70), 3596. [doi:10.21105/joss.03596](https://doi.org/10.21105/joss.03596).
+- Prakash, A., Bruce, A., & MacGill, I. (2023). *NEMSEER: A Python package for downloading and handling historical National Electricity Market forecast data*. Journal of Open Source Software 8(92), 5883. [doi:10.21105/joss.05883](https://doi.org/10.21105/joss.05883). The `aemo_predispatch(run_datetime =)` vintage pattern follows NEMSEER.
+
+Academic uses of NEM data this package is designed to support:
+
+- Gonçalves, R. & Menezes, F. (2022). *The price impacts of the exit of the Hazelwood coal power plant*. Energy Economics 113, 106398. [doi:10.1016/j.eneco.2022.106398](https://doi.org/10.1016/j.eneco.2022.106398). Uses DISPATCHLOAD + BIDPEROFFER_D + DISPATCHPRICE at 5-min resolution.
+- Mountain, B. (2025). *The exercise of market power in Australia's National Electricity Market following the closure of the Hazelwood Power Station*. Victoria Energy Policy Centre working paper. [doi:10.2139/ssrn.5285882](https://doi.org/10.2139/ssrn.5285882).
+- Nelson, T., Easton, L., Wand, M., Gilmore, J. & Nolan, T. (2024). *Electricity contract design and wholesale market outcomes in Australia's National Electricity Market*. Australian Journal of Agricultural and Resource Economics 68(4), 784-804. [doi:10.1111/1467-8489.12588](https://doi.org/10.1111/1467-8489.12588).
+- Rangarajan, S., Svec, J., Foley, S. & Trück, S. (2025). *Revisiting the crisis: An empirical analysis of the NEM suspension*. Energy Economics 141. [doi:10.1016/j.eneco.2024.107983](https://doi.org/10.1016/j.eneco.2024.107983). Uses MARKETNOTICEDATA + DISPATCHPRICE with `INTERVENTION = 1`.
+- Simshauser, P. & Wild, P. (2024). *Rooftop Solar PV, Coal Plant Inflexibility and the Minimum Load Problem*. The Energy Journal. [doi:10.1177/01956574241283732](https://doi.org/10.1177/01956574241283732).
+- Simshauser, P. & Gilmore, J. (2025). *Demand Shocks From the Gas Turbine Fleet in Australia's National Electricity Market*. Australian Journal of Agricultural and Resource Economics. [doi:10.1111/1467-8489.70065](https://doi.org/10.1111/1467-8489.70065).
+- Australian Energy Regulator (2025). *State of the Energy Market 2025, Chapter 2: National Electricity Market*.
 
 ## Citation
 

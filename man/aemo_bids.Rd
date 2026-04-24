@@ -8,7 +8,7 @@ aemo_bids(
   duid,
   start,
   end,
-  resolution = c("day", "period"),
+  resolution = c("day", "period", "joined"),
   allow_large = FALSE
 )
 }
@@ -17,8 +17,10 @@ aemo_bids(
 
 \item{start, end}{Window.}
 
-\item{resolution}{One of \code{"day"} (default, BIDDAYOFFER_D) or
-\code{"period"} (BIDPEROFFER_D, much larger).}
+\item{resolution}{One of \code{"day"} (default, BIDDAYOFFER_D
+only), \code{"period"} (BIDPEROFFER_D only), or \code{"joined"}
+(BIDDAYOFFER_D inner-joined to BIDPEROFFER_D on
+\verb{(duid, settlementdate, bidtype)}).}
 
 \item{allow_large}{Logical. Default \code{FALSE}.}
 }
@@ -26,11 +28,21 @@ aemo_bids(
 An \code{aemo_tbl}.
 }
 \description{
-Returns \code{BIDDAYOFFER_D} (daily bid summary: MaxAvail, fixed
-load, 10 price bands) or \code{BIDPEROFFER_D} (per-interval
-availability and rebids) for specified generators.
+Returns \code{BIDDAYOFFER_D} (daily bid summary: 10 price bands,
+MaxAvail, fixed load, locked at 12:30 D-1), \code{BIDPEROFFER_D}
+(per-interval availability and rebids), or the two joined on
+\verb{(duid, settlementdate, bidtype)}.
 }
 \details{
+\strong{Parent / child structure.} \code{BIDDAYOFFER_D} carries the
+\strong{price bands} (\code{priceband1..priceband10}), which are locked
+at 12:30 on the day ahead and cannot be rebid.
+\code{BIDPEROFFER_D} carries the \strong{per-interval availability
+bands} (\code{bandavail1..bandavail10}), which can be rebid
+intraday. Serious bidding analysis (Goncalves & Menezes 2022
+Energy Economics 113 106398; Nelson et al. 2024 AJARE 68(4))
+needs both joined.
+
 \strong{Size warning.} \code{BIDPEROFFER_D} monthly archives are
 multi-gigabyte. By default \code{aemo_bids()} refuses spans longer
 than 30 days; pass \code{allow_large = TRUE} to override.
@@ -44,9 +56,13 @@ that range may be missing.
 op <- options(aemo.cache_dir = tempdir())
 try({
   now <- Sys.time()
+  # Daily bid summary (price bands)
   b <- aemo_bids(duid = "BW01",
                   start = now - 86400, end = now)
-  head(b)
+
+  # Joined: price bands + per-interval volumes
+  bj <- aemo_bids(duid = "BW01", start = now - 86400, end = now,
+                   resolution = "joined")
 })
 options(op)
 }
@@ -58,7 +74,9 @@ Other dispatch:
 \code{\link{aemo_fcas_enablement}()},
 \code{\link{aemo_gencon}()},
 \code{\link{aemo_interconnector}()},
+\code{\link{aemo_market_notices}()},
 \code{\link{aemo_outages}()},
-\code{\link{aemo_rooftop_pv}()}
+\code{\link{aemo_rooftop_pv}()},
+\code{\link{aemo_spd_constraints}()}
 }
 \concept{dispatch}

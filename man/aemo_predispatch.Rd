@@ -4,7 +4,13 @@
 \alias{aemo_predispatch}
 \title{Price and demand forecasts (P5MIN, PREDISPATCH)}
 \usage{
-aemo_predispatch(region, start, end, horizon = c("predispatch", "p5min"))
+aemo_predispatch(
+  region,
+  start,
+  end,
+  horizon = c("predispatch", "p5min"),
+  run_datetime = NULL
+)
 }
 \arguments{
 \item{region}{NEM region code.}
@@ -12,6 +18,10 @@ aemo_predispatch(region, start, end, horizon = c("predispatch", "p5min"))
 \item{start, end}{Window of forecast run-times.}
 
 \item{horizon}{One of \code{"predispatch"} (default) or \code{"p5min"}.}
+
+\item{run_datetime}{Optional character or \code{POSIXct}. A specific
+\code{RUN_DATETIME} to pin to. \code{NULL} (default) returns every
+vintage issued in \verb{[start, end]}.}
 }
 \value{
 An \code{aemo_tbl}.
@@ -29,6 +39,27 @@ resolution, published every 30 minutes.
 \details{
 The 7-day predispatch publication was retired when 5-minute
 settlement commenced; for longer horizons use \code{\link[=aemo_pasa]{aemo_pasa()}}.
+
+\strong{Vintages.} PREDISPATCH and P5MIN forecasts are re-issued
+every 30 or 5 minutes respectively. Every vintage is archived
+by its \code{RUN_DATETIME}. By default (\code{run_datetime = NULL}) this
+function returns all vintages whose \emph{file} timestamp falls in
+\verb{[start, end]}, i.e. all the forecasts \emph{issued} during the
+window. The \code{periodid} / \code{datetime} columns on the returned
+rows give each forecast's \emph{target} time.
+
+For forecast-error research (comparing a forecast vintage
+against the realised dispatch) pass \code{run_datetime} to pin a
+specific vintage:
+
+\if{html}{\out{<div class="sourceCode r">}}\preformatted{# The PREDISPATCH run issued at 15:00 on 1 June 2024 --
+# 80 half-hour-ahead rows covering 15:30 out to 31:30 hours.
+v <- aemo_predispatch("NSW1", start = "2024-06-01", end = "2024-06-02",
+                      run_datetime = "2024-06-01 15:00")
+}\if{html}{\out{</div>}}
+
+This is the vintage-aware pattern used in Prakash (2023)
+\emph{NEMSEER} (JOSS 8(92) 5883).
 }
 \examples{
 \donttest{

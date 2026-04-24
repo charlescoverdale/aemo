@@ -1,6 +1,6 @@
 Package: aemo
 Title: Download Australian Energy Market Operator Data
-Version: 0.1.0
+Version: 0.4.0
 Authors@R:
     person("Charles", "Coverdale", , "charlesfcoverdale@gmail.com", role = c("aut", "cre"))
 Description: Fetch Australian Energy Market Operator ('AEMO')
@@ -23,11 +23,11 @@ RoxygenNote: 7.3.3
 Imports:
     cli (>= 3.6.0),
     httr2 (>= 1.0.0),
+    openssl (>= 2.0.0),
     tools,
     utils
 Suggests:
     knitr,
-    openssl,
     rmarkdown,
     testthat (>= 3.0.0),
     withr

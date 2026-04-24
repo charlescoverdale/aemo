@@ -46,7 +46,7 @@ aemo_download_cached <- function(url, cache = TRUE) {
         return(file)
       }
     } else {
-      # No sidecar yet — write one so future calls can verify.
+      # No sidecar yet. Write one so future calls can verify.
       writeLines(aemo_sha256_file(file), hash_file)
       return(file)
     }
@@ -76,24 +76,23 @@ aemo_download_cached <- function(url, cache = TRUE) {
 
 #' Compute a SHA-256 hex digest of a file.
 #'
-#' Uses `tools::md5sum()` as a fallback when `openssl` is absent.
-#' The digest is used for cache-integrity verification only, not
-#' cryptographic security, so MD5 is acceptable if SHA-256 is
-#' unavailable.
+#' `openssl` is an Import (see DESCRIPTION), so it is always
+#' available. Used for cache-integrity verification, not
+#' cryptographic security.
 #' @noRd
 aemo_sha256_file <- function(path) {
-  if (requireNamespace("openssl", quietly = TRUE)) {
-    as.character(openssl::sha256(file(path, "rb")))
-  } else {
-    # tools::md5sum is always available (base R)
-    paste0("md5:", unname(tools::md5sum(path)))
-  }
+  as.character(openssl::sha256(file(path, "rb")))
 }
 
+#' Cache key for a URL.
+#'
+#' Collision-free: SHA-256 of the URL bytes, truncated to 16
+#' hex characters (64 bits). At this width the expected number
+#' of collisions across AEMO's entire MMSDM history is
+#' effectively zero. v0.1.0 used a bespoke weighted-character
+#' checksum with a realistic collision probability on large
+#' caches.
 #' @noRd
 aemo_digest_url <- function(url) {
-  chars <- utf8ToInt(url)
-  weights <- seq_along(chars)
-  checksum <- sum(as.numeric(chars) * weights) %% (2^31 - 1)
-  sprintf("%010.0f_%04d", as.numeric(checksum), nchar(url) %% 10000L)
+  substr(as.character(openssl::sha256(charToRaw(url))), 1L, 16L)
 }

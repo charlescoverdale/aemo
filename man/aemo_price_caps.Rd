@@ -45,6 +45,8 @@ Other reference:
 \code{\link{aemo_mlf}()},
 \code{\link{aemo_participants}()},
 \code{\link{aemo_regions}()},
+\code{\link{aemo_settlement}()},
+\code{\link{aemo_snapshot}()},
 \code{\link{aemo_units}()}
 }
 \concept{reference}

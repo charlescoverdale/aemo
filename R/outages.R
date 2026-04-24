@@ -17,7 +17,7 @@
 #' spot price AUD 15,000 at 17:35?".
 #'
 #' @param start,end Outage window (inclusive). Filters on
-#'   `starttime` and `endtime` — any outage active during the
+#'   `starttime` and `endtime`: any outage active during the
 #'   window is returned. Character or POSIXct.
 #' @param element_id Optional character vector of network
 #'   element IDs. `NULL` returns all elements.

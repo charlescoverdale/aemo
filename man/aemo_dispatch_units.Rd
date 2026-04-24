@@ -8,7 +8,7 @@ aemo_dispatch_units(
   duid = NULL,
   start,
   end,
-  measure = c("scada_mw", "target_mw")
+  measure = c("scada_mw", "target_mw", "both")
 )
 }
 \arguments{
@@ -17,27 +17,47 @@ all generators.}
 
 \item{start, end}{Window (inclusive).}
 
-\item{measure}{One of \code{"scada_mw"} (actual output from
-DISPATCH_UNIT_SCADA, default) or \code{"target_mw"} (dispatch
-target from DISPATCHLOAD).}
+\item{measure}{One of \code{"scada_mw"} (default), \code{"target_mw"},
+or \code{"both"}.}
 }
 \value{
 An \code{aemo_tbl} with columns \code{settlementdate}, \code{duid},
-and the requested measure.
+and the requested measure(s).
 }
 \description{
-Returns 5-minute SCADA output or dispatch target MW for one
-or more generator units identified by DUID (Dispatchable Unit
-Identifier). Timestamps are AEST (UTC+10, no DST).
+Returns 5-minute generator output for one or more DUIDs.
+Three measures are available:
+}
+\details{
+\itemize{
+\item \code{"scada_mw"} (default): actual metered output from
+\code{DISPATCH_UNIT_SCADA} (\code{SCADAVALUE}).
+\item \code{"target_mw"}: dispatch target from \code{DISPATCHLOAD}
+(\code{TOTALCLEARED}). This is the MW AEMO \emph{asked} the unit to
+produce at the end of the interval.
+\item \code{"both"}: returns \code{SCADAVALUE}, \code{INITIALMW} (SCADA at the
+start of the interval) and \code{TOTALCLEARED} (target at the
+end) in a single row per DUID per interval. Use this for
+ramp-trajectory research: the ramp applied during the
+interval is the straight line from \code{INITIALMW} to
+\code{TOTALCLEARED}.
+}
+
+Timestamps are AEST (UTC+10, no DST).
 }
 \examples{
 \donttest{
 op <- options(aemo.cache_dir = tempdir())
 try({
   now <- Sys.time()
+  # SCADA actual
   d <- aemo_dispatch_units(duid = "BW01", start = now - 3600,
                             end = now)
-  head(d)
+
+  # Paired: INITIALMW, TOTALCLEARED, SCADAVALUE (ramp research)
+  d_both <- aemo_dispatch_units(duid = "BW01",
+                                 start = now - 3600, end = now,
+                                 measure = "both")
 })
 options(op)
 }
@@ -49,7 +69,9 @@ Other dispatch:
 \code{\link{aemo_fcas_enablement}()},
 \code{\link{aemo_gencon}()},
 \code{\link{aemo_interconnector}()},
+\code{\link{aemo_market_notices}()},
 \code{\link{aemo_outages}()},
-\code{\link{aemo_rooftop_pv}()}
+\code{\link{aemo_rooftop_pv}()},
+\code{\link{aemo_spd_constraints}()}
 }
 \concept{dispatch}

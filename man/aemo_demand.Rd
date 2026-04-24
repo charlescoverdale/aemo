@@ -38,7 +38,7 @@ Demand Terms taxonomy:
 }
 \details{
 \itemize{
-\item \code{"operational"} (default): \code{TOTALDEMAND} — grid-measured
+\item \code{"operational"} (default): \code{TOTALDEMAND}, the grid-measured
 demand met by scheduled and semi-scheduled generation plus
 net interchange. This is the quantity AEMO dispatches.
 \item \code{"operational_less_snsg"}: \code{TOTALDEMAND} minus small

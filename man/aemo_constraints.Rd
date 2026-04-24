@@ -45,7 +45,7 @@ violation degree if any.
 }
 \details{
 This is the table that answers the question "why was the RRP
-so high at 17:35?" — the sum of marginal values across
+so high at 17:35?": the sum of marginal values across
 binding constraints at the Regional Reference Node equals the
 regional price component attributable to network limits.
 
@@ -72,7 +72,9 @@ Other dispatch:
 \code{\link{aemo_fcas_enablement}()},
 \code{\link{aemo_gencon}()},
 \code{\link{aemo_interconnector}()},
+\code{\link{aemo_market_notices}()},
 \code{\link{aemo_outages}()},
-\code{\link{aemo_rooftop_pv}()}
+\code{\link{aemo_rooftop_pv}()},
+\code{\link{aemo_spd_constraints}()}
 }
 \concept{dispatch}

@@ -64,7 +64,7 @@ test_that("intervention filter correctly removes INTERVENTION=1 rows", {
   price_nm <- names(tables)[grepl("price", names(tables), ignore.case = TRUE)][1L]
   df <- aemo:::aemo_coerce_types(tables[[price_nm]])
 
-  # Fixture has only INTERVENTION=0 rows — filter should return all rows
+  # Fixture has only INTERVENTION=0 rows; filter should return all rows
   df_filtered <- aemo:::aemo_apply_filters(df, intervention = FALSE)
   expect_equal(nrow(df_filtered), nrow(df))
 

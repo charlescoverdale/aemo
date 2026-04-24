@@ -2,7 +2,7 @@
 # intervals return the correct data. These are integration tests that
 # require a live network connection; they are skipped on CRAN and CI
 # without a network. A failure here means a silent data bug (wrong
-# table extracted, wrong column, wrong filter) — not just an API error.
+# table extracted, wrong column, wrong filter), not just an API error.
 
 skip_if_offline <- function() {
   testthat::skip_if_not(

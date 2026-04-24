@@ -46,6 +46,8 @@ Other dispatch:
 \code{\link{aemo_fcas_enablement}()},
 \code{\link{aemo_gencon}()},
 \code{\link{aemo_interconnector}()},
-\code{\link{aemo_outages}()}
+\code{\link{aemo_market_notices}()},
+\code{\link{aemo_outages}()},
+\code{\link{aemo_spd_constraints}()}
 }
 \concept{dispatch}

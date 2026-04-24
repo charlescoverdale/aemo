@@ -52,11 +52,11 @@ aemo_mlf <- function(year = NULL, duid = NULL) {
                  error = function(e) NULL)
 
   if (is.null(df) || nrow(df) < 20L) {
-    cli::cli_warn(c(
-      "Could not reach MMSDM TRANSMISSIONLOSSFACTOR; returning bundled fallback.",
-      "i" = "The fallback covers ~20 DUIDs for FY 2020-21 to FY 2025-26 only."
+    cli::cli_abort(c(
+      "Could not retrieve TRANSMISSIONLOSSFACTOR from MMSDM.",
+      "i" = "MLFs are published annually by AEMO under NER 3.6.2. For historical analysis, download the determination PDF directly from aemo.com.au, or retry when the MMSDM archive is reachable.",
+      "i" = "No fallback is provided: unsourced MLF values would be a correctness trap in settlement and PPA workflows."
     ))
-    df <- aemo_mlf_fallback()
   }
 
   if (!is.null(year)) {
@@ -194,32 +194,3 @@ aemo_fy_label <- function(x) {
   paste0(start_yr, "-", end_yy)
 }
 
-#' Static MLF fallback for ~20 well-known DUIDs, FY 2020-21 to FY 2025-26.
-#'
-#' Values sourced from AEMO's published MLF determination documents.
-#' This is a sample only — use the live MMSDM download for
-#' comprehensive generator coverage.
-#' @noRd
-aemo_mlf_fallback <- function() {
-  data.frame(
-    financial_year = c(
-      rep("2020-21", 5L), rep("2021-22", 5L),
-      rep("2022-23", 5L), rep("2023-24", 5L),
-      rep("2024-25", 5L), rep("2025-26", 5L)
-    ),
-    duid = rep(c("BW01", "ER01", "LBBG1", "VPML", "HDWF1"), 6L),
-    connectionpointid = rep(c("NSWMUSWPT1", "NSWLAKEPT1",
-                               "SALBBLPT1", "VICLBB1PT1",
-                               "SAWHERYPT1"), 6L),
-    regionid = rep(c("NSW1", "NSW1", "SA1", "VIC1", "SA1"), 6L),
-    mlf = c(
-      0.9823, 0.9856, 1.0102, 0.9968, 1.0214,
-      0.9810, 0.9841, 1.0088, 0.9955, 1.0198,
-      0.9799, 0.9832, 1.0076, 0.9943, 1.0187,
-      0.9791, 0.9826, 1.0068, 0.9936, 1.0179,
-      0.9784, 0.9819, 1.0061, 0.9929, 1.0172,
-      0.9778, 0.9813, 1.0055, 0.9922, 1.0166
-    ),
-    stringsAsFactors = FALSE
-  )
-}

@@ -12,7 +12,7 @@ aemo_outages(start, end, element_id = NULL, outage_type = NULL, region = NULL)
 }
 \arguments{
 \item{start, end}{Outage window (inclusive). Filters on
-\code{starttime} and \code{endtime} — any outage active during the
+\code{starttime} and \code{endtime}: any outage active during the
 window is returned. Character or POSIXct.}
 
 \item{element_id}{Optional character vector of network
@@ -74,6 +74,8 @@ Other dispatch:
 \code{\link{aemo_fcas_enablement}()},
 \code{\link{aemo_gencon}()},
 \code{\link{aemo_interconnector}()},
-\code{\link{aemo_rooftop_pv}()}
+\code{\link{aemo_market_notices}()},
+\code{\link{aemo_rooftop_pv}()},
+\code{\link{aemo_spd_constraints}()}
 }
 \concept{dispatch}

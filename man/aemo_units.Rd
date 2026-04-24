@@ -8,7 +8,12 @@ AEMO NEMweb MMSDM archive, DUDETAILSUMMARY table,
 AEMO Copyright Permissions Notice.
 }
 \usage{
-aemo_units()
+aemo_units(as_of = NULL)
+}
+\arguments{
+\item{as_of}{Optional \code{Date} or \code{POSIXct}. Returns the DUID
+registry as it was on that date. \code{NULL} (default) returns
+the current registry.}
 }
 \value{
 An \code{aemo_tbl} keyed by \code{duid}. Columns include (from
@@ -18,24 +23,37 @@ DUDETAILSUMMARY): \code{duid}, \code{stationid}, \code{regionid},
 NON-SCHEDULED), \code{start_date}, \code{end_date}.
 }
 \description{
-Downloads the current DUDETAILSUMMARY table from the most
-recent MMSDM monthly archive and returns one row per
-registered DUID (Dispatchable Unit Identifier) with station,
-region, dispatch type, classification, and schedule type.
-Typical output is 500+ DUIDs covering scheduled,
-semi-scheduled, and non-scheduled generators, bidirectional
-storage (BESS), and loads.
+Downloads the \code{DUDETAILSUMMARY} table from the most recent
+MMSDM monthly archive and returns one row per registered DUID
+(Dispatchable Unit Identifier) with station, region, dispatch
+type, classification, and schedule type. Typical output is
+500+ DUIDs covering scheduled, semi-scheduled, and
+non-scheduled generators, bidirectional storage (BESS), and
+loads.
 }
 \details{
-If the MMSDM archive is unreachable, the function returns a
-12-row fallback table of well-known DUIDs and emits a warning.
+\strong{Effective-date filtering.} \code{DUDETAILSUMMARY} is
+effective-dated (\code{START_DATE}, \code{END_DATE} per row with
+multiple \code{VERSIONNO} vintages per DUID over time). The
+default (\code{as_of = NULL}) returns rows whose
+\verb{[START_DATE, END_DATE]} interval covers the date the MMSDM
+archive was published: i.e. the \emph{current} registry. Pass an
+\code{as_of} date to get the registry as it was on that date
+(essential for historical analysis: Liddell's four DUIDs
+were retired in April 2023; pre-2023 queries need them).
+
+This matches the as-of-join pattern documented in Gorman et
+al. (2018) \emph{NEMOSIS} (APSRC) for correct historical joins.
 }
 \examples{
 \donttest{
 op <- options(aemo.cache_dir = tempdir())
 try({
+  # Current DUID registry
   u <- aemo_units()
-  head(u)
+
+  # DUIDs as they were on 1 March 2023 (pre-Liddell retirement)
+  u_2023 <- aemo_units(as_of = "2023-03-01")
 })
 options(op)
 }
@@ -47,6 +65,8 @@ Other reference:
 \code{\link{aemo_mlf}()},
 \code{\link{aemo_participants}()},
 \code{\link{aemo_price_caps}()},
-\code{\link{aemo_regions}()}
+\code{\link{aemo_regions}()},
+\code{\link{aemo_settlement}()},
+\code{\link{aemo_snapshot}()}
 }
 \concept{reference}

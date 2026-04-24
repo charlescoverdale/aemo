@@ -1,13 +1,44 @@
 bibentry(
-  bibtype = "Manual",
-  title   = "aemo: Download Australian Energy Market Operator Data",
-  author  = person("Charles", "Coverdale"),
-  year    = format(Sys.Date(), "%Y"),
-  note    = sprintf("R package version %s", meta$Version),
-  url     = "https://cran.r-project.org/package=aemo",
+  bibtype  = "Manual",
+  title    = "aemo: Download Australian Energy Market Operator Data",
+  author   = person("Charles", "Coverdale"),
+  year     = format(Sys.Date(), "%Y"),
+  note     = sprintf("R package version %s", meta$Version),
+  url      = "https://cran.r-project.org/package=aemo",
+  doi      = "10.5281/zenodo.placeholder",
   textVersion = sprintf(
     "Coverdale, C. (%s). aemo: Download Australian Energy Market Operator Data. R package version %s. https://cran.r-project.org/package=aemo",
     format(Sys.Date(), "%Y"),
     meta$Version
-  )
+  ),
+  header   = "To cite the 'aemo' R package in publications:"
+)
+
+bibentry(
+  bibtype  = "InProceedings",
+  title    = "NEMOSIS -- NEM Open Source Information Service: open-source access to Australian National Electricity Market Data",
+  author   = c(person("Nicholas", "Gorman"),
+               person("Naser", "Haghdadi"),
+               person("Anna", "Bruce"),
+               person("Iain", "MacGill")),
+  booktitle = "Asia-Pacific Solar Research Conference",
+  year     = "2018",
+  address  = "Sydney, Australia",
+  url      = "https://www.ceem.unsw.edu.au/sites/default/files/documents/194_D-I_Gorman_N_2018.pdf",
+  header   = "For the Python equivalent (NEMOSIS) and the data-model conventions this package follows, cite:"
+)
+
+bibentry(
+  bibtype  = "Article",
+  title    = "NEMSEER: A Python package for downloading and handling historical National Electricity Market forecast data produced by the Australian Energy Market Operator",
+  author   = c(person("Abhijith", "Prakash"),
+               person("Anna", "Bruce"),
+               person("Iain", "MacGill")),
+  journal  = "Journal of Open Source Software",
+  volume   = "8",
+  number   = "92",
+  pages    = "5883",
+  year     = "2023",
+  doi      = "10.21105/joss.05883",
+  header   = "For the forecast-vintage workflow that aemo_predispatch(run_datetime=) mirrors, cite:"
 )

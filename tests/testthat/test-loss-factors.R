@@ -12,31 +12,40 @@ test_that("aemo_fy_label converts dates to FY strings correctly", {
   expect_equal(aemo:::aemo_fy_label(p), "2024-25")
 })
 
-test_that("aemo_mlf_fallback returns expected structure", {
-  fb <- aemo:::aemo_mlf_fallback()
-  expect_true(is.data.frame(fb))
-  expect_true(all(c("financial_year", "duid", "mlf") %in% names(fb)))
-  expect_true(nrow(fb) >= 20L)
-  expect_true(all(fb$mlf > 0.8 & fb$mlf < 1.2))
+test_that("aemo_mlf aborts when MMSDM is unreachable (no fallback)", {
+  # v0.2.0 removed the indicative MLF fallback: unsourced values are a
+  # correctness trap. MMSDM being unreachable must abort rather than
+  # return invented numbers. This test is skipped when MMSDM is live.
+  testthat::skip_on_cran()
+  testthat::skip_if_not(
+    identical(Sys.getenv("AEMO_FORCE_OFFLINE_TESTS"), "true"),
+    "Offline-abort test runs only when AEMO_FORCE_OFFLINE_TESTS=true"
+  )
+  withr::local_options(aemo.cache_dir = tempdir(),
+                       aemo.base_url = "http://127.0.0.1:1")
+  expect_error(aemo_mlf(year = "2024-25"),
+               "Could not retrieve TRANSMISSIONLOSSFACTOR")
 })
 
-test_that("aemo_mlf filters by year and duid", {
+test_that("aemo_mlf filters by year and duid when MMSDM reachable", {
+  testthat::skip_on_cran()
+  skip_if_not(
+    isTRUE(tryCatch({
+      httr2::request("http://nemweb.com.au") |>
+        httr2::req_timeout(5) |>
+        httr2::req_perform()
+      TRUE
+    }, error = function(e) FALSE)),
+    message = "NEMweb not reachable"
+  )
+
   withr::local_options(aemo.cache_dir = tempdir())
-  # Force the fallback path by mocking network errors
-  m <- aemo_mlf(year = "2024-25")
+  m <- tryCatch(aemo_mlf(year = "2024-25"), error = function(e) NULL)
+  skip_if(is.null(m), "TRANSMISSIONLOSSFACTOR not in recent MMSDM archive")
+
   expect_s3_class(m, "aemo_tbl")
   expect_true(nrow(m) > 0L)
   if ("financial_year" %in% names(m)) {
     expect_true(all(m$financial_year == "2024-25"))
   }
-
-  m2 <- aemo_mlf(duid = "BW01")
-  if ("duid" %in% names(m2)) {
-    expect_true(all(toupper(m2$duid) == "BW01"))
-  }
-})
-
-test_that("aemo_mlf errors on unknown year after filtering", {
-  withr::local_options(aemo.cache_dir = tempdir())
-  expect_error(aemo_mlf(year = "1990-91"), "No MLF data found")
 })

@@ -76,16 +76,30 @@ aemo_interconnectors <- function() {
 
 #' NEM generators (DUID registry)
 #'
-#' Downloads the current DUDETAILSUMMARY table from the most
-#' recent MMSDM monthly archive and returns one row per
-#' registered DUID (Dispatchable Unit Identifier) with station,
-#' region, dispatch type, classification, and schedule type.
-#' Typical output is 500+ DUIDs covering scheduled,
-#' semi-scheduled, and non-scheduled generators, bidirectional
-#' storage (BESS), and loads.
+#' Downloads the `DUDETAILSUMMARY` table from the most recent
+#' MMSDM monthly archive and returns one row per registered DUID
+#' (Dispatchable Unit Identifier) with station, region, dispatch
+#' type, classification, and schedule type. Typical output is
+#' 500+ DUIDs covering scheduled, semi-scheduled, and
+#' non-scheduled generators, bidirectional storage (BESS), and
+#' loads.
 #'
-#' If the MMSDM archive is unreachable, the function returns a
-#' 12-row fallback table of well-known DUIDs and emits a warning.
+#' **Effective-date filtering.** `DUDETAILSUMMARY` is
+#' effective-dated (`START_DATE`, `END_DATE` per row with
+#' multiple `VERSIONNO` vintages per DUID over time). The
+#' default (`as_of = NULL`) returns rows whose
+#' `[START_DATE, END_DATE]` interval covers the date the MMSDM
+#' archive was published: i.e. the *current* registry. Pass an
+#' `as_of` date to get the registry as it was on that date
+#' (essential for historical analysis: Liddell's four DUIDs
+#' were retired in April 2023; pre-2023 queries need them).
+#'
+#' This matches the as-of-join pattern documented in Gorman et
+#' al. (2018) *NEMOSIS* (APSRC) for correct historical joins.
+#'
+#' @param as_of Optional `Date` or `POSIXct`. Returns the DUID
+#'   registry as it was on that date. `NULL` (default) returns
+#'   the current registry.
 #'
 #' @return An `aemo_tbl` keyed by `duid`. Columns include (from
 #'   DUDETAILSUMMARY): `duid`, `stationid`, `regionid`,
@@ -102,41 +116,75 @@ aemo_interconnectors <- function() {
 #' \donttest{
 #' op <- options(aemo.cache_dir = tempdir())
 #' try({
+#'   # Current DUID registry
 #'   u <- aemo_units()
-#'   head(u)
+#'
+#'   # DUIDs as they were on 1 March 2023 (pre-Liddell retirement)
+#'   u_2023 <- aemo_units(as_of = "2023-03-01")
 #' })
 #' options(op)
 #' }
-aemo_units <- function() {
+aemo_units <- function(as_of = NULL) {
   df <- tryCatch(aemo_fetch_dudetailsummary(),
                  error = function(e) NULL)
   if (is.null(df) || nrow(df) < 50L) {
-    cli::cli_warn(c(
-      "Could not reach MMSDM DUDETAILSUMMARY; returning fallback table.",
-      "i" = "The fallback covers 12 well-known DUIDs only."
+    cli::cli_abort(c(
+      "Could not retrieve DUDETAILSUMMARY from MMSDM.",
+      "i" = "Retry when the MMSDM archive is reachable, or use {.fn aemo_nemweb_download} with an MMSDM URL directly.",
+      "i" = "No fallback is provided: a stale or invented DUID registry would silently mislabel historical analyses."
     ))
-    fallback <- data.frame(
-      duid = c("BW01", "BW02", "BW03", "BW04", "ER01", "ER02",
-               "LD01", "LD02", "LD03", "LD04",
-               "HVDCLINK", "SWANB_E"),
-      station = c(rep("Bayswater", 4L), rep("Eraring", 2L),
-                  rep("Liddell (retired 2023)", 4L),
-                  "Basslink", "Swanbank E"),
-      region = c(rep("NSW1", 10L), "TAS1", "QLD1"),
-      fuel = c(rep("Black Coal", 10L), "Interconnector", "Natural Gas"),
-      capacity_mw = c(rep(660, 4L), rep(720, 2L), rep(500, 4L),
-                      500, 385),
-      stringsAsFactors = FALSE
-    )
-    return(new_aemo_tbl(fallback,
-                        source = "http://nemweb.com.au",
-                        licence = "AEMO Copyright Permissions Notice",
-                        title = "NEM generator registry (fallback)"))
   }
+
+  if (!is.null(as_of)) {
+    as_of_ts <- aemo_parse_time(as_of)
+    df <- aemo_filter_as_of(df, as_of = as_of_ts)
+  }
+
   new_aemo_tbl(df,
                source = "http://nemweb.com.au",
-               title = paste0("NEM DUID registry (DUDETAILSUMMARY, ",
-                              format(Sys.Date(), "%Y-%m"), ")"))
+               title = paste0("NEM DUID registry (DUDETAILSUMMARY",
+                              if (!is.null(as_of))
+                                paste0(", as of ", format(aemo_parse_time(as_of), "%Y-%m-%d"))
+                              else paste0(", ", format(Sys.Date(), "%Y-%m")),
+                              ")"))
+}
+
+#' Apply an effective-date filter on a DUDETAILSUMMARY-style
+#' data frame.
+#'
+#' Selects rows where `start_date <= as_of < end_date`. Uses
+#' MMSDM's end-of-time sentinel (2999-12-31) for open-ended
+#' records.
+#' @noRd
+aemo_filter_as_of <- function(df, as_of) {
+  start_col <- intersect(c("start_date", "effectivedate",
+                            "effectivefrom"), names(df))[1L]
+  end_col <- intersect(c("end_date", "enddate", "effectiveto"),
+                        names(df))[1L]
+  if (is.na(start_col)) return(df)
+
+  start_ts <- if (inherits(df[[start_col]], "POSIXct")) {
+    df[[start_col]]
+  } else {
+    aemo_parse_col_time(df[[start_col]])
+  }
+  end_ts <- if (!is.na(end_col)) {
+    if (inherits(df[[end_col]], "POSIXct")) {
+      df[[end_col]]
+    } else {
+      aemo_parse_col_time(df[[end_col]])
+    }
+  } else {
+    rep(as.POSIXct(NA, tz = AEMO_TIMEZONE), nrow(df))
+  }
+  # Treat NA or MMSDM sentinel (year 2999) end-dates as open-ended.
+  open_end <- is.na(end_ts) |
+    format(end_ts, "%Y") %in% c("2999", "9999")
+  keep <- !is.na(start_ts) & start_ts <= as_of &
+    (open_end | end_ts > as_of)
+  df <- df[keep, , drop = FALSE]
+  rownames(df) <- NULL
+  df
 }
 
 #' Fetch DUDETAILSUMMARY from the most recent MMSDM archive.
