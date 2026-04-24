@@ -40,26 +40,26 @@ try({
   head(files)
 })
 #>                                                  name
-#> 1 PUBLIC_DISPATCHIS_202604222345_0000000514247503.zip
-#> 2 PUBLIC_DISPATCHIS_202604222350_0000000514247997.zip
-#> 3 PUBLIC_DISPATCHIS_202604222355_0000000514248539.zip
-#> 4 PUBLIC_DISPATCHIS_202604230000_0000000514249037.zip
-#> 5 PUBLIC_DISPATCHIS_202604230005_0000000514249546.zip
-#> 6 PUBLIC_DISPATCHIS_202604230010_0000000514250176.zip
-#>                             modified  size
-#> 1 Wednesday, April 22, 2026 11:40 PM 19273
-#> 2 Wednesday, April 22, 2026 11:45 PM 19325
-#> 3 Wednesday, April 22, 2026 11:50 PM 19368
-#> 4 Wednesday, April 22, 2026 11:55 PM 19188
-#> 5  Thursday, April 23, 2026 12:00 AM 19230
-#> 6  Thursday, April 23, 2026 12:05 AM 19115
+#> 1 PUBLIC_DISPATCHIS_202604230035_0000000514252786.zip
+#> 2 PUBLIC_DISPATCHIS_202604230040_0000000514253366.zip
+#> 3 PUBLIC_DISPATCHIS_202604230045_0000000514254068.zip
+#> 4 PUBLIC_DISPATCHIS_202604230050_0000000514254565.zip
+#> 5 PUBLIC_DISPATCHIS_202604230055_0000000514255115.zip
+#> 6 PUBLIC_DISPATCHIS_202604230100_0000000514255617.zip
+#>                            modified  size
+#> 1 Thursday, April 23, 2026 12:30 AM 19328
+#> 2 Thursday, April 23, 2026 12:35 AM 19211
+#> 3 Thursday, April 23, 2026 12:40 AM 19225
+#> 4 Thursday, April 23, 2026 12:45 AM 19142
+#> 5 Thursday, April 23, 2026 12:50 AM 19134
+#> 6 Thursday, April 23, 2026 12:55 AM 19255
 #>                                                                                                           url
-#> 1 http://nemweb.com.au/Reports/Current/DispatchIS_Reports/PUBLIC_DISPATCHIS_202604222345_0000000514247503.zip
-#> 2 http://nemweb.com.au/Reports/Current/DispatchIS_Reports/PUBLIC_DISPATCHIS_202604222350_0000000514247997.zip
-#> 3 http://nemweb.com.au/Reports/Current/DispatchIS_Reports/PUBLIC_DISPATCHIS_202604222355_0000000514248539.zip
-#> 4 http://nemweb.com.au/Reports/Current/DispatchIS_Reports/PUBLIC_DISPATCHIS_202604230000_0000000514249037.zip
-#> 5 http://nemweb.com.au/Reports/Current/DispatchIS_Reports/PUBLIC_DISPATCHIS_202604230005_0000000514249546.zip
-#> 6 http://nemweb.com.au/Reports/Current/DispatchIS_Reports/PUBLIC_DISPATCHIS_202604230010_0000000514250176.zip
+#> 1 http://nemweb.com.au/Reports/Current/DispatchIS_Reports/PUBLIC_DISPATCHIS_202604230035_0000000514252786.zip
+#> 2 http://nemweb.com.au/Reports/Current/DispatchIS_Reports/PUBLIC_DISPATCHIS_202604230040_0000000514253366.zip
+#> 3 http://nemweb.com.au/Reports/Current/DispatchIS_Reports/PUBLIC_DISPATCHIS_202604230045_0000000514254068.zip
+#> 4 http://nemweb.com.au/Reports/Current/DispatchIS_Reports/PUBLIC_DISPATCHIS_202604230050_0000000514254565.zip
+#> 5 http://nemweb.com.au/Reports/Current/DispatchIS_Reports/PUBLIC_DISPATCHIS_202604230055_0000000514255115.zip
+#> 6 http://nemweb.com.au/Reports/Current/DispatchIS_Reports/PUBLIC_DISPATCHIS_202604230100_0000000514255617.zip
 options(op)
 # }
 ```

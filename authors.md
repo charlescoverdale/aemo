@@ -18,7 +18,6 @@ Data. R package version 0.4.0. https://cran.r-project.org/package=aemo
       year = {2026},
       note = {R package version 0.4.0},
       url = {https://cran.r-project.org/package=aemo},
-      doi = {10.5281/zenodo.placeholder},
     }
 
 Gorman N, Haghdadi N, Bruce A, MacGill I (2018). “NEMOSIS – NEM Open
