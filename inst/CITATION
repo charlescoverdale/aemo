@@ -5,7 +5,6 @@ bibentry(
   year     = format(Sys.Date(), "%Y"),
   note     = sprintf("R package version %s", meta$Version),
   url      = "https://cran.r-project.org/package=aemo",
-  doi      = "10.5281/zenodo.placeholder",
   textVersion = sprintf(
     "Coverdale, C. (%s). aemo: Download Australian Energy Market Operator Data. R package version %s. https://cran.r-project.org/package=aemo",
     format(Sys.Date(), "%Y"),

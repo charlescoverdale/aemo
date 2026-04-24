@@ -32,6 +32,13 @@ Notes on the reclaim:
 
 0 errors | 0 warnings | 0 notes on Mac ARM64, R 4.5.2.
 
+Win-builder / r-hub return one NOTE flagging three terms as
+possibly misspelled: "AEMO", "interconnector", "predispatch".
+All three are standard domain terms: AEMO is the market operator
+acronym, interconnector is the industry term for the transmission
+links between NEM regions, and predispatch is the name AEMO uses
+for its forward-looking dispatch schedule.
+
 ## Test suite
 
 Network-dependent tests are wrapped in `skip_on_cran()` and a
