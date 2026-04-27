@@ -56,7 +56,7 @@
   <main id="main" class="col-md-9"><div class="section level1">
 <div class="page-header"><h1 id="aemo">aemo<a class="anchor" aria-label="anchor" href="#aemo"></a>
 </h1></div>
-<p><a href="https://github.com/charlescoverdale/aemo/actions/workflows/R-CMD-check.yaml" class="external-link"><img src="https://github.com/charlescoverdale/aemo/actions/workflows/R-CMD-check.yaml/badge.svg" alt="R-CMD-check"></a> <a href="https://lifecycle.r-lib.org/articles/stages.html#experimental" class="external-link"><img src="https://img.shields.io/badge/lifecycle-experimental-orange.svg" alt="Lifecycle: experimental"></a> <a href="https://opensource.org/licenses/MIT" class="external-link"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License: MIT"></a></p>
+<p><a href="https://CRAN.R-project.org/package=aemo" class="external-link"><img src="https://www.r-pkg.org/badges/version/aemo" alt="CRAN status"></a> <a href="https://cran.r-project.org/package=aemo" class="external-link"><img src="https://cranlogs.r-pkg.org/badges/aemo" alt="CRAN downloads"></a> <a href="https://CRAN.R-project.org/package=aemo" class="external-link"><img src="https://cranlogs.r-pkg.org/badges/grand-total/aemo" alt="Total Downloads"></a> <a href="https://github.com/charlescoverdale/aemo/actions/workflows/R-CMD-check.yaml" class="external-link"><img src="https://github.com/charlescoverdale/aemo/actions/workflows/R-CMD-check.yaml/badge.svg" alt="R-CMD-check"></a> <a href="https://lifecycle.r-lib.org/articles/stages.html#experimental" class="external-link"><img src="https://img.shields.io/badge/lifecycle-experimental-orange.svg" alt="Lifecycle: experimental"></a> <a href="https://opensource.org/licenses/MIT" class="external-link"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License: MIT"></a></p>
 <p>An R package for accessing public market data from the <a href="https://aemo.com.au" class="external-link">Australian Energy Market Operator</a>. Wholesale electricity prices, regional demand, dispatch, interconnector flows, rooftop PV, generator bids, predispatch forecasts, FCAS markets, and gas markets across the National Electricity Market.</p>
 <div class="section level2">
 <h2 id="what-is-aemo">What is AEMO?<a class="anchor" aria-label="anchor" href="#what-is-aemo"></a>
@@ -556,28 +556,6 @@
 <p>Attribution on derivative work (AEMO’s requirement in full): <em>Source: AEMO. AEMO makes no representation as to the accuracy or completeness of this data.</em></p>
 </div>
 <div class="section level2">
-<h2 id="known-limitations">Known limitations<a class="anchor" aria-label="anchor" href="#known-limitations"></a>
-</h2>
-<ul>
-<li>
-<strong>No reformed WEM.</strong> The Wholesale Electricity Market in Western Australia runs on SCED and essential system services markets via WEMDE (go-live 1 October 2023), a separate data model from the NEM’s MMSDM. WEM coverage is planned for a future release.</li>
-<li>
-<strong>No 4-second FCAS.</strong> The sub-second FCAS files (<code>FCAS_4_SECOND</code>) are hundreds of MB per day and niche. Planned for a future release.</li>
-<li>
-<strong>No settlement tables.</strong> <code>SETCFM</code> and <code>SETRESIDUALS</code> (settlement reconciliation) are not yet wrapped. Gentailer reconciliation workflows need these. Use <code><a href="reference/aemo_nemweb_download.html">aemo_nemweb_download()</a></code> with an MMSDM URL directly.</li>
-<li>
-<strong>No ISP, GSOO, or IASR forecast workbooks.</strong> AEMO’s long-run planning studies are published as XLSX supplements. Use AEMO’s publications page directly.</li>
-<li>
-<strong>No Wallumbilla GSH or ECGS gas data.</strong> Out of scope for v0.4.0.</li>
-<li>
-<strong>Known upstream gap.</strong> AEMO has a documented gap in <code>BIDPEROFFER_D</code> between March 2021 and July 2024 that is not yet backfilled. Expect missing observations across that span.</li>
-<li>
-<strong>NEMweb HTTP decommissioning 7 April 2026 and base-URL migration 30 April 2026.</strong> The package uses <code>options(aemo.base_url = ...)</code> so you can point at a new host without reinstalling.</li>
-<li>
-<strong>Schema drift.</strong> <code>DISPATCHLOAD</code> added columns in April 2021 (MMSDM v5.0, coincident with 5-minute settlement). The <code>I,</code> header row in each file is the source of truth, so the parser handles this transparently, but inspect <code>names(df)</code> before any cross-MMSDM-version join.</li>
-</ul>
-</div>
-<div class="section level2">
 <h2 id="related-packages">Related packages<a class="anchor" aria-label="anchor" href="#related-packages"></a>
 </h2>
 <p><strong>Python equivalent:</strong> UNSW-CEEM’s <a href="https://github.com/UNSW-CEEM/NEMOSIS" class="external-link">NEMOSIS</a> is the established Python library for NEM data. Use it if you’re in Python.</p>
@@ -653,6 +631,16 @@
 </h2>
 <div class="sourceCode" id="cb13"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/citation.html" class="external-link">citation</a></span><span class="op">(</span><span class="st">"aemo"</span><span class="op">)</span></span></code></pre></div>
+</div>
+<div class="section level2">
+<h2 id="issues">Issues<a class="anchor" aria-label="anchor" href="#issues"></a>
+</h2>
+<p>Please report bugs or requests at <a href="https://github.com/charlescoverdale/aemo/issues" class="external-link uri">https://github.com/charlescoverdale/aemo/issues</a>.</p>
+</div>
+<div class="section level2">
+<h2 id="keywords">Keywords<a class="anchor" aria-label="anchor" href="#keywords"></a>
+</h2>
+<p>AEMO, Australian Energy Market Operator, NEM, National Electricity Market, electricity prices, dispatch, demand, FCAS, MMSDM, NEMweb, gas market, STTM, DWGM, Wallumbilla, AEMC, AER, energy data, electricity market, R package, Australian energy data</p>
 </div>
 </div>
   </main><aside class="col-md-3"><div class="links">

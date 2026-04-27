@@ -80,7 +80,7 @@ try({
 #> # aemo_tbl: NEM generic constraint equations (GENCONDATA)
 #> # Source:   https://nemweb.com.au/Data_Archive/Wholesale_Electricity/MMSDM
 #> # Licence:  AEMO Copyright Permissions Notice
-#> # Retrieved: 2026-04-24 14:38 UTC 
+#> # Retrieved: 2026-04-27 20:52 UTC 
 #> # Rows: 0  Cols: 26
 #> 
 #>  [1] effectivedate           versionno               genconid               
