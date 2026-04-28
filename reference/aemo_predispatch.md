@@ -89,30 +89,39 @@ try({
 #> ℹ Downloading <http://nemweb.com.au/Reports/Current/PredispatchIS_Reports/PUBLI…
 #> ✔ Downloading <http://nemweb.com.au/Reports/Current/PredispatchIS_Reports/PUBLI…
 #> 
+#> ℹ Downloading <http://nemweb.com.au/Reports/Current/PredispatchIS_Reports/PUBLI…
+#> ✔ Downloading <http://nemweb.com.au/Reports/Current/PredispatchIS_Reports/PUBLI…
+#> 
 #> # aemo_tbl: AEMO predispatch NSW1
 #> # Source:   http://nemweb.com.au
 #> # Licence:  AEMO Copyright Permissions Notice
-#> # Retrieved: 2026-04-27 21:36 UTC 
-#> # Rows: 2  Cols: 20
+#> # Retrieved: 2026-04-28 19:58 UTC 
+#> # Rows: 3  Cols: 20
 #> 
 #>   predispatchseqno runno solutionstatus spdversion nonphysicallosses
-#> 1       2026042806     1              1       <NA>                 0
-#> 2       2026042807     1              1       <NA>                 0
+#> 1       2026042902     1              1       <NA>                 0
+#> 2       2026042903     1              1       <NA>                 0
+#> 3       2026042904     1              1       <NA>                 0
 #>   totalobjective totalareagenviolation totalinterconnectorviolation
-#> 1     1391407698                     0                            0
-#> 2     1097012053                     0                            0
+#> 1      551780995                     0                            0
+#> 2      524562007                     0                            0
+#> 3      633019479                     0                            0
 #>   totalgenericviolation totalramprateviolation totalunitmwcapacityviolation
-#> 1                     0                      0                        241.1
-#> 2                     0                      0                        201.0
+#> 1                   120                      0                         18.8
+#> 2                   120                      0                         13.8
+#> 3                   120                      0                         27.0
 #>   total5minviolation totalregviolation total6secviolation total60secviolation
 #> 1               <NA>              <NA>               <NA>                <NA>
 #> 2               <NA>              <NA>               <NA>                <NA>
+#> 3               <NA>              <NA>               <NA>                <NA>
 #>   totalasprofileviolation totalenergyconstrviolation totalenergyofferviolation
 #> 1                       0                          0                         0
 #> 2                       0                          0                         0
+#> 3                       0                          0                         0
 #>           lastchanged intervention
-#> 1 2026/04/28 06:31:29            0
-#> 2 2026/04/28 07:01:29            0
+#> 1 2026/04/29 04:31:35            0
+#> 2 2026/04/29 05:01:36            0
+#> 3 2026/04/29 05:31:22            0
 options(op)
 # }
 ```

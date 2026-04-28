@@ -64,15 +64,24 @@ try({
 #> ℹ Downloading <http://nemweb.com.au/Reports/Current/ROOFTOP_PV/ACTUAL/PUBLIC_RO…
 #> ✔ Downloading <http://nemweb.com.au/Reports/Current/ROOFTOP_PV/ACTUAL/PUBLIC_RO…
 #> 
+#> ℹ Downloading <http://nemweb.com.au/Reports/Current/ROOFTOP_PV/ACTUAL/PUBLIC_RO…
+#> ✔ Downloading <http://nemweb.com.au/Reports/Current/ROOFTOP_PV/ACTUAL/PUBLIC_RO…
+#> 
+#> ℹ Downloading <http://nemweb.com.au/Reports/Current/ROOFTOP_PV/ACTUAL/PUBLIC_RO…
+#> ✔ Downloading <http://nemweb.com.au/Reports/Current/ROOFTOP_PV/ACTUAL/PUBLIC_RO…
+#> 
 #> # aemo_tbl: AEMO rooftop PV actual NSW1
 #> # Source:   http://nemweb.com.au
 #> # Licence:  AEMO Copyright Permissions Notice
-#> # Retrieved: 2026-04-27 21:37 UTC 
-#> # Rows: 0  Cols: 7
+#> # Retrieved: 2026-04-28 19:58 UTC 
+#> # Rows: 2  Cols: 7
 #> 
-#> [1] interval_datetime regionid          power             qi               
-#> [5] type              lastchanged       settlementdate   
-#> <0 rows> (or 0-length row.names)
+#>     interval_datetime regionid power  qi        type         lastchanged
+#> 1 2026-04-29 05:00:00     NSW1     0   1 MEASUREMENT 2026/04/29 05:19:03
+#> 2 2026-04-29 05:00:00     NSW1     0 0.6   SATELLITE 2026/04/29 05:20:19
+#>        settlementdate
+#> 1 2026-04-29 05:00:00
+#> 2 2026-04-29 05:00:00
 options(op)
 # }
 ```

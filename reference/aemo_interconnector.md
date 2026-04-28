@@ -57,89 +57,89 @@ try({
                             start = now - 3600, end = now)
   head(i)
 })
-#> Warning: Cache integrity check failed for 663db9a3edd3d6c2.zip; re-downloading.
+#> Warning: Cache integrity check failed for 3d68ee95afa8150e.zip; re-downloading.
 #> ℹ Downloading <http://nemweb.com.au/Reports/Current/DispatchIS_Reports/PUBLIC_D…
 #> ✔ Downloading <http://nemweb.com.au/Reports/Current/DispatchIS_Reports/PUBLIC_D…
 #> 
-#> Warning: Cache integrity check failed for 83734a79445255be.zip; re-downloading.
+#> Warning: Cache integrity check failed for 7e04a6690826e6ac.zip; re-downloading.
 #> ℹ Downloading <http://nemweb.com.au/Reports/Current/DispatchIS_Reports/PUBLIC_D…
 #> ✔ Downloading <http://nemweb.com.au/Reports/Current/DispatchIS_Reports/PUBLIC_D…
 #> 
-#> Warning: Cache integrity check failed for 2952f1c3f5618caa.zip; re-downloading.
+#> Warning: Cache integrity check failed for cfe993541435e59f.zip; re-downloading.
 #> ℹ Downloading <http://nemweb.com.au/Reports/Current/DispatchIS_Reports/PUBLIC_D…
 #> ✔ Downloading <http://nemweb.com.au/Reports/Current/DispatchIS_Reports/PUBLIC_D…
 #> 
-#> Warning: Cache integrity check failed for e99c7150f177de03.zip; re-downloading.
+#> Warning: Cache integrity check failed for 4b5cbf73e6f00631.zip; re-downloading.
 #> ℹ Downloading <http://nemweb.com.au/Reports/Current/DispatchIS_Reports/PUBLIC_D…
 #> ✔ Downloading <http://nemweb.com.au/Reports/Current/DispatchIS_Reports/PUBLIC_D…
 #> 
-#> Warning: Cache integrity check failed for 8cc03171fd348de8.zip; re-downloading.
+#> Warning: Cache integrity check failed for 829b75b548ad2f5f.zip; re-downloading.
 #> ℹ Downloading <http://nemweb.com.au/Reports/Current/DispatchIS_Reports/PUBLIC_D…
 #> ✔ Downloading <http://nemweb.com.au/Reports/Current/DispatchIS_Reports/PUBLIC_D…
 #> 
-#> Warning: Cache integrity check failed for 27ec6ef0de574d06.zip; re-downloading.
+#> Warning: Cache integrity check failed for f57d2ebe63c497d8.zip; re-downloading.
 #> ℹ Downloading <http://nemweb.com.au/Reports/Current/DispatchIS_Reports/PUBLIC_D…
 #> ✔ Downloading <http://nemweb.com.au/Reports/Current/DispatchIS_Reports/PUBLIC_D…
 #> 
-#> Warning: Cache integrity check failed for a348477d62462e04.zip; re-downloading.
+#> Warning: Cache integrity check failed for 987a3c03aabfd59f.zip; re-downloading.
 #> ℹ Downloading <http://nemweb.com.au/Reports/Current/DispatchIS_Reports/PUBLIC_D…
 #> ✔ Downloading <http://nemweb.com.au/Reports/Current/DispatchIS_Reports/PUBLIC_D…
 #> 
-#> Warning: Cache integrity check failed for 8453898c0a89422e.zip; re-downloading.
+#> Warning: Cache integrity check failed for 9efbd4132ed70868.zip; re-downloading.
 #> ℹ Downloading <http://nemweb.com.au/Reports/Current/DispatchIS_Reports/PUBLIC_D…
 #> ✔ Downloading <http://nemweb.com.au/Reports/Current/DispatchIS_Reports/PUBLIC_D…
 #> 
-#> Warning: Cache integrity check failed for e32ba6f18f31464f.zip; re-downloading.
+#> Warning: Cache integrity check failed for 7972a9506feaf872.zip; re-downloading.
 #> ℹ Downloading <http://nemweb.com.au/Reports/Current/DispatchIS_Reports/PUBLIC_D…
 #> ✔ Downloading <http://nemweb.com.au/Reports/Current/DispatchIS_Reports/PUBLIC_D…
 #> 
-#> Warning: Cache integrity check failed for 21dd0f409f3b043b.zip; re-downloading.
+#> Warning: Cache integrity check failed for 6573637dad592f8a.zip; re-downloading.
 #> ℹ Downloading <http://nemweb.com.au/Reports/Current/DispatchIS_Reports/PUBLIC_D…
 #> ✔ Downloading <http://nemweb.com.au/Reports/Current/DispatchIS_Reports/PUBLIC_D…
 #> 
-#> Warning: Cache integrity check failed for ff25b76850c904b8.zip; re-downloading.
+#> Warning: Cache integrity check failed for 0c39ccd2bb4fdc51.zip; re-downloading.
 #> ℹ Downloading <http://nemweb.com.au/Reports/Current/DispatchIS_Reports/PUBLIC_D…
 #> ✔ Downloading <http://nemweb.com.au/Reports/Current/DispatchIS_Reports/PUBLIC_D…
 #> 
-#> Warning: Cache integrity check failed for 58571bf4da845962.zip; re-downloading.
+#> Warning: Cache integrity check failed for cca2b959d5993570.zip; re-downloading.
 #> ℹ Downloading <http://nemweb.com.au/Reports/Current/DispatchIS_Reports/PUBLIC_D…
 #> ✔ Downloading <http://nemweb.com.au/Reports/Current/DispatchIS_Reports/PUBLIC_D…
 #> 
-#> Warning: Cache integrity check failed for 076374883ffa513e.zip; re-downloading.
+#> Warning: Cache integrity check failed for f97cba749cf2e79b.zip; re-downloading.
 #> ℹ Downloading <http://nemweb.com.au/Reports/Current/DispatchIS_Reports/PUBLIC_D…
 #> ✔ Downloading <http://nemweb.com.au/Reports/Current/DispatchIS_Reports/PUBLIC_D…
 #> 
-#> Warning: Cache integrity check failed for 4be4691aa7671288.zip; re-downloading.
+#> Warning: Cache integrity check failed for 4322e37732a56d17.zip; re-downloading.
 #> ℹ Downloading <http://nemweb.com.au/Reports/Current/DispatchIS_Reports/PUBLIC_D…
 #> ✔ Downloading <http://nemweb.com.au/Reports/Current/DispatchIS_Reports/PUBLIC_D…
 #> 
 #> # aemo_tbl: AEMO interconnector flows
 #> # Source:   http://nemweb.com.au
 #> # Licence:  AEMO Copyright Permissions Notice
-#> # Retrieved: 2026-04-27 20:53 UTC 
+#> # Retrieved: 2026-04-28 19:14 UTC 
 #> # Rows: 6  Cols: 22
 #> 
 #>        settlementdate runno interconnectorid dispatchinterval intervention
-#> 1 2026-04-28 05:55:00     1             V-SA      20260428023            0
-#> 2 2026-04-28 06:00:00     1             V-SA      20260428024            0
-#> 3 2026-04-28 06:05:00     1             V-SA      20260428025            0
-#> 4 2026-04-28 06:10:00     1             V-SA      20260428026            0
-#> 5 2026-04-28 06:15:00     1             V-SA      20260428027            0
-#> 6 2026-04-28 06:20:00     1             V-SA      20260428028            0
+#> 1 2026-04-29 04:15:00     1             V-SA      20260429003            0
+#> 2 2026-04-29 04:20:00     1             V-SA      20260429004            0
+#> 3 2026-04-29 04:25:00     1             V-SA      20260429005            0
+#> 4 2026-04-29 04:30:00     1             V-SA      20260429006            0
+#> 5 2026-04-29 04:35:00     1             V-SA      20260429007            0
+#> 6 2026-04-29 04:40:00     1             V-SA      20260429008            0
 #>   meteredmwflow   mwflow mwlosses marginalvalue violationdegree
-#> 1      147.0742 148.2833  0.03591             0               0
-#> 2      146.0938 164.5669  0.30092             0               0
-#> 3      130.3301 134.6503 -0.36086             0               0
-#> 4      111.9688 144.6974 -0.34579             0               0
-#> 5      125.6836 156.3289 -0.17704             0               0
-#> 6      135.3984 147.7093 -0.42779             0               0
+#> 1      524.1057 529.6757 31.80423             0               0
+#> 2      524.8424 529.8833 31.75752             0               0
+#> 3      519.8271 521.6871 30.47856             0               0
+#> 4      514.0249 498.1119 27.30595             0               0
+#> 5      500.4409 493.0000 26.80082             0               0
+#> 6      491.3794 471.2698 24.25030             0               0
 #>           lastchanged exportlimit importlimit marginalloss exportgenconid
-#> 1 2026/04/28 05:50:03     537.232  -151.22836      1.01911  V_S_NIL_ROCOF
-#> 2 2026/04/28 05:55:03     561.232  -167.65079       1.0231  V_S_NIL_ROCOF
-#> 3 2026/04/28 06:00:03     561.232  -168.12017      1.01346  V_S_NIL_ROCOF
-#> 4 2026/04/28 06:05:04     561.232  -157.08909      1.01693  V_S_NIL_ROCOF
-#> 5 2026/04/28 06:10:04     537.232   -159.1076      1.02124  V_S_NIL_ROCOF
-#> 6 2026/04/28 06:15:04     561.232  -165.77556      1.01603  V_S_NIL_ROCOF
+#> 1 2026/04/29 04:10:02   559.47562   -57.77416      1.13653    VS_600_TEST
+#> 2 2026/04/29 04:15:03   556.16796   -91.34287      1.13638    VS_600_TEST
+#> 3 2026/04/29 04:20:04   553.57192   -32.68956      1.13087    VS_600_TEST
+#> 4 2026/04/29 04:25:03    556.2508   -37.96588      1.12536    VS_600_TEST
+#> 5 2026/04/29 04:30:04   551.81594   -33.59928      1.12562    VS_600_TEST
+#> 6 2026/04/29 04:35:04   559.62476   -39.67068      1.11595    VS_600_TEST
 #>   importgenconid fcasexportlimit fcasimportlimit local_price_adjustment_export
 #> 1    I_6F_SN_150            1050           -1050                             0
 #> 2    I_6F_SN_150            1050           -1050                             0

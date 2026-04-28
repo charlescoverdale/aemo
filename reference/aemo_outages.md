@@ -96,7 +96,7 @@ try({
 #> # aemo_tbl: NEM network outages (NETWORK_OUTAGEDETAIL)
 #> # Source:   https://nemweb.com.au/Data_Archive/Wholesale_Electricity/MMSDM
 #> # Licence:  AEMO Copyright Permissions Notice
-#> # Retrieved: 2026-04-27 21:29 UTC 
+#> # Retrieved: 2026-04-28 19:51 UTC 
 #> # Rows: 6  Cols: 19
 #> 
 #>   outageid substationid equipmenttype equipmentid           starttime

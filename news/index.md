@@ -2,6 +2,8 @@
 
 ## aemo 0.4.0
 
+CRAN release: 2026-04-28
+
 First release under new maintainership. Reclaims the archived `aemo`
 package name (Imanuel Costigan, 2014-2020, v0.1.0 to v0.3.0, archived
 2021-12-29). The prior package shipped three functions covering regional
