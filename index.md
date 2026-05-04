@@ -67,6 +67,7 @@ decommissioning the NEMweb HTTP endpoint on **7 April 2026** and
 migrating the base URL on **30 April 2026**.
 
 ``` r
+
 # Without this package
 listing <- rvest::read_html("http://nemweb.com.au/Reports/Current/DispatchIS_Reports/")
 hrefs   <- rvest::html_attr(rvest::html_elements(listing, "a"), "href")
@@ -119,17 +120,18 @@ In R, [nemwebR](https://github.com/aleemon/nemwebR) is a single-author
 GitHub-only utility with no release. This package (`aemo`) fills the
 equivalent niche on CRAN.
 
-| Package                                       | Language      | Status                   | Coverage                                                   |
-|-----------------------------------------------|---------------|--------------------------|------------------------------------------------------------|
-| **NEMOSIS**                                   | Python (CEEM) | Active, released on PyPI | Most MMSDM dynamic and static tables, plus forecast tables |
-| **NEMSEER**                                   | Python (CEEM) | Active                   | Forecast tables (P5MIN, PREDISPATCH, PASA)                 |
-| **nempy**                                     | Python (CEEM) | Active                   | NEM dispatch simulator, not a data wrapper                 |
-| [nemwebR](https://github.com/aleemon/nemwebR) | R             | GitHub, no release       | Prices, dispatch, bids, DUDETAILSUMMARY                    |
-| **aemo** (this package)                       | R             | CRAN                     | Current NEMweb + reference data plus size-guarded bids     |
+| Package | Language | Status | Coverage |
+|----|----|----|----|
+| **NEMOSIS** | Python (CEEM) | Active, released on PyPI | Most MMSDM dynamic and static tables, plus forecast tables |
+| **NEMSEER** | Python (CEEM) | Active | Forecast tables (P5MIN, PREDISPATCH, PASA) |
+| **nempy** | Python (CEEM) | Active | NEM dispatch simulator, not a data wrapper |
+| [nemwebR](https://github.com/aleemon/nemwebR) | R | GitHub, no release | Prices, dispatch, bids, DUDETAILSUMMARY |
+| **aemo** (this package) | R | CRAN | Current NEMweb + reference data plus size-guarded bids |
 
 ## Installation
 
 ``` r
+
 install.packages("aemo")
 
 # Or install the development version from GitHub
@@ -140,6 +142,7 @@ devtools::install_github("charlescoverdale/aemo")
 ## Quick start
 
 ``` r
+
 library(aemo)
 
 # Reference data (no network required)
@@ -175,6 +178,7 @@ Timestamps are **period-ending**: a row stamped `14:05:00` covers the
 5-minute interval ending at 14:05.
 
 ``` r
+
 attr(p$settlementdate, "tzone")  # "Australia/Brisbane"
 ```
 
@@ -191,6 +195,7 @@ regions for several days. Querying that period with the default settings
 returns only the market pricing run, not the direction-influenced run:
 
 ``` r
+
 # Default: market pricing run only (correct for settlement analysis)
 p_market <- aemo_price("NSW1", "2022-06-13", "2022-06-14")
 
@@ -203,6 +208,7 @@ table(p_both$intervention)  # "0": market run rows, "1": intervention rows
 ### Worked example: price spike forensics
 
 ``` r
+
 library(aemo)
 
 # Step 1: find a high-price interval in SA
@@ -236,60 +242,60 @@ head(mlf[mlf$regionid == "SA1", c("duid", "mlf")])
 
 ### Prices
 
-| Function                                                                                    | Description                                                                                                                                                      | Interval        |
-|---------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|
-| [`aemo_price()`](https://charlescoverdale.github.io/aemo/reference/aemo_price.md)           | Regional wholesale price (DISPATCHPRICE or TRADINGPRICE). Pre-5MS (before 1 Oct 2021) uses TRADINGIS; post-5MS aggregates six 5-min prices per trading interval. | 5-min or 30-min |
-| [`aemo_fcas()`](https://charlescoverdale.github.io/aemo/reference/aemo_fcas.md)             | FCAS prices across ten services (eight contingency plus two regulation, including R1/L1 Very Fast from 9 October 2023)                                           | 5-min           |
-| [`aemo_price_caps()`](https://charlescoverdale.github.io/aemo/reference/aemo_price_caps.md) | Market Price Cap, Floor, CPT, and APC by financial year (FY 2015-16 onwards). Static reference table.                                                            | Annual          |
+| Function | Description | Interval |
+|----|----|----|
+| [`aemo_price()`](https://charlescoverdale.github.io/aemo/reference/aemo_price.md) | Regional wholesale price (DISPATCHPRICE or TRADINGPRICE). Pre-5MS (before 1 Oct 2021) uses TRADINGIS; post-5MS aggregates six 5-min prices per trading interval. | 5-min or 30-min |
+| [`aemo_fcas()`](https://charlescoverdale.github.io/aemo/reference/aemo_fcas.md) | FCAS prices across ten services (eight contingency plus two regulation, including R1/L1 Very Fast from 9 October 2023) | 5-min |
+| [`aemo_price_caps()`](https://charlescoverdale.github.io/aemo/reference/aemo_price_caps.md) | Market Price Cap, Floor, CPT, and APC by financial year (FY 2015-16 onwards). Static reference table. | Annual |
 
 ### Demand and generation
 
-| Function                                                                                            | Description                                                                                    | Interval |
-|-----------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------|----------|
-| [`aemo_demand()`](https://charlescoverdale.github.io/aemo/reference/aemo_demand.md)                 | Regional demand: operational, operational-less-SNSG, or native (includes estimated rooftop PV) | 5-min    |
-| [`aemo_dispatch_units()`](https://charlescoverdale.github.io/aemo/reference/aemo_dispatch_units.md) | Per-DUID generator output (SCADA actual or dispatch target MW)                                 | 5-min    |
-| [`aemo_rooftop_pv()`](https://charlescoverdale.github.io/aemo/reference/aemo_rooftop_pv.md)         | Region-level rooftop PV actual or forecast                                                     | 30-min   |
+| Function | Description | Interval |
+|----|----|----|
+| [`aemo_demand()`](https://charlescoverdale.github.io/aemo/reference/aemo_demand.md) | Regional demand: operational, operational-less-SNSG, or native (includes estimated rooftop PV) | 5-min |
+| [`aemo_dispatch_units()`](https://charlescoverdale.github.io/aemo/reference/aemo_dispatch_units.md) | Per-DUID generator output (SCADA actual or dispatch target MW) | 5-min |
+| [`aemo_rooftop_pv()`](https://charlescoverdale.github.io/aemo/reference/aemo_rooftop_pv.md) | Region-level rooftop PV actual or forecast | 30-min |
 
 ### Dispatch and constraints
 
-| Function                                                                                              | Description                                                                                                                        | Interval     |
-|-------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|--------------|
-| [`aemo_constraints()`](https://charlescoverdale.github.io/aemo/reference/aemo_constraints.md)         | Binding transmission and system constraints with shadow prices (marginal values). Use this to answer “why was the RRP AUD 15,000?” | 5-min        |
-| [`aemo_fcas_enablement()`](https://charlescoverdale.github.io/aemo/reference/aemo_fcas_enablement.md) | FCAS enablement volumes (MW) per DUID across ten services (from DISPATCHLOAD). Quantity side of the FCAS market.                   | 5-min        |
-| [`aemo_interconnector()`](https://charlescoverdale.github.io/aemo/reference/aemo_interconnector.md)   | MW flow, losses, and limits on the seven NEM interconnectors                                                                       | 5-min        |
-| [`aemo_bids()`](https://charlescoverdale.github.io/aemo/reference/aemo_bids.md)                       | Generator bid stack: daily (BIDDAYOFFER_D) or per-interval (BIDPEROFFER_D, with size guard)                                        | Day or 5-min |
+| Function | Description | Interval |
+|----|----|----|
+| [`aemo_constraints()`](https://charlescoverdale.github.io/aemo/reference/aemo_constraints.md) | Binding transmission and system constraints with shadow prices (marginal values). Use this to answer “why was the RRP AUD 15,000?” | 5-min |
+| [`aemo_fcas_enablement()`](https://charlescoverdale.github.io/aemo/reference/aemo_fcas_enablement.md) | FCAS enablement volumes (MW) per DUID across ten services (from DISPATCHLOAD). Quantity side of the FCAS market. | 5-min |
+| [`aemo_interconnector()`](https://charlescoverdale.github.io/aemo/reference/aemo_interconnector.md) | MW flow, losses, and limits on the seven NEM interconnectors | 5-min |
+| [`aemo_bids()`](https://charlescoverdale.github.io/aemo/reference/aemo_bids.md) | Generator bid stack: daily (BIDDAYOFFER_D) or per-interval (BIDPEROFFER_D, with size guard) | Day or 5-min |
 
 ### Forecasts
 
-| Function                                                                                      | Description                                                                                                       | Interval        |
-|-----------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|-----------------|
+| Function | Description | Interval |
+|----|----|----|
 | [`aemo_predispatch()`](https://charlescoverdale.github.io/aemo/reference/aemo_predispatch.md) | Price and demand forecasts: 5-minute-ahead (P5MIN, 12 intervals) or 40-hour-ahead predispatch (30-min resolution) | 5-min or 30-min |
-| [`aemo_pasa()`](https://charlescoverdale.github.io/aemo/reference/aemo_pasa.md)               | Projected Assessment of System Adequacy: short-term (1-7 day) or medium-term (2-year)                             | Hourly or daily |
+| [`aemo_pasa()`](https://charlescoverdale.github.io/aemo/reference/aemo_pasa.md) | Projected Assessment of System Adequacy: short-term (1-7 day) or medium-term (2-year) | Hourly or daily |
 
 ### Reference data
 
-| Function                                                                                              | Description                                                                                                                                                   |
-|-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [`aemo_units()`](https://charlescoverdale.github.io/aemo/reference/aemo_units.md)                     | DUID registry downloaded from MMSDM DUDETAILSUMMARY (500+ DUIDs with region, schedule type, fuel class). Fallback to a 12-row sample if MMSDM is unreachable. |
-| [`aemo_mlf()`](https://charlescoverdale.github.io/aemo/reference/aemo_mlf.md)                         | Marginal Loss Factors by DUID and financial year, from MMSDM MARGINALLOSSFACTOR. Used in PPA revenue reconstruction and settlement.                           |
-| [`aemo_dlf()`](https://charlescoverdale.github.io/aemo/reference/aemo_dlf.md)                         | Distribution Loss Factors by connection point and financial year, from MMSDM LOSSFACTORMODEL.                                                                 |
-| [`aemo_regions()`](https://charlescoverdale.github.io/aemo/reference/aemo_regions.md)                 | NEM region metadata (5 regions, static)                                                                                                                       |
-| [`aemo_interconnectors()`](https://charlescoverdale.github.io/aemo/reference/aemo_interconnectors.md) | NEM interconnector topology and energisation dates (7 links, static)                                                                                          |
+| Function | Description |
+|----|----|
+| [`aemo_units()`](https://charlescoverdale.github.io/aemo/reference/aemo_units.md) | DUID registry downloaded from MMSDM DUDETAILSUMMARY (500+ DUIDs with region, schedule type, fuel class). Fallback to a 12-row sample if MMSDM is unreachable. |
+| [`aemo_mlf()`](https://charlescoverdale.github.io/aemo/reference/aemo_mlf.md) | Marginal Loss Factors by DUID and financial year, from MMSDM MARGINALLOSSFACTOR. Used in PPA revenue reconstruction and settlement. |
+| [`aemo_dlf()`](https://charlescoverdale.github.io/aemo/reference/aemo_dlf.md) | Distribution Loss Factors by connection point and financial year, from MMSDM LOSSFACTORMODEL. |
+| [`aemo_regions()`](https://charlescoverdale.github.io/aemo/reference/aemo_regions.md) | NEM region metadata (5 regions, static) |
+| [`aemo_interconnectors()`](https://charlescoverdale.github.io/aemo/reference/aemo_interconnectors.md) | NEM interconnector topology and energisation dates (7 links, static) |
 
 ### Low-level access and configuration
 
-| Function                                                                                                                                                                                   | Description                         |
-|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------|
-| [`aemo_nemweb_ls()`](https://charlescoverdale.github.io/aemo/reference/aemo_nemweb_ls.md)                                                                                                  | List files in any NEMweb directory  |
-| [`aemo_nemweb_download()`](https://charlescoverdale.github.io/aemo/reference/aemo_nemweb_download.md)                                                                                      | Raw zipped-CSV download from NEMweb |
-| [`aemo_cache_info()`](https://charlescoverdale.github.io/aemo/reference/aemo_cache_info.md), [`aemo_clear_cache()`](https://charlescoverdale.github.io/aemo/reference/aemo_clear_cache.md) | Cache management                    |
-| [`aemo_throttle()`](https://charlescoverdale.github.io/aemo/reference/aemo_throttle.md)                                                                                                    | Request-rate configuration          |
+| Function | Description |
+|----|----|
+| [`aemo_nemweb_ls()`](https://charlescoverdale.github.io/aemo/reference/aemo_nemweb_ls.md) | List files in any NEMweb directory |
+| [`aemo_nemweb_download()`](https://charlescoverdale.github.io/aemo/reference/aemo_nemweb_download.md) | Raw zipped-CSV download from NEMweb |
+| [`aemo_cache_info()`](https://charlescoverdale.github.io/aemo/reference/aemo_cache_info.md), [`aemo_clear_cache()`](https://charlescoverdale.github.io/aemo/reference/aemo_clear_cache.md) | Cache management |
+| [`aemo_throttle()`](https://charlescoverdale.github.io/aemo/reference/aemo_throttle.md) | Request-rate configuration |
 
 ### Gas
 
-| Function                                                                      | Description                                                       | Interval |
-|-------------------------------------------------------------------------------|-------------------------------------------------------------------|----------|
-| [`aemo_gas()`](https://charlescoverdale.github.io/aemo/reference/aemo_gas.md) | STTM (Adelaide, Brisbane, Sydney) and DWGM (Victoria) gas markets | Daily    |
+| Function | Description | Interval |
+|----|----|----|
+| [`aemo_gas()`](https://charlescoverdale.github.io/aemo/reference/aemo_gas.md) | STTM (Adelaide, Brisbane, Sydney) and DWGM (Victoria) gas markets | Daily |
 
 ## Size guards
 
@@ -303,6 +309,7 @@ enforces a 30-day span guard by default and refuses longer spans without
 explicit consent:
 
 ``` r
+
 # Works (1-day span)
 aemo_bids(duid = "BW01", start = "2024-06-01", end = "2024-06-02")
 
@@ -322,6 +329,7 @@ aemo_bids(duid = "BW01", start = "2024-01-01", end = "2024-06-01",
 ### Regional spot price by hour of day
 
 ``` r
+
 library(aemo)
 
 p <- aemo_price("NSW1",
@@ -337,6 +345,7 @@ plot(avg_by_hour, type = "l", xlab = "Hour", ylab = "AUD/MWh")
 ### Interconnector flows
 
 ``` r
+
 # Heywood Interconnector (VIC-SA) flows for the past day
 i <- aemo_interconnector(flow = "V-SA",
                           start = "2024-06-01",
@@ -352,6 +361,7 @@ pec <- aemo_interconnector(flow = "V-S-N",
 ### Compare regions
 
 ``` r
+
 # Query each region once
 nsw <- aemo_price("NSW1", "2024-06-01", "2024-06-01 01:00:00")
 vic <- aemo_price("VIC1", "2024-06-01", "2024-06-01 01:00:00")
@@ -364,6 +374,7 @@ mean(as.numeric(vic$rrp), na.rm = TRUE)
 ### Reference tables
 
 ``` r
+
 # No network needed
 aemo_regions()
 aemo_interconnectors()
@@ -375,6 +386,7 @@ aemo_units()
 ### Explore NEMweb directly
 
 ``` r
+
 # List files in a NEMweb report directory
 f <- aemo_nemweb_ls("/Reports/Current/DispatchIS_Reports/")
 head(f)
@@ -405,15 +417,16 @@ Python library for NEM data. Use it if you’re in Python.
 
 **R ecosystem:**
 
-| Package                                                        | Description                                                                    |
-|----------------------------------------------------------------|--------------------------------------------------------------------------------|
-| [`cer`](https://github.com/charlescoverdale/cer)               | Australian Clean Energy Regulator (ACCUs, Safeguard, NGER, LRET, SRES)         |
+| Package | Description |
+|----|----|
+| [`cer`](https://github.com/charlescoverdale/cer) | Australian Clean Energy Regulator (ACCUs, Safeguard, NGER, LRET, SRES) |
 | [`carbondata`](https://github.com/charlescoverdale/carbondata) | Global carbon markets (EU ETS, UK ETS, RGGI, California, Verra, Gold Standard) |
-| [`climatekit`](https://github.com/charlescoverdale/climatekit) | 35 climate indices (temperature, precipitation, drought)                       |
-| [`readnoaa`](https://github.com/charlescoverdale/readnoaa)     | NOAA climate and weather data                                                  |
-| [`readaec`](https://github.com/charlescoverdale/readaec)       | Australian Electoral Commission                                                |
-| [`readabs`](https://github.com/mattcowgill/readabs)            | Australian Bureau of Statistics                                                |
-| [`readrba`](https://github.com/mattcowgill/readrba)            | Reserve Bank of Australia                                                      |
+| [`climatekit`](https://github.com/charlescoverdale/climatekit) | 35 climate indices (temperature, precipitation, drought) |
+| [`readnoaa`](https://github.com/charlescoverdale/readnoaa) | NOAA climate and weather data |
+| [`ato`](https://github.com/charlescoverdale/ato) | Australian Taxation Office data (Australian gov data peer) |
+| [`inflationkit`](https://github.com/charlescoverdale/inflationkit) | Inflation analysis (real-terms electricity prices) |
+| [`readabs`](https://github.com/mattcowgill/readabs) | Australian Bureau of Statistics |
+| [`readrba`](https://github.com/mattcowgill/readrba) | Reserve Bank of Australia |
 
 ## A note on GST
 
@@ -477,6 +490,7 @@ Academic uses of NEM data this package is designed to support:
 ## Citation
 
 ``` r
+
 citation("aemo")
 ```
 

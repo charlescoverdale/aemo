@@ -91,49 +91,10 @@ try({
 #> ✖ Downloading <https://nemweb.com.au/Data_Archive/Wholesale_Electricity/MMSDM/2…
 #> 
 #> ℹ Downloading <https://nemweb.com.au/Data_Archive/Wholesale_Electricity/MMSDM/2…
-#> ✔ Downloading <https://nemweb.com.au/Data_Archive/Wholesale_Electricity/MMSDM/2…
+#> ✖ Downloading <https://nemweb.com.au/Data_Archive/Wholesale_Electricity/MMSDM/2…
 #> 
-#> # aemo_tbl: NEM network outages (NETWORK_OUTAGEDETAIL)
-#> # Source:   https://nemweb.com.au/Data_Archive/Wholesale_Electricity/MMSDM
-#> # Licence:  AEMO Copyright Permissions Notice
-#> # Retrieved: 2026-04-28 19:51 UTC 
-#> # Rows: 6  Cols: 19
-#> 
-#>   outageid substationid equipmenttype equipmentid           starttime
-#> 1   838526         HWPS            CB 2GTR_1B_220 2017/03/28 02:00:00
-#> 2   931778     KEMPS_CK           CAP          C1 2019/01/17 12:30:00
-#> 3   936811     KEMPS_CK           CAP          C1 2019/01/17 12:30:00
-#> 4   938742     KEMPS_CK           CAP          C1 2019/01/17 12:30:00
-#> 5   928099       CH_GDN           CAP        C_61 2019/10/25 07:30:00
-#> 6   928099       CH_GDN            CB      CB6534 2019/10/25 07:30:00
-#>               endtime       submitteddate outagestatuscode     resubmitreason
-#> 1 2025/12/31 17:00:00 2019-12-31 10:00:52           WDRAWN Information Update
-#> 2 2024/12/31 18:00:00 2023-12-30 18:24:22           WDRAWN Information Update
-#> 3 2024/05/10 15:00:00 2024-03-26 13:17:54           WDRAWN Information Update
-#> 4 2024/09/16 15:00:00 2024-04-22 13:06:21           WDRAWN Information Update
-#> 5 2024/10/31 07:30:00 2023-10-31 16:29:25           WDRAWN Information Update
-#> 6 2024/10/31 07:30:00 2023-10-31 16:29:25           WDRAWN Information Update
-#>   resubmitoutageid recalltimeday recalltimenight             lastchanged
-#> 1           838529             0               0 2019/12/31 10:13:32.048
-#> 2           936811          5940            5940 2024/03/26 13:17:54.161
-#> 3           938742          5940            5940 2024/04/22 13:06:21.036
-#> 4           948038          5940            5940 2024/08/26 11:01:56.167
-#> 5           952659             0               0 2024/10/28 18:26:04.360
-#> 6           952659             0               0 2024/10/28 18:26:04.360
-#>                  reason issecondary    actual_starttime actual_endtime
-#> 1 HV equipt maintenance           0 2017/03/27 23:10:00           <NA>
-#> 2 HV equipt maintenance           0 2019/01/17 12:56:00           <NA>
-#> 3 HV equipt maintenance           0 2019/01/17 12:56:00           <NA>
-#> 4 HV equipt maintenance           0 2019/01/17 12:56:00           <NA>
-#> 5 HV equipt maintenance           0 2019/09/23 12:45:00           <NA>
-#> 6 HV equipt maintenance           0 2019/09/23 12:45:00           <NA>
-#>   companyrefcode elementid
-#> 1     1000013149      5540
-#> 2      TG_498652     17404
-#> 3      TG_498652     17404
-#> 4      TG_498652     17404
-#> 5        ESP6534      2792
-#> 6        ESP6534      7364
+#> Error in aemo_outages(start = "2024-03-01", end = "2024-03-02", outage_type = "FORCED") : 
+#>   No outage data found for the requested range.
 options(op)
 # }
 ```

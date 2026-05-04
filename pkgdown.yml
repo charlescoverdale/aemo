@@ -1,10 +1,10 @@
-pandoc: 3.1.11
+pandoc: 3.8.3
 pkgdown: 2.2.0
 pkgdown_sha: ~
 articles:
   data-dictionary: data-dictionary.html
   timestamps: timestamps.html
-last_built: 2026-04-28T19:13Z
+last_built: 2026-05-04T19:18Z
 urls:
   reference: https://charlescoverdale.github.io/aemo/reference
   article: https://charlescoverdale.github.io/aemo/articles

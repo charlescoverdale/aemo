@@ -60,12 +60,15 @@ try({
   head(dlf)
 })
 #> ℹ Downloading <https://nemweb.com.au/Data_Archive/Wholesale_Electricity/MMSDM/2…
+#> ✖ Downloading <https://nemweb.com.au/Data_Archive/Wholesale_Electricity/MMSDM/2…
+#> 
+#> ℹ Downloading <https://nemweb.com.au/Data_Archive/Wholesale_Electricity/MMSDM/2…
 #> ✔ Downloading <https://nemweb.com.au/Data_Archive/Wholesale_Electricity/MMSDM/2…
 #> 
 #> # aemo_tbl: NEM Distribution Loss Factors (DLF)
 #> # Source:   https://nemweb.com.au/Data_Archive/Wholesale_Electricity/MMSDM
 #> # Licence:  AEMO Copyright Permissions Notice
-#> # Retrieved: 2026-04-28 19:13 UTC 
+#> # Retrieved: 2026-05-04 19:19 UTC 
 #> # Rows: 6  Cols: 7
 #> 
 #>     effectivedate versionno interconnectorid regionid demandcoefficient

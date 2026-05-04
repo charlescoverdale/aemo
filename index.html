@@ -106,38 +106,38 @@
 <col width="25%">
 <col width="25%">
 </colgroup>
-<thead><tr class="header">
+<thead><tr>
 <th>Package</th>
 <th>Language</th>
 <th>Status</th>
 <th>Coverage</th>
 </tr></thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td><strong>NEMOSIS</strong></td>
 <td>Python (CEEM)</td>
 <td>Active, released on PyPI</td>
 <td>Most MMSDM dynamic and static tables, plus forecast tables</td>
 </tr>
-<tr class="even">
+<tr>
 <td><strong>NEMSEER</strong></td>
 <td>Python (CEEM)</td>
 <td>Active</td>
 <td>Forecast tables (P5MIN, PREDISPATCH, PASA)</td>
 </tr>
-<tr class="odd">
+<tr>
 <td><strong>nempy</strong></td>
 <td>Python (CEEM)</td>
 <td>Active</td>
 <td>NEM dispatch simulator, not a data wrapper</td>
 </tr>
-<tr class="even">
+<tr>
 <td><a href="https://github.com/aleemon/nemwebR" class="external-link">nemwebR</a></td>
 <td>R</td>
 <td>GitHub, no release</td>
 <td>Prices, dispatch, bids, DUDETAILSUMMARY</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>
 <strong>aemo</strong> (this package)</td>
 <td>R</td>
@@ -250,23 +250,23 @@
 <col width="33%">
 <col width="33%">
 </colgroup>
-<thead><tr class="header">
+<thead><tr>
 <th>Function</th>
 <th>Description</th>
 <th>Interval</th>
 </tr></thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td><code><a href="reference/aemo_price.html">aemo_price()</a></code></td>
 <td>Regional wholesale price (DISPATCHPRICE or TRADINGPRICE). Pre-5MS (before 1 Oct 2021) uses TRADINGIS; post-5MS aggregates six 5-min prices per trading interval.</td>
 <td>5-min or 30-min</td>
 </tr>
-<tr class="even">
+<tr>
 <td><code><a href="reference/aemo_fcas.html">aemo_fcas()</a></code></td>
 <td>FCAS prices across ten services (eight contingency plus two regulation, including R1/L1 Very Fast from 9 October 2023)</td>
 <td>5-min</td>
 </tr>
-<tr class="odd">
+<tr>
 <td><code><a href="reference/aemo_price_caps.html">aemo_price_caps()</a></code></td>
 <td>Market Price Cap, Floor, CPT, and APC by financial year (FY 2015-16 onwards). Static reference table.</td>
 <td>Annual</td>
@@ -283,23 +283,23 @@
 <col width="33%">
 <col width="33%">
 </colgroup>
-<thead><tr class="header">
+<thead><tr>
 <th>Function</th>
 <th>Description</th>
 <th>Interval</th>
 </tr></thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td><code><a href="reference/aemo_demand.html">aemo_demand()</a></code></td>
 <td>Regional demand: operational, operational-less-SNSG, or native (includes estimated rooftop PV)</td>
 <td>5-min</td>
 </tr>
-<tr class="even">
+<tr>
 <td><code><a href="reference/aemo_dispatch_units.html">aemo_dispatch_units()</a></code></td>
 <td>Per-DUID generator output (SCADA actual or dispatch target MW)</td>
 <td>5-min</td>
 </tr>
-<tr class="odd">
+<tr>
 <td><code><a href="reference/aemo_rooftop_pv.html">aemo_rooftop_pv()</a></code></td>
 <td>Region-level rooftop PV actual or forecast</td>
 <td>30-min</td>
@@ -316,28 +316,28 @@
 <col width="33%">
 <col width="33%">
 </colgroup>
-<thead><tr class="header">
+<thead><tr>
 <th>Function</th>
 <th>Description</th>
 <th>Interval</th>
 </tr></thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td><code><a href="reference/aemo_constraints.html">aemo_constraints()</a></code></td>
 <td>Binding transmission and system constraints with shadow prices (marginal values). Use this to answer “why was the RRP AUD 15,000?”</td>
 <td>5-min</td>
 </tr>
-<tr class="even">
+<tr>
 <td><code><a href="reference/aemo_fcas_enablement.html">aemo_fcas_enablement()</a></code></td>
 <td>FCAS enablement volumes (MW) per DUID across ten services (from DISPATCHLOAD). Quantity side of the FCAS market.</td>
 <td>5-min</td>
 </tr>
-<tr class="odd">
+<tr>
 <td><code><a href="reference/aemo_interconnector.html">aemo_interconnector()</a></code></td>
 <td>MW flow, losses, and limits on the seven NEM interconnectors</td>
 <td>5-min</td>
 </tr>
-<tr class="even">
+<tr>
 <td><code><a href="reference/aemo_bids.html">aemo_bids()</a></code></td>
 <td>Generator bid stack: daily (BIDDAYOFFER_D) or per-interval (BIDPEROFFER_D, with size guard)</td>
 <td>Day or 5-min</td>
@@ -354,18 +354,18 @@
 <col width="33%">
 <col width="33%">
 </colgroup>
-<thead><tr class="header">
+<thead><tr>
 <th>Function</th>
 <th>Description</th>
 <th>Interval</th>
 </tr></thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td><code><a href="reference/aemo_predispatch.html">aemo_predispatch()</a></code></td>
 <td>Price and demand forecasts: 5-minute-ahead (P5MIN, 12 intervals) or 40-hour-ahead predispatch (30-min resolution)</td>
 <td>5-min or 30-min</td>
 </tr>
-<tr class="even">
+<tr>
 <td><code><a href="reference/aemo_pasa.html">aemo_pasa()</a></code></td>
 <td>Projected Assessment of System Adequacy: short-term (1-7 day) or medium-term (2-year)</td>
 <td>Hourly or daily</td>
@@ -381,28 +381,28 @@
 <col width="50%">
 <col width="50%">
 </colgroup>
-<thead><tr class="header">
+<thead><tr>
 <th>Function</th>
 <th>Description</th>
 </tr></thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td><code><a href="reference/aemo_units.html">aemo_units()</a></code></td>
 <td>DUID registry downloaded from MMSDM DUDETAILSUMMARY (500+ DUIDs with region, schedule type, fuel class). Fallback to a 12-row sample if MMSDM is unreachable.</td>
 </tr>
-<tr class="even">
+<tr>
 <td><code><a href="reference/aemo_mlf.html">aemo_mlf()</a></code></td>
 <td>Marginal Loss Factors by DUID and financial year, from MMSDM MARGINALLOSSFACTOR. Used in PPA revenue reconstruction and settlement.</td>
 </tr>
-<tr class="odd">
+<tr>
 <td><code><a href="reference/aemo_dlf.html">aemo_dlf()</a></code></td>
 <td>Distribution Loss Factors by connection point and financial year, from MMSDM LOSSFACTORMODEL.</td>
 </tr>
-<tr class="even">
+<tr>
 <td><code><a href="reference/aemo_regions.html">aemo_regions()</a></code></td>
 <td>NEM region metadata (5 regions, static)</td>
 </tr>
-<tr class="odd">
+<tr>
 <td><code><a href="reference/aemo_interconnectors.html">aemo_interconnectors()</a></code></td>
 <td>NEM interconnector topology and energisation dates (7 links, static)</td>
 </tr>
@@ -413,26 +413,26 @@
 <h3 id="low-level-access-and-configuration">Low-level access and configuration<a class="anchor" aria-label="anchor" href="#low-level-access-and-configuration"></a>
 </h3>
 <table class="table">
-<thead><tr class="header">
+<thead><tr>
 <th>Function</th>
 <th>Description</th>
 </tr></thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td><code><a href="reference/aemo_nemweb_ls.html">aemo_nemweb_ls()</a></code></td>
 <td>List files in any NEMweb directory</td>
 </tr>
-<tr class="even">
+<tr>
 <td><code><a href="reference/aemo_nemweb_download.html">aemo_nemweb_download()</a></code></td>
 <td>Raw zipped-CSV download from NEMweb</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>
 <code><a href="reference/aemo_cache_info.html">aemo_cache_info()</a></code>, <code><a href="reference/aemo_clear_cache.html">aemo_clear_cache()</a></code>
 </td>
 <td>Cache management</td>
 </tr>
-<tr class="even">
+<tr>
 <td><code><a href="reference/aemo_throttle.html">aemo_throttle()</a></code></td>
 <td>Request-rate configuration</td>
 </tr>
@@ -448,12 +448,12 @@
 <col width="33%">
 <col width="33%">
 </colgroup>
-<thead><tr class="header">
+<thead><tr>
 <th>Function</th>
 <th>Description</th>
 <th>Interval</th>
 </tr></thead>
-<tbody><tr class="odd">
+<tbody><tr>
 <td><code><a href="reference/aemo_gas.html">aemo_gas()</a></code></td>
 <td>STTM (Adelaide, Brisbane, Sydney) and DWGM (Victoria) gas markets</td>
 <td>Daily</td>
@@ -565,36 +565,40 @@
 <col width="50%">
 <col width="50%">
 </colgroup>
-<thead><tr class="header">
+<thead><tr>
 <th>Package</th>
 <th>Description</th>
 </tr></thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td><a href="https://github.com/charlescoverdale/cer" class="external-link"><code>cer</code></a></td>
 <td>Australian Clean Energy Regulator (ACCUs, Safeguard, NGER, LRET, SRES)</td>
 </tr>
-<tr class="even">
+<tr>
 <td><a href="https://github.com/charlescoverdale/carbondata" class="external-link"><code>carbondata</code></a></td>
 <td>Global carbon markets (EU ETS, UK ETS, RGGI, California, Verra, Gold Standard)</td>
 </tr>
-<tr class="odd">
+<tr>
 <td><a href="https://github.com/charlescoverdale/climatekit" class="external-link"><code>climatekit</code></a></td>
 <td>35 climate indices (temperature, precipitation, drought)</td>
 </tr>
-<tr class="even">
+<tr>
 <td><a href="https://github.com/charlescoverdale/readnoaa" class="external-link"><code>readnoaa</code></a></td>
 <td>NOAA climate and weather data</td>
 </tr>
-<tr class="odd">
-<td><a href="https://github.com/charlescoverdale/readaec" class="external-link"><code>readaec</code></a></td>
-<td>Australian Electoral Commission</td>
+<tr>
+<td><a href="https://github.com/charlescoverdale/ato" class="external-link"><code>ato</code></a></td>
+<td>Australian Taxation Office data (Australian gov data peer)</td>
 </tr>
-<tr class="even">
+<tr>
+<td><a href="https://github.com/charlescoverdale/inflationkit" class="external-link"><code>inflationkit</code></a></td>
+<td>Inflation analysis (real-terms electricity prices)</td>
+</tr>
+<tr>
 <td><a href="https://github.com/mattcowgill/readabs" class="external-link"><code>readabs</code></a></td>
 <td>Australian Bureau of Statistics</td>
 </tr>
-<tr class="odd">
+<tr>
 <td><a href="https://github.com/mattcowgill/readrba" class="external-link"><code>readrba</code></a></td>
 <td>Reserve Bank of Australia</td>
 </tr>

@@ -17,6 +17,7 @@ data. Queensland observes AEST year-round (no DST), which gives the
 correct fixed UTC+10 offset:
 
 ``` r
+
 library(aemo)
 
 # All timestamps come back in AEST (UTC+10, no DST).
@@ -34,6 +35,7 @@ To display times in local wall-clock time for a specific state, convert
 explicitly:
 
 ``` r
+
 # Convert market time to NSW wall clock (observes DST)
 p$local_time_nsw <- format(p$settlementdate, tz = "Australia/Sydney")
 
@@ -56,6 +58,7 @@ interval end-time directly. When joining to external time series that
 use period-*start* timestamps, subtract the interval length:
 
 ``` r
+
 # Period-start timestamps for 5-min intervals
 p$period_start <- p$settlementdate - as.difftime(5, units = "mins")
 
@@ -73,12 +76,12 @@ DISPATCHPRICE.
 
 Practical implications:
 
-| Query                                        | What [`aemo_price()`](https://charlescoverdale.github.io/aemo/reference/aemo_price.md) returns |
-|----------------------------------------------|------------------------------------------------------------------------------------------------|
-| `interval = "5min"`, any date                | Native 5-min dispatch price from DISPATCHPRICE (DISPATCHIS)                                    |
-| `interval = "30min"`, date before 2021-10-01 | 30-min TRADINGPRICE from TRADINGIS                                                             |
-| `interval = "30min"`, date from 2021-10-01   | Arithmetic mean of six 5-min dispatch prices within the trading interval                       |
-| `interval = "30min"`, spanning 2021-10-01    | Pre-5MS portion from TRADINGIS; post-5MS aggregated from 5-min                                 |
+| Query | What [`aemo_price()`](https://charlescoverdale.github.io/aemo/reference/aemo_price.md) returns |
+|----|----|
+| `interval = "5min"`, any date | Native 5-min dispatch price from DISPATCHPRICE (DISPATCHIS) |
+| `interval = "30min"`, date before 2021-10-01 | 30-min TRADINGPRICE from TRADINGIS |
+| `interval = "30min"`, date from 2021-10-01 | Arithmetic mean of six 5-min dispatch prices within the trading interval |
+| `interval = "30min"`, spanning 2021-10-01 | Pre-5MS portion from TRADINGIS; post-5MS aggregated from 5-min |
 
 When constructing long historical 30-minute price series that span the
 transition, the aggregation method matches: both the pre-5MS
@@ -103,6 +106,7 @@ need to analyse the intervention pricing itself (e.g. the cost of
 directions during a suspension period).
 
 ``` r
+
 # Default: market pricing run only
 p_market <- aemo_price("NSW1", "2022-06-13", "2022-06-14")
 
