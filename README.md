@@ -317,7 +317,8 @@ Attribution on derivative work (AEMO's requirement in full): *Source: AEMO. AEMO
 | [`carbondata`](https://github.com/charlescoverdale/carbondata) | Global carbon markets (EU ETS, UK ETS, RGGI, California, Verra, Gold Standard) |
 | [`climatekit`](https://github.com/charlescoverdale/climatekit) | 35 climate indices (temperature, precipitation, drought) |
 | [`readnoaa`](https://github.com/charlescoverdale/readnoaa) | NOAA climate and weather data |
-| [`readaec`](https://github.com/charlescoverdale/readaec) | Australian Electoral Commission |
+| [`ato`](https://github.com/charlescoverdale/ato) | Australian Taxation Office data (Australian gov data peer) |
+| [`inflationkit`](https://github.com/charlescoverdale/inflationkit) | Inflation analysis (real-terms electricity prices) |
 | [`readabs`](https://github.com/mattcowgill/readabs) | Australian Bureau of Statistics |
 | [`readrba`](https://github.com/mattcowgill/readrba) | Reserve Bank of Australia |
 
