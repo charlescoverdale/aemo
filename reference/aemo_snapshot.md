@@ -68,7 +68,7 @@ aemo_snapshot(x)
 #>   title               source                           licence
 #> 1  Demo http://nemweb.com.au AEMO Copyright Permissions Notice
 #>             retrieved rows cols
-#> 1 2026-05-04 19:27:45    1    3
+#> 1 2026-05-27 07:57:51    1    3
 #>                                                             sha256
-#> 1 5a9b5545452a36487d6104e95a79122f73f897d28984a713fd4663e583a0b0b4
+#> 1 faaec1c76fe45719526c299ffbee9257716eaf549b8d9d53f693057cbad4f73a
 ```

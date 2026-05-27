@@ -78,24 +78,26 @@ try({
 #> ✖ Downloading <https://nemweb.com.au/Data_Archive/Wholesale_Electricity/MMSDM/2…
 #> 
 #> ℹ Downloading <https://nemweb.com.au/Data_Archive/Wholesale_Electricity/MMSDM/2…
-#> ✔ Downloading <https://nemweb.com.au/Data_Archive/Wholesale_Electricity/MMSDM/2…
+#> ✖ Downloading <https://nemweb.com.au/Data_Archive/Wholesale_Electricity/MMSDM/2…
 #> 
-#> # aemo_tbl: NEM generic constraint equations (GENCONDATA)
-#> # Source:   https://nemweb.com.au/Data_Archive/Wholesale_Electricity/MMSDM
-#> # Licence:  AEMO Copyright Permissions Notice
-#> # Retrieved: 2026-05-04 19:19 UTC 
-#> # Rows: 0  Cols: 26
+#> ℹ Downloading <https://nemweb.com.au/Data_Archive/Wholesale_Electricity/MMSDM/2…
+#> ✖ Downloading <https://nemweb.com.au/Data_Archive/Wholesale_Electricity/MMSDM/2…
 #> 
-#>  [1] effectivedate           versionno               genconid               
-#>  [4] constrainttype          constraintvalue         description            
-#>  [7] status                  genericconstraintweight authoriseddate         
-#> [10] authorisedby            dynamicrhs              lastchanged            
-#> [13] dispatch                predispatch             stpasa                 
-#> [16] mtpasa                  additionalnotes         p5min_scope_override   
-#> [19] lrc                     lor                     impact                 
-#> [22] source                  limittype               reason                 
-#> [25] modifications           force_scada            
-#> <0 rows> (or 0-length row.names)
+#> ℹ Downloading <https://nemweb.com.au/Data_Archive/Wholesale_Electricity/MMSDM/2…
+#> ✖ Downloading <https://nemweb.com.au/Data_Archive/Wholesale_Electricity/MMSDM/2…
+#> 
+#> ℹ Downloading <https://nemweb.com.au/Data_Archive/Wholesale_Electricity/MMSDM/2…
+#> ✖ Downloading <https://nemweb.com.au/Data_Archive/Wholesale_Electricity/MMSDM/2…
+#> 
+#> ℹ Downloading <https://nemweb.com.au/Data_Archive/Wholesale_Electricity/MMSDM/2…
+#> ✖ Downloading <https://nemweb.com.au/Data_Archive/Wholesale_Electricity/MMSDM/2…
+#> 
+#> Error in aemo_gencon(constraint_id = c("V::S_NIL_TBSE", "V::S_NIL_FCSPS")) : 
+#>   Could not retrieve GENCONDATA from MMSDM.
+#> ℹ Check your internet connection or use `aemo_nemweb_download()` with an MMSDM
+#>   URL directly.
+#> ℹ MMSDM path:
+#>   DATA/Archive/Wholesale_Electricity/MMSDM/<YYYY>/<month>/MMSDM_Historical_Data_SQLLoader/DATA/PUBLIC_DVD_GENCONDATA_<YYYYMM>010000.zip
 options(op)
 # }
 ```

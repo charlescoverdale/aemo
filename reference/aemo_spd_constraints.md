@@ -83,28 +83,23 @@ try({
 #> ✖ Downloading <https://nemweb.com.au/Data_Archive/Wholesale_Electricity/MMSDM/2…
 #> 
 #> ℹ Downloading <https://nemweb.com.au/Data_Archive/Wholesale_Electricity/MMSDM/2…
-#> ✔ Downloading <https://nemweb.com.au/Data_Archive/Wholesale_Electricity/MMSDM/2…
+#> ✖ Downloading <https://nemweb.com.au/Data_Archive/Wholesale_Electricity/MMSDM/2…
 #> 
-#> # aemo_tbl: NEM SPDINTERCONNECTORCONSTRAINT (SPD constraint coefficients)
-#> # Source:   https://nemweb.com.au/Data_Archive/Wholesale_Electricity/MMSDM
-#> # Licence:  AEMO Copyright Permissions Notice
-#> # Retrieved: 2026-05-04 19:27 UTC 
-#> # Rows: 6  Cols: 6
+#> ℹ Downloading <https://nemweb.com.au/Data_Archive/Wholesale_Electricity/MMSDM/2…
+#> ✖ Downloading <https://nemweb.com.au/Data_Archive/Wholesale_Electricity/MMSDM/2…
 #> 
-#>   interconnectorid effectivedate versionno            genconid factor
-#> 1        V-S-MNSP1    2026-03-02         1   S>>BGTX_BRTW_WTTP  0.574
-#> 2        V-S-MNSP1    2026-03-02         1 S>>BGTX_BRTX_WEMWP4 -0.247
-#> 3        V-S-MNSP1    2026-03-02         1   S>>BGTX_BRTX_WEWT  0.305
-#> 4        V-S-MNSP1    2026-03-02         1   S>>BGTX_BRTX_WTTP  0.496
-#> 5        V-S-MNSP1    2026-03-02         1   S>>BGTX_BWPA_WTTP  0.592
-#> 6        V-S-MNSP1    2026-03-02         1   S>>BGTX_LKDV_WEWT  0.539
-#>           lastchanged
-#> 1 2026/03/02 10:38:26
-#> 2 2026/03/02 10:38:26
-#> 3 2026/03/02 10:38:26
-#> 4 2026/03/02 10:38:26
-#> 5 2026/03/02 10:38:26
-#> 6 2026/03/02 10:38:26
+#> ℹ Downloading <https://nemweb.com.au/Data_Archive/Wholesale_Electricity/MMSDM/2…
+#> ✖ Downloading <https://nemweb.com.au/Data_Archive/Wholesale_Electricity/MMSDM/2…
+#> 
+#> ℹ Downloading <https://nemweb.com.au/Data_Archive/Wholesale_Electricity/MMSDM/2…
+#> ✖ Downloading <https://nemweb.com.au/Data_Archive/Wholesale_Electricity/MMSDM/2…
+#> 
+#> ℹ Downloading <https://nemweb.com.au/Data_Archive/Wholesale_Electricity/MMSDM/2…
+#> ✖ Downloading <https://nemweb.com.au/Data_Archive/Wholesale_Electricity/MMSDM/2…
+#> 
+#> Error in aemo_spd_constraints(table = "interconnector") : 
+#>   Could not retrieve SPDINTERCONNECTORCONSTRAINT from MMSDM.
+#> ℹ Try `aemo_nemweb_download()` with an MMSDM URL directly.
 options(op)
 # }
 ```

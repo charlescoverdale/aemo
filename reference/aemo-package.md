@@ -48,6 +48,8 @@ Copyright Permissions Notice
 
 Useful links:
 
+- <https://charlescoverdale.github.io/aemo/>
+
 - <https://github.com/charlescoverdale/aemo>
 
 - Report bugs at <https://github.com/charlescoverdale/aemo/issues>

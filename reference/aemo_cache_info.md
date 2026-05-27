@@ -25,7 +25,7 @@ Other configuration:
 op <- options(aemo.cache_dir = tempdir())
 aemo_cache_info()
 #> $dir
-#> [1] "/tmp/Rtmp6Dk3Zc"
+#> [1] "/tmp/Rtmp0QTc2f"
 #> 
 #> $n_files
 #> [1] 2
@@ -38,8 +38,8 @@ aemo_cache_info()
 #> 
 #> $files
 #>                                     name size_bytes            modified
-#> 1 bslib-8a92d22979ec96a3105b4f8cbcdeeec5       4096 2026-05-04 19:18:10
-#> 2                                downlit       4096 2026-05-04 19:18:12
+#> 1 bslib-71d7f13118c36706c39339f77436fb7b       4096 2026-05-27 07:56:34
+#> 2                                downlit       4096 2026-05-27 07:56:36
 #> 
 options(op)
 # }

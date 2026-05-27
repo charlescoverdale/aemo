@@ -52,7 +52,7 @@ head(caps)
 #> # aemo_tbl: NEM market price caps, floor, CPT, and APC
 #> # Source:   https://www.aemc.gov.au/regulation/energy-rules/national-electricity-rules
 #> # Licence:  AEMO Copyright Permissions Notice
-#> # Retrieved: 2026-05-04 19:27 UTC 
+#> # Retrieved: 2026-05-27 07:57 UTC 
 #> # Rows: 6  Cols: 6
 #> 
 #>      year market_price_cap_aud_per_mwh market_price_floor_aud_per_mwh

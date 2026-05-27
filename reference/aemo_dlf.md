@@ -63,28 +63,30 @@ try({
 #> ✖ Downloading <https://nemweb.com.au/Data_Archive/Wholesale_Electricity/MMSDM/2…
 #> 
 #> ℹ Downloading <https://nemweb.com.au/Data_Archive/Wholesale_Electricity/MMSDM/2…
-#> ✔ Downloading <https://nemweb.com.au/Data_Archive/Wholesale_Electricity/MMSDM/2…
+#> ✖ Downloading <https://nemweb.com.au/Data_Archive/Wholesale_Electricity/MMSDM/2…
 #> 
+#> ℹ Downloading <https://nemweb.com.au/Data_Archive/Wholesale_Electricity/MMSDM/2…
+#> ✖ Downloading <https://nemweb.com.au/Data_Archive/Wholesale_Electricity/MMSDM/2…
+#> 
+#> ℹ Downloading <https://nemweb.com.au/Data_Archive/Wholesale_Electricity/MMSDM/2…
+#> ✖ Downloading <https://nemweb.com.au/Data_Archive/Wholesale_Electricity/MMSDM/2…
+#> 
+#> ℹ Downloading <https://nemweb.com.au/Data_Archive/Wholesale_Electricity/MMSDM/2…
+#> ✖ Downloading <https://nemweb.com.au/Data_Archive/Wholesale_Electricity/MMSDM/2…
+#> 
+#> ℹ Downloading <https://nemweb.com.au/Data_Archive/Wholesale_Electricity/MMSDM/2…
+#> ✖ Downloading <https://nemweb.com.au/Data_Archive/Wholesale_Electricity/MMSDM/2…
+#> 
+#> Warning: Could not reach MMSDM LOSSFACTORMODEL; returning empty table.
+#> ℹ Use `aemo_nemweb_download()` with an MMSDM URL to fetch DLF data directly.
 #> # aemo_tbl: NEM Distribution Loss Factors (DLF)
 #> # Source:   https://nemweb.com.au/Data_Archive/Wholesale_Electricity/MMSDM
 #> # Licence:  AEMO Copyright Permissions Notice
-#> # Retrieved: 2026-05-04 19:19 UTC 
-#> # Rows: 6  Cols: 7
+#> # Retrieved: 2026-05-27 07:57 UTC 
+#> # Rows: 0  Cols: 3
 #> 
-#>     effectivedate versionno interconnectorid regionid demandcoefficient
-#> 403    2024-07-01         1             V-SA      SA1        6.2183e-05
-#> 404    2024-07-01         1             V-SA     VIC1       -1.6267e-05
-#> 405    2024-07-01         1        VIC1-NSW1     NSW1        1.2083e-06
-#> 406    2024-07-01         1        VIC1-NSW1      SA1       -6.4190e-05
-#> 407    2024-07-01         1        VIC1-NSW1     VIC1        2.1896e-06
-#> 408    2024-07-01         1        V-S-MNSP1     VIC1        0.0000e+00
-#>             lastchanged financial_year
-#> 403 2024/06/24 11:05:26        2024-25
-#> 404 2024/06/24 11:05:26        2024-25
-#> 405 2024/06/24 11:05:26        2024-25
-#> 406 2024/06/24 11:05:26        2024-25
-#> 407 2024/06/24 11:05:26        2024-25
-#> 408 2024/06/24 11:05:26        2024-25
+#> [1] financial_year    connectionpointid dlf              
+#> <0 rows> (or 0-length row.names)
 options(op)
 # }
 ```

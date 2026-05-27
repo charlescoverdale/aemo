@@ -4,7 +4,7 @@ pkgdown_sha: ~
 articles:
   data-dictionary: data-dictionary.html
   timestamps: timestamps.html
-last_built: 2026-05-04T19:18Z
+last_built: 2026-05-27T07:56Z
 urls:
   reference: https://charlescoverdale.github.io/aemo/reference
   article: https://charlescoverdale.github.io/aemo/articles
