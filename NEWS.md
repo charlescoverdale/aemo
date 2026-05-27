@@ -1,3 +1,13 @@
+# aemo 0.4.1
+
+Maintenance release fixing a test-suite issue reported by CRAN on
+2026-05-27. The `aemo_units()` integration test made a live MMSDM
+request without a `skip_on_cran()` guard, so it raised an error on
+CRAN check machines whenever the NEMweb archive was unreachable.
+The test is now guarded like the other network-dependent tests and
+split into a gated live check and an offline-abort check that
+verifies the no-fallback behaviour. No user-facing code changes.
+
 # aemo 0.4.0
 
 First release under new maintainership. Reclaims the archived

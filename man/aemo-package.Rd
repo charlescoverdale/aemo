@@ -39,6 +39,7 @@ AEMO Copyright Permissions Notice
 \seealso{
 Useful links:
 \itemize{
+  \item \url{https://charlescoverdale.github.io/aemo/}
   \item \url{https://github.com/charlescoverdale/aemo}
   \item Report bugs at \url{https://github.com/charlescoverdale/aemo/issues}
 }

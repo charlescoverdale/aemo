@@ -1,6 +1,6 @@
 Package: aemo
 Title: Download Australian Energy Market Operator Data
-Version: 0.4.0
+Version: 0.4.1
 Authors@R:
     person("Charles", "Coverdale", , "charlesfcoverdale@gmail.com", role = c("aut", "cre"))
 Description: Fetch Australian Energy Market Operator (AEMO)

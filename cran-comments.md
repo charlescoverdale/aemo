@@ -1,32 +1,21 @@
-# CRAN submission comments: aemo 0.4.0
+# CRAN submission comments: aemo 0.4.1
 
-## Archived-name reclaim
+## Reason for this submission
 
-This is a new-maintainership release reclaiming the `aemo`
-package name, previously held by Imanuel Costigan's `aemo`
-package (v0.1.0 through v0.3.0, on CRAN from June 2014 to
-April 2020, archived at the maintainer's request on
-2021-12-29).
+This release fixes the test ERROR shown on the package check page
+and reported by the CRAN team on 2026-05-27.
 
-Version starts at **0.4.0** to sit strictly above Costigan's
-last archived version (0.3.0), per CRAN policy on archived-name
-reuse.
+The `aemo_units()` integration test made a live request to the
+AEMO MMSDM archive without a `skip_on_cran()` guard. On check
+machines where the NEMweb archive was unreachable, the function
+aborted (by design, it has no fallback registry), which surfaced
+as a test failure. The check passed on the macOS flavours, where
+the archive happened to be reachable.
 
-The earlier package implemented three functions covering
-regional prices and demand only. This rewrite is an independent
-implementation covering the full NEMweb and MMSDM data surface
-(31 exports) and shares only the package name.
-
-Notes on the reclaim:
-
-* The archive is 4+ years old (29 Dec 2021 to Apr 2026).
-* The previous maintainer has not been contacted directly. The
-  scope of the rewrite is orthogonal to the original (multi-fold
-  expansion in functions, data coverage, and tables), the name
-  is generic ("aemo" is the market operator itself, not a
-  personal brand), and no derivative code has been carried over.
-* Happy to contact the previous maintainer and await approval
-  if the reviewer prefers.
+The fix guards the test like every other network-dependent test
+in the suite (`skip_on_cran()` plus an offline check) and splits
+it into a gated live check and a gated offline-abort check. There
+are no user-facing code changes.
 
 ## R CMD check results
 
