@@ -1,25 +1,30 @@
-# CRAN submission comments: aemo 0.4.1
+# CRAN submission comments: aemo 0.4.2
 
 ## Reason for this submission
 
-This release fixes the test ERROR shown on the package check page
-and reported by the CRAN team on 2026-05-27.
+This release fixes a network-dependent test that could raise an
+intermittent R CMD check ERROR on machines where the NEMweb archive
+was unreachable.
 
-The `aemo_units()` integration test made a live request to the
-AEMO MMSDM archive without a `skip_on_cran()` guard. On check
-machines where the NEMweb archive was unreachable, the function
-aborted (by design, it has no fallback registry), which surfaced
-as a test failure. The check passed on the macOS flavours, where
-the archive happened to be reachable.
+`aemo_fcas_enablement()` validated its `service` argument only after
+fetching dispatch data, so an unknown service name surfaced the
+underlying fetch error rather than the intended "No matching FCAS
+service columns" message. On check machines that could not reach
+NEMweb this broke the bad-service-name test in `test-dispatch.R`.
 
-The fix guards the test like every other network-dependent test
-in the suite (`skip_on_cran()` plus an offline check) and splits
-it into a gated live check and a gated offline-abort check. There
-are no user-facing code changes.
+The `service` argument is now validated before any network request,
+so a bad name fails fast and offline. Behaviour is unchanged for
+valid calls.
 
 ## R CMD check results
 
 0 errors | 0 warnings | 0 notes on Mac ARM64, R 4.5.2.
+
+The `--as-cran` URL check may flag `www.aemo.com.au` and
+`www.aemc.gov.au` as "Forbidden". Both URLs are valid in a browser;
+the sites sit behind a WAF that returns 403 to automated clients.
+They are the authoritative references for the AEMO copyright notice
+and the National Electricity Rules respectively.
 
 Win-builder / r-hub return one NOTE flagging three terms as
 possibly misspelled: "AEMO", "interconnector", "predispatch".

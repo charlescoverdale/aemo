@@ -192,6 +192,21 @@ aemo_fcas_enablement <- function(duid = NULL, start, end,
   end <- aemo_parse_time(end)
   stopifnot(end >= start)
 
+  # Validate the service argument before any network request so an
+  # unknown service name fails fast (and offline) rather than only
+  # after a wasted fetch. svc_cols is reused as the column filter below.
+  svc_cols <- NULL
+  if (!is.null(service)) {
+    svc_cols <- intersect(paste0(tolower(service), "mw"),
+                          FCAS_ENABLEMENT_COLS)
+    if (length(svc_cols) == 0L) {
+      cli::cli_abort(c(
+        "No matching FCAS service columns found.",
+        "i" = "Valid services: {.val {sub('mw$', '', FCAS_ENABLEMENT_COLS)}}."
+      ))
+    }
+  }
+
   df <- aemo_fetch_report_range(
     current_dir = "/Reports/Current/DispatchIS_Reports/",
     archive_dir = "/Reports/Archive/DispatchIS_Reports/",
@@ -209,14 +224,6 @@ aemo_fcas_enablement <- function(duid = NULL, start, end,
 
   keep_cols <- c("settlementdate", "duid", "intervention")
   if (!is.null(service)) {
-    svc_cols <- paste0(tolower(service), "mw")
-    svc_cols <- intersect(svc_cols, FCAS_ENABLEMENT_COLS)
-    if (length(svc_cols) == 0L) {
-      cli::cli_abort(c(
-        "No matching FCAS service columns found.",
-        "i" = "Valid services: {.val {sub('mw$', '', FCAS_ENABLEMENT_COLS)}}."
-      ))
-    }
     keep_cols <- c(keep_cols, svc_cols)
   } else {
     keep_cols <- c(keep_cols, FCAS_ENABLEMENT_COLS)
