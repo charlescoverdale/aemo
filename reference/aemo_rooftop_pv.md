@@ -58,8 +58,30 @@ try({
                         start = now - 3600, end = now)
   head(r)
 })
-#> Error in aemo_nemweb_ls(path) : NEMweb returned HTTP 403 for
-#> <http://nemweb.com.au/Reports/Current/ROOFTOP_PV/ACTUAL/>.
+#> ℹ Downloading <http://nemweb.com.au/Reports/CURRENT/ROOFTOP_PV/ACTUAL/PUBLIC_RO…
+#> ✔ Downloading <http://nemweb.com.au/Reports/CURRENT/ROOFTOP_PV/ACTUAL/PUBLIC_RO…
+#> 
+#> ℹ Downloading <http://nemweb.com.au/Reports/CURRENT/ROOFTOP_PV/ACTUAL/PUBLIC_RO…
+#> ✔ Downloading <http://nemweb.com.au/Reports/CURRENT/ROOFTOP_PV/ACTUAL/PUBLIC_RO…
+#> 
+#> ℹ Downloading <http://nemweb.com.au/Reports/CURRENT/ROOFTOP_PV/ACTUAL/PUBLIC_RO…
+#> ✔ Downloading <http://nemweb.com.au/Reports/CURRENT/ROOFTOP_PV/ACTUAL/PUBLIC_RO…
+#> 
+#> ℹ Downloading <http://nemweb.com.au/Reports/CURRENT/ROOFTOP_PV/ACTUAL/PUBLIC_RO…
+#> ✔ Downloading <http://nemweb.com.au/Reports/CURRENT/ROOFTOP_PV/ACTUAL/PUBLIC_RO…
+#> 
+#> # aemo_tbl: AEMO rooftop PV actual NSW1
+#> # Source:   http://nemweb.com.au
+#> # Licence:  AEMO Copyright Permissions Notice
+#> # Retrieved: 2026-05-31 19:48 UTC 
+#> # Rows: 2  Cols: 7
+#> 
+#>     interval_datetime regionid power  qi        type         lastchanged
+#> 1 2026-06-01 05:00:00     NSW1     0   1 MEASUREMENT 2026/06/01 05:19:05
+#> 2 2026-06-01 05:00:00     NSW1     0 0.6   SATELLITE 2026/06/01 05:20:18
+#>        settlementdate
+#> 1 2026-06-01 05:00:00
+#> 2 2026-06-01 05:00:00
 options(op)
 # }
 ```

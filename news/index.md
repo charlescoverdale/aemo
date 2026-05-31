@@ -1,6 +1,25 @@
 # Changelog
 
+## aemo 0.4.2
+
+Maintenance release fixing a network-dependent test that could fail the
+package check whenever the NEMweb archive was unreachable.
+
+[`aemo_fcas_enablement()`](https://charlescoverdale.github.io/aemo/reference/aemo_fcas_enablement.md)
+validated its `service` argument only after fetching dispatch data, so
+an unknown service name surfaced the underlying fetch error (for example
+“NEMweb returned HTTP 403”) rather than the intended “No matching FCAS
+service columns” message. On check machines that could not reach NEMweb
+this broke the bad-service-name test in `test-dispatch.R`, producing an
+intermittent R CMD check ERROR on the flavours where the archive
+happened to be unreachable.
+
+The `service` argument is now validated before any network request, so a
+bad name fails fast and offline. No change for valid calls.
+
 ## aemo 0.4.1
+
+CRAN release: 2026-05-27
 
 Maintenance release fixing a test-suite issue reported by CRAN on
 2026-05-27. The

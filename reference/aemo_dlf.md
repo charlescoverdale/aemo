@@ -82,7 +82,7 @@ try({
 #> # aemo_tbl: NEM Distribution Loss Factors (DLF)
 #> # Source:   https://nemweb.com.au/Data_Archive/Wholesale_Electricity/MMSDM
 #> # Licence:  AEMO Copyright Permissions Notice
-#> # Retrieved: 2026-05-27 07:57 UTC 
+#> # Retrieved: 2026-05-31 19:34 UTC 
 #> # Rows: 0  Cols: 3
 #> 
 #> [1] financial_year    connectionpointid dlf              

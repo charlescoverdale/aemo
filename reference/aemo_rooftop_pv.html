@@ -9,7 +9,7 @@ either actuals or forecasts. Published at 30-minute resolution."></head><body>
 
     <a class="navbar-brand me-2" href="../index.html">aemo</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.4.1</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.4.2</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -101,8 +101,30 @@ generation but is subject to revision.</p>
 <span class="r-in"><span>                        start <span class="op">=</span> <span class="va">now</span> <span class="op">-</span> <span class="fl">3600</span>, end <span class="op">=</span> <span class="va">now</span><span class="op">)</span></span></span>
 <span class="r-in"><span>  <span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">r</span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="op">}</span><span class="op">)</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> Error in aemo_nemweb_ls(path) : NEMweb returned HTTP 403 for</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #0000BB; font-style: italic;">&lt;http://nemweb.com.au/Reports/Current/ROOFTOP_PV/ACTUAL/&gt;</span>.</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Downloading <span style="color: #0000BB; font-style: italic;">&lt;http://nemweb.com.au/Reports/CURRENT/ROOFTOP_PV/ACTUAL/PUBLIC_RO</span>…</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BB00;">✔</span> Downloading <span style="color: #0000BB; font-style: italic;">&lt;http://nemweb.com.au/Reports/CURRENT/ROOFTOP_PV/ACTUAL/PUBLIC_RO</span>…</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Downloading <span style="color: #0000BB; font-style: italic;">&lt;http://nemweb.com.au/Reports/CURRENT/ROOFTOP_PV/ACTUAL/PUBLIC_RO</span>…</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BB00;">✔</span> Downloading <span style="color: #0000BB; font-style: italic;">&lt;http://nemweb.com.au/Reports/CURRENT/ROOFTOP_PV/ACTUAL/PUBLIC_RO</span>…</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Downloading <span style="color: #0000BB; font-style: italic;">&lt;http://nemweb.com.au/Reports/CURRENT/ROOFTOP_PV/ACTUAL/PUBLIC_RO</span>…</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BB00;">✔</span> Downloading <span style="color: #0000BB; font-style: italic;">&lt;http://nemweb.com.au/Reports/CURRENT/ROOFTOP_PV/ACTUAL/PUBLIC_RO</span>…</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Downloading <span style="color: #0000BB; font-style: italic;">&lt;http://nemweb.com.au/Reports/CURRENT/ROOFTOP_PV/ACTUAL/PUBLIC_RO</span>…</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BB00;">✔</span> Downloading <span style="color: #0000BB; font-style: italic;">&lt;http://nemweb.com.au/Reports/CURRENT/ROOFTOP_PV/ACTUAL/PUBLIC_RO</span>…</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> # aemo_tbl: AEMO rooftop PV actual NSW1</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> # Source:   http://nemweb.com.au</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> # Licence:  AEMO Copyright Permissions Notice</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> # Retrieved: 2026-05-31 19:48 UTC </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> # Rows: 2  Cols: 7</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>     interval_datetime regionid power  qi        type         lastchanged</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1 2026-06-01 05:00:00     NSW1     0   1 MEASUREMENT 2026/06/01 05:19:05</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 2 2026-06-01 05:00:00     NSW1     0 0.6   SATELLITE 2026/06/01 05:20:18</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>        settlementdate</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1 2026-06-01 05:00:00</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 2 2026-06-01 05:00:00</span>
 <span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/options.html" class="external-link">options</a></span><span class="op">(</span><span class="va">op</span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="co"># }</span></span></span>
 </code></pre></div>

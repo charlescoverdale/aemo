@@ -124,33 +124,36 @@ try({
 #> ℹ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
 #> ✔ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
 #> 
+#> ℹ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
+#> ✔ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
+#> 
 #> # aemo_tbl: AEMO dispatch constraints (shadow prices)
 #> # Source:   http://nemweb.com.au
 #> # Licence:  AEMO Copyright Permissions Notice
-#> # Retrieved: 2026-05-27 07:56 UTC 
+#> # Retrieved: 2026-05-31 19:34 UTC 
 #> # Rows: 6  Cols: 13
 #> 
-#>        settlementdate runno   constraintid dispatchinterval intervention
-#> 1 2026-05-27 17:00:00     1  F_I+LREG_0210      20260527156            0
-#> 2 2026-05-27 17:00:00     1  F_I+NIL_MG_R1      20260527156            0
-#> 3 2026-05-27 17:00:00     1  F_I+NIL_MG_R5      20260527156            0
-#> 4 2026-05-27 17:00:00     1  F_I+NIL_MG_R6      20260527156            0
-#> 5 2026-05-27 17:00:00     1 F_I+NIL_MG_R60      20260527156            0
-#> 6 2026-05-27 17:00:00     1     F_Q++8E_L5      20260527156            0
-#>          rhs marginalvalue violationdegree         lastchanged duid
-#> 1        210          1.69               0 2026/05/27 16:55:03 <NA>
-#> 2  263.73651          0.01               0 2026/05/27 16:55:03 <NA>
-#> 3  709.37681          0.02               0 2026/05/27 16:55:03 <NA>
-#> 4  621.35649          0.04               0 2026/05/27 16:55:03 <NA>
-#> 5  621.35649          0.03               0 2026/05/27 16:55:03 <NA>
-#> 6 -148.12297          0.09               0 2026/05/27 16:55:03 <NA>
-#>   genconid_effectivedate genconid_versionno        lhs
-#> 1             2022-08-11                  1        210
-#> 2             2025-02-17                  1  263.73651
-#> 3             2022-08-11                  1  709.37681
-#> 4             2022-08-11                  1  621.35649
-#> 5             2022-08-11                  1  621.35648
-#> 6             2023-03-13                  1 -148.12297
+#>        settlementdate runno      constraintid dispatchinterval intervention
+#> 1 2026-06-01 04:35:00     1  F_MAIN+APD_TL_L5      20260601007            0
+#> 2 2026-06-01 04:35:00     1  F_MAIN+APD_TL_L6      20260601007            0
+#> 3 2026-06-01 04:35:00     1 F_MAIN+APD_TL_L60      20260601007            0
+#> 4 2026-06-01 04:35:00     1  F_MAIN+LREG_0210      20260601007            0
+#> 5 2026-06-01 04:35:00     1  F_MAIN+NIL_MG_R1      20260601007            0
+#> 6 2026-06-01 04:35:00     1  F_MAIN+NIL_MG_R5      20260601007            0
+#>         rhs marginalvalue violationdegree         lastchanged duid
+#> 1 534.21257          0.01               0 2026/06/01 04:30:02 <NA>
+#> 2 377.31701          0.01               0 2026/06/01 04:30:02 <NA>
+#> 3 469.60852          0.03               0 2026/06/01 04:30:02 <NA>
+#> 4  210.0001          1.19               0 2026/06/01 04:30:02 <NA>
+#> 5 457.37092          0.04               0 2026/06/01 04:30:02 <NA>
+#> 6 709.50741          0.02               0 2026/06/01 04:30:02 <NA>
+#>   genconid_effectivedate genconid_versionno       lhs
+#> 1             2024-07-11                  1 534.21257
+#> 2             2024-07-11                  1 377.31701
+#> 3             2024-07-11                  1 469.60852
+#> 4             2019-05-16                  1  210.0001
+#> 5             2025-02-17                  1 457.37092
+#> 6             2013-08-21                  1 709.50741
 options(op)
 # }
 ```

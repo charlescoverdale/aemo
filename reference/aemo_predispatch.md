@@ -83,8 +83,36 @@ try({
   p <- aemo_predispatch("NSW1", start = now - 3600, end = now)
   head(p)
 })
-#> Error in aemo_nemweb_ls(path) : NEMweb returned HTTP 403 for
-#> <http://nemweb.com.au/Reports/Current/PredispatchIS_Reports/>.
+#> ℹ Downloading <http://nemweb.com.au/Reports/CURRENT/PredispatchIS_Reports/PUBLI…
+#> ✔ Downloading <http://nemweb.com.au/Reports/CURRENT/PredispatchIS_Reports/PUBLI…
+#> 
+#> ℹ Downloading <http://nemweb.com.au/Reports/CURRENT/PredispatchIS_Reports/PUBLI…
+#> ✔ Downloading <http://nemweb.com.au/Reports/CURRENT/PredispatchIS_Reports/PUBLI…
+#> 
+#> # aemo_tbl: AEMO predispatch NSW1
+#> # Source:   http://nemweb.com.au
+#> # Licence:  AEMO Copyright Permissions Notice
+#> # Retrieved: 2026-05-31 19:48 UTC 
+#> # Rows: 2  Cols: 20
+#> 
+#>   predispatchseqno runno solutionstatus spdversion nonphysicallosses
+#> 1       2026060102     1              1       <NA>                 0
+#> 2       2026060103     1              1       <NA>                 0
+#>   totalobjective totalareagenviolation totalinterconnectorviolation
+#> 1     5582967112                     0                            0
+#> 2     5587977447                     0                            0
+#>   totalgenericviolation totalramprateviolation totalunitmwcapacityviolation
+#> 1                     0                      0                      851.018
+#> 2                     0                      0                      849.510
+#>   total5minviolation totalregviolation total6secviolation total60secviolation
+#> 1               <NA>              <NA>               <NA>                <NA>
+#> 2               <NA>              <NA>               <NA>                <NA>
+#>   totalasprofileviolation totalenergyconstrviolation totalenergyofferviolation
+#> 1                       0                          0                         0
+#> 2                       0                          0                         0
+#>           lastchanged intervention
+#> 1 2026/06/01 04:31:53            0
+#> 2 2026/06/01 05:01:59            0
 options(op)
 # }
 ```

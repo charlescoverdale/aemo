@@ -91,7 +91,7 @@ try({
 #> # aemo_tbl: NEM market participants (empty - MMSDM unreachable)
 #> # Source:   https://nemweb.com.au
 #> # Licence:  AEMO Copyright Permissions Notice
-#> # Retrieved: 2026-05-27 07:57 UTC 
+#> # Retrieved: 2026-05-31 19:35 UTC 
 #> # Rows: 0  Cols: 8
 #> 
 #> [1] participantid      participantclassid name               duid              

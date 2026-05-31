@@ -7,7 +7,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">aemo</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.4.1</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.4.2</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,7 +38,13 @@
     </div>
 
     <div class="section level2">
-<h2 class="pkg-version" data-toc-text="0.4.1" id="aemo-041">aemo 0.4.1<a class="anchor" aria-label="anchor" href="#aemo-041"></a></h2>
+<h2 class="pkg-version" data-toc-text="0.4.2" id="aemo-042">aemo 0.4.2<a class="anchor" aria-label="anchor" href="#aemo-042"></a></h2>
+<p>Maintenance release fixing a network-dependent test that could fail the package check whenever the NEMweb archive was unreachable.</p>
+<p><code><a href="../reference/aemo_fcas_enablement.html">aemo_fcas_enablement()</a></code> validated its <code>service</code> argument only after fetching dispatch data, so an unknown service name surfaced the underlying fetch error (for example “NEMweb returned HTTP 403”) rather than the intended “No matching FCAS service columns” message. On check machines that could not reach NEMweb this broke the bad-service-name test in <code>test-dispatch.R</code>, producing an intermittent R CMD check ERROR on the flavours where the archive happened to be unreachable.</p>
+<p>The <code>service</code> argument is now validated before any network request, so a bad name fails fast and offline. No change for valid calls.</p>
+</div>
+    <div class="section level2">
+<h2 class="pkg-version" data-toc-text="0.4.1" id="aemo-041">aemo 0.4.1<a class="anchor" aria-label="anchor" href="#aemo-041"></a></h2><p class="text-muted">CRAN release: 2026-05-27</p>
 <p>Maintenance release fixing a test-suite issue reported by CRAN on 2026-05-27. The <code><a href="../reference/aemo_units.html">aemo_units()</a></code> integration test made a live MMSDM request without a <code>skip_on_cran()</code> guard, so it raised an error on CRAN check machines whenever the NEMweb archive was unreachable. The test is now guarded like the other network-dependent tests and split into a gated live check and an offline-abort check that verifies the no-fallback behaviour. No user-facing code changes.</p>
 </div>
     <div class="section level2">
