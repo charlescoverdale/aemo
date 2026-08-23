@@ -125,8 +125,14 @@ aemo_predispatch <- function(region, start, end,
 #' @examples
 #' \donttest{
 #' op <- options(aemo.cache_dir = tempdir())
+#'
+#' # STPASA is republished every half hour, so the 24-hour default window
+#' # pulls dozens of files. Pass an explicit narrow window to keep the
+#' # example to a couple of downloads.
 #' try({
-#'   p <- aemo_pasa(horizon = "short", region = "NSW1")
+#'   p <- aemo_pasa(horizon = "short", region = "NSW1",
+#'                  start = Sys.time() - as.difftime(1, units = "hours"),
+#'                  end   = Sys.time())
 #' })
 #' options(op)
 #' }
