@@ -86,81 +86,18 @@ the last 24 hours.</p></dd>
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
     <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="co"># \donttest{</span></span></span>
 <span class="r-in"><span><span class="va">op</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/options.html" class="external-link">options</a></span><span class="op">(</span>aemo.cache_dir <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/tempfile.html" class="external-link">tempdir</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co"># STPASA is republished every half hour, so the 24-hour default window</span></span></span>
+<span class="r-in"><span><span class="co"># pulls dozens of files. Pass an explicit narrow window to keep the</span></span></span>
+<span class="r-in"><span><span class="co"># example to a couple of downloads.</span></span></span>
 <span class="r-in"><span><span class="kw"><a href="https://rdrr.io/r/base/try.html" class="external-link">try</a></span><span class="op">(</span><span class="op">{</span></span></span>
-<span class="r-in"><span>  <span class="va">p</span> <span class="op">&lt;-</span> <span class="fu">aemo_pasa</span><span class="op">(</span>horizon <span class="op">=</span> <span class="st">"short"</span>, region <span class="op">=</span> <span class="st">"NSW1"</span><span class="op">)</span></span></span>
+<span class="r-in"><span>  <span class="va">p</span> <span class="op">&lt;-</span> <span class="fu">aemo_pasa</span><span class="op">(</span>horizon <span class="op">=</span> <span class="st">"short"</span>, region <span class="op">=</span> <span class="st">"NSW1"</span>,</span></span>
+<span class="r-in"><span>                 start <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/Sys.time.html" class="external-link">Sys.time</a></span><span class="op">(</span><span class="op">)</span> <span class="op">-</span> <span class="fu"><a href="https://rdrr.io/r/base/difftime.html" class="external-link">as.difftime</a></span><span class="op">(</span><span class="fl">1</span>, units <span class="op">=</span> <span class="st">"hours"</span><span class="op">)</span>,</span></span>
+<span class="r-in"><span>                 end   <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/Sys.time.html" class="external-link">Sys.time</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="op">}</span><span class="op">)</span></span></span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Downloading <span style="color: #0000BB; font-style: italic;">&lt;http://nemweb.com.au/Reports/CURRENT/Short_Term_PASA_Reports/PUB</span>…</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BB00;">✔</span> Downloading <span style="color: #0000BB; font-style: italic;">&lt;http://nemweb.com.au/Reports/CURRENT/Short_Term_PASA_Reports/PUB</span>…</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Downloading <span style="color: #0000BB; font-style: italic;">&lt;http://nemweb.com.au/Reports/CURRENT/Short_Term_PASA_Reports/PUB</span>…</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BB00;">✔</span> Downloading <span style="color: #0000BB; font-style: italic;">&lt;http://nemweb.com.au/Reports/CURRENT/Short_Term_PASA_Reports/PUB</span>…</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Downloading <span style="color: #0000BB; font-style: italic;">&lt;http://nemweb.com.au/Reports/CURRENT/Short_Term_PASA_Reports/PUB</span>…</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BB00;">✔</span> Downloading <span style="color: #0000BB; font-style: italic;">&lt;http://nemweb.com.au/Reports/CURRENT/Short_Term_PASA_Reports/PUB</span>…</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Downloading <span style="color: #0000BB; font-style: italic;">&lt;http://nemweb.com.au/Reports/CURRENT/Short_Term_PASA_Reports/PUB</span>…</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BB00;">✔</span> Downloading <span style="color: #0000BB; font-style: italic;">&lt;http://nemweb.com.au/Reports/CURRENT/Short_Term_PASA_Reports/PUB</span>…</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Downloading <span style="color: #0000BB; font-style: italic;">&lt;http://nemweb.com.au/Reports/CURRENT/Short_Term_PASA_Reports/PUB</span>…</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BB00;">✔</span> Downloading <span style="color: #0000BB; font-style: italic;">&lt;http://nemweb.com.au/Reports/CURRENT/Short_Term_PASA_Reports/PUB</span>…</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Downloading <span style="color: #0000BB; font-style: italic;">&lt;http://nemweb.com.au/Reports/CURRENT/Short_Term_PASA_Reports/PUB</span>…</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BB00;">✔</span> Downloading <span style="color: #0000BB; font-style: italic;">&lt;http://nemweb.com.au/Reports/CURRENT/Short_Term_PASA_Reports/PUB</span>…</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Downloading <span style="color: #0000BB; font-style: italic;">&lt;http://nemweb.com.au/Reports/CURRENT/Short_Term_PASA_Reports/PUB</span>…</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BB00;">✔</span> Downloading <span style="color: #0000BB; font-style: italic;">&lt;http://nemweb.com.au/Reports/CURRENT/Short_Term_PASA_Reports/PUB</span>…</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Downloading <span style="color: #0000BB; font-style: italic;">&lt;http://nemweb.com.au/Reports/CURRENT/Short_Term_PASA_Reports/PUB</span>…</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BB00;">✔</span> Downloading <span style="color: #0000BB; font-style: italic;">&lt;http://nemweb.com.au/Reports/CURRENT/Short_Term_PASA_Reports/PUB</span>…</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Downloading <span style="color: #0000BB; font-style: italic;">&lt;http://nemweb.com.au/Reports/CURRENT/Short_Term_PASA_Reports/PUB</span>…</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BB00;">✔</span> Downloading <span style="color: #0000BB; font-style: italic;">&lt;http://nemweb.com.au/Reports/CURRENT/Short_Term_PASA_Reports/PUB</span>…</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Downloading <span style="color: #0000BB; font-style: italic;">&lt;http://nemweb.com.au/Reports/CURRENT/Short_Term_PASA_Reports/PUB</span>…</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BB00;">✔</span> Downloading <span style="color: #0000BB; font-style: italic;">&lt;http://nemweb.com.au/Reports/CURRENT/Short_Term_PASA_Reports/PUB</span>…</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Downloading <span style="color: #0000BB; font-style: italic;">&lt;http://nemweb.com.au/Reports/CURRENT/Short_Term_PASA_Reports/PUB</span>…</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BB00;">✔</span> Downloading <span style="color: #0000BB; font-style: italic;">&lt;http://nemweb.com.au/Reports/CURRENT/Short_Term_PASA_Reports/PUB</span>…</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Downloading <span style="color: #0000BB; font-style: italic;">&lt;http://nemweb.com.au/Reports/CURRENT/Short_Term_PASA_Reports/PUB</span>…</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BB00;">✔</span> Downloading <span style="color: #0000BB; font-style: italic;">&lt;http://nemweb.com.au/Reports/CURRENT/Short_Term_PASA_Reports/PUB</span>…</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Downloading <span style="color: #0000BB; font-style: italic;">&lt;http://nemweb.com.au/Reports/CURRENT/Short_Term_PASA_Reports/PUB</span>…</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BB00;">✔</span> Downloading <span style="color: #0000BB; font-style: italic;">&lt;http://nemweb.com.au/Reports/CURRENT/Short_Term_PASA_Reports/PUB</span>…</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Downloading <span style="color: #0000BB; font-style: italic;">&lt;http://nemweb.com.au/Reports/CURRENT/Short_Term_PASA_Reports/PUB</span>…</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BB00;">✔</span> Downloading <span style="color: #0000BB; font-style: italic;">&lt;http://nemweb.com.au/Reports/CURRENT/Short_Term_PASA_Reports/PUB</span>…</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Downloading <span style="color: #0000BB; font-style: italic;">&lt;http://nemweb.com.au/Reports/CURRENT/Short_Term_PASA_Reports/PUB</span>…</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BB00;">✔</span> Downloading <span style="color: #0000BB; font-style: italic;">&lt;http://nemweb.com.au/Reports/CURRENT/Short_Term_PASA_Reports/PUB</span>…</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Downloading <span style="color: #0000BB; font-style: italic;">&lt;http://nemweb.com.au/Reports/CURRENT/Short_Term_PASA_Reports/PUB</span>…</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BB00;">✔</span> Downloading <span style="color: #0000BB; font-style: italic;">&lt;http://nemweb.com.au/Reports/CURRENT/Short_Term_PASA_Reports/PUB</span>…</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Downloading <span style="color: #0000BB; font-style: italic;">&lt;http://nemweb.com.au/Reports/CURRENT/Short_Term_PASA_Reports/PUB</span>…</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BB00;">✔</span> Downloading <span style="color: #0000BB; font-style: italic;">&lt;http://nemweb.com.au/Reports/CURRENT/Short_Term_PASA_Reports/PUB</span>…</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Downloading <span style="color: #0000BB; font-style: italic;">&lt;http://nemweb.com.au/Reports/CURRENT/Short_Term_PASA_Reports/PUB</span>…</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BB00;">✔</span> Downloading <span style="color: #0000BB; font-style: italic;">&lt;http://nemweb.com.au/Reports/CURRENT/Short_Term_PASA_Reports/PUB</span>…</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Downloading <span style="color: #0000BB; font-style: italic;">&lt;http://nemweb.com.au/Reports/CURRENT/Short_Term_PASA_Reports/PUB</span>…</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BB00;">✔</span> Downloading <span style="color: #0000BB; font-style: italic;">&lt;http://nemweb.com.au/Reports/CURRENT/Short_Term_PASA_Reports/PUB</span>…</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Downloading <span style="color: #0000BB; font-style: italic;">&lt;http://nemweb.com.au/Reports/CURRENT/Short_Term_PASA_Reports/PUB</span>…</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BB00;">✔</span> Downloading <span style="color: #0000BB; font-style: italic;">&lt;http://nemweb.com.au/Reports/CURRENT/Short_Term_PASA_Reports/PUB</span>…</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Downloading <span style="color: #0000BB; font-style: italic;">&lt;http://nemweb.com.au/Reports/CURRENT/Short_Term_PASA_Reports/PUB</span>…</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BB00;">✔</span> Downloading <span style="color: #0000BB; font-style: italic;">&lt;http://nemweb.com.au/Reports/CURRENT/Short_Term_PASA_Reports/PUB</span>…</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Downloading <span style="color: #0000BB; font-style: italic;">&lt;http://nemweb.com.au/Reports/CURRENT/Short_Term_PASA_Reports/PUB</span>…</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BB00;">✔</span> Downloading <span style="color: #0000BB; font-style: italic;">&lt;http://nemweb.com.au/Reports/CURRENT/Short_Term_PASA_Reports/PUB</span>…</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Downloading <span style="color: #0000BB; font-style: italic;">&lt;http://nemweb.com.au/Reports/CURRENT/Short_Term_PASA_Reports/PUB</span>…</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BB00;">✔</span> Downloading <span style="color: #0000BB; font-style: italic;">&lt;http://nemweb.com.au/Reports/CURRENT/Short_Term_PASA_Reports/PUB</span>…</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Downloading <span style="color: #0000BB; font-style: italic;">&lt;http://nemweb.com.au/Reports/CURRENT/Short_Term_PASA_Reports/PUB</span>…</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BB00;">✔</span> Downloading <span style="color: #0000BB; font-style: italic;">&lt;http://nemweb.com.au/Reports/CURRENT/Short_Term_PASA_Reports/PUB</span>…</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Error in aemo_fetch_report_range(current_dir = current, archive_dir = archive,  : </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   No NEMweb files matched the requested range.</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Check `start` and `end`, or the pattern <span style="color: #0000BB;">"STPASA"</span>.</span>
 <span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/options.html" class="external-link">options</a></span><span class="op">(</span><span class="va">op</span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="co"># }</span></span></span>
 </code></pre></div>
@@ -174,7 +111,7 @@ the last 24 hours.</p></dd>
 </div>
 
 <div class="pkgdown-footer-right">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.2.0.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.2.1.</p>
 </div>
 
     </footer></div>

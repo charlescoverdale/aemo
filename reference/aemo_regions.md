@@ -36,7 +36,7 @@ aemo_regions()
 #> # aemo_tbl: NEM regions
 #> # Source:   http://nemweb.com.au
 #> # Licence:  AEMO Copyright Permissions Notice
-#> # Retrieved: 2026-05-31 19:48 UTC 
+#> # Retrieved: 2026-08-23 18:16 UTC 
 #> # Rows: 5  Cols: 6
 #> 
 #>   region            name state       wall_timezone    market_timezone

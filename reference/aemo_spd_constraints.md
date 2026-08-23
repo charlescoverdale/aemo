@@ -80,26 +80,28 @@ try({
   head(s)
 })
 #> ℹ Downloading <https://nemweb.com.au/Data_Archive/Wholesale_Electricity/MMSDM/2…
-#> ✖ Downloading <https://nemweb.com.au/Data_Archive/Wholesale_Electricity/MMSDM/2…
+#> ✔ Downloading <https://nemweb.com.au/Data_Archive/Wholesale_Electricity/MMSDM/2…
 #> 
-#> ℹ Downloading <https://nemweb.com.au/Data_Archive/Wholesale_Electricity/MMSDM/2…
-#> ✖ Downloading <https://nemweb.com.au/Data_Archive/Wholesale_Electricity/MMSDM/2…
+#> # aemo_tbl: NEM SPDINTERCONNECTORCONSTRAINT (SPD constraint coefficients)
+#> # Source:   https://nemweb.com.au/Data_Archive/Wholesale_Electricity/MMSDM
+#> # Licence:  AEMO Copyright Permissions Notice
+#> # Retrieved: 2026-08-23 18:16 UTC 
+#> # Rows: 6  Cols: 6
 #> 
-#> ℹ Downloading <https://nemweb.com.au/Data_Archive/Wholesale_Electricity/MMSDM/2…
-#> ✖ Downloading <https://nemweb.com.au/Data_Archive/Wholesale_Electricity/MMSDM/2…
-#> 
-#> ℹ Downloading <https://nemweb.com.au/Data_Archive/Wholesale_Electricity/MMSDM/2…
-#> ✖ Downloading <https://nemweb.com.au/Data_Archive/Wholesale_Electricity/MMSDM/2…
-#> 
-#> ℹ Downloading <https://nemweb.com.au/Data_Archive/Wholesale_Electricity/MMSDM/2…
-#> ✖ Downloading <https://nemweb.com.au/Data_Archive/Wholesale_Electricity/MMSDM/2…
-#> 
-#> ℹ Downloading <https://nemweb.com.au/Data_Archive/Wholesale_Electricity/MMSDM/2…
-#> ✖ Downloading <https://nemweb.com.au/Data_Archive/Wholesale_Electricity/MMSDM/2…
-#> 
-#> Error in aemo_spd_constraints(table = "interconnector") : 
-#>   Could not retrieve SPDINTERCONNECTORCONSTRAINT from MMSDM.
-#> ℹ Try `aemo_nemweb_download()` with an MMSDM URL directly.
+#>   interconnectorid effectivedate versionno            genconid factor
+#> 1        V-S-MNSP1    2026-07-01         1     S>>MW2MW3_NWRB1      1
+#> 2        V-S-MNSP1    2026-07-01         1     S>>MW2MW3_RBNW1     -1
+#> 3        N-Q-MNSP1    2026-07-01         1 #R036146_001_RAMP_V  0.211
+#> 4        N-Q-MNSP1    2026-07-01         1 #R036146_001_RAMP_F  0.211
+#> 5        N-Q-MNSP1    2026-07-01         1 #R036146_002_RAMP_V  0.319
+#> 6        NSW1-QLD1    2026-07-01         1 #R036146_002_RAMP_V  0.255
+#>           lastchanged
+#> 1 2026/07/01 12:16:36
+#> 2 2026/07/01 12:16:36
+#> 3 2026/07/01 17:03:46
+#> 4 2026/07/01 17:03:49
+#> 5 2026/07/01 17:03:53
+#> 6 2026/07/01 17:03:53
 options(op)
 # }
 ```

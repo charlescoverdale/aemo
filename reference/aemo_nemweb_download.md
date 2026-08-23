@@ -39,9 +39,10 @@ try({
     file.exists(f)
   }
 })
-#> Error in aemo_nemweb_ls("/Reports/Current/DispatchIS_Reports/") : 
-#>   NEMweb returned HTTP 403 for
-#> <http://nemweb.com.au/Reports/Current/DispatchIS_Reports/>.
+#> ℹ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
+#> ✔ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
+#> 
+#> [1] TRUE
 options(op)
 # }
 ```
