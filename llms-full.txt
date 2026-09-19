@@ -1,0 +1,1103 @@
+# aemo: full API reference
+
+> Fetch Australian Energy Market Operator (AEMO) public data from 'NEMweb' and the Market Management System Data Model (MMSDM) historical archive.
+
+- Version: 0.4.2
+- Install: `install.packages("aemo")`
+- CRAN: https://CRAN.R-project.org/package=aemo
+- GitHub: https://github.com/charlescoverdale/aemo
+- Reference site: https://charlescoverdale.github.io/aemo/
+
+This file is a self-contained reference for LLM agents: every exported
+function with its signature, arguments, return value, and example.
+
+---
+
+## `aemo_bids()`
+
+**Generator bid stack**
+
+Returns `BIDDAYOFFER_D` (daily bid summary: 10 price bands, MaxAvail, fixed load, locked at 12:30 D-1), `BIDPEROFFER_D` (per-interval availability and rebids), or the two joined on (duid, settlementdate, bidtype).
+
+**Usage**
+
+```r
+aemo_bids(
+  duid,
+  start,
+  end,
+  resolution = c("day", "period", "joined"),
+  allow_large = FALSE
+)
+```
+
+**Arguments**
+
+- `duid`: Character vector of DUIDs. Required.
+- `start, end`: Window.
+- `resolution`: One of `"day"` (default, BIDDAYOFFER_D only), `"period"` (BIDPEROFFER_D only), or `"joined"` (BIDDAYOFFER_D inner-joined to BIDPEROFFER_D on (duid, settlementdate, bidtype)).
+- `allow_large`: Logical. Default `FALSE`.
+
+**Returns**
+
+An `aemo_tbl`.
+
+**Example**
+
+```r
+op <- options(aemo.cache_dir = tempdir())
+try({
+  now <- Sys.time()
+  # Daily bid summary (price bands)
+  b <- aemo_bids(duid = "BW01",
+                  start = now - 86400, end = now)
+
+  # Joined: price bands + per-interval volumes
+  bj <- aemo_bids(duid = "BW01", start = now - 86400, end = now,
+                   resolution = "joined")
+})
+options(op)
+```
+
+---
+
+## `aemo_cache_info()`
+
+**Inspect the local aemo cache**
+
+Inspect the local aemo cache
+
+**Usage**
+
+```r
+aemo_cache_info()
+```
+
+**Returns**
+
+A list with `dir`, `n_files`, `size_bytes`, `size_human`, `files`.
+
+**Example**
+
+```r
+op <- options(aemo.cache_dir = tempdir())
+aemo_cache_info()
+options(op)
+```
+
+---
+
+## `aemo_clear_cache()`
+
+**Clear the aemo cache**
+
+Clear the aemo cache
+
+**Usage**
+
+```r
+aemo_clear_cache()
+```
+
+**Returns**
+
+Invisibly returns `NULL`.
+
+**Example**
+
+```r
+op <- options(aemo.cache_dir = tempdir())
+aemo_clear_cache()
+options(op)
+```
+
+---
+
+## `aemo_constraints()`
+
+**Binding transmission and system constraints**
+
+Returns the `DISPATCHCONSTRAINT` table from NEMweb: one row per binding (or near-binding) constraint per 5-minute dispatch interval. Each row records the constraint ID, the left-hand side (LHS) and right-hand side (RHS) values, the marginal value (shadow price on the constraint in AUD/MWh), and the violation degree if any.
+
+**Usage**
+
+```r
+aemo_constraints(
+  start,
+  end,
+  constraint_id = NULL,
+  intervention = FALSE,
+  min_marginal_value = 0.01
+)
+```
+
+**Arguments**
+
+- `start, end`: Window (inclusive), character or POSIXct.
+- `constraint_id`: Optional character vector of constraint IDs (e.g. `"N>>N-NIL_1"`, `"V::S_NIL_TBSE"`). `NULL` returns all binding constraints in the window.
+- `intervention`: Logical. Default `FALSE`.
+- `min_marginal_value`: Numeric. Only return constraints with marginal value at or above this threshold (AUD/MWh). `0` returns every row; the default of `0.01` filters out near-zero shadow prices that are typically noise.
+
+**Returns**
+
+An `aemo_tbl` with columns `settlementdate`, `constraintid`, `rhs`, `marginalvalue`, `violationdegree`, `lhs`, plus the intervention flag.
+
+**Example**
+
+```r
+op <- options(aemo.cache_dir = tempdir())
+try({
+  now <- Sys.time()
+  c <- aemo_constraints(start = now - 3600, end = now)
+  head(c)
+})
+options(op)
+```
+
+---
+
+## `aemo_demand()`
+
+**Regional electricity demand**
+
+Returns 5-minute regional demand from `DISPATCHREGIONSUM`. Three demand measures are supported, aligned with AEMO's Demand Terms taxonomy:
+
+**Usage**
+
+```r
+aemo_demand(
+  region,
+  start,
+  end,
+  measure = c("operational", "operational_less_snsg", "native"),
+  intervention = FALSE
+)
+```
+
+**Arguments**
+
+- `region`: NEM region code. Vector accepted.
+- `start, end`: Window (inclusive), character or POSIXct.
+- `measure`: One of `"operational"` (default), `"operational_less_snsg"`, or `"native"`.
+- `intervention`: Logical. Default `FALSE` filters to market pricing runs.
+
+**Returns**
+
+An `aemo_tbl` with columns `settlementdate`, `regionid`, `demand_mw` (the requested measure), plus the underlying DISPATCHREGIONSUM columns used in the derivation.
+
+**Example**
+
+```r
+op <- options(aemo.cache_dir = tempdir())
+try({
+  now <- Sys.time()
+  d <- aemo_demand("VIC1", now - 3600, now)
+  head(d)
+})
+options(op)
+```
+
+---
+
+## `aemo_dispatch_units()`
+
+**Per-DUID dispatch output**
+
+Returns 5-minute generator output for one or more DUIDs. Three measures are available:
+
+**Usage**
+
+```r
+aemo_dispatch_units(
+  duid = NULL,
+  start,
+  end,
+  measure = c("scada_mw", "target_mw", "both")
+)
+```
+
+**Arguments**
+
+- `duid`: Optional character vector of DUIDs. `NULL` returns all generators.
+- `start, end`: Window (inclusive).
+- `measure`: One of `"scada_mw"` (default), `"target_mw"`, or `"both"`.
+
+**Returns**
+
+An `aemo_tbl` with columns `settlementdate`, `duid`, and the requested measure(s).
+
+**Example**
+
+```r
+op <- options(aemo.cache_dir = tempdir())
+try({
+  now <- Sys.time()
+  # SCADA actual
+  d <- aemo_dispatch_units(duid = "BW01", start = now - 3600,
+                            end = now)
+
+  # Paired: INITIALMW, TOTALCLEARED, SCADAVALUE (ramp research)
+  d_both <- aemo_dispatch_units(duid = "BW01",
+                                 start = now - 3600, end = now,
+                                 measure = "both")
+})
+options(op)
+```
+
+---
+
+## `aemo_dlf()`
+
+**Distribution Loss Factors (DLF) by connection point**
+
+Returns the Distribution Loss Factor for NEM connection points from the MMSDM `LOSSFACTORMODEL` table. DLFs measure the average energy loss on the distribution network between a connection point and the transmission network boundary; a DLF of 1.02 means the generator must produce 2% more energy than it delivers to the transmission system.
+
+**Usage**
+
+```r
+aemo_dlf(year = NULL, connection_point_id = NULL)
+```
+
+**Arguments**
+
+- `year`: Financial year(s) as `"YYYY-YY"`. `NULL` returns all available years.
+- `connection_point_id`: Optional character vector of connection point IDs.
+
+**Returns**
+
+An `aemo_tbl` with at minimum `financial_year`, `connectionpointid`, and `dlf`.
+
+**Example**
+
+```r
+op <- options(aemo.cache_dir = tempdir())
+try({
+  dlf <- aemo_dlf(year = "2024-25")
+  head(dlf)
+})
+options(op)
+```
+
+---
+
+## `aemo_fcas()`
+
+**Frequency control ancillary services (FCAS) prices**
+
+Returns regional FCAS market prices across the eight contingency services plus the two regulation services. Ten services are live in the NEM since R1/L1 Very Fast commenced on 9 October 2023.
+
+**Usage**
+
+```r
+aemo_fcas(region, start, end, service = NULL, intervention = FALSE)
+```
+
+**Arguments**
+
+- `region`: NEM region code.
+- `start, end`: Window (inclusive).
+- `service`: Optional character vector of service names (e.g. `"RAISE6SEC"`, `"LOWER60SEC"`, `"RAISE1SEC"`).
+- `intervention`: Logical. See `aemo_price()`.
+
+**Returns**
+
+An `aemo_tbl` with one row per interval and columns for each requested FCAS RRP (AUD/MW).
+
+**Example**
+
+```r
+op <- options(aemo.cache_dir = tempdir())
+try({
+  now <- Sys.time()
+  f <- aemo_fcas("NSW1", now - 3600, now)
+  head(f)
+})
+options(op)
+```
+
+---
+
+## `aemo_fcas_enablement()`
+
+**FCAS enablement volumes by generator unit**
+
+Returns the MW enabled for each of the ten Frequency Control Ancillary Services (FCAS) per DUID per 5-minute dispatch interval from `DISPATCHLOAD`. This is the quantity side of the FCAS market: how much each unit was enabled (dispatched) to provide each service, as distinct from the price returned by `aemo_fcas()`.
+
+**Usage**
+
+```r
+aemo_fcas_enablement(
+  duid = NULL,
+  start,
+  end,
+  service = NULL,
+  intervention = FALSE
+)
+```
+
+**Arguments**
+
+- `duid`: Optional character vector of DUIDs. `NULL` returns all units. See `aemo_units()` for the full DUID registry.
+- `start, end`: Window (inclusive), character or POSIXct.
+- `service`: Optional character vector of service names, e.g. `c("raise6sec", "lowerreg")`. Case-insensitive. `NULL` returns all ten services.
+- `intervention`: Logical. Default `FALSE`.
+
+**Returns**
+
+An `aemo_tbl` with columns `settlementdate`, `duid`, and one column per FCAS service (`raise1secmw`, `lower1secmw`, `raise6secmw`, `lower6secmw`, `raise60secmw`, `lower60secmw`, `raise5minmw`, `lower5minmw`, `raiseregmw`, `lowerregmw`). Values are MW; zero means the unit was not enabled for that service.
+
+**Example**
+
+```r
+op <- options(aemo.cache_dir = tempdir())
+try({
+  now <- Sys.time()
+  e <- aemo_fcas_enablement(start = now - 3600, end = now)
+  head(e)
+})
+options(op)
+```
+
+---
+
+## `aemo_gas()`
+
+**Gas market data (STTM, DWGM)**
+
+Returns Short Term Trading Market (`STTM`, Adelaide, Brisbane, Sydney hubs) or Declared Wholesale Gas Market (`DWGM`, Victoria) prices and volumes.
+
+**Usage**
+
+```r
+aemo_gas(market = c("sttm", "dwgm"), hub = NULL, start, end)
+```
+
+**Arguments**
+
+- `market`: One of `"sttm"` (default) or `"dwgm"`.
+- `hub`: Optional STTM hub: `"adelaide"`, `"brisbane"`, or `"sydney"`. Ignored for DWGM.
+- `start, end`: Window.
+
+**Returns**
+
+An `aemo_tbl`.
+
+**Example**
+
+```r
+op <- options(aemo.cache_dir = tempdir())
+try({
+  now <- Sys.time()
+  g <- aemo_gas(market = "sttm", hub = "sydney",
+                 start = now - 7 * 86400, end = now)
+  head(g)
+})
+options(op)
+```
+
+---
+
+## `aemo_gencon()`
+
+**Generic constraint equations and RHS terms (GENCONDATA)**
+
+Downloads the `GENCONDATA` table from the most recent MMSDM monthly archive. `GENCONDATA` contains the equation definitions for every generic constraint active in the NEM: the constraint ID, the type (equality/inequality), a description of what the constraint models (thermal limit, voltage stability, system strength, etc.), and the default RHS value.
+
+**Usage**
+
+```r
+aemo_gencon(constraint_id = NULL, type = NULL)
+```
+
+**Arguments**
+
+- `constraint_id`: Optional character vector of constraint IDs to filter on. `NULL` returns all equations.
+- `type`: Optional constraint type filter (e.g. `"LE"` for `<=`, `"GE"` for `>=`, `"EQ"` for `=`). `NULL` returns all types.
+
+**Returns**
+
+An `aemo_tbl` with columns including `genconid` (constraint ID), `constrainttype`, `description`, `genericconstraintrhs` (default RHS value). Additional columns from GENCONDATA (effective dates, generic constraint equation weights) will be present when available.
+
+**Example**
+
+```r
+op <- options(aemo.cache_dir = tempdir())
+try({
+  # Find equations for the Heywood interconnector thermal limits
+  g <- aemo_gencon(constraint_id = c("V::S_NIL_TBSE", "V::S_NIL_FCSPS"))
+  head(g)
+})
+options(op)
+```
+
+---
+
+## `aemo_interconnector()`
+
+**NEM interconnector flows**
+
+Returns MW flows, losses, and limits for one or more NEM interconnectors from `DISPATCHINTERCONNECTORRES`.
+
+**Usage**
+
+```r
+aemo_interconnector(flow = NULL, start, end, intervention = FALSE)
+```
+
+**Arguments**
+
+- `flow`: Optional character vector of interconnector IDs.
+- `start, end`: Window.
+- `intervention`: Logical. Default `FALSE`.
+
+**Returns**
+
+An `aemo_tbl`.
+
+**Example**
+
+```r
+op <- options(aemo.cache_dir = tempdir())
+try({
+  now <- Sys.time()
+  i <- aemo_interconnector(flow = "V-SA",
+                            start = now - 3600, end = now)
+  head(i)
+})
+options(op)
+```
+
+---
+
+## `aemo_interconnectors()`
+
+**NEM interconnectors**
+
+Returns a static table of the seven NEM interconnectors. The seventh entry is Project EnergyConnect (PEC), whose Stage 1 was energised on 30 April 2025 with full ~800 MW capability expected mid-2026.
+
+**Usage**
+
+```r
+aemo_interconnectors()
+```
+
+**Returns**
+
+An `aemo_tbl` with columns `interconnector_id`, `from_region`, `to_region`, `name`, `energised`.
+
+**Example**
+
+```r
+aemo_interconnectors()
+```
+
+---
+
+## `aemo_market_notices()`
+
+**NEM market notices**
+
+Returns the `MARKETNOTICEDATA` feed from MMSDM. Market notices are AEMO's free-text log of market-relevant events: Lack of Reserve (LOR1/2/3) declarations, Reliability and Emergency Reserve Trader (RERT) activations, market suspensions, market directions, unit withdrawals, system security events, administered price declarations, and operator advisories.
+
+**Usage**
+
+```r
+aemo_market_notices(start, end, notice_type = NULL, region = NULL)
+```
+
+**Arguments**
+
+- `start, end`: Window (inclusive) applied to `EFFECTIVEDATE`.
+- `notice_type`: Optional character vector (e.g. `"LOR1"`, `"RERT"`, `"PRICES SUBJECT TO REVIEW"`). Case-insensitive substring match.
+- `region`: Optional NEM region code.
+
+**Returns**
+
+An `aemo_tbl` with columns from MARKETNOTICEDATA: `noticeid`, `effectivedate`, `typeid` (notice category), `originator`, `priority`, `reason` (the notice text), `externalreference`, and where present `regionid`.
+
+**Example**
+
+```r
+op <- options(aemo.cache_dir = tempdir())
+try({
+  # LOR declarations during the June 2022 NEM suspension
+  n <- aemo_market_notices(
+    start = "2022-06-13",
+    end   = "2022-06-14",
+    notice_type = "LOR"
+  )
+  head(n)
+})
+options(op)
+```
+
+---
+
+## `aemo_mlf()`
+
+**Marginal Loss Factors (MLF) by DUID and financial year**
+
+Returns the Marginal Loss Factor applicable to each DUID for the requested financial year(s). MLFs measure the incremental network loss at a connection point relative to the Regional Reference Node (RRN); a DUID with MLF = 0.97 receives 97% of the regional RRP per MWh generated.
+
+**Usage**
+
+```r
+aemo_mlf(year = NULL, duid = NULL)
+```
+
+**Arguments**
+
+- `year`: Financial year(s) as `"YYYY-YY"` strings (e.g. `"2024-25"`). `NULL` returns all available years. Multiple years accepted.
+- `duid`: Optional character vector of DUIDs to filter on. `NULL` returns all DUIDs. See `aemo_units()` for the full DUID registry.
+
+**Returns**
+
+An `aemo_tbl` with columns `financial_year`, `duid`, `connectionpointid`, `regionid`, `mlf`. From a live MMSDM download additional columns (`participantid`, `lastchanged`) may also be present.
+
+**Example**
+
+```r
+op <- options(aemo.cache_dir = tempdir())
+try({
+  mlf <- aemo_mlf(year = "2024-25")
+  head(mlf)
+})
+options(op)
+```
+
+---
+
+## `aemo_nemweb_download()`
+
+**Download a NEMweb zipped CSV to the local cache**
+
+Thin wrapper over the internal cache-aware downloader.
+
+**Usage**
+
+```r
+aemo_nemweb_download(url, cache = TRUE)
+```
+
+**Arguments**
+
+- `url`: A fully-qualified NEMweb URL (zipped CSV).
+- `cache`: Logical. Reuse cached file if present.
+
+**Returns**
+
+Path to the cached file.
+
+**Example**
+
+```r
+op <- options(aemo.cache_dir = tempdir())
+try({
+  files <- aemo_nemweb_ls("/Reports/Current/DispatchIS_Reports/")
+  if (nrow(files) > 0) {
+    f <- aemo_nemweb_download(files$url[1])
+    file.exists(f)
+  }
+})
+options(op)
+```
+
+---
+
+## `aemo_nemweb_ls()`
+
+**List files in a NEMweb directory**
+
+Returns a data frame of files in a NEMweb path, parsed from the Apache directory-listing HTML.
+
+**Usage**
+
+```r
+aemo_nemweb_ls(path)
+```
+
+**Arguments**
+
+- `path`: NEMweb subpath (e.g. `"/Reports/Current/DispatchIS_Reports/"`). Leading and trailing slashes are optional.
+
+**Returns**
+
+A data frame with `name`, `modified`, `size`, `url`.
+
+**Example**
+
+```r
+op <- options(aemo.cache_dir = tempdir())
+try({
+  files <- aemo_nemweb_ls("/Reports/Current/DispatchIS_Reports/")
+  head(files)
+})
+options(op)
+```
+
+---
+
+## `aemo_outages()`
+
+**Planned and forced network outages**
+
+Returns the `NETWORK_OUTAGEDETAIL` table from MMSDM, which records every planned and forced outage on NEM transmission and distribution network elements. Outages are a primary driver of binding constraints and price spikes: when a line or transformer is out of service the network is more constrained, reducing the thermal limits that appear as RHS values in DISPATCHCONSTRAINT.
+
+**Usage**
+
+```r
+aemo_outages(start, end, element_id = NULL, outage_type = NULL, region = NULL)
+```
+
+**Arguments**
+
+- `start, end`: Outage window (inclusive). Filters on `starttime` and `endtime`: any outage active during the window is returned. Character or POSIXct.
+- `element_id`: Optional character vector of network element IDs. `NULL` returns all elements.
+- `outage_type`: Optional character. One of `"PLANNED"`, `"FORCED"`, or `NULL` (both). Case-insensitive.
+- `region`: Optional NEM region code. Filters on the region column where available.
+
+**Returns**
+
+An `aemo_tbl` with columns from NETWORK_OUTAGEDETAIL including `outageid`, `starttime`, `endtime`, `substationid`, `equipmenttype`, `equipmentid`, `outagetype`, `regionid`, and `restarttimeunknown`. Exact column set depends on the MMSDM version.
+
+**Example**
+
+```r
+op <- options(aemo.cache_dir = tempdir())
+try({
+  # Forced outages during a recent high-price period in SA
+  o <- aemo_outages(
+    start = "2024-03-01",
+    end   = "2024-03-02",
+    outage_type = "FORCED"
+  )
+  head(o)
+})
+options(op)
+```
+
+---
+
+## `aemo_participants()`
+
+**NEM market participants and their registered DUIDs**
+
+Returns a mapping of NEM market participants (companies) to their registered Dispatchable Unit Identifiers (DUIDs), joined from the MMSDM `PARTICIPANT` and `DUDETAILSUMMARY` tables. Use this for corporate ownership analysis: rolling up generator output or bids from DUID-level data to the company level.
+
+**Usage**
+
+```r
+aemo_participants()
+```
+
+**Returns**
+
+An `aemo_tbl` with columns `participantid`, `participantclassid` (e.g. `GENERATOR`, `LOAD`, `TRADER`), `name` (company name), `duid`, `stationid`, `regionid`, `dispatchtype`, `schedule_type`. Rows are one per participant-DUID combination. If MMSDM is unreachable, returns an empty table with a warning.
+
+**Example**
+
+```r
+op <- options(aemo.cache_dir = tempdir())
+try({
+  pt <- aemo_participants()
+  # DUIDs owned by AGL
+  pt[grepl("AGL", pt$name, ignore.case = TRUE), ]
+})
+options(op)
+```
+
+---
+
+## `aemo_pasa()`
+
+**Projected Assessment of System Adequacy (PASA)**
+
+Returns short-term (`STPASA`, 1-7 day) or medium-term (`MTPASA`, 2-year) system adequacy projections.
+
+**Usage**
+
+```r
+aemo_pasa(
+  horizon = c("short", "medium"),
+  region = NULL,
+  start = NULL,
+  end = NULL
+)
+```
+
+**Arguments**
+
+- `horizon`: One of `"short"` (default) or `"medium"`.
+- `region`: Optional NEM region code.
+- `start, end`: Optional window of run-times. Defaults to the last 24 hours.
+
+**Returns**
+
+An `aemo_tbl`.
+
+**Example**
+
+```r
+op <- options(aemo.cache_dir = tempdir())
+
+# STPASA is republished every half hour, so the 24-hour default window
+# pulls dozens of files. Pass an explicit narrow window to keep the
+# example to a couple of downloads.
+try({
+  p <- aemo_pasa(horizon = "short", region = "NSW1",
+                 start = Sys.time() - as.difftime(1, units = "hours"),
+                 end   = Sys.time())
+})
+options(op)
+```
+
+---
+
+## `aemo_predispatch()`
+
+**Price and demand forecasts (P5MIN, PREDISPATCH)**
+
+Returns AEMO's forecast prices and demand for a NEM region. Two horizons: `"p5min"`: 5-minute-ahead forecast, 12 intervals ahead, published every 5 minutes. `"predispatch"`: 40-hour-ahead predispatch at 30-minute resolution, published every 30 minutes.
+
+**Usage**
+
+```r
+aemo_predispatch(
+  region,
+  start,
+  end,
+  horizon = c("predispatch", "p5min"),
+  run_datetime = NULL
+)
+```
+
+**Arguments**
+
+- `region`: NEM region code.
+- `start, end`: Window of forecast run-times.
+- `horizon`: One of `"predispatch"` (default) or `"p5min"`.
+- `run_datetime`: Optional character or `POSIXct`. A specific `RUN_DATETIME` to pin to. `NULL` (default) returns every vintage issued in [start, end].
+
+**Returns**
+
+An `aemo_tbl`.
+
+**Example**
+
+```r
+op <- options(aemo.cache_dir = tempdir())
+try({
+  now <- Sys.time()
+  p <- aemo_predispatch("NSW1", start = now - 3600, end = now)
+  head(p)
+})
+options(op)
+```
+
+---
+
+## `aemo_price()`
+
+**Wholesale electricity prices**
+
+Returns 5-minute dispatch prices or 30-minute trading prices for a NEM region over a specified window. Filters intervention runs by default so the returned prices are the market clearing prices used in settlement.
+
+**Usage**
+
+```r
+aemo_price(
+  region,
+  start,
+  end,
+  interval = c("5min", "30min"),
+  market = c("energy", "fcas"),
+  intervention = FALSE
+)
+```
+
+**Arguments**
+
+- `region`: One of `"NSW1"`, `"QLD1"`, `"SA1"`, `"TAS1"`, `"VIC1"`. Accepts a vector.
+- `start, end`: Start and end times (inclusive). Character (parsed as AEST) or `POSIXct`.
+- `interval`: One of `"5min"` (default) or `"30min"`.
+- `market`: One of `"energy"` (default, returns RRP) or `"fcas"` (returns the FCAS service RRPs).
+- `intervention`: Logical. `FALSE` (default) returns only the market pricing run; `TRUE` returns both market and physical runs, with the `intervention` column preserved.
+
+**Returns**
+
+An `aemo_tbl`. Key columns include `settlementdate` (POSIXct AEST), `regionid`, `rrp` (AUD/MWh, energy) or the FCAS service RRPs (AUD/MW), and `intervention`.
+
+**Example**
+
+```r
+op <- options(aemo.cache_dir = tempdir())
+try({
+  now <- Sys.time()
+  p <- aemo_price("NSW1", now - 3600, now)
+  head(p)
+})
+options(op)
+```
+
+---
+
+## `aemo_price_caps()`
+
+**NEM market price caps, price floor, and CPT by financial year**
+
+Returns a static reference table of the Market Price Cap (MPC), Market Price Floor (MPF), Cumulative Price Threshold (CPT), and Administered Price Cap (APC) that apply in each NEM financial year (1 July to 30 June). These are set by the AEMC under NER 3.9.4 and indexed annually to CPI.
+
+**Usage**
+
+```r
+aemo_price_caps()
+```
+
+**Returns**
+
+An `aemo_tbl` with columns `year` (financial year, `"YYYY-YY"`), `market_price_cap_aud_per_mwh`, `market_price_floor_aud_per_mwh`, `cumulative_price_threshold_aud`, `administered_price_cap_aud_per_mwh`, and `source`.
+
+**Example**
+
+```r
+caps <- aemo_price_caps()
+head(caps)
+```
+
+---
+
+## `aemo_regions()`
+
+**NEM regions**
+
+Returns a static table of the five NEM regions with metadata. The `market_timezone` column is the AEMO market clock (AEST, UTC+10, no DST, year-round) that applies to every timestamp in NEMweb files; `wall_timezone` is the local civil time zone consumers experience (observes DST in NSW/VIC/TAS/SA).
+
+**Usage**
+
+```r
+aemo_regions()
+```
+
+**Returns**
+
+An `aemo_tbl` with columns `region`, `name`, `state`, `wall_timezone`, `market_timezone`, `commenced`.
+
+**Example**
+
+```r
+aemo_regions()
+```
+
+---
+
+## `aemo_rooftop_pv()`
+
+**Rooftop PV actuals and forecasts**
+
+Returns AEMO's region-level estimate of rooftop PV generation, either actuals or forecasts. Published at 30-minute resolution.
+
+**Usage**
+
+```r
+aemo_rooftop_pv(region, start, end, type = c("actual", "forecast"))
+```
+
+**Arguments**
+
+- `region`: NEM region code.
+- `start, end`: Window.
+- `type`: One of `"actual"` (default) or `"forecast"`.
+
+**Returns**
+
+An `aemo_tbl`.
+
+**Example**
+
+```r
+op <- options(aemo.cache_dir = tempdir())
+try({
+  now <- Sys.time()
+  r <- aemo_rooftop_pv("NSW1",
+                        start = now - 3600, end = now)
+  head(r)
+})
+options(op)
+```
+
+---
+
+## `aemo_settlement()`
+
+**Settlement cash-flow and residue tables**
+
+Returns settlement reconciliation tables from MMSDM. Three views are exposed, corresponding to the three tables gentailer hedging workflows most commonly need:
+
+**Usage**
+
+```r
+aemo_settlement(table = c("cashflow", "fcas_recovery", "residues"), start, end)
+```
+
+**Arguments**
+
+- `table`: One of `"cashflow"`, `"fcas_recovery"`, or `"residues"`.
+- `start, end`: Window (inclusive) applied to `SETTLEMENTDATE` / `PAYMENTDATE`.
+
+**Returns**
+
+An `aemo_tbl` with the raw MMSDM columns for the requested table.
+
+**Example**
+
+```r
+op <- options(aemo.cache_dir = tempdir())
+try({
+  s <- aemo_settlement(table = "cashflow",
+                        start = "2024-06-01",
+                        end   = "2024-06-02")
+  head(s)
+})
+options(op)
+```
+
+---
+
+## `aemo_snapshot()`
+
+**Snapshot provenance for an aemo_tbl**
+
+Returns a one-row-per-source provenance record for an `aemo_tbl`, suitable for inclusion in a paper appendix, a Zenodo deposit, or a CRAN-style data manifest. The snapshot captures:
+
+**Usage**
+
+```r
+aemo_snapshot(x)
+```
+
+**Arguments**
+
+- `x`: An `aemo_tbl` (or a list of them).
+
+**Returns**
+
+A data frame with one row per table.
+
+**Example**
+
+```r
+x <- structure(
+  data.frame(settlementdate = Sys.time(), region = "NSW1", rrp = 80),
+  aemo_title = "Demo",
+  aemo_source = "http://nemweb.com.au",
+  aemo_licence = "AEMO Copyright Permissions Notice",
+  aemo_retrieved = Sys.time(),
+  class = c("aemo_tbl", "data.frame")
+)
+aemo_snapshot(x)
+```
+
+---
+
+## `aemo_spd_constraints()`
+
+**SPD constraint tables (regions, interconnectors, connection points)**
+
+Returns the SPD (Security and Projected Dispatch) constraint coefficient tables from MMSDM. Where `GENCONDATA` gives the high-level equation definition, the SPD tables give the per-term coefficients used in the NEMDE dispatch optimisation:
+
+**Usage**
+
+```r
+aemo_spd_constraints(
+  table = c("region", "interconnector", "connection_point"),
+  constraint_id = NULL
+)
+```
+
+**Arguments**
+
+- `table`: One of `"region"` (default), `"interconnector"`, or `"connection_point"`.
+- `constraint_id`: Optional character vector of `GENCONID`/`CONSTRAINTID` values.
+
+**Returns**
+
+An `aemo_tbl` with columns from the requested SPD table. `GENCONID` and `FACTOR` (the coefficient) are always present; other columns vary by table.
+
+**Example**
+
+```r
+op <- options(aemo.cache_dir = tempdir())
+try({
+  s <- aemo_spd_constraints(table = "interconnector")
+  head(s)
+})
+options(op)
+```
+
+---
+
+## `aemo_throttle()`
+
+**Configure request throttling**
+
+Controls the delay between successive NEMweb requests. Defaults to 1 second (half a request per second).
+
+**Usage**
+
+```r
+aemo_throttle(delay = 1)
+```
+
+**Arguments**
+
+- `delay`: Numeric. Minimum delay between requests in seconds. Internally this becomes `httr2::req_throttle(rate = 1/delay)`.
+
+**Returns**
+
+Invisibly returns the previous value.
+
+**Example**
+
+```r
+old <- aemo_throttle(0.5)  # 2 requests per second
+aemo_throttle(old)         # restore
+```
+
+---
+
+## `aemo_units()`
+
+**NEM generators (DUID registry)**
+
+Downloads the `DUDETAILSUMMARY` table from the most recent MMSDM monthly archive and returns one row per registered DUID (Dispatchable Unit Identifier) with station, region, dispatch type, classification, and schedule type. Typical output is 500+ DUIDs covering scheduled, semi-scheduled, and non-scheduled generators, bidirectional storage (BESS), and loads.
+
+**Usage**
+
+```r
+aemo_units(as_of = NULL)
+```
+
+**Arguments**
+
+- `as_of`: Optional `Date` or `POSIXct`. Returns the DUID registry as it was on that date. `NULL` (default) returns the current registry.
+
+**Returns**
+
+An `aemo_tbl` keyed by `duid`. Columns include (from DUDETAILSUMMARY): `duid`, `stationid`, `regionid`, `dispatchtype` (GENERATOR / LOAD), `connectionpointid`, `schedule_type` (SCHEDULED / SEMI-SCHEDULED / NON-SCHEDULED), `start_date`, `end_date`.
+
+**Example**
+
+```r
+op <- options(aemo.cache_dir = tempdir())
+try({
+  # Current DUID registry
+  u <- aemo_units()
+
+  # DUIDs as they were on 1 March 2023 (pre-Liddell retirement)
+  u_2023 <- aemo_units(as_of = "2023-03-01")
+})
+options(op)
+```
+
+---
+
