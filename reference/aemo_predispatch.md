@@ -92,18 +92,18 @@ try({
 #> # aemo_tbl: AEMO predispatch NSW1
 #> # Source:   http://nemweb.com.au
 #> # Licence:  AEMO Copyright Permissions Notice
-#> # Retrieved: 2026-08-23 18:16 UTC 
+#> # Retrieved: 2026-09-19 11:09 UTC 
 #> # Rows: 2  Cols: 20
 #> 
 #>   predispatchseqno runno solutionstatus spdversion nonphysicallosses
-#> 1       2026082347     1              1       <NA>                 0
-#> 2       2026082348     1              0       <NA>                 0
+#> 1       2026091933     1              1       <NA>                 0
+#> 2       2026091934     1              1       <NA>                 0
 #>   totalobjective totalareagenviolation totalinterconnectorviolation
-#> 1     -878319785                     0                            0
-#> 2     -867786538                     0                            0
+#> 1      940823474                     0                            0
+#> 2      142498604                     0                            0
 #>   totalgenericviolation totalramprateviolation totalunitmwcapacityviolation
-#> 1                     0                  0.337                            0
-#> 2                     0                  0.000                            0
+#> 1                     0                      0                        66.56
+#> 2                     0                      0                        65.52
 #>   total5minviolation totalregviolation total6secviolation total60secviolation
 #> 1               <NA>              <NA>               <NA>                <NA>
 #> 2               <NA>              <NA>               <NA>                <NA>
@@ -111,8 +111,8 @@ try({
 #> 1                       0                          0                         0
 #> 2                       0                          0                         0
 #>           lastchanged intervention
-#> 1 2026/08/24 03:01:36            0
-#> 2 2026/08/24 03:31:44            0
+#> 1 2026/09/19 20:02:20            0
+#> 2 2026/09/19 20:32:05            0
 options(op)
 # }
 ```

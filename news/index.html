@@ -38,7 +38,7 @@
     </div>
 
     <div class="section level2">
-<h2 class="pkg-version" data-toc-text="0.4.2" id="aemo-042">aemo 0.4.2<a class="anchor" aria-label="anchor" href="#aemo-042"></a></h2>
+<h2 class="pkg-version" data-toc-text="0.4.2" id="aemo-042">aemo 0.4.2<a class="anchor" aria-label="anchor" href="#aemo-042"></a></h2><p class="text-muted">CRAN release: 2026-09-09</p>
 <p>Maintenance release fixing a network-dependent test that could fail the package check whenever the NEMweb archive was unreachable.</p>
 <p><code><a href="../reference/aemo_fcas_enablement.html">aemo_fcas_enablement()</a></code> validated its <code>service</code> argument only after fetching dispatch data, so an unknown service name surfaced the underlying fetch error (for example “NEMweb returned HTTP 403”) rather than the intended “No matching FCAS service columns” message. On check machines that could not reach NEMweb this broke the bad-service-name test in <code>test-dispatch.R</code>, producing an intermittent R CMD check ERROR on the flavours where the archive happened to be unreachable.</p>
 <p>The <code>service</code> argument is now validated before any network request, so a bad name fails fast and offline. No change for valid calls.</p>

@@ -72,92 +72,92 @@ try({
   d <- aemo_demand("VIC1", now - 3600, now)
   head(d)
 })
-#> Warning: Cache integrity check failed for 0e2951cf921a0e85.zip; re-downloading.
+#> Warning: Cache integrity check failed for d15d470c4a6a9a24.zip; re-downloading.
 #> ℹ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
 #> ✔ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
 #> 
-#> Warning: Cache integrity check failed for 8fad02e9e2699fb3.zip; re-downloading.
+#> Warning: Cache integrity check failed for a8a882bfffda28c7.zip; re-downloading.
 #> ℹ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
 #> ✔ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
 #> 
-#> Warning: Cache integrity check failed for 47f036577fb550b4.zip; re-downloading.
+#> Warning: Cache integrity check failed for 64a5dec40bed14bf.zip; re-downloading.
 #> ℹ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
 #> ✔ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
 #> 
-#> Warning: Cache integrity check failed for 4ad2b1b8db18195b.zip; re-downloading.
+#> Warning: Cache integrity check failed for c2d69e7fd374a18f.zip; re-downloading.
 #> ℹ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
 #> ✔ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
 #> 
-#> Warning: Cache integrity check failed for 6bdd24bd99175af0.zip; re-downloading.
+#> Warning: Cache integrity check failed for 09ceddd4b8e23f70.zip; re-downloading.
 #> ℹ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
 #> ✔ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
 #> 
-#> Warning: Cache integrity check failed for 00c60f8b0a5bd8bc.zip; re-downloading.
+#> Warning: Cache integrity check failed for 6080e733a9d5e2ee.zip; re-downloading.
 #> ℹ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
 #> ✔ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
 #> 
-#> Warning: Cache integrity check failed for b50cf9bd42706203.zip; re-downloading.
+#> Warning: Cache integrity check failed for 4519db0ecbcd63ed.zip; re-downloading.
 #> ℹ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
 #> ✔ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
 #> 
-#> Warning: Cache integrity check failed for acf10574eb3eb6e7.zip; re-downloading.
+#> Warning: Cache integrity check failed for 53aeb92b6406fab8.zip; re-downloading.
 #> ℹ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
 #> ✔ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
 #> 
-#> Warning: Cache integrity check failed for 7e812257f3b1b363.zip; re-downloading.
+#> Warning: Cache integrity check failed for 521c3ebd63a722f9.zip; re-downloading.
 #> ℹ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
 #> ✔ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
 #> 
-#> Warning: Cache integrity check failed for 8f4aee7951bdaa05.zip; re-downloading.
+#> Warning: Cache integrity check failed for 3b3c0151c599da35.zip; re-downloading.
 #> ℹ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
 #> ✔ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
 #> 
-#> Warning: Cache integrity check failed for 3b75629ed92a8a7d.zip; re-downloading.
+#> Warning: Cache integrity check failed for 55237c7ddeaa8ce7.zip; re-downloading.
 #> ℹ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
 #> ✔ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
 #> 
-#> Warning: Cache integrity check failed for 622574dedd5c3c53.zip; re-downloading.
+#> Warning: Cache integrity check failed for 3567538254aae775.zip; re-downloading.
 #> ℹ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
 #> ✔ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
 #> 
-#> Warning: Cache integrity check failed for 857f4e1cbdbb56f0.zip; re-downloading.
+#> Warning: Cache integrity check failed for 7ff46adf86691433.zip; re-downloading.
 #> ℹ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
 #> ✔ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
 #> 
 #> # aemo_tbl: AEMO demand VIC1 (operational)
 #> # Source:   http://nemweb.com.au
 #> # Licence:  AEMO Copyright Permissions Notice
-#> # Retrieved: 2026-08-23 17:35 UTC 
+#> # Retrieved: 2026-09-19 10:26 UTC 
 #> # Rows: 6  Cols: 127
 #> 
 #>        settlementdate runno regionid dispatchinterval intervention totaldemand
-#> 1 2026-08-24 02:40:00     1     VIC1      20260823272            0     4628.31
-#> 2 2026-08-24 02:45:00     1     VIC1      20260823273            0     4698.14
-#> 3 2026-08-24 02:50:00     1     VIC1      20260823274            0     4678.38
-#> 4 2026-08-24 02:55:00     1     VIC1      20260823275            0     4599.67
-#> 5 2026-08-24 03:00:00     1     VIC1      20260823276            0     4593.58
-#> 6 2026-08-24 03:05:00     1     VIC1      20260823277            0     4625.08
+#> 1 2026-09-19 19:30:00     1     VIC1      20260919186            0     5168.76
+#> 2 2026-09-19 19:35:00     1     VIC1      20260919187            0     5153.47
+#> 3 2026-09-19 19:40:00     1     VIC1      20260919188            0     5131.22
+#> 4 2026-09-19 19:45:00     1     VIC1      20260919189            0     5085.94
+#> 5 2026-09-19 19:50:00     1     VIC1      20260919190            0     5088.45
+#> 6 2026-09-19 19:55:00     1     VIC1      20260919191            0     5038.73
 #>   availablegeneration availableload demandforecast dispatchablegeneration
-#> 1            11758.85          1924            -13                6380.85
-#> 2            11799.90          1924            -19                6470.90
-#> 3            11849.12          1924            -11                6380.12
-#> 4            11849.62          1924            -10                6383.62
-#> 5            11855.60          1924            -13                6393.60
-#> 6            11859.19          1924            -13                6385.19
+#> 1            8766.135          1565            -19                4784.73
+#> 2            8649.856          1565            -20                4567.72
+#> 3            8590.270          1564            -19                4609.27
+#> 4            8628.130          1565            -17                4687.13
+#> 5            8498.000          1565            -18                4512.00
+#> 6            8447.439          1565            -17                4426.44
 #>   dispatchableload netinterchange excessgeneration lower5mindispatch
-#> 1           460.74        1291.80                0              <NA>
-#> 2           412.00        1360.76                0              <NA>
-#> 3           330.06        1371.68                0              <NA>
-#> 4           351.05        1432.90                0              <NA>
-#> 5           364.00        1436.02                0              <NA>
-#> 6           495.75        1264.35                0              <NA>
+#> 1                0        -384.03                0              <NA>
+#> 2                0        -585.76                0              <NA>
+#> 3                0        -521.95                0              <NA>
+#> 4                0        -398.81                0              <NA>
+#> 5                0        -576.45                0              <NA>
+#> 6                0        -612.29                0              <NA>
 #>   lower5minimport lower5minlocaldispatch lower5minlocalprice lower5minlocalreq
-#> 1            <NA>                     26                <NA>              <NA>
-#> 2            <NA>                     67                <NA>              <NA>
-#> 3            <NA>                     67                <NA>              <NA>
-#> 4            <NA>                     70                <NA>              <NA>
-#> 5            <NA>                     67                <NA>              <NA>
-#> 6            <NA>                     70                <NA>              <NA>
+#> 1            <NA>                 182.00                <NA>              <NA>
+#> 2            <NA>                 122.27                <NA>              <NA>
+#> 3            <NA>                 177.00                <NA>              <NA>
+#> 4            <NA>                 120.75                <NA>              <NA>
+#> 5            <NA>                  63.00                <NA>              <NA>
+#> 6            <NA>                  74.00                <NA>              <NA>
 #>   lower5minprice lower5minreq lower5minsupplyprice lower60secdispatch
 #> 1           <NA>         <NA>                 <NA>               <NA>
 #> 2           <NA>         <NA>                 <NA>               <NA>
@@ -166,12 +166,12 @@ try({
 #> 5           <NA>         <NA>                 <NA>               <NA>
 #> 6           <NA>         <NA>                 <NA>               <NA>
 #>   lower60secimport lower60seclocaldispatch lower60seclocalprice
-#> 1             <NA>                  113.00                 <NA>
-#> 2             <NA>                  110.00                 <NA>
-#> 3             <NA>                  136.00                 <NA>
-#> 4             <NA>                  132.43                 <NA>
-#> 5             <NA>                  137.00                 <NA>
-#> 6             <NA>                  132.33                 <NA>
+#> 1             <NA>                  180.32                 <NA>
+#> 2             <NA>                  163.64                 <NA>
+#> 3             <NA>                  184.00                 <NA>
+#> 4             <NA>                  190.00                 <NA>
+#> 5             <NA>                   80.00                 <NA>
+#> 6             <NA>                  196.00                 <NA>
 #>   lower60seclocalreq lower60secprice lower60secreq lower60secsupplyprice
 #> 1               <NA>            <NA>          <NA>                  <NA>
 #> 2               <NA>            <NA>          <NA>                  <NA>
@@ -180,12 +180,12 @@ try({
 #> 5               <NA>            <NA>          <NA>                  <NA>
 #> 6               <NA>            <NA>          <NA>                  <NA>
 #>   lower6secdispatch lower6secimport lower6seclocaldispatch lower6seclocalprice
-#> 1              <NA>            <NA>                  50.68                <NA>
-#> 2              <NA>            <NA>                  83.08                <NA>
-#> 3              <NA>            <NA>                  75.00                <NA>
-#> 4              <NA>            <NA>                  80.00                <NA>
-#> 5              <NA>            <NA>                  78.00                <NA>
-#> 6              <NA>            <NA>                  79.00                <NA>
+#> 1              <NA>            <NA>                 183.55                <NA>
+#> 2              <NA>            <NA>                 101.88                <NA>
+#> 3              <NA>            <NA>                 182.00                <NA>
+#> 4              <NA>            <NA>                 187.00                <NA>
+#> 5              <NA>            <NA>                  70.00                <NA>
+#> 6              <NA>            <NA>                  72.00                <NA>
 #>   lower6seclocalreq lower6secprice lower6secreq lower6secsupplyprice
 #> 1              <NA>           <NA>         <NA>                 <NA>
 #> 2              <NA>           <NA>         <NA>                 <NA>
@@ -194,12 +194,12 @@ try({
 #> 5              <NA>           <NA>         <NA>                 <NA>
 #> 6              <NA>           <NA>         <NA>                 <NA>
 #>   raise5mindispatch raise5minimport raise5minlocaldispatch raise5minlocalprice
-#> 1              <NA>            <NA>                 164.40                <NA>
-#> 2              <NA>            <NA>                 146.00                <NA>
-#> 3              <NA>            <NA>                 158.00                <NA>
-#> 4              <NA>            <NA>                 251.09                <NA>
-#> 5              <NA>            <NA>                 162.58                <NA>
-#> 6              <NA>            <NA>                 163.98                <NA>
+#> 1              <NA>            <NA>                 155.72                <NA>
+#> 2              <NA>            <NA>                 177.00                <NA>
+#> 3              <NA>            <NA>                 159.00                <NA>
+#> 4              <NA>            <NA>                 207.00                <NA>
+#> 5              <NA>            <NA>                 179.00                <NA>
+#> 6              <NA>            <NA>                 135.00                <NA>
 #>   raise5minlocalreq raise5minprice raise5minreq raise5minsupplyprice
 #> 1              <NA>           <NA>         <NA>                 <NA>
 #> 2              <NA>           <NA>         <NA>                 <NA>
@@ -208,12 +208,12 @@ try({
 #> 5              <NA>           <NA>         <NA>                 <NA>
 #> 6              <NA>           <NA>         <NA>                 <NA>
 #>   raise60secdispatch raise60secimport raise60seclocaldispatch
-#> 1               <NA>             <NA>                     184
-#> 2               <NA>             <NA>                     184
-#> 3               <NA>             <NA>                     184
-#> 4               <NA>             <NA>                     184
-#> 5               <NA>             <NA>                     184
-#> 6               <NA>             <NA>                     184
+#> 1               <NA>             <NA>                     177
+#> 2               <NA>             <NA>                     177
+#> 3               <NA>             <NA>                     172
+#> 4               <NA>             <NA>                     180
+#> 5               <NA>             <NA>                     145
+#> 6               <NA>             <NA>                     179
 #>   raise60seclocalprice raise60seclocalreq raise60secprice raise60secreq
 #> 1                 <NA>               <NA>            <NA>          <NA>
 #> 2                 <NA>               <NA>            <NA>          <NA>
@@ -229,12 +229,12 @@ try({
 #> 5                  <NA>              <NA>            <NA>
 #> 6                  <NA>              <NA>            <NA>
 #>   raise6seclocaldispatch raise6seclocalprice raise6seclocalreq raise6secprice
-#> 1                 158.00                <NA>              <NA>           <NA>
-#> 2                 149.16                <NA>              <NA>           <NA>
-#> 3                 158.00                <NA>              <NA>           <NA>
-#> 4                 162.00                <NA>              <NA>           <NA>
-#> 5                 164.00                <NA>              <NA>           <NA>
-#> 6                 164.00                <NA>              <NA>           <NA>
+#> 1                    149                <NA>              <NA>           <NA>
+#> 2                    152                <NA>              <NA>           <NA>
+#> 3                    144                <NA>              <NA>           <NA>
+#> 4                    180                <NA>              <NA>           <NA>
+#> 5                    129                <NA>              <NA>           <NA>
+#> 6                    155                <NA>              <NA>           <NA>
 #>   raise6secreq raise6secsupplyprice aggegatedispatcherror
 #> 1         <NA>                 <NA>                  <NA>
 #> 2         <NA>                 <NA>                  <NA>
@@ -243,26 +243,26 @@ try({
 #> 5         <NA>                 <NA>                  <NA>
 #> 6         <NA>                 <NA>                  <NA>
 #>   aggregatedispatcherror         lastchanged initialsupply clearedsupply
-#> 1                9.73697 2026/08/24 02:35:06     5175.5206       5167.86
-#> 2               10.74932 2026/08/24 02:40:06    5221.09351       5185.64
-#> 3                8.22904 2026/08/24 02:45:05    5150.45014       5088.87
-#> 4                9.43419 2026/08/24 02:50:06    5001.04726       5027.71
-#> 5               16.55419 2026/08/24 02:55:06    5019.86065       5035.79
-#> 6               21.45940 2026/08/24 03:00:07    5047.66946       5180.78
+#> 1                9.42146 2026/09/19 19:25:02    5182.15042       5172.42
+#> 2                6.69095 2026/09/19 19:30:03    5174.54019       5163.36
+#> 3                0.00000 2026/09/19 19:35:03    5159.66146       5141.56
+#> 4                1.21108 2026/09/19 19:40:03    5114.96932       5097.29
+#> 5                1.43537 2026/09/19 19:45:03    5117.68121       5098.36
+#> 6                0.38887 2026/09/19 19:50:04    5067.52439       5050.86
 #>   lowerregimport lowerreglocaldispatch lowerreglocalreq lowerregreq
-#> 1           <NA>                 37.00             <NA>        <NA>
-#> 2           <NA>                 42.00             <NA>        <NA>
-#> 3           <NA>                 27.00             <NA>        <NA>
-#> 4           <NA>                 43.74             <NA>        <NA>
-#> 5           <NA>                 40.00             <NA>        <NA>
-#> 6           <NA>                 35.00             <NA>        <NA>
+#> 1           <NA>                    36             <NA>        <NA>
+#> 2           <NA>                    20             <NA>        <NA>
+#> 3           <NA>                     0             <NA>        <NA>
+#> 4           <NA>                     0             <NA>        <NA>
+#> 5           <NA>                     0             <NA>        <NA>
+#> 6           <NA>                     0             <NA>        <NA>
 #>   raiseregimport raisereglocaldispatch raisereglocalreq raiseregreq
-#> 1           <NA>                   114             <NA>        <NA>
-#> 2           <NA>                   101             <NA>        <NA>
-#> 3           <NA>                   140             <NA>        <NA>
-#> 4           <NA>                   140             <NA>        <NA>
-#> 5           <NA>                   140             <NA>        <NA>
-#> 6           <NA>                   101             <NA>        <NA>
+#> 1           <NA>                     3             <NA>        <NA>
+#> 2           <NA>                     4             <NA>        <NA>
+#> 3           <NA>                     9             <NA>        <NA>
+#> 4           <NA>                     2             <NA>        <NA>
+#> 5           <NA>                    36             <NA>        <NA>
+#> 6           <NA>                    32             <NA>        <NA>
 #>   raise5minlocalviolation raisereglocalviolation raise60seclocalviolation
 #> 1                    <NA>                   <NA>                     <NA>
 #> 2                    <NA>                   <NA>                     <NA>
@@ -299,89 +299,89 @@ try({
 #> 5              <NA>                <NA>               <NA>
 #> 6              <NA>                <NA>               <NA>
 #>   raise6secactualavailability raise60secactualavailability
-#> 1                      1228.5                       1244.5
-#> 2                      1228.0                       1262.0
-#> 3                      1113.5                       1147.5
-#> 4                      1228.5                       1261.5
-#> 5                      1228.5                       1262.5
-#> 6                      1182.0                       1217.0
+#> 1                    956.4053                     959.4053
+#> 2                    988.1392                     992.1392
+#> 3                    886.0000                     890.0000
+#> 4                    910.0009                     915.0009
+#> 5                    926.0000                     929.0000
+#> 6                   1040.0009                    1044.0009
 #>   raise5minactualavailability raiseregactualavailability
-#> 1                      1203.5                   1249.114
-#> 2                      1210.0                   1231.381
-#> 3                      1114.5                   1034.000
-#> 4                      1225.5                   1233.050
-#> 5                      1225.5                   1239.999
-#> 6                      1181.0                    833.000
+#> 1                    958.4053                   442.0000
+#> 2                    991.1392                   547.1392
+#> 3                    885.0000                   447.0000
+#> 4                    905.0009                   375.0000
+#> 5                    921.0000                   471.0000
+#> 6                   1016.0009                   480.0000
 #>   lower6secactualavailability lower60secactualavailability
-#> 1                    780.0000                     801.0000
-#> 2                    827.0009                     848.0009
-#> 3                    812.0000                     833.0000
-#> 4                    889.9505                     910.9505
-#> 5                    827.0009                     848.0009
-#> 6                    719.0000                     740.0000
+#> 1                         881                          902
+#> 2                         931                          972
+#> 3                         831                          852
+#> 4                         881                          902
+#> 5                         659                          700
+#> 6                         823                          864
 #>   lower5minactualavailability lowerregactualavailability lorsurplus lrcsurplus
-#> 1                    801.0000                   762.4108       <NA>       <NA>
-#> 2                    848.0009                   955.3125       <NA>       <NA>
-#> 3                    833.0000                   880.4688       <NA>       <NA>
-#> 4                    910.9505                   991.9496       <NA>       <NA>
-#> 5                    848.0009                  1013.1562       <NA>       <NA>
-#> 6                    740.0000                   890.3125       <NA>       <NA>
-#>   totalintermittentgeneration demand_and_nonschedgen       uigf
-#> 1                    185.8224               5353.682 2392.85088
-#> 2                    188.6397               5374.280 2381.89664
-#> 3                    194.0237               5282.894 2384.12135
-#> 4                    194.2635               5221.973 2395.62058
-#> 5                    192.7260               5228.516 2405.59903
-#> 6                    190.2421               5371.022 2412.18663
+#> 1                         902                   2112.344       <NA>       <NA>
+#> 2                         972                   2089.501       <NA>       <NA>
+#> 3                         852                   2082.593       <NA>       <NA>
+#> 4                         902                   2154.593       <NA>       <NA>
+#> 5                         700                   1438.281       <NA>       <NA>
+#> 6                         864                   1692.436       <NA>       <NA>
+#>   totalintermittentgeneration demand_and_nonschedgen      uigf
+#> 1                    178.1592               5350.579 882.13515
+#> 2                    173.8414               5337.201 863.85631
+#> 3                    172.2604               5313.820 895.27018
+#> 4                    171.0847               5268.375 926.13047
+#> 5                    174.8299               5273.190 953.99954
+#> 6                    179.0726               5229.933 965.43941
 #>   semischedule_clearedmw semischedule_compliancemw ss_solar_uigf ss_wind_uigf
-#> 1               2392.851                  653.2674             0   2392.85088
-#> 2               2381.897                  654.2754             0   2381.89664
-#> 3               2384.121                  655.4114             0   2384.12135
-#> 4               2395.621                  657.1508             0   2395.62058
-#> 5               2405.599                  650.6953             0   2405.59903
-#> 6               2412.187                  644.6265             0   2412.18663
+#> 1               882.1351                         0             0    882.13515
+#> 2               863.8563                         0             0    863.85631
+#> 3               895.2702                         0             0    895.27018
+#> 4               926.1305                         0             0    926.13047
+#> 5               953.9995                         0             0    953.99954
+#> 6               965.4394                         0             0    965.43941
 #>   ss_solar_clearedmw ss_wind_clearedmw ss_solar_compliancemw
-#> 1                  0          2392.851                     0
-#> 2                  0          2381.897                     0
-#> 3                  0          2384.121                     0
-#> 4                  0          2395.621                     0
-#> 5                  0          2405.599                     0
-#> 6                  0          2412.187                     0
+#> 1                  0          882.1351                     0
+#> 2                  0          863.8563                     0
+#> 3                  0          895.2702                     0
+#> 4                  0          926.1305                     0
+#> 5                  0          953.9995                     0
+#> 6                  0          965.4394                     0
 #>   ss_wind_compliancemw wdr_initialmw wdr_available wdr_dispatched
-#> 1             653.2674             0             0              0
-#> 2             654.2754             0             0              0
-#> 3             655.4114             0             0              0
-#> 4             657.1508             0             0              0
-#> 5             650.6953             0             0              0
-#> 6             644.6265             0             0              0
+#> 1                    0             0             0              0
+#> 2                    0             0             0              0
+#> 3                    0             0             0              0
+#> 4                    0             0             0              0
+#> 5                    0             0             0              0
+#> 6                    0             0             0              0
 #>   raise1seclocaldispatch lower1seclocaldispatch raise1secactualavailability
-#> 1                 127.63                      0                       678.5
-#> 2                 126.62                      0                       678.0
-#> 3                  87.00                      0                       563.5
-#> 4                 182.00                      0                       677.5
-#> 5                 182.00                      0                       677.5
-#> 6                 105.00                      0                       632.0
+#> 1                    109                   0.00                    498.4053
+#> 2                    118                   0.00                    512.1392
+#> 3                    120                  34.09                    397.0000
+#> 4                    108                  31.36                    435.0009
+#> 5                    108                  30.95                    451.0000
+#> 6                    107                   0.00                    550.0009
 #>   lower1secactualavailability ss_solar_availability ss_wind_availability
-#> 1                    555.0000                     0             2392.851
-#> 2                    602.0009                     0             2381.897
-#> 3                    587.0000                     0             2384.121
-#> 4                    664.9505                     0             2395.621
-#> 5                    602.0009                     0             2405.599
-#> 6                    494.0000                     0             2412.187
+#> 1                         756                     0             882.1351
+#> 2                         766                     0             863.8563
+#> 3                         756                     0             895.2702
+#> 4                         756                     0             926.1305
+#> 5                         544                     0             953.9995
+#> 6                         658                     0             965.4394
 #>   bdu_energy_storage bdu_min_avail bdu_max_avail bdu_clearedmw_gen
-#> 1         927.155190          1924          1239                 0
-#> 2         956.218420          1924          1291                 0
-#> 3         982.706120          1924          1337                 0
-#> 4        1007.317890          1924          1326                 0
-#> 5        1034.108060          1924          1322                 0
-#> 6        1064.971970          1924          1319                 0
+#> 1        1358.536950          1565          1584        998.594730
+#> 2        1280.864510          1565          1486        799.860760
+#> 3        1205.237030          1564          1392               810
+#> 4        1135.986650          1565          1399        856.999080
+#> 5        1070.056620          1565          1231               644
+#> 6        1018.754760          1565          1169        546.999080
 #>   bdu_clearedmw_load bdu_initial_energy_storage demand_mw
-#> 1         460.744510                 893.031950   4628.31
-#> 2         411.999080                 925.515660   4698.14
-#> 3           330.0608                 956.716880   4678.38
-#> 4         351.049530                   983.4283   4599.67
-#> 5         363.999080                1008.182690   4593.58
-#> 6         495.751540                1034.736390   4625.08
+#> 1                  0                1451.435850   5168.76
+#> 2                  0                1359.690030   5153.47
+#> 3                  0                1276.716710   5131.22
+#> 4                  0                  1209.1777   5085.94
+#> 5                  0                1136.809260   5088.45
+#> 6                  0                1070.253670   5038.73
 options(op)
 # }
 ```

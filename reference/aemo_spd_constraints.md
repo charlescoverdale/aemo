@@ -85,23 +85,23 @@ try({
 #> # aemo_tbl: NEM SPDINTERCONNECTORCONSTRAINT (SPD constraint coefficients)
 #> # Source:   https://nemweb.com.au/Data_Archive/Wholesale_Electricity/MMSDM
 #> # Licence:  AEMO Copyright Permissions Notice
-#> # Retrieved: 2026-08-23 18:16 UTC 
+#> # Retrieved: 2026-09-19 11:09 UTC 
 #> # Rows: 6  Cols: 6
 #> 
 #>   interconnectorid effectivedate versionno            genconid factor
-#> 1        V-S-MNSP1    2026-07-01         1     S>>MW2MW3_NWRB1      1
-#> 2        V-S-MNSP1    2026-07-01         1     S>>MW2MW3_RBNW1     -1
-#> 3        N-Q-MNSP1    2026-07-01         1 #R036146_001_RAMP_V  0.211
-#> 4        N-Q-MNSP1    2026-07-01         1 #R036146_001_RAMP_F  0.211
-#> 5        N-Q-MNSP1    2026-07-01         1 #R036146_002_RAMP_V  0.319
-#> 6        NSW1-QLD1    2026-07-01         1 #R036146_002_RAMP_V  0.255
+#> 1        VIC1-NSW1    2026-08-01         1 #R036415_001_RAMP_V  0.751
+#> 2        VIC1-NSW1    2026-08-01         1 #R036415_001_RAMP_F  0.751
+#> 3        N-Q-MNSP1    2026-08-01         1 #R036415_002_RAMP_V -0.168
+#> 4        NSW1-QLD1    2026-08-01         1 #R036415_002_RAMP_V -0.173
+#> 5        VIC1-NSW1    2026-08-01         1 #R036415_002_RAMP_V  0.714
+#> 6        N-Q-MNSP1    2026-08-01         1 #R036415_002_RAMP_F -0.168
 #>           lastchanged
-#> 1 2026/07/01 12:16:36
-#> 2 2026/07/01 12:16:36
-#> 3 2026/07/01 17:03:46
-#> 4 2026/07/01 17:03:49
-#> 5 2026/07/01 17:03:53
-#> 6 2026/07/01 17:03:53
+#> 1 2026/08/01 19:18:29
+#> 2 2026/08/01 19:18:30
+#> 3 2026/08/01 19:18:32
+#> 4 2026/08/01 19:18:32
+#> 5 2026/08/01 19:18:32
+#> 6 2026/08/01 19:18:33
 options(op)
 # }
 ```

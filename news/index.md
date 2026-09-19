@@ -2,6 +2,8 @@
 
 ## aemo 0.4.2
 
+CRAN release: 2026-09-09
+
 Maintenance release fixing a network-dependent test that could fail the
 package check whenever the NEMweb archive was unreachable.
 

@@ -74,8 +74,12 @@ try({
 #> ✔ Downloading <https://nemweb.com.au/Data_Archive/Wholesale_Electricity/MMSDM/2…
 #> 
 #> Error in aemo_mlf(year = "2024-25") : 
-#>   No MLF data found for year: "2024-25".
-#> ℹ Available format: "2024-25".
+#>   Could not retrieve TRANSMISSIONLOSSFACTOR from MMSDM.
+#> ℹ MLFs are published annually by AEMO under NER 3.6.2. For historical analysis,
+#>   download the determination PDF directly from aemo.com.au, or retry when the
+#>   MMSDM archive is reachable.
+#> ℹ No fallback is provided: unsourced MLF values would be a correctness trap in
+#>   settlement and PPA workflows.
 options(op)
 # }
 ```

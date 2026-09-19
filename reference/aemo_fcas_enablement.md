@@ -83,71 +83,74 @@ try({
   e <- aemo_fcas_enablement(start = now - 3600, end = now)
   head(e)
 })
-#> Warning: Cache integrity check failed for 0e2951cf921a0e85.zip; re-downloading.
+#> Warning: Cache integrity check failed for d15d470c4a6a9a24.zip; re-downloading.
 #> ℹ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
 #> ✔ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
 #> 
-#> Warning: Cache integrity check failed for 8fad02e9e2699fb3.zip; re-downloading.
+#> Warning: Cache integrity check failed for a8a882bfffda28c7.zip; re-downloading.
 #> ℹ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
 #> ✔ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
 #> 
-#> Warning: Cache integrity check failed for 47f036577fb550b4.zip; re-downloading.
+#> Warning: Cache integrity check failed for 64a5dec40bed14bf.zip; re-downloading.
 #> ℹ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
 #> ✔ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
 #> 
-#> Warning: Cache integrity check failed for 4ad2b1b8db18195b.zip; re-downloading.
+#> Warning: Cache integrity check failed for c2d69e7fd374a18f.zip; re-downloading.
 #> ℹ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
 #> ✔ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
 #> 
-#> Warning: Cache integrity check failed for 6bdd24bd99175af0.zip; re-downloading.
+#> Warning: Cache integrity check failed for 09ceddd4b8e23f70.zip; re-downloading.
 #> ℹ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
 #> ✔ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
 #> 
-#> Warning: Cache integrity check failed for 00c60f8b0a5bd8bc.zip; re-downloading.
+#> Warning: Cache integrity check failed for 6080e733a9d5e2ee.zip; re-downloading.
 #> ℹ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
 #> ✔ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
 #> 
-#> Warning: Cache integrity check failed for b50cf9bd42706203.zip; re-downloading.
+#> Warning: Cache integrity check failed for 4519db0ecbcd63ed.zip; re-downloading.
 #> ℹ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
 #> ✔ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
 #> 
-#> Warning: Cache integrity check failed for acf10574eb3eb6e7.zip; re-downloading.
+#> Warning: Cache integrity check failed for 53aeb92b6406fab8.zip; re-downloading.
 #> ℹ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
 #> ✔ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
 #> 
-#> Warning: Cache integrity check failed for 7e812257f3b1b363.zip; re-downloading.
+#> Warning: Cache integrity check failed for 521c3ebd63a722f9.zip; re-downloading.
 #> ℹ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
 #> ✔ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
 #> 
-#> Warning: Cache integrity check failed for 8f4aee7951bdaa05.zip; re-downloading.
+#> Warning: Cache integrity check failed for 3b3c0151c599da35.zip; re-downloading.
 #> ℹ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
 #> ✔ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
 #> 
-#> Warning: Cache integrity check failed for 3b75629ed92a8a7d.zip; re-downloading.
+#> Warning: Cache integrity check failed for 55237c7ddeaa8ce7.zip; re-downloading.
 #> ℹ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
 #> ✔ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
 #> 
-#> Warning: Cache integrity check failed for 622574dedd5c3c53.zip; re-downloading.
+#> Warning: Cache integrity check failed for 3567538254aae775.zip; re-downloading.
 #> ℹ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
 #> ✔ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
 #> 
-#> Warning: Cache integrity check failed for 857f4e1cbdbb56f0.zip; re-downloading.
+#> Warning: Cache integrity check failed for 7ff46adf86691433.zip; re-downloading.
+#> ℹ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
+#> ✔ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
+#> 
 #> ℹ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
 #> ✔ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
 #> 
 #> # aemo_tbl: AEMO FCAS enablement volumes (DISPATCHLOAD)
 #> # Source:   http://nemweb.com.au
 #> # Licence:  AEMO Copyright Permissions Notice
-#> # Retrieved: 2026-08-23 17:36 UTC 
+#> # Retrieved: 2026-09-19 10:27 UTC 
 #> # Rows: 6  Cols: 1
 #> 
 #>        settlementdate
-#> 1 2026-08-24 02:40:00
-#> 2 2026-08-24 02:45:00
-#> 3 2026-08-24 02:50:00
-#> 4 2026-08-24 02:55:00
-#> 5 2026-08-24 03:00:00
-#> 6 2026-08-24 03:05:00
+#> 1 2026-09-19 19:30:00
+#> 2 2026-09-19 19:35:00
+#> 3 2026-09-19 19:40:00
+#> 4 2026-09-19 19:45:00
+#> 5 2026-09-19 19:50:00
+#> 6 2026-09-19 19:55:00
 options(op)
 # }
 ```
