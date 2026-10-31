@@ -81,7 +81,17 @@ aemo_download_cached <- function(url, cache = TRUE) {
 #' cryptographic security.
 #' @noRd
 aemo_sha256_file <- function(path) {
-  as.character(openssl::sha256(file(path, "rb")))
+  # Open the connection here so it can be closed: openssl::sha256() reads
+  # a connection but leaves closing it to the caller.
+  con <- file(path, open = "rb")
+  on.exit(close(con), add = TRUE)
+  # openssl's as.character() method returns the hex string but keeps the
+  # "hash" class, so identical() against the plain string read back from
+  # the sidecar was always FALSE and every cache hit was treated as
+  # corrupt and re-downloaded. Drop the attributes after converting.
+  out <- as.character(openssl::sha256(con))
+  attributes(out) <- NULL
+  out
 }
 
 #' Cache key for a URL.

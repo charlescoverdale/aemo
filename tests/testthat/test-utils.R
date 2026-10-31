@@ -125,3 +125,31 @@ test_that("aemo_clean_names snakecases", {
   expect_equal(aemo:::aemo_clean_names(c("Settlement Date", "RRP($)")),
                c("settlement_date", "rrp"))
 })
+
+test_that("aemo_file_timestamp keeps results aligned with its input", {
+  ts <- aemo:::aemo_file_timestamp(c(
+    "PUBLIC_DISPATCHIS_20260902.zip",
+    "PUBLIC_DISPATCHIS_202611010300_0000000545976585.zip",
+    "no_date_here.zip"
+  ))
+  expect_equal(format(ts[1], "%Y-%m-%d %H:%M"), "2026-09-02 00:00")
+  expect_equal(format(ts[2], "%Y-%m-%d %H:%M"), "2026-11-01 03:00")
+  expect_true(is.na(ts[3]))
+})
+
+test_that("aemo_archive_days expands daily and weekly rollups", {
+  d <- aemo:::aemo_archive_days(c("PUBLIC_DISPATCHIS_20260902.zip",
+                                  "PUBLIC_TRADINGIS_20251012_20251018.zip"))
+  expect_equal(d[[1]], as.Date("2026-09-02"))
+  expect_equal(d[[2]], seq(as.Date("2025-10-12"), as.Date("2025-10-18"), by = "day"))
+})
+
+test_that("aemo_sha256_file returns a plain string that matches its sidecar", {
+  f <- tempfile()
+  writeLines("abc", f)
+  h <- aemo:::aemo_sha256_file(f)
+  expect_null(attributes(h))
+  side <- tempfile()
+  writeLines(h, side)
+  expect_identical(trimws(readLines(side)[1L]), h)
+})

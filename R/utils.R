@@ -170,30 +170,45 @@ aemo_parse_col_time <- function(x) {
 #' NA for filenames that do not match.
 #' @noRd
 aemo_file_timestamp <- function(filenames) {
-  n <- length(filenames)
-  out <- rep(as.POSIXct(NA, tz = AEMO_TIMEZONE), n)
+  out <- rep(as.POSIXct(NA, tz = AEMO_TIMEZONE), length(filenames))
+  # regexpr() keeps one entry per input (-1 for no match), so matches stay
+  # aligned with `filenames`; regmatches() alone would drop non-matches.
+  first_match <- function(x, rx) {
+    m <- regexpr(rx, x)
+    ifelse(m > 0L, substring(x, m, m + attr(m, "match.length") - 1L), NA)
+  }
   # Try 12-digit (YYYYMMDDHHMM) first
-  m12 <- regmatches(filenames, regexpr("[0-9]{12}", filenames))
-  hits12 <- which(nzchar(m12))
-  if (length(hits12) > 0L) {
-    out[hits12] <- suppressWarnings(
-      as.POSIXct(m12[hits12], format = "%Y%m%d%H%M", tz = AEMO_TIMEZONE)
-    )
-  }
-  # Fall back to 8-digit (YYYYMMDD) for Archive daily rollups
+  m12 <- first_match(filenames, "[0-9]{12}")
+  ok <- !is.na(m12)
+  out[ok] <- suppressWarnings(
+    as.POSIXct(m12[ok], format = "%Y%m%d%H%M", tz = AEMO_TIMEZONE)
+  )
+  # Fall back to 8-digit (YYYYMMDD) for Archive rollups
   todo <- is.na(out)
-  if (any(todo)) {
-    m8 <- regmatches(filenames[todo], regexpr("[0-9]{8}", filenames[todo]))
-    hits8 <- which(nzchar(m8))
-    if (length(hits8) > 0L) {
-      parsed <- suppressWarnings(
-        as.POSIXct(m8[hits8], format = "%Y%m%d", tz = AEMO_TIMEZONE)
-      )
-      idx <- which(todo)[hits8]
-      out[idx] <- parsed
-    }
-  }
+  m8 <- first_match(filenames[todo], "[0-9]{8}")
+  ok8 <- !is.na(m8)
+  out[which(todo)[ok8]] <- suppressWarnings(
+    as.POSIXct(m8[ok8], format = "%Y%m%d", tz = AEMO_TIMEZONE)
+  )
   out
+}
+
+#' Calendar days of intervals held in each NEMweb Archive rollup.
+#'
+#' Daily rollups (`PUBLIC_DISPATCHIS_20260902.zip`) hold the intervals
+#' ending 00:05 on that day to 00:00 the next. Weekly rollups
+#' (`PUBLIC_TRADINGIS_20251012_20251018.zip`) span the two dates named.
+#' @param filenames Archive file names.
+#' @return A list of Date vectors, one per file.
+#' @noRd
+aemo_archive_days <- function(filenames) {
+  lapply(filenames, function(f) {
+    d <- regmatches(f, gregexpr("(?<![0-9])[0-9]{8}(?![0-9])", f, perl = TRUE))[[1]]
+    d <- as.Date(d, format = "%Y%m%d")
+    d <- d[!is.na(d)]
+    if (length(d) == 0L) return(as.Date(character(0)))
+    seq(min(d), max(d), by = "day")
+  })
 }
 
 #' List NEMweb Current-directory files in a date range.
@@ -316,15 +331,17 @@ aemo_apply_filters <- function(df, start = NULL, end = NULL,
 
 #' Fetch a NEMweb report over a date range and stitch results.
 #'
-#' Chooses Current/ for recent dates, Archive/ for older dates
-#' (daily rollups). Aborts with a clear message if the requested
-#' range is older than NEMweb retention (~30 days for Current,
-#' years for Archive; MMSDM for multi-year).
+#' NEMweb keeps two copies of most reports: the five-minute (or
+#' half-hourly) files in `Current/`, held for only a couple of days, and
+#' daily or weekly rollups in `Archive/`, held for about 13 months. Rather
+#' than assume a fixed retention, each calendar day in the range is taken
+#' from an Archive rollup when one covers it, and from `Current/` files
+#' otherwise. Older data lives in MMSDM.
 #'
 #' @param current_dir NEMweb Current subpath (e.g.
 #'   `"/Reports/Current/DispatchIS_Reports/"`).
 #' @param archive_dir NEMweb Archive subpath, or `NULL` if the
-#'   report has no daily Archive rollup.
+#'   report has no Archive rollup.
 #' @param pattern Filename regex (e.g. `"DISPATCHIS"`).
 #' @param start,end POSIXct AEST.
 #' @param table Name of the parsed table to extract from each
@@ -335,51 +352,53 @@ aemo_apply_filters <- function(df, start = NULL, end = NULL,
 #' @noRd
 aemo_fetch_report_range <- function(current_dir, archive_dir = NULL,
                                      pattern, start, end, table = NULL) {
-  now <- Sys.time()
-  attr(now, "tzone") <- AEMO_TIMEZONE
-  current_window <- now - as.difftime(30, units = "days")
+  # Files are named by interval end, so the interval ending at 00:00
+  # belongs to the previous day's rollup; step back one second.
+  one_sec <- as.difftime(1, units = "secs")
+  days <- seq(as.Date(start - one_sec, tz = AEMO_TIMEZONE),
+              as.Date(end - one_sec, tz = AEMO_TIMEZONE), by = "day")
 
   urls <- character(0)
+  covered <- as.Date(character(0))
+  earliest_archive <- NA
 
-  if (end >= current_window) {
-    current_start <- max(start, current_window)
-    files <- aemo_select_files_in_range(current_dir, pattern,
-                                         current_start, end)
-    urls <- c(urls, files$url)
-  }
-  if (start < current_window) {
-    if (is.null(archive_dir)) {
-      cli::cli_abort(c(
-        "Requested range extends beyond NEMweb Current retention ({.val {format(current_window, '%Y-%m-%d')}}).",
-        "i" = "Archive daily rollups are not yet implemented for this report.",
-        "i" = "Use {.fn aemo_nemweb_download} with an explicit MMSDM URL for older data."
-      ))
+  if (!is.null(archive_dir)) {
+    arch <- aemo_nemweb_ls(archive_dir)
+    arch <- arch[grepl(pattern, arch$name, ignore.case = TRUE), , drop = FALSE]
+    if (nrow(arch) > 0L) {
+      spans <- aemo_archive_days(arch$name)
+      earliest_archive <- suppressWarnings(min(do.call(c, spans)))
+      hit <- vapply(spans, function(d) any(d %in% days), logical(1))
+      urls <- c(urls, arch$url[hit])
+      covered <- unique(do.call(c, c(list(as.Date(character(0))), spans[hit])))
     }
-    days <- seq(as.Date(start, tz = AEMO_TIMEZONE),
-                min(as.Date(end, tz = AEMO_TIMEZONE),
-                    as.Date(current_window, tz = AEMO_TIMEZONE)),
-                by = "day")
-    files <- aemo_nemweb_ls(archive_dir)
-    files <- files[grepl(pattern, files$name, ignore.case = TRUE), ,
-                   drop = FALSE]
-    if (nrow(files) > 0L) {
-      files$file_ts <- aemo_file_timestamp(files$name)
-      keep <- !is.na(files$file_ts) &
-        as.Date(files$file_ts, tz = AEMO_TIMEZONE) %in% days
-      urls <- c(urls, files$url[keep])
+  }
+
+  if (!all(days %in% covered)) {
+    cur <- aemo_select_files_in_range(current_dir, pattern, start, end)
+    if (nrow(cur) > 0L) {
+      cur_day <- as.Date(cur$file_ts - one_sec, tz = AEMO_TIMEZONE)
+      urls <- c(urls, cur$url[!cur_day %in% covered])
     }
   }
 
   if (length(urls) == 0L) {
+    held <- if (!is.na(earliest_archive)) {
+      paste0("NEMweb holds this report from {.val ", format(earliest_archive),
+             "}; earlier data is in MMSDM (see {.fn aemo_nemweb_download}).")
+    } else {
+      "Older data is in MMSDM (see {.fn aemo_nemweb_download})."
+    }
     cli::cli_abort(c(
       "No NEMweb files matched the requested range.",
-      "i" = "Check {.arg start} and {.arg end}, or the pattern {.val {pattern}}."
+      "i" = "Check {.arg start} and {.arg end}, or the pattern {.val {pattern}}.",
+      "i" = held
     ))
   }
 
   all_parts <- list()
   for (url in urls) {
-    tables <- tryCatch(aemo_fetch_zip(url),
+    tables <- tryCatch(aemo_fetch_zip(url, start = start, end = end),
                        error = function(e) {
                          cli::cli_warn("Skipping failed download: {.url {url}}")
                          NULL

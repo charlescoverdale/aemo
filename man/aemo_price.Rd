@@ -69,11 +69,12 @@ each 30-minute trading interval, consistent with how AEMO
 calculates the \code{TRADINGPRICE} column in TradingIS post-5MS.
 }
 
-\strong{Data availability.} NEMweb Current-directory files retain
-the last ~30 days of 5-minute dispatch files. Historical
-queries use the Archive daily-rollup files automatically; for
-queries older than the Archive window, use
-\code{\link[=aemo_nemweb_download]{aemo_nemweb_download()}} with an MMSDM URL directly.
+\strong{Data availability.} NEMweb holds the 5-minute dispatch files in
+its Current directory for only about two days, and daily (dispatch)
+or weekly (trading) rollups in its Archive for about 13 months. Each
+day of a query is read from an Archive rollup when one exists and
+from Current files otherwise. For queries older than the Archive
+window, use \code{\link[=aemo_nemweb_download]{aemo_nemweb_download()}} with an MMSDM URL directly.
 }
 \examples{
 \donttest{
@@ -87,7 +88,7 @@ options(op)
 }
 }
 \seealso{
-Other price: 
-\code{\link{aemo_fcas}()}
+Other price:
+\code{\link[=aemo_fcas]{aemo_fcas()}}
 }
 \concept{price}

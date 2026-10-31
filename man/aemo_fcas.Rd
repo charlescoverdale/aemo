@@ -41,7 +41,7 @@ options(op)
 }
 }
 \seealso{
-Other price: 
-\code{\link{aemo_price}()}
+Other price:
+\code{\link[=aemo_price]{aemo_price()}}
 }
 \concept{price}

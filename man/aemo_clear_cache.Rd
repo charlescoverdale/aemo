@@ -20,8 +20,8 @@ options(op)
 }
 }
 \seealso{
-Other configuration: 
-\code{\link{aemo_cache_info}()},
-\code{\link{aemo_throttle}()}
+Other configuration:
+\code{\link[=aemo_cache_info]{aemo_cache_info()}},
+\code{\link[=aemo_throttle]{aemo_throttle()}}
 }
 \concept{configuration}

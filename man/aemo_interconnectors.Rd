@@ -20,14 +20,14 @@ expected mid-2026.
 aemo_interconnectors()
 }
 \seealso{
-Other reference: 
-\code{\link{aemo_dlf}()},
-\code{\link{aemo_mlf}()},
-\code{\link{aemo_participants}()},
-\code{\link{aemo_price_caps}()},
-\code{\link{aemo_regions}()},
-\code{\link{aemo_settlement}()},
-\code{\link{aemo_snapshot}()},
-\code{\link{aemo_units}()}
+Other reference:
+\code{\link[=aemo_dlf]{aemo_dlf()}},
+\code{\link[=aemo_mlf]{aemo_mlf()}},
+\code{\link[=aemo_participants]{aemo_participants()}},
+\code{\link[=aemo_price_caps]{aemo_price_caps()}},
+\code{\link[=aemo_regions]{aemo_regions()}},
+\code{\link[=aemo_settlement]{aemo_settlement()}},
+\code{\link[=aemo_snapshot]{aemo_snapshot()}},
+\code{\link[=aemo_units]{aemo_units()}}
 }
 \concept{reference}

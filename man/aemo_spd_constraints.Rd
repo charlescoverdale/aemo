@@ -62,15 +62,15 @@ options(op)
 \code{\link[=aemo_constraints]{aemo_constraints()}} for the 5-min binding-constraint
 feed with shadow prices.
 
-Other dispatch: 
-\code{\link{aemo_bids}()},
-\code{\link{aemo_constraints}()},
-\code{\link{aemo_dispatch_units}()},
-\code{\link{aemo_fcas_enablement}()},
-\code{\link{aemo_gencon}()},
-\code{\link{aemo_interconnector}()},
-\code{\link{aemo_market_notices}()},
-\code{\link{aemo_outages}()},
-\code{\link{aemo_rooftop_pv}()}
+Other dispatch:
+\code{\link[=aemo_bids]{aemo_bids()}},
+\code{\link[=aemo_constraints]{aemo_constraints()}},
+\code{\link[=aemo_dispatch_units]{aemo_dispatch_units()}},
+\code{\link[=aemo_fcas_enablement]{aemo_fcas_enablement()}},
+\code{\link[=aemo_gencon]{aemo_gencon()}},
+\code{\link[=aemo_interconnector]{aemo_interconnector()}},
+\code{\link[=aemo_market_notices]{aemo_market_notices()}},
+\code{\link[=aemo_outages]{aemo_outages()}},
+\code{\link[=aemo_rooftop_pv]{aemo_rooftop_pv()}}
 }
 \concept{dispatch}

@@ -16,6 +16,8 @@ test_that("aemo_price live fetch", {
   skip_if(Sys.getenv("AEMO_LIVE_TESTS") != "true",
           "Live network tests disabled by default.")
 
-  p <- aemo_price("NSW1", "2024-06-01", "2024-06-01 01:00:00")
+  # NEMweb holds about 13 months, so the date is relative to today.
+  day <- format(as.Date(Sys.time(), tz = "Australia/Brisbane") - 3)
+  p <- aemo_price("NSW1", day, paste(day, "01:00:00"))
   expect_s3_class(p, "aemo_tbl")
 })

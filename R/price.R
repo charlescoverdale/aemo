@@ -36,11 +36,12 @@ FIVE_MS_START <- as.POSIXct("2021-10-01 00:00:00", tz = "Australia/Brisbane")
 #'   each 30-minute trading interval, consistent with how AEMO
 #'   calculates the `TRADINGPRICE` column in TradingIS post-5MS.
 #'
-#' **Data availability.** NEMweb Current-directory files retain
-#' the last ~30 days of 5-minute dispatch files. Historical
-#' queries use the Archive daily-rollup files automatically; for
-#' queries older than the Archive window, use
-#' [aemo_nemweb_download()] with an MMSDM URL directly.
+#' **Data availability.** NEMweb holds the 5-minute dispatch files in
+#' its Current directory for only about two days, and daily (dispatch)
+#' or weekly (trading) rollups in its Archive for about 13 months. Each
+#' day of a query is read from an Archive rollup when one exists and
+#' from Current files otherwise. For queries older than the Archive
+#' window, use [aemo_nemweb_download()] with an MMSDM URL directly.
 #'
 #' @param region One of `"NSW1"`, `"QLD1"`, `"SA1"`, `"TAS1"`,
 #'   `"VIC1"`. Accepts a vector.

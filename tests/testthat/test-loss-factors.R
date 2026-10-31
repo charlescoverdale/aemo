@@ -31,7 +31,7 @@ test_that("aemo_mlf filters by year and duid when MMSDM reachable", {
   testthat::skip_on_cran()
   skip_if_not(
     isTRUE(tryCatch({
-      httr2::request("http://nemweb.com.au") |>
+      httr2::request("https://nemweb.com.au/Reports/Current/") |>
         httr2::req_timeout(5) |>
         httr2::req_perform()
       TRUE

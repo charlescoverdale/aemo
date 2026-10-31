@@ -32,7 +32,7 @@ options(op)
 }
 }
 \seealso{
-Other low-level: 
-\code{\link{aemo_nemweb_download}()}
+Other low-level:
+\code{\link[=aemo_nemweb_download]{aemo_nemweb_download()}}
 }
 \concept{low-level}

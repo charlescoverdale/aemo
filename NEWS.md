@@ -1,3 +1,48 @@
+# aemo 0.4.3
+
+Bug-fix release. Most queries for data more than about two days old
+failed, and the download cache never worked. Live tests that would have
+shown this were being skipped.
+
+## Queries older than two days work again
+
+NEMweb now keeps the five-minute files in its `Current` directory for
+only about two days; the package assumed 30. Any `aemo_price()`,
+`aemo_demand()`, `aemo_dispatch_units()` or other NEMweb query for a
+day between two and 30 days ago therefore looked only in `Current`,
+found nothing, and stopped with "No NEMweb files matched the requested
+range". Older days fell through to the `Archive`, which failed too (see
+below). Each day is now read from an `Archive` rollup when one exists
+and from `Current` otherwise, whatever NEMweb's retention.
+
+* `Archive` rollups are zips of zips (a daily DispatchIS rollup holds the
+  day's 288 five-minute zips). The parser only looked for CSVs at the top
+  level, so every `Archive` file was skipped as a failed download. Nested
+  zips are now unpacked, and only the inner files inside the requested
+  window are parsed: an hour's query reads a dozen files, not 288.
+* Weekly `Archive` rollups (TradingIS, used by `interval = "30min"`) were
+  matched only to the first day they cover. They now count for all seven.
+* The interval ending at 00:00 is now read from the previous day's
+  rollup, where NEMweb files it.
+* When a range is older than NEMweb holds, the error now gives the
+  earliest date available and points to MMSDM.
+
+## The cache works
+
+`aemo_sha256_file()` returned openssl's `"hash"` object rather than a
+plain string, so the integrity check against the stored digest always
+failed: every cached file was reported as corrupt, deleted and
+downloaded again. It now returns a plain string. It also closes the file
+connection it opens, and `aemo_parse_csv()` no longer opens a text
+connection per CSV line without closing it.
+
+## Tests
+
+The integration tests checked reachability against `http://nemweb.com.au`,
+which now redirects to aemo.com.au and returns 403, so they were always
+skipped; their fixed 2021-2024 dates had also aged out of NEMweb. They
+now probe the reports directory and use dates relative to today.
+
 # aemo 0.4.2
 
 Maintenance release fixing a network-dependent test that could fail

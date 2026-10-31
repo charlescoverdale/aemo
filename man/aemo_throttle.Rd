@@ -22,8 +22,8 @@ old <- aemo_throttle(0.5)  # 2 requests per second
 aemo_throttle(old)         # restore
 }
 \seealso{
-Other configuration: 
-\code{\link{aemo_cache_info}()},
-\code{\link{aemo_clear_cache}()}
+Other configuration:
+\code{\link[=aemo_cache_info]{aemo_cache_info()}},
+\code{\link[=aemo_clear_cache]{aemo_clear_cache()}}
 }
 \concept{configuration}

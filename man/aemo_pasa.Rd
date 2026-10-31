@@ -42,7 +42,7 @@ options(op)
 }
 }
 \seealso{
-Other forecast: 
-\code{\link{aemo_predispatch}()}
+Other forecast:
+\code{\link[=aemo_predispatch]{aemo_predispatch()}}
 }
 \concept{forecast}

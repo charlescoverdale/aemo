@@ -31,7 +31,7 @@ options(op)
 }
 }
 \seealso{
-Other low-level: 
-\code{\link{aemo_nemweb_ls}()}
+Other low-level:
+\code{\link[=aemo_nemweb_ls]{aemo_nemweb_ls()}}
 }
 \concept{low-level}

@@ -27,7 +27,9 @@ aemo_parse_csv <- function(path) {
   while (length(line <- readLines(con, n = 1L, warn = FALSE)) > 0L) {
     tag <- substr(line, 1L, 1L)
     if (tag == "C" || tag == "F") next
-    parts <- scan(textConnection(line), what = "character",
+    # scan(text = ) opens and closes its own connection; an explicit
+    # textConnection() here was never closed, leaking one per line.
+    parts <- scan(text = line, what = "character",
                   sep = ",", quiet = TRUE, strip.white = TRUE,
                   na.strings = "", quote = "\"")
     if (length(parts) < 4L) next
@@ -63,32 +65,58 @@ aemo_parse_csv <- function(path) {
 #' Download, unzip, and parse an AEMO zipped CSV into tables
 #'
 #' @param url URL to an AEMO zipped CSV.
+#' @param start,end Optional POSIXct window. Inner files of an Archive
+#'   rollup named by an interval outside it are skipped.
 #' @return Named list of data frames keyed by `<report>_<table>`.
 #' @noRd
-aemo_fetch_zip <- function(url) {
+aemo_fetch_zip <- function(url, start = NULL, end = NULL) {
   zip_path <- aemo_download_cached(url)
   tmp <- tempfile("aemo_unzip_")
   dir.create(tmp, recursive = TRUE)
   on.exit(unlink(tmp, recursive = TRUE), add = TRUE)
   utils::unzip(zip_path, exdir = tmp)
 
-  csvs <- list.files(tmp, pattern = "\\.[Cc][Ss][Vv]$", full.names = TRUE)
+  # Archive rollups are zips of zips: a daily DispatchIS archive holds
+  # the 288 five-minute zips for that day. When a time window is given,
+  # drop inner files whose interval falls outside it before parsing, so an
+  # hour's query reads a dozen files rather than the whole day.
+  if (!is.null(start) && !is.null(end)) {
+    inner <- list.files(tmp, pattern = "\\.[Zz][Ii][Pp]$", full.names = TRUE)
+    ts <- aemo_file_timestamp(basename(inner))
+    buffer <- as.difftime(5, units = "mins")
+    drop <- !is.na(ts) & (ts < start - buffer | ts > end + buffer)
+    unlink(inner[drop])
+  }
+  # Unpack nested zips until only CSVs remain.
+  repeat {
+    inner <- list.files(tmp, pattern = "\\.[Zz][Ii][Pp]$", full.names = TRUE,
+                        recursive = TRUE)
+    if (length(inner) == 0L) break
+    for (z in inner) {
+      utils::unzip(z, exdir = dirname(z))
+      unlink(z)
+    }
+  }
+
+  csvs <- sort(list.files(tmp, pattern = "\\.[Cc][Ss][Vv]$", full.names = TRUE,
+                          recursive = TRUE))
   if (length(csvs) == 0L) {
     cli::cli_abort("No CSV files found inside {.file {basename(zip_path)}}.")
   }
-  combined <- list()
+  # Collect every file's tables first and bind once per table, on the
+  # columns all files share.
+  pieces <- list()
   for (p in csvs) {
     parsed <- aemo_parse_csv(p)
     for (k in names(parsed)) {
-      if (is.null(combined[[k]])) {
-        combined[[k]] <- parsed[[k]]
-      } else {
-        # Concatenate with matching columns
-        common <- intersect(names(combined[[k]]), names(parsed[[k]]))
-        combined[[k]] <- rbind(combined[[k]][, common, drop = FALSE],
-                               parsed[[k]][, common, drop = FALSE])
-      }
+      pieces[[k]][[length(pieces[[k]]) + 1L]] <- parsed[[k]]
     }
   }
-  combined
+  lapply(pieces, function(parts) {
+    if (length(parts) == 1L) return(parts[[1L]])
+    common <- Reduce(intersect, lapply(parts, names))
+    out <- do.call(rbind, lapply(parts, function(d) d[, common, drop = FALSE]))
+    rownames(out) <- NULL
+    out
+  })
 }

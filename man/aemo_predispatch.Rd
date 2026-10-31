@@ -73,7 +73,7 @@ options(op)
 }
 }
 \seealso{
-Other forecast: 
-\code{\link{aemo_pasa}()}
+Other forecast:
+\code{\link[=aemo_pasa]{aemo_pasa()}}
 }
 \concept{forecast}

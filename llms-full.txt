@@ -2,7 +2,7 @@
 
 > Fetch Australian Energy Market Operator (AEMO) public data from 'NEMweb' and the Market Management System Data Model (MMSDM) historical archive.
 
-- Version: 0.4.2
+- Version: 0.4.3
 - Install: `install.packages("aemo")`
 - CRAN: https://CRAN.R-project.org/package=aemo
 - GitHub: https://github.com/charlescoverdale/aemo
