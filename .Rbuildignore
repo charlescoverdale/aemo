@@ -10,3 +10,4 @@
 ^docs$
 ^pkgdown$
 ^llms-full\.txt$
+^Rplots\.pdf$
