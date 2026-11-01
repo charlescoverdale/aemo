@@ -547,12 +547,12 @@ aemo_mlf(year = NULL, duid = NULL)
 
 **Arguments**
 
-- `year`: Financial year(s) as `"YYYY-YY"` strings (e.g. `"2024-25"`). `NULL` returns all available years. Multiple years accepted.
-- `duid`: Optional character vector of DUIDs to filter on. `NULL` returns all DUIDs. See `aemo_units()` for the full DUID registry.
+- `year`: Financial year(s) as `"YYYY-YY"` strings (e.g. `"2025-26"`). `NULL` (the default) returns the current financial year. Multiple years accepted; each needs up to 13 small downloads.
+- `duid`: Optional character vector of DUIDs to filter on. MMSDM publishes MLFs by connection point, so DUIDs are mapped to connection points through the unit registry (`aemo_units()`), which adds a `duid` column. `NULL` returns every connection point.
 
 **Returns**
 
-An `aemo_tbl` with columns `financial_year`, `duid`, `connectionpointid`, `regionid`, `mlf`. From a live MMSDM download additional columns (`participantid`, `lastchanged`) may also be present.
+An `aemo_tbl` with one row per connection point and effective date: `financial_year`, `connectionpointid`, `regionid`, `mlf`, `effectivedate`, `versionno`, `secondary_tlf` and `lastchanged`, plus `duid` when `duid` is given. A factor revised during the year appears once per effective date.
 
 **Example**
 
@@ -989,7 +989,7 @@ A data frame with one row per table.
 x <- structure(
   data.frame(settlementdate = Sys.time(), region = "NSW1", rrp = 80),
   aemo_title = "Demo",
-  aemo_source = "http://nemweb.com.au",
+  aemo_source = "https://nemweb.com.au",
   aemo_licence = "AEMO Copyright Permissions Notice",
   aemo_retrieved = Sys.time(),
   class = c("aemo_tbl", "data.frame")
