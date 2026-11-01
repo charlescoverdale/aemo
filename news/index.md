@@ -1,5 +1,112 @@
 # Changelog
 
+## aemo 0.4.3
+
+Bug-fix release. Most queries for data more than about two days old
+failed, the download cache never worked,
+[`aemo_bids()`](https://charlescoverdale.github.io/aemo/reference/aemo_bids.md)
+failed for every date and
+[`aemo_mlf()`](https://charlescoverdale.github.io/aemo/reference/aemo_mlf.md)
+outside July. Live tests that would have shown this were being skipped.
+
+### Queries older than two days work again
+
+NEMweb now keeps the five-minute files in its `Current` directory for
+only about two days; the package assumed 30. Any
+[`aemo_price()`](https://charlescoverdale.github.io/aemo/reference/aemo_price.md),
+[`aemo_demand()`](https://charlescoverdale.github.io/aemo/reference/aemo_demand.md),
+[`aemo_dispatch_units()`](https://charlescoverdale.github.io/aemo/reference/aemo_dispatch_units.md)
+or other NEMweb query for a day between two and 30 days ago therefore
+looked only in `Current`, found nothing, and stopped with “No NEMweb
+files matched the requested range”. Older days fell through to the
+`Archive`, which failed too (see below). Each day is now read from an
+`Archive` rollup when one exists and from `Current` otherwise, whatever
+NEMweb’s retention.
+
+- `Archive` rollups are zips of zips (a daily DispatchIS rollup holds
+  the day’s 288 five-minute zips). The parser only looked for CSVs at
+  the top level, so every `Archive` file was skipped as a failed
+  download. Nested zips are now unpacked, and only the inner files
+  inside the requested window are parsed: an hour’s query reads a dozen
+  files, not 288.
+- Weekly `Archive` rollups (TradingIS, used by `interval = "30min"`)
+  were matched only to the first day they cover. They now count for all
+  seven.
+- The interval ending at 00:00 is now read from the previous day’s
+  rollup, where NEMweb files it.
+- When a range is older than NEMweb holds, the error now gives the
+  earliest date available and points to MMSDM.
+- When some files in a range fail to download, the result was returned
+  with one “Skipping failed download” warning per file, which made an
+  incomplete series easy to miss. There is now a single warning saying
+  how many files are missing and that the result lacks those intervals
+  (class `aemo_partial_download`); if every download fails the error has
+  class `aemo_download_error`.
+
+### Bids
+
+- [`aemo_bids()`](https://charlescoverdale.github.io/aemo/reference/aemo_bids.md)
+  failed for every date with “arguments imply differing number of rows:
+  0, 1”. Its default `resolution = "day"` (and `"joined"`) read
+  `Next_Day_Offer_Energy`, which AEMO has emptied in favour of
+  `Next_Day_Offer_Energy_SPARSE`, and listing an empty NEMweb folder
+  crashed
+  [`aemo_nemweb_ls()`](https://charlescoverdale.github.io/aemo/reference/aemo_nemweb_ls.md).
+  Day bids are now read from `Bidmove_Complete`, which carries both
+  `BIDDAYOFFER_D` and `BIDPEROFFER_D`, and an empty folder lists as an
+  empty data frame.
+
+- `resolution = "period"` returned `BIDDAYOFFER_D`, the daily table,
+  because it took the first table in each `Bidmove_Complete` file. It
+  now names `BIDPEROFFER_D`, and `"day"` names `BIDDAYOFFER_D`.
+
+- Monthly archive rollups named by a single date
+  (`PUBLIC_BIDMOVE_COMPLETE_20251002.zip`, which holds 2 October to 1
+  November) were treated as covering that one day, so a request for any
+  other day in the month missed them. A single-date rollup now runs to
+  the next rollup; daily rollups are unaffected.
+
+### Marginal loss factors
+
+[`aemo_mlf()`](https://charlescoverdale.github.io/aemo/reference/aemo_mlf.md)
+read the newest monthly MMSDM `TRANSMISSIONLOSSFACTOR` file. Only the
+June file holds the full determination for the year ahead; the other
+months carry a few revisions, so outside July the function found too few
+rows and reported MMSDM as unreachable. Each requested year is now built
+from its June file and the revisions after it, keeping the latest
+version of each factor. `year = NULL` returns the current financial year
+(previously documented as all years).
+
+The `duid` filter did nothing, because MMSDM publishes MLFs by
+connection point and the table has no `duid` column. DUIDs are now
+mapped to connection points through
+[`aemo_units()`](https://charlescoverdale.github.io/aemo/reference/aemo_units.md),
+which adds a `duid` column. The help page also described a bundled
+fallback table that the function deliberately does not have; it no
+longer does.
+
+### HTTPS
+
+NEMweb now redirects `http://` to `https://`; the package requests
+`https://nemweb.com.au` directly.
+
+### The cache works
+
+`aemo_sha256_file()` returned openssl’s `"hash"` object rather than a
+plain string, so the integrity check against the stored digest always
+failed: every cached file was reported as corrupt, deleted and
+downloaded again. It now returns a plain string. It also closes the file
+connection it opens, and `aemo_parse_csv()` no longer opens a text
+connection per CSV line without closing it.
+
+### Tests
+
+The integration tests checked reachability against
+`http://nemweb.com.au`, which now redirects to aemo.com.au and returns
+403, so they were always skipped; their fixed 2021-2024 dates had also
+aged out of NEMweb. They now probe the reports directory and use dates
+relative to today.
+
 ## aemo 0.4.2
 
 CRAN release: 2026-09-09

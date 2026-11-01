@@ -27,17 +27,17 @@ Invisibly returns `x`.
 
 ``` r
 x <- data.frame(settlementdate = Sys.time(), region = "NSW1", rrp = 80)
-x <- structure(x, aemo_title = "Demo", aemo_source = "http://nemweb.com.au",
+x <- structure(x, aemo_title = "Demo", aemo_source = "https://nemweb.com.au",
                aemo_licence = "AEMO Copyright Permissions Notice",
                aemo_retrieved = Sys.time(),
                class = c("aemo_tbl", "data.frame"))
 print(x)
 #> # aemo_tbl: Demo
-#> # Source:   http://nemweb.com.au
+#> # Source:   https://nemweb.com.au
 #> # Licence:  AEMO Copyright Permissions Notice
-#> # Retrieved: 2026-09-19 11:10 UTC 
+#> # Retrieved: 2026-11-01 14:04 UTC 
 #> # Rows: 1  Cols: 3
 #> 
 #>        settlementdate region rrp
-#> 1 2026-09-19 11:10:30   NSW1  80
+#> 1 2026-11-01 14:04:52   NSW1  80
 ```

@@ -83,36 +83,45 @@ try({
   p <- aemo_predispatch("NSW1", start = now - 3600, end = now)
   head(p)
 })
-#> ℹ Downloading <http://nemweb.com.au/Reports/CURRENT/PredispatchIS_Reports/PUBLI…
-#> ✔ Downloading <http://nemweb.com.au/Reports/CURRENT/PredispatchIS_Reports/PUBLI…
+#> ℹ Downloading <https://nemweb.com.au/Reports/CURRENT/PredispatchIS_Reports/PUBL…
+#> ✔ Downloading <https://nemweb.com.au/Reports/CURRENT/PredispatchIS_Reports/PUBL…
 #> 
-#> ℹ Downloading <http://nemweb.com.au/Reports/CURRENT/PredispatchIS_Reports/PUBLI…
-#> ✔ Downloading <http://nemweb.com.au/Reports/CURRENT/PredispatchIS_Reports/PUBLI…
+#> ℹ Downloading <https://nemweb.com.au/Reports/CURRENT/PredispatchIS_Reports/PUBL…
+#> ✔ Downloading <https://nemweb.com.au/Reports/CURRENT/PredispatchIS_Reports/PUBL…
+#> 
+#> ℹ Downloading <https://nemweb.com.au/Reports/CURRENT/PredispatchIS_Reports/PUBL…
+#> ✔ Downloading <https://nemweb.com.au/Reports/CURRENT/PredispatchIS_Reports/PUBL…
 #> 
 #> # aemo_tbl: AEMO predispatch NSW1
-#> # Source:   http://nemweb.com.au
+#> # Source:   https://nemweb.com.au
 #> # Licence:  AEMO Copyright Permissions Notice
-#> # Retrieved: 2026-09-19 11:09 UTC 
-#> # Rows: 2  Cols: 20
+#> # Retrieved: 2026-11-01 14:04 UTC 
+#> # Rows: 3  Cols: 20
 #> 
 #>   predispatchseqno runno solutionstatus spdversion nonphysicallosses
-#> 1       2026091933     1              1       <NA>                 0
-#> 2       2026091934     1              1       <NA>                 0
+#> 1       2026110138     1              1       <NA>                 0
+#> 2       2026110139     1              1       <NA>                 0
+#> 3       2026110140     1              1       <NA>                 0
 #>   totalobjective totalareagenviolation totalinterconnectorviolation
-#> 1      940823474                     0                            0
-#> 2      142498604                     0                            0
+#> 1     9804872360                     0                            0
+#> 2     9766909608                     0                            0
+#> 3    10582818841                     0                            0
 #>   totalgenericviolation totalramprateviolation totalunitmwcapacityviolation
-#> 1                     0                      0                        66.56
-#> 2                     0                      0                        65.52
+#> 1                    10                      0                      482.880
+#> 2                    10                      0                      496.921
+#> 3                    10                      0                      408.137
 #>   total5minviolation totalregviolation total6secviolation total60secviolation
 #> 1               <NA>              <NA>               <NA>                <NA>
 #> 2               <NA>              <NA>               <NA>                <NA>
+#> 3               <NA>              <NA>               <NA>                <NA>
 #>   totalasprofileviolation totalenergyconstrviolation totalenergyofferviolation
 #> 1                       0                          0                         0
 #> 2                       0                          0                         0
+#> 3                       0                          0                         0
 #>           lastchanged intervention
-#> 1 2026/09/19 20:02:20            0
-#> 2 2026/09/19 20:32:05            0
+#> 1 2026/11/01 22:31:33            0
+#> 2 2026/11/01 23:01:34            0
+#> 3 2026/11/01 23:31:35            0
 options(op)
 # }
 ```

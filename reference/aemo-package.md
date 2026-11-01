@@ -40,7 +40,7 @@ and PASA forecasts, FCAS markets, and gas markets across the NEM.
 
 ## Data source
 
-Data is published by AEMO at <http://nemweb.com.au> under the AEMO
+Data is published by AEMO at <https://nemweb.com.au> under the AEMO
 Copyright Permissions Notice
 <https://www.aemo.com.au/privacy-and-legal-notices/copyright-permissions>.
 
@@ -57,3 +57,7 @@ Useful links:
 ## Author
 
 **Maintainer**: Charles Coverdale <charlesfcoverdale@gmail.com>
+
+Authors:
+
+- Charles Coverdale <charlesfcoverdale@gmail.com>

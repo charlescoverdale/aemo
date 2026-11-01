@@ -19,7 +19,7 @@ aemo_price(
 
 ## Source
 
-AEMO NEMweb <http://nemweb.com.au>, AEMO Copyright Permissions Notice.
+AEMO NEMweb <https://nemweb.com.au>, AEMO Copyright Permissions Notice.
 
 ## Arguments
 
@@ -80,10 +80,11 @@ and settlement moved to native 5-minute prices. When
   interval, consistent with how AEMO calculates the `TRADINGPRICE`
   column in TradingIS post-5MS.
 
-**Data availability.** NEMweb Current-directory files retain the last
-~30 days of 5-minute dispatch files. Historical queries use the Archive
-daily-rollup files automatically; for queries older than the Archive
-window, use
+**Data availability.** NEMweb holds the 5-minute dispatch files in its
+Current directory for only about two days, and daily (dispatch) or
+weekly (trading) rollups in its Archive for about 13 months. Each day of
+a query is read from an Archive rollup when one exists and from Current
+files otherwise. For queries older than the Archive window, use
 [`aemo_nemweb_download()`](https://charlescoverdale.github.io/aemo/reference/aemo_nemweb_download.md)
 with an MMSDM URL directly.
 
@@ -102,88 +103,40 @@ try({
   p <- aemo_price("NSW1", now - 3600, now)
   head(p)
 })
-#> Warning: Cache integrity check failed for 521c3ebd63a722f9.zip; re-downloading.
-#> ℹ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
-#> ✔ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
-#> 
-#> Warning: Cache integrity check failed for 3b3c0151c599da35.zip; re-downloading.
-#> ℹ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
-#> ✔ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
-#> 
-#> Warning: Cache integrity check failed for 55237c7ddeaa8ce7.zip; re-downloading.
-#> ℹ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
-#> ✔ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
-#> 
-#> Warning: Cache integrity check failed for 3567538254aae775.zip; re-downloading.
-#> ℹ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
-#> ✔ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
-#> 
-#> Warning: Cache integrity check failed for 7ff46adf86691433.zip; re-downloading.
-#> ℹ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
-#> ✔ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
-#> 
-#> Warning: Cache integrity check failed for 6287474405ad3d0f.zip; re-downloading.
-#> ℹ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
-#> ✔ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
-#> 
-#> ℹ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
-#> ✔ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
-#> 
-#> ℹ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
-#> ✔ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
-#> 
-#> ℹ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
-#> ✔ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
-#> 
-#> ℹ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
-#> ✔ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
-#> 
-#> ℹ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
-#> ✔ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
-#> 
-#> ℹ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
-#> ✔ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
-#> 
-#> ℹ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
-#> ✔ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
-#> 
-#> ℹ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
-#> ✔ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
-#> 
 #> # aemo_tbl: AEMO 5min energy price NSW1
-#> # Source:   http://nemweb.com.au
+#> # Source:   https://nemweb.com.au
 #> # Licence:  AEMO Copyright Permissions Notice
-#> # Retrieved: 2026-09-19 11:09 UTC 
+#> # Retrieved: 2026-11-01 14:04 UTC 
 #> # Rows: 6  Cols: 66
 #> 
 #>        settlementdate runno regionid dispatchinterval intervention      rrp eep
-#> 1 2026-09-19 20:10:00     1     NSW1      20260919194            0 84.41109   0
-#> 2 2026-09-19 20:15:00     1     NSW1      20260919195            0 81.84152   0
-#> 3 2026-09-19 20:20:00     1     NSW1      20260919196            0 87.01265   0
-#> 4 2026-09-19 20:25:00     1     NSW1      20260919197            0 84.67000   0
-#> 5 2026-09-19 20:30:00     1     NSW1      20260919198            0 85.89000   0
-#> 6 2026-09-19 20:35:00     1     NSW1      20260919199            0 82.95000   0
-#>        rop apcflag marketsuspendedflag         lastchanged raise6secrrp
-#> 1 84.41109       0                   0 2026/09/19 20:05:04         0.09
-#> 2 81.84152       0                   0 2026/09/19 20:10:05         0.09
-#> 3 87.01265       0                   0 2026/09/19 20:15:05         0.09
-#> 4    84.67       0                   0 2026/09/19 20:20:05         0.04
-#> 5    85.89       0                   0 2026/09/19 20:25:05         0.07
-#> 6    82.95       0                   0 2026/09/19 20:30:06         0.04
+#> 1 2026-11-01 23:05:00     1     NSW1      20261101229            0 138.6900   0
+#> 2 2026-11-01 23:10:00     1     NSW1      20261101230            0 143.0000   0
+#> 3 2026-11-01 23:15:00     1     NSW1      20261101231            0 157.5077   0
+#> 4 2026-11-01 23:20:00     1     NSW1      20261101232            0 124.9800   0
+#> 5 2026-11-01 23:25:00     1     NSW1      20261101233            0 160.0739   0
+#> 6 2026-11-01 23:30:00     1     NSW1      20261101234            0 123.4807   0
+#>         rop apcflag marketsuspendedflag         lastchanged raise6secrrp
+#> 1    138.69       0                   0 2026/11/01 23:00:03         0.02
+#> 2       143       0                   0 2026/11/01 23:05:03         0.03
+#> 3 157.50767       0                   0 2026/11/01 23:10:03         0.02
+#> 4    124.98       0                   0 2026/11/01 23:15:04         0.02
+#> 5 160.07391       0                   0 2026/11/01 23:20:04         0.02
+#> 6 123.48068       0                   0 2026/11/01 23:25:04         0.02
 #>   raise6secrop raise6secapcflag raise60secrrp raise60secrop raise60secapcflag
-#> 1         0.09                0          0.09          0.09                 0
-#> 2         0.09                0          0.03          0.03                 0
-#> 3         0.09                0          0.03          0.03                 0
-#> 4         0.04                0          0.03          0.03                 0
-#> 5         0.07                0          0.03          0.03                 0
-#> 6         0.04                0          0.03          0.03                 0
+#> 1         0.02                0          0.02          0.02                 0
+#> 2         0.03                0          0.02          0.02                 0
+#> 3         0.02                0          0.02          0.02                 0
+#> 4         0.02                0          0.02          0.02                 0
+#> 5         0.02                0          0.02          0.02                 0
+#> 6         0.02                0          0.02          0.02                 0
 #>   raise5minrrp raise5minrop raise5minapcflag raiseregrrp raiseregrop
-#> 1         0.03         0.03                0        1.00           1
-#> 2         0.03         0.03                0        1.00           1
-#> 3         0.01         0.01                0        1.28        1.28
-#> 4         0.03         0.03                0        1.00           1
-#> 5         0.03         0.03                0        1.00           1
-#> 6         0.03         0.03                0        1.00           1
+#> 1         0.01         0.01                0        3.90         3.9
+#> 2         0.01         0.01                0        3.46        3.46
+#> 3         0.01         0.01                0        3.46        3.46
+#> 4         0.01         0.01                0        3.46        3.46
+#> 5         0.01         0.01                0        2.40         2.4
+#> 6         0.01         0.01                0        0.70         0.7
 #>   raiseregapcflag lower6secrrp lower6secrop lower6secapcflag lower60secrrp
 #> 1               0         0.01         0.01                0          0.01
 #> 2               0         0.01         0.01                0          0.01
@@ -199,33 +152,33 @@ try({
 #> 5          0.01                 0         0.01         0.01                0
 #> 6          0.01                 0         0.01         0.01                0
 #>   lowerregrrp lowerregrop lowerregapcflag price_status pre_ap_energy_price
-#> 1           1           1               0         FIRM            84.41109
-#> 2           1           1               0         FIRM            81.84152
-#> 3           1           1               0         FIRM            87.01265
-#> 4           1           1               0         FIRM            84.67000
-#> 5           1           1               0         FIRM            85.89000
-#> 6           1           1               0         FIRM            82.95000
+#> 1     1.50000         1.5               0         FIRM            138.6900
+#> 2     2.00000           2               0         FIRM            143.0000
+#> 3     2.00000           2               0         FIRM            157.5077
+#> 4     0.90451     0.90451               0         FIRM            124.9800
+#> 5     2.50000         2.5               0         FIRM            160.0739
+#> 6     1.00000           1               0         FIRM            123.4807
 #>   pre_ap_raise6_price pre_ap_raise60_price pre_ap_raise5min_price
-#> 1                0.09                 0.09                   0.03
-#> 2                0.09                 0.03                   0.03
-#> 3                0.09                 0.03                   0.01
-#> 4                0.04                 0.03                   0.03
-#> 5                0.07                 0.03                   0.03
-#> 6                0.04                 0.03                   0.03
+#> 1                0.02                 0.02                   0.01
+#> 2                0.03                 0.02                   0.01
+#> 3                0.02                 0.02                   0.01
+#> 4                0.02                 0.02                   0.01
+#> 5                0.02                 0.02                   0.01
+#> 6                0.02                 0.02                   0.01
 #>   pre_ap_raisereg_price pre_ap_lower6_price pre_ap_lower60_price
-#> 1                  1.00                0.01                 0.01
-#> 2                  1.00                0.01                 0.01
-#> 3                  1.28                0.01                 0.01
-#> 4                  1.00                0.01                 0.01
-#> 5                  1.00                0.01                 0.01
-#> 6                  1.00                0.01                 0.01
+#> 1                  3.90                0.01                 0.01
+#> 2                  3.46                0.01                 0.01
+#> 3                  3.46                0.01                 0.01
+#> 4                  3.46                0.01                 0.01
+#> 5                  2.40                0.01                 0.01
+#> 6                  0.70                0.01                 0.01
 #>   pre_ap_lower5min_price pre_ap_lowerreg_price raise1secrrp raise1secrop
-#> 1                   0.01                     1         0.04         0.04
-#> 2                   0.01                     1         0.04         0.04
-#> 3                   0.01                     1         0.04         0.04
-#> 4                   0.01                     1         0.04         0.04
-#> 5                   0.01                     1         0.04         0.04
-#> 6                   0.01                     1         0.04         0.04
+#> 1                   0.01               1.50000         0.01         0.01
+#> 2                   0.01               2.00000         0.01         0.01
+#> 3                   0.01               2.00000         0.02         0.02
+#> 4                   0.01               0.90451         0.01         0.01
+#> 5                   0.01               2.50000         0.01         0.01
+#> 6                   0.01               1.00000         0.01         0.01
 #>   raise1secapcflag lower1secrrp lower1secrop lower1secapcflag
 #> 1                0            0            0                0
 #> 2                0            0            0                0
@@ -234,47 +187,47 @@ try({
 #> 5                0            0            0                0
 #> 6                0            0            0                0
 #>   pre_ap_raise1_price pre_ap_lower1_price cumul_pre_ap_energy_price
-#> 1                0.04                   0                  103831.1
-#> 2                0.04                   0                  103841.5
-#> 3                0.04                   0                  103854.8
-#> 4                0.04                   0                  103863.4
-#> 5                0.04                   0                  103877.9
-#> 6                0.04                   0                  103885.3
+#> 1                0.01                   0                  184155.9
+#> 2                0.01                   0                  184199.4
+#> 3                0.02                   0                  184257.4
+#> 4                0.01                   0                  184281.0
+#> 5                0.01                   0                  184341.5
+#> 6                0.01                   0                  184367.3
 #>   cumul_pre_ap_raise6_price cumul_pre_ap_raise60_price
-#> 1                     52.01                      44.71
-#> 2                     52.06                      44.70
-#> 3                     52.11                      44.70
-#> 4                     52.11                      44.69
-#> 5                     52.14                      44.68
-#> 6                     52.14                      44.68
+#> 1                     54.88                      47.15
+#> 2                     54.89                      47.15
+#> 3                     54.83                      47.15
+#> 4                     54.82                      47.15
+#> 5                     54.82                      47.15
+#> 6                     54.82                      47.16
 #>   cumul_pre_ap_raise5min_price cumul_pre_ap_raisereg_price
-#> 1                     17.92886                    5435.427
-#> 2                     17.94886                    5431.447
-#> 3                     17.94886                    5429.727
-#> 4                     17.96886                    5427.727
-#> 5                     17.98886                    5428.717
-#> 6                     18.00886                    5426.717
+#> 1                     18.60588                    5607.458
+#> 2                     18.60588                    5608.518
+#> 3                     18.60588                    5609.578
+#> 4                     18.60588                    5609.588
+#> 5                     18.60588                    5611.888
+#> 6                     18.60588                    5610.588
 #>   cumul_pre_ap_lower6_price cumul_pre_ap_lower60_price
-#> 1                  49.17733                   116.2799
-#> 2                  49.17733                   116.2799
-#> 3                  49.17733                   116.2799
-#> 4                  49.17733                   116.2799
-#> 5                  49.17733                   116.2799
-#> 6                  49.17733                   116.2799
+#> 1                     37.67                   92.84737
+#> 2                     37.67                   92.84737
+#> 3                     37.67                   92.84737
+#> 4                     37.67                   92.82737
+#> 5                     37.67                   92.82737
+#> 6                     37.67                   92.82737
 #>   cumul_pre_ap_lower5min_price cumul_pre_ap_lowerreg_price
-#> 1                     277.5495                    3053.739
-#> 2                     277.5495                    3053.069
-#> 3                     277.5495                    3053.069
-#> 4                     277.5495                    3053.069
-#> 5                     277.5495                    3053.069
-#> 6                     277.5495                    3053.069
+#> 1                      67.8177                    2470.180
+#> 2                      67.8177                    2471.180
+#> 3                      67.8177                    2472.180
+#> 4                      67.8177                    2472.085
+#> 5                      67.8177                    2473.585
+#> 6                      67.8177                    2473.585
 #>   cumul_pre_ap_raise1_price cumul_pre_ap_lower1_price ocd_status mii_status
-#> 1                     30.85                      1.08    NOT_OCD    NOT_MII
-#> 2                     30.87                      1.08    NOT_OCD    NOT_MII
-#> 3                     30.89                      1.08    NOT_OCD    NOT_MII
-#> 4                     30.91                      1.08    NOT_OCD    NOT_MII
-#> 5                     30.93                      1.08    NOT_OCD    NOT_MII
-#> 6                     30.95                      1.08    NOT_OCD    NOT_MII
+#> 1                     26.41                      1.94    NOT_OCD    NOT_MII
+#> 2                     26.40                      1.94    NOT_OCD    NOT_MII
+#> 3                     26.39                      1.94    NOT_OCD    NOT_MII
+#> 4                     26.38                      1.94    NOT_OCD    NOT_MII
+#> 5                     26.37                      1.94    NOT_OCD    NOT_MII
+#> 6                     26.36                      1.94    NOT_OCD    NOT_MII
 options(op)
 # }
 ```

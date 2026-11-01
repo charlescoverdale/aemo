@@ -86,8 +86,11 @@ try({
   bj <- aemo_bids(duid = "BW01", start = now - 86400, end = now,
                    resolution = "joined")
 })
-#> Error in data.frame(name = names_v, modified = NA_character_, size = NA_character_,  : 
-#>   arguments imply differing number of rows: 0, 1
+#> Error in aemo_fetch_report_range(current_dir = "/Reports/Current/Bidmove_Complete/",  : 
+#>   No NEMweb files matched the requested range.
+#> ℹ Check `start` and `end`, or the pattern "BIDMOVE_COMPLETE".
+#> ℹ NEMweb holds this report from "2025-09-02"; earlier data is in MMSDM (see
+#>   `aemo_nemweb_download()`).
 options(op)
 # }
 ```

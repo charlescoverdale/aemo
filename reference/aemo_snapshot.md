@@ -59,16 +59,16 @@ Other reference:
 x <- structure(
   data.frame(settlementdate = Sys.time(), region = "NSW1", rrp = 80),
   aemo_title = "Demo",
-  aemo_source = "http://nemweb.com.au",
+  aemo_source = "https://nemweb.com.au",
   aemo_licence = "AEMO Copyright Permissions Notice",
   aemo_retrieved = Sys.time(),
   class = c("aemo_tbl", "data.frame")
 )
 aemo_snapshot(x)
-#>   title               source                           licence
-#> 1  Demo http://nemweb.com.au AEMO Copyright Permissions Notice
+#>   title                source                           licence
+#> 1  Demo https://nemweb.com.au AEMO Copyright Permissions Notice
 #>             retrieved rows cols
-#> 1 2026-09-19 11:09:54    1    3
+#> 1 2026-11-01 14:04:47    1    3
 #>                                                             sha256
-#> 1 defde655830aac9092782da94a2b5e38fc5ceebe1020fc4a6ebbbf79407cfbe7
+#> 1 b6b10dd39f7685b1e5de40cb061db45348440c55406554f601a0f5b4d74acafc
 ```

@@ -40,9 +40,9 @@ try({
                  start = now - 7 * 86400, end = now)
   head(g)
 })
-#> Error in aemo_fetch_report_range(current_dir = current, archive_dir = archive,  : 
-#>   No NEMweb files matched the requested range.
-#> ℹ Check `start` and `end`, or the pattern "STTM".
+#> Error in aemo_nemweb_ls(archive_dir) : 
+#>   NEMweb returned HTTP 404 for
+#> <https://nemweb.com.au/Reports/Archive/STTM/>.
 options(op)
 # }
 ```

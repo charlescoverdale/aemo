@@ -57,105 +57,49 @@ try({
                             start = now - 3600, end = now)
   head(i)
 })
-#> Warning: Cache integrity check failed for d15d470c4a6a9a24.zip; re-downloading.
-#> ℹ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
-#> ✔ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
-#> 
-#> Warning: Cache integrity check failed for a8a882bfffda28c7.zip; re-downloading.
-#> ℹ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
-#> ✔ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
-#> 
-#> Warning: Cache integrity check failed for 64a5dec40bed14bf.zip; re-downloading.
-#> ℹ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
-#> ✔ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
-#> 
-#> Warning: Cache integrity check failed for c2d69e7fd374a18f.zip; re-downloading.
-#> ℹ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
-#> ✔ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
-#> 
-#> Warning: Cache integrity check failed for 09ceddd4b8e23f70.zip; re-downloading.
-#> ℹ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
-#> ✔ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
-#> 
-#> Warning: Cache integrity check failed for 6080e733a9d5e2ee.zip; re-downloading.
-#> ℹ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
-#> ✔ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
-#> 
-#> Warning: Cache integrity check failed for 4519db0ecbcd63ed.zip; re-downloading.
-#> ℹ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
-#> ✔ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
-#> 
-#> Warning: Cache integrity check failed for 53aeb92b6406fab8.zip; re-downloading.
-#> ℹ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
-#> ✔ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
-#> 
-#> Warning: Cache integrity check failed for 521c3ebd63a722f9.zip; re-downloading.
-#> ℹ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
-#> ✔ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
-#> 
-#> Warning: Cache integrity check failed for 3b3c0151c599da35.zip; re-downloading.
-#> ℹ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
-#> ✔ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
-#> 
-#> Warning: Cache integrity check failed for 55237c7ddeaa8ce7.zip; re-downloading.
-#> ℹ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
-#> ✔ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
-#> 
-#> Warning: Cache integrity check failed for 3567538254aae775.zip; re-downloading.
-#> ℹ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
-#> ✔ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
-#> 
-#> Warning: Cache integrity check failed for 7ff46adf86691433.zip; re-downloading.
-#> ℹ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
-#> ✔ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
-#> 
-#> Warning: Cache integrity check failed for 6287474405ad3d0f.zip; re-downloading.
-#> ℹ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
-#> ✔ Downloading <http://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_D…
-#> 
 #> # aemo_tbl: AEMO interconnector flows
-#> # Source:   http://nemweb.com.au
+#> # Source:   https://nemweb.com.au
 #> # Licence:  AEMO Copyright Permissions Notice
-#> # Retrieved: 2026-09-19 10:27 UTC 
+#> # Retrieved: 2026-11-01 14:04 UTC 
 #> # Rows: 6  Cols: 22
 #> 
 #>        settlementdate runno interconnectorid dispatchinterval intervention
-#> 1 2026-09-19 19:30:00     1             V-SA      20260919186            0
-#> 2 2026-09-19 19:35:00     1             V-SA      20260919187            0
-#> 3 2026-09-19 19:40:00     1             V-SA      20260919188            0
-#> 4 2026-09-19 19:45:00     1             V-SA      20260919189            0
-#> 5 2026-09-19 19:50:00     1             V-SA      20260919190            0
-#> 6 2026-09-19 19:55:00     1             V-SA      20260919191            0
+#> 1 2026-11-01 23:05:00     1             V-SA      20261101229            0
+#> 2 2026-11-01 23:10:00     1             V-SA      20261101230            0
+#> 3 2026-11-01 23:15:00     1             V-SA      20261101231            0
+#> 4 2026-11-01 23:20:00     1             V-SA      20261101232            0
+#> 5 2026-11-01 23:25:00     1             V-SA      20261101233            0
+#> 6 2026-11-01 23:30:00     1             V-SA      20261101234            0
 #>   meteredmwflow    mwflow mwlosses marginalvalue violationdegree
-#> 1     -127.1334 -170.0000  4.82993             0               0
-#> 2     -187.3525 -281.8791 11.63138             0               0
-#> 3     -240.2246 -294.9662 11.84545             0               0
-#> 4     -259.6924 -234.9532  7.57808             0               0
-#> 5     -207.1055 -190.6807  4.96446             0               0
-#> 6     -149.1758 -272.2268  9.63579             0               0
+#> 1     -422.0078 -426.9647 19.09971             0               0
+#> 2     -423.1250 -414.0000 18.12975             0               0
+#> 3     -426.4688 -454.9851 22.87120             0               0
+#> 4     -507.9570 -485.2317 26.86386             0               0
+#> 5     -472.2383 -491.5467 27.17404             0               0
+#> 6     -522.4688 -505.4983 29.03163             0               0
 #>           lastchanged exportlimit importlimit marginalloss  exportgenconid
-#> 1 2026/09/19 19:25:02   609.99097  -249.79123      0.95512   V_S_NIL_ROCOF
-#> 2 2026/09/19 19:30:03   599.59437  -281.87915      0.92944 V::S_SEVC1_SETB
-#> 3 2026/09/19 19:35:03   564.62334  -294.96619      0.92824 V::S_SEVC1_SETB
-#> 4 2026/09/19 19:40:03   543.40993  -234.95319      0.94377 V::S_SEVC1_SETB
-#> 5 2026/09/19 19:45:03   582.74487  -190.68072      0.95225 V::S_SEVC1_SETB
-#> 6 2026/09/19 19:50:04   609.99097  -272.22676      0.93385   V_S_NIL_ROCOF
-#>   importgenconid fcasexportlimit fcasimportlimit local_price_adjustment_export
-#> 1    I_6F_SN_150            1050           -1050                             0
-#> 2    I_6F_SN_150            1050           -1050                             0
-#> 3    I_6F_SN_150            1050           -1050                             0
-#> 4    I_6F_SN_150            1050           -1050                             0
-#> 5    I_6F_SN_150            1050           -1050                             0
-#> 6    I_6F_SN_150            1050           -1050                             0
+#> 1 2026/11/01 23:00:03         600  -591.33569      0.90667 V:S_600_HY_TEST
+#> 2 2026/11/01 23:05:03         600        -600       0.9095 V:S_600_HY_TEST
+#> 3 2026/11/01 23:10:03         600        -600        0.898 V:S_600_HY_TEST
+#> 4 2026/11/01 23:15:04   461.01388  -574.76308      0.89006     V::N_NIL_V2
+#> 5 2026/11/01 23:20:04         600  -571.86311      0.88743 V:S_600_HY_TEST
+#> 6 2026/11/01 23:25:04         600  -578.49401      0.88371 V:S_600_HY_TEST
+#>    importgenconid fcasexportlimit fcasimportlimit local_price_adjustment_export
+#> 1   S:VN_700_TEST             950            -850                             0
+#> 2 S:V_600_HY_TEST             950            -850                             0
+#> 3 S:V_600_HY_TEST             950            -850                             0
+#> 4   S:VN_700_TEST             950            -850                             0
+#> 5   S:VN_700_TEST             950            -850                             0
+#> 6   S:VN_700_TEST             950            -850                             0
 #>   locally_constrained_export local_price_adjustment_import
-#> 1                          0                             0
-#> 2                          0                          5.08
-#> 3                          0                           5.6
-#> 4                          0                          17.8
-#> 5                          0                         28.42
-#> 6                          0                          7.39
+#> 1                          0                         -5.72
+#> 2                          0                         -5.85
+#> 3                          0                         -6.67
+#> 4                          0                         -5.82
+#> 5                          0                         -6.49
+#> 6                          0                         -5.38
 #>   locally_constrained_import
-#> 1                          0
+#> 1                          1
 #> 2                          1
 #> 3                          1
 #> 4                          1

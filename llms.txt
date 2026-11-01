@@ -45,7 +45,7 @@ with 30-minute settlement); every five minutes AEMO publishes prices,
 demand, generator output, interconnector flows, bids, and forecasts.
 
 All of this is free and public. AEMO publishes the raw dispatch files to
-**NEMweb** (<http://nemweb.com.au>) within minutes of each dispatch
+**NEMweb** (<https://nemweb.com.au>) within minutes of each dispatch
 interval, and retains historical archives in the **Market Management
 System Data Model (MMSDM)** going back to the start of the NEM in
 December 1998. Flagship planning publications (the **Integrated System
@@ -62,19 +62,19 @@ four different tables (prices, demand, interconnector flows, unit
 output) all interleaved in one CSV. Monthly archives for some tables are
 multi-gigabyte. Schema versions change between MMSDM releases (the
 v4-to-v5 transition in **April 2021**, coincident with the 5-minute
-settlement program, added columns to `DISPATCHLOAD`). AEMO is
-decommissioning the NEMweb HTTP endpoint on **7 April 2026** and
-migrating the base URL on **30 April 2026**.
+settlement program, added columns to `DISPATCHLOAD`). AEMO retired
+plain-HTTP access to NEMweb in **April 2026**: `http://` requests are
+now redirected to `https://nemweb.com.au`, which the package uses.
 
 ``` r
 
 # Without this package
-listing <- rvest::read_html("http://nemweb.com.au/Reports/Current/DispatchIS_Reports/")
+listing <- rvest::read_html("https://nemweb.com.au/Reports/Current/DispatchIS_Reports/")
 hrefs   <- rvest::html_attr(rvest::html_elements(listing, "a"), "href")
-zip     <- paste0("http://nemweb.com.au/Reports/Current/DispatchIS_Reports/",
-                  tail(grep("DISPATCHIS", hrefs, value = TRUE), 1))
+zip     <- paste0("https://nemweb.com.au",  # hrefs are site-relative paths
+                  tail(grep("DISPATCHIS.*\\.zip$", hrefs, value = TRUE), 1))
 path    <- tempfile(fileext = ".zip")
-download.file(zip, path)
+download.file(zip, path, mode = "wb")
 tmp     <- tempfile(); utils::unzip(path, exdir = tmp)
 csv     <- list.files(tmp, pattern = "\\.CSV$", full.names = TRUE)[1]
 # ... read the file line by line, split by "I,"/"D,"/"F," row type,
@@ -83,7 +83,7 @@ csv     <- list.files(tmp, pattern = "\\.CSV$", full.names = TRUE)[1]
 
 # With this package
 library(aemo)
-aemo_price("NSW1", "2024-06-01", "2024-06-01 01:00:00")
+aemo_price("NSW1", paste(Sys.Date() - 2, "00:00:00"), paste(Sys.Date() - 2, "01:00:00"))
 ```
 
 NEMweb directory listings are parsed into tidy data frames. The
@@ -182,6 +182,19 @@ Timestamps are **period-ending**: a row stamped `14:05:00` covers the
 attr(p$settlementdate, "tzone")  # "Australia/Brisbane"
 ```
 
+### How far back the NEMweb functions reach
+
+NEMweb holds the five-minute files in its `Current` directory for only
+about two days, and daily (dispatch) or weekly (trading) rollups in its
+`Archive` for about 13 months.
+[`aemo_price()`](https://charlescoverdale.github.io/aemo/reference/aemo_price.md),
+[`aemo_demand()`](https://charlescoverdale.github.io/aemo/reference/aemo_demand.md)
+and the other NEMweb functions read each day of a request from an
+`Archive` rollup when one exists and from `Current` otherwise, so any
+range inside those 13 months works. For older data, use the monthly
+MMSDM archive through
+[`aemo_nemweb_download()`](https://charlescoverdale.github.io/aemo/reference/aemo_nemweb_download.md).
+
 ### Intervention runs
 
 `DISPATCHPRICE` contains two run types in every file: the **market
@@ -191,18 +204,21 @@ directions or suspension). All functions default to
 `intervention = FALSE`, returning market pricing rows only.
 
 During the June 2022 NEM suspension AEMO issued directions across all
-regions for several days. Querying that period with the default settings
-returns only the market pricing run, not the direction-influenced run:
+regions for several days. That period is now only in MMSDM, but the flag
+works the same way on any window NEMweb still holds: the default returns
+only the market pricing run, not the direction-influenced run.
 
 ``` r
 
+day <- format(Sys.Date() - 7)
+next_day <- format(Sys.Date() - 6)
+
 # Default: market pricing run only (correct for settlement analysis)
-p_market <- aemo_price("NSW1", "2022-06-13", "2022-06-14")
+p_market <- aemo_price("NSW1", day, next_day)
 
 # Both runs (use for direction-cost analysis)
-p_both <- aemo_price("NSW1", "2022-06-13", "2022-06-14",
-                     intervention = TRUE)
-table(p_both$intervention)  # "0": market run rows, "1": intervention rows
+p_both <- aemo_price("NSW1", day, next_day, intervention = TRUE)
+table(p_both$intervention)  # "0": market run rows; "1" only when directions applied
 ```
 
 ### Worked example: price spike forensics
@@ -211,8 +227,8 @@ table(p_both$intervention)  # "0": market run rows, "1": intervention rows
 
 library(aemo)
 
-# Step 1: find a high-price interval in SA
-p <- aemo_price("SA1", "2024-03-01", "2024-03-02")
+# Step 1: find the highest-price interval in SA over the past week
+p <- aemo_price("SA1", format(Sys.Date() - 8), format(Sys.Date() - 1))
 spike <- p[which.max(p$rrp), ]
 spike[, c("settlementdate", "rrp")]
 
@@ -234,8 +250,8 @@ if ("raise6secmw" %in% names(e)) {
 }
 
 # Step 4: what loss factor applies to a generator in SA?
-mlf <- aemo_mlf(year = "2024-25")
-head(mlf[mlf$regionid == "SA1", c("duid", "mlf")])
+mlf <- aemo_mlf(year = "2025-26")
+head(mlf[mlf$regionid == "SA1", c("connectionpointid", "mlf")])
 ```
 
 ## Functions
@@ -264,6 +280,8 @@ head(mlf[mlf$regionid == "SA1", c("duid", "mlf")])
 | [`aemo_fcas_enablement()`](https://charlescoverdale.github.io/aemo/reference/aemo_fcas_enablement.md) | FCAS enablement volumes (MW) per DUID across ten services (from DISPATCHLOAD). Quantity side of the FCAS market. | 5-min |
 | [`aemo_interconnector()`](https://charlescoverdale.github.io/aemo/reference/aemo_interconnector.md) | MW flow, losses, and limits on the seven NEM interconnectors | 5-min |
 | [`aemo_bids()`](https://charlescoverdale.github.io/aemo/reference/aemo_bids.md) | Generator bid stack: daily (BIDDAYOFFER_D) or per-interval (BIDPEROFFER_D, with size guard) | Day or 5-min |
+| [`aemo_gencon()`](https://charlescoverdale.github.io/aemo/reference/aemo_gencon.md) | Generic constraint equation definitions and RHS terms (MMSDM GENCONDATA) | Monthly archive |
+| [`aemo_spd_constraints()`](https://charlescoverdale.github.io/aemo/reference/aemo_spd_constraints.md) | Per-term constraint coefficients for regions, interconnectors and connection points (MMSDM SPD tables) | Monthly archive |
 
 ### Forecasts
 
@@ -281,6 +299,15 @@ head(mlf[mlf$regionid == "SA1", c("duid", "mlf")])
 | [`aemo_dlf()`](https://charlescoverdale.github.io/aemo/reference/aemo_dlf.md) | Distribution Loss Factors by connection point and financial year, from MMSDM LOSSFACTORMODEL. |
 | [`aemo_regions()`](https://charlescoverdale.github.io/aemo/reference/aemo_regions.md) | NEM region metadata (5 regions, static) |
 | [`aemo_interconnectors()`](https://charlescoverdale.github.io/aemo/reference/aemo_interconnectors.md) | NEM interconnector topology and energisation dates (7 links, static) |
+| [`aemo_participants()`](https://charlescoverdale.github.io/aemo/reference/aemo_participants.md) | Market participants mapped to their registered DUIDs (MMSDM PARTICIPANT and DUDETAILSUMMARY) |
+
+### Market events and settlement
+
+| Function | Description |
+|----|----|
+| [`aemo_market_notices()`](https://charlescoverdale.github.io/aemo/reference/aemo_market_notices.md) | AEMO market notices (MMSDM MARKETNOTICEDATA): Lack of Reserve declarations, RERT activations, directions and other market events |
+| [`aemo_outages()`](https://charlescoverdale.github.io/aemo/reference/aemo_outages.md) | Planned and forced transmission and distribution network outages (MMSDM NETWORK_OUTAGEDETAIL) |
+| [`aemo_settlement()`](https://charlescoverdale.github.io/aemo/reference/aemo_settlement.md) | Settlement cash-flow and residue tables from MMSDM |
 
 ### Low-level access and configuration
 
@@ -290,6 +317,7 @@ head(mlf[mlf$regionid == "SA1", c("duid", "mlf")])
 | [`aemo_nemweb_download()`](https://charlescoverdale.github.io/aemo/reference/aemo_nemweb_download.md) | Raw zipped-CSV download from NEMweb |
 | [`aemo_cache_info()`](https://charlescoverdale.github.io/aemo/reference/aemo_cache_info.md), [`aemo_clear_cache()`](https://charlescoverdale.github.io/aemo/reference/aemo_clear_cache.md) | Cache management |
 | [`aemo_throttle()`](https://charlescoverdale.github.io/aemo/reference/aemo_throttle.md) | Request-rate configuration |
+| [`aemo_snapshot()`](https://charlescoverdale.github.io/aemo/reference/aemo_snapshot.md) | Provenance record for an `aemo_tbl` (sources, retrieval times, hashes) for a paper appendix or data deposit |
 
 ### Gas
 
@@ -305,23 +333,26 @@ volume bands) has monthly archives on the order of 0.5 to 1.5 GB zipped
 of compressed data and tens of millions of rows.
 
 [`aemo_bids()`](https://charlescoverdale.github.io/aemo/reference/aemo_bids.md)
-enforces a 30-day span guard by default and refuses longer spans without
-explicit consent:
+enforces a 30-day span guard on the per-interval bids
+(`resolution = "period"` or `"joined"`) and refuses longer spans without
+explicit consent. The daily bids (`resolution = "day"`, the default) are
+small and have no guard.
 
 ``` r
 
-# Works (1-day span)
-aemo_bids(duid = "BW01", start = "2024-06-01", end = "2024-06-02")
+# Works (1-day span of daily bids)
+aemo_bids(duid = "BW01", start = format(Sys.Date() - 3), end = format(Sys.Date() - 2))
 
 # Errors with a clear message
-aemo_bids(duid = "BW01", start = "2024-01-01", end = "2024-06-01")
-# Error: Requested span is 152 days.
+aemo_bids(duid = "BW01", start = format(Sys.Date() - 92), end = format(Sys.Date() - 2),
+          resolution = "period")
+# Error: Requested span is 90 days.
 # Bids data is large (BIDPEROFFER_D monthly archives are multi-GB zipped).
 # Pass allow_large = TRUE to proceed.
 
 # Works with explicit opt-in
-aemo_bids(duid = "BW01", start = "2024-01-01", end = "2024-06-01",
-          allow_large = TRUE)
+aemo_bids(duid = "BW01", start = format(Sys.Date() - 92), end = format(Sys.Date() - 2),
+          resolution = "period", allow_large = TRUE)
 ```
 
 ## Examples
@@ -333,8 +364,8 @@ aemo_bids(duid = "BW01", start = "2024-01-01", end = "2024-06-01",
 library(aemo)
 
 p <- aemo_price("NSW1",
-                start = "2024-06-01",
-                end = "2024-06-02")
+                start = format(Sys.Date() - 2),
+                end = format(Sys.Date() - 1))
 
 p$hour <- as.integer(format(as.POSIXct(p$settlementdate), "%H"))
 avg_by_hour <- aggregate(as.numeric(p$rrp) ~ p$hour, FUN = mean, na.rm = TRUE)
@@ -348,14 +379,14 @@ plot(avg_by_hour, type = "l", xlab = "Hour", ylab = "AUD/MWh")
 
 # Heywood Interconnector (VIC-SA) flows for the past day
 i <- aemo_interconnector(flow = "V-SA",
-                          start = "2024-06-01",
-                          end   = "2024-06-02")
+                          start = format(Sys.Date() - 2),
+                          end   = format(Sys.Date() - 1))
 head(i)
 
 # Project EnergyConnect (V-S-N) Stage 1 went live in April 2025
 pec <- aemo_interconnector(flow = "V-S-N",
-                           start = "2025-06-01",
-                           end   = "2025-06-02")
+                           start = format(Sys.Date() - 2),
+                           end   = format(Sys.Date() - 1))
 ```
 
 ### Compare regions
@@ -363,8 +394,10 @@ pec <- aemo_interconnector(flow = "V-S-N",
 ``` r
 
 # Query each region once
-nsw <- aemo_price("NSW1", "2024-06-01", "2024-06-01 01:00:00")
-vic <- aemo_price("VIC1", "2024-06-01", "2024-06-01 01:00:00")
+hour_start <- paste(Sys.Date() - 2, "00:00:00")
+hour_end   <- paste(Sys.Date() - 2, "01:00:00")
+nsw <- aemo_price("NSW1", hour_start, hour_end)
+vic <- aemo_price("VIC1", hour_start, hour_end)
 
 # Average price
 mean(as.numeric(nsw$rrp), na.rm = TRUE)
@@ -398,7 +431,7 @@ path
 
 ## Data source and licence
 
-Data is published by AEMO at <http://nemweb.com.au> under the **AEMO
+Data is published by AEMO at <https://nemweb.com.au> under the **AEMO
 Copyright Permissions Notice** (not CC BY 4.0; the notice is similar but
 carries AEMO-specific attribution language). See
 <https://www.aemo.com.au/privacy-and-legal-notices/copyright-permissions>

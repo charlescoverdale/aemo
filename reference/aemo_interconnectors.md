@@ -32,9 +32,9 @@ Other reference:
 ``` r
 aemo_interconnectors()
 #> # aemo_tbl: NEM interconnectors
-#> # Source:   http://nemweb.com.au
+#> # Source:   https://nemweb.com.au
 #> # Licence:  AEMO Copyright Permissions Notice
-#> # Retrieved: 2026-09-19 10:27 UTC 
+#> # Retrieved: 2026-11-01 14:04 UTC 
 #> # Rows: 7  Cols: 5
 #> 
 #>   interconnector_id from_region to_region                         name
