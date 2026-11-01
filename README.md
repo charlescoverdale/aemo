@@ -104,6 +104,10 @@ Timestamps are **period-ending**: a row stamped `14:05:00` covers the 5-minute i
 attr(p$settlementdate, "tzone")  # "Australia/Brisbane"
 ```
 
+### How far back the NEMweb functions reach
+
+NEMweb holds the five-minute files in its `Current` directory for only about two days, and daily (dispatch) or weekly (trading) rollups in its `Archive` for about 13 months. `aemo_price()`, `aemo_demand()` and the other NEMweb functions read each day of a request from an `Archive` rollup when one exists and from `Current` otherwise, so any range inside those 13 months works. For older data, use the monthly MMSDM archive through `aemo_nemweb_download()`.
+
 ### Intervention runs
 
 `DISPATCHPRICE` contains two run types in every file: the **market pricing run** (`INTERVENTION = 0`, used in settlement) and the **physical/intervention run** (`INTERVENTION = 1`, issued during market directions or suspension). All functions default to `intervention = FALSE`, returning market pricing rows only.
@@ -178,6 +182,8 @@ head(mlf[mlf$regionid == "SA1", c("duid", "mlf")])
 | `aemo_fcas_enablement()` | FCAS enablement volumes (MW) per DUID across ten services (from DISPATCHLOAD). Quantity side of the FCAS market. | 5-min |
 | `aemo_interconnector()` | MW flow, losses, and limits on the seven NEM interconnectors | 5-min |
 | `aemo_bids()` | Generator bid stack: daily (BIDDAYOFFER_D) or per-interval (BIDPEROFFER_D, with size guard) | Day or 5-min |
+| `aemo_gencon()` | Generic constraint equation definitions and RHS terms (MMSDM GENCONDATA) | Monthly archive |
+| `aemo_spd_constraints()` | Per-term constraint coefficients for regions, interconnectors and connection points (MMSDM SPD tables) | Monthly archive |
 
 ### Forecasts
 
@@ -195,6 +201,15 @@ head(mlf[mlf$regionid == "SA1", c("duid", "mlf")])
 | `aemo_dlf()` | Distribution Loss Factors by connection point and financial year, from MMSDM LOSSFACTORMODEL. |
 | `aemo_regions()` | NEM region metadata (5 regions, static) |
 | `aemo_interconnectors()` | NEM interconnector topology and energisation dates (7 links, static) |
+| `aemo_participants()` | Market participants mapped to their registered DUIDs (MMSDM PARTICIPANT and DUDETAILSUMMARY) |
+
+### Market events and settlement
+
+| Function | Description |
+|---|---|
+| `aemo_market_notices()` | AEMO market notices (MMSDM MARKETNOTICEDATA): Lack of Reserve declarations, RERT activations, directions and other market events |
+| `aemo_outages()` | Planned and forced transmission and distribution network outages (MMSDM NETWORK_OUTAGEDETAIL) |
+| `aemo_settlement()` | Settlement cash-flow and residue tables from MMSDM |
 
 ### Low-level access and configuration
 
@@ -204,6 +219,7 @@ head(mlf[mlf$regionid == "SA1", c("duid", "mlf")])
 | `aemo_nemweb_download()` | Raw zipped-CSV download from NEMweb |
 | `aemo_cache_info()`, `aemo_clear_cache()` | Cache management |
 | `aemo_throttle()` | Request-rate configuration |
+| `aemo_snapshot()` | Provenance record for an `aemo_tbl` (sources, retrieval times, hashes) for a paper appendix or data deposit |
 
 ### Gas
 
