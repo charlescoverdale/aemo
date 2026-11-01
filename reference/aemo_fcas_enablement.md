@@ -86,16 +86,16 @@ try({
 #> # aemo_tbl: AEMO FCAS enablement volumes (DISPATCHLOAD)
 #> # Source:   https://nemweb.com.au
 #> # Licence:  AEMO Copyright Permissions Notice
-#> # Retrieved: 2026-11-01 14:04 UTC 
+#> # Retrieved: 2026-11-01 14:07 UTC 
 #> # Rows: 6  Cols: 1
 #> 
 #>        settlementdate
-#> 1 2026-11-01 23:05:00
-#> 2 2026-11-01 23:10:00
-#> 3 2026-11-01 23:15:00
-#> 4 2026-11-01 23:20:00
-#> 5 2026-11-01 23:25:00
-#> 6 2026-11-01 23:30:00
+#> 1 2026-11-01 23:10:00
+#> 2 2026-11-01 23:15:00
+#> 3 2026-11-01 23:20:00
+#> 4 2026-11-01 23:25:00
+#> 5 2026-11-01 23:30:00
+#> 6 2026-11-01 23:35:00
 options(op)
 # }
 ```

@@ -95,9 +95,11 @@ the last 24 hours.</p></dd>
 <span class="r-in"><span>                 start <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/Sys.time.html" class="external-link">Sys.time</a></span><span class="op">(</span><span class="op">)</span> <span class="op">-</span> <span class="fu"><a href="https://rdrr.io/r/base/difftime.html" class="external-link">as.difftime</a></span><span class="op">(</span><span class="fl">1</span>, units <span class="op">=</span> <span class="st">"hours"</span><span class="op">)</span>,</span></span>
 <span class="r-in"><span>                 end   <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/Sys.time.html" class="external-link">Sys.time</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="op">}</span><span class="op">)</span></span></span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Downloading <span style="color: #0000BB; font-style: italic;">&lt;https://nemweb.com.au/Reports/CURRENT/Short_Term_PASA_Reports/PU</span>…</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BB00;">✔</span> Downloading <span style="color: #0000BB; font-style: italic;">&lt;https://nemweb.com.au/Reports/CURRENT/Short_Term_PASA_Reports/PU</span>…</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Error in aemo_fetch_report_range(current_dir = current, archive_dir = archive,  : </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   No NEMweb files matched the requested range.</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Check `start` and `end`, or the pattern <span style="color: #0000BB;">"STPASA"</span>.</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> NEMweb holds this report from <span style="color: #0000BB;">"2025-09-01"</span>; earlier data is in MMSDM (see</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   `aemo_nemweb_download()`).</span>
 <span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/options.html" class="external-link">options</a></span><span class="op">(</span><span class="va">op</span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="co"># }</span></span></span>
 </code></pre></div>

@@ -51,9 +51,11 @@ try({
                  start = Sys.time() - as.difftime(1, units = "hours"),
                  end   = Sys.time())
 })
-#> ℹ Downloading <https://nemweb.com.au/Reports/CURRENT/Short_Term_PASA_Reports/PU…
-#> ✔ Downloading <https://nemweb.com.au/Reports/CURRENT/Short_Term_PASA_Reports/PU…
-#> 
+#> Error in aemo_fetch_report_range(current_dir = current, archive_dir = archive,  : 
+#>   No NEMweb files matched the requested range.
+#> ℹ Check `start` and `end`, or the pattern "STPASA".
+#> ℹ NEMweb holds this report from "2025-09-01"; earlier data is in MMSDM (see
+#>   `aemo_nemweb_download()`).
 options(op)
 # }
 ```

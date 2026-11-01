@@ -34,7 +34,7 @@ aemo_interconnectors()
 #> # aemo_tbl: NEM interconnectors
 #> # Source:   https://nemweb.com.au
 #> # Licence:  AEMO Copyright Permissions Notice
-#> # Retrieved: 2026-11-01 14:04 UTC 
+#> # Retrieved: 2026-11-01 14:07 UTC 
 #> # Rows: 7  Cols: 5
 #> 
 #>   interconnector_id from_region to_region                         name

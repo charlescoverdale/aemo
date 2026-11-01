@@ -88,7 +88,7 @@ try({
 #> # aemo_tbl: NEM SPDINTERCONNECTORCONSTRAINT (SPD constraint coefficients)
 #> # Source:   https://nemweb.com.au/Data_Archive/Wholesale_Electricity/MMSDM
 #> # Licence:  AEMO Copyright Permissions Notice
-#> # Retrieved: 2026-11-01 14:04 UTC 
+#> # Retrieved: 2026-11-01 14:07 UTC 
 #> # Rows: 6  Cols: 6
 #> 
 #>   interconnectorid effectivedate versionno            genconid factor
