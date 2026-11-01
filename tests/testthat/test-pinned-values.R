@@ -25,6 +25,19 @@ skip_if_offline <- function() {
   )
 }
 
+# Run a live fetch, skipping rather than failing when NEMweb itself could
+# not deliver the files: these tests check parsing, not NEMweb's uptime.
+nem_fetch <- function(expr) {
+  withCallingHandlers(
+    tryCatch(expr, aemo_download_error = function(e) {
+      testthat::skip(paste("NEMweb downloads failed:", conditionMessage(e)))
+    }),
+    aemo_partial_download = function(w) {
+      testthat::skip(paste("NEMweb downloads incomplete:", conditionMessage(w)))
+    }
+  )
+}
+
 # A date `days_ago` days before today in market time (AEST).
 nem_day <- function(days_ago) {
   format(as.Date(Sys.time(), tz = "Australia/Brisbane") - days_ago)
@@ -36,12 +49,12 @@ test_that("aemo_price returns well-formed 5-minute prices from the Archive", {
 
   withr::local_options(aemo.cache_dir = tempdir())
   day <- nem_day(60)
-  p <- aemo_price(
+  p <- nem_fetch(aemo_price(
     region = "NSW1",
     start  = paste(day, "12:00:00"),
     end    = paste(day, "13:00:00"),
     interval = "5min"
-  )
+  ))
   expect_s3_class(p, "aemo_tbl")
   expect_true(nrow(p) >= 6L,
               info = "Expected at least 6 five-minute intervals")
@@ -60,23 +73,23 @@ test_that("aemo_price intervention filter works: INTERVENTION=0 rows only by def
 
   withr::local_options(aemo.cache_dir = tempdir())
   day <- nem_day(45)
-  p_default <- aemo_price(
+  p_default <- nem_fetch(aemo_price(
     region = "NSW1",
     start  = paste(day, "16:00:00"),
     end    = paste(day, "17:00:00")
-  )
+  ))
   if ("intervention" %in% names(p_default)) {
     iv <- suppressWarnings(as.integer(p_default$intervention))
     expect_true(all(is.na(iv) | iv == 0L),
                 info = "Default should return only intervention=0 rows")
   }
 
-  p_both <- aemo_price(
+  p_both <- nem_fetch(aemo_price(
     region = "NSW1",
     start  = paste(day, "16:00:00"),
     end    = paste(day, "17:00:00"),
     intervention = TRUE
-  )
+  ))
   expect_true(nrow(p_both) >= nrow(p_default))
 })
 
@@ -99,11 +112,11 @@ test_that("aemo_price timestamps are AEST not AEDT (no DST shift)", {
   skip_if(today - dst > 360, "Most recent DST transition is outside the NEMweb archive")
 
   withr::local_options(aemo.cache_dir = tempdir())
-  p <- aemo_price(
+  p <- nem_fetch(aemo_price(
     region   = "NSW1",
     start    = paste(dst, "02:00:00"),
     end      = paste(dst, "03:00:00")
-  )
+  ))
   expect_true(nrow(p) > 0L)
   expect_false(any(is.na(p$settlementdate)),
                info = "No NA timestamps at DST-transition boundary in AEST")

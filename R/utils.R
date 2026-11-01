@@ -397,10 +397,11 @@ aemo_fetch_report_range <- function(current_dir, archive_dir = NULL,
   }
 
   all_parts <- list()
+  failed <- character(0)
   for (url in urls) {
     tables <- tryCatch(aemo_fetch_zip(url, start = start, end = end),
                        error = function(e) {
-                         cli::cli_warn("Skipping failed download: {.url {url}}")
+                         failed <<- c(failed, url)
                          NULL
                        })
     if (is.null(tables)) next
@@ -415,7 +416,23 @@ aemo_fetch_report_range <- function(current_dir, archive_dir = NULL,
   }
 
   if (length(all_parts) == 0L) {
+    if (length(failed) > 0L) {
+      cli::cli_abort(c(
+        "Every NEMweb download for the requested range failed.",
+        "i" = "{length(failed)} file{?s}, for example {.url {failed[1]}}.",
+        "i" = "NEMweb may be slow or unavailable; try again later."
+      ), class = "aemo_download_error")
+    }
     cli::cli_abort("No data rows found in the fetched files.")
+  }
+  # A partial result is easy to mistake for a complete one, so say so once,
+  # plainly, rather than once per file.
+  if (length(failed) > 0L) {
+    cli::cli_warn(c(
+      "{length(failed)} of {length(urls)} NEMweb file{?s} could not be downloaded, so the result is missing those intervals.",
+      "i" = "Missing: {.url {failed}}",
+      "i" = "Run the call again to retry; files already downloaded are reused from the cache."
+    ), class = "aemo_partial_download")
   }
 
   # Stack on common columns only (handles schema drift)

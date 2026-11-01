@@ -26,6 +26,12 @@ and from `Current` otherwise, whatever NEMweb's retention.
   rollup, where NEMweb files it.
 * When a range is older than NEMweb holds, the error now gives the
   earliest date available and points to MMSDM.
+* When some files in a range fail to download, the result was returned
+  with one "Skipping failed download" warning per file, which made an
+  incomplete series easy to miss. There is now a single warning saying
+  how many files are missing and that the result lacks those intervals
+  (class `aemo_partial_download`); if every download fails the error has
+  class `aemo_download_error`.
 
 ## The cache works
 
