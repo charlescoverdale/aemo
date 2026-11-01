@@ -47,27 +47,30 @@ aemo_fetch_mmsdm_table <- function(table, min_rows = 1L,
   attr(now, "tzone") <- AEMO_TIMEZONE
   for (offset in seq_len(max_months_back)) {
     target <- as.Date(now) - (offset * 30L)
-    y <- format(target, "%Y")
-    m <- format(target, "%m")
-    url <- aemo_mmsdm_url(table, y, m)
-    df <- tryCatch({
-      zip_path <- aemo_download_cached(url)
-      tmp <- tempfile(paste0("aemo_", tolower(table), "_"))
-      dir.create(tmp, recursive = TRUE)
-      on.exit(unlink(tmp, recursive = TRUE), add = TRUE)
-      utils::unzip(zip_path, exdir = tmp)
-      csvs <- list.files(tmp, pattern = "\\.[Cc][Ss][Vv]$",
-                         full.names = TRUE)
-      if (length(csvs) == 0L) stop("no csv in zip")
-      parsed <- aemo_parse_csv(csvs[[1L]])
-      if (length(parsed) == 0L) stop("empty parse")
-      parsed[[1L]]
-    }, error = function(e) NULL)
+    df <- tryCatch(
+      aemo_mmsdm_month(table, format(target, "%Y"), format(target, "%m")),
+      error = function(e) NULL
+    )
     if (!is.null(df) && nrow(df) >= min_rows) {
       return(aemo_coerce_types(df))
     }
   }
   NULL
+}
+
+#' Download and parse one monthly MMSDM table (character columns).
+#' @noRd
+aemo_mmsdm_month <- function(table, year, month) {
+  zip_path <- aemo_download_cached(aemo_mmsdm_url(table, year, month))
+  tmp <- tempfile(paste0("aemo_", tolower(table), "_"))
+  dir.create(tmp, recursive = TRUE)
+  on.exit(unlink(tmp, recursive = TRUE), add = TRUE)
+  utils::unzip(zip_path, exdir = tmp)
+  csvs <- list.files(tmp, pattern = "\\.[Cc][Ss][Vv]$", full.names = TRUE)
+  if (length(csvs) == 0L) stop("no csv in zip")
+  parsed <- aemo_parse_csv(csvs[[1L]])
+  if (length(parsed) == 0L) stop("empty parse")
+  parsed[[1L]]
 }
 
 #' @noRd
@@ -202,12 +205,24 @@ aemo_file_timestamp <- function(filenames) {
 #' @return A list of Date vectors, one per file.
 #' @noRd
 aemo_archive_days <- function(filenames) {
-  lapply(filenames, function(f) {
+  dates <- lapply(filenames, function(f) {
     d <- regmatches(f, gregexpr("(?<![0-9])[0-9]{8}(?![0-9])", f, perl = TRUE))[[1]]
     d <- as.Date(d, format = "%Y%m%d")
-    d <- d[!is.na(d)]
+    d[!is.na(d)]
+  })
+  # A rollup named by one date runs from that date up to the next rollup:
+  # one day for the daily dispatch archives, about a month for the bids
+  # archives (PUBLIC_BIDMOVE_COMPLETE_20251002.zip holds 2 October to
+  # 1 November). The last rollup is assumed to span the usual gap.
+  single <- vapply(dates, length, integer(1)) == 1L
+  starts <- sort(unique(do.call(c, c(list(as.Date(character(0))), dates[single]))))
+  gap <- if (length(starts) > 1L) stats::median(as.numeric(diff(starts))) else 1
+  lapply(dates, function(d) {
     if (length(d) == 0L) return(as.Date(character(0)))
-    seq(min(d), max(d), by = "day")
+    if (length(d) > 1L) return(seq(min(d), max(d), by = "day"))
+    nxt <- starts[starts > d]
+    end <- if (length(nxt) > 0L) nxt[1L] - 1 else d + gap - 1
+    seq(d, max(d, end), by = "day")
   })
 }
 

@@ -75,7 +75,7 @@ aemo_constraints <- function(start, end, constraint_id = NULL,
   }
   rownames(df) <- NULL
   new_aemo_tbl(df,
-               source = "http://nemweb.com.au",
+               source = "https://nemweb.com.au",
                title = "AEMO dispatch constraints (shadow prices)")
 }
 

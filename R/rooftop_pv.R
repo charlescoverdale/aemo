@@ -51,7 +51,7 @@ aemo_rooftop_pv <- function(region, start, end,
   df <- aemo_apply_filters(df, start = start, end = end, region = region)
 
   new_aemo_tbl(df,
-               source = "http://nemweb.com.au",
+               source = "https://nemweb.com.au",
                title = paste0("AEMO rooftop PV ", type, " ",
                               paste(region, collapse = "+")))
 }

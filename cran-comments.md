@@ -5,7 +5,10 @@
 Bug fixes. NEMweb shortened how long it keeps recent files, so most
 queries for data more than two days old failed; archive files were not
 unpacked; and the download cache never matched its stored checksum, so
-every file was downloaded again on each call. Details in NEWS.md.
+every file was downloaded again on each call. `aemo_bids()` failed for
+every date after AEMO emptied one of its source folders, and
+`aemo_mlf()` read the wrong monthly archive outside July. Details in
+NEWS.md.
 
 ## R CMD check results
 

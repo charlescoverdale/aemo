@@ -49,6 +49,6 @@ aemo_interconnector <- function(flow = NULL, start, end,
     rownames(df) <- NULL
   }
   new_aemo_tbl(df,
-               source = "http://nemweb.com.au",
+               source = "https://nemweb.com.au",
                title = "AEMO interconnector flows")
 }

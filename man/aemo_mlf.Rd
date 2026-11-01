@@ -12,18 +12,23 @@ aemo_mlf(year = NULL, duid = NULL)
 }
 \arguments{
 \item{year}{Financial year(s) as \code{"YYYY-YY"} strings (e.g.
-\code{"2024-25"}). \code{NULL} returns all available years. Multiple
-years accepted.}
+\code{"2025-26"}). \code{NULL} (the default) returns the current
+financial year. Multiple years accepted; each needs up to 13
+small downloads.}
 
 \item{duid}{Optional character vector of DUIDs to filter on.
-\code{NULL} returns all DUIDs. See \code{\link[=aemo_units]{aemo_units()}} for the full
-DUID registry.}
+MMSDM publishes MLFs by connection point, so DUIDs are mapped
+to connection points through the unit registry (\code{\link[=aemo_units]{aemo_units()}}),
+which adds a \code{duid} column. \code{NULL} returns every connection
+point.}
 }
 \value{
-An \code{aemo_tbl} with columns \code{financial_year}, \code{duid},
-\code{connectionpointid}, \code{regionid}, \code{mlf}. From a live MMSDM
-download additional columns (\code{participantid},
-\code{lastchanged}) may also be present.
+An \code{aemo_tbl} with one row per connection point and
+effective date: \code{financial_year}, \code{connectionpointid},
+\code{regionid}, \code{mlf}, \code{effectivedate}, \code{versionno},
+\code{secondary_tlf} and \code{lastchanged}, plus \code{duid} when \code{duid} is
+given. A factor revised during the year appears once per
+effective date.
 }
 \description{
 Returns the Marginal Loss Factor applicable to each DUID for
@@ -35,10 +40,11 @@ the regional RRP per MWh generated.
 \details{
 MLFs are published annually by AEMO under NER 3.6.2 and are
 used in settlement calculations and in PPA revenue
-reconstruction. The function first attempts to download the
-\code{TRANSMISSIONLOSSFACTOR} table from the most recent MMSDM monthly
-archive; if that fails it returns a bundled static table
-covering FY 2020-21 to FY 2025-26 for ~20 well-known DUIDs.
+reconstruction. Each year's determination is read from the
+\code{TRANSMISSIONLOSSFACTOR} table of the June MMSDM archive that
+precedes it, together with the revisions in the monthly archives
+after it. There is no bundled fallback: if MMSDM cannot be reached
+the function errors rather than return unsourced values.
 }
 \examples{
 \donttest{

@@ -1,7 +1,7 @@
 # HTTP helpers
 
 #' @noRd
-AEMO_BASE_URL <- "http://nemweb.com.au"
+AEMO_BASE_URL <- "https://nemweb.com.au"
 
 #' @noRd
 aemo_base_url <- function() {

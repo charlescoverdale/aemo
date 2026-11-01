@@ -81,7 +81,7 @@ aemo_dispatch_units <- function(duid = NULL, start, end,
   }
 
   new_aemo_tbl(df,
-               source = "http://nemweb.com.au",
+               source = "https://nemweb.com.au",
                title = paste0("AEMO dispatch units (", measure, ")"))
 }
 
@@ -129,7 +129,7 @@ aemo_dispatch_units_both <- function(duid, start, end) {
                    all.x = TRUE, sort = FALSE)
   rownames(joined) <- NULL
   new_aemo_tbl(joined,
-               source = "http://nemweb.com.au",
+               source = "https://nemweb.com.au",
                title = "AEMO dispatch units (INITIALMW + TOTALCLEARED + SCADAVALUE)")
 }
 
@@ -234,6 +234,6 @@ aemo_fcas_enablement <- function(duid = NULL, start, end,
   rownames(df) <- NULL
 
   new_aemo_tbl(df,
-               source = "http://nemweb.com.au",
+               source = "https://nemweb.com.au",
                title = "AEMO FCAS enablement volumes (DISPATCHLOAD)")
 }

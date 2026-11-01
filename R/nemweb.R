@@ -10,7 +10,7 @@
 #'
 #' @return A data frame with `name`, `modified`, `size`, `url`.
 #'
-#' @source AEMO NEMweb <http://nemweb.com.au>, published under
+#' @source AEMO NEMweb <https://nemweb.com.au>, published under
 #'   the AEMO Copyright Permissions Notice.
 #'
 #' @family low-level
@@ -56,6 +56,13 @@ aemo_nemweb_ls <- function(path) {
     names_v <- vapply(parts, function(x) x[3], character(1))
     keep <- !grepl("parent directory", names_v, ignore.case = TRUE)
     hrefs <- hrefs[keep]; names_v <- names_v[keep]
+    # An empty folder lists only the parent link; without this the frame
+    # below paired zero names with one NA and data.frame() failed.
+    if (length(names_v) == 0L) {
+      return(data.frame(name = character(0), modified = character(0),
+                        size = character(0), url = character(0),
+                        stringsAsFactors = FALSE))
+    }
     urls <- ifelse(grepl("^https?://", hrefs), hrefs,
                    paste0(aemo_base_url(), hrefs))
     return(data.frame(

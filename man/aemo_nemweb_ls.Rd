@@ -4,7 +4,7 @@
 \alias{aemo_nemweb_ls}
 \title{List files in a NEMweb directory}
 \source{
-AEMO NEMweb \url{http://nemweb.com.au}, published under
+AEMO NEMweb \url{https://nemweb.com.au}, published under
 the AEMO Copyright Permissions Notice.
 }
 \usage{

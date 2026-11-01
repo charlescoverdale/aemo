@@ -10,20 +10,20 @@ The Australian Energy Market Operator is the independent system operator and mar
 
 The NEM is one of the longest interconnected transmission systems in the world and generates around 200 TWh of electricity a year (2024 calendar year was 217 TWh including rooftop PV) across five regions (Queensland, New South Wales plus the ACT, Victoria, South Australia, and Tasmania). Annual NEM wholesale turnover typically falls in the **AUD 15 to 25 billion range**, with 2023-24 at AUD 18.6 billion (AER Wholesale Electricity Market Performance Report, December 2024), plus tens to a few hundred million in frequency control ancillary services (FCAS) depending on volatility. Since **1 October 2021** the NEM has run on a 5-minute dispatch *and* settlement cycle (previously 5-minute dispatch with 30-minute settlement); every five minutes AEMO publishes prices, demand, generator output, interconnector flows, bids, and forecasts.
 
-All of this is free and public. AEMO publishes the raw dispatch files to **NEMweb** (<http://nemweb.com.au>) within minutes of each dispatch interval, and retains historical archives in the **Market Management System Data Model (MMSDM)** going back to the start of the NEM in December 1998. Flagship planning publications (the **Integrated System Plan (ISP)**, Electricity Statement of Opportunities, and Gas Statement of Opportunities) are released on aemo.com.au.
+All of this is free and public. AEMO publishes the raw dispatch files to **NEMweb** (<https://nemweb.com.au>) within minutes of each dispatch interval, and retains historical archives in the **Market Management System Data Model (MMSDM)** going back to the start of the NEM in December 1998. Flagship planning publications (the **Integrated System Plan (ISP)**, Electricity Statement of Opportunities, and Gas Statement of Opportunities) are released on aemo.com.au.
 
 ## Why does this package exist?
 
-NEMweb is generous but unfriendly. There are over 100 report folders. Files are zipped CSVs with a proprietary row-dispatch format (`C,` comments, `I,` column headers, `D,` data rows, `F,` footers) that many R-native CSV readers can't parse. A single dispatch file might contain four different tables (prices, demand, interconnector flows, unit output) all interleaved in one CSV. Monthly archives for some tables are multi-gigabyte. Schema versions change between MMSDM releases (the v4-to-v5 transition in **April 2021**, coincident with the 5-minute settlement program, added columns to `DISPATCHLOAD`). AEMO is decommissioning the NEMweb HTTP endpoint on **7 April 2026** and migrating the base URL on **30 April 2026**.
+NEMweb is generous but unfriendly. There are over 100 report folders. Files are zipped CSVs with a proprietary row-dispatch format (`C,` comments, `I,` column headers, `D,` data rows, `F,` footers) that many R-native CSV readers can't parse. A single dispatch file might contain four different tables (prices, demand, interconnector flows, unit output) all interleaved in one CSV. Monthly archives for some tables are multi-gigabyte. Schema versions change between MMSDM releases (the v4-to-v5 transition in **April 2021**, coincident with the 5-minute settlement program, added columns to `DISPATCHLOAD`). AEMO retired plain-HTTP access to NEMweb in **April 2026**: `http://` requests are now redirected to `https://nemweb.com.au`, which the package uses.
 
 ```r
 # Without this package
-listing <- rvest::read_html("http://nemweb.com.au/Reports/Current/DispatchIS_Reports/")
+listing <- rvest::read_html("https://nemweb.com.au/Reports/Current/DispatchIS_Reports/")
 hrefs   <- rvest::html_attr(rvest::html_elements(listing, "a"), "href")
-zip     <- paste0("http://nemweb.com.au/Reports/Current/DispatchIS_Reports/",
-                  tail(grep("DISPATCHIS", hrefs, value = TRUE), 1))
+zip     <- paste0("https://nemweb.com.au",  # hrefs are site-relative paths
+                  tail(grep("DISPATCHIS.*\\.zip$", hrefs, value = TRUE), 1))
 path    <- tempfile(fileext = ".zip")
-download.file(zip, path)
+download.file(zip, path, mode = "wb")
 tmp     <- tempfile(); utils::unzip(path, exdir = tmp)
 csv     <- list.files(tmp, pattern = "\\.CSV$", full.names = TRUE)[1]
 # ... read the file line by line, split by "I,"/"D,"/"F," row type,
@@ -32,7 +32,7 @@ csv     <- list.files(tmp, pattern = "\\.CSV$", full.names = TRUE)[1]
 
 # With this package
 library(aemo)
-aemo_price("NSW1", "2024-06-01", "2024-06-01 01:00:00")
+aemo_price("NSW1", paste(Sys.Date() - 2, "00:00:00"), paste(Sys.Date() - 2, "01:00:00"))
 ```
 
 NEMweb directory listings are parsed into tidy data frames. The `C,/I,/D,/F,` row-dispatch format is handled per-file so schema drift is transparent. Base URL is configurable via `options(aemo.base_url = ...)` to handle the April 2026 migration. Rate-limiting and caching are in-box.
@@ -112,16 +112,18 @@ NEMweb holds the five-minute files in its `Current` directory for only about two
 
 `DISPATCHPRICE` contains two run types in every file: the **market pricing run** (`INTERVENTION = 0`, used in settlement) and the **physical/intervention run** (`INTERVENTION = 1`, issued during market directions or suspension). All functions default to `intervention = FALSE`, returning market pricing rows only.
 
-During the June 2022 NEM suspension AEMO issued directions across all regions for several days. Querying that period with the default settings returns only the market pricing run, not the direction-influenced run:
+During the June 2022 NEM suspension AEMO issued directions across all regions for several days. That period is now only in MMSDM, but the flag works the same way on any window NEMweb still holds: the default returns only the market pricing run, not the direction-influenced run.
 
 ```r
+day <- format(Sys.Date() - 7)
+next_day <- format(Sys.Date() - 6)
+
 # Default: market pricing run only (correct for settlement analysis)
-p_market <- aemo_price("NSW1", "2022-06-13", "2022-06-14")
+p_market <- aemo_price("NSW1", day, next_day)
 
 # Both runs (use for direction-cost analysis)
-p_both <- aemo_price("NSW1", "2022-06-13", "2022-06-14",
-                     intervention = TRUE)
-table(p_both$intervention)  # "0": market run rows, "1": intervention rows
+p_both <- aemo_price("NSW1", day, next_day, intervention = TRUE)
+table(p_both$intervention)  # "0": market run rows; "1" only when directions applied
 ```
 
 ### Worked example: price spike forensics
@@ -129,8 +131,8 @@ table(p_both$intervention)  # "0": market run rows, "1": intervention rows
 ```r
 library(aemo)
 
-# Step 1: find a high-price interval in SA
-p <- aemo_price("SA1", "2024-03-01", "2024-03-02")
+# Step 1: find the highest-price interval in SA over the past week
+p <- aemo_price("SA1", format(Sys.Date() - 8), format(Sys.Date() - 1))
 spike <- p[which.max(p$rrp), ]
 spike[, c("settlementdate", "rrp")]
 
@@ -152,8 +154,8 @@ if ("raise6secmw" %in% names(e)) {
 }
 
 # Step 4: what loss factor applies to a generator in SA?
-mlf <- aemo_mlf(year = "2024-25")
-head(mlf[mlf$regionid == "SA1", c("duid", "mlf")])
+mlf <- aemo_mlf(year = "2025-26")
+head(mlf[mlf$regionid == "SA1", c("connectionpointid", "mlf")])
 ```
 
 ## Functions
@@ -231,21 +233,22 @@ head(mlf[mlf$regionid == "SA1", c("duid", "mlf")])
 
 AEMO's bid tables are large. `BIDPEROFFER_D` (per-interval bid price and volume bands) has monthly archives on the order of 0.5 to 1.5 GB zipped (much larger uncompressed). A naive full-year pull is several gigabytes of compressed data and tens of millions of rows.
 
-`aemo_bids()` enforces a 30-day span guard by default and refuses longer spans without explicit consent:
+`aemo_bids()` enforces a 30-day span guard on the per-interval bids (`resolution = "period"` or `"joined"`) and refuses longer spans without explicit consent. The daily bids (`resolution = "day"`, the default) are small and have no guard.
 
 ```r
-# Works (1-day span)
-aemo_bids(duid = "BW01", start = "2024-06-01", end = "2024-06-02")
+# Works (1-day span of daily bids)
+aemo_bids(duid = "BW01", start = format(Sys.Date() - 3), end = format(Sys.Date() - 2))
 
 # Errors with a clear message
-aemo_bids(duid = "BW01", start = "2024-01-01", end = "2024-06-01")
-# Error: Requested span is 152 days.
+aemo_bids(duid = "BW01", start = format(Sys.Date() - 92), end = format(Sys.Date() - 2),
+          resolution = "period")
+# Error: Requested span is 90 days.
 # Bids data is large (BIDPEROFFER_D monthly archives are multi-GB zipped).
 # Pass allow_large = TRUE to proceed.
 
 # Works with explicit opt-in
-aemo_bids(duid = "BW01", start = "2024-01-01", end = "2024-06-01",
-          allow_large = TRUE)
+aemo_bids(duid = "BW01", start = format(Sys.Date() - 92), end = format(Sys.Date() - 2),
+          resolution = "period", allow_large = TRUE)
 ```
 
 ## Examples
@@ -256,8 +259,8 @@ aemo_bids(duid = "BW01", start = "2024-01-01", end = "2024-06-01",
 library(aemo)
 
 p <- aemo_price("NSW1",
-                start = "2024-06-01",
-                end = "2024-06-02")
+                start = format(Sys.Date() - 2),
+                end = format(Sys.Date() - 1))
 
 p$hour <- as.integer(format(as.POSIXct(p$settlementdate), "%H"))
 avg_by_hour <- aggregate(as.numeric(p$rrp) ~ p$hour, FUN = mean, na.rm = TRUE)
@@ -270,22 +273,24 @@ plot(avg_by_hour, type = "l", xlab = "Hour", ylab = "AUD/MWh")
 ```r
 # Heywood Interconnector (VIC-SA) flows for the past day
 i <- aemo_interconnector(flow = "V-SA",
-                          start = "2024-06-01",
-                          end   = "2024-06-02")
+                          start = format(Sys.Date() - 2),
+                          end   = format(Sys.Date() - 1))
 head(i)
 
 # Project EnergyConnect (V-S-N) Stage 1 went live in April 2025
 pec <- aemo_interconnector(flow = "V-S-N",
-                           start = "2025-06-01",
-                           end   = "2025-06-02")
+                           start = format(Sys.Date() - 2),
+                           end   = format(Sys.Date() - 1))
 ```
 
 ### Compare regions
 
 ```r
 # Query each region once
-nsw <- aemo_price("NSW1", "2024-06-01", "2024-06-01 01:00:00")
-vic <- aemo_price("VIC1", "2024-06-01", "2024-06-01 01:00:00")
+hour_start <- paste(Sys.Date() - 2, "00:00:00")
+hour_end   <- paste(Sys.Date() - 2, "01:00:00")
+nsw <- aemo_price("NSW1", hour_start, hour_end)
+vic <- aemo_price("VIC1", hour_start, hour_end)
 
 # Average price
 mean(as.numeric(nsw$rrp), na.rm = TRUE)
@@ -317,7 +322,7 @@ path
 
 ## Data source and licence
 
-Data is published by AEMO at <http://nemweb.com.au> under the **AEMO Copyright Permissions Notice** (not CC BY 4.0; the notice is similar but carries AEMO-specific attribution language). See <https://www.aemo.com.au/privacy-and-legal-notices/copyright-permissions> for the full terms. This package caches downloads to `tools::R_user_dir("aemo", "cache")`.
+Data is published by AEMO at <https://nemweb.com.au> under the **AEMO Copyright Permissions Notice** (not CC BY 4.0; the notice is similar but carries AEMO-specific attribution language). See <https://www.aemo.com.au/privacy-and-legal-notices/copyright-permissions> for the full terms. This package caches downloads to `tools::R_user_dir("aemo", "cache")`.
 
 Attribution on derivative work (AEMO's requirement in full): *Source: AEMO. AEMO makes no representation as to the accuracy or completeness of this data.*
 

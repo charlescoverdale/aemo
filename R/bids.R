@@ -75,19 +75,16 @@ aemo_bids <- function(duid, start, end,
     return(aemo_bids_joined(duid = duid, start = start, end = end))
   }
 
-  if (resolution == "day") {
-    current <- "/Reports/Current/Next_Day_Offer_Energy/"
-    archive <- "/Reports/Archive/Next_Day_Offer_Energy/"
-    pattern <- "NEXT_DAY_OFFER_ENERGY"
-  } else {
-    current <- "/Reports/Current/Bidmove_Complete/"
-    archive <- "/Reports/Archive/Bidmove_Complete/"
-    pattern <- "BIDMOVE_COMPLETE"
-  }
-
+  # Both tables come from Bidmove_Complete. Next_Day_Offer_Energy, which
+  # the day resolution used to read, is now empty: AEMO publishes it as
+  # Next_Day_Offer_Energy_SPARSE, whose BIDDAYOFFER holds every rebid
+  # version rather than the final _D bid. The table is named explicitly
+  # because a Bidmove_Complete file holds both, BIDDAYOFFER_D first.
   df <- aemo_fetch_report_range(
-    current_dir = current, archive_dir = archive,
-    pattern = pattern, start = start, end = end
+    current_dir = "/Reports/Current/Bidmove_Complete/",
+    archive_dir = "/Reports/Archive/Bidmove_Complete/",
+    pattern = "BIDMOVE_COMPLETE", start = start, end = end,
+    table = if (resolution == "day") "bid_biddayoffer_d" else "bid_bidperoffer_d"
   )
   df <- aemo_coerce_types(df)
   df <- aemo_apply_filters(df, start = start, end = end)
@@ -97,7 +94,7 @@ aemo_bids <- function(duid, start, end,
     rownames(df) <- NULL
   }
   new_aemo_tbl(df,
-               source = "http://nemweb.com.au",
+               source = "https://nemweb.com.au",
                title = paste0("AEMO bids (", resolution, ")"))
 }
 
@@ -117,10 +114,10 @@ aemo_bids_joined <- function(duid, start, end) {
                         tz = AEMO_TIMEZONE)
 
   day <- aemo_fetch_report_range(
-    current_dir = "/Reports/Current/Next_Day_Offer_Energy/",
-    archive_dir = "/Reports/Archive/Next_Day_Offer_Energy/",
-    pattern = "NEXT_DAY_OFFER_ENERGY",
-    start = day_start, end = day_end
+    current_dir = "/Reports/Current/Bidmove_Complete/",
+    archive_dir = "/Reports/Archive/Bidmove_Complete/",
+    pattern = "BIDMOVE_COMPLETE",
+    start = day_start, end = day_end, table = "bid_biddayoffer_d"
   )
   day <- aemo_coerce_types(day)
 
@@ -128,7 +125,7 @@ aemo_bids_joined <- function(duid, start, end) {
     current_dir = "/Reports/Current/Bidmove_Complete/",
     archive_dir = "/Reports/Archive/Bidmove_Complete/",
     pattern = "BIDMOVE_COMPLETE",
-    start = start, end = end
+    start = start, end = end, table = "bid_bidperoffer_d"
   )
   per <- aemo_coerce_types(per)
   per <- aemo_apply_filters(per, start = start, end = end)
@@ -178,6 +175,6 @@ aemo_bids_joined <- function(duid, start, end) {
                    all.x = TRUE, sort = FALSE)
   rownames(joined) <- NULL
   new_aemo_tbl(joined,
-               source = "http://nemweb.com.au",
+               source = "https://nemweb.com.au",
                title = "AEMO bids (joined: BIDDAYOFFER + BIDPEROFFER)")
 }

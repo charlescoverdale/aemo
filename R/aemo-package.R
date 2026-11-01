@@ -20,7 +20,7 @@
 #'   configuration.
 #'
 #' @section Data source:
-#' Data is published by AEMO at <http://nemweb.com.au> under the
+#' Data is published by AEMO at <https://nemweb.com.au> under the
 #' AEMO Copyright Permissions Notice
 #' <https://www.aemo.com.au/privacy-and-legal-notices/copyright-permissions>.
 #'

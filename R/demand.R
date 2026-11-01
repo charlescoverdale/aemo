@@ -97,7 +97,7 @@ aemo_demand <- function(region, start, end,
   }
 
   new_aemo_tbl(df,
-               source = "http://nemweb.com.au",
+               source = "https://nemweb.com.au",
                title = paste0("AEMO demand ", paste(region, collapse = "+"),
                               " (", measure, ")"))
 }

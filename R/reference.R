@@ -30,7 +30,7 @@ aemo_regions <- function() {
     stringsAsFactors = FALSE
   )
   new_aemo_tbl(df,
-               source = "http://nemweb.com.au",
+               source = "https://nemweb.com.au",
                title = "NEM regions")
 }
 
@@ -70,7 +70,7 @@ aemo_interconnectors <- function() {
     stringsAsFactors = FALSE
   )
   new_aemo_tbl(df,
-               source = "http://nemweb.com.au",
+               source = "https://nemweb.com.au",
                title = "NEM interconnectors")
 }
 
@@ -141,7 +141,7 @@ aemo_units <- function(as_of = NULL) {
   }
 
   new_aemo_tbl(df,
-               source = "http://nemweb.com.au",
+               source = "https://nemweb.com.au",
                title = paste0("NEM DUID registry (DUDETAILSUMMARY",
                               if (!is.null(as_of))
                                 paste0(", as of ", format(aemo_parse_time(as_of), "%Y-%m-%d"))

@@ -13,22 +13,28 @@ FIVE_MS_DATE <- as.Date("2021-10-01")
 #'
 #' MLFs are published annually by AEMO under NER 3.6.2 and are
 #' used in settlement calculations and in PPA revenue
-#' reconstruction. The function first attempts to download the
-#' `TRANSMISSIONLOSSFACTOR` table from the most recent MMSDM monthly
-#' archive; if that fails it returns a bundled static table
-#' covering FY 2020-21 to FY 2025-26 for ~20 well-known DUIDs.
+#' reconstruction. Each year's determination is read from the
+#' `TRANSMISSIONLOSSFACTOR` table of the June MMSDM archive that
+#' precedes it, together with the revisions in the monthly archives
+#' after it. There is no bundled fallback: if MMSDM cannot be reached
+#' the function errors rather than return unsourced values.
 #'
 #' @param year Financial year(s) as `"YYYY-YY"` strings (e.g.
-#'   `"2024-25"`). `NULL` returns all available years. Multiple
-#'   years accepted.
+#'   `"2025-26"`). `NULL` (the default) returns the current
+#'   financial year. Multiple years accepted; each needs up to 13
+#'   small downloads.
 #' @param duid Optional character vector of DUIDs to filter on.
-#'   `NULL` returns all DUIDs. See [aemo_units()] for the full
-#'   DUID registry.
+#'   MMSDM publishes MLFs by connection point, so DUIDs are mapped
+#'   to connection points through the unit registry ([aemo_units()]),
+#'   which adds a `duid` column. `NULL` returns every connection
+#'   point.
 #'
-#' @return An `aemo_tbl` with columns `financial_year`, `duid`,
-#'   `connectionpointid`, `regionid`, `mlf`. From a live MMSDM
-#'   download additional columns (`participantid`,
-#'   `lastchanged`) may also be present.
+#' @return An `aemo_tbl` with one row per connection point and
+#'   effective date: `financial_year`, `connectionpointid`,
+#'   `regionid`, `mlf`, `effectivedate`, `versionno`,
+#'   `secondary_tlf` and `lastchanged`, plus `duid` when `duid` is
+#'   given. A factor revised during the year appears once per
+#'   effective date.
 #'
 #' @source AEMO MMSDM archive, TRANSMISSIONLOSSFACTOR table.
 #'   AEMO Copyright Permissions Notice.
@@ -48,30 +54,29 @@ FIVE_MS_DATE <- as.Date("2021-10-01")
 #' options(op)
 #' }
 aemo_mlf <- function(year = NULL, duid = NULL) {
-  df <- tryCatch(aemo_fetch_mlf_mmsdm(),
-                 error = function(e) NULL)
+  if (is.null(year)) year <- aemo_fy_label(Sys.Date())
+  if (!is.character(year) || !all(grepl("^[0-9]{4}-[0-9]{2}$", year))) {
+    cli::cli_abort("{.arg year} must be financial years like {.val 2025-26}.")
+  }
+  df <- tryCatch(aemo_fetch_mlf_mmsdm(year), error = function(e) NULL)
 
   if (is.null(df) || nrow(df) < 20L) {
     cli::cli_abort(c(
-      "Could not retrieve TRANSMISSIONLOSSFACTOR from MMSDM.",
-      "i" = "MLFs are published annually by AEMO under NER 3.6.2. For historical analysis, download the determination PDF directly from aemo.com.au, or retry when the MMSDM archive is reachable.",
+      "Could not retrieve TRANSMISSIONLOSSFACTOR for {.val {year}} from MMSDM.",
+      "i" = "Each year's MLFs are published in the June MMSDM archive before it. For years MMSDM no longer holds, download the determination PDF from aemo.com.au.",
       "i" = "No fallback is provided: unsourced MLF values would be a correctness trap in settlement and PPA workflows."
     ))
   }
 
-  if (!is.null(year)) {
-    if ("financial_year" %in% names(df)) {
-      df <- df[df$financial_year %in% year, , drop = FALSE]
-    }
+  if (!is.null(duid)) {
+    units <- as.data.frame(aemo_units())
+    units <- units[toupper(units$duid) %in% toupper(duid) &
+                     !is.na(units$connectionpointid), c("duid", "connectionpointid")]
+    units <- units[!duplicated(units), , drop = FALSE]
+    df <- merge(units, df, by = "connectionpointid")
     if (nrow(df) == 0L) {
-      cli::cli_abort(c(
-        "No MLF data found for year{?s}: {.val {year}}.",
-        "i" = "Available format: {.val {\"2024-25\"}}."
-      ))
+      cli::cli_warn("No MLF rows for DUID{?s} {.val {duid}} in {.val {year}}.")
     }
-  }
-  if (!is.null(duid) && "duid" %in% names(df)) {
-    df <- df[toupper(df$duid) %in% toupper(duid), , drop = FALSE]
     rownames(df) <- NULL
   }
 
@@ -148,21 +153,47 @@ aemo_dlf <- function(year = NULL, connection_point_id = NULL) {
                title = "NEM Distribution Loss Factors (DLF)")
 }
 
-#' Fetch TRANSMISSIONLOSSFACTOR (MLF) from MMSDM archive.
+#' Fetch TRANSMISSIONLOSSFACTOR (MLF) for financial years from MMSDM.
 #'
-#' AEMO's MMSDM uses TRANSMISSIONLOSSFACTOR for marginal loss
-#' factors, not TRANSMISSIONLOSSFACTOR (which does not exist in the
-#' archive). The column is `transmissionlossfactor`.
+#' The full MLF determination for financial year Y-(Y+1) is published in
+#' the June Y MMSDM archive, effective 1 July; each later monthly archive
+#' carries only that month's revisions, often three or four rows. Taking
+#' the newest monthly file, as this used to, therefore found a few rows,
+#' fell below the 20-row floor and reported MMSDM as unreachable in every
+#' month but July. Each requested year is built from its June file and
+#' the monthly files after it, keeping the latest version of each
+#' connection point's factor for each effective date.
 #' @noRd
-aemo_fetch_mlf_mmsdm <- function(max_months_back = 6L) {
-  df <- aemo_fetch_mmsdm_table("TRANSMISSIONLOSSFACTOR", min_rows = 1L,
-                                max_months_back = max_months_back)
-  if (!is.null(df) && "effectivedate" %in% names(df)) {
-    df$financial_year <- aemo_fy_label(df$effectivedate)
+aemo_fetch_mlf_mmsdm <- function(years) {
+  now <- as.Date(Sys.time(), tz = AEMO_TIMEZONE)
+  parts <- list()
+  for (fy in years) {
+    y <- as.integer(substr(fy, 1L, 4L))
+    months <- seq(as.Date(sprintf("%d-06-01", y)),
+                  as.Date(sprintf("%d-06-01", y + 1L)), by = "month")
+    months <- months[months <= now]
+    for (k in seq_along(months)) {
+      m <- months[k]
+      df <- tryCatch(
+        aemo_mmsdm_month("TRANSMISSIONLOSSFACTOR", format(m, "%Y"), format(m, "%m")),
+        error = function(e) NULL
+      )
+      if (!is.null(df) && nrow(df) > 0L) parts[[length(parts) + 1L]] <- df
+    }
   }
-  if (!is.null(df)) {
-    names(df)[names(df) == "transmissionlossfactor"] <- "mlf"
-  }
+  if (length(parts) == 0L) return(NULL)
+  df <- aemo_coerce_types(do.call(rbind, parts))
+  names(df)[names(df) == "transmissionlossfactor"] <- "mlf"
+  df$mlf <- suppressWarnings(as.numeric(df$mlf))
+  df$financial_year <- aemo_fy_label(df$effectivedate)
+  df <- df[df$financial_year %in% years, , drop = FALSE]
+  # Latest version of each factor: highest versionno, then lastchanged
+  ord <- order(df$connectionpointid, df$effectivedate,
+               -suppressWarnings(as.numeric(df$versionno)), df$lastchanged,
+               decreasing = c(FALSE, FALSE, FALSE, TRUE), method = "radix")
+  df <- df[ord, , drop = FALSE]
+  df <- df[!duplicated(df[, c("connectionpointid", "effectivedate")]), , drop = FALSE]
+  rownames(df) <- NULL
   df
 }
 

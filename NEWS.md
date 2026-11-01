@@ -1,8 +1,9 @@
 # aemo 0.4.3
 
 Bug-fix release. Most queries for data more than about two days old
-failed, and the download cache never worked. Live tests that would have
-shown this were being skipped.
+failed, the download cache never worked, `aemo_bids()` failed for every
+date and `aemo_mlf()` outside July. Live tests that would have shown
+this were being skipped.
 
 ## Queries older than two days work again
 
@@ -32,6 +33,47 @@ and from `Current` otherwise, whatever NEMweb's retention.
   how many files are missing and that the result lacks those intervals
   (class `aemo_partial_download`); if every download fails the error has
   class `aemo_download_error`.
+
+## Bids
+
+* `aemo_bids()` failed for every date with "arguments imply differing
+  number of rows: 0, 1". Its default `resolution = "day"` (and
+  `"joined"`) read `Next_Day_Offer_Energy`, which AEMO has emptied in
+  favour of `Next_Day_Offer_Energy_SPARSE`, and listing an empty NEMweb
+  folder crashed `aemo_nemweb_ls()`. Day bids are now read from
+  `Bidmove_Complete`, which carries both `BIDDAYOFFER_D` and
+  `BIDPEROFFER_D`, and an empty folder lists as an empty data frame.
+
+* `resolution = "period"` returned `BIDDAYOFFER_D`, the daily table,
+  because it took the first table in each `Bidmove_Complete` file. It
+  now names `BIDPEROFFER_D`, and `"day"` names `BIDDAYOFFER_D`.
+
+* Monthly archive rollups named by a single date
+  (`PUBLIC_BIDMOVE_COMPLETE_20251002.zip`, which holds 2 October to
+  1 November) were treated as covering that one day, so a request for
+  any other day in the month missed them. A single-date rollup now runs
+  to the next rollup; daily rollups are unaffected.
+
+## Marginal loss factors
+
+`aemo_mlf()` read the newest monthly MMSDM `TRANSMISSIONLOSSFACTOR`
+file. Only the June file holds the full determination for the year
+ahead; the other months carry a few revisions, so outside July the
+function found too few rows and reported MMSDM as unreachable. Each
+requested year is now built from its June file and the revisions after
+it, keeping the latest version of each factor. `year = NULL` returns
+the current financial year (previously documented as all years).
+
+The `duid` filter did nothing, because MMSDM publishes MLFs by
+connection point and the table has no `duid` column. DUIDs are now
+mapped to connection points through `aemo_units()`, which adds a `duid`
+column. The help page also described a bundled fallback table that the
+function deliberately does not have; it no longer does.
+
+## HTTPS
+
+NEMweb now redirects `http://` to `https://`; the package requests
+`https://nemweb.com.au` directly.
 
 ## The cache works
 

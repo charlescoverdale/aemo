@@ -100,7 +100,7 @@ aemo_predispatch <- function(region, start, end,
   }
 
   new_aemo_tbl(df,
-               source = "http://nemweb.com.au",
+               source = "https://nemweb.com.au",
                title = paste0("AEMO ", horizon, " ",
                               paste(region, collapse = "+"),
                               if (!is.null(run_datetime))
@@ -170,6 +170,6 @@ aemo_pasa <- function(horizon = c("short", "medium"),
   # PASA target dates extend past [start, end]; filter on region only.
   df <- aemo_apply_filters(df, region = region)
   new_aemo_tbl(df,
-               source = "http://nemweb.com.au",
+               source = "https://nemweb.com.au",
                title = paste0("AEMO ", horizon, "-term PASA"))
 }

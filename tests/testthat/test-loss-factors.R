@@ -49,3 +49,30 @@ test_that("aemo_mlf filters by year and duid when MMSDM reachable", {
     expect_true(all(m$financial_year == "2024-25"))
   }
 })
+
+test_that("MLFs come from the June file plus later revisions", {
+  mlf_rows <- function(tlf, eff, ver, cp, changed) {
+    data.frame(transmissionlossfactor = tlf, effectivedate = eff,
+               versionno = ver, connectionpointid = cp, regionid = "NSW1",
+               lastchanged = changed, secondary_tlf = "",
+               stringsAsFactors = FALSE)
+  }
+  local_mocked_bindings(aemo_mmsdm_month = function(table, year, month) {
+    if (year == "2025" && month == "06") {
+      # The determination for 2025-26, and a June revision to 2024-25
+      return(mlf_rows(c("0.95", "0.97"),
+                      c("2025/07/01 00:00:00", "2025/06/12 00:00:00"),
+                      c("1", "1"), c("AAA1", "BBB1"),
+                      "2025/06/10 10:00:00"))
+    }
+    if (year == "2025" && month == "09") {
+      # A mid-year revision of AAA1's 1 July factor
+      return(mlf_rows("0.96", "2025/07/01 00:00:00", "2", "AAA1",
+                      "2025/09/04 10:00:00"))
+    }
+    stop("not published")
+  })
+  df <- aemo:::aemo_fetch_mlf_mmsdm("2025-26")
+  expect_equal(df$connectionpointid, "AAA1")
+  expect_equal(df$mlf, 0.96)
+})

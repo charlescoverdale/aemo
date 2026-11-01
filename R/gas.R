@@ -61,6 +61,6 @@ aemo_gas <- function(market = c("sttm", "dwgm"),
     rownames(df) <- NULL
   }
   new_aemo_tbl(df,
-               source = "http://nemweb.com.au",
+               source = "https://nemweb.com.au",
                title = paste0("AEMO ", market, " gas"))
 }

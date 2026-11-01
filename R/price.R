@@ -58,7 +58,7 @@ FIVE_MS_START <- as.POSIXct("2021-10-01 00:00:00", tz = "Australia/Brisbane")
 #'   (POSIXct AEST), `regionid`, `rrp` (AUD/MWh, energy) or the
 #'   FCAS service RRPs (AUD/MW), and `intervention`.
 #'
-#' @source AEMO NEMweb <http://nemweb.com.au>, AEMO Copyright
+#' @source AEMO NEMweb <https://nemweb.com.au>, AEMO Copyright
 #'   Permissions Notice.
 #'
 #' @family price
@@ -111,7 +111,7 @@ aemo_price <- function(region, start, end,
   }
 
   new_aemo_tbl(df,
-               source = "http://nemweb.com.au",
+               source = "https://nemweb.com.au",
                title = sprintf("AEMO %s %s price %s",
                                 interval, market,
                                 paste(region, collapse = "+")))

@@ -144,6 +144,19 @@ test_that("aemo_archive_days expands daily and weekly rollups", {
   expect_equal(d[[2]], seq(as.Date("2025-10-12"), as.Date("2025-10-18"), by = "day"))
 })
 
+test_that("single-date rollups run to the next rollup", {
+  d <- aemo:::aemo_archive_days(c("PUBLIC_BIDMOVE_COMPLETE_20250902.zip",
+                                  "PUBLIC_BIDMOVE_COMPLETE_20251002.zip",
+                                  "PUBLIC_BIDMOVE_COMPLETE_20251101.zip"))
+  # 20251002 holds 2 October to 1 November; the next rollup takes over
+  expect_equal(range(d[[2]]), as.Date(c("2025-10-02", "2025-10-31")))
+  # The last rollup spans the usual gap
+  expect_gte(length(d[[3]]), 30L)
+  daily <- aemo:::aemo_archive_days(c("PUBLIC_DISPATCHIS_20260901.zip",
+                                      "PUBLIC_DISPATCHIS_20260902.zip"))
+  expect_equal(daily, list(as.Date("2026-09-01"), as.Date("2026-09-02")))
+})
+
 test_that("aemo_sha256_file returns a plain string that matches its sidecar", {
   f <- tempfile()
   writeLines("abc", f)

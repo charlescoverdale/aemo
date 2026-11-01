@@ -41,7 +41,7 @@ give a reader a closed reproducibility loop.
 x <- structure(
   data.frame(settlementdate = Sys.time(), region = "NSW1", rrp = 80),
   aemo_title = "Demo",
-  aemo_source = "http://nemweb.com.au",
+  aemo_source = "https://nemweb.com.au",
   aemo_licence = "AEMO Copyright Permissions Notice",
   aemo_retrieved = Sys.time(),
   class = c("aemo_tbl", "data.frame")

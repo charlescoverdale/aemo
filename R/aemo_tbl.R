@@ -21,14 +21,14 @@ new_aemo_tbl <- function(df, source = NULL,
 #' @export
 #' @examples
 #' x <- data.frame(settlementdate = Sys.time(), region = "NSW1", rrp = 80)
-#' x <- structure(x, aemo_title = "Demo", aemo_source = "http://nemweb.com.au",
+#' x <- structure(x, aemo_title = "Demo", aemo_source = "https://nemweb.com.au",
 #'                aemo_licence = "AEMO Copyright Permissions Notice",
 #'                aemo_retrieved = Sys.time(),
 #'                class = c("aemo_tbl", "data.frame"))
 #' print(x)
 print.aemo_tbl <- function(x, ...) {
   title <- attr(x, "aemo_title") %||% "AEMO data"
-  source <- attr(x, "aemo_source") %||% "http://nemweb.com.au"
+  source <- attr(x, "aemo_source") %||% "https://nemweb.com.au"
   licence <- attr(x, "aemo_licence") %||% "AEMO Copyright Permissions Notice"
   retrieved <- attr(x, "aemo_retrieved")
   retrieved_str <- if (!is.null(retrieved)) {
