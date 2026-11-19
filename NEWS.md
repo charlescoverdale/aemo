@@ -1,3 +1,13 @@
+# aemo (development version)
+
+* Documentation links to the NEMweb home page now point at AEMO's
+  NEMweb market data page
+  (<https://www.aemo.com.au/energy-systems/electricity/national-electricity-market-nem/data-nem/market-data-nemweb>).
+  `nemweb.com.au` now answers its root with a 301 redirect there (and
+  the plain-HTTP root with 403), which R CMD check --as-cran flagged as
+  moved URLs in DESCRIPTION and the Rd files. Data downloads still use
+  `https://nemweb.com.au/Reports/...` and are unchanged.
+
 # aemo 0.4.3
 
 Bug-fix release. Most queries for data more than about two days old

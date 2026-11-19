@@ -10,7 +10,7 @@ The Australian Energy Market Operator is the independent system operator and mar
 
 The NEM is one of the longest interconnected transmission systems in the world and generates around 200 TWh of electricity a year (2024 calendar year was 217 TWh including rooftop PV) across five regions (Queensland, New South Wales plus the ACT, Victoria, South Australia, and Tasmania). Annual NEM wholesale turnover typically falls in the **AUD 15 to 25 billion range**, with 2023-24 at AUD 18.6 billion (AER Wholesale Electricity Market Performance Report, December 2024), plus tens to a few hundred million in frequency control ancillary services (FCAS) depending on volatility. Since **1 October 2021** the NEM has run on a 5-minute dispatch *and* settlement cycle (previously 5-minute dispatch with 30-minute settlement); every five minutes AEMO publishes prices, demand, generator output, interconnector flows, bids, and forecasts.
 
-All of this is free and public. AEMO publishes the raw dispatch files to **NEMweb** (<https://nemweb.com.au>) within minutes of each dispatch interval, and retains historical archives in the **Market Management System Data Model (MMSDM)** going back to the start of the NEM in December 1998. Flagship planning publications (the **Integrated System Plan (ISP)**, Electricity Statement of Opportunities, and Gas Statement of Opportunities) are released on aemo.com.au.
+All of this is free and public. AEMO publishes the raw dispatch files to **NEMweb** (<https://www.aemo.com.au/energy-systems/electricity/national-electricity-market-nem/data-nem/market-data-nemweb>) within minutes of each dispatch interval, and retains historical archives in the **Market Management System Data Model (MMSDM)** going back to the start of the NEM in December 1998. Flagship planning publications (the **Integrated System Plan (ISP)**, Electricity Statement of Opportunities, and Gas Statement of Opportunities) are released on aemo.com.au.
 
 ## Why does this package exist?
 
@@ -322,7 +322,7 @@ path
 
 ## Data source and licence
 
-Data is published by AEMO at <https://nemweb.com.au> under the **AEMO Copyright Permissions Notice** (not CC BY 4.0; the notice is similar but carries AEMO-specific attribution language). See <https://www.aemo.com.au/privacy-and-legal-notices/copyright-permissions> for the full terms. This package caches downloads to `tools::R_user_dir("aemo", "cache")`.
+Data is published by AEMO via NEMweb (<https://www.aemo.com.au/energy-systems/electricity/national-electricity-market-nem/data-nem/market-data-nemweb>) under the **AEMO Copyright Permissions Notice** (not CC BY 4.0; the notice is similar but carries AEMO-specific attribution language). See <https://www.aemo.com.au/privacy-and-legal-notices/copyright-permissions> for the full terms. This package caches downloads to `tools::R_user_dir("aemo", "cache")`.
 
 Attribution on derivative work (AEMO's requirement in full): *Source: AEMO. AEMO makes no representation as to the accuracy or completeness of this data.*
 

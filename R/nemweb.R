@@ -10,7 +10,8 @@
 #'
 #' @return A data frame with `name`, `modified`, `size`, `url`.
 #'
-#' @source AEMO NEMweb <https://nemweb.com.au>, published under
+#' @source AEMO NEMweb
+#'   <https://www.aemo.com.au/energy-systems/electricity/national-electricity-market-nem/data-nem/market-data-nemweb>, published under
 #'   the AEMO Copyright Permissions Notice.
 #'
 #' @family low-level

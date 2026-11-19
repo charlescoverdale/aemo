@@ -4,7 +4,8 @@
 \alias{aemo_price}
 \title{Wholesale electricity prices}
 \source{
-AEMO NEMweb \url{https://nemweb.com.au}, AEMO Copyright
+AEMO NEMweb
+\url{https://www.aemo.com.au/energy-systems/electricity/national-electricity-market-nem/data-nem/market-data-nemweb}, AEMO Copyright
 Permissions Notice.
 }
 \usage{

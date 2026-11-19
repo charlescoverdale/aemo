@@ -1,12 +1,13 @@
 Package: aemo
 Title: Download Australian Energy Market Operator Data
-Version: 0.4.3
+Version: 0.4.3.9000
 Authors@R:
     person("Charles", "Coverdale", , "charlesfcoverdale@gmail.com", role = c("aut", "cre"))
 Description: Fetch Australian Energy Market Operator (AEMO)
-    public data from 'NEMweb' <http://nemweb.com.au> and the
-    Market Management System Data Model (MMSDM) historical
-    archive. Provides tidy access to 5-minute and 30-minute
+    public data from 'NEMweb'
+    <https://www.aemo.com.au/energy-systems/electricity/national-electricity-market-nem/data-nem/market-data-nemweb>
+    and the Market Management System Data Model (MMSDM)
+    historical archive. Provides tidy access to 5-minute and 30-minute
     wholesale electricity prices, regional demand, dispatch-unit
     output, interconnector flows, rooftop photovoltaic generation,
     generator bids, predispatch forecasts, frequency control
