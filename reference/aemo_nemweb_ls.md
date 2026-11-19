@@ -11,8 +11,9 @@ aemo_nemweb_ls(path)
 
 ## Source
 
-AEMO NEMweb <https://nemweb.com.au>, published under the AEMO Copyright
-Permissions Notice.
+AEMO NEMweb
+<https://www.aemo.com.au/energy-systems/electricity/national-electricity-market-nem/data-nem/market-data-nemweb>,
+published under the AEMO Copyright Permissions Notice.
 
 ## Arguments
 
@@ -40,26 +41,26 @@ try({
   head(files)
 })
 #>                                                  name
-#> 1 PUBLIC_DISPATCHIS_202610310015_0000000545771804.zip
-#> 2 PUBLIC_DISPATCHIS_202610310020_0000000545772428.zip
-#> 3 PUBLIC_DISPATCHIS_202610310025_0000000545773160.zip
-#> 4 PUBLIC_DISPATCHIS_202610310030_0000000545773703.zip
-#> 5 PUBLIC_DISPATCHIS_202610310035_0000000545774268.zip
-#> 6 PUBLIC_DISPATCHIS_202610310040_0000000545774838.zip
+#> 1 PUBLIC_DISPATCHIS_202611171835_0000000549110014.zip
+#> 2 PUBLIC_DISPATCHIS_202611171840_0000000549110683.zip
+#> 3 PUBLIC_DISPATCHIS_202611171845_0000000549111231.zip
+#> 4 PUBLIC_DISPATCHIS_202611171850_0000000549111800.zip
+#> 5 PUBLIC_DISPATCHIS_202611171855_0000000549112540.zip
+#> 6 PUBLIC_DISPATCHIS_202611171900_0000000549113065.zip
 #>                              modified  size
-#> 1 Saturday, October 31, 2026 12:10 AM 21021
-#> 2 Saturday, October 31, 2026 12:15 AM 20983
-#> 3 Saturday, October 31, 2026 12:20 AM 21055
-#> 4 Saturday, October 31, 2026 12:25 AM 20889
-#> 5 Saturday, October 31, 2026 12:31 AM 20933
-#> 6 Saturday, October 31, 2026 12:36 AM 20904
+#> 1 Tuesday, November 17, 2026 06:30 PM 20183
+#> 2 Tuesday, November 17, 2026 06:35 PM 20209
+#> 3 Tuesday, November 17, 2026 06:40 PM 20101
+#> 4 Tuesday, November 17, 2026 06:45 PM 20206
+#> 5 Tuesday, November 17, 2026 06:50 PM 20104
+#> 6 Tuesday, November 17, 2026 06:55 PM 20099
 #>                                                                                                            url
-#> 1 https://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_DISPATCHIS_202610310015_0000000545771804.zip
-#> 2 https://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_DISPATCHIS_202610310020_0000000545772428.zip
-#> 3 https://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_DISPATCHIS_202610310025_0000000545773160.zip
-#> 4 https://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_DISPATCHIS_202610310030_0000000545773703.zip
-#> 5 https://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_DISPATCHIS_202610310035_0000000545774268.zip
-#> 6 https://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_DISPATCHIS_202610310040_0000000545774838.zip
+#> 1 https://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_DISPATCHIS_202611171835_0000000549110014.zip
+#> 2 https://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_DISPATCHIS_202611171840_0000000549110683.zip
+#> 3 https://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_DISPATCHIS_202611171845_0000000549111231.zip
+#> 4 https://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_DISPATCHIS_202611171850_0000000549111800.zip
+#> 5 https://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_DISPATCHIS_202611171855_0000000549112540.zip
+#> 6 https://nemweb.com.au/Reports/CURRENT/DispatchIS_Reports/PUBLIC_DISPATCHIS_202611171900_0000000549113065.zip
 options(op)
 # }
 ```

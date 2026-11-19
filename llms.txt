@@ -45,12 +45,14 @@ with 30-minute settlement); every five minutes AEMO publishes prices,
 demand, generator output, interconnector flows, bids, and forecasts.
 
 All of this is free and public. AEMO publishes the raw dispatch files to
-**NEMweb** (<https://nemweb.com.au>) within minutes of each dispatch
-interval, and retains historical archives in the **Market Management
-System Data Model (MMSDM)** going back to the start of the NEM in
-December 1998. Flagship planning publications (the **Integrated System
-Plan (ISP)**, Electricity Statement of Opportunities, and Gas Statement
-of Opportunities) are released on aemo.com.au.
+**NEMweb**
+(<https://www.aemo.com.au/energy-systems/electricity/national-electricity-market-nem/data-nem/market-data-nemweb>)
+within minutes of each dispatch interval, and retains historical
+archives in the **Market Management System Data Model (MMSDM)** going
+back to the start of the NEM in December 1998. Flagship planning
+publications (the **Integrated System Plan (ISP)**, Electricity
+Statement of Opportunities, and Gas Statement of Opportunities) are
+released on aemo.com.au.
 
 ## Why does this package exist?
 
@@ -431,9 +433,10 @@ path
 
 ## Data source and licence
 
-Data is published by AEMO at <https://nemweb.com.au> under the **AEMO
-Copyright Permissions Notice** (not CC BY 4.0; the notice is similar but
-carries AEMO-specific attribution language). See
+Data is published by AEMO via NEMweb
+(<https://www.aemo.com.au/energy-systems/electricity/national-electricity-market-nem/data-nem/market-data-nemweb>)
+under the **AEMO Copyright Permissions Notice** (not CC BY 4.0; the
+notice is similar but carries AEMO-specific attribution language). See
 <https://www.aemo.com.au/privacy-and-legal-notices/copyright-permissions>
 for the full terms. This package caches downloads to
 `tools::R_user_dir("aemo", "cache")`.

@@ -51,13 +51,7 @@ try({
   pt[grepl("AGL", pt$name, ignore.case = TRUE), ]
 })
 #> ℹ Downloading <https://nemweb.com.au/Data_Archive/Wholesale_Electricity/MMSDM/2…
-#> ✖ Downloading <https://nemweb.com.au/Data_Archive/Wholesale_Electricity/MMSDM/2…
-#> 
-#> ℹ Downloading <https://nemweb.com.au/Data_Archive/Wholesale_Electricity/MMSDM/2…
 #> ✔ Downloading <https://nemweb.com.au/Data_Archive/Wholesale_Electricity/MMSDM/2…
-#> 
-#> ℹ Downloading <https://nemweb.com.au/Data_Archive/Wholesale_Electricity/MMSDM/2…
-#> ✖ Downloading <https://nemweb.com.au/Data_Archive/Wholesale_Electricity/MMSDM/2…
 #> 
 #> ℹ Downloading <https://nemweb.com.au/Data_Archive/Wholesale_Electricity/MMSDM/2…
 #> ✔ Downloading <https://nemweb.com.au/Data_Archive/Wholesale_Electricity/MMSDM/2…
@@ -65,7 +59,7 @@ try({
 #> # aemo_tbl: NEM participants + DUIDs (MMSDM, 2026-11)
 #> # Source:   https://nemweb.com.au/Data_Archive/Wholesale_Electricity/MMSDM
 #> # Licence:  AEMO Copyright Permissions Notice
-#> # Retrieved: 2026-11-01 14:07 UTC 
+#> # Retrieved: 2026-11-19 08:28 UTC 
 #> # Rows: 3,101  Cols: 10
 #> 
 #>       participantid participantclassid
@@ -223,11 +217,6 @@ try({
 #> 3995       DALRYMPN MARKET PARTICIPANT
 #> 3996       DALRYMPN MARKET PARTICIPANT
 #> 3997       DALRYMPN MARKET PARTICIPANT
-#> 5917           EEUS MARKET PARTICIPANT
-#> 5918           EEUS MARKET PARTICIPANT
-#> 5919           EEUS MARKET PARTICIPANT
-#> 5920           EEUS MARKET PARTICIPANT
-#> 5921           EEUS MARKET PARTICIPANT
 #> 5922           EEUS MARKET PARTICIPANT
 #> 5923           EEUS MARKET PARTICIPANT
 #> 5924           EEUS MARKET PARTICIPANT
@@ -261,11 +250,11 @@ try({
 #> 5952           EEUS MARKET PARTICIPANT
 #> 5953           EEUS MARKET PARTICIPANT
 #> 5954           EEUS MARKET PARTICIPANT
-#> 6908          ERGON MARKET PARTICIPANT
-#> 6909          ERGON MARKET PARTICIPANT
-#> 6910          ERGON MARKET PARTICIPANT
-#> 6911          ERGON MARKET PARTICIPANT
-#> 6912          ERGON MARKET PARTICIPANT
+#> 5955           EEUS MARKET PARTICIPANT
+#> 5956           EEUS MARKET PARTICIPANT
+#> 5957           EEUS MARKET PARTICIPANT
+#> 5958           EEUS MARKET PARTICIPANT
+#> 5959           EEUS MARKET PARTICIPANT
 #> 6913          ERGON MARKET PARTICIPANT
 #> 6914          ERGON MARKET PARTICIPANT
 #> 6915          ERGON MARKET PARTICIPANT
@@ -469,13 +458,11 @@ try({
 #> 7113          ERGON MARKET PARTICIPANT
 #> 7114          ERGON MARKET PARTICIPANT
 #> 7115          ERGON MARKET PARTICIPANT
-#> 10381      LOYYANGA MARKET PARTICIPANT
-#> 10382      LOYYANGA MARKET PARTICIPANT
-#> 10383      LOYYANGA MARKET PARTICIPANT
-#> 10384      LOYYANGA MARKET PARTICIPANT
-#> 10385      LOYYANGA MARKET PARTICIPANT
-#> 10386      LOYYANGA MARKET PARTICIPANT
-#> 10387      LOYYANGA MARKET PARTICIPANT
+#> 7116          ERGON MARKET PARTICIPANT
+#> 7117          ERGON MARKET PARTICIPANT
+#> 7118          ERGON MARKET PARTICIPANT
+#> 7119          ERGON MARKET PARTICIPANT
+#> 7120          ERGON MARKET PARTICIPANT
 #> 10388      LOYYANGA MARKET PARTICIPANT
 #> 10389      LOYYANGA MARKET PARTICIPANT
 #> 10390      LOYYANGA MARKET PARTICIPANT
@@ -697,13 +684,13 @@ try({
 #> 10606      LOYYANGA MARKET PARTICIPANT
 #> 10607      LOYYANGA MARKET PARTICIPANT
 #> 10608      LOYYANGA MARKET PARTICIPANT
-#> 10769       MACQGEN MARKET PARTICIPANT
-#> 10770       MACQGEN MARKET PARTICIPANT
-#> 10771       MACQGEN MARKET PARTICIPANT
-#> 10772       MACQGEN MARKET PARTICIPANT
-#> 10773       MACQGEN MARKET PARTICIPANT
-#> 10774       MACQGEN MARKET PARTICIPANT
-#> 10775       MACQGEN MARKET PARTICIPANT
+#> 10609      LOYYANGA MARKET PARTICIPANT
+#> 10610      LOYYANGA MARKET PARTICIPANT
+#> 10611      LOYYANGA MARKET PARTICIPANT
+#> 10612      LOYYANGA MARKET PARTICIPANT
+#> 10613      LOYYANGA MARKET PARTICIPANT
+#> 10614      LOYYANGA MARKET PARTICIPANT
+#> 10615      LOYYANGA MARKET PARTICIPANT
 #> 10776       MACQGEN MARKET PARTICIPANT
 #> 10777       MACQGEN MARKET PARTICIPANT
 #> 10778       MACQGEN MARKET PARTICIPANT
@@ -1243,16 +1230,13 @@ try({
 #> 11312       MACQGEN MARKET PARTICIPANT
 #> 11313       MACQGEN MARKET PARTICIPANT
 #> 11314       MACQGEN MARKET PARTICIPANT
-#> 18702       SOLARIS MARKET PARTICIPANT
-#> 18703       SOLARIS MARKET PARTICIPANT
-#> 18704       SOLARIS MARKET PARTICIPANT
-#> 18705       SOLARIS MARKET PARTICIPANT
-#> 18706       SOLARIS MARKET PARTICIPANT
-#> 18707       SOLARIS MARKET PARTICIPANT
-#> 18708       SOLARIS MARKET PARTICIPANT
-#> 18709       SOLARIS MARKET PARTICIPANT
-#> 18710       SOLARIS MARKET PARTICIPANT
-#> 18711       SOLARIS MARKET PARTICIPANT
+#> 11315       MACQGEN MARKET PARTICIPANT
+#> 11316       MACQGEN MARKET PARTICIPANT
+#> 11317       MACQGEN MARKET PARTICIPANT
+#> 11318       MACQGEN MARKET PARTICIPANT
+#> 11319       MACQGEN MARKET PARTICIPANT
+#> 11320       MACQGEN MARKET PARTICIPANT
+#> 11321       MACQGEN MARKET PARTICIPANT
 #> 18712       SOLARIS MARKET PARTICIPANT
 #> 18713       SOLARIS MARKET PARTICIPANT
 #> 18714       SOLARIS MARKET PARTICIPANT
@@ -1293,16 +1277,16 @@ try({
 #> 18749       SOLARIS MARKET PARTICIPANT
 #> 18750       SOLARIS MARKET PARTICIPANT
 #> 18751       SOLARIS MARKET PARTICIPANT
-#> 18765      SOUTHHYD MARKET PARTICIPANT
-#> 18766      SOUTHHYD MARKET PARTICIPANT
-#> 18767      SOUTHHYD MARKET PARTICIPANT
-#> 18768      SOUTHHYD MARKET PARTICIPANT
-#> 18769      SOUTHHYD MARKET PARTICIPANT
-#> 18770      SOUTHHYD MARKET PARTICIPANT
-#> 18771      SOUTHHYD MARKET PARTICIPANT
-#> 18772      SOUTHHYD MARKET PARTICIPANT
-#> 18773      SOUTHHYD MARKET PARTICIPANT
-#> 18774      SOUTHHYD MARKET PARTICIPANT
+#> 18752       SOLARIS MARKET PARTICIPANT
+#> 18753       SOLARIS MARKET PARTICIPANT
+#> 18754       SOLARIS MARKET PARTICIPANT
+#> 18755       SOLARIS MARKET PARTICIPANT
+#> 18756       SOLARIS MARKET PARTICIPANT
+#> 18757       SOLARIS MARKET PARTICIPANT
+#> 18758       SOLARIS MARKET PARTICIPANT
+#> 18759       SOLARIS MARKET PARTICIPANT
+#> 18760       SOLARIS MARKET PARTICIPANT
+#> 18761       SOLARIS MARKET PARTICIPANT
 #> 18775      SOUTHHYD MARKET PARTICIPANT
 #> 18776      SOUTHHYD MARKET PARTICIPANT
 #> 18777      SOUTHHYD MARKET PARTICIPANT
@@ -2450,16 +2434,16 @@ try({
 #> 19919      SOUTHHYD MARKET PARTICIPANT
 #> 19920      SOUTHHYD MARKET PARTICIPANT
 #> 19921      SOUTHHYD MARKET PARTICIPANT
-#> 19922      SOUTHYD2 MARKET PARTICIPANT
-#> 19923      SOUTHYD2 MARKET PARTICIPANT
-#> 19924      SOUTHYD2 MARKET PARTICIPANT
-#> 19925      SOUTHYD2 MARKET PARTICIPANT
-#> 19926      SOUTHYD2 MARKET PARTICIPANT
-#> 19927      SOUTHYD2 MARKET PARTICIPANT
-#> 19928      SOUTHYD2 MARKET PARTICIPANT
-#> 19929      SOUTHYD2 MARKET PARTICIPANT
-#> 19930      SOUTHYD2 MARKET PARTICIPANT
-#> 19931      SOUTHYD2 MARKET PARTICIPANT
+#> 19922      SOUTHHYD MARKET PARTICIPANT
+#> 19923      SOUTHHYD MARKET PARTICIPANT
+#> 19924      SOUTHHYD MARKET PARTICIPANT
+#> 19925      SOUTHHYD MARKET PARTICIPANT
+#> 19926      SOUTHHYD MARKET PARTICIPANT
+#> 19927      SOUTHHYD MARKET PARTICIPANT
+#> 19928      SOUTHHYD MARKET PARTICIPANT
+#> 19929      SOUTHHYD MARKET PARTICIPANT
+#> 19930      SOUTHHYD MARKET PARTICIPANT
+#> 19931      SOUTHHYD MARKET PARTICIPANT
 #> 19932      SOUTHYD2 MARKET PARTICIPANT
 #> 19933      SOUTHYD2 MARKET PARTICIPANT
 #> 19934      SOUTHYD2 MARKET PARTICIPANT
@@ -2617,16 +2601,16 @@ try({
 #> 20086      SOUTHYD2 MARKET PARTICIPANT
 #> 20087      SOUTHYD2 MARKET PARTICIPANT
 #> 20088      SOUTHYD2 MARKET PARTICIPANT
-#> 21711        TIPSCO MARKET PARTICIPANT
-#> 21712        TIPSCO MARKET PARTICIPANT
-#> 21713        TIPSCO MARKET PARTICIPANT
-#> 21714        TIPSCO MARKET PARTICIPANT
-#> 21715        TIPSCO MARKET PARTICIPANT
-#> 21716        TIPSCO MARKET PARTICIPANT
-#> 21717        TIPSCO MARKET PARTICIPANT
-#> 21718        TIPSCO MARKET PARTICIPANT
-#> 21719        TIPSCO MARKET PARTICIPANT
-#> 21720        TIPSCO MARKET PARTICIPANT
+#> 20089      SOUTHYD2 MARKET PARTICIPANT
+#> 20090      SOUTHYD2 MARKET PARTICIPANT
+#> 20091      SOUTHYD2 MARKET PARTICIPANT
+#> 20092      SOUTHYD2 MARKET PARTICIPANT
+#> 20093      SOUTHYD2 MARKET PARTICIPANT
+#> 20094      SOUTHYD2 MARKET PARTICIPANT
+#> 20095      SOUTHYD2 MARKET PARTICIPANT
+#> 20096      SOUTHYD2 MARKET PARTICIPANT
+#> 20097      SOUTHYD2 MARKET PARTICIPANT
+#> 20098      SOUTHYD2 MARKET PARTICIPANT
 #> 21721        TIPSCO MARKET PARTICIPANT
 #> 21722        TIPSCO MARKET PARTICIPANT
 #> 21723        TIPSCO MARKET PARTICIPANT
@@ -3170,43 +3154,53 @@ try({
 #> 22261        TIPSCO MARKET PARTICIPANT
 #> 22262        TIPSCO MARKET PARTICIPANT
 #> 22263        TIPSCO MARKET PARTICIPANT
+#> 22264        TIPSCO MARKET PARTICIPANT
+#> 22265        TIPSCO MARKET PARTICIPANT
+#> 22266        TIPSCO MARKET PARTICIPANT
+#> 22267        TIPSCO MARKET PARTICIPANT
+#> 22268        TIPSCO MARKET PARTICIPANT
+#> 22269        TIPSCO MARKET PARTICIPANT
+#> 22270        TIPSCO MARKET PARTICIPANT
+#> 22271        TIPSCO MARKET PARTICIPANT
+#> 22272        TIPSCO MARKET PARTICIPANT
+#> 22273        TIPSCO MARKET PARTICIPANT
 #>                                                                 name     duid
 #> 14    Icon Retail Investments And AGL ACT Retail Investments Pty Ltd ASNACTW1
 #> 15    Icon Retail Investments And AGL ACT Retail Investments Pty Ltd ASNACTW1
-#> 194                                AGL Australia Markets Pty Limited     ICSM
+#> 194                                AGL Australia Markets Pty Limited MORANBAH
 #> 195                                AGL Australia Markets Pty Limited     ICSM
-#> 196                                AGL Australia Markets Pty Limited MORANBAH
+#> 196                                AGL Australia Markets Pty Limited     ICSM
 #> 197                                AGL Australia Markets Pty Limited     ICSM
 #> 198                                AGL Australia Markets Pty Limited     ICSM
-#> 199                                AGL Australia Markets Pty Limited     ICSM
+#> 199                                AGL Australia Markets Pty Limited MORANBAH
 #> 200                                AGL Australia Markets Pty Limited MORANBAH
-#> 201                                AGL Australia Markets Pty Limited MORANBAH
+#> 201                                AGL Australia Markets Pty Limited     ICSM
 #> 202                                AGL Australia Markets Pty Limited     ICSM
 #> 203                                AGL Australia Markets Pty Limited MORANBAH
 #> 204                                AGL Australia Markets Pty Limited     ICSM
 #> 205                                AGL Australia Markets Pty Limited     ICSM
 #> 206                                      AGL South Australia Pty Ltd BHASZINC
-#> 207                                      AGL South Australia Pty Ltd BHASZINC
-#> 208                                      AGL South Australia Pty Ltd VSSAE1V1
+#> 207                                      AGL South Australia Pty Ltd VSSAE1V1
+#> 208                                      AGL South Australia Pty Ltd BHASZINC
 #> 209                                      AGL South Australia Pty Ltd BHASZINC
-#> 210                                      AGL South Australia Pty Ltd BHASZINC
-#> 211                                      AGL South Australia Pty Ltd VSSAE1V1
+#> 210                                      AGL South Australia Pty Ltd VSSAE1V1
+#> 211                                      AGL South Australia Pty Ltd BHASZINC
 #> 212                                      AGL South Australia Pty Ltd BHASZINC
 #> 213                                      AGL South Australia Pty Ltd BHASZINC
 #> 214                                      AGL South Australia Pty Ltd BHASZINC
-#> 215                                      AGL South Australia Pty Ltd VSSAE1V1
-#> 216                                      AGL South Australia Pty Ltd VSSAE1V1
-#> 217                                      AGL South Australia Pty Ltd BHASZINC
-#> 218                                      AGL South Australia Pty Ltd BHASZINC
+#> 215                                      AGL South Australia Pty Ltd BHASZINC
+#> 216                                      AGL South Australia Pty Ltd BHASZINC
+#> 217                                      AGL South Australia Pty Ltd VSSAE1V1
+#> 218                                      AGL South Australia Pty Ltd VSSAE1V1
 #> 219                                      AGL South Australia Pty Ltd VSSAE1V1
 #> 220                                      AGL South Australia Pty Ltd VSSAE1V1
 #> 221                                      AGL South Australia Pty Ltd BHASZINC
-#> 222                                      AGL South Australia Pty Ltd VSSAE1V1
-#> 223                                      AGL South Australia Pty Ltd BHASZINC
+#> 222                                      AGL South Australia Pty Ltd BHASZINC
+#> 223                                      AGL South Australia Pty Ltd VSSAE1V1
 #> 224                                      AGL South Australia Pty Ltd BHASZINC
-#> 225                                      AGL South Australia Pty Ltd BHASZINC
+#> 225                                      AGL South Australia Pty Ltd VSSAE1V1
 #> 226                                      AGL South Australia Pty Ltd VSSAE1V1
-#> 227                                      AGL South Australia Pty Ltd VSSAE1V1
+#> 227                                      AGL South Australia Pty Ltd BHASZINC
 #> 228                                      AGL South Australia Pty Ltd BHASZINC
 #> 229                                      AGL South Australia Pty Ltd VSSAE1V1
 #> 230                                      AGL South Australia Pty Ltd BHASZINC
@@ -3214,20 +3208,20 @@ try({
 #> 232                                      AGL South Australia Pty Ltd VSSAE1V1
 #> 233                                  AGL Energy Services Pty Limited  DRAESN1
 #> 234                                  AGL Energy Services Pty Limited  DRAESN3
-#> 235                                  AGL Energy Services Pty Limited  DRAESN1
-#> 236                                  AGL Energy Services Pty Limited  DRAESN3
+#> 235                                  AGL Energy Services Pty Limited  DRAESN3
+#> 236                                  AGL Energy Services Pty Limited  DRAESS1
 #> 237                                  AGL Energy Services Pty Limited  DRAESN3
 #> 238                                  AGL Energy Services Pty Limited  DRAESN1
 #> 239                                  AGL Energy Services Pty Limited  DRAESN3
-#> 240                                  AGL Energy Services Pty Limited  DRAESS1
+#> 240                                  AGL Energy Services Pty Limited  DRAESN1
 #> 241                                  AGL Energy Services Pty Limited  DRAESN1
 #> 242                                  AGL Energy Services Pty Limited  DRAESN1
 #> 243                                  AGL Energy Services Pty Limited  DRAESN3
-#> 244                                  AGL Energy Services Pty Limited  DRAESS1
-#> 245                                  AGL Energy Services Pty Limited  DRAESN3
-#> 246                                  AGL Energy Services Pty Limited  DRAESN1
-#> 247                                  AGL Energy Services Pty Limited  DRAESN1
-#> 248                                  AGL Energy Services Pty Limited  DRAESN3
+#> 244                                  AGL Energy Services Pty Limited  DRAESN1
+#> 245                                  AGL Energy Services Pty Limited  DRAESS1
+#> 246                                  AGL Energy Services Pty Limited  DRAESN3
+#> 247                                  AGL Energy Services Pty Limited  DRAESN3
+#> 248                                  AGL Energy Services Pty Limited  DRAESN1
 #> 249                                         AGL Liddell BESS Pty Ltd  LDBESS1
 #> 250                                         AGL Liddell BESS Pty Ltd  LDBESS1
 #> 251                                         AGL Liddell BESS Pty Ltd  LDBESS1
@@ -3239,6141 +3233,6141 @@ try({
 #> 257                                         AGL PARF QLD Pty Limited COOPGWF1
 #> 258                                         AGL PARF QLD Pty Limited COOPGWF1
 #> 259                                             AGL PARF NSW Pty Ltd    STWF1
-#> 260                                             AGL PARF NSW Pty Ltd  NYNGAN1
+#> 260                                             AGL PARF NSW Pty Ltd    STWF1
 #> 261                                             AGL PARF NSW Pty Ltd    STWF1
 #> 262                                             AGL PARF NSW Pty Ltd    STWF1
 #> 263                                             AGL PARF NSW Pty Ltd    STWF1
-#> 264                                             AGL PARF NSW Pty Ltd  NYNGAN1
-#> 265                                             AGL PARF NSW Pty Ltd    STWF1
-#> 266                                             AGL PARF NSW Pty Ltd    STWF1
-#> 267                                             AGL PARF NSW Pty Ltd  NYNGAN1
+#> 264                                             AGL PARF NSW Pty Ltd    STWF1
+#> 265                                             AGL PARF NSW Pty Ltd  NYNGAN1
+#> 266                                             AGL PARF NSW Pty Ltd  NYNGAN1
+#> 267                                             AGL PARF NSW Pty Ltd    STWF1
 #> 268                                             AGL PARF NSW Pty Ltd    STWF1
 #> 269                                             AGL PARF NSW Pty Ltd  NYNGAN1
-#> 270                                             AGL PARF NSW Pty Ltd    STWF1
+#> 270                                             AGL PARF NSW Pty Ltd  NYNGAN1
 #> 271                                             AGL PARF NSW Pty Ltd    STWF1
-#> 272                             AGL Southern Hydro (NSW) Pty Limited YWNGAHYD
-#> 273                             AGL Southern Hydro (NSW) Pty Limited COPTNHYD
-#> 274                             AGL Southern Hydro (NSW) Pty Limited BDONGHYD
-#> 275                             AGL Southern Hydro (NSW) Pty Limited GLBWNHYD
-#> 276                             AGL Southern Hydro (NSW) Pty Limited COPTNHYD
-#> 277                             AGL Southern Hydro (NSW) Pty Limited YWNGAHYD
-#> 278                             AGL Southern Hydro (NSW) Pty Limited GLBWNHYD
-#> 279                             AGL Southern Hydro (NSW) Pty Limited COPTNHYD
+#> 272                             AGL Southern Hydro (NSW) Pty Limited COPTNHYD
+#> 273                             AGL Southern Hydro (NSW) Pty Limited YWNGAHYD
+#> 274                             AGL Southern Hydro (NSW) Pty Limited COPTNHYD
+#> 275                             AGL Southern Hydro (NSW) Pty Limited YWNGAHYD
+#> 276                             AGL Southern Hydro (NSW) Pty Limited BDONGHYD
+#> 277                             AGL Southern Hydro (NSW) Pty Limited GLBWNHYD
+#> 278                             AGL Southern Hydro (NSW) Pty Limited BDONGHYD
+#> 279                             AGL Southern Hydro (NSW) Pty Limited YWNGAHYD
 #> 280                             AGL Southern Hydro (NSW) Pty Limited BDONGHYD
 #> 281                             AGL Southern Hydro (NSW) Pty Limited BDONGHYD
-#> 282                             AGL Southern Hydro (NSW) Pty Limited BDONGHYD
-#> 283                             AGL Southern Hydro (NSW) Pty Limited GLBWNHYD
+#> 282                             AGL Southern Hydro (NSW) Pty Limited COPTNHYD
+#> 283                             AGL Southern Hydro (NSW) Pty Limited COPTNHYD
 #> 284                             AGL Southern Hydro (NSW) Pty Limited YWNGAHYD
-#> 285                             AGL Southern Hydro (NSW) Pty Limited YWNGAHYD
-#> 286                             AGL Southern Hydro (NSW) Pty Limited COPTNHYD
-#> 287                             AGL Southern Hydro (NSW) Pty Limited COPTNHYD
-#> 288                             AGL Southern Hydro (NSW) Pty Limited YWNGAHYD
-#> 289                             AGL Southern Hydro (NSW) Pty Limited GLBWNHYD
-#> 290                             AGL Southern Hydro (NSW) Pty Limited GLBWNHYD
+#> 285                             AGL Southern Hydro (NSW) Pty Limited GLBWNHYD
+#> 286                             AGL Southern Hydro (NSW) Pty Limited GLBWNHYD
+#> 287                             AGL Southern Hydro (NSW) Pty Limited GLBWNHYD
+#> 288                             AGL Southern Hydro (NSW) Pty Limited GLBWNHYD
+#> 289                             AGL Southern Hydro (NSW) Pty Limited COPTNHYD
+#> 290                             AGL Southern Hydro (NSW) Pty Limited YWNGAHYD
 #> 291                             AGL Southern Hydro (NSW) Pty Limited YWNGAHYD
 #> 292                   AGL Sales (Queensland Electricity) Pty Limited   WANDB1
-#> 293                   AGL Sales (Queensland Electricity) Pty Limited  WANDBG1
-#> 294                   AGL Sales (Queensland Electricity) Pty Limited  WANDBL1
+#> 293                   AGL Sales (Queensland Electricity) Pty Limited  WANDBL1
+#> 294                   AGL Sales (Queensland Electricity) Pty Limited  WANDBG1
 #> 295                   AGL Sales (Queensland Electricity) Pty Limited  WANDBG1
 #> 296                   AGL Sales (Queensland Electricity) Pty Limited   WANDB1
-#> 297                   AGL Sales (Queensland Electricity) Pty Limited  WANDBG1
+#> 297                   AGL Sales (Queensland Electricity) Pty Limited  WANDBL1
 #> 298                   AGL Sales (Queensland Electricity) Pty Limited   WANDB1
-#> 299                   AGL Sales (Queensland Electricity) Pty Limited  WANDBL1
-#> 300                   AGL Sales (Queensland Electricity) Pty Limited   WANDB1
-#> 301                   AGL Sales (Queensland Electricity) Pty Limited  WANDBG1
+#> 299                   AGL Sales (Queensland Electricity) Pty Limited  WANDBG1
+#> 300                   AGL Sales (Queensland Electricity) Pty Limited  WANDBG1
+#> 301                   AGL Sales (Queensland Electricity) Pty Limited  WANDBL1
 #> 302                   AGL Sales (Queensland Electricity) Pty Limited  WANDBG1
 #> 303                   AGL Sales (Queensland Electricity) Pty Limited  WANDBL1
-#> 304                   AGL Sales (Queensland Electricity) Pty Limited   WANDB1
+#> 304                   AGL Sales (Queensland Electricity) Pty Limited  WANDBL1
 #> 305                   AGL Sales (Queensland Electricity) Pty Limited  WANDBL1
-#> 306                   AGL Sales (Queensland Electricity) Pty Limited  WANDBL1
+#> 306                   AGL Sales (Queensland Electricity) Pty Limited  WANDBG1
 #> 307                   AGL Sales (Queensland Electricity) Pty Limited  WANDBG1
-#> 308                   AGL Sales (Queensland Electricity) Pty Limited  WANDBG1
-#> 309                   AGL Sales (Queensland Electricity) Pty Limited  WANDBL1
+#> 308                   AGL Sales (Queensland Electricity) Pty Limited   WANDB1
+#> 309                   AGL Sales (Queensland Electricity) Pty Limited   WANDB1
 #> 310                   AGL Sales (Queensland Electricity) Pty Limited  WANDBL1
-#> 311                   AGL Sales (Queensland Electricity) Pty Limited  WANDBG1
-#> 312                   AGL Sales (Queensland Electricity) Pty Limited  WANDBL1
-#> 3965                                       AGL Dalrymple Pty Limited DALNTH01
-#> 3966                                       AGL Dalrymple Pty Limited DALNTHL1
-#> 3967                                       AGL Dalrymple Pty Limited  DALNTH1
+#> 311                   AGL Sales (Queensland Electricity) Pty Limited  WANDBL1
+#> 312                   AGL Sales (Queensland Electricity) Pty Limited  WANDBG1
+#> 3965                                       AGL Dalrymple Pty Limited DALNTHL1
+#> 3966                                       AGL Dalrymple Pty Limited  DALNTH1
+#> 3967                                       AGL Dalrymple Pty Limited DALNTH01
 #> 3968                                       AGL Dalrymple Pty Limited DALNTH01
-#> 3969                                       AGL Dalrymple Pty Limited DALNTH01
-#> 3970                                       AGL Dalrymple Pty Limited DALNTH01
+#> 3969                                       AGL Dalrymple Pty Limited  DALNTH1
+#> 3970                                       AGL Dalrymple Pty Limited  DALNTH1
 #> 3971                                       AGL Dalrymple Pty Limited DALNTH01
 #> 3972                                       AGL Dalrymple Pty Limited DALNTH01
-#> 3973                                       AGL Dalrymple Pty Limited  DALNTH1
+#> 3973                                       AGL Dalrymple Pty Limited DALNTH01
 #> 3974                                       AGL Dalrymple Pty Limited DALNTH01
 #> 3975                                       AGL Dalrymple Pty Limited DALNTH01
-#> 3976                                       AGL Dalrymple Pty Limited DALNTHL1
+#> 3976                                       AGL Dalrymple Pty Limited DALNTH01
 #> 3977                                       AGL Dalrymple Pty Limited DALNTH01
-#> 3978                                       AGL Dalrymple Pty Limited DALNTHL1
-#> 3979                                       AGL Dalrymple Pty Limited DALNTH01
+#> 3978                                       AGL Dalrymple Pty Limited DALNTH01
+#> 3979                                       AGL Dalrymple Pty Limited  DALNTH1
 #> 3980                                       AGL Dalrymple Pty Limited DALNTHL1
 #> 3981                                       AGL Dalrymple Pty Limited DALNTHL1
 #> 3982                                       AGL Dalrymple Pty Limited DALNTHL1
 #> 3983                                       AGL Dalrymple Pty Limited DALNTHL1
 #> 3984                                       AGL Dalrymple Pty Limited DALNTH01
 #> 3985                                       AGL Dalrymple Pty Limited DALNTHL1
-#> 3986                                       AGL Dalrymple Pty Limited DALNTHL1
+#> 3986                                       AGL Dalrymple Pty Limited DALNTH01
 #> 3987                                       AGL Dalrymple Pty Limited DALNTHL1
-#> 3988                                       AGL Dalrymple Pty Limited  DALNTH1
+#> 3988                                       AGL Dalrymple Pty Limited DALNTHL1
 #> 3989                                       AGL Dalrymple Pty Limited DALNTHL1
-#> 3990                                       AGL Dalrymple Pty Limited DALNTH01
+#> 3990                                       AGL Dalrymple Pty Limited DALNTHL1
 #> 3991                                       AGL Dalrymple Pty Limited DALNTHL1
 #> 3992                                       AGL Dalrymple Pty Limited DALNTHL1
 #> 3993                                       AGL Dalrymple Pty Limited DALNTH01
-#> 3994                                       AGL Dalrymple Pty Limited DALNTH01
+#> 3994                                       AGL Dalrymple Pty Limited DALNTHL1
 #> 3995                                       AGL Dalrymple Pty Limited DALNTH01
-#> 3996                                       AGL Dalrymple Pty Limited  DALNTH1
-#> 3997                                       AGL Dalrymple Pty Limited DALNTHL1
-#> 5917                    AGL Energy Services (Queensland) Pty Limited EDLRGNRD
-#> 5918                    AGL Energy Services (Queensland) Pty Limited SUNCOAST
-#> 5919                    AGL Energy Services (Queensland) Pty Limited MORANBAH
-#> 5920                    AGL Energy Services (Queensland) Pty Limited EDLRGNRD
-#> 5921                    AGL Energy Services (Queensland) Pty Limited MORANBAH
-#> 5922                    AGL Energy Services (Queensland) Pty Limited SUNCOAST
-#> 5923                    AGL Energy Services (Queensland) Pty Limited     ICSM
-#> 5924                    AGL Energy Services (Queensland) Pty Limited     ICSM
+#> 3996                                       AGL Dalrymple Pty Limited DALNTHL1
+#> 3997                                       AGL Dalrymple Pty Limited DALNTH01
+#> 5922                    AGL Energy Services (Queensland) Pty Limited EDLRGNRD
+#> 5923                    AGL Energy Services (Queensland) Pty Limited SUNCOAST
+#> 5924                    AGL Energy Services (Queensland) Pty Limited MORANBAH
 #> 5925                    AGL Energy Services (Queensland) Pty Limited EDLRGNRD
-#> 5926                    AGL Energy Services (Queensland) Pty Limited     ICSM
-#> 5927                    AGL Energy Services (Queensland) Pty Limited EDLRGNRD
-#> 5928                    AGL Energy Services (Queensland) Pty Limited EDLRGNRD
-#> 5929                    AGL Energy Services (Queensland) Pty Limited EDLRGNRD
-#> 5930                    AGL Energy Services (Queensland) Pty Limited SUNCOAST
-#> 5931                    AGL Energy Services (Queensland) Pty Limited SUNCOAST
+#> 5926                    AGL Energy Services (Queensland) Pty Limited MORANBAH
+#> 5927                    AGL Energy Services (Queensland) Pty Limited SUNCOAST
+#> 5928                    AGL Energy Services (Queensland) Pty Limited     ICSM
+#> 5929                    AGL Energy Services (Queensland) Pty Limited     ICSM
+#> 5930                    AGL Energy Services (Queensland) Pty Limited EDLRGNRD
+#> 5931                    AGL Energy Services (Queensland) Pty Limited     ICSM
 #> 5932                    AGL Energy Services (Queensland) Pty Limited EDLRGNRD
-#> 5933                    AGL Energy Services (Queensland) Pty Limited SUNCOAST
-#> 5934                    AGL Energy Services (Queensland) Pty Limited     ICSM
-#> 5935                    AGL Energy Services (Queensland) Pty Limited     ICSM
+#> 5933                    AGL Energy Services (Queensland) Pty Limited EDLRGNRD
+#> 5934                    AGL Energy Services (Queensland) Pty Limited EDLRGNRD
+#> 5935                    AGL Energy Services (Queensland) Pty Limited SUNCOAST
 #> 5936                    AGL Energy Services (Queensland) Pty Limited SUNCOAST
 #> 5937                    AGL Energy Services (Queensland) Pty Limited EDLRGNRD
-#> 5938                    AGL Energy Services (Queensland) Pty Limited EDLRGNRD
-#> 5939                    AGL Energy Services (Queensland) Pty Limited MORANBAH
-#> 5940                    AGL Energy Services (Queensland) Pty Limited EDLRGNRD
-#> 5941                    AGL Energy Services (Queensland) Pty Limited EDLRGNRD
-#> 5942                    AGL Energy Services (Queensland) Pty Limited SUNCOAST
-#> 5943                    AGL Energy Services (Queensland) Pty Limited     ICSM
-#> 5944                    AGL Energy Services (Queensland) Pty Limited EDLRGNRD
+#> 5938                    AGL Energy Services (Queensland) Pty Limited SUNCOAST
+#> 5939                    AGL Energy Services (Queensland) Pty Limited     ICSM
+#> 5940                    AGL Energy Services (Queensland) Pty Limited     ICSM
+#> 5941                    AGL Energy Services (Queensland) Pty Limited SUNCOAST
+#> 5942                    AGL Energy Services (Queensland) Pty Limited EDLRGNRD
+#> 5943                    AGL Energy Services (Queensland) Pty Limited EDLRGNRD
+#> 5944                    AGL Energy Services (Queensland) Pty Limited MORANBAH
 #> 5945                    AGL Energy Services (Queensland) Pty Limited EDLRGNRD
-#> 5946                    AGL Energy Services (Queensland) Pty Limited SUNCOAST
+#> 5946                    AGL Energy Services (Queensland) Pty Limited EDLRGNRD
 #> 5947                    AGL Energy Services (Queensland) Pty Limited SUNCOAST
-#> 5948                    AGL Energy Services (Queensland) Pty Limited SUNCOAST
-#> 5949                    AGL Energy Services (Queensland) Pty Limited SUNCOAST
-#> 5950                    AGL Energy Services (Queensland) Pty Limited SUNCOAST
-#> 5951                    AGL Energy Services (Queensland) Pty Limited MORANBAH
-#> 5952                    AGL Energy Services (Queensland) Pty Limited MORANBAH
+#> 5948                    AGL Energy Services (Queensland) Pty Limited     ICSM
+#> 5949                    AGL Energy Services (Queensland) Pty Limited EDLRGNRD
+#> 5950                    AGL Energy Services (Queensland) Pty Limited EDLRGNRD
+#> 5951                    AGL Energy Services (Queensland) Pty Limited SUNCOAST
+#> 5952                    AGL Energy Services (Queensland) Pty Limited SUNCOAST
 #> 5953                    AGL Energy Services (Queensland) Pty Limited SUNCOAST
 #> 5954                    AGL Energy Services (Queensland) Pty Limited SUNCOAST
-#> 6908                  AGL Sales (Queensland Electricity) Pty Limited JACKSGUL
-#> 6909                  AGL Sales (Queensland Electricity) Pty Limited JACKSGUL
-#> 6910                  AGL Sales (Queensland Electricity) Pty Limited KRCCOGEN
-#> 6911                  AGL Sales (Queensland Electricity) Pty Limited GRANGEAV
-#> 6912                  AGL Sales (Queensland Electricity) Pty Limited KRCCOGEN
-#> 6913                  AGL Sales (Queensland Electricity) Pty Limited KRCCOGEN
-#> 6914                  AGL Sales (Queensland Electricity) Pty Limited BROOKLYN
-#> 6915                  AGL Sales (Queensland Electricity) Pty Limited   ERG_AS
-#> 6916                  AGL Sales (Queensland Electricity) Pty Limited BROOKLYN
-#> 6917                  AGL Sales (Queensland Electricity) Pty Limited BROOKLYN
-#> 6918                  AGL Sales (Queensland Electricity) Pty Limited   ERG_AS
-#> 6919                  AGL Sales (Queensland Electricity) Pty Limited GRANGEAV
-#> 6920                  AGL Sales (Queensland Electricity) Pty Limited BROOKLYN
-#> 6921                  AGL Sales (Queensland Electricity) Pty Limited KRCCOGEN
-#> 6922                  AGL Sales (Queensland Electricity) Pty Limited BROOKLYN
+#> 5955                    AGL Energy Services (Queensland) Pty Limited SUNCOAST
+#> 5956                    AGL Energy Services (Queensland) Pty Limited MORANBAH
+#> 5957                    AGL Energy Services (Queensland) Pty Limited MORANBAH
+#> 5958                    AGL Energy Services (Queensland) Pty Limited SUNCOAST
+#> 5959                    AGL Energy Services (Queensland) Pty Limited SUNCOAST
+#> 6913                  AGL Sales (Queensland Electricity) Pty Limited   ERG_AS
+#> 6914                  AGL Sales (Queensland Electricity) Pty Limited JACKSGUL
+#> 6915                  AGL Sales (Queensland Electricity) Pty Limited KRCCOGEN
+#> 6916                  AGL Sales (Queensland Electricity) Pty Limited GRANGEAV
+#> 6917                  AGL Sales (Queensland Electricity) Pty Limited JACKSGUL
+#> 6918                  AGL Sales (Queensland Electricity) Pty Limited KRCCOGEN
+#> 6919                  AGL Sales (Queensland Electricity) Pty Limited BROOKLYN
+#> 6920                  AGL Sales (Queensland Electricity) Pty Limited KRCCOGEN
+#> 6921                  AGL Sales (Queensland Electricity) Pty Limited BROOKLYN
+#> 6922                  AGL Sales (Queensland Electricity) Pty Limited GRANGEAV
 #> 6923                  AGL Sales (Queensland Electricity) Pty Limited BROOKLYN
-#> 6924                  AGL Sales (Queensland Electricity) Pty Limited   ERG_AS
+#> 6924                  AGL Sales (Queensland Electricity) Pty Limited BROOKLYN
 #> 6925                  AGL Sales (Queensland Electricity) Pty Limited BROOKLYN
 #> 6926                  AGL Sales (Queensland Electricity) Pty Limited BROOKLYN
-#> 6927                  AGL Sales (Queensland Electricity) Pty Limited GRANGEAV
+#> 6927                  AGL Sales (Queensland Electricity) Pty Limited   ERG_AS
 #> 6928                  AGL Sales (Queensland Electricity) Pty Limited BROOKLYN
-#> 6929                  AGL Sales (Queensland Electricity) Pty Limited BROOKLYN
+#> 6929                  AGL Sales (Queensland Electricity) Pty Limited   ERG_AS
 #> 6930                  AGL Sales (Queensland Electricity) Pty Limited   ERG_AS
-#> 6931                  AGL Sales (Queensland Electricity) Pty Limited BROOKLYN
-#> 6932                  AGL Sales (Queensland Electricity) Pty Limited   WGULLY
-#> 6933                  AGL Sales (Queensland Electricity) Pty Limited JACKSGUL
-#> 6934                  AGL Sales (Queensland Electricity) Pty Limited BROOKLYN
-#> 6935                  AGL Sales (Queensland Electricity) Pty Limited   WGULLY
+#> 6931                  AGL Sales (Queensland Electricity) Pty Limited GRANGEAV
+#> 6932                  AGL Sales (Queensland Electricity) Pty Limited JACKSGUL
+#> 6933                  AGL Sales (Queensland Electricity) Pty Limited KRCCOGEN
+#> 6934                  AGL Sales (Queensland Electricity) Pty Limited   WGULLY
+#> 6935                  AGL Sales (Queensland Electricity) Pty Limited BROOKLYN
 #> 6936                  AGL Sales (Queensland Electricity) Pty Limited   ERG_AS
-#> 6937                  AGL Sales (Queensland Electricity) Pty Limited   ERG_AS
-#> 6938                  AGL Sales (Queensland Electricity) Pty Limited GRANGEAV
-#> 6939                  AGL Sales (Queensland Electricity) Pty Limited   ERG_AS
-#> 6940                  AGL Sales (Queensland Electricity) Pty Limited GRANGEAV
+#> 6937                  AGL Sales (Queensland Electricity) Pty Limited GRANGEAV
+#> 6938                  AGL Sales (Queensland Electricity) Pty Limited BROOKLYN
+#> 6939                  AGL Sales (Queensland Electricity) Pty Limited GRANGEAV
+#> 6940                  AGL Sales (Queensland Electricity) Pty Limited BROOKLYN
 #> 6941                  AGL Sales (Queensland Electricity) Pty Limited BROOKLYN
-#> 6942                  AGL Sales (Queensland Electricity) Pty Limited GRANGEAV
-#> 6943                  AGL Sales (Queensland Electricity) Pty Limited   ERG_AS
-#> 6944                  AGL Sales (Queensland Electricity) Pty Limited KRCCOGEN
+#> 6942                  AGL Sales (Queensland Electricity) Pty Limited   ERG_AS
+#> 6943                  AGL Sales (Queensland Electricity) Pty Limited KRCCOGEN
+#> 6944                  AGL Sales (Queensland Electricity) Pty Limited   WGULLY
 #> 6945                  AGL Sales (Queensland Electricity) Pty Limited   WGULLY
-#> 6946                  AGL Sales (Queensland Electricity) Pty Limited   WGULLY
-#> 6947                  AGL Sales (Queensland Electricity) Pty Limited BROOKLYN
-#> 6948                  AGL Sales (Queensland Electricity) Pty Limited BROOKLYN
+#> 6946                  AGL Sales (Queensland Electricity) Pty Limited BROOKLYN
+#> 6947                  AGL Sales (Queensland Electricity) Pty Limited   ERG_AS
+#> 6948                  AGL Sales (Queensland Electricity) Pty Limited   ERG_AS
 #> 6949                  AGL Sales (Queensland Electricity) Pty Limited BROOKLYN
-#> 6950                  AGL Sales (Queensland Electricity) Pty Limited BROOKLYN
+#> 6950                  AGL Sales (Queensland Electricity) Pty Limited   ERG_AS
 #> 6951                  AGL Sales (Queensland Electricity) Pty Limited   ERG_AS
-#> 6952                  AGL Sales (Queensland Electricity) Pty Limited   ERG_AS
+#> 6952                  AGL Sales (Queensland Electricity) Pty Limited BROOKLYN
 #> 6953                  AGL Sales (Queensland Electricity) Pty Limited BROOKLYN
-#> 6954                  AGL Sales (Queensland Electricity) Pty Limited   ERG_AS
-#> 6955                  AGL Sales (Queensland Electricity) Pty Limited GRANGEAV
+#> 6954                  AGL Sales (Queensland Electricity) Pty Limited GRANGEAV
+#> 6955                  AGL Sales (Queensland Electricity) Pty Limited BROOKLYN
 #> 6956                  AGL Sales (Queensland Electricity) Pty Limited KRCCOGEN
-#> 6957                  AGL Sales (Queensland Electricity) Pty Limited KRCCOGEN
-#> 6958                  AGL Sales (Queensland Electricity) Pty Limited   WGULLY
-#> 6959                  AGL Sales (Queensland Electricity) Pty Limited JACKSGUL
+#> 6957                  AGL Sales (Queensland Electricity) Pty Limited   WGULLY
+#> 6958                  AGL Sales (Queensland Electricity) Pty Limited JACKSGUL
+#> 6959                  AGL Sales (Queensland Electricity) Pty Limited BROOKLYN
 #> 6960                  AGL Sales (Queensland Electricity) Pty Limited BROOKLYN
 #> 6961                  AGL Sales (Queensland Electricity) Pty Limited BROOKLYN
-#> 6962                  AGL Sales (Queensland Electricity) Pty Limited GRANGEAV
-#> 6963                  AGL Sales (Queensland Electricity) Pty Limited   ERG_AS
+#> 6962                  AGL Sales (Queensland Electricity) Pty Limited   ERG_AS
+#> 6963                  AGL Sales (Queensland Electricity) Pty Limited BROOKLYN
 #> 6964                  AGL Sales (Queensland Electricity) Pty Limited BROOKLYN
-#> 6965                  AGL Sales (Queensland Electricity) Pty Limited BROOKLYN
+#> 6965                  AGL Sales (Queensland Electricity) Pty Limited   ERG_AS
 #> 6966                  AGL Sales (Queensland Electricity) Pty Limited   ERG_AS
-#> 6967                  AGL Sales (Queensland Electricity) Pty Limited   ERG_AS
-#> 6968                  AGL Sales (Queensland Electricity) Pty Limited  EASTCRK
+#> 6967                  AGL Sales (Queensland Electricity) Pty Limited GRANGEAV
+#> 6968                  AGL Sales (Queensland Electricity) Pty Limited KRCCOGEN
 #> 6969                  AGL Sales (Queensland Electricity) Pty Limited   ERG_AS
-#> 6970                  AGL Sales (Queensland Electricity) Pty Limited   ERG_AS
-#> 6971                  AGL Sales (Queensland Electricity) Pty Limited JACKSGUL
-#> 6972                  AGL Sales (Queensland Electricity) Pty Limited BROOKLYN
-#> 6973                  AGL Sales (Queensland Electricity) Pty Limited   WGULLY
-#> 6974                  AGL Sales (Queensland Electricity) Pty Limited   WGULLY
-#> 6975                  AGL Sales (Queensland Electricity) Pty Limited GRANGEAV
-#> 6976                  AGL Sales (Queensland Electricity) Pty Limited JACKSGUL
+#> 6970                  AGL Sales (Queensland Electricity) Pty Limited   WGULLY
+#> 6971                  AGL Sales (Queensland Electricity) Pty Limited BROOKLYN
+#> 6972                  AGL Sales (Queensland Electricity) Pty Limited   WGULLY
+#> 6973                  AGL Sales (Queensland Electricity) Pty Limited BROOKLYN
+#> 6974                  AGL Sales (Queensland Electricity) Pty Limited GRANGEAV
+#> 6975                  AGL Sales (Queensland Electricity) Pty Limited JACKSGUL
+#> 6976                  AGL Sales (Queensland Electricity) Pty Limited   ERG_AS
 #> 6977                  AGL Sales (Queensland Electricity) Pty Limited   ERG_AS
-#> 6978                  AGL Sales (Queensland Electricity) Pty Limited   ERG_AS
-#> 6979                  AGL Sales (Queensland Electricity) Pty Limited GRANGEAV
-#> 6980                  AGL Sales (Queensland Electricity) Pty Limited BROOKLYN
-#> 6981                  AGL Sales (Queensland Electricity) Pty Limited JACKSGUL
-#> 6982                  AGL Sales (Queensland Electricity) Pty Limited  EASTCRK
+#> 6978                  AGL Sales (Queensland Electricity) Pty Limited GRANGEAV
+#> 6979                  AGL Sales (Queensland Electricity) Pty Limited   ERG_AS
+#> 6980                  AGL Sales (Queensland Electricity) Pty Limited  EASTCRK
+#> 6981                  AGL Sales (Queensland Electricity) Pty Limited   ERG_AS
+#> 6982                  AGL Sales (Queensland Electricity) Pty Limited JACKSGUL
 #> 6983                  AGL Sales (Queensland Electricity) Pty Limited JACKSGUL
-#> 6984                  AGL Sales (Queensland Electricity) Pty Limited JACKSGUL
-#> 6985                  AGL Sales (Queensland Electricity) Pty Limited   ERG_AS
-#> 6986                  AGL Sales (Queensland Electricity) Pty Limited JACKSGUL
-#> 6987                  AGL Sales (Queensland Electricity) Pty Limited  GERMCRK
+#> 6984                  AGL Sales (Queensland Electricity) Pty Limited   ERG_AS
+#> 6985                  AGL Sales (Queensland Electricity) Pty Limited JACKSGUL
+#> 6986                  AGL Sales (Queensland Electricity) Pty Limited   WGULLY
+#> 6987                  AGL Sales (Queensland Electricity) Pty Limited GRANGEAV
 #> 6988                  AGL Sales (Queensland Electricity) Pty Limited JACKSGUL
-#> 6989                  AGL Sales (Queensland Electricity) Pty Limited JACKSGUL
-#> 6990                  AGL Sales (Queensland Electricity) Pty Limited   WGULLY
-#> 6991                  AGL Sales (Queensland Electricity) Pty Limited   ERG_AS
-#> 6992                  AGL Sales (Queensland Electricity) Pty Limited GRANGEAV
-#> 6993                  AGL Sales (Queensland Electricity) Pty Limited BROOKLYN
+#> 6989                  AGL Sales (Queensland Electricity) Pty Limited   WGULLY
+#> 6990                  AGL Sales (Queensland Electricity) Pty Limited   ERG_AS
+#> 6991                  AGL Sales (Queensland Electricity) Pty Limited GRANGEAV
+#> 6992                  AGL Sales (Queensland Electricity) Pty Limited BROOKLYN
+#> 6993                  AGL Sales (Queensland Electricity) Pty Limited  EASTCRK
 #> 6994                  AGL Sales (Queensland Electricity) Pty Limited  EASTCRK
-#> 6995                  AGL Sales (Queensland Electricity) Pty Limited BROOKLYN
-#> 6996                  AGL Sales (Queensland Electricity) Pty Limited   ERG_AS
-#> 6997                  AGL Sales (Queensland Electricity) Pty Limited JACKSGUL
+#> 6995                  AGL Sales (Queensland Electricity) Pty Limited   ERG_AS
+#> 6996                  AGL Sales (Queensland Electricity) Pty Limited JACKSGUL
+#> 6997                  AGL Sales (Queensland Electricity) Pty Limited BROOKLYN
 #> 6998                  AGL Sales (Queensland Electricity) Pty Limited  GERMCRK
-#> 6999                  AGL Sales (Queensland Electricity) Pty Limited  GERMCRK
-#> 7000                  AGL Sales (Queensland Electricity) Pty Limited  EASTCRK
-#> 7001                  AGL Sales (Queensland Electricity) Pty Limited GRANGEAV
-#> 7002                  AGL Sales (Queensland Electricity) Pty Limited BROOKLYN
+#> 6999                  AGL Sales (Queensland Electricity) Pty Limited  EASTCRK
+#> 7000                  AGL Sales (Queensland Electricity) Pty Limited JACKSGUL
+#> 7001                  AGL Sales (Queensland Electricity) Pty Limited BROOKLYN
+#> 7002                  AGL Sales (Queensland Electricity) Pty Limited   WGULLY
 #> 7003                  AGL Sales (Queensland Electricity) Pty Limited   WGULLY
-#> 7004                  AGL Sales (Queensland Electricity) Pty Limited   WGULLY
-#> 7005                  AGL Sales (Queensland Electricity) Pty Limited GRANGEAV
+#> 7004                  AGL Sales (Queensland Electricity) Pty Limited GRANGEAV
+#> 7005                  AGL Sales (Queensland Electricity) Pty Limited BROOKLYN
 #> 7006                  AGL Sales (Queensland Electricity) Pty Limited GRANGEAV
-#> 7007                  AGL Sales (Queensland Electricity) Pty Limited GRANGEAV
-#> 7008                  AGL Sales (Queensland Electricity) Pty Limited  EASTCRK
-#> 7009                  AGL Sales (Queensland Electricity) Pty Limited GRANGEAV
-#> 7010                  AGL Sales (Queensland Electricity) Pty Limited BROOKLYN
-#> 7011                  AGL Sales (Queensland Electricity) Pty Limited JACKSGUL
-#> 7012                  AGL Sales (Queensland Electricity) Pty Limited   WGULLY
-#> 7013                  AGL Sales (Queensland Electricity) Pty Limited JACKSGUL
+#> 7007                  AGL Sales (Queensland Electricity) Pty Limited BROOKLYN
+#> 7008                  AGL Sales (Queensland Electricity) Pty Limited GRANGEAV
+#> 7009                  AGL Sales (Queensland Electricity) Pty Limited JACKSGUL
+#> 7010                  AGL Sales (Queensland Electricity) Pty Limited JACKSGUL
+#> 7011                  AGL Sales (Queensland Electricity) Pty Limited   WGULLY
+#> 7012                  AGL Sales (Queensland Electricity) Pty Limited JACKSGUL
+#> 7013                  AGL Sales (Queensland Electricity) Pty Limited  GERMCRK
 #> 7014                  AGL Sales (Queensland Electricity) Pty Limited BROOKLYN
-#> 7015                  AGL Sales (Queensland Electricity) Pty Limited BROOKLYN
-#> 7016                  AGL Sales (Queensland Electricity) Pty Limited GRANGEAV
-#> 7017                  AGL Sales (Queensland Electricity) Pty Limited   WGULLY
-#> 7018                  AGL Sales (Queensland Electricity) Pty Limited BROOKLYN
-#> 7019                  AGL Sales (Queensland Electricity) Pty Limited  GERMCRK
+#> 7015                  AGL Sales (Queensland Electricity) Pty Limited GRANGEAV
+#> 7016                  AGL Sales (Queensland Electricity) Pty Limited   WGULLY
+#> 7017                  AGL Sales (Queensland Electricity) Pty Limited BROOKLYN
+#> 7018                  AGL Sales (Queensland Electricity) Pty Limited  GERMCRK
+#> 7019                  AGL Sales (Queensland Electricity) Pty Limited  EASTCRK
 #> 7020                  AGL Sales (Queensland Electricity) Pty Limited  EASTCRK
-#> 7021                  AGL Sales (Queensland Electricity) Pty Limited  EASTCRK
-#> 7022                  AGL Sales (Queensland Electricity) Pty Limited JACKSGUL
-#> 7023                  AGL Sales (Queensland Electricity) Pty Limited   ERG_AS
-#> 7024                  AGL Sales (Queensland Electricity) Pty Limited JACKSGUL
-#> 7025                  AGL Sales (Queensland Electricity) Pty Limited BROOKLYN
-#> 7026                  AGL Sales (Queensland Electricity) Pty Limited  EASTCRK
-#> 7027                  AGL Sales (Queensland Electricity) Pty Limited  GERMCRK
-#> 7028                  AGL Sales (Queensland Electricity) Pty Limited  GERMCRK
-#> 7029                  AGL Sales (Queensland Electricity) Pty Limited BROOKLYN
-#> 7030                  AGL Sales (Queensland Electricity) Pty Limited  EASTCRK
-#> 7031                  AGL Sales (Queensland Electricity) Pty Limited BROOKLYN
-#> 7032                  AGL Sales (Queensland Electricity) Pty Limited JACKSGUL
-#> 7033                  AGL Sales (Queensland Electricity) Pty Limited GRANGEAV
-#> 7034                  AGL Sales (Queensland Electricity) Pty Limited  GERMCRK
-#> 7035                  AGL Sales (Queensland Electricity) Pty Limited KRCCOGEN
-#> 7036                  AGL Sales (Queensland Electricity) Pty Limited  GERMCRK
+#> 7021                  AGL Sales (Queensland Electricity) Pty Limited JACKSGUL
+#> 7022                  AGL Sales (Queensland Electricity) Pty Limited   ERG_AS
+#> 7023                  AGL Sales (Queensland Electricity) Pty Limited JACKSGUL
+#> 7024                  AGL Sales (Queensland Electricity) Pty Limited  GERMCRK
+#> 7025                  AGL Sales (Queensland Electricity) Pty Limited  EASTCRK
+#> 7026                  AGL Sales (Queensland Electricity) Pty Limited  GERMCRK
+#> 7027                  AGL Sales (Queensland Electricity) Pty Limited GRANGEAV
+#> 7028                  AGL Sales (Queensland Electricity) Pty Limited BROOKLYN
+#> 7029                  AGL Sales (Queensland Electricity) Pty Limited  EASTCRK
+#> 7030                  AGL Sales (Queensland Electricity) Pty Limited BROOKLYN
+#> 7031                  AGL Sales (Queensland Electricity) Pty Limited JACKSGUL
+#> 7032                  AGL Sales (Queensland Electricity) Pty Limited GRANGEAV
+#> 7033                  AGL Sales (Queensland Electricity) Pty Limited  GERMCRK
+#> 7034                  AGL Sales (Queensland Electricity) Pty Limited KRCCOGEN
+#> 7035                  AGL Sales (Queensland Electricity) Pty Limited  GERMCRK
+#> 7036                  AGL Sales (Queensland Electricity) Pty Limited   ERG_AS
 #> 7037                  AGL Sales (Queensland Electricity) Pty Limited   ERG_AS
-#> 7038                  AGL Sales (Queensland Electricity) Pty Limited   ERG_AS
-#> 7039                  AGL Sales (Queensland Electricity) Pty Limited JACKSGUL
-#> 7040                  AGL Sales (Queensland Electricity) Pty Limited  EASTCRK
-#> 7041                  AGL Sales (Queensland Electricity) Pty Limited JACKSGUL
-#> 7042                  AGL Sales (Queensland Electricity) Pty Limited  GERMCRK
-#> 7043                  AGL Sales (Queensland Electricity) Pty Limited   WGULLY
-#> 7044                  AGL Sales (Queensland Electricity) Pty Limited GRANGEAV
-#> 7045                  AGL Sales (Queensland Electricity) Pty Limited   WGULLY
-#> 7046                  AGL Sales (Queensland Electricity) Pty Limited KRCCOGEN
+#> 7038                  AGL Sales (Queensland Electricity) Pty Limited BROOKLYN
+#> 7039                  AGL Sales (Queensland Electricity) Pty Limited  EASTCRK
+#> 7040                  AGL Sales (Queensland Electricity) Pty Limited BROOKLYN
+#> 7041                  AGL Sales (Queensland Electricity) Pty Limited  GERMCRK
+#> 7042                  AGL Sales (Queensland Electricity) Pty Limited   WGULLY
+#> 7043                  AGL Sales (Queensland Electricity) Pty Limited GRANGEAV
+#> 7044                  AGL Sales (Queensland Electricity) Pty Limited   WGULLY
+#> 7045                  AGL Sales (Queensland Electricity) Pty Limited KRCCOGEN
+#> 7046                  AGL Sales (Queensland Electricity) Pty Limited JACKSGUL
 #> 7047                  AGL Sales (Queensland Electricity) Pty Limited JACKSGUL
 #> 7048                  AGL Sales (Queensland Electricity) Pty Limited JACKSGUL
-#> 7049                  AGL Sales (Queensland Electricity) Pty Limited JACKSGUL
+#> 7049                  AGL Sales (Queensland Electricity) Pty Limited  EASTCRK
 #> 7050                  AGL Sales (Queensland Electricity) Pty Limited  EASTCRK
-#> 7051                  AGL Sales (Queensland Electricity) Pty Limited JACKSGUL
-#> 7052                  AGL Sales (Queensland Electricity) Pty Limited  EASTCRK
-#> 7053                  AGL Sales (Queensland Electricity) Pty Limited  GERMCRK
-#> 7054                  AGL Sales (Queensland Electricity) Pty Limited GRANGEAV
-#> 7055                  AGL Sales (Queensland Electricity) Pty Limited GRANGEAV
-#> 7056                  AGL Sales (Queensland Electricity) Pty Limited BROOKLYN
-#> 7057                  AGL Sales (Queensland Electricity) Pty Limited  EASTCRK
-#> 7058                  AGL Sales (Queensland Electricity) Pty Limited  GERMCRK
-#> 7059                  AGL Sales (Queensland Electricity) Pty Limited   WGULLY
-#> 7060                  AGL Sales (Queensland Electricity) Pty Limited   ERG_AS
-#> 7061                  AGL Sales (Queensland Electricity) Pty Limited  EASTCRK
-#> 7062                  AGL Sales (Queensland Electricity) Pty Limited  EASTCRK
-#> 7063                  AGL Sales (Queensland Electricity) Pty Limited JACKSGUL
-#> 7064                  AGL Sales (Queensland Electricity) Pty Limited  EASTCRK
-#> 7065                  AGL Sales (Queensland Electricity) Pty Limited KRCCOGEN
-#> 7066                  AGL Sales (Queensland Electricity) Pty Limited  EASTCRK
+#> 7051                  AGL Sales (Queensland Electricity) Pty Limited  EASTCRK
+#> 7052                  AGL Sales (Queensland Electricity) Pty Limited JACKSGUL
+#> 7053                  AGL Sales (Queensland Electricity) Pty Limited GRANGEAV
+#> 7054                  AGL Sales (Queensland Electricity) Pty Limited  GERMCRK
+#> 7055                  AGL Sales (Queensland Electricity) Pty Limited BROOKLYN
+#> 7056                  AGL Sales (Queensland Electricity) Pty Limited  EASTCRK
+#> 7057                  AGL Sales (Queensland Electricity) Pty Limited  GERMCRK
+#> 7058                  AGL Sales (Queensland Electricity) Pty Limited   WGULLY
+#> 7059                  AGL Sales (Queensland Electricity) Pty Limited   ERG_AS
+#> 7060                  AGL Sales (Queensland Electricity) Pty Limited  EASTCRK
+#> 7061                  AGL Sales (Queensland Electricity) Pty Limited JACKSGUL
+#> 7062                  AGL Sales (Queensland Electricity) Pty Limited JACKSGUL
+#> 7063                  AGL Sales (Queensland Electricity) Pty Limited  EASTCRK
+#> 7064                  AGL Sales (Queensland Electricity) Pty Limited JACKSGUL
+#> 7065                  AGL Sales (Queensland Electricity) Pty Limited  EASTCRK
+#> 7066                  AGL Sales (Queensland Electricity) Pty Limited  GERMCRK
 #> 7067                  AGL Sales (Queensland Electricity) Pty Limited JACKSGUL
-#> 7068                  AGL Sales (Queensland Electricity) Pty Limited  GERMCRK
-#> 7069                  AGL Sales (Queensland Electricity) Pty Limited   ERG_AS
-#> 7070                  AGL Sales (Queensland Electricity) Pty Limited   WGULLY
-#> 7071                  AGL Sales (Queensland Electricity) Pty Limited  EASTCRK
+#> 7068                  AGL Sales (Queensland Electricity) Pty Limited   ERG_AS
+#> 7069                  AGL Sales (Queensland Electricity) Pty Limited   WGULLY
+#> 7070                  AGL Sales (Queensland Electricity) Pty Limited  EASTCRK
+#> 7071                  AGL Sales (Queensland Electricity) Pty Limited GRANGEAV
 #> 7072                  AGL Sales (Queensland Electricity) Pty Limited GRANGEAV
-#> 7073                  AGL Sales (Queensland Electricity) Pty Limited  EASTCRK
-#> 7074                  AGL Sales (Queensland Electricity) Pty Limited JACKSGUL
-#> 7075                  AGL Sales (Queensland Electricity) Pty Limited   ERG_AS
-#> 7076                  AGL Sales (Queensland Electricity) Pty Limited JACKSGUL
-#> 7077                  AGL Sales (Queensland Electricity) Pty Limited  EASTCRK
-#> 7078                  AGL Sales (Queensland Electricity) Pty Limited BROOKLYN
-#> 7079                  AGL Sales (Queensland Electricity) Pty Limited  EASTCRK
-#> 7080                  AGL Sales (Queensland Electricity) Pty Limited KRCCOGEN
-#> 7081                  AGL Sales (Queensland Electricity) Pty Limited JACKSGUL
-#> 7082                  AGL Sales (Queensland Electricity) Pty Limited  GERMCRK
-#> 7083                  AGL Sales (Queensland Electricity) Pty Limited   WGULLY
+#> 7073                  AGL Sales (Queensland Electricity) Pty Limited JACKSGUL
+#> 7074                  AGL Sales (Queensland Electricity) Pty Limited   ERG_AS
+#> 7075                  AGL Sales (Queensland Electricity) Pty Limited JACKSGUL
+#> 7076                  AGL Sales (Queensland Electricity) Pty Limited  EASTCRK
+#> 7077                  AGL Sales (Queensland Electricity) Pty Limited KRCCOGEN
+#> 7078                  AGL Sales (Queensland Electricity) Pty Limited  EASTCRK
+#> 7079                  AGL Sales (Queensland Electricity) Pty Limited KRCCOGEN
+#> 7080                  AGL Sales (Queensland Electricity) Pty Limited JACKSGUL
+#> 7081                  AGL Sales (Queensland Electricity) Pty Limited GRANGEAV
+#> 7082                  AGL Sales (Queensland Electricity) Pty Limited  EASTCRK
+#> 7083                  AGL Sales (Queensland Electricity) Pty Limited  EASTCRK
 #> 7084                  AGL Sales (Queensland Electricity) Pty Limited  EASTCRK
-#> 7085                  AGL Sales (Queensland Electricity) Pty Limited  EASTCRK
-#> 7086                  AGL Sales (Queensland Electricity) Pty Limited   ERG_AS
+#> 7085                  AGL Sales (Queensland Electricity) Pty Limited  GERMCRK
+#> 7086                  AGL Sales (Queensland Electricity) Pty Limited   WGULLY
 #> 7087                  AGL Sales (Queensland Electricity) Pty Limited  GERMCRK
-#> 7088                  AGL Sales (Queensland Electricity) Pty Limited  GERMCRK
+#> 7088                  AGL Sales (Queensland Electricity) Pty Limited  EASTCRK
 #> 7089                  AGL Sales (Queensland Electricity) Pty Limited  EASTCRK
-#> 7090                  AGL Sales (Queensland Electricity) Pty Limited KRCCOGEN
+#> 7090                  AGL Sales (Queensland Electricity) Pty Limited  GERMCRK
 #> 7091                  AGL Sales (Queensland Electricity) Pty Limited  EASTCRK
-#> 7092                  AGL Sales (Queensland Electricity) Pty Limited  EASTCRK
-#> 7093                  AGL Sales (Queensland Electricity) Pty Limited   WGULLY
+#> 7092                  AGL Sales (Queensland Electricity) Pty Limited   WGULLY
+#> 7093                  AGL Sales (Queensland Electricity) Pty Limited JACKSGUL
 #> 7094                  AGL Sales (Queensland Electricity) Pty Limited  EASTCRK
-#> 7095                  AGL Sales (Queensland Electricity) Pty Limited   WGULLY
-#> 7096                  AGL Sales (Queensland Electricity) Pty Limited  EASTCRK
-#> 7097                  AGL Sales (Queensland Electricity) Pty Limited   WGULLY
-#> 7098                  AGL Sales (Queensland Electricity) Pty Limited JACKSGUL
-#> 7099                  AGL Sales (Queensland Electricity) Pty Limited  GERMCRK
-#> 7100                  AGL Sales (Queensland Electricity) Pty Limited  EASTCRK
-#> 7101                  AGL Sales (Queensland Electricity) Pty Limited JACKSGUL
-#> 7102                  AGL Sales (Queensland Electricity) Pty Limited JACKSGUL
+#> 7095                  AGL Sales (Queensland Electricity) Pty Limited  EASTCRK
+#> 7096                  AGL Sales (Queensland Electricity) Pty Limited   WGULLY
+#> 7097                  AGL Sales (Queensland Electricity) Pty Limited KRCCOGEN
+#> 7098                  AGL Sales (Queensland Electricity) Pty Limited   ERG_AS
+#> 7099                  AGL Sales (Queensland Electricity) Pty Limited  EASTCRK
+#> 7100                  AGL Sales (Queensland Electricity) Pty Limited BROOKLYN
+#> 7101                  AGL Sales (Queensland Electricity) Pty Limited  EASTCRK
+#> 7102                  AGL Sales (Queensland Electricity) Pty Limited   WGULLY
 #> 7103                  AGL Sales (Queensland Electricity) Pty Limited JACKSGUL
-#> 7104                  AGL Sales (Queensland Electricity) Pty Limited  GERMCRK
-#> 7105                  AGL Sales (Queensland Electricity) Pty Limited  EASTCRK
+#> 7104                  AGL Sales (Queensland Electricity) Pty Limited  EASTCRK
+#> 7105                  AGL Sales (Queensland Electricity) Pty Limited JACKSGUL
 #> 7106                  AGL Sales (Queensland Electricity) Pty Limited  GERMCRK
-#> 7107                  AGL Sales (Queensland Electricity) Pty Limited  EASTCRK
-#> 7108                  AGL Sales (Queensland Electricity) Pty Limited   ERG_AS
+#> 7107                  AGL Sales (Queensland Electricity) Pty Limited   ERG_AS
+#> 7108                  AGL Sales (Queensland Electricity) Pty Limited JACKSGUL
 #> 7109                  AGL Sales (Queensland Electricity) Pty Limited JACKSGUL
-#> 7110                  AGL Sales (Queensland Electricity) Pty Limited  EASTCRK
-#> 7111                  AGL Sales (Queensland Electricity) Pty Limited JACKSGUL
+#> 7110                  AGL Sales (Queensland Electricity) Pty Limited JACKSGUL
+#> 7111                  AGL Sales (Queensland Electricity) Pty Limited  GERMCRK
 #> 7112                  AGL Sales (Queensland Electricity) Pty Limited   WGULLY
-#> 7113                  AGL Sales (Queensland Electricity) Pty Limited  EASTCRK
+#> 7113                  AGL Sales (Queensland Electricity) Pty Limited  GERMCRK
 #> 7114                  AGL Sales (Queensland Electricity) Pty Limited  EASTCRK
-#> 7115                  AGL Sales (Queensland Electricity) Pty Limited GRANGEAV
-#> 10381                                 AGL Loy Yang Marketing Pty Ltd     LYA3
-#> 10382                                 AGL Loy Yang Marketing Pty Ltd     LYA2
-#> 10383                                 AGL Loy Yang Marketing Pty Ltd     LYA2
-#> 10384                                 AGL Loy Yang Marketing Pty Ltd     LYA4
-#> 10385                                 AGL Loy Yang Marketing Pty Ltd     LYA4
-#> 10386                                 AGL Loy Yang Marketing Pty Ltd     LYA4
-#> 10387                                 AGL Loy Yang Marketing Pty Ltd     LYA2
-#> 10388                                 AGL Loy Yang Marketing Pty Ltd     LYA2
+#> 7115                  AGL Sales (Queensland Electricity) Pty Limited  GERMCRK
+#> 7116                  AGL Sales (Queensland Electricity) Pty Limited  EASTCRK
+#> 7117                  AGL Sales (Queensland Electricity) Pty Limited JACKSGUL
+#> 7118                  AGL Sales (Queensland Electricity) Pty Limited  EASTCRK
+#> 7119                  AGL Sales (Queensland Electricity) Pty Limited  EASTCRK
+#> 7120                  AGL Sales (Queensland Electricity) Pty Limited GRANGEAV
+#> 10388                                 AGL Loy Yang Marketing Pty Ltd     LYA3
 #> 10389                                 AGL Loy Yang Marketing Pty Ltd     LYA2
 #> 10390                                 AGL Loy Yang Marketing Pty Ltd     LYA4
-#> 10391                                 AGL Loy Yang Marketing Pty Ltd    LYNL1
-#> 10392                                 AGL Loy Yang Marketing Pty Ltd     LYA4
+#> 10391                                 AGL Loy Yang Marketing Pty Ltd     LYA2
+#> 10392                                 AGL Loy Yang Marketing Pty Ltd     LYA2
 #> 10393                                 AGL Loy Yang Marketing Pty Ltd     LYA4
-#> 10394                                 AGL Loy Yang Marketing Pty Ltd     LYA2
-#> 10395                                 AGL Loy Yang Marketing Pty Ltd    LYNL1
+#> 10394                                 AGL Loy Yang Marketing Pty Ltd     LYA4
+#> 10395                                 AGL Loy Yang Marketing Pty Ltd     LYA4
 #> 10396                                 AGL Loy Yang Marketing Pty Ltd     LYA4
-#> 10397                                 AGL Loy Yang Marketing Pty Ltd     LYA4
-#> 10398                                 AGL Loy Yang Marketing Pty Ltd     LYA3
-#> 10399                                 AGL Loy Yang Marketing Pty Ltd     LYA4
-#> 10400                                 AGL Loy Yang Marketing Pty Ltd     LYA3
-#> 10401                                 AGL Loy Yang Marketing Pty Ltd     LYA4
-#> 10402                                 AGL Loy Yang Marketing Pty Ltd     LYA2
-#> 10403                                 AGL Loy Yang Marketing Pty Ltd     LYA3
+#> 10397                                 AGL Loy Yang Marketing Pty Ltd     LYA2
+#> 10398                                 AGL Loy Yang Marketing Pty Ltd     LYA4
+#> 10399                                 AGL Loy Yang Marketing Pty Ltd     LYA3
+#> 10400                                 AGL Loy Yang Marketing Pty Ltd    LYNL1
+#> 10401                                 AGL Loy Yang Marketing Pty Ltd    LYNL1
+#> 10402                                 AGL Loy Yang Marketing Pty Ltd     LYA4
+#> 10403                                 AGL Loy Yang Marketing Pty Ltd     LYA2
 #> 10404                                 AGL Loy Yang Marketing Pty Ltd     LYA3
-#> 10405                                 AGL Loy Yang Marketing Pty Ltd     LYA1
-#> 10406                                 AGL Loy Yang Marketing Pty Ltd     LYA2
+#> 10405                                 AGL Loy Yang Marketing Pty Ltd     LYA3
+#> 10406                                 AGL Loy Yang Marketing Pty Ltd     LYA1
 #> 10407                                 AGL Loy Yang Marketing Pty Ltd     LYA4
-#> 10408                                 AGL Loy Yang Marketing Pty Ltd     LYA4
-#> 10409                                 AGL Loy Yang Marketing Pty Ltd     LYA2
+#> 10408                                 AGL Loy Yang Marketing Pty Ltd     LYA2
+#> 10409                                 AGL Loy Yang Marketing Pty Ltd     LYA4
 #> 10410                                 AGL Loy Yang Marketing Pty Ltd     LYA3
 #> 10411                                 AGL Loy Yang Marketing Pty Ltd     LYA3
 #> 10412                                 AGL Loy Yang Marketing Pty Ltd     LYA3
 #> 10413                                 AGL Loy Yang Marketing Pty Ltd     LYA3
-#> 10414                                 AGL Loy Yang Marketing Pty Ltd    LYNL1
-#> 10415                                 AGL Loy Yang Marketing Pty Ltd     LYA4
+#> 10414                                 AGL Loy Yang Marketing Pty Ltd     LYA3
+#> 10415                                 AGL Loy Yang Marketing Pty Ltd    LYNL1
 #> 10416                                 AGL Loy Yang Marketing Pty Ltd     LYA4
-#> 10417                                 AGL Loy Yang Marketing Pty Ltd     LYA3
-#> 10418                                 AGL Loy Yang Marketing Pty Ltd     LYA2
-#> 10419                                 AGL Loy Yang Marketing Pty Ltd     LYA4
-#> 10420                                 AGL Loy Yang Marketing Pty Ltd     LYA1
-#> 10421                                 AGL Loy Yang Marketing Pty Ltd     LYA2
-#> 10422                                 AGL Loy Yang Marketing Pty Ltd     LYA3
-#> 10423                                 AGL Loy Yang Marketing Pty Ltd     LYA4
-#> 10424                                 AGL Loy Yang Marketing Pty Ltd     LYA2
-#> 10425                                 AGL Loy Yang Marketing Pty Ltd     LYA1
-#> 10426                                 AGL Loy Yang Marketing Pty Ltd     LYA3
+#> 10417                                 AGL Loy Yang Marketing Pty Ltd     LYA4
+#> 10418                                 AGL Loy Yang Marketing Pty Ltd     LYA3
+#> 10419                                 AGL Loy Yang Marketing Pty Ltd     LYA2
+#> 10420                                 AGL Loy Yang Marketing Pty Ltd     LYA2
+#> 10421                                 AGL Loy Yang Marketing Pty Ltd     LYA4
+#> 10422                                 AGL Loy Yang Marketing Pty Ltd     LYA4
+#> 10423                                 AGL Loy Yang Marketing Pty Ltd     LYA2
+#> 10424                                 AGL Loy Yang Marketing Pty Ltd     LYA4
+#> 10425                                 AGL Loy Yang Marketing Pty Ltd     LYA2
+#> 10426                                 AGL Loy Yang Marketing Pty Ltd     LYA1
 #> 10427                                 AGL Loy Yang Marketing Pty Ltd     LYA3
 #> 10428                                 AGL Loy Yang Marketing Pty Ltd     LYA3
 #> 10429                                 AGL Loy Yang Marketing Pty Ltd     LYA3
 #> 10430                                 AGL Loy Yang Marketing Pty Ltd     LYA3
-#> 10431                                 AGL Loy Yang Marketing Pty Ltd     LYA4
+#> 10431                                 AGL Loy Yang Marketing Pty Ltd     LYA3
 #> 10432                                 AGL Loy Yang Marketing Pty Ltd     LYA4
-#> 10433                                 AGL Loy Yang Marketing Pty Ltd     LYA1
-#> 10434                                 AGL Loy Yang Marketing Pty Ltd     LYA4
-#> 10435                                 AGL Loy Yang Marketing Pty Ltd     LYA4
-#> 10436                                 AGL Loy Yang Marketing Pty Ltd     LYA3
+#> 10433                                 AGL Loy Yang Marketing Pty Ltd     LYA4
+#> 10434                                 AGL Loy Yang Marketing Pty Ltd     LYA1
+#> 10435                                 AGL Loy Yang Marketing Pty Ltd     LYA2
+#> 10436                                 AGL Loy Yang Marketing Pty Ltd     LYA2
 #> 10437                                 AGL Loy Yang Marketing Pty Ltd     LYA3
-#> 10438                                 AGL Loy Yang Marketing Pty Ltd     LYA4
-#> 10439                                 AGL Loy Yang Marketing Pty Ltd    LYNL1
+#> 10438                                 AGL Loy Yang Marketing Pty Ltd     LYA3
+#> 10439                                 AGL Loy Yang Marketing Pty Ltd     LYA4
 #> 10440                                 AGL Loy Yang Marketing Pty Ltd    LYNL1
 #> 10441                                 AGL Loy Yang Marketing Pty Ltd    LYNL1
 #> 10442                                 AGL Loy Yang Marketing Pty Ltd    LYNL1
-#> 10443                                 AGL Loy Yang Marketing Pty Ltd     LYA2
-#> 10444                                 AGL Loy Yang Marketing Pty Ltd     LYA3
-#> 10445                                 AGL Loy Yang Marketing Pty Ltd     LYA4
-#> 10446                                 AGL Loy Yang Marketing Pty Ltd     LYA2
-#> 10447                                 AGL Loy Yang Marketing Pty Ltd     LYA4
-#> 10448                                 AGL Loy Yang Marketing Pty Ltd     LYA2
+#> 10443                                 AGL Loy Yang Marketing Pty Ltd    LYNL1
+#> 10444                                 AGL Loy Yang Marketing Pty Ltd     LYA2
+#> 10445                                 AGL Loy Yang Marketing Pty Ltd     LYA3
+#> 10446                                 AGL Loy Yang Marketing Pty Ltd     LYA4
+#> 10447                                 AGL Loy Yang Marketing Pty Ltd     LYA1
+#> 10448                                 AGL Loy Yang Marketing Pty Ltd     LYA4
 #> 10449                                 AGL Loy Yang Marketing Pty Ltd     LYA4
-#> 10450                                 AGL Loy Yang Marketing Pty Ltd     LYA2
-#> 10451                                 AGL Loy Yang Marketing Pty Ltd     LYA1
+#> 10450                                 AGL Loy Yang Marketing Pty Ltd     LYA4
+#> 10451                                 AGL Loy Yang Marketing Pty Ltd     LYA2
 #> 10452                                 AGL Loy Yang Marketing Pty Ltd     LYA1
-#> 10453                                 AGL Loy Yang Marketing Pty Ltd     LYA3
-#> 10454                                 AGL Loy Yang Marketing Pty Ltd     LYA4
-#> 10455                                 AGL Loy Yang Marketing Pty Ltd     LYA3
+#> 10453                                 AGL Loy Yang Marketing Pty Ltd     LYA1
+#> 10454                                 AGL Loy Yang Marketing Pty Ltd     LYA3
+#> 10455                                 AGL Loy Yang Marketing Pty Ltd     LYA4
 #> 10456                                 AGL Loy Yang Marketing Pty Ltd     LYA3
 #> 10457                                 AGL Loy Yang Marketing Pty Ltd     LYA3
-#> 10458                                 AGL Loy Yang Marketing Pty Ltd     LYA4
+#> 10458                                 AGL Loy Yang Marketing Pty Ltd     LYA3
 #> 10459                                 AGL Loy Yang Marketing Pty Ltd     LYA4
-#> 10460                                 AGL Loy Yang Marketing Pty Ltd     LYA1
+#> 10460                                 AGL Loy Yang Marketing Pty Ltd     LYA2
 #> 10461                                 AGL Loy Yang Marketing Pty Ltd     LYA1
-#> 10462                                 AGL Loy Yang Marketing Pty Ltd     LYA2
-#> 10463                                 AGL Loy Yang Marketing Pty Ltd     LYA1
-#> 10464                                 AGL Loy Yang Marketing Pty Ltd     LYA4
-#> 10465                                 AGL Loy Yang Marketing Pty Ltd     LYA1
+#> 10462                                 AGL Loy Yang Marketing Pty Ltd     LYA1
+#> 10463                                 AGL Loy Yang Marketing Pty Ltd     LYA4
+#> 10464                                 AGL Loy Yang Marketing Pty Ltd     LYA1
+#> 10465                                 AGL Loy Yang Marketing Pty Ltd     LYA4
 #> 10466                                 AGL Loy Yang Marketing Pty Ltd     LYA1
 #> 10467                                 AGL Loy Yang Marketing Pty Ltd     LYA1
 #> 10468                                 AGL Loy Yang Marketing Pty Ltd     LYA1
-#> 10469                                 AGL Loy Yang Marketing Pty Ltd     LYA4
-#> 10470                                 AGL Loy Yang Marketing Pty Ltd     LYA3
-#> 10471                                 AGL Loy Yang Marketing Pty Ltd     LYA1
-#> 10472                                 AGL Loy Yang Marketing Pty Ltd     LYA1
+#> 10469                                 AGL Loy Yang Marketing Pty Ltd     LYA1
+#> 10470                                 AGL Loy Yang Marketing Pty Ltd     LYA4
+#> 10471                                 AGL Loy Yang Marketing Pty Ltd     LYA3
+#> 10472                                 AGL Loy Yang Marketing Pty Ltd     LYA4
 #> 10473                                 AGL Loy Yang Marketing Pty Ltd     LYA4
-#> 10474                                 AGL Loy Yang Marketing Pty Ltd     LYA3
-#> 10475                                 AGL Loy Yang Marketing Pty Ltd     LYA3
-#> 10476                                 AGL Loy Yang Marketing Pty Ltd    LYNL1
-#> 10477                                 AGL Loy Yang Marketing Pty Ltd    LYNL1
+#> 10474                                 AGL Loy Yang Marketing Pty Ltd     LYA4
+#> 10475                                 AGL Loy Yang Marketing Pty Ltd     LYA4
+#> 10476                                 AGL Loy Yang Marketing Pty Ltd     LYA3
+#> 10477                                 AGL Loy Yang Marketing Pty Ltd     LYA2
 #> 10478                                 AGL Loy Yang Marketing Pty Ltd    LYNL1
-#> 10479                                 AGL Loy Yang Marketing Pty Ltd     LYA1
-#> 10480                                 AGL Loy Yang Marketing Pty Ltd     LYA4
-#> 10481                                 AGL Loy Yang Marketing Pty Ltd    LYNL1
+#> 10479                                 AGL Loy Yang Marketing Pty Ltd     LYA3
+#> 10480                                 AGL Loy Yang Marketing Pty Ltd     LYA1
+#> 10481                                 AGL Loy Yang Marketing Pty Ltd     LYA4
 #> 10482                                 AGL Loy Yang Marketing Pty Ltd    LYNL1
-#> 10483                                 AGL Loy Yang Marketing Pty Ltd     LYA1
-#> 10484                                 AGL Loy Yang Marketing Pty Ltd     LYA4
+#> 10483                                 AGL Loy Yang Marketing Pty Ltd    LYNL1
+#> 10484                                 AGL Loy Yang Marketing Pty Ltd     LYA1
 #> 10485                                 AGL Loy Yang Marketing Pty Ltd     LYA4
-#> 10486                                 AGL Loy Yang Marketing Pty Ltd     LYA2
-#> 10487                                 AGL Loy Yang Marketing Pty Ltd     LYA3
-#> 10488                                 AGL Loy Yang Marketing Pty Ltd     LYA2
-#> 10489                                 AGL Loy Yang Marketing Pty Ltd    LYNL1
-#> 10490                                 AGL Loy Yang Marketing Pty Ltd     LYA4
-#> 10491                                 AGL Loy Yang Marketing Pty Ltd     LYA3
-#> 10492                                 AGL Loy Yang Marketing Pty Ltd    LYNL1
-#> 10493                                 AGL Loy Yang Marketing Pty Ltd     LYA1
+#> 10486                                 AGL Loy Yang Marketing Pty Ltd     LYA1
+#> 10487                                 AGL Loy Yang Marketing Pty Ltd     LYA2
+#> 10488                                 AGL Loy Yang Marketing Pty Ltd     LYA3
+#> 10489                                 AGL Loy Yang Marketing Pty Ltd     LYA3
+#> 10490                                 AGL Loy Yang Marketing Pty Ltd    LYNL1
+#> 10491                                 AGL Loy Yang Marketing Pty Ltd     LYA4
+#> 10492                                 AGL Loy Yang Marketing Pty Ltd     LYA3
+#> 10493                                 AGL Loy Yang Marketing Pty Ltd    LYNL1
 #> 10494                                 AGL Loy Yang Marketing Pty Ltd     LYA1
 #> 10495                                 AGL Loy Yang Marketing Pty Ltd     LYA1
-#> 10496                                 AGL Loy Yang Marketing Pty Ltd     LYA2
-#> 10497                                 AGL Loy Yang Marketing Pty Ltd     LYA3
-#> 10498                                 AGL Loy Yang Marketing Pty Ltd     LYA2
+#> 10496                                 AGL Loy Yang Marketing Pty Ltd     LYA1
+#> 10497                                 AGL Loy Yang Marketing Pty Ltd     LYA2
+#> 10498                                 AGL Loy Yang Marketing Pty Ltd     LYA3
 #> 10499                                 AGL Loy Yang Marketing Pty Ltd     LYA4
-#> 10500                                 AGL Loy Yang Marketing Pty Ltd    LYNL1
-#> 10501                                 AGL Loy Yang Marketing Pty Ltd     LYA3
-#> 10502                                 AGL Loy Yang Marketing Pty Ltd     LYA4
-#> 10503                                 AGL Loy Yang Marketing Pty Ltd     LYA1
+#> 10500                                 AGL Loy Yang Marketing Pty Ltd     LYA4
+#> 10501                                 AGL Loy Yang Marketing Pty Ltd    LYNL1
+#> 10502                                 AGL Loy Yang Marketing Pty Ltd     LYA3
+#> 10503                                 AGL Loy Yang Marketing Pty Ltd     LYA4
 #> 10504                                 AGL Loy Yang Marketing Pty Ltd     LYA1
-#> 10505                                 AGL Loy Yang Marketing Pty Ltd     LYA2
-#> 10506                                 AGL Loy Yang Marketing Pty Ltd     LYA3
-#> 10507                                 AGL Loy Yang Marketing Pty Ltd     LYA1
+#> 10505                                 AGL Loy Yang Marketing Pty Ltd     LYA1
+#> 10506                                 AGL Loy Yang Marketing Pty Ltd    LYNL1
+#> 10507                                 AGL Loy Yang Marketing Pty Ltd     LYA3
 #> 10508                                 AGL Loy Yang Marketing Pty Ltd     LYA1
 #> 10509                                 AGL Loy Yang Marketing Pty Ltd     LYA1
-#> 10510                                 AGL Loy Yang Marketing Pty Ltd     LYA2
+#> 10510                                 AGL Loy Yang Marketing Pty Ltd     LYA1
 #> 10511                                 AGL Loy Yang Marketing Pty Ltd     LYA2
-#> 10512                                 AGL Loy Yang Marketing Pty Ltd    LYNL1
-#> 10513                                 AGL Loy Yang Marketing Pty Ltd     LYA3
-#> 10514                                 AGL Loy Yang Marketing Pty Ltd    LYNL1
+#> 10512                                 AGL Loy Yang Marketing Pty Ltd     LYA2
+#> 10513                                 AGL Loy Yang Marketing Pty Ltd     LYA1
+#> 10514                                 AGL Loy Yang Marketing Pty Ltd     LYA3
 #> 10515                                 AGL Loy Yang Marketing Pty Ltd    LYNL1
 #> 10516                                 AGL Loy Yang Marketing Pty Ltd     LYA2
-#> 10517                                 AGL Loy Yang Marketing Pty Ltd     LYA1
-#> 10518                                 AGL Loy Yang Marketing Pty Ltd     LYA3
-#> 10519                                 AGL Loy Yang Marketing Pty Ltd     LYA1
-#> 10520                                 AGL Loy Yang Marketing Pty Ltd     LYA3
+#> 10517                                 AGL Loy Yang Marketing Pty Ltd     LYA2
+#> 10518                                 AGL Loy Yang Marketing Pty Ltd     LYA1
+#> 10519                                 AGL Loy Yang Marketing Pty Ltd     LYA3
+#> 10520                                 AGL Loy Yang Marketing Pty Ltd     LYA1
 #> 10521                                 AGL Loy Yang Marketing Pty Ltd     LYA3
 #> 10522                                 AGL Loy Yang Marketing Pty Ltd     LYA3
-#> 10523                                 AGL Loy Yang Marketing Pty Ltd     LYA2
-#> 10524                                 AGL Loy Yang Marketing Pty Ltd    LYNL1
+#> 10523                                 AGL Loy Yang Marketing Pty Ltd     LYA3
+#> 10524                                 AGL Loy Yang Marketing Pty Ltd     LYA2
 #> 10525                                 AGL Loy Yang Marketing Pty Ltd     LYA2
-#> 10526                                 AGL Loy Yang Marketing Pty Ltd     LYA1
+#> 10526                                 AGL Loy Yang Marketing Pty Ltd    LYNL1
 #> 10527                                 AGL Loy Yang Marketing Pty Ltd     LYA1
-#> 10528                                 AGL Loy Yang Marketing Pty Ltd    LYNL1
-#> 10529                                 AGL Loy Yang Marketing Pty Ltd     LYA4
-#> 10530                                 AGL Loy Yang Marketing Pty Ltd     LYA3
-#> 10531                                 AGL Loy Yang Marketing Pty Ltd     LYA1
-#> 10532                                 AGL Loy Yang Marketing Pty Ltd     LYA3
-#> 10533                                 AGL Loy Yang Marketing Pty Ltd     LYA1
+#> 10528                                 AGL Loy Yang Marketing Pty Ltd     LYA1
+#> 10529                                 AGL Loy Yang Marketing Pty Ltd    LYNL1
+#> 10530                                 AGL Loy Yang Marketing Pty Ltd     LYA4
+#> 10531                                 AGL Loy Yang Marketing Pty Ltd     LYA3
+#> 10532                                 AGL Loy Yang Marketing Pty Ltd     LYA1
+#> 10533                                 AGL Loy Yang Marketing Pty Ltd     LYA2
 #> 10534                                 AGL Loy Yang Marketing Pty Ltd     LYA1
 #> 10535                                 AGL Loy Yang Marketing Pty Ltd     LYA1
-#> 10536                                 AGL Loy Yang Marketing Pty Ltd    LYNL1
-#> 10537                                 AGL Loy Yang Marketing Pty Ltd     LYA4
-#> 10538                                 AGL Loy Yang Marketing Pty Ltd     LYA2
-#> 10539                                 AGL Loy Yang Marketing Pty Ltd    LYNL1
-#> 10540                                 AGL Loy Yang Marketing Pty Ltd     LYA4
-#> 10541                                 AGL Loy Yang Marketing Pty Ltd     LYA3
-#> 10542                                 AGL Loy Yang Marketing Pty Ltd     LYA4
-#> 10543                                 AGL Loy Yang Marketing Pty Ltd     LYA1
-#> 10544                                 AGL Loy Yang Marketing Pty Ltd     LYA2
-#> 10545                                 AGL Loy Yang Marketing Pty Ltd    LYNL1
-#> 10546                                 AGL Loy Yang Marketing Pty Ltd     LYA2
-#> 10547                                 AGL Loy Yang Marketing Pty Ltd     LYA3
-#> 10548                                 AGL Loy Yang Marketing Pty Ltd     LYA1
-#> 10549                                 AGL Loy Yang Marketing Pty Ltd    LYNL1
+#> 10536                                 AGL Loy Yang Marketing Pty Ltd     LYA1
+#> 10537                                 AGL Loy Yang Marketing Pty Ltd    LYNL1
+#> 10538                                 AGL Loy Yang Marketing Pty Ltd    LYNL1
+#> 10539                                 AGL Loy Yang Marketing Pty Ltd     LYA2
+#> 10540                                 AGL Loy Yang Marketing Pty Ltd    LYNL1
+#> 10541                                 AGL Loy Yang Marketing Pty Ltd     LYA4
+#> 10542                                 AGL Loy Yang Marketing Pty Ltd     LYA3
+#> 10543                                 AGL Loy Yang Marketing Pty Ltd     LYA4
+#> 10544                                 AGL Loy Yang Marketing Pty Ltd     LYA1
+#> 10545                                 AGL Loy Yang Marketing Pty Ltd     LYA2
+#> 10546                                 AGL Loy Yang Marketing Pty Ltd     LYA3
+#> 10547                                 AGL Loy Yang Marketing Pty Ltd     LYA2
+#> 10548                                 AGL Loy Yang Marketing Pty Ltd     LYA3
+#> 10549                                 AGL Loy Yang Marketing Pty Ltd     LYA1
 #> 10550                                 AGL Loy Yang Marketing Pty Ltd    LYNL1
 #> 10551                                 AGL Loy Yang Marketing Pty Ltd     LYA4
-#> 10552                                 AGL Loy Yang Marketing Pty Ltd    LYNL1
-#> 10553                                 AGL Loy Yang Marketing Pty Ltd     LYA4
-#> 10554                                 AGL Loy Yang Marketing Pty Ltd     LYA3
-#> 10555                                 AGL Loy Yang Marketing Pty Ltd     LYA4
-#> 10556                                 AGL Loy Yang Marketing Pty Ltd     LYA2
-#> 10557                                 AGL Loy Yang Marketing Pty Ltd     LYA2
+#> 10552                                 AGL Loy Yang Marketing Pty Ltd     LYA2
+#> 10553                                 AGL Loy Yang Marketing Pty Ltd    LYNL1
+#> 10554                                 AGL Loy Yang Marketing Pty Ltd     LYA4
+#> 10555                                 AGL Loy Yang Marketing Pty Ltd     LYA3
+#> 10556                                 AGL Loy Yang Marketing Pty Ltd    LYNL1
+#> 10557                                 AGL Loy Yang Marketing Pty Ltd    LYNL1
 #> 10558                                 AGL Loy Yang Marketing Pty Ltd     LYA2
-#> 10559                                 AGL Loy Yang Marketing Pty Ltd     LYA3
+#> 10559                                 AGL Loy Yang Marketing Pty Ltd    LYNL1
 #> 10560                                 AGL Loy Yang Marketing Pty Ltd     LYA3
-#> 10561                                 AGL Loy Yang Marketing Pty Ltd     LYA1
-#> 10562                                 AGL Loy Yang Marketing Pty Ltd    LYNL1
-#> 10563                                 AGL Loy Yang Marketing Pty Ltd     LYA4
-#> 10564                                 AGL Loy Yang Marketing Pty Ltd     LYA2
-#> 10565                                 AGL Loy Yang Marketing Pty Ltd    LYNL1
-#> 10566                                 AGL Loy Yang Marketing Pty Ltd     LYA2
+#> 10561                                 AGL Loy Yang Marketing Pty Ltd     LYA3
+#> 10562                                 AGL Loy Yang Marketing Pty Ltd     LYA1
+#> 10563                                 AGL Loy Yang Marketing Pty Ltd    LYNL1
+#> 10564                                 AGL Loy Yang Marketing Pty Ltd    LYNL1
+#> 10565                                 AGL Loy Yang Marketing Pty Ltd     LYA4
+#> 10566                                 AGL Loy Yang Marketing Pty Ltd    LYNL1
 #> 10567                                 AGL Loy Yang Marketing Pty Ltd     LYA2
-#> 10568                                 AGL Loy Yang Marketing Pty Ltd     LYA1
-#> 10569                                 AGL Loy Yang Marketing Pty Ltd     LYA2
-#> 10570                                 AGL Loy Yang Marketing Pty Ltd    LYNL1
-#> 10571                                 AGL Loy Yang Marketing Pty Ltd     LYA1
+#> 10568                                 AGL Loy Yang Marketing Pty Ltd     LYA2
+#> 10569                                 AGL Loy Yang Marketing Pty Ltd     LYA1
+#> 10570                                 AGL Loy Yang Marketing Pty Ltd     LYA2
+#> 10571                                 AGL Loy Yang Marketing Pty Ltd    LYNL1
 #> 10572                                 AGL Loy Yang Marketing Pty Ltd     LYA2
-#> 10573                                 AGL Loy Yang Marketing Pty Ltd     LYA2
-#> 10574                                 AGL Loy Yang Marketing Pty Ltd    LYNL1
-#> 10575                                 AGL Loy Yang Marketing Pty Ltd     LYA2
+#> 10573                                 AGL Loy Yang Marketing Pty Ltd    LYNL1
+#> 10574                                 AGL Loy Yang Marketing Pty Ltd     LYA2
+#> 10575                                 AGL Loy Yang Marketing Pty Ltd    LYNL1
 #> 10576                                 AGL Loy Yang Marketing Pty Ltd     LYA2
-#> 10577                                 AGL Loy Yang Marketing Pty Ltd    LYNL1
-#> 10578                                 AGL Loy Yang Marketing Pty Ltd     LYA4
-#> 10579                                 AGL Loy Yang Marketing Pty Ltd     LYA2
-#> 10580                                 AGL Loy Yang Marketing Pty Ltd    LYNL1
-#> 10581                                 AGL Loy Yang Marketing Pty Ltd     LYA1
+#> 10577                                 AGL Loy Yang Marketing Pty Ltd     LYA4
+#> 10578                                 AGL Loy Yang Marketing Pty Ltd     LYA2
+#> 10579                                 AGL Loy Yang Marketing Pty Ltd     LYA4
+#> 10580                                 AGL Loy Yang Marketing Pty Ltd     LYA2
+#> 10581                                 AGL Loy Yang Marketing Pty Ltd    LYNL1
 #> 10582                                 AGL Loy Yang Marketing Pty Ltd     LYA1
-#> 10583                                 AGL Loy Yang Marketing Pty Ltd    LYNL1
-#> 10584                                 AGL Loy Yang Marketing Pty Ltd     LYA3
-#> 10585                                 AGL Loy Yang Marketing Pty Ltd    LYNL1
-#> 10586                                 AGL Loy Yang Marketing Pty Ltd     LYA2
-#> 10587                                 AGL Loy Yang Marketing Pty Ltd     LYA4
-#> 10588                                 AGL Loy Yang Marketing Pty Ltd     LYA3
-#> 10589                                 AGL Loy Yang Marketing Pty Ltd     LYA1
-#> 10590                                 AGL Loy Yang Marketing Pty Ltd     LYA1
+#> 10583                                 AGL Loy Yang Marketing Pty Ltd     LYA1
+#> 10584                                 AGL Loy Yang Marketing Pty Ltd     LYA2
+#> 10585                                 AGL Loy Yang Marketing Pty Ltd     LYA1
+#> 10586                                 AGL Loy Yang Marketing Pty Ltd    LYNL1
+#> 10587                                 AGL Loy Yang Marketing Pty Ltd     LYA3
+#> 10588                                 AGL Loy Yang Marketing Pty Ltd     LYA4
+#> 10589                                 AGL Loy Yang Marketing Pty Ltd     LYA3
+#> 10590                                 AGL Loy Yang Marketing Pty Ltd     LYA2
 #> 10591                                 AGL Loy Yang Marketing Pty Ltd    LYNL1
 #> 10592                                 AGL Loy Yang Marketing Pty Ltd    LYNL1
-#> 10593                                 AGL Loy Yang Marketing Pty Ltd     LYA1
-#> 10594                                 AGL Loy Yang Marketing Pty Ltd     LYA3
-#> 10595                                 AGL Loy Yang Marketing Pty Ltd    LYNL1
-#> 10596                                 AGL Loy Yang Marketing Pty Ltd    LYNL1
-#> 10597                                 AGL Loy Yang Marketing Pty Ltd     LYA3
+#> 10593                                 AGL Loy Yang Marketing Pty Ltd    LYNL1
+#> 10594                                 AGL Loy Yang Marketing Pty Ltd     LYA1
+#> 10595                                 AGL Loy Yang Marketing Pty Ltd     LYA1
+#> 10596                                 AGL Loy Yang Marketing Pty Ltd     LYA4
+#> 10597                                 AGL Loy Yang Marketing Pty Ltd    LYNL1
 #> 10598                                 AGL Loy Yang Marketing Pty Ltd     LYA2
-#> 10599                                 AGL Loy Yang Marketing Pty Ltd    LYNL1
-#> 10600                                 AGL Loy Yang Marketing Pty Ltd     LYA4
-#> 10601                                 AGL Loy Yang Marketing Pty Ltd    LYNL1
-#> 10602                                 AGL Loy Yang Marketing Pty Ltd     LYA1
-#> 10603                                 AGL Loy Yang Marketing Pty Ltd     LYA1
-#> 10604                                 AGL Loy Yang Marketing Pty Ltd     LYA2
-#> 10605                                 AGL Loy Yang Marketing Pty Ltd     LYA2
+#> 10599                                 AGL Loy Yang Marketing Pty Ltd     LYA2
+#> 10600                                 AGL Loy Yang Marketing Pty Ltd    LYNL1
+#> 10601                                 AGL Loy Yang Marketing Pty Ltd     LYA2
+#> 10602                                 AGL Loy Yang Marketing Pty Ltd     LYA2
+#> 10603                                 AGL Loy Yang Marketing Pty Ltd     LYA3
+#> 10604                                 AGL Loy Yang Marketing Pty Ltd     LYA1
+#> 10605                                 AGL Loy Yang Marketing Pty Ltd     LYA4
 #> 10606                                 AGL Loy Yang Marketing Pty Ltd    LYNL1
 #> 10607                                 AGL Loy Yang Marketing Pty Ltd     LYA1
-#> 10608                                 AGL Loy Yang Marketing Pty Ltd     LYA2
-#> 10769                                      AGL Macquarie Pty Limited     BW01
-#> 10770                                      AGL Macquarie Pty Limited     LD01
-#> 10771                                      AGL Macquarie Pty Limited     BW03
-#> 10772                                      AGL Macquarie Pty Limited     BW02
-#> 10773                                      AGL Macquarie Pty Limited     BW02
-#> 10774                                      AGL Macquarie Pty Limited     BW02
-#> 10775                                      AGL Macquarie Pty Limited     BW01
-#> 10776                                      AGL Macquarie Pty Limited  LIDDNL1
-#> 10777                                      AGL Macquarie Pty Limited  LIDDNL1
-#> 10778                                      AGL Macquarie Pty Limited     LD02
-#> 10779                                      AGL Macquarie Pty Limited     LD04
-#> 10780                                      AGL Macquarie Pty Limited     LD01
-#> 10781                                      AGL Macquarie Pty Limited     BW02
+#> 10608                                 AGL Loy Yang Marketing Pty Ltd     LYA3
+#> 10609                                 AGL Loy Yang Marketing Pty Ltd     LYA2
+#> 10610                                 AGL Loy Yang Marketing Pty Ltd    LYNL1
+#> 10611                                 AGL Loy Yang Marketing Pty Ltd     LYA1
+#> 10612                                 AGL Loy Yang Marketing Pty Ltd    LYNL1
+#> 10613                                 AGL Loy Yang Marketing Pty Ltd     LYA1
+#> 10614                                 AGL Loy Yang Marketing Pty Ltd     LYA2
+#> 10615                                 AGL Loy Yang Marketing Pty Ltd     LYA2
+#> 10776                                      AGL Macquarie Pty Limited     LD01
+#> 10777                                      AGL Macquarie Pty Limited     BW03
+#> 10778                                      AGL Macquarie Pty Limited  LIDDNL1
+#> 10779                                      AGL Macquarie Pty Limited     BW02
+#> 10780                                      AGL Macquarie Pty Limited     BW02
+#> 10781                                      AGL Macquarie Pty Limited  LIDDNL1
 #> 10782                                      AGL Macquarie Pty Limited     BW02
-#> 10783                                      AGL Macquarie Pty Limited     BW01
-#> 10784                                      AGL Macquarie Pty Limited  TOMAGO3
-#> 10785                                      AGL Macquarie Pty Limited     BW04
-#> 10786                                      AGL Macquarie Pty Limited  TOMAGO2
-#> 10787                                      AGL Macquarie Pty Limited    HVGTS
+#> 10783                                      AGL Macquarie Pty Limited     LD02
+#> 10784                                      AGL Macquarie Pty Limited     LD04
+#> 10785                                      AGL Macquarie Pty Limited     BW01
+#> 10786                                      AGL Macquarie Pty Limited     BW04
+#> 10787                                      AGL Macquarie Pty Limited  TOMAGO2
 #> 10788                                      AGL Macquarie Pty Limited     BW02
-#> 10789                                      AGL Macquarie Pty Limited    HVGTS
-#> 10790                                      AGL Macquarie Pty Limited     BW03
-#> 10791                                      AGL Macquarie Pty Limited     BW01
-#> 10792                                      AGL Macquarie Pty Limited  TOMAGO3
-#> 10793                                      AGL Macquarie Pty Limited     BW04
-#> 10794                                      AGL Macquarie Pty Limited     LD02
-#> 10795                                      AGL Macquarie Pty Limited    HVGTS
-#> 10796                                      AGL Macquarie Pty Limited     LD01
-#> 10797                                      AGL Macquarie Pty Limited    HVGTS
-#> 10798                                      AGL Macquarie Pty Limited     LD01
-#> 10799                                      AGL Macquarie Pty Limited  LIDDNL1
-#> 10800                                      AGL Macquarie Pty Limited     LD04
-#> 10801                                      AGL Macquarie Pty Limited     LD03
-#> 10802                                      AGL Macquarie Pty Limited     BW03
-#> 10803                                      AGL Macquarie Pty Limited  LIDDNL1
-#> 10804                                      AGL Macquarie Pty Limited     LD02
+#> 10789                                      AGL Macquarie Pty Limited     BW02
+#> 10790                                      AGL Macquarie Pty Limited     BW01
+#> 10791                                      AGL Macquarie Pty Limited     BW03
+#> 10792                                      AGL Macquarie Pty Limited    HVGTS
+#> 10793                                      AGL Macquarie Pty Limited  TOMAGO3
+#> 10794                                      AGL Macquarie Pty Limited  TOMAGO3
+#> 10795                                      AGL Macquarie Pty Limited     LD01
+#> 10796                                      AGL Macquarie Pty Limited     BW02
+#> 10797                                      AGL Macquarie Pty Limited     BW01
+#> 10798                                      AGL Macquarie Pty Limited    HVGTS
+#> 10799                                      AGL Macquarie Pty Limited     LD01
+#> 10800                                      AGL Macquarie Pty Limited    HVGTS
+#> 10801                                      AGL Macquarie Pty Limited     LD04
+#> 10802                                      AGL Macquarie Pty Limited     LD03
+#> 10803                                      AGL Macquarie Pty Limited     BW04
+#> 10804                                      AGL Macquarie Pty Limited  LIDDNL1
 #> 10805                                      AGL Macquarie Pty Limited     BW01
-#> 10806                                      AGL Macquarie Pty Limited     BW02
-#> 10807                                      AGL Macquarie Pty Limited     LD03
+#> 10806                                      AGL Macquarie Pty Limited     LD01
+#> 10807                                      AGL Macquarie Pty Limited     BW02
 #> 10808                                      AGL Macquarie Pty Limited    HVGTS
-#> 10809                                      AGL Macquarie Pty Limited     LD04
-#> 10810                                      AGL Macquarie Pty Limited     LD02
-#> 10811                                      AGL Macquarie Pty Limited     BW02
-#> 10812                                      AGL Macquarie Pty Limited     LD01
-#> 10813                                      AGL Macquarie Pty Limited     LD01
-#> 10814                                      AGL Macquarie Pty Limited  LIDDNL1
-#> 10815                                      AGL Macquarie Pty Limited     BW02
-#> 10816                                      AGL Macquarie Pty Limited     BW01
-#> 10817                                      AGL Macquarie Pty Limited  LIDDNL1
-#> 10818                                      AGL Macquarie Pty Limited     BW01
-#> 10819                                      AGL Macquarie Pty Limited     LD02
-#> 10820                                      AGL Macquarie Pty Limited     BW02
-#> 10821                                      AGL Macquarie Pty Limited     BW02
-#> 10822                                      AGL Macquarie Pty Limited     LD03
-#> 10823                                      AGL Macquarie Pty Limited     BW04
-#> 10824                                      AGL Macquarie Pty Limited    HVGTS
-#> 10825                                      AGL Macquarie Pty Limited     BW03
-#> 10826                                      AGL Macquarie Pty Limited     BW02
-#> 10827                                      AGL Macquarie Pty Limited     BW01
-#> 10828                                      AGL Macquarie Pty Limited     BW02
+#> 10809                                      AGL Macquarie Pty Limited    HVGTS
+#> 10810                                      AGL Macquarie Pty Limited     LD04
+#> 10811                                      AGL Macquarie Pty Limited     LD02
+#> 10812                                      AGL Macquarie Pty Limited     BW02
+#> 10813                                      AGL Macquarie Pty Limited  LIDDNL1
+#> 10814                                      AGL Macquarie Pty Limited     LD01
+#> 10815                                      AGL Macquarie Pty Limited  LIDDNL1
+#> 10816                                      AGL Macquarie Pty Limited     BW03
+#> 10817                                      AGL Macquarie Pty Limited     BW01
+#> 10818                                      AGL Macquarie Pty Limited     LD02
+#> 10819                                      AGL Macquarie Pty Limited     BW01
+#> 10820                                      AGL Macquarie Pty Limited     LD02
+#> 10821                                      AGL Macquarie Pty Limited     LD02
+#> 10822                                      AGL Macquarie Pty Limited     BW02
+#> 10823                                      AGL Macquarie Pty Limited     LD03
+#> 10824                                      AGL Macquarie Pty Limited     BW04
+#> 10825                                      AGL Macquarie Pty Limited    HVGTS
+#> 10826                                      AGL Macquarie Pty Limited     LD01
+#> 10827                                      AGL Macquarie Pty Limited     BW02
+#> 10828                                      AGL Macquarie Pty Limited     BW01
 #> 10829                                      AGL Macquarie Pty Limited     BW02
-#> 10830                                      AGL Macquarie Pty Limited    HVGTS
-#> 10831                                      AGL Macquarie Pty Limited  TOMAGO3
-#> 10832                                      AGL Macquarie Pty Limited     LD01
-#> 10833                                      AGL Macquarie Pty Limited  TOMAGO2
-#> 10834                                      AGL Macquarie Pty Limited     LD04
-#> 10835                                      AGL Macquarie Pty Limited     LD02
-#> 10836                                      AGL Macquarie Pty Limited     LD03
-#> 10837                                      AGL Macquarie Pty Limited     BW02
-#> 10838                                      AGL Macquarie Pty Limited     BW03
-#> 10839                                      AGL Macquarie Pty Limited     BW01
-#> 10840                                      AGL Macquarie Pty Limited     LD01
-#> 10841                                      AGL Macquarie Pty Limited  TOMAGO3
-#> 10842                                      AGL Macquarie Pty Limited    HVGTS
-#> 10843                                      AGL Macquarie Pty Limited     BW01
-#> 10844                                      AGL Macquarie Pty Limited     LD02
-#> 10845                                      AGL Macquarie Pty Limited     BHB1
-#> 10846                                      AGL Macquarie Pty Limited  LIDDNL1
-#> 10847                                      AGL Macquarie Pty Limited     BHB1
-#> 10848                                      AGL Macquarie Pty Limited    HVGTS
-#> 10849                                      AGL Macquarie Pty Limited     LD03
-#> 10850                                      AGL Macquarie Pty Limited  LIDDNL1
-#> 10851                                      AGL Macquarie Pty Limited     BHB1
-#> 10852                                      AGL Macquarie Pty Limited     BW02
-#> 10853                                      AGL Macquarie Pty Limited     LD01
-#> 10854                                      AGL Macquarie Pty Limited     LD02
-#> 10855                                      AGL Macquarie Pty Limited    HVGTS
-#> 10856                                      AGL Macquarie Pty Limited     BW01
-#> 10857                                      AGL Macquarie Pty Limited  LIDDNL1
-#> 10858                                      AGL Macquarie Pty Limited    HVGTS
+#> 10830                                      AGL Macquarie Pty Limited     BW02
+#> 10831                                      AGL Macquarie Pty Limited  LIDDNL1
+#> 10832                                      AGL Macquarie Pty Limited     BW01
+#> 10833                                      AGL Macquarie Pty Limited     LD01
+#> 10834                                      AGL Macquarie Pty Limited     LD03
+#> 10835                                      AGL Macquarie Pty Limited     LD04
+#> 10836                                      AGL Macquarie Pty Limited     LD02
+#> 10837                                      AGL Macquarie Pty Limited     LD03
+#> 10838                                      AGL Macquarie Pty Limited     BW02
+#> 10839                                      AGL Macquarie Pty Limited     BW03
+#> 10840                                      AGL Macquarie Pty Limited     BW01
+#> 10841                                      AGL Macquarie Pty Limited     LD01
+#> 10842                                      AGL Macquarie Pty Limited     BW02
+#> 10843                                      AGL Macquarie Pty Limited    HVGTS
+#> 10844                                      AGL Macquarie Pty Limited    HVGTS
+#> 10845                                      AGL Macquarie Pty Limited  TOMAGO3
+#> 10846                                      AGL Macquarie Pty Limited     BHB1
+#> 10847                                      AGL Macquarie Pty Limited     BW02
+#> 10848                                      AGL Macquarie Pty Limited     BHB1
+#> 10849                                      AGL Macquarie Pty Limited    HVGTS
+#> 10850                                      AGL Macquarie Pty Limited     LD03
+#> 10851                                      AGL Macquarie Pty Limited  LIDDNL1
+#> 10852                                      AGL Macquarie Pty Limited     BW03
+#> 10853                                      AGL Macquarie Pty Limited     BW02
+#> 10854                                      AGL Macquarie Pty Limited     LD01
+#> 10855                                      AGL Macquarie Pty Limited  TOMAGO3
+#> 10856                                      AGL Macquarie Pty Limited    HVGTS
+#> 10857                                      AGL Macquarie Pty Limited     BW01
+#> 10858                                      AGL Macquarie Pty Limited     LD02
 #> 10859                                      AGL Macquarie Pty Limited    HVGTS
-#> 10860                                      AGL Macquarie Pty Limited     LD02
-#> 10861                                      AGL Macquarie Pty Limited     LD01
-#> 10862                                      AGL Macquarie Pty Limited  TOMAGO2
-#> 10863                                      AGL Macquarie Pty Limited     LD04
-#> 10864                                      AGL Macquarie Pty Limited     LD03
-#> 10865                                      AGL Macquarie Pty Limited     LD02
-#> 10866                                      AGL Macquarie Pty Limited  LIDDNL1
-#> 10867                                      AGL Macquarie Pty Limited  TOMAGO3
+#> 10860                                      AGL Macquarie Pty Limited  TOMAGO2
+#> 10861                                      AGL Macquarie Pty Limited     LD02
+#> 10862                                      AGL Macquarie Pty Limited     LD01
+#> 10863                                      AGL Macquarie Pty Limited  TOMAGO2
+#> 10864                                      AGL Macquarie Pty Limited     LD04
+#> 10865                                      AGL Macquarie Pty Limited     BHB1
+#> 10866                                      AGL Macquarie Pty Limited     LD02
+#> 10867                                      AGL Macquarie Pty Limited  LIDDNL1
 #> 10868                                      AGL Macquarie Pty Limited     LD02
-#> 10869                                      AGL Macquarie Pty Limited     LD01
-#> 10870                                      AGL Macquarie Pty Limited  TOMAGO3
+#> 10869                                      AGL Macquarie Pty Limited     LD02
+#> 10870                                      AGL Macquarie Pty Limited     BW01
 #> 10871                                      AGL Macquarie Pty Limited  LIDDNL1
-#> 10872                                      AGL Macquarie Pty Limited     LD01
-#> 10873                                      AGL Macquarie Pty Limited     LD01
-#> 10874                                      AGL Macquarie Pty Limited  TOMAGO2
-#> 10875                                      AGL Macquarie Pty Limited     BW02
-#> 10876                                      AGL Macquarie Pty Limited     LD04
-#> 10877                                      AGL Macquarie Pty Limited     LD02
-#> 10878                                      AGL Macquarie Pty Limited     LD04
-#> 10879                                      AGL Macquarie Pty Limited  LIDDNL1
-#> 10880                                      AGL Macquarie Pty Limited     LD02
-#> 10881                                      AGL Macquarie Pty Limited     LD02
-#> 10882                                      AGL Macquarie Pty Limited     LD01
-#> 10883                                      AGL Macquarie Pty Limited     BW01
+#> 10872                                      AGL Macquarie Pty Limited  LIDDNL1
+#> 10873                                      AGL Macquarie Pty Limited  LIDDNL1
+#> 10874                                      AGL Macquarie Pty Limited     LD01
+#> 10875                                      AGL Macquarie Pty Limited  TOMAGO2
+#> 10876                                      AGL Macquarie Pty Limited     BW02
+#> 10877                                      AGL Macquarie Pty Limited     LD04
+#> 10878                                      AGL Macquarie Pty Limited     LD03
+#> 10879                                      AGL Macquarie Pty Limited     LD04
+#> 10880                                      AGL Macquarie Pty Limited  LIDDNL1
+#> 10881                                      AGL Macquarie Pty Limited  TOMAGO3
+#> 10882                                      AGL Macquarie Pty Limited     LD02
+#> 10883                                      AGL Macquarie Pty Limited     LD01
 #> 10884                                      AGL Macquarie Pty Limited  TOMAGO3
 #> 10885                                      AGL Macquarie Pty Limited  TOMAGO3
-#> 10886                                      AGL Macquarie Pty Limited     BW04
-#> 10887                                      AGL Macquarie Pty Limited     LD01
-#> 10888                                      AGL Macquarie Pty Limited  TOMAGO2
-#> 10889                                      AGL Macquarie Pty Limited  LIDDNL1
-#> 10890                                      AGL Macquarie Pty Limited     BW01
-#> 10891                                      AGL Macquarie Pty Limited     BW04
-#> 10892                                      AGL Macquarie Pty Limited     LD01
-#> 10893                                      AGL Macquarie Pty Limited     LD02
-#> 10894                                      AGL Macquarie Pty Limited  LIDDNL1
-#> 10895                                      AGL Macquarie Pty Limited  TOMAGO3
-#> 10896                                      AGL Macquarie Pty Limited     BW01
-#> 10897                                      AGL Macquarie Pty Limited     LD01
-#> 10898                                      AGL Macquarie Pty Limited     LD03
-#> 10899                                      AGL Macquarie Pty Limited     BW03
-#> 10900                                      AGL Macquarie Pty Limited     BW02
-#> 10901                                      AGL Macquarie Pty Limited     LD01
-#> 10902                                      AGL Macquarie Pty Limited  LIDDNL1
-#> 10903                                      AGL Macquarie Pty Limited     BW02
-#> 10904                                      AGL Macquarie Pty Limited  LIDDNL1
-#> 10905                                      AGL Macquarie Pty Limited     LD04
-#> 10906                                      AGL Macquarie Pty Limited     BW01
+#> 10886                                      AGL Macquarie Pty Limited    HVGTS
+#> 10887                                      AGL Macquarie Pty Limited     BW04
+#> 10888                                      AGL Macquarie Pty Limited     LD01
+#> 10889                                      AGL Macquarie Pty Limited  TOMAGO2
+#> 10890                                      AGL Macquarie Pty Limited  LIDDNL1
+#> 10891                                      AGL Macquarie Pty Limited     LD02
+#> 10892                                      AGL Macquarie Pty Limited     BW04
+#> 10893                                      AGL Macquarie Pty Limited     LD01
+#> 10894                                      AGL Macquarie Pty Limited     LD02
+#> 10895                                      AGL Macquarie Pty Limited  LIDDNL1
+#> 10896                                      AGL Macquarie Pty Limited     LD01
+#> 10897                                      AGL Macquarie Pty Limited     BW01
+#> 10898                                      AGL Macquarie Pty Limited     LD01
+#> 10899                                      AGL Macquarie Pty Limited     LD01
+#> 10900                                      AGL Macquarie Pty Limited     BW03
+#> 10901                                      AGL Macquarie Pty Limited     BW02
+#> 10902                                      AGL Macquarie Pty Limited     LD01
+#> 10903                                      AGL Macquarie Pty Limited  LIDDNL1
+#> 10904                                      AGL Macquarie Pty Limited     BW01
+#> 10905                                      AGL Macquarie Pty Limited  LIDDNL1
+#> 10906                                      AGL Macquarie Pty Limited     LD04
 #> 10907                                      AGL Macquarie Pty Limited     LD02
 #> 10908                                      AGL Macquarie Pty Limited     LD02
-#> 10909                                      AGL Macquarie Pty Limited    HVGTS
+#> 10909                                      AGL Macquarie Pty Limited  TOMAGO3
 #> 10910                                      AGL Macquarie Pty Limited     BW01
-#> 10911                                      AGL Macquarie Pty Limited     LD01
-#> 10912                                      AGL Macquarie Pty Limited     LD01
-#> 10913                                      AGL Macquarie Pty Limited     LD03
-#> 10914                                      AGL Macquarie Pty Limited     LD04
-#> 10915                                      AGL Macquarie Pty Limited     LD02
+#> 10911                                      AGL Macquarie Pty Limited     BW01
+#> 10912                                      AGL Macquarie Pty Limited  TOMAGO3
+#> 10913                                      AGL Macquarie Pty Limited     LD01
+#> 10914                                      AGL Macquarie Pty Limited     LD03
+#> 10915                                      AGL Macquarie Pty Limited     LD04
 #> 10916                                      AGL Macquarie Pty Limited     LD02
-#> 10917                                      AGL Macquarie Pty Limited    HVGTS
-#> 10918                                      AGL Macquarie Pty Limited     LD03
-#> 10919                                      AGL Macquarie Pty Limited     BW04
-#> 10920                                      AGL Macquarie Pty Limited  LIDDNL1
-#> 10921                                      AGL Macquarie Pty Limited  TOMAGO3
-#> 10922                                      AGL Macquarie Pty Limited     LD03
-#> 10923                                      AGL Macquarie Pty Limited  LIDDNL1
-#> 10924                                      AGL Macquarie Pty Limited     LD03
+#> 10917                                      AGL Macquarie Pty Limited     BW02
+#> 10918                                      AGL Macquarie Pty Limited    HVGTS
+#> 10919                                      AGL Macquarie Pty Limited     LD03
+#> 10920                                      AGL Macquarie Pty Limited     BW01
+#> 10921                                      AGL Macquarie Pty Limited  LIDDNL1
+#> 10922                                      AGL Macquarie Pty Limited     LD02
+#> 10923                                      AGL Macquarie Pty Limited    HVGTS
+#> 10924                                      AGL Macquarie Pty Limited  LIDDNL1
 #> 10925                                      AGL Macquarie Pty Limited     LD03
 #> 10926                                      AGL Macquarie Pty Limited     LD03
-#> 10927                                      AGL Macquarie Pty Limited    HVGTS
-#> 10928                                      AGL Macquarie Pty Limited  TOMAGO2
-#> 10929                                      AGL Macquarie Pty Limited     BW03
-#> 10930                                      AGL Macquarie Pty Limited     BW04
-#> 10931                                      AGL Macquarie Pty Limited     LD02
-#> 10932                                      AGL Macquarie Pty Limited     BW03
-#> 10933                                      AGL Macquarie Pty Limited     LD03
-#> 10934                                      AGL Macquarie Pty Limited    HVGTS
-#> 10935                                      AGL Macquarie Pty Limited     BW01
-#> 10936                                      AGL Macquarie Pty Limited     BW03
-#> 10937                                      AGL Macquarie Pty Limited  TOMAGO3
-#> 10938                                      AGL Macquarie Pty Limited     LD02
-#> 10939                                      AGL Macquarie Pty Limited     BW04
-#> 10940                                      AGL Macquarie Pty Limited     BW02
-#> 10941                                      AGL Macquarie Pty Limited     BW03
-#> 10942                                      AGL Macquarie Pty Limited     LD02
-#> 10943                                      AGL Macquarie Pty Limited     BW02
+#> 10927                                      AGL Macquarie Pty Limited     LD03
+#> 10928                                      AGL Macquarie Pty Limited    HVGTS
+#> 10929                                      AGL Macquarie Pty Limited  TOMAGO2
+#> 10930                                      AGL Macquarie Pty Limited     LD02
+#> 10931                                      AGL Macquarie Pty Limited     BW04
+#> 10932                                      AGL Macquarie Pty Limited     LD02
+#> 10933                                      AGL Macquarie Pty Limited     BW04
+#> 10934                                      AGL Macquarie Pty Limited     LD03
+#> 10935                                      AGL Macquarie Pty Limited  TOMAGO3
+#> 10936                                      AGL Macquarie Pty Limited     LD03
+#> 10937                                      AGL Macquarie Pty Limited     BW03
+#> 10938                                      AGL Macquarie Pty Limited     LD01
+#> 10939                                      AGL Macquarie Pty Limited     LD02
+#> 10940                                      AGL Macquarie Pty Limited     BW04
+#> 10941                                      AGL Macquarie Pty Limited     BW02
+#> 10942                                      AGL Macquarie Pty Limited     BW03
+#> 10943                                      AGL Macquarie Pty Limited     BW03
 #> 10944                                      AGL Macquarie Pty Limited     BW02
-#> 10945                                      AGL Macquarie Pty Limited  TOMAGO2
+#> 10945                                      AGL Macquarie Pty Limited     BW02
 #> 10946                                      AGL Macquarie Pty Limited     BW03
-#> 10947                                      AGL Macquarie Pty Limited     LD03
-#> 10948                                      AGL Macquarie Pty Limited  LIDDNL1
-#> 10949                                      AGL Macquarie Pty Limited  TOMAGO3
-#> 10950                                      AGL Macquarie Pty Limited     LD01
-#> 10951                                      AGL Macquarie Pty Limited     BW03
-#> 10952                                      AGL Macquarie Pty Limited    BHBL1
-#> 10953                                      AGL Macquarie Pty Limited     BW03
-#> 10954                                      AGL Macquarie Pty Limited  TOMAGO2
-#> 10955                                      AGL Macquarie Pty Limited     LD01
-#> 10956                                      AGL Macquarie Pty Limited     BW02
-#> 10957                                      AGL Macquarie Pty Limited  TOMAGO2
-#> 10958                                      AGL Macquarie Pty Limited  LIDDNL1
-#> 10959                                      AGL Macquarie Pty Limited     BW03
+#> 10947                                      AGL Macquarie Pty Limited     BW03
+#> 10948                                      AGL Macquarie Pty Limited    HVGTS
+#> 10949                                      AGL Macquarie Pty Limited     BW01
+#> 10950                                      AGL Macquarie Pty Limited  TOMAGO3
+#> 10951                                      AGL Macquarie Pty Limited     LD03
+#> 10952                                      AGL Macquarie Pty Limited     BW03
+#> 10953                                      AGL Macquarie Pty Limited    BHBL1
+#> 10954                                      AGL Macquarie Pty Limited     BW03
+#> 10955                                      AGL Macquarie Pty Limited  TOMAGO2
+#> 10956                                      AGL Macquarie Pty Limited     LD02
+#> 10957                                      AGL Macquarie Pty Limited     BW02
+#> 10958                                      AGL Macquarie Pty Limited  TOMAGO2
+#> 10959                                      AGL Macquarie Pty Limited  TOMAGO2
 #> 10960                                      AGL Macquarie Pty Limited     BW03
-#> 10961                                      AGL Macquarie Pty Limited  TOMAGO3
-#> 10962                                      AGL Macquarie Pty Limited     LD02
-#> 10963                                      AGL Macquarie Pty Limited     BW02
-#> 10964                                      AGL Macquarie Pty Limited     LD02
-#> 10965                                      AGL Macquarie Pty Limited     BW01
-#> 10966                                      AGL Macquarie Pty Limited     LD02
-#> 10967                                      AGL Macquarie Pty Limited     LD01
-#> 10968                                      AGL Macquarie Pty Limited     BW02
-#> 10969                                      AGL Macquarie Pty Limited     BW03
-#> 10970                                      AGL Macquarie Pty Limited  LIDDNL1
-#> 10971                                      AGL Macquarie Pty Limited    BHBG1
-#> 10972                                      AGL Macquarie Pty Limited     LD01
-#> 10973                                      AGL Macquarie Pty Limited  LIDDNL1
-#> 10974                                      AGL Macquarie Pty Limited  LIDDNL1
-#> 10975                                      AGL Macquarie Pty Limited     BW03
-#> 10976                                      AGL Macquarie Pty Limited     LD04
-#> 10977                                      AGL Macquarie Pty Limited    BHBG1
-#> 10978                                      AGL Macquarie Pty Limited     LD01
-#> 10979                                      AGL Macquarie Pty Limited     BW03
-#> 10980                                      AGL Macquarie Pty Limited  TOMAGO2
-#> 10981                                      AGL Macquarie Pty Limited     BW04
-#> 10982                                      AGL Macquarie Pty Limited  LIDDNL1
-#> 10983                                      AGL Macquarie Pty Limited     BW03
-#> 10984                                      AGL Macquarie Pty Limited     LD02
-#> 10985                                      AGL Macquarie Pty Limited     LD02
+#> 10961                                      AGL Macquarie Pty Limited     LD03
+#> 10962                                      AGL Macquarie Pty Limited  LIDDNL1
+#> 10963                                      AGL Macquarie Pty Limited     LD02
+#> 10964                                      AGL Macquarie Pty Limited  TOMAGO3
+#> 10965                                      AGL Macquarie Pty Limited     LD02
+#> 10966                                      AGL Macquarie Pty Limited     BW01
+#> 10967                                      AGL Macquarie Pty Limited     LD02
+#> 10968                                      AGL Macquarie Pty Limited     LD01
+#> 10969                                      AGL Macquarie Pty Limited     LD01
+#> 10970                                      AGL Macquarie Pty Limited     BW03
+#> 10971                                      AGL Macquarie Pty Limited  LIDDNL1
+#> 10972                                      AGL Macquarie Pty Limited  LIDDNL1
+#> 10973                                      AGL Macquarie Pty Limited     LD01
+#> 10974                                      AGL Macquarie Pty Limited     BW03
+#> 10975                                      AGL Macquarie Pty Limited  TOMAGO3
+#> 10976                                      AGL Macquarie Pty Limited     BW03
+#> 10977                                      AGL Macquarie Pty Limited     LD01
+#> 10978                                      AGL Macquarie Pty Limited    BHBG1
+#> 10979                                      AGL Macquarie Pty Limited     LD01
+#> 10980                                      AGL Macquarie Pty Limited     BW03
+#> 10981                                      AGL Macquarie Pty Limited  TOMAGO2
+#> 10982                                      AGL Macquarie Pty Limited     BW02
+#> 10983                                      AGL Macquarie Pty Limited  LIDDNL1
+#> 10984                                      AGL Macquarie Pty Limited     BW03
+#> 10985                                      AGL Macquarie Pty Limited    BHBG1
 #> 10986                                      AGL Macquarie Pty Limited     LD02
-#> 10987                                      AGL Macquarie Pty Limited     BW03
-#> 10988                                      AGL Macquarie Pty Limited  TOMAGO3
-#> 10989                                      AGL Macquarie Pty Limited  TOMAGO2
-#> 10990                                      AGL Macquarie Pty Limited  TOMAGO3
+#> 10987                                      AGL Macquarie Pty Limited  LIDDNL1
+#> 10988                                      AGL Macquarie Pty Limited  LIDDNL1
+#> 10989                                      AGL Macquarie Pty Limited  TOMAGO3
+#> 10990                                      AGL Macquarie Pty Limited     BW02
 #> 10991                                      AGL Macquarie Pty Limited  TOMAGO3
-#> 10992                                      AGL Macquarie Pty Limited     LD01
-#> 10993                                      AGL Macquarie Pty Limited     BW04
-#> 10994                                      AGL Macquarie Pty Limited     BW01
-#> 10995                                      AGL Macquarie Pty Limited     BW01
-#> 10996                                      AGL Macquarie Pty Limited     LD04
-#> 10997                                      AGL Macquarie Pty Limited  TOMAGO3
-#> 10998                                      AGL Macquarie Pty Limited     LD01
-#> 10999                                      AGL Macquarie Pty Limited     BW03
-#> 11000                                      AGL Macquarie Pty Limited     BW02
-#> 11001                                      AGL Macquarie Pty Limited     LD02
-#> 11002                                      AGL Macquarie Pty Limited     BW03
-#> 11003                                      AGL Macquarie Pty Limited     LD02
-#> 11004                                      AGL Macquarie Pty Limited  LIDDNL1
-#> 11005                                      AGL Macquarie Pty Limited     BW03
-#> 11006                                      AGL Macquarie Pty Limited     BW01
-#> 11007                                      AGL Macquarie Pty Limited  TOMAGO2
-#> 11008                                      AGL Macquarie Pty Limited     BW01
-#> 11009                                      AGL Macquarie Pty Limited     BW02
-#> 11010                                      AGL Macquarie Pty Limited     LD02
-#> 11011                                      AGL Macquarie Pty Limited     BW01
-#> 11012                                      AGL Macquarie Pty Limited     BW02
-#> 11013                                      AGL Macquarie Pty Limited     BW02
-#> 11014                                      AGL Macquarie Pty Limited   BAYNL1
-#> 11015                                      AGL Macquarie Pty Limited     BW03
-#> 11016                                      AGL Macquarie Pty Limited     BW03
-#> 11017                                      AGL Macquarie Pty Limited  TOMAGO2
-#> 11018                                      AGL Macquarie Pty Limited    BHBG1
+#> 10992                                      AGL Macquarie Pty Limited  TOMAGO3
+#> 10993                                      AGL Macquarie Pty Limited     LD01
+#> 10994                                      AGL Macquarie Pty Limited     BW04
+#> 10995                                      AGL Macquarie Pty Limited     BW04
+#> 10996                                      AGL Macquarie Pty Limited     BW01
+#> 10997                                      AGL Macquarie Pty Limited     LD04
+#> 10998                                      AGL Macquarie Pty Limited     LD02
+#> 10999                                      AGL Macquarie Pty Limited     LD01
+#> 11000                                      AGL Macquarie Pty Limited     LD02
+#> 11001                                      AGL Macquarie Pty Limited     BW03
+#> 11002                                      AGL Macquarie Pty Limited     LD02
+#> 11003                                      AGL Macquarie Pty Limited     LD04
+#> 11004                                      AGL Macquarie Pty Limited     LD02
+#> 11005                                      AGL Macquarie Pty Limited  LIDDNL1
+#> 11006                                      AGL Macquarie Pty Limited     BW03
+#> 11007                                      AGL Macquarie Pty Limited     BW01
+#> 11008                                      AGL Macquarie Pty Limited  TOMAGO2
+#> 11009                                      AGL Macquarie Pty Limited     BW01
+#> 11010                                      AGL Macquarie Pty Limited     BW02
+#> 11011                                      AGL Macquarie Pty Limited  TOMAGO3
+#> 11012                                      AGL Macquarie Pty Limited     BW01
+#> 11013                                      AGL Macquarie Pty Limited     BW03
+#> 11014                                      AGL Macquarie Pty Limited     BW02
+#> 11015                                      AGL Macquarie Pty Limited   BAYNL1
+#> 11016                                      AGL Macquarie Pty Limited  TOMAGO2
+#> 11017                                      AGL Macquarie Pty Limited     BW03
+#> 11018                                      AGL Macquarie Pty Limited  TOMAGO2
 #> 11019                                      AGL Macquarie Pty Limited    BHBG1
-#> 11020                                      AGL Macquarie Pty Limited     LD03
-#> 11021                                      AGL Macquarie Pty Limited     BW04
-#> 11022                                      AGL Macquarie Pty Limited     LD01
-#> 11023                                      AGL Macquarie Pty Limited  TOMAGO2
-#> 11024                                      AGL Macquarie Pty Limited  TOMAGO1
-#> 11025                                      AGL Macquarie Pty Limited     BW03
-#> 11026                                      AGL Macquarie Pty Limited  LIDDNL1
-#> 11027                                      AGL Macquarie Pty Limited     LD02
-#> 11028                                      AGL Macquarie Pty Limited  TOMAGO2
+#> 11020                                      AGL Macquarie Pty Limited    BHBG1
+#> 11021                                      AGL Macquarie Pty Limited     LD03
+#> 11022                                      AGL Macquarie Pty Limited     BW04
+#> 11023                                      AGL Macquarie Pty Limited     LD01
+#> 11024                                      AGL Macquarie Pty Limited     LD02
+#> 11025                                      AGL Macquarie Pty Limited  TOMAGO1
+#> 11026                                      AGL Macquarie Pty Limited     BW02
+#> 11027                                      AGL Macquarie Pty Limited     BW02
+#> 11028                                      AGL Macquarie Pty Limited     LD02
 #> 11029                                      AGL Macquarie Pty Limited     BW03
-#> 11030                                      AGL Macquarie Pty Limited     LD02
-#> 11031                                      AGL Macquarie Pty Limited  TOMAGO3
-#> 11032                                      AGL Macquarie Pty Limited     LD04
-#> 11033                                      AGL Macquarie Pty Limited     BW01
-#> 11034                                      AGL Macquarie Pty Limited  TOMAGO1
-#> 11035                                      AGL Macquarie Pty Limited     LD03
+#> 11030                                      AGL Macquarie Pty Limited     BW03
+#> 11031                                      AGL Macquarie Pty Limited     LD02
+#> 11032                                      AGL Macquarie Pty Limited  TOMAGO3
+#> 11033                                      AGL Macquarie Pty Limited     LD04
+#> 11034                                      AGL Macquarie Pty Limited     BW01
+#> 11035                                      AGL Macquarie Pty Limited     BW01
 #> 11036                                      AGL Macquarie Pty Limited     LD03
-#> 11037                                      AGL Macquarie Pty Limited     BW03
-#> 11038                                      AGL Macquarie Pty Limited     LD02
-#> 11039                                      AGL Macquarie Pty Limited     LD04
-#> 11040                                      AGL Macquarie Pty Limited     BW03
-#> 11041                                      AGL Macquarie Pty Limited     LD02
-#> 11042                                      AGL Macquarie Pty Limited     LD01
-#> 11043                                      AGL Macquarie Pty Limited     BW02
+#> 11037                                      AGL Macquarie Pty Limited  TOMAGO2
+#> 11038                                      AGL Macquarie Pty Limited     BW03
+#> 11039                                      AGL Macquarie Pty Limited     BW03
+#> 11040                                      AGL Macquarie Pty Limited  LIDDNL1
+#> 11041                                      AGL Macquarie Pty Limited     BW03
+#> 11042                                      AGL Macquarie Pty Limited     BW03
+#> 11043                                      AGL Macquarie Pty Limited     LD01
 #> 11044                                      AGL Macquarie Pty Limited     BW02
-#> 11045                                      AGL Macquarie Pty Limited  LIDDNL1
-#> 11046                                      AGL Macquarie Pty Limited     LD01
-#> 11047                                      AGL Macquarie Pty Limited  LIDDNL1
-#> 11048                                      AGL Macquarie Pty Limited  TOMAGO2
-#> 11049                                      AGL Macquarie Pty Limited     BW02
+#> 11045                                      AGL Macquarie Pty Limited     BW02
+#> 11046                                      AGL Macquarie Pty Limited  LIDDNL1
+#> 11047                                      AGL Macquarie Pty Limited     LD01
+#> 11048                                      AGL Macquarie Pty Limited  LIDDNL1
+#> 11049                                      AGL Macquarie Pty Limited  TOMAGO2
 #> 11050                                      AGL Macquarie Pty Limited     LD03
-#> 11051                                      AGL Macquarie Pty Limited     LD02
-#> 11052                                      AGL Macquarie Pty Limited     BW01
-#> 11053                                      AGL Macquarie Pty Limited     LD02
-#> 11054                                      AGL Macquarie Pty Limited   BAYNL1
-#> 11055                                      AGL Macquarie Pty Limited     BW04
-#> 11056                                      AGL Macquarie Pty Limited     LD04
-#> 11057                                      AGL Macquarie Pty Limited     BW03
-#> 11058                                      AGL Macquarie Pty Limited     LD03
-#> 11059                                      AGL Macquarie Pty Limited     BW03
-#> 11060                                      AGL Macquarie Pty Limited    BHBL1
-#> 11061                                      AGL Macquarie Pty Limited     LD03
-#> 11062                                      AGL Macquarie Pty Limited     BW03
-#> 11063                                      AGL Macquarie Pty Limited     LD02
-#> 11064                                      AGL Macquarie Pty Limited  LIDDNL1
-#> 11065                                      AGL Macquarie Pty Limited  TOMAGO2
-#> 11066                                      AGL Macquarie Pty Limited     LD01
+#> 11051                                      AGL Macquarie Pty Limited     LD03
+#> 11052                                      AGL Macquarie Pty Limited     LD02
+#> 11053                                      AGL Macquarie Pty Limited     LD04
+#> 11054                                      AGL Macquarie Pty Limited     LD02
+#> 11055                                      AGL Macquarie Pty Limited     LD02
+#> 11056                                      AGL Macquarie Pty Limited  TOMAGO2
+#> 11057                                      AGL Macquarie Pty Limited     LD04
+#> 11058                                      AGL Macquarie Pty Limited     BW03
+#> 11059                                      AGL Macquarie Pty Limited     LD03
+#> 11060                                      AGL Macquarie Pty Limited     BW03
+#> 11061                                      AGL Macquarie Pty Limited    BHBL1
+#> 11062                                      AGL Macquarie Pty Limited     LD03
+#> 11063                                      AGL Macquarie Pty Limited     BW02
+#> 11064                                      AGL Macquarie Pty Limited     LD02
+#> 11065                                      AGL Macquarie Pty Limited     LD02
+#> 11066                                      AGL Macquarie Pty Limited     BW01
 #> 11067                                      AGL Macquarie Pty Limited     LD01
 #> 11068                                      AGL Macquarie Pty Limited   BAYNL1
-#> 11069                                      AGL Macquarie Pty Limited  TOMAGO1
-#> 11070                                      AGL Macquarie Pty Limited     BW01
-#> 11071                                      AGL Macquarie Pty Limited     LD04
-#> 11072                                      AGL Macquarie Pty Limited     BW02
-#> 11073                                      AGL Macquarie Pty Limited  LIDDNL1
-#> 11074                                      AGL Macquarie Pty Limited     LD02
-#> 11075                                      AGL Macquarie Pty Limited  LIDDNL1
-#> 11076                                      AGL Macquarie Pty Limited     LD03
+#> 11069                                      AGL Macquarie Pty Limited   BAYNL1
+#> 11070                                      AGL Macquarie Pty Limited     BW04
+#> 11071                                      AGL Macquarie Pty Limited     BW01
+#> 11072                                      AGL Macquarie Pty Limited     LD04
+#> 11073                                      AGL Macquarie Pty Limited     BW02
+#> 11074                                      AGL Macquarie Pty Limited  LIDDNL1
+#> 11075                                      AGL Macquarie Pty Limited  TOMAGO1
+#> 11076                                      AGL Macquarie Pty Limited     BW03
 #> 11077                                      AGL Macquarie Pty Limited     LD03
 #> 11078                                      AGL Macquarie Pty Limited  LIDDNL1
-#> 11079                                      AGL Macquarie Pty Limited     BW03
-#> 11080                                      AGL Macquarie Pty Limited   BAYNL1
-#> 11081                                      AGL Macquarie Pty Limited     LD01
-#> 11082                                      AGL Macquarie Pty Limited     BW04
-#> 11083                                      AGL Macquarie Pty Limited     BW02
-#> 11084                                      AGL Macquarie Pty Limited     BW03
-#> 11085                                      AGL Macquarie Pty Limited  LIDDNL1
-#> 11086                                      AGL Macquarie Pty Limited     BW02
-#> 11087                                      AGL Macquarie Pty Limited     LD01
-#> 11088                                      AGL Macquarie Pty Limited     BW04
-#> 11089                                      AGL Macquarie Pty Limited     LD04
-#> 11090                                      AGL Macquarie Pty Limited  LIDDNL1
-#> 11091                                      AGL Macquarie Pty Limited     BW02
-#> 11092                                      AGL Macquarie Pty Limited     LD03
-#> 11093                                      AGL Macquarie Pty Limited  LIDDNL1
-#> 11094                                      AGL Macquarie Pty Limited     BW04
-#> 11095                                      AGL Macquarie Pty Limited  TOMAGO1
-#> 11096                                      AGL Macquarie Pty Limited   BAYNL1
-#> 11097                                      AGL Macquarie Pty Limited     LD04
-#> 11098                                      AGL Macquarie Pty Limited  TOMAGO2
-#> 11099                                      AGL Macquarie Pty Limited     LD04
-#> 11100                                      AGL Macquarie Pty Limited     LD01
-#> 11101                                      AGL Macquarie Pty Limited  TOMAGO1
-#> 11102                                      AGL Macquarie Pty Limited  TOMAGO1
-#> 11103                                      AGL Macquarie Pty Limited    BHBL1
-#> 11104                                      AGL Macquarie Pty Limited     BW01
-#> 11105                                      AGL Macquarie Pty Limited     BHB1
-#> 11106                                      AGL Macquarie Pty Limited  TOMAGO1
-#> 11107                                      AGL Macquarie Pty Limited  LIDDNL1
-#> 11108                                      AGL Macquarie Pty Limited     BW04
-#> 11109                                      AGL Macquarie Pty Limited  LIDDNL1
+#> 11079                                      AGL Macquarie Pty Limited  TOMAGO2
+#> 11080                                      AGL Macquarie Pty Limited     BW03
+#> 11081                                      AGL Macquarie Pty Limited   BAYNL1
+#> 11082                                      AGL Macquarie Pty Limited     LD01
+#> 11083                                      AGL Macquarie Pty Limited     BW04
+#> 11084                                      AGL Macquarie Pty Limited     BW02
+#> 11085                                      AGL Macquarie Pty Limited     BW03
+#> 11086                                      AGL Macquarie Pty Limited  LIDDNL1
+#> 11087                                      AGL Macquarie Pty Limited     BW02
+#> 11088                                      AGL Macquarie Pty Limited     LD01
+#> 11089                                      AGL Macquarie Pty Limited     BW04
+#> 11090                                      AGL Macquarie Pty Limited     LD04
+#> 11091                                      AGL Macquarie Pty Limited     LD03
+#> 11092                                      AGL Macquarie Pty Limited  LIDDNL1
+#> 11093                                      AGL Macquarie Pty Limited     LD03
+#> 11094                                      AGL Macquarie Pty Limited  LIDDNL1
+#> 11095                                      AGL Macquarie Pty Limited     BW04
+#> 11096                                      AGL Macquarie Pty Limited     LD01
+#> 11097                                      AGL Macquarie Pty Limited   BAYNL1
+#> 11098                                      AGL Macquarie Pty Limited     LD04
+#> 11099                                      AGL Macquarie Pty Limited  TOMAGO2
+#> 11100                                      AGL Macquarie Pty Limited     LD04
+#> 11101                                      AGL Macquarie Pty Limited     LD01
+#> 11102                                      AGL Macquarie Pty Limited     LD02
+#> 11103                                      AGL Macquarie Pty Limited  LIDDNL1
+#> 11104                                      AGL Macquarie Pty Limited  LIDDNL1
+#> 11105                                      AGL Macquarie Pty Limited     BW01
+#> 11106                                      AGL Macquarie Pty Limited     BW02
+#> 11107                                      AGL Macquarie Pty Limited  TOMAGO1
+#> 11108                                      AGL Macquarie Pty Limited  LIDDNL1
+#> 11109                                      AGL Macquarie Pty Limited     BW04
 #> 11110                                      AGL Macquarie Pty Limited  TOMAGO1
-#> 11111                                      AGL Macquarie Pty Limited     LD02
-#> 11112                                      AGL Macquarie Pty Limited  TOMAGO1
-#> 11113                                      AGL Macquarie Pty Limited     LD01
-#> 11114                                      AGL Macquarie Pty Limited     BW04
-#> 11115                                      AGL Macquarie Pty Limited  TOMAGO2
-#> 11116                                      AGL Macquarie Pty Limited     LD01
-#> 11117                                      AGL Macquarie Pty Limited     LD03
-#> 11118                                      AGL Macquarie Pty Limited     BW02
-#> 11119                                      AGL Macquarie Pty Limited     BW03
-#> 11120                                      AGL Macquarie Pty Limited     BW02
-#> 11121                                      AGL Macquarie Pty Limited     BW01
-#> 11122                                      AGL Macquarie Pty Limited   BAYNL1
-#> 11123                                      AGL Macquarie Pty Limited     LD03
-#> 11124                                      AGL Macquarie Pty Limited     LD01
-#> 11125                                      AGL Macquarie Pty Limited     BW02
-#> 11126                                      AGL Macquarie Pty Limited     LD04
-#> 11127                                      AGL Macquarie Pty Limited     LD01
-#> 11128                                      AGL Macquarie Pty Limited     BW03
+#> 11111                                      AGL Macquarie Pty Limited  TOMAGO1
+#> 11112                                      AGL Macquarie Pty Limited     LD02
+#> 11113                                      AGL Macquarie Pty Limited  TOMAGO1
+#> 11114                                      AGL Macquarie Pty Limited     LD01
+#> 11115                                      AGL Macquarie Pty Limited     BW04
+#> 11116                                      AGL Macquarie Pty Limited  TOMAGO2
+#> 11117                                      AGL Macquarie Pty Limited     LD01
+#> 11118                                      AGL Macquarie Pty Limited     LD03
+#> 11119                                      AGL Macquarie Pty Limited     BW02
+#> 11120                                      AGL Macquarie Pty Limited     BW03
+#> 11121                                      AGL Macquarie Pty Limited     BW02
+#> 11122                                      AGL Macquarie Pty Limited     BW01
+#> 11123                                      AGL Macquarie Pty Limited   BAYNL1
+#> 11124                                      AGL Macquarie Pty Limited     LD03
+#> 11125                                      AGL Macquarie Pty Limited     LD01
+#> 11126                                      AGL Macquarie Pty Limited     BW02
+#> 11127                                      AGL Macquarie Pty Limited     LD04
+#> 11128                                      AGL Macquarie Pty Limited     LD01
 #> 11129                                      AGL Macquarie Pty Limited  TOMAGO1
-#> 11130                                      AGL Macquarie Pty Limited     BW01
-#> 11131                                      AGL Macquarie Pty Limited     BW04
-#> 11132                                      AGL Macquarie Pty Limited     BW01
-#> 11133                                      AGL Macquarie Pty Limited     BW04
-#> 11134                                      AGL Macquarie Pty Limited     BW01
-#> 11135                                      AGL Macquarie Pty Limited     LD02
-#> 11136                                      AGL Macquarie Pty Limited     BW03
-#> 11137                                      AGL Macquarie Pty Limited     LD03
-#> 11138                                      AGL Macquarie Pty Limited     BW03
-#> 11139                                      AGL Macquarie Pty Limited  TOMAGO1
-#> 11140                                      AGL Macquarie Pty Limited  LIDDNL1
-#> 11141                                      AGL Macquarie Pty Limited     BW02
-#> 11142                                      AGL Macquarie Pty Limited     LD01
-#> 11143                                      AGL Macquarie Pty Limited     BW02
+#> 11130                                      AGL Macquarie Pty Limited  TOMAGO1
+#> 11131                                      AGL Macquarie Pty Limited     BW01
+#> 11132                                      AGL Macquarie Pty Limited     BW04
+#> 11133                                      AGL Macquarie Pty Limited     BHB1
+#> 11134                                      AGL Macquarie Pty Limited     BW04
+#> 11135                                      AGL Macquarie Pty Limited    HVGTS
+#> 11136                                      AGL Macquarie Pty Limited  TOMAGO1
+#> 11137                                      AGL Macquarie Pty Limited  LIDDNL1
+#> 11138                                      AGL Macquarie Pty Limited     LD03
+#> 11139                                      AGL Macquarie Pty Limited     BW03
+#> 11140                                      AGL Macquarie Pty Limited  TOMAGO1
+#> 11141                                      AGL Macquarie Pty Limited  LIDDNL1
+#> 11142                                      AGL Macquarie Pty Limited     BW02
+#> 11143                                      AGL Macquarie Pty Limited     LD01
 #> 11144                                      AGL Macquarie Pty Limited    BHBL1
-#> 11145                                      AGL Macquarie Pty Limited     BW02
-#> 11146                                      AGL Macquarie Pty Limited    HVGTS
-#> 11147                                      AGL Macquarie Pty Limited     BW03
-#> 11148                                      AGL Macquarie Pty Limited   BAYNL1
-#> 11149                                      AGL Macquarie Pty Limited     BW03
-#> 11150                                      AGL Macquarie Pty Limited     BW02
-#> 11151                                      AGL Macquarie Pty Limited  TOMAGO1
-#> 11152                                      AGL Macquarie Pty Limited     BW04
-#> 11153                                      AGL Macquarie Pty Limited     LD04
-#> 11154                                      AGL Macquarie Pty Limited     LD01
-#> 11155                                      AGL Macquarie Pty Limited   BAYNL1
-#> 11156                                      AGL Macquarie Pty Limited     LD01
-#> 11157                                      AGL Macquarie Pty Limited     BW03
-#> 11158                                      AGL Macquarie Pty Limited     BW01
-#> 11159                                      AGL Macquarie Pty Limited  LIDDNL1
-#> 11160                                      AGL Macquarie Pty Limited  TOMAGO1
-#> 11161                                      AGL Macquarie Pty Limited    HVGTS
-#> 11162                                      AGL Macquarie Pty Limited     LD04
-#> 11163                                      AGL Macquarie Pty Limited   BAYNL1
+#> 11145                                      AGL Macquarie Pty Limited    BHBL1
+#> 11146                                      AGL Macquarie Pty Limited     BW02
+#> 11147                                      AGL Macquarie Pty Limited     BW01
+#> 11148                                      AGL Macquarie Pty Limited     BW03
+#> 11149                                      AGL Macquarie Pty Limited   BAYNL1
+#> 11150                                      AGL Macquarie Pty Limited     BW03
+#> 11151                                      AGL Macquarie Pty Limited     BW02
+#> 11152                                      AGL Macquarie Pty Limited  TOMAGO1
+#> 11153                                      AGL Macquarie Pty Limited     BW04
+#> 11154                                      AGL Macquarie Pty Limited     LD04
+#> 11155                                      AGL Macquarie Pty Limited     LD01
+#> 11156                                      AGL Macquarie Pty Limited     BW03
+#> 11157                                      AGL Macquarie Pty Limited     LD01
+#> 11158                                      AGL Macquarie Pty Limited     BW03
+#> 11159                                      AGL Macquarie Pty Limited     BW01
+#> 11160                                      AGL Macquarie Pty Limited  LIDDNL1
+#> 11161                                      AGL Macquarie Pty Limited  TOMAGO1
+#> 11162                                      AGL Macquarie Pty Limited    HVGTS
+#> 11163                                      AGL Macquarie Pty Limited     LD02
 #> 11164                                      AGL Macquarie Pty Limited   BAYNL1
-#> 11165                                      AGL Macquarie Pty Limited     BW04
+#> 11165                                      AGL Macquarie Pty Limited   BAYNL1
 #> 11166                                      AGL Macquarie Pty Limited     BW04
-#> 11167                                      AGL Macquarie Pty Limited  LIDDNL1
-#> 11168                                      AGL Macquarie Pty Limited     BW02
-#> 11169                                      AGL Macquarie Pty Limited     LD02
-#> 11170                                      AGL Macquarie Pty Limited     LD01
-#> 11171                                      AGL Macquarie Pty Limited     BW04
-#> 11172                                      AGL Macquarie Pty Limited     BW02
-#> 11173                                      AGL Macquarie Pty Limited  TOMAGO1
-#> 11174                                      AGL Macquarie Pty Limited     BW01
-#> 11175                                      AGL Macquarie Pty Limited     LD03
-#> 11176                                      AGL Macquarie Pty Limited    HVGTS
-#> 11177                                      AGL Macquarie Pty Limited  LIDDNL1
-#> 11178                                      AGL Macquarie Pty Limited     BW03
-#> 11179                                      AGL Macquarie Pty Limited     LD03
+#> 11167                                      AGL Macquarie Pty Limited     BW04
+#> 11168                                      AGL Macquarie Pty Limited  LIDDNL1
+#> 11169                                      AGL Macquarie Pty Limited     BW02
+#> 11170                                      AGL Macquarie Pty Limited  TOMAGO1
+#> 11171                                      AGL Macquarie Pty Limited     BW02
+#> 11172                                      AGL Macquarie Pty Limited     BW04
+#> 11173                                      AGL Macquarie Pty Limited     BW02
+#> 11174                                      AGL Macquarie Pty Limited  TOMAGO1
+#> 11175                                      AGL Macquarie Pty Limited     BW01
+#> 11176                                      AGL Macquarie Pty Limited     LD03
+#> 11177                                      AGL Macquarie Pty Limited     BW03
+#> 11178                                      AGL Macquarie Pty Limited  LIDDNL1
+#> 11179                                      AGL Macquarie Pty Limited     BW03
 #> 11180                                      AGL Macquarie Pty Limited     LD03
-#> 11181                                      AGL Macquarie Pty Limited     LD04
-#> 11182                                      AGL Macquarie Pty Limited     BW04
-#> 11183                                      AGL Macquarie Pty Limited  LIDDNL1
-#> 11184                                      AGL Macquarie Pty Limited  TOMAGO1
-#> 11185                                      AGL Macquarie Pty Limited  TOMAGO1
-#> 11186                                      AGL Macquarie Pty Limited     LD04
-#> 11187                                      AGL Macquarie Pty Limited     LD04
-#> 11188                                      AGL Macquarie Pty Limited     BW01
-#> 11189                                      AGL Macquarie Pty Limited     LD04
-#> 11190                                      AGL Macquarie Pty Limited     LD03
-#> 11191                                      AGL Macquarie Pty Limited     BW01
-#> 11192                                      AGL Macquarie Pty Limited     LD01
-#> 11193                                      AGL Macquarie Pty Limited  TOMAGO1
-#> 11194                                      AGL Macquarie Pty Limited  LIDDNL1
-#> 11195                                      AGL Macquarie Pty Limited    HVGTS
-#> 11196                                      AGL Macquarie Pty Limited    HVGTS
-#> 11197                                      AGL Macquarie Pty Limited  TOMAGO1
-#> 11198                                      AGL Macquarie Pty Limited   BAYNL1
-#> 11199                                      AGL Macquarie Pty Limited     BW02
-#> 11200                                      AGL Macquarie Pty Limited    HVGTS
-#> 11201                                      AGL Macquarie Pty Limited     LD03
+#> 11181                                      AGL Macquarie Pty Limited     LD03
+#> 11182                                      AGL Macquarie Pty Limited     LD04
+#> 11183                                      AGL Macquarie Pty Limited     BW04
+#> 11184                                      AGL Macquarie Pty Limited  LIDDNL1
+#> 11185                                      AGL Macquarie Pty Limited     LD01
+#> 11186                                      AGL Macquarie Pty Limited  TOMAGO1
+#> 11187                                      AGL Macquarie Pty Limited   BAYNL1
+#> 11188                                      AGL Macquarie Pty Limited     LD04
+#> 11189                                      AGL Macquarie Pty Limited     BW01
+#> 11190                                      AGL Macquarie Pty Limited     LD04
+#> 11191                                      AGL Macquarie Pty Limited     LD03
+#> 11192                                      AGL Macquarie Pty Limited     BW01
+#> 11193                                      AGL Macquarie Pty Limited     LD01
+#> 11194                                      AGL Macquarie Pty Limited  TOMAGO1
+#> 11195                                      AGL Macquarie Pty Limited  LIDDNL1
+#> 11196                                      AGL Macquarie Pty Limited   BAYNL1
+#> 11197                                      AGL Macquarie Pty Limited     LD02
+#> 11198                                      AGL Macquarie Pty Limited  TOMAGO1
+#> 11199                                      AGL Macquarie Pty Limited  TOMAGO1
+#> 11200                                      AGL Macquarie Pty Limited     BW02
+#> 11201                                      AGL Macquarie Pty Limited    HVGTS
 #> 11202                                      AGL Macquarie Pty Limited     BW01
-#> 11203                                      AGL Macquarie Pty Limited     BW03
-#> 11204                                      AGL Macquarie Pty Limited     LD03
-#> 11205                                      AGL Macquarie Pty Limited    HVGTS
-#> 11206                                      AGL Macquarie Pty Limited     BW03
+#> 11203                                      AGL Macquarie Pty Limited    HVGTS
+#> 11204                                      AGL Macquarie Pty Limited    HVGTS
+#> 11205                                      AGL Macquarie Pty Limited     LD03
+#> 11206                                      AGL Macquarie Pty Limited     LD04
 #> 11207                                      AGL Macquarie Pty Limited     BW03
-#> 11208                                      AGL Macquarie Pty Limited     LD04
-#> 11209                                      AGL Macquarie Pty Limited     LD01
-#> 11210                                      AGL Macquarie Pty Limited     LD04
-#> 11211                                      AGL Macquarie Pty Limited     LD04
-#> 11212                                      AGL Macquarie Pty Limited     LD03
-#> 11213                                      AGL Macquarie Pty Limited     LD04
-#> 11214                                      AGL Macquarie Pty Limited     BW02
-#> 11215                                      AGL Macquarie Pty Limited     BW04
-#> 11216                                      AGL Macquarie Pty Limited     BW03
-#> 11217                                      AGL Macquarie Pty Limited     BW01
-#> 11218                                      AGL Macquarie Pty Limited   BAYNL1
-#> 11219                                      AGL Macquarie Pty Limited     LD04
-#> 11220                                      AGL Macquarie Pty Limited     BW04
-#> 11221                                      AGL Macquarie Pty Limited     LD03
-#> 11222                                      AGL Macquarie Pty Limited     BW04
-#> 11223                                      AGL Macquarie Pty Limited     BW03
-#> 11224                                      AGL Macquarie Pty Limited     BW04
-#> 11225                                      AGL Macquarie Pty Limited     BW02
-#> 11226                                      AGL Macquarie Pty Limited     LD04
-#> 11227                                      AGL Macquarie Pty Limited     BW04
-#> 11228                                      AGL Macquarie Pty Limited    HVGTS
-#> 11229                                      AGL Macquarie Pty Limited     BW01
-#> 11230                                      AGL Macquarie Pty Limited     LD04
-#> 11231                                      AGL Macquarie Pty Limited   BAYNL1
-#> 11232                                      AGL Macquarie Pty Limited    HVGTS
-#> 11233                                      AGL Macquarie Pty Limited     BW02
-#> 11234                                      AGL Macquarie Pty Limited     LD04
-#> 11235                                      AGL Macquarie Pty Limited     BW02
-#> 11236                                      AGL Macquarie Pty Limited     BW04
-#> 11237                                      AGL Macquarie Pty Limited     LD04
-#> 11238                                      AGL Macquarie Pty Limited     BW04
-#> 11239                                      AGL Macquarie Pty Limited     LD02
-#> 11240                                      AGL Macquarie Pty Limited  TOMAGO1
-#> 11241                                      AGL Macquarie Pty Limited     LD03
-#> 11242                                      AGL Macquarie Pty Limited    HVGTS
+#> 11208                                      AGL Macquarie Pty Limited     BW03
+#> 11209                                      AGL Macquarie Pty Limited     LD04
+#> 11210                                      AGL Macquarie Pty Limited     LD01
+#> 11211                                      AGL Macquarie Pty Limited    HVGTS
+#> 11212                                      AGL Macquarie Pty Limited     LD04
+#> 11213                                      AGL Macquarie Pty Limited     LD03
+#> 11214                                      AGL Macquarie Pty Limited     LD04
+#> 11215                                      AGL Macquarie Pty Limited     BW02
+#> 11216                                      AGL Macquarie Pty Limited     BW04
+#> 11217                                      AGL Macquarie Pty Limited     BW03
+#> 11218                                      AGL Macquarie Pty Limited     BW01
+#> 11219                                      AGL Macquarie Pty Limited   BAYNL1
+#> 11220                                      AGL Macquarie Pty Limited     LD04
+#> 11221                                      AGL Macquarie Pty Limited     BW04
+#> 11222                                      AGL Macquarie Pty Limited     LD03
+#> 11223                                      AGL Macquarie Pty Limited     BW04
+#> 11224                                      AGL Macquarie Pty Limited     BW03
+#> 11225                                      AGL Macquarie Pty Limited     LD04
+#> 11226                                      AGL Macquarie Pty Limited     BW02
+#> 11227                                      AGL Macquarie Pty Limited     LD04
+#> 11228                                      AGL Macquarie Pty Limited     BW04
+#> 11229                                      AGL Macquarie Pty Limited    HVGTS
+#> 11230                                      AGL Macquarie Pty Limited     BW01
+#> 11231                                      AGL Macquarie Pty Limited     LD04
+#> 11232                                      AGL Macquarie Pty Limited   BAYNL1
+#> 11233                                      AGL Macquarie Pty Limited    HVGTS
+#> 11234                                      AGL Macquarie Pty Limited     BW02
+#> 11235                                      AGL Macquarie Pty Limited     LD04
+#> 11236                                      AGL Macquarie Pty Limited     BW02
+#> 11237                                      AGL Macquarie Pty Limited     BW04
+#> 11238                                      AGL Macquarie Pty Limited     LD04
+#> 11239                                      AGL Macquarie Pty Limited     BW04
+#> 11240                                      AGL Macquarie Pty Limited     LD02
+#> 11241                                      AGL Macquarie Pty Limited  TOMAGO1
+#> 11242                                      AGL Macquarie Pty Limited     LD03
 #> 11243                                      AGL Macquarie Pty Limited    HVGTS
-#> 11244                                      AGL Macquarie Pty Limited     BW01
-#> 11245                                      AGL Macquarie Pty Limited     BW03
-#> 11246                                      AGL Macquarie Pty Limited   BAYNL1
-#> 11247                                      AGL Macquarie Pty Limited     BW03
+#> 11244                                      AGL Macquarie Pty Limited     BW03
+#> 11245                                      AGL Macquarie Pty Limited    HVGTS
+#> 11246                                      AGL Macquarie Pty Limited     BW03
+#> 11247                                      AGL Macquarie Pty Limited    HVGTS
 #> 11248                                      AGL Macquarie Pty Limited     BW03
-#> 11249                                      AGL Macquarie Pty Limited     BW04
-#> 11250                                      AGL Macquarie Pty Limited     BW03
-#> 11251                                      AGL Macquarie Pty Limited     BW04
+#> 11249                                      AGL Macquarie Pty Limited     BW03
+#> 11250                                      AGL Macquarie Pty Limited     BW04
+#> 11251                                      AGL Macquarie Pty Limited     BW03
 #> 11252                                      AGL Macquarie Pty Limited     BW04
-#> 11253                                      AGL Macquarie Pty Limited     LD03
-#> 11254                                      AGL Macquarie Pty Limited     LD04
-#> 11255                                      AGL Macquarie Pty Limited     LD03
-#> 11256                                      AGL Macquarie Pty Limited    HVGTS
+#> 11253                                      AGL Macquarie Pty Limited     BW04
+#> 11254                                      AGL Macquarie Pty Limited     LD03
+#> 11255                                      AGL Macquarie Pty Limited     LD04
+#> 11256                                      AGL Macquarie Pty Limited     LD03
 #> 11257                                      AGL Macquarie Pty Limited     BW01
-#> 11258                                      AGL Macquarie Pty Limited   BAYNL1
-#> 11259                                      AGL Macquarie Pty Limited     BW01
-#> 11260                                      AGL Macquarie Pty Limited     LD04
-#> 11261                                      AGL Macquarie Pty Limited     BW01
-#> 11262                                      AGL Macquarie Pty Limited     BW04
-#> 11263                                      AGL Macquarie Pty Limited    HVGTS
-#> 11264                                      AGL Macquarie Pty Limited     BW04
-#> 11265                                      AGL Macquarie Pty Limited     LD02
-#> 11266                                      AGL Macquarie Pty Limited     BW04
+#> 11258                                      AGL Macquarie Pty Limited    HVGTS
+#> 11259                                      AGL Macquarie Pty Limited   BAYNL1
+#> 11260                                      AGL Macquarie Pty Limited     BW01
+#> 11261                                      AGL Macquarie Pty Limited     LD04
+#> 11262                                      AGL Macquarie Pty Limited     BW01
+#> 11263                                      AGL Macquarie Pty Limited     BW04
+#> 11264                                      AGL Macquarie Pty Limited    HVGTS
+#> 11265                                      AGL Macquarie Pty Limited     BW04
+#> 11266                                      AGL Macquarie Pty Limited     LD02
 #> 11267                                      AGL Macquarie Pty Limited     BW04
-#> 11268                                      AGL Macquarie Pty Limited     BW03
-#> 11269                                      AGL Macquarie Pty Limited    HVGTS
-#> 11270                                      AGL Macquarie Pty Limited     BW04
-#> 11271                                      AGL Macquarie Pty Limited     BW01
-#> 11272                                      AGL Macquarie Pty Limited     BW04
+#> 11268                                      AGL Macquarie Pty Limited     BW04
+#> 11269                                      AGL Macquarie Pty Limited     BW03
+#> 11270                                      AGL Macquarie Pty Limited     LD03
+#> 11271                                      AGL Macquarie Pty Limited     LD04
+#> 11272                                      AGL Macquarie Pty Limited     BW01
 #> 11273                                      AGL Macquarie Pty Limited     BW01
-#> 11274                                      AGL Macquarie Pty Limited    HVGTS
-#> 11275                                      AGL Macquarie Pty Limited     BW01
-#> 11276                                      AGL Macquarie Pty Limited     BW04
-#> 11277                                      AGL Macquarie Pty Limited     LD04
-#> 11278                                      AGL Macquarie Pty Limited    HVGTS
-#> 11279                                      AGL Macquarie Pty Limited     LD04
-#> 11280                                      AGL Macquarie Pty Limited  TOMAGO3
-#> 11281                                      AGL Macquarie Pty Limited     BW04
+#> 11274                                      AGL Macquarie Pty Limited     BW01
+#> 11275                                      AGL Macquarie Pty Limited    HVGTS
+#> 11276                                      AGL Macquarie Pty Limited     BW01
+#> 11277                                      AGL Macquarie Pty Limited    HVGTS
+#> 11278                                      AGL Macquarie Pty Limited     LD04
+#> 11279                                      AGL Macquarie Pty Limited    HVGTS
+#> 11280                                      AGL Macquarie Pty Limited     LD04
+#> 11281                                      AGL Macquarie Pty Limited  TOMAGO3
 #> 11282                                      AGL Macquarie Pty Limited     BW04
-#> 11283                                      AGL Macquarie Pty Limited     BW01
+#> 11283                                      AGL Macquarie Pty Limited     BW04
 #> 11284                                      AGL Macquarie Pty Limited     BW01
-#> 11285                                      AGL Macquarie Pty Limited    HVGTS
+#> 11285                                      AGL Macquarie Pty Limited     BW01
 #> 11286                                      AGL Macquarie Pty Limited     BW01
-#> 11287                                      AGL Macquarie Pty Limited     LD03
-#> 11288                                      AGL Macquarie Pty Limited     BW01
-#> 11289                                      AGL Macquarie Pty Limited     BW02
-#> 11290                                      AGL Macquarie Pty Limited     BW04
-#> 11291                                      AGL Macquarie Pty Limited    HVGTS
-#> 11292                                      AGL Macquarie Pty Limited     LD04
-#> 11293                                      AGL Macquarie Pty Limited     BW04
+#> 11287                                      AGL Macquarie Pty Limited     BW04
+#> 11288                                      AGL Macquarie Pty Limited     BW04
+#> 11289                                      AGL Macquarie Pty Limited   BAYNL1
+#> 11290                                      AGL Macquarie Pty Limited     BW02
+#> 11291                                      AGL Macquarie Pty Limited     LD03
+#> 11292                                      AGL Macquarie Pty Limited    HVGTS
+#> 11293                                      AGL Macquarie Pty Limited     LD04
 #> 11294                                      AGL Macquarie Pty Limited     BW04
 #> 11295                                      AGL Macquarie Pty Limited     BW04
-#> 11296                                      AGL Macquarie Pty Limited     BW01
-#> 11297                                      AGL Macquarie Pty Limited     BW04
-#> 11298                                      AGL Macquarie Pty Limited     LD03
-#> 11299                                      AGL Macquarie Pty Limited     BW04
-#> 11300                                      AGL Macquarie Pty Limited    HVGTS
-#> 11301                                      AGL Macquarie Pty Limited     BW04
+#> 11296                                      AGL Macquarie Pty Limited     LD04
+#> 11297                                      AGL Macquarie Pty Limited     BW01
+#> 11298                                      AGL Macquarie Pty Limited     BW04
+#> 11299                                      AGL Macquarie Pty Limited     BW01
+#> 11300                                      AGL Macquarie Pty Limited     BW04
+#> 11301                                      AGL Macquarie Pty Limited     LD03
 #> 11302                                      AGL Macquarie Pty Limited     BW01
-#> 11303                                      AGL Macquarie Pty Limited     LD04
+#> 11303                                      AGL Macquarie Pty Limited     BW01
 #> 11304                                      AGL Macquarie Pty Limited     LD04
-#> 11305                                      AGL Macquarie Pty Limited     LD03
-#> 11306                                      AGL Macquarie Pty Limited    HVGTS
-#> 11307                                      AGL Macquarie Pty Limited     LD04
-#> 11308                                      AGL Macquarie Pty Limited   BAYNL1
+#> 11305                                      AGL Macquarie Pty Limited     BW04
+#> 11306                                      AGL Macquarie Pty Limited     LD04
+#> 11307                                      AGL Macquarie Pty Limited    HVGTS
+#> 11308                                      AGL Macquarie Pty Limited     LD04
 #> 11309                                      AGL Macquarie Pty Limited     BW04
-#> 11310                                      AGL Macquarie Pty Limited     LD04
+#> 11310                                      AGL Macquarie Pty Limited    HVGTS
 #> 11311                                      AGL Macquarie Pty Limited     LD03
 #> 11312                                      AGL Macquarie Pty Limited     LD03
-#> 11313                                      AGL Macquarie Pty Limited     BW04
-#> 11314                                      AGL Macquarie Pty Limited     LD04
-#> 18702                                          AGL Sales Pty Limited     UWS1
-#> 18703                                          AGL Sales Pty Limited     UWS1
-#> 18704                                          AGL Sales Pty Limited   AGLSOM
-#> 18705                                          AGL Sales Pty Limited   AGLHAL
-#> 18706                                          AGL Sales Pty Limited     UWS1
-#> 18707                                          AGL Sales Pty Limited   AGLHAL
-#> 18708                                          AGL Sales Pty Limited     UWS1
-#> 18709                                          AGL Sales Pty Limited   AGLHAL
-#> 18710                                          AGL Sales Pty Limited   AGLHAL
-#> 18711                                          AGL Sales Pty Limited     UWS1
+#> 11313                                      AGL Macquarie Pty Limited   BAYNL1
+#> 11314                                      AGL Macquarie Pty Limited     BW04
+#> 11315                                      AGL Macquarie Pty Limited    HVGTS
+#> 11316                                      AGL Macquarie Pty Limited     BW04
+#> 11317                                      AGL Macquarie Pty Limited     BW04
+#> 11318                                      AGL Macquarie Pty Limited     BW04
+#> 11319                                      AGL Macquarie Pty Limited     BW04
+#> 11320                                      AGL Macquarie Pty Limited     LD04
+#> 11321                                      AGL Macquarie Pty Limited     LD03
 #> 18712                                          AGL Sales Pty Limited   AGLSOM
 #> 18713                                          AGL Sales Pty Limited   AGLHAL
 #> 18714                                          AGL Sales Pty Limited     UWS1
-#> 18715                                          AGL Sales Pty Limited   AGLSOM
+#> 18715                                          AGL Sales Pty Limited   AGLHAL
 #> 18716                                          AGL Sales Pty Limited   AGLSOM
-#> 18717                                          AGL Sales Pty Limited     UWS1
-#> 18718                                          AGL Sales Pty Limited   AGLSOM
-#> 18719                                          AGL Sales Pty Limited   MORNL1
-#> 18720                                          AGL Sales Pty Limited   AGLHAL
-#> 18721                                          AGL Sales Pty Limited     MOR2
-#> 18722                                          AGL Sales Pty Limited   AGLSOM
-#> 18723                                          AGL Sales Pty Limited     UWS1
-#> 18724                                          AGL Sales Pty Limited     UWS1
+#> 18717                                          AGL Sales Pty Limited   AGLHAL
+#> 18718                                          AGL Sales Pty Limited     UWS1
+#> 18719                                          AGL Sales Pty Limited   AGLSOM
+#> 18720                                          AGL Sales Pty Limited   AGLSOM
+#> 18721                                          AGL Sales Pty Limited   AGLHAL
+#> 18722                                          AGL Sales Pty Limited   AGLHAL
+#> 18723                                          AGL Sales Pty Limited   AGLSOM
+#> 18724                                          AGL Sales Pty Limited   AGLHAL
 #> 18725                                          AGL Sales Pty Limited     UWS1
-#> 18726                                          AGL Sales Pty Limited   AGLHAL
-#> 18727                                          AGL Sales Pty Limited   AGLSOM
-#> 18728                                          AGL Sales Pty Limited   AGLSOM
-#> 18729                                          AGL Sales Pty Limited   AGLHAL
-#> 18730                                          AGL Sales Pty Limited     UWS1
-#> 18731                                          AGL Sales Pty Limited   AGLHAL
-#> 18732                                          AGL Sales Pty Limited  AGLNOW1
-#> 18733                                          AGL Sales Pty Limited   AGLSOM
-#> 18734                                          AGL Sales Pty Limited  AGLNOW1
-#> 18735                                          AGL Sales Pty Limited  AGLNOW1
-#> 18736                                          AGL Sales Pty Limited   AGLHAL
-#> 18737                                          AGL Sales Pty Limited  AGLNOW1
+#> 18726                                          AGL Sales Pty Limited   AGLSOM
+#> 18727                                          AGL Sales Pty Limited     UWS1
+#> 18728                                          AGL Sales Pty Limited     UWS1
+#> 18729                                          AGL Sales Pty Limited     MOR2
+#> 18730                                          AGL Sales Pty Limited   AGLHAL
+#> 18731                                          AGL Sales Pty Limited   AGLSOM
+#> 18732                                          AGL Sales Pty Limited   AGLSOM
+#> 18733                                          AGL Sales Pty Limited     UWS1
+#> 18734                                          AGL Sales Pty Limited     UWS1
+#> 18735                                          AGL Sales Pty Limited   AGLHAL
+#> 18736                                          AGL Sales Pty Limited   MORNL1
+#> 18737                                          AGL Sales Pty Limited   AGLHAL
 #> 18738                                          AGL Sales Pty Limited  AGLNOW1
-#> 18739                                          AGL Sales Pty Limited     MOR1
-#> 18740                                          AGL Sales Pty Limited   AGLSOM
-#> 18741                                          AGL Sales Pty Limited     MOR3
-#> 18742                                          AGL Sales Pty Limited   AGLHAL
-#> 18743                                          AGL Sales Pty Limited     UWS1
-#> 18744                                          AGL Sales Pty Limited  AGLNOW1
-#> 18745                                          AGL Sales Pty Limited  AGLNOW1
-#> 18746                                          AGL Sales Pty Limited  AGLNOW1
-#> 18747                                          AGL Sales Pty Limited  AGLNOW1
-#> 18748                                          AGL Sales Pty Limited   AGLHAL
-#> 18749                                          AGL Sales Pty Limited     UWS1
-#> 18750                                          AGL Sales Pty Limited   AGLSOM
+#> 18739                                          AGL Sales Pty Limited  AGLNOW1
+#> 18740                                          AGL Sales Pty Limited   AGLHAL
+#> 18741                                          AGL Sales Pty Limited   AGLSOM
+#> 18742                                          AGL Sales Pty Limited  AGLNOW1
+#> 18743                                          AGL Sales Pty Limited  AGLNOW1
+#> 18744                                          AGL Sales Pty Limited   AGLSOM
+#> 18745                                          AGL Sales Pty Limited     MOR3
+#> 18746                                          AGL Sales Pty Limited   AGLHAL
+#> 18747                                          AGL Sales Pty Limited     UWS1
+#> 18748                                          AGL Sales Pty Limited  AGLNOW1
+#> 18749                                          AGL Sales Pty Limited  AGLNOW1
+#> 18750                                          AGL Sales Pty Limited  AGLNOW1
 #> 18751                                          AGL Sales Pty Limited     UWS1
-#> 18765                                          AGL Hydro Partnership     ICSM
-#> 18766                                          AGL Hydro Partnership  RUBICON
-#> 18767                                          AGL Hydro Partnership WYANGALB
-#> 18768                                          AGL Hydro Partnership  WKIEWA2
-#> 18769                                          AGL Hydro Partnership  RUBICON
-#> 18770                                          AGL Hydro Partnership  YABULU2
-#> 18771                                          AGL Hydro Partnership WYANGALB
-#> 18772                                          AGL Hydro Partnership     ICSM
-#> 18773                                          AGL Hydro Partnership   CLOVER
-#> 18774                                          AGL Hydro Partnership  EILDON1
-#> 18775                                          AGL Hydro Partnership  RUBICON
-#> 18776                                          AGL Hydro Partnership     ICSM
-#> 18777                                          AGL Hydro Partnership   CLOVER
-#> 18778                                          AGL Hydro Partnership  RUBICON
-#> 18779                                          AGL Hydro Partnership     BAPS
-#> 18780                                          AGL Hydro Partnership  RUBICON
-#> 18781                                          AGL Hydro Partnership  EILDON1
-#> 18782                                          AGL Hydro Partnership  EILDON1
-#> 18783                                          AGL Hydro Partnership  EILDON1
-#> 18784                                          AGL Hydro Partnership  PINDARI
-#> 18785                                          AGL Hydro Partnership  EILDON1
-#> 18786                                          AGL Hydro Partnership  EILDON2
-#> 18787                                          AGL Hydro Partnership  PINDARI
-#> 18788                                          AGL Hydro Partnership GLBWNHYD
-#> 18789                                          AGL Hydro Partnership WYANGALB
-#> 18790                                          AGL Hydro Partnership     ICSM
+#> 18752                                          AGL Sales Pty Limited   AGLHAL
+#> 18753                                          AGL Sales Pty Limited     UWS1
+#> 18754                                          AGL Sales Pty Limited  AGLNOW1
+#> 18755                                          AGL Sales Pty Limited  AGLNOW1
+#> 18756                                          AGL Sales Pty Limited     UWS1
+#> 18757                                          AGL Sales Pty Limited   AGLSOM
+#> 18758                                          AGL Sales Pty Limited     UWS1
+#> 18759                                          AGL Sales Pty Limited     MOR1
+#> 18760                                          AGL Sales Pty Limited     UWS1
+#> 18761                                          AGL Sales Pty Limited     UWS1
+#> 18775                                          AGL Hydro Partnership     ICSM
+#> 18776                                          AGL Hydro Partnership  RUBICON
+#> 18777                                          AGL Hydro Partnership WYANGALB
+#> 18778                                          AGL Hydro Partnership  WKIEWA2
+#> 18779                                          AGL Hydro Partnership  RUBICON
+#> 18780                                          AGL Hydro Partnership  YABULU2
+#> 18781                                          AGL Hydro Partnership WYANGALB
+#> 18782                                          AGL Hydro Partnership     ICSM
+#> 18783                                          AGL Hydro Partnership   CLOVER
+#> 18784                                          AGL Hydro Partnership  EILDON1
+#> 18785                                          AGL Hydro Partnership  RUBICON
+#> 18786                                          AGL Hydro Partnership     ICSM
+#> 18787                                          AGL Hydro Partnership   CLOVER
+#> 18788                                          AGL Hydro Partnership  RUBICON
+#> 18789                                          AGL Hydro Partnership     BAPS
+#> 18790                                          AGL Hydro Partnership  RUBICON
 #> 18791                                          AGL Hydro Partnership  EILDON1
-#> 18792                                          AGL Hydro Partnership GLBWNHYD
-#> 18793                                          AGL Hydro Partnership     BAPS
-#> 18794                                          AGL Hydro Partnership  RUBICON
-#> 18795                                          AGL Hydro Partnership  YABULU2
+#> 18792                                          AGL Hydro Partnership  EILDON1
+#> 18793                                          AGL Hydro Partnership  EILDON1
+#> 18794                                          AGL Hydro Partnership  PINDARI
+#> 18795                                          AGL Hydro Partnership  EILDON1
 #> 18796                                          AGL Hydro Partnership  EILDON2
-#> 18797                                          AGL Hydro Partnership     WPWF
-#> 18798                                          AGL Hydro Partnership BDONGHYD
-#> 18799                                          AGL Hydro Partnership BDONGHYD
-#> 18800                                          AGL Hydro Partnership WYANGALB
-#> 18801                                          AGL Hydro Partnership  RUBICON
-#> 18802                                          AGL Hydro Partnership WYANGALB
-#> 18803                                          AGL Hydro Partnership   CLOVER
-#> 18804                                          AGL Hydro Partnership GLBWNHYD
-#> 18805                                          AGL Hydro Partnership  RUBICON
-#> 18806                                          AGL Hydro Partnership   OAKEY1
-#> 18807                                          AGL Hydro Partnership  PINDARI
-#> 18808                                          AGL Hydro Partnership  PINDARI
-#> 18809                                          AGL Hydro Partnership     ICSM
-#> 18810                                          AGL Hydro Partnership  EILDON2
-#> 18811                                          AGL Hydro Partnership  EILDON2
-#> 18812                                          AGL Hydro Partnership  YABULU2
-#> 18813                                          AGL Hydro Partnership     BAPS
-#> 18814                                          AGL Hydro Partnership  RUBICON
-#> 18815                                          AGL Hydro Partnership     ICSM
-#> 18816                                          AGL Hydro Partnership  EILDON1
-#> 18817                                          AGL Hydro Partnership GLBWNHYD
-#> 18818                                          AGL Hydro Partnership BDONGHYD
-#> 18819                                          AGL Hydro Partnership  PINDARI
-#> 18820                                          AGL Hydro Partnership     BAPS
+#> 18797                                          AGL Hydro Partnership  PINDARI
+#> 18798                                          AGL Hydro Partnership GLBWNHYD
+#> 18799                                          AGL Hydro Partnership WYANGALB
+#> 18800                                          AGL Hydro Partnership     ICSM
+#> 18801                                          AGL Hydro Partnership  EILDON1
+#> 18802                                          AGL Hydro Partnership GLBWNHYD
+#> 18803                                          AGL Hydro Partnership     BAPS
+#> 18804                                          AGL Hydro Partnership  RUBICON
+#> 18805                                          AGL Hydro Partnership  YABULU2
+#> 18806                                          AGL Hydro Partnership  EILDON2
+#> 18807                                          AGL Hydro Partnership     WPWF
+#> 18808                                          AGL Hydro Partnership BDONGHYD
+#> 18809                                          AGL Hydro Partnership BDONGHYD
+#> 18810                                          AGL Hydro Partnership WYANGALB
+#> 18811                                          AGL Hydro Partnership  RUBICON
+#> 18812                                          AGL Hydro Partnership WYANGALB
+#> 18813                                          AGL Hydro Partnership   CLOVER
+#> 18814                                          AGL Hydro Partnership GLBWNHYD
+#> 18815                                          AGL Hydro Partnership  RUBICON
+#> 18816                                          AGL Hydro Partnership   OAKEY1
+#> 18817                                          AGL Hydro Partnership  PINDARI
+#> 18818                                          AGL Hydro Partnership  PINDARI
+#> 18819                                          AGL Hydro Partnership     ICSM
+#> 18820                                          AGL Hydro Partnership  EILDON2
 #> 18821                                          AGL Hydro Partnership  EILDON2
-#> 18822                                          AGL Hydro Partnership   MCKAY1
-#> 18823                                          AGL Hydro Partnership BDONGHYD
-#> 18824                                          AGL Hydro Partnership BDONGHYD
-#> 18825                                          AGL Hydro Partnership BDONGHYD
+#> 18822                                          AGL Hydro Partnership  YABULU2
+#> 18823                                          AGL Hydro Partnership     BAPS
+#> 18824                                          AGL Hydro Partnership  RUBICON
+#> 18825                                          AGL Hydro Partnership     ICSM
 #> 18826                                          AGL Hydro Partnership  EILDON1
-#> 18827                                          AGL Hydro Partnership  RUBICON
-#> 18828                                          AGL Hydro Partnership  EILDON1
-#> 18829                                          AGL Hydro Partnership GLBWNHYD
-#> 18830                                          AGL Hydro Partnership     ICSM
-#> 18831                                          AGL Hydro Partnership  WKIEWA2
-#> 18832                                          AGL Hydro Partnership  PINDARI
-#> 18833                                          AGL Hydro Partnership  WKIEWA2
-#> 18834                                          AGL Hydro Partnership  EILDON1
+#> 18827                                          AGL Hydro Partnership GLBWNHYD
+#> 18828                                          AGL Hydro Partnership BDONGHYD
+#> 18829                                          AGL Hydro Partnership  PINDARI
+#> 18830                                          AGL Hydro Partnership     BAPS
+#> 18831                                          AGL Hydro Partnership  EILDON2
+#> 18832                                          AGL Hydro Partnership   MCKAY1
+#> 18833                                          AGL Hydro Partnership BDONGHYD
+#> 18834                                          AGL Hydro Partnership BDONGHYD
 #> 18835                                          AGL Hydro Partnership BDONGHYD
-#> 18836                                          AGL Hydro Partnership BDONGHYD
-#> 18837                                          AGL Hydro Partnership   OAKEY2
-#> 18838                                          AGL Hydro Partnership  EILDON2
-#> 18839                                          AGL Hydro Partnership  EILDON2
+#> 18836                                          AGL Hydro Partnership  EILDON1
+#> 18837                                          AGL Hydro Partnership  RUBICON
+#> 18838                                          AGL Hydro Partnership  EILDON1
+#> 18839                                          AGL Hydro Partnership GLBWNHYD
 #> 18840                                          AGL Hydro Partnership     ICSM
-#> 18841                                          AGL Hydro Partnership  EILDON1
-#> 18842                                          AGL Hydro Partnership MORANBAH
-#> 18843                                          AGL Hydro Partnership   DARTM1
-#> 18844                                          AGL Hydro Partnership     BAPS
-#> 18845                                          AGL Hydro Partnership     BAPS
+#> 18841                                          AGL Hydro Partnership  WKIEWA2
+#> 18842                                          AGL Hydro Partnership  PINDARI
+#> 18843                                          AGL Hydro Partnership  WKIEWA2
+#> 18844                                          AGL Hydro Partnership  EILDON1
+#> 18845                                          AGL Hydro Partnership BDONGHYD
 #> 18846                                          AGL Hydro Partnership BDONGHYD
-#> 18847                                          AGL Hydro Partnership   MCKAY1
-#> 18848                                          AGL Hydro Partnership   OAKEY2
-#> 18849                                          AGL Hydro Partnership   OAKEY2
-#> 18850                                          AGL Hydro Partnership  PINDARI
-#> 18851                                          AGL Hydro Partnership  EILDON2
-#> 18852                                          AGL Hydro Partnership  WKIEWA2
-#> 18853                                          AGL Hydro Partnership  WKIEWA2
+#> 18847                                          AGL Hydro Partnership   OAKEY2
+#> 18848                                          AGL Hydro Partnership  EILDON2
+#> 18849                                          AGL Hydro Partnership  EILDON2
+#> 18850                                          AGL Hydro Partnership     ICSM
+#> 18851                                          AGL Hydro Partnership  EILDON1
+#> 18852                                          AGL Hydro Partnership MORANBAH
+#> 18853                                          AGL Hydro Partnership   DARTM1
 #> 18854                                          AGL Hydro Partnership     BAPS
-#> 18855                                          AGL Hydro Partnership     ICSM
-#> 18856                                          AGL Hydro Partnership  YABULU2
-#> 18857                                          AGL Hydro Partnership  PINDARI
-#> 18858                                          AGL Hydro Partnership  WKIEWA2
-#> 18859                                          AGL Hydro Partnership     BAPS
-#> 18860                                          AGL Hydro Partnership   OAKEY2
-#> 18861                                          AGL Hydro Partnership  WKIEWA2
-#> 18862                                          AGL Hydro Partnership  EILDON1
-#> 18863                                          AGL Hydro Partnership  EILDON1
-#> 18864                                          AGL Hydro Partnership   OAKEY1
-#> 18865                                          AGL Hydro Partnership   OAKEY1
-#> 18866                                          AGL Hydro Partnership MORANBAH
-#> 18867                                          AGL Hydro Partnership  WKIEWA2
-#> 18868                                          AGL Hydro Partnership     ICSM
-#> 18869                                          AGL Hydro Partnership  YABULU2
-#> 18870                                          AGL Hydro Partnership  WKIEWA2
-#> 18871                                          AGL Hydro Partnership     BAPS
+#> 18855                                          AGL Hydro Partnership     BAPS
+#> 18856                                          AGL Hydro Partnership BDONGHYD
+#> 18857                                          AGL Hydro Partnership   MCKAY1
+#> 18858                                          AGL Hydro Partnership   OAKEY2
+#> 18859                                          AGL Hydro Partnership   OAKEY2
+#> 18860                                          AGL Hydro Partnership  PINDARI
+#> 18861                                          AGL Hydro Partnership  EILDON2
+#> 18862                                          AGL Hydro Partnership  WKIEWA2
+#> 18863                                          AGL Hydro Partnership  WKIEWA2
+#> 18864                                          AGL Hydro Partnership     BAPS
+#> 18865                                          AGL Hydro Partnership     ICSM
+#> 18866                                          AGL Hydro Partnership  YABULU2
+#> 18867                                          AGL Hydro Partnership  PINDARI
+#> 18868                                          AGL Hydro Partnership  WKIEWA2
+#> 18869                                          AGL Hydro Partnership     BAPS
+#> 18870                                          AGL Hydro Partnership   OAKEY2
+#> 18871                                          AGL Hydro Partnership  WKIEWA2
 #> 18872                                          AGL Hydro Partnership  EILDON1
-#> 18873                                          AGL Hydro Partnership  WKIEWA1
-#> 18874                                          AGL Hydro Partnership  EILDON1
-#> 18875                                          AGL Hydro Partnership   CLOVER
-#> 18876                                          AGL Hydro Partnership   MCKAY2
-#> 18877                                          AGL Hydro Partnership   AGLSOM
-#> 18878                                          AGL Hydro Partnership   AGLSOM
-#> 18879                                          AGL Hydro Partnership     WPWF
-#> 18880                                          AGL Hydro Partnership  EILDON1
-#> 18881                                          AGL Hydro Partnership  WKIEWA2
+#> 18873                                          AGL Hydro Partnership  EILDON1
+#> 18874                                          AGL Hydro Partnership   OAKEY1
+#> 18875                                          AGL Hydro Partnership   OAKEY1
+#> 18876                                          AGL Hydro Partnership MORANBAH
+#> 18877                                          AGL Hydro Partnership  WKIEWA2
+#> 18878                                          AGL Hydro Partnership     ICSM
+#> 18879                                          AGL Hydro Partnership  YABULU2
+#> 18880                                          AGL Hydro Partnership  WKIEWA2
+#> 18881                                          AGL Hydro Partnership     BAPS
 #> 18882                                          AGL Hydro Partnership  EILDON1
-#> 18883                                          AGL Hydro Partnership   OAKEY2
+#> 18883                                          AGL Hydro Partnership  WKIEWA1
 #> 18884                                          AGL Hydro Partnership  EILDON1
-#> 18885                                          AGL Hydro Partnership  PINDARI
-#> 18886                                          AGL Hydro Partnership  PINDARI
-#> 18887                                          AGL Hydro Partnership  EILDON1
+#> 18885                                          AGL Hydro Partnership   CLOVER
+#> 18886                                          AGL Hydro Partnership   MCKAY2
+#> 18887                                          AGL Hydro Partnership   AGLSOM
 #> 18888                                          AGL Hydro Partnership   AGLSOM
-#> 18889                                          AGL Hydro Partnership  WKIEWA1
-#> 18890                                          AGL Hydro Partnership WYANGALA
-#> 18891                                          AGL Hydro Partnership  RUBICON
-#> 18892                                          AGL Hydro Partnership  EILDON2
-#> 18893                                          AGL Hydro Partnership  EILDON2
-#> 18894                                          AGL Hydro Partnership   MCKAY1
-#> 18895                                          AGL Hydro Partnership     BAPS
-#> 18896                                          AGL Hydro Partnership  WKIEWA2
-#> 18897                                          AGL Hydro Partnership   OAKEY2
-#> 18898                                          AGL Hydro Partnership  EILDON1
-#> 18899                                          AGL Hydro Partnership   OAKEY2
-#> 18900                                          AGL Hydro Partnership  RUBICON
-#> 18901                                          AGL Hydro Partnership   DARTM1
-#> 18902                                          AGL Hydro Partnership   DARTM1
-#> 18903                                          AGL Hydro Partnership   DARTM1
-#> 18904                                          AGL Hydro Partnership   DARTM1
-#> 18905                                          AGL Hydro Partnership   DARTM1
-#> 18906                                          AGL Hydro Partnership  PINDARI
-#> 18907                                          AGL Hydro Partnership   CLOVER
+#> 18889                                          AGL Hydro Partnership     WPWF
+#> 18890                                          AGL Hydro Partnership  EILDON1
+#> 18891                                          AGL Hydro Partnership  WKIEWA2
+#> 18892                                          AGL Hydro Partnership  EILDON1
+#> 18893                                          AGL Hydro Partnership   OAKEY2
+#> 18894                                          AGL Hydro Partnership  EILDON1
+#> 18895                                          AGL Hydro Partnership  PINDARI
+#> 18896                                          AGL Hydro Partnership  PINDARI
+#> 18897                                          AGL Hydro Partnership  EILDON1
+#> 18898                                          AGL Hydro Partnership   AGLSOM
+#> 18899                                          AGL Hydro Partnership  WKIEWA1
+#> 18900                                          AGL Hydro Partnership WYANGALA
+#> 18901                                          AGL Hydro Partnership  RUBICON
+#> 18902                                          AGL Hydro Partnership  EILDON2
+#> 18903                                          AGL Hydro Partnership  EILDON2
+#> 18904                                          AGL Hydro Partnership   MCKAY1
+#> 18905                                          AGL Hydro Partnership     BAPS
+#> 18906                                          AGL Hydro Partnership  WKIEWA2
+#> 18907                                          AGL Hydro Partnership   OAKEY2
 #> 18908                                          AGL Hydro Partnership  EILDON1
-#> 18909                                          AGL Hydro Partnership  EILDON2
-#> 18910                                          AGL Hydro Partnership  EILDON1
-#> 18911                                          AGL Hydro Partnership  PINDARI
-#> 18912                                          AGL Hydro Partnership  PINDARI
+#> 18909                                          AGL Hydro Partnership   OAKEY2
+#> 18910                                          AGL Hydro Partnership  RUBICON
+#> 18911                                          AGL Hydro Partnership   DARTM1
+#> 18912                                          AGL Hydro Partnership   DARTM1
 #> 18913                                          AGL Hydro Partnership   DARTM1
-#> 18914                                          AGL Hydro Partnership   AGLSOM
+#> 18914                                          AGL Hydro Partnership   DARTM1
 #> 18915                                          AGL Hydro Partnership   DARTM1
-#> 18916                                          AGL Hydro Partnership   DARTM1
-#> 18917                                          AGL Hydro Partnership   MCKAY2
-#> 18918                                          AGL Hydro Partnership  WKIEWA1
-#> 18919                                          AGL Hydro Partnership   OAKEY2
-#> 18920                                          AGL Hydro Partnership  PINDARI
-#> 18921                                          AGL Hydro Partnership  EILDON2
-#> 18922                                          AGL Hydro Partnership   CLOVER
-#> 18923                                          AGL Hydro Partnership   CLOVER
-#> 18924                                          AGL Hydro Partnership  EILDON1
-#> 18925                                          AGL Hydro Partnership BDONGHYD
-#> 18926                                          AGL Hydro Partnership  AGLNOW1
-#> 18927                                          AGL Hydro Partnership  EILDON1
-#> 18928                                          AGL Hydro Partnership  PINDARI
-#> 18929                                          AGL Hydro Partnership  PINDARI
-#> 18930                                          AGL Hydro Partnership  EILDON1
-#> 18931                                          AGL Hydro Partnership  EILDON1
-#> 18932                                          AGL Hydro Partnership  RUBICON
-#> 18933                                          AGL Hydro Partnership  EILDON2
-#> 18934                                          AGL Hydro Partnership  EILDON2
-#> 18935                                          AGL Hydro Partnership  EILDON2
-#> 18936                                          AGL Hydro Partnership  YABULU2
-#> 18937                                          AGL Hydro Partnership   OAKEY2
-#> 18938                                          AGL Hydro Partnership  AGLNOW1
-#> 18939                                          AGL Hydro Partnership   MCKAY1
-#> 18940                                          AGL Hydro Partnership   MCKAY1
-#> 18941                                          AGL Hydro Partnership   MCKAY1
-#> 18942                                          AGL Hydro Partnership   MCKAY1
-#> 18943                                          AGL Hydro Partnership   MCKAY1
-#> 18944                                          AGL Hydro Partnership   MCKAY1
-#> 18945                                          AGL Hydro Partnership   MCKAY1
-#> 18946                                          AGL Hydro Partnership   MCKAY1
-#> 18947                                          AGL Hydro Partnership   AGLSOM
-#> 18948                                          AGL Hydro Partnership   CLOVER
-#> 18949                                          AGL Hydro Partnership WYANGALB
-#> 18950                                          AGL Hydro Partnership   CLOVER
-#> 18951                                          AGL Hydro Partnership  EILDON2
-#> 18952                                          AGL Hydro Partnership   DARTM1
-#> 18953                                          AGL Hydro Partnership BDONGHYD
-#> 18954                                          AGL Hydro Partnership YWNGAHYD
-#> 18955                                          AGL Hydro Partnership   YABULU
-#> 18956                                          AGL Hydro Partnership  PINDARI
+#> 18916                                          AGL Hydro Partnership  PINDARI
+#> 18917                                          AGL Hydro Partnership   CLOVER
+#> 18918                                          AGL Hydro Partnership  EILDON1
+#> 18919                                          AGL Hydro Partnership  EILDON2
+#> 18920                                          AGL Hydro Partnership  EILDON1
+#> 18921                                          AGL Hydro Partnership  PINDARI
+#> 18922                                          AGL Hydro Partnership  PINDARI
+#> 18923                                          AGL Hydro Partnership   DARTM1
+#> 18924                                          AGL Hydro Partnership   AGLSOM
+#> 18925                                          AGL Hydro Partnership   DARTM1
+#> 18926                                          AGL Hydro Partnership   DARTM1
+#> 18927                                          AGL Hydro Partnership   MCKAY2
+#> 18928                                          AGL Hydro Partnership  WKIEWA1
+#> 18929                                          AGL Hydro Partnership   OAKEY2
+#> 18930                                          AGL Hydro Partnership  PINDARI
+#> 18931                                          AGL Hydro Partnership  EILDON2
+#> 18932                                          AGL Hydro Partnership   CLOVER
+#> 18933                                          AGL Hydro Partnership   CLOVER
+#> 18934                                          AGL Hydro Partnership  EILDON1
+#> 18935                                          AGL Hydro Partnership BDONGHYD
+#> 18936                                          AGL Hydro Partnership  AGLNOW1
+#> 18937                                          AGL Hydro Partnership  EILDON1
+#> 18938                                          AGL Hydro Partnership  PINDARI
+#> 18939                                          AGL Hydro Partnership  PINDARI
+#> 18940                                          AGL Hydro Partnership  EILDON1
+#> 18941                                          AGL Hydro Partnership  EILDON1
+#> 18942                                          AGL Hydro Partnership  RUBICON
+#> 18943                                          AGL Hydro Partnership  EILDON2
+#> 18944                                          AGL Hydro Partnership  EILDON2
+#> 18945                                          AGL Hydro Partnership  EILDON2
+#> 18946                                          AGL Hydro Partnership  YABULU2
+#> 18947                                          AGL Hydro Partnership   OAKEY2
+#> 18948                                          AGL Hydro Partnership  AGLNOW1
+#> 18949                                          AGL Hydro Partnership   MCKAY1
+#> 18950                                          AGL Hydro Partnership   MCKAY1
+#> 18951                                          AGL Hydro Partnership   MCKAY1
+#> 18952                                          AGL Hydro Partnership   MCKAY1
+#> 18953                                          AGL Hydro Partnership   MCKAY1
+#> 18954                                          AGL Hydro Partnership   MCKAY1
+#> 18955                                          AGL Hydro Partnership   MCKAY1
+#> 18956                                          AGL Hydro Partnership   MCKAY1
 #> 18957                                          AGL Hydro Partnership   AGLSOM
-#> 18958                                          AGL Hydro Partnership  EILDON1
-#> 18959                                          AGL Hydro Partnership  EILDON1
-#> 18960                                          AGL Hydro Partnership   OAKEY2
-#> 18961                                          AGL Hydro Partnership BDONGHYD
-#> 18962                                          AGL Hydro Partnership  PINDARI
-#> 18963                                          AGL Hydro Partnership   DARTM1
-#> 18964                                          AGL Hydro Partnership   DARTM1
-#> 18965                                          AGL Hydro Partnership   OAKEY2
-#> 18966                                          AGL Hydro Partnership  EILDON1
-#> 18967                                          AGL Hydro Partnership  WKIEWA1
-#> 18968                                          AGL Hydro Partnership   MCKAY1
-#> 18969                                          AGL Hydro Partnership WYANGALA
-#> 18970                                          AGL Hydro Partnership  WKIEWA1
-#> 18971                                          AGL Hydro Partnership  WKIEWA1
-#> 18972                                          AGL Hydro Partnership   MCKAY1
-#> 18973                                          AGL Hydro Partnership   OAKEY2
-#> 18974                                          AGL Hydro Partnership   OAKEY2
+#> 18958                                          AGL Hydro Partnership   CLOVER
+#> 18959                                          AGL Hydro Partnership WYANGALB
+#> 18960                                          AGL Hydro Partnership   CLOVER
+#> 18961                                          AGL Hydro Partnership  EILDON2
+#> 18962                                          AGL Hydro Partnership   DARTM1
+#> 18963                                          AGL Hydro Partnership BDONGHYD
+#> 18964                                          AGL Hydro Partnership YWNGAHYD
+#> 18965                                          AGL Hydro Partnership   YABULU
+#> 18966                                          AGL Hydro Partnership  PINDARI
+#> 18967                                          AGL Hydro Partnership   AGLSOM
+#> 18968                                          AGL Hydro Partnership  EILDON1
+#> 18969                                          AGL Hydro Partnership  EILDON1
+#> 18970                                          AGL Hydro Partnership   OAKEY2
+#> 18971                                          AGL Hydro Partnership BDONGHYD
+#> 18972                                          AGL Hydro Partnership  PINDARI
+#> 18973                                          AGL Hydro Partnership   DARTM1
+#> 18974                                          AGL Hydro Partnership   DARTM1
 #> 18975                                          AGL Hydro Partnership   OAKEY2
-#> 18976                                          AGL Hydro Partnership   MCKAY1
-#> 18977                                          AGL Hydro Partnership  PINDARI
+#> 18976                                          AGL Hydro Partnership  EILDON1
+#> 18977                                          AGL Hydro Partnership  WKIEWA1
 #> 18978                                          AGL Hydro Partnership   MCKAY1
-#> 18979                                          AGL Hydro Partnership   MCKAY1
-#> 18980                                          AGL Hydro Partnership   MCKAY1
-#> 18981                                          AGL Hydro Partnership  YABULU2
-#> 18982                                          AGL Hydro Partnership MORANBAH
-#> 18983                                          AGL Hydro Partnership   MCKAY1
-#> 18984                                          AGL Hydro Partnership   MCKAY1
-#> 18985                                          AGL Hydro Partnership MORANBAH
-#> 18986                                          AGL Hydro Partnership   CLOVER
-#> 18987                                          AGL Hydro Partnership   DARTM1
-#> 18988                                          AGL Hydro Partnership   DARTM1
-#> 18989                                          AGL Hydro Partnership WYANGALA
+#> 18979                                          AGL Hydro Partnership WYANGALA
+#> 18980                                          AGL Hydro Partnership  WKIEWA1
+#> 18981                                          AGL Hydro Partnership  WKIEWA1
+#> 18982                                          AGL Hydro Partnership   MCKAY1
+#> 18983                                          AGL Hydro Partnership   OAKEY2
+#> 18984                                          AGL Hydro Partnership   OAKEY2
+#> 18985                                          AGL Hydro Partnership   OAKEY2
+#> 18986                                          AGL Hydro Partnership   MCKAY1
+#> 18987                                          AGL Hydro Partnership  PINDARI
+#> 18988                                          AGL Hydro Partnership   MCKAY1
+#> 18989                                          AGL Hydro Partnership   MCKAY1
 #> 18990                                          AGL Hydro Partnership   MCKAY1
-#> 18991                                          AGL Hydro Partnership WYANGALB
-#> 18992                                          AGL Hydro Partnership   CLOVER
-#> 18993                                          AGL Hydro Partnership  EILDON1
-#> 18994                                          AGL Hydro Partnership  EILDON1
-#> 18995                                          AGL Hydro Partnership  EILDON1
-#> 18996                                          AGL Hydro Partnership   MCKAY2
-#> 18997                                          AGL Hydro Partnership  EILDON1
-#> 18998                                          AGL Hydro Partnership  CLOVER1
-#> 18999                                          AGL Hydro Partnership  CLOVER1
-#> 19000                                          AGL Hydro Partnership BDONGHYD
-#> 19001                                          AGL Hydro Partnership  EILDON2
-#> 19002                                          AGL Hydro Partnership  KINCUM1
-#> 19003                                          AGL Hydro Partnership WYANGALB
-#> 19004                                          AGL Hydro Partnership   MCKAY1
-#> 19005                                          AGL Hydro Partnership  AGLNOW1
-#> 19006                                          AGL Hydro Partnership  WKIEWA1
-#> 19007                                          AGL Hydro Partnership  AGLNOW1
-#> 19008                                          AGL Hydro Partnership  EILDON1
-#> 19009                                          AGL Hydro Partnership  EILDON1
-#> 19010                                          AGL Hydro Partnership   MCKAY1
-#> 19011                                          AGL Hydro Partnership   MCKAY1
-#> 19012                                          AGL Hydro Partnership   AGLSOM
-#> 19013                                          AGL Hydro Partnership   AGLSOM
+#> 18991                                          AGL Hydro Partnership  YABULU2
+#> 18992                                          AGL Hydro Partnership MORANBAH
+#> 18993                                          AGL Hydro Partnership   MCKAY1
+#> 18994                                          AGL Hydro Partnership   MCKAY1
+#> 18995                                          AGL Hydro Partnership MORANBAH
+#> 18996                                          AGL Hydro Partnership   CLOVER
+#> 18997                                          AGL Hydro Partnership   DARTM1
+#> 18998                                          AGL Hydro Partnership   DARTM1
+#> 18999                                          AGL Hydro Partnership WYANGALA
+#> 19000                                          AGL Hydro Partnership   MCKAY1
+#> 19001                                          AGL Hydro Partnership WYANGALB
+#> 19002                                          AGL Hydro Partnership   CLOVER
+#> 19003                                          AGL Hydro Partnership  EILDON1
+#> 19004                                          AGL Hydro Partnership  EILDON1
+#> 19005                                          AGL Hydro Partnership  EILDON1
+#> 19006                                          AGL Hydro Partnership   MCKAY2
+#> 19007                                          AGL Hydro Partnership  EILDON1
+#> 19008                                          AGL Hydro Partnership  CLOVER1
+#> 19009                                          AGL Hydro Partnership  CLOVER1
+#> 19010                                          AGL Hydro Partnership BDONGHYD
+#> 19011                                          AGL Hydro Partnership  EILDON2
+#> 19012                                          AGL Hydro Partnership  KINCUM1
+#> 19013                                          AGL Hydro Partnership WYANGALB
 #> 19014                                          AGL Hydro Partnership   MCKAY1
-#> 19015                                          AGL Hydro Partnership   MCKAY1
-#> 19016                                          AGL Hydro Partnership   MCKAY1
-#> 19017                                          AGL Hydro Partnership   MCKAY1
-#> 19018                                          AGL Hydro Partnership  PINDARI
-#> 19019                                          AGL Hydro Partnership  RUBICON
-#> 19020                                          AGL Hydro Partnership  RUBICON
-#> 19021                                          AGL Hydro Partnership     BAPS
-#> 19022                                          AGL Hydro Partnership  RUBICON
-#> 19023                                          AGL Hydro Partnership  RUBICON
-#> 19024                                          AGL Hydro Partnership  RUBICON
-#> 19025                                          AGL Hydro Partnership  RUBICON
-#> 19026                                          AGL Hydro Partnership  RUBICON
-#> 19027                                          AGL Hydro Partnership  RUBICON
-#> 19028                                          AGL Hydro Partnership WYANGALA
-#> 19029                                          AGL Hydro Partnership   DARTM1
-#> 19030                                          AGL Hydro Partnership   DARTM1
-#> 19031                                          AGL Hydro Partnership COPTNHYD
-#> 19032                                          AGL Hydro Partnership GLBWNHYD
-#> 19033                                          AGL Hydro Partnership GLBWNHYD
-#> 19034                                          AGL Hydro Partnership GLBWNHYD
-#> 19035                                          AGL Hydro Partnership   AGLHAL
-#> 19036                                          AGL Hydro Partnership COPTNHYD
-#> 19037                                          AGL Hydro Partnership   DARTM1
-#> 19038                                          AGL Hydro Partnership   DARTM1
+#> 19015                                          AGL Hydro Partnership  AGLNOW1
+#> 19016                                          AGL Hydro Partnership  WKIEWA1
+#> 19017                                          AGL Hydro Partnership  AGLNOW1
+#> 19018                                          AGL Hydro Partnership  EILDON1
+#> 19019                                          AGL Hydro Partnership  EILDON1
+#> 19020                                          AGL Hydro Partnership   MCKAY1
+#> 19021                                          AGL Hydro Partnership   MCKAY1
+#> 19022                                          AGL Hydro Partnership   AGLSOM
+#> 19023                                          AGL Hydro Partnership   AGLSOM
+#> 19024                                          AGL Hydro Partnership   MCKAY1
+#> 19025                                          AGL Hydro Partnership   MCKAY1
+#> 19026                                          AGL Hydro Partnership   MCKAY1
+#> 19027                                          AGL Hydro Partnership   MCKAY1
+#> 19028                                          AGL Hydro Partnership  PINDARI
+#> 19029                                          AGL Hydro Partnership  RUBICON
+#> 19030                                          AGL Hydro Partnership  RUBICON
+#> 19031                                          AGL Hydro Partnership     BAPS
+#> 19032                                          AGL Hydro Partnership  RUBICON
+#> 19033                                          AGL Hydro Partnership  RUBICON
+#> 19034                                          AGL Hydro Partnership  RUBICON
+#> 19035                                          AGL Hydro Partnership  RUBICON
+#> 19036                                          AGL Hydro Partnership  RUBICON
+#> 19037                                          AGL Hydro Partnership  RUBICON
+#> 19038                                          AGL Hydro Partnership WYANGALA
 #> 19039                                          AGL Hydro Partnership   DARTM1
-#> 19040                                          AGL Hydro Partnership  WKIEWA1
-#> 19041                                          AGL Hydro Partnership BDONGHYD
-#> 19042                                          AGL Hydro Partnership  PINDARI
-#> 19043                                          AGL Hydro Partnership  PINDARI
-#> 19044                                          AGL Hydro Partnership  EILDON2
-#> 19045                                          AGL Hydro Partnership  KINCUM1
-#> 19046                                          AGL Hydro Partnership  AGLNOW1
-#> 19047                                          AGL Hydro Partnership WYANGALA
-#> 19048                                          AGL Hydro Partnership WYANGALA
-#> 19049                                          AGL Hydro Partnership  YABULU2
+#> 19040                                          AGL Hydro Partnership   DARTM1
+#> 19041                                          AGL Hydro Partnership COPTNHYD
+#> 19042                                          AGL Hydro Partnership GLBWNHYD
+#> 19043                                          AGL Hydro Partnership GLBWNHYD
+#> 19044                                          AGL Hydro Partnership GLBWNHYD
+#> 19045                                          AGL Hydro Partnership   AGLHAL
+#> 19046                                          AGL Hydro Partnership COPTNHYD
+#> 19047                                          AGL Hydro Partnership   DARTM1
+#> 19048                                          AGL Hydro Partnership   DARTM1
+#> 19049                                          AGL Hydro Partnership   DARTM1
 #> 19050                                          AGL Hydro Partnership  WKIEWA1
-#> 19051                                          AGL Hydro Partnership WYANGALA
-#> 19052                                          AGL Hydro Partnership   MCKAY1
-#> 19053                                          AGL Hydro Partnership  EILDON2
+#> 19051                                          AGL Hydro Partnership BDONGHYD
+#> 19052                                          AGL Hydro Partnership  PINDARI
+#> 19053                                          AGL Hydro Partnership  PINDARI
 #> 19054                                          AGL Hydro Partnership  EILDON2
-#> 19055                                          AGL Hydro Partnership   MCKAY1
-#> 19056                                          AGL Hydro Partnership   AGLSOM
-#> 19057                                          AGL Hydro Partnership   AGLSOM
-#> 19058                                          AGL Hydro Partnership   AGLSOM
-#> 19059                                          AGL Hydro Partnership   MCKAY1
-#> 19060                                          AGL Hydro Partnership   MCKAY1
-#> 19061                                          AGL Hydro Partnership   MCKAY1
+#> 19055                                          AGL Hydro Partnership  KINCUM1
+#> 19056                                          AGL Hydro Partnership  AGLNOW1
+#> 19057                                          AGL Hydro Partnership WYANGALA
+#> 19058                                          AGL Hydro Partnership WYANGALA
+#> 19059                                          AGL Hydro Partnership  YABULU2
+#> 19060                                          AGL Hydro Partnership  WKIEWA1
+#> 19061                                          AGL Hydro Partnership WYANGALA
 #> 19062                                          AGL Hydro Partnership   MCKAY1
-#> 19063                                          AGL Hydro Partnership   AGLSOM
-#> 19064                                          AGL Hydro Partnership   AGLSOM
+#> 19063                                          AGL Hydro Partnership  EILDON2
+#> 19064                                          AGL Hydro Partnership  EILDON2
 #> 19065                                          AGL Hydro Partnership   MCKAY1
-#> 19066                                          AGL Hydro Partnership   MCKAY1
-#> 19067                                          AGL Hydro Partnership   MCKAY2
-#> 19068                                          AGL Hydro Partnership   MCKAY1
-#> 19069                                          AGL Hydro Partnership WYANGALB
+#> 19066                                          AGL Hydro Partnership   AGLSOM
+#> 19067                                          AGL Hydro Partnership   AGLSOM
+#> 19068                                          AGL Hydro Partnership   AGLSOM
+#> 19069                                          AGL Hydro Partnership   MCKAY1
 #> 19070                                          AGL Hydro Partnership   MCKAY1
-#> 19071                                          AGL Hydro Partnership WYANGALB
-#> 19072                                          AGL Hydro Partnership BDONGHYD
-#> 19073                                          AGL Hydro Partnership BDONGHYD
-#> 19074                                          AGL Hydro Partnership  PINDARI
-#> 19075                                          AGL Hydro Partnership   AGLSOM
-#> 19076                                          AGL Hydro Partnership   AGLSOM
+#> 19071                                          AGL Hydro Partnership   MCKAY1
+#> 19072                                          AGL Hydro Partnership   MCKAY1
+#> 19073                                          AGL Hydro Partnership   AGLSOM
+#> 19074                                          AGL Hydro Partnership   AGLSOM
+#> 19075                                          AGL Hydro Partnership   MCKAY1
+#> 19076                                          AGL Hydro Partnership   MCKAY1
 #> 19077                                          AGL Hydro Partnership   MCKAY2
-#> 19078                                          AGL Hydro Partnership   AGLSOM
-#> 19079                                          AGL Hydro Partnership  EILDON1
-#> 19080                                          AGL Hydro Partnership   YABULU
-#> 19081                                          AGL Hydro Partnership  WKIEWA1
-#> 19082                                          AGL Hydro Partnership  WKIEWA1
-#> 19083                                          AGL Hydro Partnership  PINDARI
+#> 19078                                          AGL Hydro Partnership   MCKAY1
+#> 19079                                          AGL Hydro Partnership WYANGALB
+#> 19080                                          AGL Hydro Partnership   MCKAY1
+#> 19081                                          AGL Hydro Partnership WYANGALB
+#> 19082                                          AGL Hydro Partnership BDONGHYD
+#> 19083                                          AGL Hydro Partnership BDONGHYD
 #> 19084                                          AGL Hydro Partnership  PINDARI
-#> 19085                                          AGL Hydro Partnership  EILDON1
-#> 19086                                          AGL Hydro Partnership  EILDON1
-#> 19087                                          AGL Hydro Partnership  EILDON1
-#> 19088                                          AGL Hydro Partnership  EILDON1
-#> 19089                                          AGL Hydro Partnership  WKIEWA1
-#> 19090                                          AGL Hydro Partnership  EILDON2
-#> 19091                                          AGL Hydro Partnership  YABULU2
-#> 19092                                          AGL Hydro Partnership  RUBICON
-#> 19093                                          AGL Hydro Partnership  RUBICON
-#> 19094                                          AGL Hydro Partnership  RUBICON
-#> 19095                                          AGL Hydro Partnership   AGLSOM
-#> 19096                                          AGL Hydro Partnership YWNGAHYD
-#> 19097                                          AGL Hydro Partnership  AGLNOW1
-#> 19098                                          AGL Hydro Partnership  EILDON2
-#> 19099                                          AGL Hydro Partnership  EILDON1
-#> 19100                                          AGL Hydro Partnership   MCKAY1
-#> 19101                                          AGL Hydro Partnership     BAPS
-#> 19102                                          AGL Hydro Partnership  WKIEWA1
-#> 19103                                          AGL Hydro Partnership   MCKAY1
-#> 19104                                          AGL Hydro Partnership MORANBAH
-#> 19105                                          AGL Hydro Partnership MORANBAH
-#> 19106                                          AGL Hydro Partnership   OAKEY1
-#> 19107                                          AGL Hydro Partnership YWNGAHYD
-#> 19108                                          AGL Hydro Partnership WYANGALA
-#> 19109                                          AGL Hydro Partnership   MCKAY2
-#> 19110                                          AGL Hydro Partnership   MCKAY2
-#> 19111                                          AGL Hydro Partnership   MCKAY2
-#> 19112                                          AGL Hydro Partnership   MCKAY2
-#> 19113                                          AGL Hydro Partnership MORANBAH
+#> 19085                                          AGL Hydro Partnership   AGLSOM
+#> 19086                                          AGL Hydro Partnership   AGLSOM
+#> 19087                                          AGL Hydro Partnership   MCKAY2
+#> 19088                                          AGL Hydro Partnership   AGLSOM
+#> 19089                                          AGL Hydro Partnership  EILDON1
+#> 19090                                          AGL Hydro Partnership   YABULU
+#> 19091                                          AGL Hydro Partnership  WKIEWA1
+#> 19092                                          AGL Hydro Partnership  WKIEWA1
+#> 19093                                          AGL Hydro Partnership  PINDARI
+#> 19094                                          AGL Hydro Partnership  PINDARI
+#> 19095                                          AGL Hydro Partnership  EILDON1
+#> 19096                                          AGL Hydro Partnership  EILDON1
+#> 19097                                          AGL Hydro Partnership  EILDON1
+#> 19098                                          AGL Hydro Partnership  EILDON1
+#> 19099                                          AGL Hydro Partnership  WKIEWA1
+#> 19100                                          AGL Hydro Partnership  EILDON2
+#> 19101                                          AGL Hydro Partnership  YABULU2
+#> 19102                                          AGL Hydro Partnership  RUBICON
+#> 19103                                          AGL Hydro Partnership  RUBICON
+#> 19104                                          AGL Hydro Partnership  RUBICON
+#> 19105                                          AGL Hydro Partnership   AGLSOM
+#> 19106                                          AGL Hydro Partnership YWNGAHYD
+#> 19107                                          AGL Hydro Partnership  AGLNOW1
+#> 19108                                          AGL Hydro Partnership  EILDON2
+#> 19109                                          AGL Hydro Partnership  EILDON1
+#> 19110                                          AGL Hydro Partnership   MCKAY1
+#> 19111                                          AGL Hydro Partnership     BAPS
+#> 19112                                          AGL Hydro Partnership  WKIEWA1
+#> 19113                                          AGL Hydro Partnership   MCKAY1
 #> 19114                                          AGL Hydro Partnership MORANBAH
-#> 19115                                          AGL Hydro Partnership   CLOVER
-#> 19116                                          AGL Hydro Partnership   CLOVER
-#> 19117                                          AGL Hydro Partnership   CLOVER
-#> 19118                                          AGL Hydro Partnership  WKIEWA1
-#> 19119                                          AGL Hydro Partnership  WKIEWA1
-#> 19120                                          AGL Hydro Partnership  WKIEWA1
-#> 19121                                          AGL Hydro Partnership  EILDON2
-#> 19122                                          AGL Hydro Partnership  PINDARI
-#> 19123                                          AGL Hydro Partnership  EILDON1
-#> 19124                                          AGL Hydro Partnership     WPWF
-#> 19125                                          AGL Hydro Partnership     WPWF
-#> 19126                                          AGL Hydro Partnership   MCKAY2
-#> 19127                                          AGL Hydro Partnership  KINCUM1
-#> 19128                                          AGL Hydro Partnership  KINCUM1
-#> 19129                                          AGL Hydro Partnership  EILDON2
-#> 19130                                          AGL Hydro Partnership  EILDON2
-#> 19131                                          AGL Hydro Partnership   AGLSOM
-#> 19132                                          AGL Hydro Partnership  YABULU2
-#> 19133                                          AGL Hydro Partnership  YABULU2
-#> 19134                                          AGL Hydro Partnership  AGLNOW1
-#> 19135                                          AGL Hydro Partnership  AGLNOW1
-#> 19136                                          AGL Hydro Partnership     WPWF
-#> 19137                                          AGL Hydro Partnership  PINDARI
-#> 19138                                          AGL Hydro Partnership  PINDARI
-#> 19139                                          AGL Hydro Partnership  RUBICON
-#> 19140                                          AGL Hydro Partnership  WKIEWA1
+#> 19115                                          AGL Hydro Partnership MORANBAH
+#> 19116                                          AGL Hydro Partnership   OAKEY1
+#> 19117                                          AGL Hydro Partnership YWNGAHYD
+#> 19118                                          AGL Hydro Partnership WYANGALA
+#> 19119                                          AGL Hydro Partnership   MCKAY2
+#> 19120                                          AGL Hydro Partnership   MCKAY2
+#> 19121                                          AGL Hydro Partnership   MCKAY2
+#> 19122                                          AGL Hydro Partnership   MCKAY2
+#> 19123                                          AGL Hydro Partnership MORANBAH
+#> 19124                                          AGL Hydro Partnership MORANBAH
+#> 19125                                          AGL Hydro Partnership   CLOVER
+#> 19126                                          AGL Hydro Partnership   CLOVER
+#> 19127                                          AGL Hydro Partnership   CLOVER
+#> 19128                                          AGL Hydro Partnership  WKIEWA1
+#> 19129                                          AGL Hydro Partnership  WKIEWA1
+#> 19130                                          AGL Hydro Partnership  WKIEWA1
+#> 19131                                          AGL Hydro Partnership  EILDON2
+#> 19132                                          AGL Hydro Partnership  PINDARI
+#> 19133                                          AGL Hydro Partnership  EILDON1
+#> 19134                                          AGL Hydro Partnership     WPWF
+#> 19135                                          AGL Hydro Partnership     WPWF
+#> 19136                                          AGL Hydro Partnership   MCKAY2
+#> 19137                                          AGL Hydro Partnership  KINCUM1
+#> 19138                                          AGL Hydro Partnership  KINCUM1
+#> 19139                                          AGL Hydro Partnership  EILDON2
+#> 19140                                          AGL Hydro Partnership  EILDON2
 #> 19141                                          AGL Hydro Partnership   AGLSOM
-#> 19142                                          AGL Hydro Partnership   AGLSOM
-#> 19143                                          AGL Hydro Partnership     BAPS
-#> 19144                                          AGL Hydro Partnership     BAPS
-#> 19145                                          AGL Hydro Partnership     BAPS
-#> 19146                                          AGL Hydro Partnership     BAPS
-#> 19147                                          AGL Hydro Partnership     BAPS
-#> 19148                                          AGL Hydro Partnership     BAPS
+#> 19142                                          AGL Hydro Partnership  YABULU2
+#> 19143                                          AGL Hydro Partnership  YABULU2
+#> 19144                                          AGL Hydro Partnership  AGLNOW1
+#> 19145                                          AGL Hydro Partnership  AGLNOW1
+#> 19146                                          AGL Hydro Partnership     WPWF
+#> 19147                                          AGL Hydro Partnership  PINDARI
+#> 19148                                          AGL Hydro Partnership  PINDARI
 #> 19149                                          AGL Hydro Partnership  RUBICON
-#> 19150                                          AGL Hydro Partnership  PINDARI
-#> 19151                                          AGL Hydro Partnership   DARTM1
-#> 19152                                          AGL Hydro Partnership   YABULU
-#> 19153                                          AGL Hydro Partnership   YABULU
-#> 19154                                          AGL Hydro Partnership   YABULU
-#> 19155                                          AGL Hydro Partnership SUNCOAST
-#> 19156                                          AGL Hydro Partnership SUNCOAST
-#> 19157                                          AGL Hydro Partnership SUNCOAST
-#> 19158                                          AGL Hydro Partnership COPTNHYD
-#> 19159                                          AGL Hydro Partnership AGLSITA1
-#> 19160                                          AGL Hydro Partnership AGLSITA1
-#> 19161                                          AGL Hydro Partnership   OAKEY2
-#> 19162                                          AGL Hydro Partnership   OAKEY2
-#> 19163                                          AGL Hydro Partnership BDONGHYD
-#> 19164                                          AGL Hydro Partnership   DARTM1
-#> 19165                                          AGL Hydro Partnership   DARTM1
-#> 19166                                          AGL Hydro Partnership   DARTM1
-#> 19167                                          AGL Hydro Partnership   DARTM1
-#> 19168                                          AGL Hydro Partnership  YABULU2
-#> 19169                                          AGL Hydro Partnership  YABULU2
-#> 19170                                          AGL Hydro Partnership  YABULU2
-#> 19171                                          AGL Hydro Partnership  YABULU2
-#> 19172                                          AGL Hydro Partnership GLBWNHYD
-#> 19173                                          AGL Hydro Partnership  YABULU2
-#> 19174                                          AGL Hydro Partnership  YABULU2
-#> 19175                                          AGL Hydro Partnership  YABULU2
-#> 19176                                          AGL Hydro Partnership  PINDARI
-#> 19177                                          AGL Hydro Partnership     WPWF
-#> 19178                                          AGL Hydro Partnership     WPWF
-#> 19179                                          AGL Hydro Partnership     WPWF
-#> 19180                                          AGL Hydro Partnership   AGLSOM
-#> 19181                                          AGL Hydro Partnership  EILDON2
-#> 19182                                          AGL Hydro Partnership  WKIEWA1
-#> 19183                                          AGL Hydro Partnership   AGLSOM
-#> 19184                                          AGL Hydro Partnership     WPWF
-#> 19185                                          AGL Hydro Partnership     WPWF
-#> 19186                                          AGL Hydro Partnership   AGLSOM
-#> 19187                                          AGL Hydro Partnership   AGLSOM
-#> 19188                                          AGL Hydro Partnership   AGLSOM
-#> 19189                                          AGL Hydro Partnership   MCKAY2
-#> 19190                                          AGL Hydro Partnership   MCKAY1
-#> 19191                                          AGL Hydro Partnership   MCKAY2
-#> 19192                                          AGL Hydro Partnership   MCKAY2
-#> 19193                                          AGL Hydro Partnership  PINDARI
-#> 19194                                          AGL Hydro Partnership  PINDARI
-#> 19195                                          AGL Hydro Partnership YWNGAHYD
-#> 19196                                          AGL Hydro Partnership   YABULU
-#> 19197                                          AGL Hydro Partnership   YABULU
-#> 19198                                          AGL Hydro Partnership  EILDON2
-#> 19199                                          AGL Hydro Partnership  EILDON1
+#> 19150                                          AGL Hydro Partnership  WKIEWA1
+#> 19151                                          AGL Hydro Partnership   AGLSOM
+#> 19152                                          AGL Hydro Partnership   AGLSOM
+#> 19153                                          AGL Hydro Partnership     BAPS
+#> 19154                                          AGL Hydro Partnership     BAPS
+#> 19155                                          AGL Hydro Partnership     BAPS
+#> 19156                                          AGL Hydro Partnership     BAPS
+#> 19157                                          AGL Hydro Partnership     BAPS
+#> 19158                                          AGL Hydro Partnership     BAPS
+#> 19159                                          AGL Hydro Partnership  RUBICON
+#> 19160                                          AGL Hydro Partnership  PINDARI
+#> 19161                                          AGL Hydro Partnership   DARTM1
+#> 19162                                          AGL Hydro Partnership   YABULU
+#> 19163                                          AGL Hydro Partnership   YABULU
+#> 19164                                          AGL Hydro Partnership   YABULU
+#> 19165                                          AGL Hydro Partnership SUNCOAST
+#> 19166                                          AGL Hydro Partnership SUNCOAST
+#> 19167                                          AGL Hydro Partnership SUNCOAST
+#> 19168                                          AGL Hydro Partnership COPTNHYD
+#> 19169                                          AGL Hydro Partnership AGLSITA1
+#> 19170                                          AGL Hydro Partnership AGLSITA1
+#> 19171                                          AGL Hydro Partnership   OAKEY2
+#> 19172                                          AGL Hydro Partnership   OAKEY2
+#> 19173                                          AGL Hydro Partnership BDONGHYD
+#> 19174                                          AGL Hydro Partnership   DARTM1
+#> 19175                                          AGL Hydro Partnership   DARTM1
+#> 19176                                          AGL Hydro Partnership   DARTM1
+#> 19177                                          AGL Hydro Partnership   DARTM1
+#> 19178                                          AGL Hydro Partnership  YABULU2
+#> 19179                                          AGL Hydro Partnership  YABULU2
+#> 19180                                          AGL Hydro Partnership  YABULU2
+#> 19181                                          AGL Hydro Partnership  YABULU2
+#> 19182                                          AGL Hydro Partnership GLBWNHYD
+#> 19183                                          AGL Hydro Partnership  YABULU2
+#> 19184                                          AGL Hydro Partnership  YABULU2
+#> 19185                                          AGL Hydro Partnership  YABULU2
+#> 19186                                          AGL Hydro Partnership  PINDARI
+#> 19187                                          AGL Hydro Partnership     WPWF
+#> 19188                                          AGL Hydro Partnership     WPWF
+#> 19189                                          AGL Hydro Partnership     WPWF
+#> 19190                                          AGL Hydro Partnership   AGLSOM
+#> 19191                                          AGL Hydro Partnership  EILDON2
+#> 19192                                          AGL Hydro Partnership  WKIEWA1
+#> 19193                                          AGL Hydro Partnership   AGLSOM
+#> 19194                                          AGL Hydro Partnership     WPWF
+#> 19195                                          AGL Hydro Partnership     WPWF
+#> 19196                                          AGL Hydro Partnership   AGLSOM
+#> 19197                                          AGL Hydro Partnership   AGLSOM
+#> 19198                                          AGL Hydro Partnership   AGLSOM
+#> 19199                                          AGL Hydro Partnership   MCKAY2
 #> 19200                                          AGL Hydro Partnership   MCKAY1
-#> 19201                                          AGL Hydro Partnership   MCKAY1
-#> 19202                                          AGL Hydro Partnership   MCKAY1
-#> 19203                                          AGL Hydro Partnership     WPWF
+#> 19201                                          AGL Hydro Partnership   MCKAY2
+#> 19202                                          AGL Hydro Partnership   MCKAY2
+#> 19203                                          AGL Hydro Partnership  PINDARI
 #> 19204                                          AGL Hydro Partnership  PINDARI
-#> 19205                                          AGL Hydro Partnership  PINDARI
-#> 19206                                          AGL Hydro Partnership  AGLNOW1
-#> 19207                                          AGL Hydro Partnership  AGLNOW1
-#> 19208                                          AGL Hydro Partnership  AGLNOW1
-#> 19209                                          AGL Hydro Partnership  EILDON2
-#> 19210                                          AGL Hydro Partnership  EILDON1
-#> 19211                                          AGL Hydro Partnership  EILDON2
-#> 19212                                          AGL Hydro Partnership  EILDON2
-#> 19213                                          AGL Hydro Partnership  EILDON2
-#> 19214                                          AGL Hydro Partnership  AGLNOW1
-#> 19215                                          AGL Hydro Partnership  EILDON2
-#> 19216                                          AGL Hydro Partnership  WKIEWA1
-#> 19217                                          AGL Hydro Partnership  RUBICON
-#> 19218                                          AGL Hydro Partnership  WKIEWA1
-#> 19219                                          AGL Hydro Partnership   MCKAY1
-#> 19220                                          AGL Hydro Partnership AGLSITA1
-#> 19221                                          AGL Hydro Partnership  PINDARI
-#> 19222                                          AGL Hydro Partnership     WPWF
-#> 19223                                          AGL Hydro Partnership YWNGAHYD
-#> 19224                                          AGL Hydro Partnership  WKIEWA1
-#> 19225                                          AGL Hydro Partnership   MCKAY1
-#> 19226                                          AGL Hydro Partnership   OAKEY1
-#> 19227                                          AGL Hydro Partnership WYANGALA
-#> 19228                                          AGL Hydro Partnership WYANGALA
-#> 19229                                          AGL Hydro Partnership   MCKAY2
-#> 19230                                          AGL Hydro Partnership EDLRGNRD
-#> 19231                                          AGL Hydro Partnership     BAPS
-#> 19232                                          AGL Hydro Partnership  EILDON1
-#> 19233                                          AGL Hydro Partnership  EILDON1
-#> 19234                                          AGL Hydro Partnership  EILDON1
-#> 19235                                          AGL Hydro Partnership WYANGALB
-#> 19236                                          AGL Hydro Partnership WYANGALB
-#> 19237                                          AGL Hydro Partnership WYANGALB
-#> 19238                                          AGL Hydro Partnership WYANGALB
-#> 19239                                          AGL Hydro Partnership WYANGALB
-#> 19240                                          AGL Hydro Partnership     BAPS
-#> 19241                                          AGL Hydro Partnership  EILDON1
+#> 19205                                          AGL Hydro Partnership YWNGAHYD
+#> 19206                                          AGL Hydro Partnership   YABULU
+#> 19207                                          AGL Hydro Partnership   YABULU
+#> 19208                                          AGL Hydro Partnership  EILDON2
+#> 19209                                          AGL Hydro Partnership  EILDON1
+#> 19210                                          AGL Hydro Partnership   MCKAY1
+#> 19211                                          AGL Hydro Partnership   MCKAY1
+#> 19212                                          AGL Hydro Partnership   MCKAY1
+#> 19213                                          AGL Hydro Partnership     WPWF
+#> 19214                                          AGL Hydro Partnership  PINDARI
+#> 19215                                          AGL Hydro Partnership  PINDARI
+#> 19216                                          AGL Hydro Partnership  AGLNOW1
+#> 19217                                          AGL Hydro Partnership  AGLNOW1
+#> 19218                                          AGL Hydro Partnership  AGLNOW1
+#> 19219                                          AGL Hydro Partnership  EILDON2
+#> 19220                                          AGL Hydro Partnership  EILDON1
+#> 19221                                          AGL Hydro Partnership  EILDON2
+#> 19222                                          AGL Hydro Partnership  EILDON2
+#> 19223                                          AGL Hydro Partnership  EILDON2
+#> 19224                                          AGL Hydro Partnership  AGLNOW1
+#> 19225                                          AGL Hydro Partnership  EILDON2
+#> 19226                                          AGL Hydro Partnership  WKIEWA1
+#> 19227                                          AGL Hydro Partnership  RUBICON
+#> 19228                                          AGL Hydro Partnership  WKIEWA1
+#> 19229                                          AGL Hydro Partnership   MCKAY1
+#> 19230                                          AGL Hydro Partnership AGLSITA1
+#> 19231                                          AGL Hydro Partnership  PINDARI
+#> 19232                                          AGL Hydro Partnership     WPWF
+#> 19233                                          AGL Hydro Partnership YWNGAHYD
+#> 19234                                          AGL Hydro Partnership  WKIEWA1
+#> 19235                                          AGL Hydro Partnership   MCKAY1
+#> 19236                                          AGL Hydro Partnership   OAKEY1
+#> 19237                                          AGL Hydro Partnership WYANGALA
+#> 19238                                          AGL Hydro Partnership WYANGALA
+#> 19239                                          AGL Hydro Partnership   MCKAY2
+#> 19240                                          AGL Hydro Partnership EDLRGNRD
+#> 19241                                          AGL Hydro Partnership     BAPS
 #> 19242                                          AGL Hydro Partnership  EILDON1
-#> 19243                                          AGL Hydro Partnership  EILDON2
-#> 19244                                          AGL Hydro Partnership  CLOVER2
-#> 19245                                          AGL Hydro Partnership  EILDON1
-#> 19246                                          AGL Hydro Partnership   MCKAY2
-#> 19247                                          AGL Hydro Partnership     WPWF
-#> 19248                                          AGL Hydro Partnership     WPWF
-#> 19249                                          AGL Hydro Partnership     WPWF
-#> 19250                                          AGL Hydro Partnership  RUBICON
-#> 19251                                          AGL Hydro Partnership  KINCUM1
-#> 19252                                          AGL Hydro Partnership  KINCUM1
-#> 19253                                          AGL Hydro Partnership  KINCUM1
-#> 19254                                          AGL Hydro Partnership     WPWF
-#> 19255                                          AGL Hydro Partnership  WKIEWA1
-#> 19256                                          AGL Hydro Partnership     WPWF
-#> 19257                                          AGL Hydro Partnership  AGLNOW1
-#> 19258                                          AGL Hydro Partnership  WKIEWA1
-#> 19259                                          AGL Hydro Partnership  RUBICON
-#> 19260                                          AGL Hydro Partnership  WKIEWA1
-#> 19261                                          AGL Hydro Partnership     WPWF
-#> 19262                                          AGL Hydro Partnership     BAPS
-#> 19263                                          AGL Hydro Partnership     WPWF
+#> 19243                                          AGL Hydro Partnership  EILDON1
+#> 19244                                          AGL Hydro Partnership  EILDON1
+#> 19245                                          AGL Hydro Partnership WYANGALB
+#> 19246                                          AGL Hydro Partnership WYANGALB
+#> 19247                                          AGL Hydro Partnership WYANGALB
+#> 19248                                          AGL Hydro Partnership WYANGALB
+#> 19249                                          AGL Hydro Partnership WYANGALB
+#> 19250                                          AGL Hydro Partnership     BAPS
+#> 19251                                          AGL Hydro Partnership  EILDON1
+#> 19252                                          AGL Hydro Partnership  EILDON1
+#> 19253                                          AGL Hydro Partnership  EILDON2
+#> 19254                                          AGL Hydro Partnership  CLOVER2
+#> 19255                                          AGL Hydro Partnership  EILDON1
+#> 19256                                          AGL Hydro Partnership   MCKAY2
+#> 19257                                          AGL Hydro Partnership     WPWF
+#> 19258                                          AGL Hydro Partnership     WPWF
+#> 19259                                          AGL Hydro Partnership     WPWF
+#> 19260                                          AGL Hydro Partnership  RUBICON
+#> 19261                                          AGL Hydro Partnership  KINCUM1
+#> 19262                                          AGL Hydro Partnership  KINCUM1
+#> 19263                                          AGL Hydro Partnership  KINCUM1
 #> 19264                                          AGL Hydro Partnership     WPWF
 #> 19265                                          AGL Hydro Partnership  WKIEWA1
-#> 19266                                          AGL Hydro Partnership  WKIEWA1
-#> 19267                                          AGL Hydro Partnership  WKIEWA2
-#> 19268                                          AGL Hydro Partnership  WKIEWA2
-#> 19269                                          AGL Hydro Partnership  WKIEWA2
-#> 19270                                          AGL Hydro Partnership   DARTM1
-#> 19271                                          AGL Hydro Partnership   DARTM1
-#> 19272                                          AGL Hydro Partnership GLBWNHYD
-#> 19273                                          AGL Hydro Partnership GLBWNHYD
-#> 19274                                          AGL Hydro Partnership GLBWNHYD
-#> 19275                                          AGL Hydro Partnership  RUBICON
-#> 19276                                          AGL Hydro Partnership  WKIEWA2
-#> 19277                                          AGL Hydro Partnership GLBWNHYD
-#> 19278                                          AGL Hydro Partnership   AGLHAL
-#> 19279                                          AGL Hydro Partnership AGLSITA1
-#> 19280                                          AGL Hydro Partnership COPTNHYD
-#> 19281                                          AGL Hydro Partnership COPTNHYD
-#> 19282                                          AGL Hydro Partnership  WKIEWA1
-#> 19283                                          AGL Hydro Partnership  CLOVER2
-#> 19284                                          AGL Hydro Partnership   DARTM1
-#> 19285                                          AGL Hydro Partnership  WKIEWA1
-#> 19286                                          AGL Hydro Partnership  WKIEWA1
-#> 19287                                          AGL Hydro Partnership  WKIEWA1
-#> 19288                                          AGL Hydro Partnership  WKIEWA1
-#> 19289                                          AGL Hydro Partnership  WKIEWA1
-#> 19290                                          AGL Hydro Partnership     BAPS
-#> 19291                                          AGL Hydro Partnership   MCKAY1
-#> 19292                                          AGL Hydro Partnership  AGLNOW1
-#> 19293                                          AGL Hydro Partnership  AGLNOW1
-#> 19294                                          AGL Hydro Partnership  AGLNOW1
-#> 19295                                          AGL Hydro Partnership   AGLSOM
-#> 19296                                          AGL Hydro Partnership  WKIEWA2
-#> 19297                                          AGL Hydro Partnership  WKIEWA2
-#> 19298                                          AGL Hydro Partnership  PINDARI
+#> 19266                                          AGL Hydro Partnership     WPWF
+#> 19267                                          AGL Hydro Partnership  AGLNOW1
+#> 19268                                          AGL Hydro Partnership  WKIEWA1
+#> 19269                                          AGL Hydro Partnership  RUBICON
+#> 19270                                          AGL Hydro Partnership  WKIEWA1
+#> 19271                                          AGL Hydro Partnership     WPWF
+#> 19272                                          AGL Hydro Partnership     BAPS
+#> 19273                                          AGL Hydro Partnership     WPWF
+#> 19274                                          AGL Hydro Partnership     WPWF
+#> 19275                                          AGL Hydro Partnership  WKIEWA1
+#> 19276                                          AGL Hydro Partnership  WKIEWA1
+#> 19277                                          AGL Hydro Partnership  WKIEWA2
+#> 19278                                          AGL Hydro Partnership  WKIEWA2
+#> 19279                                          AGL Hydro Partnership  WKIEWA2
+#> 19280                                          AGL Hydro Partnership   DARTM1
+#> 19281                                          AGL Hydro Partnership   DARTM1
+#> 19282                                          AGL Hydro Partnership GLBWNHYD
+#> 19283                                          AGL Hydro Partnership GLBWNHYD
+#> 19284                                          AGL Hydro Partnership GLBWNHYD
+#> 19285                                          AGL Hydro Partnership  RUBICON
+#> 19286                                          AGL Hydro Partnership  WKIEWA2
+#> 19287                                          AGL Hydro Partnership GLBWNHYD
+#> 19288                                          AGL Hydro Partnership   AGLHAL
+#> 19289                                          AGL Hydro Partnership AGLSITA1
+#> 19290                                          AGL Hydro Partnership COPTNHYD
+#> 19291                                          AGL Hydro Partnership COPTNHYD
+#> 19292                                          AGL Hydro Partnership  WKIEWA1
+#> 19293                                          AGL Hydro Partnership  CLOVER2
+#> 19294                                          AGL Hydro Partnership   DARTM1
+#> 19295                                          AGL Hydro Partnership  WKIEWA1
+#> 19296                                          AGL Hydro Partnership  WKIEWA1
+#> 19297                                          AGL Hydro Partnership  WKIEWA1
+#> 19298                                          AGL Hydro Partnership  WKIEWA1
 #> 19299                                          AGL Hydro Partnership  WKIEWA1
-#> 19300                                          AGL Hydro Partnership  WKIEWA1
-#> 19301                                          AGL Hydro Partnership AGLSITA1
-#> 19302                                          AGL Hydro Partnership  WKIEWA1
-#> 19303                                          AGL Hydro Partnership  PINDARI
-#> 19304                                          AGL Hydro Partnership  WKIEWA2
-#> 19305                                          AGL Hydro Partnership  WKIEWA1
-#> 19306                                          AGL Hydro Partnership  WKIEWA1
-#> 19307                                          AGL Hydro Partnership     WPWF
-#> 19308                                          AGL Hydro Partnership  RUBICON
-#> 19309                                          AGL Hydro Partnership  RUBICON
-#> 19310                                          AGL Hydro Partnership   AGLSOM
-#> 19311                                          AGL Hydro Partnership   MCKAY2
-#> 19312                                          AGL Hydro Partnership   AGLSOM
-#> 19313                                          AGL Hydro Partnership   AGLSOM
-#> 19314                                          AGL Hydro Partnership   MCKAY1
-#> 19315                                          AGL Hydro Partnership   AGLSOM
-#> 19316                                          AGL Hydro Partnership   AGLSOM
-#> 19317                                          AGL Hydro Partnership   MCKAY1
-#> 19318                                          AGL Hydro Partnership   MCKAY1
-#> 19319                                          AGL Hydro Partnership   MCKAY1
-#> 19320                                          AGL Hydro Partnership   MCKAY1
-#> 19321                                          AGL Hydro Partnership  EILDON2
-#> 19322                                          AGL Hydro Partnership   YABULU
-#> 19323                                          AGL Hydro Partnership  EILDON2
+#> 19300                                          AGL Hydro Partnership     BAPS
+#> 19301                                          AGL Hydro Partnership   MCKAY1
+#> 19302                                          AGL Hydro Partnership  AGLNOW1
+#> 19303                                          AGL Hydro Partnership  AGLNOW1
+#> 19304                                          AGL Hydro Partnership  AGLNOW1
+#> 19305                                          AGL Hydro Partnership   AGLSOM
+#> 19306                                          AGL Hydro Partnership  WKIEWA2
+#> 19307                                          AGL Hydro Partnership  WKIEWA2
+#> 19308                                          AGL Hydro Partnership  PINDARI
+#> 19309                                          AGL Hydro Partnership  WKIEWA1
+#> 19310                                          AGL Hydro Partnership  WKIEWA1
+#> 19311                                          AGL Hydro Partnership AGLSITA1
+#> 19312                                          AGL Hydro Partnership  WKIEWA1
+#> 19313                                          AGL Hydro Partnership  PINDARI
+#> 19314                                          AGL Hydro Partnership  WKIEWA2
+#> 19315                                          AGL Hydro Partnership  WKIEWA1
+#> 19316                                          AGL Hydro Partnership  WKIEWA1
+#> 19317                                          AGL Hydro Partnership     WPWF
+#> 19318                                          AGL Hydro Partnership  RUBICON
+#> 19319                                          AGL Hydro Partnership  RUBICON
+#> 19320                                          AGL Hydro Partnership   AGLSOM
+#> 19321                                          AGL Hydro Partnership   MCKAY2
+#> 19322                                          AGL Hydro Partnership   AGLSOM
+#> 19323                                          AGL Hydro Partnership   AGLSOM
 #> 19324                                          AGL Hydro Partnership   MCKAY1
-#> 19325                                          AGL Hydro Partnership   MCKAY1
-#> 19326                                          AGL Hydro Partnership   MCKAY1
-#> 19327                                          AGL Hydro Partnership  EILDON2
-#> 19328                                          AGL Hydro Partnership  EILDON2
-#> 19329                                          AGL Hydro Partnership  EILDON2
-#> 19330                                          AGL Hydro Partnership COPTNHYD
-#> 19331                                          AGL Hydro Partnership  KINCUM1
-#> 19332                                          AGL Hydro Partnership     BAPS
-#> 19333                                          AGL Hydro Partnership     BAPS
-#> 19334                                          AGL Hydro Partnership     WPWF
-#> 19335                                          AGL Hydro Partnership  EILDON2
-#> 19336                                          AGL Hydro Partnership     BAPS
-#> 19337                                          AGL Hydro Partnership  WKIEWA2
-#> 19338                                          AGL Hydro Partnership  WKIEWA2
-#> 19339                                          AGL Hydro Partnership  WKIEWA2
-#> 19340                                          AGL Hydro Partnership  AGLNOW1
-#> 19341                                          AGL Hydro Partnership  WKIEWA1
+#> 19325                                          AGL Hydro Partnership   AGLSOM
+#> 19326                                          AGL Hydro Partnership   AGLSOM
+#> 19327                                          AGL Hydro Partnership   MCKAY1
+#> 19328                                          AGL Hydro Partnership   MCKAY1
+#> 19329                                          AGL Hydro Partnership   MCKAY1
+#> 19330                                          AGL Hydro Partnership   MCKAY1
+#> 19331                                          AGL Hydro Partnership  EILDON2
+#> 19332                                          AGL Hydro Partnership   YABULU
+#> 19333                                          AGL Hydro Partnership  EILDON2
+#> 19334                                          AGL Hydro Partnership   MCKAY1
+#> 19335                                          AGL Hydro Partnership   MCKAY1
+#> 19336                                          AGL Hydro Partnership   MCKAY1
+#> 19337                                          AGL Hydro Partnership  EILDON2
+#> 19338                                          AGL Hydro Partnership  EILDON2
+#> 19339                                          AGL Hydro Partnership  EILDON2
+#> 19340                                          AGL Hydro Partnership COPTNHYD
+#> 19341                                          AGL Hydro Partnership  KINCUM1
 #> 19342                                          AGL Hydro Partnership     BAPS
-#> 19343                                          AGL Hydro Partnership  WKIEWA1
-#> 19344                                          AGL Hydro Partnership  WKIEWA1
-#> 19345                                          AGL Hydro Partnership YWNGAHYD
+#> 19343                                          AGL Hydro Partnership     BAPS
+#> 19344                                          AGL Hydro Partnership     WPWF
+#> 19345                                          AGL Hydro Partnership  EILDON2
 #> 19346                                          AGL Hydro Partnership     BAPS
-#> 19347                                          AGL Hydro Partnership     BAPS
-#> 19348                                          AGL Hydro Partnership  WKIEWA1
-#> 19349                                          AGL Hydro Partnership  WKIEWA1
-#> 19350                                          AGL Hydro Partnership EDLRGNRD
-#> 19351                                          AGL Hydro Partnership  WOYWOY1
-#> 19352                                          AGL Hydro Partnership  WOYWOY1
-#> 19353                                          AGL Hydro Partnership   OAKEY1
-#> 19354                                          AGL Hydro Partnership   OAKEY1
-#> 19355                                          AGL Hydro Partnership   OAKEY1
-#> 19356                                          AGL Hydro Partnership   MCKAY2
-#> 19357                                          AGL Hydro Partnership   MCKAY2
-#> 19358                                          AGL Hydro Partnership   MCKAY2
-#> 19359                                          AGL Hydro Partnership   MCKAY2
-#> 19360                                          AGL Hydro Partnership   MCKAY2
-#> 19361                                          AGL Hydro Partnership  WKIEWA1
-#> 19362                                          AGL Hydro Partnership  EILDON1
-#> 19363                                          AGL Hydro Partnership  EILDON2
-#> 19364                                          AGL Hydro Partnership     WPWF
-#> 19365                                          AGL Hydro Partnership     WPWF
+#> 19347                                          AGL Hydro Partnership  WKIEWA2
+#> 19348                                          AGL Hydro Partnership  WKIEWA2
+#> 19349                                          AGL Hydro Partnership  WKIEWA2
+#> 19350                                          AGL Hydro Partnership  AGLNOW1
+#> 19351                                          AGL Hydro Partnership  WKIEWA1
+#> 19352                                          AGL Hydro Partnership     BAPS
+#> 19353                                          AGL Hydro Partnership  WKIEWA1
+#> 19354                                          AGL Hydro Partnership  WKIEWA1
+#> 19355                                          AGL Hydro Partnership YWNGAHYD
+#> 19356                                          AGL Hydro Partnership     BAPS
+#> 19357                                          AGL Hydro Partnership     BAPS
+#> 19358                                          AGL Hydro Partnership  WKIEWA1
+#> 19359                                          AGL Hydro Partnership  WKIEWA1
+#> 19360                                          AGL Hydro Partnership EDLRGNRD
+#> 19361                                          AGL Hydro Partnership  WOYWOY1
+#> 19362                                          AGL Hydro Partnership  WOYWOY1
+#> 19363                                          AGL Hydro Partnership   OAKEY1
+#> 19364                                          AGL Hydro Partnership   OAKEY1
+#> 19365                                          AGL Hydro Partnership   OAKEY1
 #> 19366                                          AGL Hydro Partnership   MCKAY2
-#> 19367                                          AGL Hydro Partnership  EILDON1
-#> 19368                                          AGL Hydro Partnership COPTNHYD
-#> 19369                                          AGL Hydro Partnership COPTNHYD
-#> 19370                                          AGL Hydro Partnership  KINCUM1
-#> 19371                                          AGL Hydro Partnership COPTNHYD
-#> 19372                                          AGL Hydro Partnership   MCKAY1
-#> 19373                                          AGL Hydro Partnership WYANGALA
-#> 19374                                          AGL Hydro Partnership WYANGALA
+#> 19367                                          AGL Hydro Partnership   MCKAY2
+#> 19368                                          AGL Hydro Partnership   MCKAY2
+#> 19369                                          AGL Hydro Partnership   MCKAY2
+#> 19370                                          AGL Hydro Partnership   MCKAY2
+#> 19371                                          AGL Hydro Partnership  WKIEWA1
+#> 19372                                          AGL Hydro Partnership  EILDON1
+#> 19373                                          AGL Hydro Partnership  EILDON2
+#> 19374                                          AGL Hydro Partnership     WPWF
 #> 19375                                          AGL Hydro Partnership     WPWF
-#> 19376                                          AGL Hydro Partnership   CLOVER
-#> 19377                                          AGL Hydro Partnership     BAPS
-#> 19378                                          AGL Hydro Partnership     BAPS
-#> 19379                                          AGL Hydro Partnership  WKIEWA2
-#> 19380                                          AGL Hydro Partnership  RUBICON
-#> 19381                                          AGL Hydro Partnership   MCKAY1
-#> 19382                                          AGL Hydro Partnership GLBWNHYD
-#> 19383                                          AGL Hydro Partnership  WKIEWA2
-#> 19384                                          AGL Hydro Partnership     BAPS
-#> 19385                                          AGL Hydro Partnership  WKIEWA1
-#> 19386                                          AGL Hydro Partnership YWNGAHYD
-#> 19387                                          AGL Hydro Partnership YWNGAHYD
-#> 19388                                          AGL Hydro Partnership YWNGAHYD
-#> 19389                                          AGL Hydro Partnership YWNGAHYD
-#> 19390                                          AGL Hydro Partnership YWNGAHYD
-#> 19391                                          AGL Hydro Partnership  WKIEWA2
-#> 19392                                          AGL Hydro Partnership  WKIEWA2
-#> 19393                                          AGL Hydro Partnership  RUBICON
-#> 19394                                          AGL Hydro Partnership  RUBICON
-#> 19395                                          AGL Hydro Partnership  RUBICON
-#> 19396                                          AGL Hydro Partnership   YABULU
-#> 19397                                          AGL Hydro Partnership     ICSM
-#> 19398                                          AGL Hydro Partnership  WKIEWA2
-#> 19399                                          AGL Hydro Partnership COPTNHYD
-#> 19400                                          AGL Hydro Partnership   OAKEY1
-#> 19401                                          AGL Hydro Partnership AGLSITA1
-#> 19402                                          AGL Hydro Partnership  WKIEWA1
-#> 19403                                          AGL Hydro Partnership  WKIEWA1
-#> 19404                                          AGL Hydro Partnership   DARTM1
-#> 19405                                          AGL Hydro Partnership   CLOVER
-#> 19406                                          AGL Hydro Partnership COPTNHYD
-#> 19407                                          AGL Hydro Partnership COPTNHYD
-#> 19408                                          AGL Hydro Partnership  AGLNOW1
-#> 19409                                          AGL Hydro Partnership  KINCUM1
-#> 19410                                          AGL Hydro Partnership  AGLNOW1
-#> 19411                                          AGL Hydro Partnership  WKIEWA1
-#> 19412                                          AGL Hydro Partnership     WPWF
-#> 19413                                          AGL Hydro Partnership     WPWF
-#> 19414                                          AGL Hydro Partnership     WPWF
-#> 19415                                          AGL Hydro Partnership  RUBICON
-#> 19416                                          AGL Hydro Partnership  WKIEWA2
-#> 19417                                          AGL Hydro Partnership GLBWNHYD
-#> 19418                                          AGL Hydro Partnership GLBWNHYD
-#> 19419                                          AGL Hydro Partnership  PINDARI
-#> 19420                                          AGL Hydro Partnership  WKIEWA2
-#> 19421                                          AGL Hydro Partnership  PINDARI
-#> 19422                                          AGL Hydro Partnership  WKIEWA2
-#> 19423                                          AGL Hydro Partnership  AGLNOW1
-#> 19424                                          AGL Hydro Partnership BDONGHYD
-#> 19425                                          AGL Hydro Partnership     BAPS
-#> 19426                                          AGL Hydro Partnership BDONGHYD
-#> 19427                                          AGL Hydro Partnership BDONGHYD
-#> 19428                                          AGL Hydro Partnership  WKIEWA1
-#> 19429                                          AGL Hydro Partnership EDLRGNRD
-#> 19430                                          AGL Hydro Partnership     ICSM
-#> 19431                                          AGL Hydro Partnership     WPWF
-#> 19432                                          AGL Hydro Partnership   AGLSOM
-#> 19433                                          AGL Hydro Partnership   AGLSOM
-#> 19434                                          AGL Hydro Partnership     WPWF
-#> 19435                                          AGL Hydro Partnership   AGLSOM
-#> 19436                                          AGL Hydro Partnership   YABULU
-#> 19437                                          AGL Hydro Partnership   AGLSOM
-#> 19438                                          AGL Hydro Partnership   MCKAY2
-#> 19439                                          AGL Hydro Partnership   MCKAY2
-#> 19440                                          AGL Hydro Partnership   MCKAY2
-#> 19441                                          AGL Hydro Partnership  EILDON2
-#> 19442                                          AGL Hydro Partnership  AGLNOW1
-#> 19443                                          AGL Hydro Partnership  AGLNOW1
-#> 19444                                          AGL Hydro Partnership  WKIEWA1
-#> 19445                                          AGL Hydro Partnership  WKIEWA2
-#> 19446                                          AGL Hydro Partnership  PINDARI
-#> 19447                                          AGL Hydro Partnership  EILDON1
-#> 19448                                          AGL Hydro Partnership     WPWF
-#> 19449                                          AGL Hydro Partnership  AGLNOW1
-#> 19450                                          AGL Hydro Partnership   OAKEY1
-#> 19451                                          AGL Hydro Partnership  YABULU2
-#> 19452                                          AGL Hydro Partnership   DARTM1
-#> 19453                                          AGL Hydro Partnership GLBWNHYD
-#> 19454                                          AGL Hydro Partnership GLBWNHYD
-#> 19455                                          AGL Hydro Partnership MORANBAH
-#> 19456                                          AGL Hydro Partnership  WOYWOY1
-#> 19457                                          AGL Hydro Partnership  WKIEWA2
-#> 19458                                          AGL Hydro Partnership  WKIEWA2
-#> 19459                                          AGL Hydro Partnership GLBWNHYD
-#> 19460                                          AGL Hydro Partnership  PINDARI
-#> 19461                                          AGL Hydro Partnership GLBWNHYD
-#> 19462                                          AGL Hydro Partnership  AGLNOW1
-#> 19463                                          AGL Hydro Partnership  WKIEWA2
-#> 19464                                          AGL Hydro Partnership MORANBAH
-#> 19465                                          AGL Hydro Partnership BDONGHYD
-#> 19466                                          AGL Hydro Partnership  WKIEWA2
-#> 19467                                          AGL Hydro Partnership  WKIEWA1
-#> 19468                                          AGL Hydro Partnership  WKIEWA1
-#> 19469                                          AGL Hydro Partnership  YABULU2
-#> 19470                                          AGL Hydro Partnership     BAPS
-#> 19471                                          AGL Hydro Partnership  WOYWOY1
-#> 19472                                          AGL Hydro Partnership     BAPS
-#> 19473                                          AGL Hydro Partnership     BAPS
-#> 19474                                          AGL Hydro Partnership WYANGALA
-#> 19475                                          AGL Hydro Partnership     BAPS
-#> 19476                                          AGL Hydro Partnership     BAPS
-#> 19477                                          AGL Hydro Partnership     BAPS
-#> 19478                                          AGL Hydro Partnership     BAPS
-#> 19479                                          AGL Hydro Partnership     BAPS
+#> 19376                                          AGL Hydro Partnership   MCKAY2
+#> 19377                                          AGL Hydro Partnership  EILDON1
+#> 19378                                          AGL Hydro Partnership COPTNHYD
+#> 19379                                          AGL Hydro Partnership COPTNHYD
+#> 19380                                          AGL Hydro Partnership  KINCUM1
+#> 19381                                          AGL Hydro Partnership COPTNHYD
+#> 19382                                          AGL Hydro Partnership   MCKAY1
+#> 19383                                          AGL Hydro Partnership WYANGALA
+#> 19384                                          AGL Hydro Partnership WYANGALA
+#> 19385                                          AGL Hydro Partnership     WPWF
+#> 19386                                          AGL Hydro Partnership   CLOVER
+#> 19387                                          AGL Hydro Partnership     BAPS
+#> 19388                                          AGL Hydro Partnership     BAPS
+#> 19389                                          AGL Hydro Partnership  WKIEWA2
+#> 19390                                          AGL Hydro Partnership  RUBICON
+#> 19391                                          AGL Hydro Partnership   MCKAY1
+#> 19392                                          AGL Hydro Partnership GLBWNHYD
+#> 19393                                          AGL Hydro Partnership  WKIEWA2
+#> 19394                                          AGL Hydro Partnership     BAPS
+#> 19395                                          AGL Hydro Partnership  WKIEWA1
+#> 19396                                          AGL Hydro Partnership YWNGAHYD
+#> 19397                                          AGL Hydro Partnership YWNGAHYD
+#> 19398                                          AGL Hydro Partnership YWNGAHYD
+#> 19399                                          AGL Hydro Partnership YWNGAHYD
+#> 19400                                          AGL Hydro Partnership YWNGAHYD
+#> 19401                                          AGL Hydro Partnership  WKIEWA2
+#> 19402                                          AGL Hydro Partnership  WKIEWA2
+#> 19403                                          AGL Hydro Partnership  RUBICON
+#> 19404                                          AGL Hydro Partnership  RUBICON
+#> 19405                                          AGL Hydro Partnership  RUBICON
+#> 19406                                          AGL Hydro Partnership   YABULU
+#> 19407                                          AGL Hydro Partnership     ICSM
+#> 19408                                          AGL Hydro Partnership  WKIEWA2
+#> 19409                                          AGL Hydro Partnership COPTNHYD
+#> 19410                                          AGL Hydro Partnership   OAKEY1
+#> 19411                                          AGL Hydro Partnership AGLSITA1
+#> 19412                                          AGL Hydro Partnership  WKIEWA1
+#> 19413                                          AGL Hydro Partnership  WKIEWA1
+#> 19414                                          AGL Hydro Partnership   DARTM1
+#> 19415                                          AGL Hydro Partnership   CLOVER
+#> 19416                                          AGL Hydro Partnership COPTNHYD
+#> 19417                                          AGL Hydro Partnership COPTNHYD
+#> 19418                                          AGL Hydro Partnership  AGLNOW1
+#> 19419                                          AGL Hydro Partnership  KINCUM1
+#> 19420                                          AGL Hydro Partnership  AGLNOW1
+#> 19421                                          AGL Hydro Partnership  WKIEWA1
+#> 19422                                          AGL Hydro Partnership     WPWF
+#> 19423                                          AGL Hydro Partnership     WPWF
+#> 19424                                          AGL Hydro Partnership     WPWF
+#> 19425                                          AGL Hydro Partnership  RUBICON
+#> 19426                                          AGL Hydro Partnership  WKIEWA2
+#> 19427                                          AGL Hydro Partnership GLBWNHYD
+#> 19428                                          AGL Hydro Partnership GLBWNHYD
+#> 19429                                          AGL Hydro Partnership  PINDARI
+#> 19430                                          AGL Hydro Partnership  WKIEWA2
+#> 19431                                          AGL Hydro Partnership  PINDARI
+#> 19432                                          AGL Hydro Partnership  WKIEWA2
+#> 19433                                          AGL Hydro Partnership  AGLNOW1
+#> 19434                                          AGL Hydro Partnership BDONGHYD
+#> 19435                                          AGL Hydro Partnership     BAPS
+#> 19436                                          AGL Hydro Partnership BDONGHYD
+#> 19437                                          AGL Hydro Partnership BDONGHYD
+#> 19438                                          AGL Hydro Partnership  WKIEWA1
+#> 19439                                          AGL Hydro Partnership EDLRGNRD
+#> 19440                                          AGL Hydro Partnership     ICSM
+#> 19441                                          AGL Hydro Partnership     WPWF
+#> 19442                                          AGL Hydro Partnership   AGLSOM
+#> 19443                                          AGL Hydro Partnership   AGLSOM
+#> 19444                                          AGL Hydro Partnership     WPWF
+#> 19445                                          AGL Hydro Partnership   AGLSOM
+#> 19446                                          AGL Hydro Partnership   YABULU
+#> 19447                                          AGL Hydro Partnership   AGLSOM
+#> 19448                                          AGL Hydro Partnership   MCKAY2
+#> 19449                                          AGL Hydro Partnership   MCKAY2
+#> 19450                                          AGL Hydro Partnership   MCKAY2
+#> 19451                                          AGL Hydro Partnership  EILDON2
+#> 19452                                          AGL Hydro Partnership  AGLNOW1
+#> 19453                                          AGL Hydro Partnership  AGLNOW1
+#> 19454                                          AGL Hydro Partnership  WKIEWA1
+#> 19455                                          AGL Hydro Partnership  WKIEWA2
+#> 19456                                          AGL Hydro Partnership  PINDARI
+#> 19457                                          AGL Hydro Partnership  EILDON1
+#> 19458                                          AGL Hydro Partnership     WPWF
+#> 19459                                          AGL Hydro Partnership  AGLNOW1
+#> 19460                                          AGL Hydro Partnership   OAKEY1
+#> 19461                                          AGL Hydro Partnership  YABULU2
+#> 19462                                          AGL Hydro Partnership   DARTM1
+#> 19463                                          AGL Hydro Partnership GLBWNHYD
+#> 19464                                          AGL Hydro Partnership GLBWNHYD
+#> 19465                                          AGL Hydro Partnership MORANBAH
+#> 19466                                          AGL Hydro Partnership  WOYWOY1
+#> 19467                                          AGL Hydro Partnership  WKIEWA2
+#> 19468                                          AGL Hydro Partnership  WKIEWA2
+#> 19469                                          AGL Hydro Partnership GLBWNHYD
+#> 19470                                          AGL Hydro Partnership  PINDARI
+#> 19471                                          AGL Hydro Partnership GLBWNHYD
+#> 19472                                          AGL Hydro Partnership  AGLNOW1
+#> 19473                                          AGL Hydro Partnership  WKIEWA2
+#> 19474                                          AGL Hydro Partnership MORANBAH
+#> 19475                                          AGL Hydro Partnership BDONGHYD
+#> 19476                                          AGL Hydro Partnership  WKIEWA2
+#> 19477                                          AGL Hydro Partnership  WKIEWA1
+#> 19478                                          AGL Hydro Partnership  WKIEWA1
+#> 19479                                          AGL Hydro Partnership  YABULU2
 #> 19480                                          AGL Hydro Partnership     BAPS
-#> 19481                                          AGL Hydro Partnership     BAPS
+#> 19481                                          AGL Hydro Partnership  WOYWOY1
 #> 19482                                          AGL Hydro Partnership     BAPS
-#> 19483                                          AGL Hydro Partnership  WKIEWA1
-#> 19484                                          AGL Hydro Partnership   OAKEY1
-#> 19485                                          AGL Hydro Partnership  AGLNOW1
-#> 19486                                          AGL Hydro Partnership BDONGHYD
-#> 19487                                          AGL Hydro Partnership  EILDON1
-#> 19488                                          AGL Hydro Partnership  KINCUM1
-#> 19489                                          AGL Hydro Partnership  AGLNOW1
-#> 19490                                          AGL Hydro Partnership SUNCOAST
-#> 19491                                          AGL Hydro Partnership  AGLNOW1
-#> 19492                                          AGL Hydro Partnership  AGLNOW1
+#> 19483                                          AGL Hydro Partnership     BAPS
+#> 19484                                          AGL Hydro Partnership WYANGALA
+#> 19485                                          AGL Hydro Partnership     BAPS
+#> 19486                                          AGL Hydro Partnership     BAPS
+#> 19487                                          AGL Hydro Partnership     BAPS
+#> 19488                                          AGL Hydro Partnership     BAPS
+#> 19489                                          AGL Hydro Partnership     BAPS
+#> 19490                                          AGL Hydro Partnership     BAPS
+#> 19491                                          AGL Hydro Partnership     BAPS
+#> 19492                                          AGL Hydro Partnership     BAPS
 #> 19493                                          AGL Hydro Partnership  WKIEWA1
-#> 19494                                          AGL Hydro Partnership  WKIEWA1
-#> 19495                                          AGL Hydro Partnership GLBWNHYD
-#> 19496                                          AGL Hydro Partnership  WKIEWA1
-#> 19497                                          AGL Hydro Partnership     BAPS
-#> 19498                                          AGL Hydro Partnership  WKIEWA2
-#> 19499                                          AGL Hydro Partnership  WKIEWA2
-#> 19500                                          AGL Hydro Partnership GLBWNHYD
-#> 19501                                          AGL Hydro Partnership     BAPS
-#> 19502                                          AGL Hydro Partnership  RUBICON
-#> 19503                                          AGL Hydro Partnership  AGLNOW1
-#> 19504                                          AGL Hydro Partnership SUNCOAST
-#> 19505                                          AGL Hydro Partnership  WKIEWA2
-#> 19506                                          AGL Hydro Partnership BDONGHYD
-#> 19507                                          AGL Hydro Partnership COPTNHYD
+#> 19494                                          AGL Hydro Partnership   OAKEY1
+#> 19495                                          AGL Hydro Partnership  AGLNOW1
+#> 19496                                          AGL Hydro Partnership BDONGHYD
+#> 19497                                          AGL Hydro Partnership  EILDON1
+#> 19498                                          AGL Hydro Partnership  KINCUM1
+#> 19499                                          AGL Hydro Partnership  AGLNOW1
+#> 19500                                          AGL Hydro Partnership SUNCOAST
+#> 19501                                          AGL Hydro Partnership  AGLNOW1
+#> 19502                                          AGL Hydro Partnership  AGLNOW1
+#> 19503                                          AGL Hydro Partnership  WKIEWA1
+#> 19504                                          AGL Hydro Partnership  WKIEWA1
+#> 19505                                          AGL Hydro Partnership GLBWNHYD
+#> 19506                                          AGL Hydro Partnership  WKIEWA1
+#> 19507                                          AGL Hydro Partnership     BAPS
 #> 19508                                          AGL Hydro Partnership  WKIEWA2
 #> 19509                                          AGL Hydro Partnership  WKIEWA2
-#> 19510                                          AGL Hydro Partnership  WKIEWA2
-#> 19511                                          AGL Hydro Partnership  WKIEWA2
-#> 19512                                          AGL Hydro Partnership   YABULU
-#> 19513                                          AGL Hydro Partnership   YABULU
-#> 19514                                          AGL Hydro Partnership   YABULU
-#> 19515                                          AGL Hydro Partnership   YABULU
-#> 19516                                          AGL Hydro Partnership   YABULU
-#> 19517                                          AGL Hydro Partnership  PINDARI
-#> 19518                                          AGL Hydro Partnership  PINDARI
-#> 19519                                          AGL Hydro Partnership     ICSM
-#> 19520                                          AGL Hydro Partnership   YABULU
-#> 19521                                          AGL Hydro Partnership   YABULU
-#> 19522                                          AGL Hydro Partnership   OAKEY1
-#> 19523                                          AGL Hydro Partnership   OAKEY1
-#> 19524                                          AGL Hydro Partnership GLBWNHYD
-#> 19525                                          AGL Hydro Partnership  EILDON2
-#> 19526                                          AGL Hydro Partnership COPTNHYD
-#> 19527                                          AGL Hydro Partnership  KINCUM1
-#> 19528                                          AGL Hydro Partnership  AGLNOW1
-#> 19529                                          AGL Hydro Partnership   OAKEY1
-#> 19530                                          AGL Hydro Partnership   DARTM1
-#> 19531                                          AGL Hydro Partnership   MCKAY1
-#> 19532                                          AGL Hydro Partnership   MCKAY1
-#> 19533                                          AGL Hydro Partnership  AGLNOW1
-#> 19534                                          AGL Hydro Partnership  AGLNOW1
-#> 19535                                          AGL Hydro Partnership MORANBAH
-#> 19536                                          AGL Hydro Partnership  WKIEWA2
-#> 19537                                          AGL Hydro Partnership  EILDON1
-#> 19538                                          AGL Hydro Partnership  EILDON1
-#> 19539                                          AGL Hydro Partnership  AGLNOW1
-#> 19540                                          AGL Hydro Partnership   MCKAY2
-#> 19541                                          AGL Hydro Partnership  AGLNOW1
+#> 19510                                          AGL Hydro Partnership GLBWNHYD
+#> 19511                                          AGL Hydro Partnership     BAPS
+#> 19512                                          AGL Hydro Partnership  RUBICON
+#> 19513                                          AGL Hydro Partnership  AGLNOW1
+#> 19514                                          AGL Hydro Partnership SUNCOAST
+#> 19515                                          AGL Hydro Partnership  WKIEWA2
+#> 19516                                          AGL Hydro Partnership BDONGHYD
+#> 19517                                          AGL Hydro Partnership COPTNHYD
+#> 19518                                          AGL Hydro Partnership  WKIEWA2
+#> 19519                                          AGL Hydro Partnership  WKIEWA2
+#> 19520                                          AGL Hydro Partnership  WKIEWA2
+#> 19521                                          AGL Hydro Partnership  WKIEWA2
+#> 19522                                          AGL Hydro Partnership   YABULU
+#> 19523                                          AGL Hydro Partnership   YABULU
+#> 19524                                          AGL Hydro Partnership   YABULU
+#> 19525                                          AGL Hydro Partnership   YABULU
+#> 19526                                          AGL Hydro Partnership   YABULU
+#> 19527                                          AGL Hydro Partnership  PINDARI
+#> 19528                                          AGL Hydro Partnership  PINDARI
+#> 19529                                          AGL Hydro Partnership     ICSM
+#> 19530                                          AGL Hydro Partnership   YABULU
+#> 19531                                          AGL Hydro Partnership   YABULU
+#> 19532                                          AGL Hydro Partnership   OAKEY1
+#> 19533                                          AGL Hydro Partnership   OAKEY1
+#> 19534                                          AGL Hydro Partnership GLBWNHYD
+#> 19535                                          AGL Hydro Partnership  EILDON2
+#> 19536                                          AGL Hydro Partnership COPTNHYD
+#> 19537                                          AGL Hydro Partnership  KINCUM1
+#> 19538                                          AGL Hydro Partnership  AGLNOW1
+#> 19539                                          AGL Hydro Partnership   OAKEY1
+#> 19540                                          AGL Hydro Partnership   DARTM1
+#> 19541                                          AGL Hydro Partnership   MCKAY1
 #> 19542                                          AGL Hydro Partnership   MCKAY1
-#> 19543                                          AGL Hydro Partnership   CLOVER
-#> 19544                                          AGL Hydro Partnership MORANBAH
-#> 19545                                          AGL Hydro Partnership AGLSITA1
+#> 19543                                          AGL Hydro Partnership  AGLNOW1
+#> 19544                                          AGL Hydro Partnership  AGLNOW1
+#> 19545                                          AGL Hydro Partnership MORANBAH
 #> 19546                                          AGL Hydro Partnership  WKIEWA2
-#> 19547                                          AGL Hydro Partnership   DARTM1
-#> 19548                                          AGL Hydro Partnership   DARTM1
-#> 19549                                          AGL Hydro Partnership   AGLSOM
-#> 19550                                          AGL Hydro Partnership   AGLSOM
-#> 19551                                          AGL Hydro Partnership   AGLSOM
-#> 19552                                          AGL Hydro Partnership     ICSM
-#> 19553                                          AGL Hydro Partnership WYANGALB
-#> 19554                                          AGL Hydro Partnership     ICSM
-#> 19555                                          AGL Hydro Partnership  WKIEWA1
-#> 19556                                          AGL Hydro Partnership EDLRGNRD
-#> 19557                                          AGL Hydro Partnership EDLRGNRD
-#> 19558                                          AGL Hydro Partnership   YABULU
-#> 19559                                          AGL Hydro Partnership   YABULU
-#> 19560                                          AGL Hydro Partnership YWNGAHYD
-#> 19561                                          AGL Hydro Partnership   DARTM1
-#> 19562                                          AGL Hydro Partnership   AGLSOM
-#> 19563                                          AGL Hydro Partnership GLBWNHYD
-#> 19564                                          AGL Hydro Partnership  EILDON1
+#> 19547                                          AGL Hydro Partnership  EILDON1
+#> 19548                                          AGL Hydro Partnership  EILDON1
+#> 19549                                          AGL Hydro Partnership  AGLNOW1
+#> 19550                                          AGL Hydro Partnership   MCKAY2
+#> 19551                                          AGL Hydro Partnership  AGLNOW1
+#> 19552                                          AGL Hydro Partnership   MCKAY1
+#> 19553                                          AGL Hydro Partnership   CLOVER
+#> 19554                                          AGL Hydro Partnership MORANBAH
+#> 19555                                          AGL Hydro Partnership AGLSITA1
+#> 19556                                          AGL Hydro Partnership  WKIEWA2
+#> 19557                                          AGL Hydro Partnership   DARTM1
+#> 19558                                          AGL Hydro Partnership   DARTM1
+#> 19559                                          AGL Hydro Partnership   AGLSOM
+#> 19560                                          AGL Hydro Partnership   AGLSOM
+#> 19561                                          AGL Hydro Partnership   AGLSOM
+#> 19562                                          AGL Hydro Partnership     ICSM
+#> 19563                                          AGL Hydro Partnership WYANGALB
+#> 19564                                          AGL Hydro Partnership     ICSM
 #> 19565                                          AGL Hydro Partnership  WKIEWA1
-#> 19566                                          AGL Hydro Partnership COPTNHYD
-#> 19567                                          AGL Hydro Partnership  AGLNOW1
-#> 19568                                          AGL Hydro Partnership  WKIEWA1
-#> 19569                                          AGL Hydro Partnership SUNCOAST
-#> 19570                                          AGL Hydro Partnership  WKIEWA2
-#> 19571                                          AGL Hydro Partnership  YABULU2
-#> 19572                                          AGL Hydro Partnership  YABULU2
-#> 19573                                          AGL Hydro Partnership   MCKAY1
+#> 19566                                          AGL Hydro Partnership EDLRGNRD
+#> 19567                                          AGL Hydro Partnership EDLRGNRD
+#> 19568                                          AGL Hydro Partnership   YABULU
+#> 19569                                          AGL Hydro Partnership   YABULU
+#> 19570                                          AGL Hydro Partnership YWNGAHYD
+#> 19571                                          AGL Hydro Partnership   DARTM1
+#> 19572                                          AGL Hydro Partnership   AGLSOM
+#> 19573                                          AGL Hydro Partnership GLBWNHYD
 #> 19574                                          AGL Hydro Partnership  EILDON1
-#> 19575                                          AGL Hydro Partnership  AGLNOW1
-#> 19576                                          AGL Hydro Partnership   MCKAY2
-#> 19577                                          AGL Hydro Partnership   CLOVER
-#> 19578                                          AGL Hydro Partnership  WOYWOY1
-#> 19579                                          AGL Hydro Partnership  EILDON1
-#> 19580                                          AGL Hydro Partnership   AGLSOM
-#> 19581                                          AGL Hydro Partnership MORANBAH
-#> 19582                                          AGL Hydro Partnership   MCKAY2
+#> 19575                                          AGL Hydro Partnership  WKIEWA1
+#> 19576                                          AGL Hydro Partnership COPTNHYD
+#> 19577                                          AGL Hydro Partnership  AGLNOW1
+#> 19578                                          AGL Hydro Partnership  WKIEWA1
+#> 19579                                          AGL Hydro Partnership SUNCOAST
+#> 19580                                          AGL Hydro Partnership  WKIEWA2
+#> 19581                                          AGL Hydro Partnership  YABULU2
+#> 19582                                          AGL Hydro Partnership  YABULU2
 #> 19583                                          AGL Hydro Partnership   MCKAY1
-#> 19584                                          AGL Hydro Partnership   MCKAY1
-#> 19585                                          AGL Hydro Partnership  RUBICON
-#> 19586                                          AGL Hydro Partnership AGLSITA1
-#> 19587                                          AGL Hydro Partnership     BAPS
-#> 19588                                          AGL Hydro Partnership     BAPS
-#> 19589                                          AGL Hydro Partnership   YABULU
-#> 19590                                          AGL Hydro Partnership   YABULU
-#> 19591                                          AGL Hydro Partnership   YABULU
-#> 19592                                          AGL Hydro Partnership     BAPS
-#> 19593                                          AGL Hydro Partnership  YABULU2
-#> 19594                                          AGL Hydro Partnership   OAKEY1
-#> 19595                                          AGL Hydro Partnership   MCKAY1
-#> 19596                                          AGL Hydro Partnership  WKIEWA1
-#> 19597                                          AGL Hydro Partnership  WKIEWA1
-#> 19598                                          AGL Hydro Partnership  WOYWOY1
-#> 19599                                          AGL Hydro Partnership  WOYWOY1
-#> 19600                                          AGL Hydro Partnership  WOYWOY1
-#> 19601                                          AGL Hydro Partnership   OAKEY1
-#> 19602                                          AGL Hydro Partnership  WOYWOY1
-#> 19603                                          AGL Hydro Partnership  WKIEWA1
-#> 19604                                          AGL Hydro Partnership  WKIEWA1
-#> 19605                                          AGL Hydro Partnership  EILDON2
-#> 19606                                          AGL Hydro Partnership GLBWNHYD
-#> 19607                                          AGL Hydro Partnership SUNCOAST
-#> 19608                                          AGL Hydro Partnership  WKIEWA2
-#> 19609                                          AGL Hydro Partnership   AGLHAL
-#> 19610                                          AGL Hydro Partnership  EILDON1
-#> 19611                                          AGL Hydro Partnership SUNCOAST
-#> 19612                                          AGL Hydro Partnership  AGLNOW1
-#> 19613                                          AGL Hydro Partnership  YABULU2
-#> 19614                                          AGL Hydro Partnership   MCKAY1
-#> 19615                                          AGL Hydro Partnership     BAPS
-#> 19616                                          AGL Hydro Partnership   DARTM1
-#> 19617                                          AGL Hydro Partnership     BAPS
-#> 19618                                          AGL Hydro Partnership   OAKEY2
-#> 19619                                          AGL Hydro Partnership   DARTM1
-#> 19620                                          AGL Hydro Partnership MORANBAH
-#> 19621                                          AGL Hydro Partnership   MCKAY1
-#> 19622                                          AGL Hydro Partnership   CLOVER
-#> 19623                                          AGL Hydro Partnership  WKIEWA2
-#> 19624                                          AGL Hydro Partnership  EILDON1
-#> 19625                                          AGL Hydro Partnership   CLOVER
-#> 19626                                          AGL Hydro Partnership MORANBAH
-#> 19627                                          AGL Hydro Partnership BDONGHYD
-#> 19628                                          AGL Hydro Partnership   AGLSOM
-#> 19629                                          AGL Hydro Partnership   AGLSOM
-#> 19630                                          AGL Hydro Partnership   AGLSOM
-#> 19631                                          AGL Hydro Partnership   AGLSOM
-#> 19632                                          AGL Hydro Partnership   YABULU
+#> 19584                                          AGL Hydro Partnership  EILDON1
+#> 19585                                          AGL Hydro Partnership  AGLNOW1
+#> 19586                                          AGL Hydro Partnership   MCKAY2
+#> 19587                                          AGL Hydro Partnership   CLOVER
+#> 19588                                          AGL Hydro Partnership  WOYWOY1
+#> 19589                                          AGL Hydro Partnership  EILDON1
+#> 19590                                          AGL Hydro Partnership   AGLSOM
+#> 19591                                          AGL Hydro Partnership MORANBAH
+#> 19592                                          AGL Hydro Partnership   MCKAY2
+#> 19593                                          AGL Hydro Partnership   MCKAY1
+#> 19594                                          AGL Hydro Partnership   MCKAY1
+#> 19595                                          AGL Hydro Partnership  RUBICON
+#> 19596                                          AGL Hydro Partnership AGLSITA1
+#> 19597                                          AGL Hydro Partnership     BAPS
+#> 19598                                          AGL Hydro Partnership     BAPS
+#> 19599                                          AGL Hydro Partnership   YABULU
+#> 19600                                          AGL Hydro Partnership   YABULU
+#> 19601                                          AGL Hydro Partnership   YABULU
+#> 19602                                          AGL Hydro Partnership     BAPS
+#> 19603                                          AGL Hydro Partnership  YABULU2
+#> 19604                                          AGL Hydro Partnership   OAKEY1
+#> 19605                                          AGL Hydro Partnership   MCKAY1
+#> 19606                                          AGL Hydro Partnership  WKIEWA1
+#> 19607                                          AGL Hydro Partnership  WKIEWA1
+#> 19608                                          AGL Hydro Partnership  WOYWOY1
+#> 19609                                          AGL Hydro Partnership  WOYWOY1
+#> 19610                                          AGL Hydro Partnership  WOYWOY1
+#> 19611                                          AGL Hydro Partnership   OAKEY1
+#> 19612                                          AGL Hydro Partnership  WOYWOY1
+#> 19613                                          AGL Hydro Partnership  WKIEWA1
+#> 19614                                          AGL Hydro Partnership  WKIEWA1
+#> 19615                                          AGL Hydro Partnership  EILDON2
+#> 19616                                          AGL Hydro Partnership GLBWNHYD
+#> 19617                                          AGL Hydro Partnership SUNCOAST
+#> 19618                                          AGL Hydro Partnership  WKIEWA2
+#> 19619                                          AGL Hydro Partnership   AGLHAL
+#> 19620                                          AGL Hydro Partnership  EILDON1
+#> 19621                                          AGL Hydro Partnership SUNCOAST
+#> 19622                                          AGL Hydro Partnership  AGLNOW1
+#> 19623                                          AGL Hydro Partnership  YABULU2
+#> 19624                                          AGL Hydro Partnership   MCKAY1
+#> 19625                                          AGL Hydro Partnership     BAPS
+#> 19626                                          AGL Hydro Partnership   DARTM1
+#> 19627                                          AGL Hydro Partnership     BAPS
+#> 19628                                          AGL Hydro Partnership   OAKEY2
+#> 19629                                          AGL Hydro Partnership   DARTM1
+#> 19630                                          AGL Hydro Partnership MORANBAH
+#> 19631                                          AGL Hydro Partnership   MCKAY1
+#> 19632                                          AGL Hydro Partnership   CLOVER
 #> 19633                                          AGL Hydro Partnership  WKIEWA2
-#> 19634                                          AGL Hydro Partnership  WKIEWA2
-#> 19635                                          AGL Hydro Partnership GLBWNHYD
-#> 19636                                          AGL Hydro Partnership   CLOVER
-#> 19637                                          AGL Hydro Partnership  WKIEWA2
-#> 19638                                          AGL Hydro Partnership COPTNHYD
-#> 19639                                          AGL Hydro Partnership COPTNHYD
-#> 19640                                          AGL Hydro Partnership  WKIEWA2
-#> 19641                                          AGL Hydro Partnership  EILDON2
-#> 19642                                          AGL Hydro Partnership  WKIEWA2
+#> 19634                                          AGL Hydro Partnership  EILDON1
+#> 19635                                          AGL Hydro Partnership   CLOVER
+#> 19636                                          AGL Hydro Partnership MORANBAH
+#> 19637                                          AGL Hydro Partnership BDONGHYD
+#> 19638                                          AGL Hydro Partnership   AGLSOM
+#> 19639                                          AGL Hydro Partnership   AGLSOM
+#> 19640                                          AGL Hydro Partnership   AGLSOM
+#> 19641                                          AGL Hydro Partnership   AGLSOM
+#> 19642                                          AGL Hydro Partnership   YABULU
 #> 19643                                          AGL Hydro Partnership  WKIEWA2
-#> 19644                                          AGL Hydro Partnership  AGLNOW1
-#> 19645                                          AGL Hydro Partnership  EILDON1
-#> 19646                                          AGL Hydro Partnership   DARTM1
-#> 19647                                          AGL Hydro Partnership   AGLHAL
-#> 19648                                          AGL Hydro Partnership  WKIEWA2
-#> 19649                                          AGL Hydro Partnership   MCKAY2
-#> 19650                                          AGL Hydro Partnership   CLOVER
-#> 19651                                          AGL Hydro Partnership   DARTM1
-#> 19652                                          AGL Hydro Partnership     ICSM
-#> 19653                                          AGL Hydro Partnership   AGLHAL
-#> 19654                                          AGL Hydro Partnership  YABULU2
-#> 19655                                          AGL Hydro Partnership   MCKAY1
-#> 19656                                          AGL Hydro Partnership   OAKEY1
-#> 19657                                          AGL Hydro Partnership   CLOVER
+#> 19644                                          AGL Hydro Partnership  WKIEWA2
+#> 19645                                          AGL Hydro Partnership GLBWNHYD
+#> 19646                                          AGL Hydro Partnership   CLOVER
+#> 19647                                          AGL Hydro Partnership  WKIEWA2
+#> 19648                                          AGL Hydro Partnership COPTNHYD
+#> 19649                                          AGL Hydro Partnership COPTNHYD
+#> 19650                                          AGL Hydro Partnership  WKIEWA2
+#> 19651                                          AGL Hydro Partnership  EILDON2
+#> 19652                                          AGL Hydro Partnership  WKIEWA2
+#> 19653                                          AGL Hydro Partnership  WKIEWA2
+#> 19654                                          AGL Hydro Partnership  AGLNOW1
+#> 19655                                          AGL Hydro Partnership  EILDON1
+#> 19656                                          AGL Hydro Partnership   DARTM1
+#> 19657                                          AGL Hydro Partnership   AGLHAL
 #> 19658                                          AGL Hydro Partnership  WKIEWA2
-#> 19659                                          AGL Hydro Partnership   OAKEY2
-#> 19660                                          AGL Hydro Partnership   MCKAY1
-#> 19661                                          AGL Hydro Partnership   OAKEY2
-#> 19662                                          AGL Hydro Partnership   AGLSOM
-#> 19663                                          AGL Hydro Partnership     WPWF
-#> 19664                                          AGL Hydro Partnership   CLOVER
-#> 19665                                          AGL Hydro Partnership  RUBICON
-#> 19666                                          AGL Hydro Partnership   DARTM1
-#> 19667                                          AGL Hydro Partnership MORANBAH
-#> 19668                                          AGL Hydro Partnership  WKIEWA1
-#> 19669                                          AGL Hydro Partnership MORANBAH
-#> 19670                                          AGL Hydro Partnership  WKIEWA2
-#> 19671                                          AGL Hydro Partnership COPTNHYD
-#> 19672                                          AGL Hydro Partnership  WKIEWA1
-#> 19673                                          AGL Hydro Partnership   AGLSOM
-#> 19674                                          AGL Hydro Partnership     ICSM
-#> 19675                                          AGL Hydro Partnership   DARTM1
-#> 19676                                          AGL Hydro Partnership   MCKAY1
-#> 19677                                          AGL Hydro Partnership  EILDON2
-#> 19678                                          AGL Hydro Partnership  EILDON2
-#> 19679                                          AGL Hydro Partnership EDLRGNRD
-#> 19680                                          AGL Hydro Partnership   YABULU
-#> 19681                                          AGL Hydro Partnership   AGLSOM
-#> 19682                                          AGL Hydro Partnership   AGLSOM
-#> 19683                                          AGL Hydro Partnership  EILDON2
-#> 19684                                          AGL Hydro Partnership  EILDON1
-#> 19685                                          AGL Hydro Partnership  WKIEWA2
-#> 19686                                          AGL Hydro Partnership  EILDON2
-#> 19687                                          AGL Hydro Partnership SUNCOAST
-#> 19688                                          AGL Hydro Partnership   CLOVER
-#> 19689                                          AGL Hydro Partnership  YABULU2
-#> 19690                                          AGL Hydro Partnership  EILDON1
-#> 19691                                          AGL Hydro Partnership  RUBICON
-#> 19692                                          AGL Hydro Partnership  EILDON2
-#> 19693                                          AGL Hydro Partnership   DARTM1
-#> 19694                                          AGL Hydro Partnership   AGLHAL
-#> 19695                                          AGL Hydro Partnership  YABULU2
-#> 19696                                          AGL Hydro Partnership   OAKEY1
-#> 19697                                          AGL Hydro Partnership   OAKEY1
-#> 19698                                          AGL Hydro Partnership   OAKEY2
-#> 19699                                          AGL Hydro Partnership   CLOVER
-#> 19700                                          AGL Hydro Partnership   OAKEY2
-#> 19701                                          AGL Hydro Partnership   YABULU
-#> 19702                                          AGL Hydro Partnership   CLOVER
-#> 19703                                          AGL Hydro Partnership WYANGALA
-#> 19704                                          AGL Hydro Partnership EDLRGNRD
-#> 19705                                          AGL Hydro Partnership SUNCOAST
-#> 19706                                          AGL Hydro Partnership  EILDON1
-#> 19707                                          AGL Hydro Partnership   DARTM1
-#> 19708                                          AGL Hydro Partnership   DARTM1
-#> 19709                                          AGL Hydro Partnership   DARTM1
-#> 19710                                          AGL Hydro Partnership   YABULU
+#> 19659                                          AGL Hydro Partnership   MCKAY2
+#> 19660                                          AGL Hydro Partnership   CLOVER
+#> 19661                                          AGL Hydro Partnership   DARTM1
+#> 19662                                          AGL Hydro Partnership     ICSM
+#> 19663                                          AGL Hydro Partnership   AGLHAL
+#> 19664                                          AGL Hydro Partnership  YABULU2
+#> 19665                                          AGL Hydro Partnership   MCKAY1
+#> 19666                                          AGL Hydro Partnership   OAKEY1
+#> 19667                                          AGL Hydro Partnership   CLOVER
+#> 19668                                          AGL Hydro Partnership  WKIEWA2
+#> 19669                                          AGL Hydro Partnership   OAKEY2
+#> 19670                                          AGL Hydro Partnership   MCKAY1
+#> 19671                                          AGL Hydro Partnership   OAKEY2
+#> 19672                                          AGL Hydro Partnership   AGLSOM
+#> 19673                                          AGL Hydro Partnership     WPWF
+#> 19674                                          AGL Hydro Partnership   CLOVER
+#> 19675                                          AGL Hydro Partnership  RUBICON
+#> 19676                                          AGL Hydro Partnership   DARTM1
+#> 19677                                          AGL Hydro Partnership MORANBAH
+#> 19678                                          AGL Hydro Partnership  WKIEWA1
+#> 19679                                          AGL Hydro Partnership MORANBAH
+#> 19680                                          AGL Hydro Partnership  WKIEWA2
+#> 19681                                          AGL Hydro Partnership COPTNHYD
+#> 19682                                          AGL Hydro Partnership  WKIEWA1
+#> 19683                                          AGL Hydro Partnership   AGLSOM
+#> 19684                                          AGL Hydro Partnership     ICSM
+#> 19685                                          AGL Hydro Partnership   DARTM1
+#> 19686                                          AGL Hydro Partnership   MCKAY1
+#> 19687                                          AGL Hydro Partnership  EILDON2
+#> 19688                                          AGL Hydro Partnership  EILDON2
+#> 19689                                          AGL Hydro Partnership EDLRGNRD
+#> 19690                                          AGL Hydro Partnership   YABULU
+#> 19691                                          AGL Hydro Partnership   AGLSOM
+#> 19692                                          AGL Hydro Partnership   AGLSOM
+#> 19693                                          AGL Hydro Partnership  EILDON2
+#> 19694                                          AGL Hydro Partnership  EILDON1
+#> 19695                                          AGL Hydro Partnership  WKIEWA2
+#> 19696                                          AGL Hydro Partnership  EILDON2
+#> 19697                                          AGL Hydro Partnership SUNCOAST
+#> 19698                                          AGL Hydro Partnership   CLOVER
+#> 19699                                          AGL Hydro Partnership  YABULU2
+#> 19700                                          AGL Hydro Partnership  EILDON1
+#> 19701                                          AGL Hydro Partnership  RUBICON
+#> 19702                                          AGL Hydro Partnership  EILDON2
+#> 19703                                          AGL Hydro Partnership   DARTM1
+#> 19704                                          AGL Hydro Partnership   AGLHAL
+#> 19705                                          AGL Hydro Partnership  YABULU2
+#> 19706                                          AGL Hydro Partnership   OAKEY1
+#> 19707                                          AGL Hydro Partnership   OAKEY1
+#> 19708                                          AGL Hydro Partnership   OAKEY2
+#> 19709                                          AGL Hydro Partnership   CLOVER
+#> 19710                                          AGL Hydro Partnership   OAKEY2
 #> 19711                                          AGL Hydro Partnership   YABULU
-#> 19712                                          AGL Hydro Partnership COPTNHYD
-#> 19713                                          AGL Hydro Partnership  YABULU2
-#> 19714                                          AGL Hydro Partnership   DARTM1
-#> 19715                                          AGL Hydro Partnership   MCKAY2
-#> 19716                                          AGL Hydro Partnership   CLOVER
-#> 19717                                          AGL Hydro Partnership  WKIEWA2
-#> 19718                                          AGL Hydro Partnership MORANBAH
-#> 19719                                          AGL Hydro Partnership MORANBAH
-#> 19720                                          AGL Hydro Partnership  WKIEWA1
-#> 19721                                          AGL Hydro Partnership MORANBAH
-#> 19722                                          AGL Hydro Partnership MORANBAH
-#> 19723                                          AGL Hydro Partnership  EILDON1
-#> 19724                                          AGL Hydro Partnership     ICSM
-#> 19725                                          AGL Hydro Partnership   DARTM1
-#> 19726                                          AGL Hydro Partnership  WOYWOY1
-#> 19727                                          AGL Hydro Partnership   MCKAY1
-#> 19728                                          AGL Hydro Partnership  WKIEWA1
-#> 19729                                          AGL Hydro Partnership COPTNHYD
-#> 19730                                          AGL Hydro Partnership  WKIEWA2
-#> 19731                                          AGL Hydro Partnership  AGLNOW1
-#> 19732                                          AGL Hydro Partnership  WOYWOY1
-#> 19733                                          AGL Hydro Partnership  EILDON2
-#> 19734                                          AGL Hydro Partnership  WKIEWA2
-#> 19735                                          AGL Hydro Partnership   AGLHAL
-#> 19736                                          AGL Hydro Partnership   DARTM1
-#> 19737                                          AGL Hydro Partnership SUNCOAST
-#> 19738                                          AGL Hydro Partnership   OAKEY1
-#> 19739                                          AGL Hydro Partnership   MCKAY2
-#> 19740                                          AGL Hydro Partnership COPTNHYD
-#> 19741                                          AGL Hydro Partnership  EILDON2
-#> 19742                                          AGL Hydro Partnership  EILDON2
-#> 19743                                          AGL Hydro Partnership   AGLSOM
+#> 19712                                          AGL Hydro Partnership   CLOVER
+#> 19713                                          AGL Hydro Partnership WYANGALA
+#> 19714                                          AGL Hydro Partnership EDLRGNRD
+#> 19715                                          AGL Hydro Partnership SUNCOAST
+#> 19716                                          AGL Hydro Partnership  EILDON1
+#> 19717                                          AGL Hydro Partnership   DARTM1
+#> 19718                                          AGL Hydro Partnership   DARTM1
+#> 19719                                          AGL Hydro Partnership   DARTM1
+#> 19720                                          AGL Hydro Partnership   YABULU
+#> 19721                                          AGL Hydro Partnership   YABULU
+#> 19722                                          AGL Hydro Partnership COPTNHYD
+#> 19723                                          AGL Hydro Partnership  YABULU2
+#> 19724                                          AGL Hydro Partnership   DARTM1
+#> 19725                                          AGL Hydro Partnership   MCKAY2
+#> 19726                                          AGL Hydro Partnership   CLOVER
+#> 19727                                          AGL Hydro Partnership  WKIEWA2
+#> 19728                                          AGL Hydro Partnership MORANBAH
+#> 19729                                          AGL Hydro Partnership MORANBAH
+#> 19730                                          AGL Hydro Partnership  WKIEWA1
+#> 19731                                          AGL Hydro Partnership MORANBAH
+#> 19732                                          AGL Hydro Partnership MORANBAH
+#> 19733                                          AGL Hydro Partnership  EILDON1
+#> 19734                                          AGL Hydro Partnership     ICSM
+#> 19735                                          AGL Hydro Partnership   DARTM1
+#> 19736                                          AGL Hydro Partnership  WOYWOY1
+#> 19737                                          AGL Hydro Partnership   MCKAY1
+#> 19738                                          AGL Hydro Partnership  WKIEWA1
+#> 19739                                          AGL Hydro Partnership COPTNHYD
+#> 19740                                          AGL Hydro Partnership  WKIEWA2
+#> 19741                                          AGL Hydro Partnership  AGLNOW1
+#> 19742                                          AGL Hydro Partnership  WOYWOY1
+#> 19743                                          AGL Hydro Partnership  EILDON2
 #> 19744                                          AGL Hydro Partnership  WKIEWA2
-#> 19745                                          AGL Hydro Partnership YWNGAHYD
-#> 19746                                          AGL Hydro Partnership  EILDON1
-#> 19747                                          AGL Hydro Partnership  RUBICON
-#> 19748                                          AGL Hydro Partnership  RUBICON
-#> 19749                                          AGL Hydro Partnership MORANBAH
-#> 19750                                          AGL Hydro Partnership  EILDON2
-#> 19751                                          AGL Hydro Partnership MORANBAH
-#> 19752                                          AGL Hydro Partnership   MCKAY1
-#> 19753                                          AGL Hydro Partnership   YABULU
-#> 19754                                          AGL Hydro Partnership  EILDON1
-#> 19755                                          AGL Hydro Partnership  WKIEWA2
-#> 19756                                          AGL Hydro Partnership   MCKAY2
+#> 19745                                          AGL Hydro Partnership   AGLHAL
+#> 19746                                          AGL Hydro Partnership   DARTM1
+#> 19747                                          AGL Hydro Partnership SUNCOAST
+#> 19748                                          AGL Hydro Partnership   OAKEY1
+#> 19749                                          AGL Hydro Partnership   MCKAY2
+#> 19750                                          AGL Hydro Partnership COPTNHYD
+#> 19751                                          AGL Hydro Partnership  EILDON2
+#> 19752                                          AGL Hydro Partnership  EILDON2
+#> 19753                                          AGL Hydro Partnership   AGLSOM
+#> 19754                                          AGL Hydro Partnership  WKIEWA2
+#> 19755                                          AGL Hydro Partnership YWNGAHYD
+#> 19756                                          AGL Hydro Partnership  EILDON1
 #> 19757                                          AGL Hydro Partnership  RUBICON
-#> 19758                                          AGL Hydro Partnership   MCKAY2
-#> 19759                                          AGL Hydro Partnership  WKIEWA2
-#> 19760                                          AGL Hydro Partnership  WKIEWA2
-#> 19761                                          AGL Hydro Partnership  EILDON2
-#> 19762                                          AGL Hydro Partnership  WKIEWA2
-#> 19763                                          AGL Hydro Partnership     ICSM
-#> 19764                                          AGL Hydro Partnership YWNGAHYD
-#> 19765                                          AGL Hydro Partnership  WKIEWA1
-#> 19766                                          AGL Hydro Partnership   CLOVER
-#> 19767                                          AGL Hydro Partnership BDONGHYD
-#> 19768                                          AGL Hydro Partnership COPTNHYD
-#> 19769                                          AGL Hydro Partnership   DARTM1
-#> 19770                                          AGL Hydro Partnership  WKIEWA1
-#> 19771                                          AGL Hydro Partnership BDONGHYD
-#> 19772                                          AGL Hydro Partnership  RUBICON
-#> 19773                                          AGL Hydro Partnership  WOYWOY1
-#> 19774                                          AGL Hydro Partnership     ICSM
-#> 19775                                          AGL Hydro Partnership   OAKEY1
-#> 19776                                          AGL Hydro Partnership     ICSM
-#> 19777                                          AGL Hydro Partnership   DARTM1
-#> 19778                                          AGL Hydro Partnership SUNCOAST
-#> 19779                                          AGL Hydro Partnership YWNGAHYD
-#> 19780                                          AGL Hydro Partnership YWNGAHYD
-#> 19781                                          AGL Hydro Partnership  EILDON2
-#> 19782                                          AGL Hydro Partnership YWNGAHYD
-#> 19783                                          AGL Hydro Partnership COPTNHYD
-#> 19784                                          AGL Hydro Partnership  WKIEWA2
-#> 19785                                          AGL Hydro Partnership     ICSM
-#> 19786                                          AGL Hydro Partnership   YABULU
-#> 19787                                          AGL Hydro Partnership   CLOVER
-#> 19788                                          AGL Hydro Partnership   DARTM1
-#> 19789                                          AGL Hydro Partnership   CLOVER
-#> 19790                                          AGL Hydro Partnership SUNCOAST
-#> 19791                                          AGL Hydro Partnership SUNCOAST
-#> 19792                                          AGL Hydro Partnership   DARTM1
-#> 19793                                          AGL Hydro Partnership   CLOVER
-#> 19794                                          AGL Hydro Partnership   MCKAY1
-#> 19795                                          AGL Hydro Partnership  WKIEWA2
-#> 19796                                          AGL Hydro Partnership   CLOVER
-#> 19797                                          AGL Hydro Partnership COPTNHYD
+#> 19758                                          AGL Hydro Partnership  RUBICON
+#> 19759                                          AGL Hydro Partnership MORANBAH
+#> 19760                                          AGL Hydro Partnership  EILDON2
+#> 19761                                          AGL Hydro Partnership MORANBAH
+#> 19762                                          AGL Hydro Partnership   MCKAY1
+#> 19763                                          AGL Hydro Partnership   YABULU
+#> 19764                                          AGL Hydro Partnership  EILDON1
+#> 19765                                          AGL Hydro Partnership  WKIEWA2
+#> 19766                                          AGL Hydro Partnership   MCKAY2
+#> 19767                                          AGL Hydro Partnership  RUBICON
+#> 19768                                          AGL Hydro Partnership   MCKAY2
+#> 19769                                          AGL Hydro Partnership  WKIEWA2
+#> 19770                                          AGL Hydro Partnership  WKIEWA2
+#> 19771                                          AGL Hydro Partnership  EILDON2
+#> 19772                                          AGL Hydro Partnership  WKIEWA2
+#> 19773                                          AGL Hydro Partnership     ICSM
+#> 19774                                          AGL Hydro Partnership YWNGAHYD
+#> 19775                                          AGL Hydro Partnership  WKIEWA1
+#> 19776                                          AGL Hydro Partnership   CLOVER
+#> 19777                                          AGL Hydro Partnership BDONGHYD
+#> 19778                                          AGL Hydro Partnership COPTNHYD
+#> 19779                                          AGL Hydro Partnership   DARTM1
+#> 19780                                          AGL Hydro Partnership  WKIEWA1
+#> 19781                                          AGL Hydro Partnership BDONGHYD
+#> 19782                                          AGL Hydro Partnership  RUBICON
+#> 19783                                          AGL Hydro Partnership  WOYWOY1
+#> 19784                                          AGL Hydro Partnership     ICSM
+#> 19785                                          AGL Hydro Partnership   OAKEY1
+#> 19786                                          AGL Hydro Partnership     ICSM
+#> 19787                                          AGL Hydro Partnership   DARTM1
+#> 19788                                          AGL Hydro Partnership SUNCOAST
+#> 19789                                          AGL Hydro Partnership YWNGAHYD
+#> 19790                                          AGL Hydro Partnership YWNGAHYD
+#> 19791                                          AGL Hydro Partnership  EILDON2
+#> 19792                                          AGL Hydro Partnership YWNGAHYD
+#> 19793                                          AGL Hydro Partnership COPTNHYD
+#> 19794                                          AGL Hydro Partnership  WKIEWA2
+#> 19795                                          AGL Hydro Partnership     ICSM
+#> 19796                                          AGL Hydro Partnership   YABULU
+#> 19797                                          AGL Hydro Partnership   CLOVER
 #> 19798                                          AGL Hydro Partnership   DARTM1
-#> 19799                                          AGL Hydro Partnership  WOYWOY1
-#> 19800                                          AGL Hydro Partnership   DARTM1
-#> 19801                                          AGL Hydro Partnership EDLRGNRD
-#> 19802                                          AGL Hydro Partnership   YABULU
-#> 19803                                          AGL Hydro Partnership   YABULU
-#> 19804                                          AGL Hydro Partnership  WKIEWA1
+#> 19799                                          AGL Hydro Partnership   CLOVER
+#> 19800                                          AGL Hydro Partnership SUNCOAST
+#> 19801                                          AGL Hydro Partnership SUNCOAST
+#> 19802                                          AGL Hydro Partnership   DARTM1
+#> 19803                                          AGL Hydro Partnership   CLOVER
+#> 19804                                          AGL Hydro Partnership   MCKAY1
 #> 19805                                          AGL Hydro Partnership  WKIEWA2
-#> 19806                                          AGL Hydro Partnership SUNCOAST
-#> 19807                                          AGL Hydro Partnership YWNGAHYD
+#> 19806                                          AGL Hydro Partnership   CLOVER
+#> 19807                                          AGL Hydro Partnership COPTNHYD
 #> 19808                                          AGL Hydro Partnership   DARTM1
-#> 19809                                          AGL Hydro Partnership  EILDON2
-#> 19810                                          AGL Hydro Partnership BDONGHYD
-#> 19811                                          AGL Hydro Partnership  WKIEWA1
-#> 19812                                          AGL Hydro Partnership  WKIEWA1
-#> 19813                                          AGL Hydro Partnership   DARTM1
-#> 19814                                          AGL Hydro Partnership MORANBAH
-#> 19815                                          AGL Hydro Partnership   DARTM1
-#> 19816                                          AGL Hydro Partnership   CLOVER
-#> 19817                                          AGL Hydro Partnership     ICSM
-#> 19818                                          AGL Hydro Partnership   CLOVER
-#> 19819                                          AGL Hydro Partnership   DARTM1
-#> 19820                                          AGL Hydro Partnership MORANBAH
-#> 19821                                          AGL Hydro Partnership YWNGAHYD
-#> 19822                                          AGL Hydro Partnership  WKIEWA2
+#> 19809                                          AGL Hydro Partnership  WOYWOY1
+#> 19810                                          AGL Hydro Partnership   DARTM1
+#> 19811                                          AGL Hydro Partnership EDLRGNRD
+#> 19812                                          AGL Hydro Partnership   YABULU
+#> 19813                                          AGL Hydro Partnership   YABULU
+#> 19814                                          AGL Hydro Partnership  WKIEWA1
+#> 19815                                          AGL Hydro Partnership  WKIEWA2
+#> 19816                                          AGL Hydro Partnership SUNCOAST
+#> 19817                                          AGL Hydro Partnership YWNGAHYD
+#> 19818                                          AGL Hydro Partnership   DARTM1
+#> 19819                                          AGL Hydro Partnership  EILDON2
+#> 19820                                          AGL Hydro Partnership BDONGHYD
+#> 19821                                          AGL Hydro Partnership  WKIEWA1
+#> 19822                                          AGL Hydro Partnership  WKIEWA1
 #> 19823                                          AGL Hydro Partnership   DARTM1
-#> 19824                                          AGL Hydro Partnership  WKIEWA1
-#> 19825                                          AGL Hydro Partnership COPTNHYD
-#> 19826                                          AGL Hydro Partnership  YABULU2
-#> 19827                                          AGL Hydro Partnership  EILDON2
-#> 19828                                          AGL Hydro Partnership MORANBAH
-#> 19829                                          AGL Hydro Partnership  EILDON1
-#> 19830                                          AGL Hydro Partnership  EILDON1
-#> 19831                                          AGL Hydro Partnership     ICSM
+#> 19824                                          AGL Hydro Partnership MORANBAH
+#> 19825                                          AGL Hydro Partnership   DARTM1
+#> 19826                                          AGL Hydro Partnership   CLOVER
+#> 19827                                          AGL Hydro Partnership     ICSM
+#> 19828                                          AGL Hydro Partnership   CLOVER
+#> 19829                                          AGL Hydro Partnership   DARTM1
+#> 19830                                          AGL Hydro Partnership MORANBAH
+#> 19831                                          AGL Hydro Partnership YWNGAHYD
 #> 19832                                          AGL Hydro Partnership  WKIEWA2
-#> 19833                                          AGL Hydro Partnership  WKIEWA2
-#> 19834                                          AGL Hydro Partnership   CLOVER
-#> 19835                                          AGL Hydro Partnership  EILDON2
-#> 19836                                          AGL Hydro Partnership   MCKAY1
+#> 19833                                          AGL Hydro Partnership   DARTM1
+#> 19834                                          AGL Hydro Partnership  WKIEWA1
+#> 19835                                          AGL Hydro Partnership COPTNHYD
+#> 19836                                          AGL Hydro Partnership  YABULU2
 #> 19837                                          AGL Hydro Partnership  EILDON2
-#> 19838                                          AGL Hydro Partnership  EILDON2
-#> 19839                                          AGL Hydro Partnership  RUBICON
-#> 19840                                          AGL Hydro Partnership   DARTM1
-#> 19841                                          AGL Hydro Partnership  YABULU2
-#> 19842                                          AGL Hydro Partnership  WKIEWA1
-#> 19843                                          AGL Hydro Partnership  WKIEWA1
-#> 19844                                          AGL Hydro Partnership   DARTM1
-#> 19845                                          AGL Hydro Partnership   DARTM1
-#> 19846                                          AGL Hydro Partnership YWNGAHYD
-#> 19847                                          AGL Hydro Partnership   DARTM1
-#> 19848                                          AGL Hydro Partnership YWNGAHYD
-#> 19849                                          AGL Hydro Partnership   DARTM1
-#> 19850                                          AGL Hydro Partnership   CLOVER
-#> 19851                                          AGL Hydro Partnership   MCKAY1
-#> 19852                                          AGL Hydro Partnership YWNGAHYD
-#> 19853                                          AGL Hydro Partnership  EILDON2
+#> 19838                                          AGL Hydro Partnership MORANBAH
+#> 19839                                          AGL Hydro Partnership  EILDON1
+#> 19840                                          AGL Hydro Partnership  EILDON1
+#> 19841                                          AGL Hydro Partnership     ICSM
+#> 19842                                          AGL Hydro Partnership  WKIEWA2
+#> 19843                                          AGL Hydro Partnership  WKIEWA2
+#> 19844                                          AGL Hydro Partnership   CLOVER
+#> 19845                                          AGL Hydro Partnership  EILDON2
+#> 19846                                          AGL Hydro Partnership   MCKAY1
+#> 19847                                          AGL Hydro Partnership  EILDON2
+#> 19848                                          AGL Hydro Partnership  EILDON2
+#> 19849                                          AGL Hydro Partnership  RUBICON
+#> 19850                                          AGL Hydro Partnership   DARTM1
+#> 19851                                          AGL Hydro Partnership  YABULU2
+#> 19852                                          AGL Hydro Partnership  WKIEWA1
+#> 19853                                          AGL Hydro Partnership  WKIEWA1
 #> 19854                                          AGL Hydro Partnership   DARTM1
-#> 19855                                          AGL Hydro Partnership   CLOVER
-#> 19856                                          AGL Hydro Partnership  YABULU2
-#> 19857                                          AGL Hydro Partnership   CLOVER
+#> 19855                                          AGL Hydro Partnership   DARTM1
+#> 19856                                          AGL Hydro Partnership YWNGAHYD
+#> 19857                                          AGL Hydro Partnership   DARTM1
 #> 19858                                          AGL Hydro Partnership YWNGAHYD
-#> 19859                                          AGL Hydro Partnership   AGLSOM
-#> 19860                                          AGL Hydro Partnership   DARTM1
-#> 19861                                          AGL Hydro Partnership     ICSM
-#> 19862                                          AGL Hydro Partnership  YABULU2
-#> 19863                                          AGL Hydro Partnership  YABULU2
-#> 19864                                          AGL Hydro Partnership   CLOVER
-#> 19865                                          AGL Hydro Partnership     WPWF
-#> 19866                                          AGL Hydro Partnership  WKIEWA2
-#> 19867                                          AGL Hydro Partnership   YABULU
-#> 19868                                          AGL Hydro Partnership   DARTM1
-#> 19869                                          AGL Hydro Partnership  WKIEWA2
-#> 19870                                          AGL Hydro Partnership     ICSM
-#> 19871                                          AGL Hydro Partnership  EILDON1
-#> 19872                                          AGL Hydro Partnership   DARTM1
-#> 19873                                          AGL Hydro Partnership   CLOVER
-#> 19874                                          AGL Hydro Partnership  YABULU2
-#> 19875                                          AGL Hydro Partnership YWNGAHYD
-#> 19876                                          AGL Hydro Partnership   CLOVER
-#> 19877                                          AGL Hydro Partnership   DARTM1
-#> 19878                                          AGL Hydro Partnership   AGLSOM
-#> 19879                                          AGL Hydro Partnership EDLRGNRD
-#> 19880                                          AGL Hydro Partnership     BAPS
-#> 19881                                          AGL Hydro Partnership  EILDON2
-#> 19882                                          AGL Hydro Partnership   YABULU
-#> 19883                                          AGL Hydro Partnership  RUBICON
-#> 19884                                          AGL Hydro Partnership YWNGAHYD
-#> 19885                                          AGL Hydro Partnership  WKIEWA2
-#> 19886                                          AGL Hydro Partnership   DARTM1
-#> 19887                                          AGL Hydro Partnership COPTNHYD
-#> 19888                                          AGL Hydro Partnership   YABULU
-#> 19889                                          AGL Hydro Partnership SUNCOAST
-#> 19890                                          AGL Hydro Partnership   CLOVER
-#> 19891                                          AGL Hydro Partnership SUNCOAST
-#> 19892                                          AGL Hydro Partnership  EILDON2
-#> 19893                                          AGL Hydro Partnership  EILDON2
-#> 19894                                          AGL Hydro Partnership  YABULU2
-#> 19895                                          AGL Hydro Partnership  EILDON2
+#> 19859                                          AGL Hydro Partnership   DARTM1
+#> 19860                                          AGL Hydro Partnership   CLOVER
+#> 19861                                          AGL Hydro Partnership   MCKAY1
+#> 19862                                          AGL Hydro Partnership YWNGAHYD
+#> 19863                                          AGL Hydro Partnership  EILDON2
+#> 19864                                          AGL Hydro Partnership   DARTM1
+#> 19865                                          AGL Hydro Partnership   CLOVER
+#> 19866                                          AGL Hydro Partnership  YABULU2
+#> 19867                                          AGL Hydro Partnership   CLOVER
+#> 19868                                          AGL Hydro Partnership YWNGAHYD
+#> 19869                                          AGL Hydro Partnership   AGLSOM
+#> 19870                                          AGL Hydro Partnership   DARTM1
+#> 19871                                          AGL Hydro Partnership     ICSM
+#> 19872                                          AGL Hydro Partnership  YABULU2
+#> 19873                                          AGL Hydro Partnership  YABULU2
+#> 19874                                          AGL Hydro Partnership   CLOVER
+#> 19875                                          AGL Hydro Partnership     WPWF
+#> 19876                                          AGL Hydro Partnership  WKIEWA2
+#> 19877                                          AGL Hydro Partnership   YABULU
+#> 19878                                          AGL Hydro Partnership   DARTM1
+#> 19879                                          AGL Hydro Partnership  WKIEWA2
+#> 19880                                          AGL Hydro Partnership     ICSM
+#> 19881                                          AGL Hydro Partnership  EILDON1
+#> 19882                                          AGL Hydro Partnership   DARTM1
+#> 19883                                          AGL Hydro Partnership   CLOVER
+#> 19884                                          AGL Hydro Partnership  YABULU2
+#> 19885                                          AGL Hydro Partnership YWNGAHYD
+#> 19886                                          AGL Hydro Partnership   CLOVER
+#> 19887                                          AGL Hydro Partnership   DARTM1
+#> 19888                                          AGL Hydro Partnership   AGLSOM
+#> 19889                                          AGL Hydro Partnership EDLRGNRD
+#> 19890                                          AGL Hydro Partnership     BAPS
+#> 19891                                          AGL Hydro Partnership  EILDON2
+#> 19892                                          AGL Hydro Partnership   YABULU
+#> 19893                                          AGL Hydro Partnership  RUBICON
+#> 19894                                          AGL Hydro Partnership YWNGAHYD
+#> 19895                                          AGL Hydro Partnership  WKIEWA2
 #> 19896                                          AGL Hydro Partnership   DARTM1
-#> 19897                                          AGL Hydro Partnership SUNCOAST
-#> 19898                                          AGL Hydro Partnership MORANBAH
-#> 19899                                          AGL Hydro Partnership   YABULU
-#> 19900                                          AGL Hydro Partnership  WKIEWA2
-#> 19901                                          AGL Hydro Partnership GLBWNHYD
-#> 19902                                          AGL Hydro Partnership COPTNHYD
-#> 19903                                          AGL Hydro Partnership  WKIEWA1
-#> 19904                                          AGL Hydro Partnership   CLOVER
+#> 19897                                          AGL Hydro Partnership COPTNHYD
+#> 19898                                          AGL Hydro Partnership   YABULU
+#> 19899                                          AGL Hydro Partnership SUNCOAST
+#> 19900                                          AGL Hydro Partnership   CLOVER
+#> 19901                                          AGL Hydro Partnership SUNCOAST
+#> 19902                                          AGL Hydro Partnership  EILDON2
+#> 19903                                          AGL Hydro Partnership  EILDON2
+#> 19904                                          AGL Hydro Partnership  YABULU2
 #> 19905                                          AGL Hydro Partnership  EILDON2
-#> 19906                                          AGL Hydro Partnership     WPWF
-#> 19907                                          AGL Hydro Partnership  EILDON2
-#> 19908                                          AGL Hydro Partnership   DARTM1
-#> 19909                                          AGL Hydro Partnership   AGLSOM
-#> 19910                                          AGL Hydro Partnership   YABULU
-#> 19911                                          AGL Hydro Partnership SUNCOAST
-#> 19912                                          AGL Hydro Partnership   DARTM1
-#> 19913                                          AGL Hydro Partnership  EILDON2
-#> 19914                                          AGL Hydro Partnership   DARTM1
-#> 19915                                          AGL Hydro Partnership BDONGHYD
-#> 19916                                          AGL Hydro Partnership  EILDON2
-#> 19917                                          AGL Hydro Partnership   YABULU
-#> 19918                                          AGL Hydro Partnership  EILDON2
-#> 19919                                          AGL Hydro Partnership  EILDON2
-#> 19920                                          AGL Hydro Partnership     ICSM
-#> 19921                                          AGL Hydro Partnership  YABULU2
-#> 19922                                          AGL Hydro Partnership  HALLWF1
-#> 19923                                          AGL Hydro Partnership  HALLWF1
-#> 19924                                          AGL Hydro Partnership BROKENH1
-#> 19925                                          AGL Hydro Partnership BROKENH1
-#> 19926                                          AGL Hydro Partnership MACARTH1
-#> 19927                                          AGL Hydro Partnership  HALLWF1
-#> 19928                                          AGL Hydro Partnership BROKENH1
-#> 19929                                          AGL Hydro Partnership MACARTH1
-#> 19930                                          AGL Hydro Partnership   NBHWF1
-#> 19931                                          AGL Hydro Partnership BROKENH1
+#> 19906                                          AGL Hydro Partnership   DARTM1
+#> 19907                                          AGL Hydro Partnership SUNCOAST
+#> 19908                                          AGL Hydro Partnership MORANBAH
+#> 19909                                          AGL Hydro Partnership   YABULU
+#> 19910                                          AGL Hydro Partnership  WKIEWA2
+#> 19911                                          AGL Hydro Partnership GLBWNHYD
+#> 19912                                          AGL Hydro Partnership COPTNHYD
+#> 19913                                          AGL Hydro Partnership  WKIEWA1
+#> 19914                                          AGL Hydro Partnership   CLOVER
+#> 19915                                          AGL Hydro Partnership  EILDON2
+#> 19916                                          AGL Hydro Partnership     WPWF
+#> 19917                                          AGL Hydro Partnership  EILDON2
+#> 19918                                          AGL Hydro Partnership   DARTM1
+#> 19919                                          AGL Hydro Partnership   AGLSOM
+#> 19920                                          AGL Hydro Partnership   YABULU
+#> 19921                                          AGL Hydro Partnership SUNCOAST
+#> 19922                                          AGL Hydro Partnership   DARTM1
+#> 19923                                          AGL Hydro Partnership  EILDON2
+#> 19924                                          AGL Hydro Partnership   DARTM1
+#> 19925                                          AGL Hydro Partnership BDONGHYD
+#> 19926                                          AGL Hydro Partnership  EILDON2
+#> 19927                                          AGL Hydro Partnership   YABULU
+#> 19928                                          AGL Hydro Partnership  EILDON2
+#> 19929                                          AGL Hydro Partnership  EILDON2
+#> 19930                                          AGL Hydro Partnership     ICSM
+#> 19931                                          AGL Hydro Partnership  YABULU2
 #> 19932                                          AGL Hydro Partnership  HALLWF1
-#> 19933                                          AGL Hydro Partnership  HALLWF1
-#> 19934                                          AGL Hydro Partnership  NYNGAN1
-#> 19935                                          AGL Hydro Partnership  HALLWF1
-#> 19936                                          AGL Hydro Partnership MACARTH1
-#> 19937                                          AGL Hydro Partnership BROKENH1
-#> 19938                                          AGL Hydro Partnership  NYNGAN1
-#> 19939                                          AGL Hydro Partnership MACARTH1
-#> 19940                                          AGL Hydro Partnership   NBHWF1
-#> 19941                                          AGL Hydro Partnership  NYNGAN1
+#> 19933                                          AGL Hydro Partnership MACARTH1
+#> 19934                                          AGL Hydro Partnership BROKENH1
+#> 19935                                          AGL Hydro Partnership   NBHWF1
+#> 19936                                          AGL Hydro Partnership  HALLWF1
+#> 19937                                          AGL Hydro Partnership  HALLWF1
+#> 19938                                          AGL Hydro Partnership MACARTH1
+#> 19939                                          AGL Hydro Partnership  NYNGAN1
+#> 19940                                          AGL Hydro Partnership BROKENH1
+#> 19941                                          AGL Hydro Partnership BROKENH1
 #> 19942                                          AGL Hydro Partnership BROKENH1
-#> 19943                                          AGL Hydro Partnership BROKENH1
-#> 19944                                          AGL Hydro Partnership OAKLAND1
-#> 19945                                          AGL Hydro Partnership  NYNGAN1
-#> 19946                                          AGL Hydro Partnership  HALLWF1
+#> 19943                                          AGL Hydro Partnership  HALLWF1
+#> 19944                                          AGL Hydro Partnership MACARTH1
+#> 19945                                          AGL Hydro Partnership  HALLWF1
+#> 19946                                          AGL Hydro Partnership BROKENH1
 #> 19947                                          AGL Hydro Partnership BROKENH1
 #> 19948                                          AGL Hydro Partnership BROKENH1
-#> 19949                                          AGL Hydro Partnership  HALLWF2
+#> 19949                                          AGL Hydro Partnership   NBHWF1
 #> 19950                                          AGL Hydro Partnership  NYNGAN1
-#> 19951                                          AGL Hydro Partnership   NBHWF1
+#> 19951                                          AGL Hydro Partnership  NYNGAN1
 #> 19952                                          AGL Hydro Partnership BROKENH1
-#> 19953                                          AGL Hydro Partnership   NBHWF1
-#> 19954                                          AGL Hydro Partnership BROKENH1
+#> 19953                                          AGL Hydro Partnership OAKLAND1
+#> 19954                                          AGL Hydro Partnership  HALLWF1
 #> 19955                                          AGL Hydro Partnership  NYNGAN1
-#> 19956                                          AGL Hydro Partnership  HALLWF1
-#> 19957                                          AGL Hydro Partnership  NYNGAN1
-#> 19958                                          AGL Hydro Partnership  HALLWF2
-#> 19959                                          AGL Hydro Partnership  NYNGAN1
-#> 19960                                          AGL Hydro Partnership  HALLWF1
-#> 19961                                          AGL Hydro Partnership BROKENH1
-#> 19962                                          AGL Hydro Partnership MACARTH1
-#> 19963                                          AGL Hydro Partnership  NYNGAN1
+#> 19956                                          AGL Hydro Partnership  NYNGAN1
+#> 19957                                          AGL Hydro Partnership BROKENH1
+#> 19958                                          AGL Hydro Partnership   NBHWF1
+#> 19959                                          AGL Hydro Partnership MACARTH1
+#> 19960                                          AGL Hydro Partnership  NYNGAN1
+#> 19961                                          AGL Hydro Partnership   NBHWF1
+#> 19962                                          AGL Hydro Partnership  NYNGAN1
+#> 19963                                          AGL Hydro Partnership  HALLWF2
 #> 19964                                          AGL Hydro Partnership  HALLWF1
 #> 19965                                          AGL Hydro Partnership  HALLWF1
-#> 19966                                          AGL Hydro Partnership MACARTH1
-#> 19967                                          AGL Hydro Partnership OAKLAND1
-#> 19968                                          AGL Hydro Partnership   NBHWF1
-#> 19969                                          AGL Hydro Partnership MACARTH1
-#> 19970                                          AGL Hydro Partnership  HALLWF1
-#> 19971                                          AGL Hydro Partnership   NBHWF1
-#> 19972                                          AGL Hydro Partnership   NBHWF1
+#> 19966                                          AGL Hydro Partnership BROKENH1
+#> 19967                                          AGL Hydro Partnership MACARTH1
+#> 19968                                          AGL Hydro Partnership  NYNGAN1
+#> 19969                                          AGL Hydro Partnership  HALLWF1
+#> 19970                                          AGL Hydro Partnership BROKENH1
+#> 19971                                          AGL Hydro Partnership MACARTH1
+#> 19972                                          AGL Hydro Partnership BROKENH1
 #> 19973                                          AGL Hydro Partnership  HALLWF2
-#> 19974                                          AGL Hydro Partnership MACARTH1
-#> 19975                                          AGL Hydro Partnership BROKENH1
-#> 19976                                          AGL Hydro Partnership BROKENH1
-#> 19977                                          AGL Hydro Partnership BROKENH1
-#> 19978                                          AGL Hydro Partnership OAKLAND1
+#> 19974                                          AGL Hydro Partnership  HALLWF1
+#> 19975                                          AGL Hydro Partnership  HALLWF1
+#> 19976                                          AGL Hydro Partnership   NBHWF1
+#> 19977                                          AGL Hydro Partnership   NBHWF1
+#> 19978                                          AGL Hydro Partnership  HALLWF2
 #> 19979                                          AGL Hydro Partnership MACARTH1
-#> 19980                                          AGL Hydro Partnership   BLUFF1
-#> 19981                                          AGL Hydro Partnership  HALLWF2
-#> 19982                                          AGL Hydro Partnership OAKLAND1
-#> 19983                                          AGL Hydro Partnership MACARTH1
-#> 19984                                          AGL Hydro Partnership  NYNGAN1
-#> 19985                                          AGL Hydro Partnership MACARTH1
-#> 19986                                          AGL Hydro Partnership   BLUFF1
-#> 19987                                          AGL Hydro Partnership  HALLWF2
-#> 19988                                          AGL Hydro Partnership  HALLWF1
-#> 19989                                          AGL Hydro Partnership  HALLWF1
-#> 19990                                          AGL Hydro Partnership  HALLWF1
-#> 19991                                          AGL Hydro Partnership OAKLAND1
-#> 19992                                          AGL Hydro Partnership   BLUFF1
-#> 19993                                          AGL Hydro Partnership OAKLAND1
-#> 19994                                          AGL Hydro Partnership OAKLAND1
-#> 19995                                          AGL Hydro Partnership  HALLWF2
-#> 19996                                          AGL Hydro Partnership  HALLWF1
-#> 19997                                          AGL Hydro Partnership OAKLAND1
+#> 19980                                          AGL Hydro Partnership BROKENH1
+#> 19981                                          AGL Hydro Partnership BROKENH1
+#> 19982                                          AGL Hydro Partnership BROKENH1
+#> 19983                                          AGL Hydro Partnership  HALLWF1
+#> 19984                                          AGL Hydro Partnership MACARTH1
+#> 19985                                          AGL Hydro Partnership   BLUFF1
+#> 19986                                          AGL Hydro Partnership  NYNGAN1
+#> 19987                                          AGL Hydro Partnership MACARTH1
+#> 19988                                          AGL Hydro Partnership MACARTH1
+#> 19989                                          AGL Hydro Partnership  NYNGAN1
+#> 19990                                          AGL Hydro Partnership MACARTH1
+#> 19991                                          AGL Hydro Partnership   BLUFF1
+#> 19992                                          AGL Hydro Partnership  HALLWF2
+#> 19993                                          AGL Hydro Partnership  HALLWF1
+#> 19994                                          AGL Hydro Partnership  HALLWF1
+#> 19995                                          AGL Hydro Partnership  HALLWF1
+#> 19996                                          AGL Hydro Partnership OAKLAND1
+#> 19997                                          AGL Hydro Partnership   BLUFF1
 #> 19998                                          AGL Hydro Partnership OAKLAND1
-#> 19999                                          AGL Hydro Partnership MACARTH1
-#> 20000                                          AGL Hydro Partnership  HALLWF2
-#> 20001                                          AGL Hydro Partnership BROKENH1
-#> 20002                                          AGL Hydro Partnership   BLUFF1
+#> 19999                                          AGL Hydro Partnership   NBHWF1
+#> 20000                                          AGL Hydro Partnership OAKLAND1
+#> 20001                                          AGL Hydro Partnership  HALLWF1
+#> 20002                                          AGL Hydro Partnership OAKLAND1
 #> 20003                                          AGL Hydro Partnership OAKLAND1
-#> 20004                                          AGL Hydro Partnership   BLUFF1
-#> 20005                                          AGL Hydro Partnership OAKLAND1
-#> 20006                                          AGL Hydro Partnership OAKLAND1
-#> 20007                                          AGL Hydro Partnership OAKLAND1
-#> 20008                                          AGL Hydro Partnership  NYNGAN1
-#> 20009                                          AGL Hydro Partnership  HALLWF2
-#> 20010                                          AGL Hydro Partnership   NBHWF1
-#> 20011                                          AGL Hydro Partnership   NBHWF1
-#> 20012                                          AGL Hydro Partnership  HALLWF1
-#> 20013                                          AGL Hydro Partnership   NBHWF1
-#> 20014                                          AGL Hydro Partnership   BLUFF1
-#> 20015                                          AGL Hydro Partnership OAKLAND1
-#> 20016                                          AGL Hydro Partnership  HALLWF2
-#> 20017                                          AGL Hydro Partnership OAKLAND1
-#> 20018                                          AGL Hydro Partnership  NYNGAN1
-#> 20019                                          AGL Hydro Partnership  HALLWF2
-#> 20020                                          AGL Hydro Partnership  HALLWF1
-#> 20021                                          AGL Hydro Partnership OAKLAND1
+#> 20004                                          AGL Hydro Partnership MACARTH1
+#> 20005                                          AGL Hydro Partnership  HALLWF2
+#> 20006                                          AGL Hydro Partnership BROKENH1
+#> 20007                                          AGL Hydro Partnership   BLUFF1
+#> 20008                                          AGL Hydro Partnership OAKLAND1
+#> 20009                                          AGL Hydro Partnership   BLUFF1
+#> 20010                                          AGL Hydro Partnership OAKLAND1
+#> 20011                                          AGL Hydro Partnership OAKLAND1
+#> 20012                                          AGL Hydro Partnership OAKLAND1
+#> 20013                                          AGL Hydro Partnership  HALLWF2
+#> 20014                                          AGL Hydro Partnership  HALLWF2
+#> 20015                                          AGL Hydro Partnership  HALLWF2
+#> 20016                                          AGL Hydro Partnership   NBHWF1
+#> 20017                                          AGL Hydro Partnership  HALLWF1
+#> 20018                                          AGL Hydro Partnership   NBHWF1
+#> 20019                                          AGL Hydro Partnership   BLUFF1
+#> 20020                                          AGL Hydro Partnership OAKLAND1
+#> 20021                                          AGL Hydro Partnership  HALLWF2
 #> 20022                                          AGL Hydro Partnership OAKLAND1
-#> 20023                                          AGL Hydro Partnership  HALLWF2
-#> 20024                                          AGL Hydro Partnership  HALLWF1
-#> 20025                                          AGL Hydro Partnership   BLUFF1
+#> 20023                                          AGL Hydro Partnership  NYNGAN1
+#> 20024                                          AGL Hydro Partnership OAKLAND1
+#> 20025                                          AGL Hydro Partnership OAKLAND1
 #> 20026                                          AGL Hydro Partnership  NYNGAN1
-#> 20027                                          AGL Hydro Partnership  HALLWF2
-#> 20028                                          AGL Hydro Partnership  NYNGAN1
-#> 20029                                          AGL Hydro Partnership   BLUFF1
-#> 20030                                          AGL Hydro Partnership  HALLWF2
-#> 20031                                          AGL Hydro Partnership     WPWF
+#> 20027                                          AGL Hydro Partnership OAKLAND1
+#> 20028                                          AGL Hydro Partnership   NBHWF1
+#> 20029                                          AGL Hydro Partnership  HALLWF1
+#> 20030                                          AGL Hydro Partnership   BLUFF1
+#> 20031                                          AGL Hydro Partnership  NYNGAN1
 #> 20032                                          AGL Hydro Partnership  HALLWF2
-#> 20033                                          AGL Hydro Partnership MACARTH1
-#> 20034                                          AGL Hydro Partnership OAKLAND1
-#> 20035                                          AGL Hydro Partnership OAKLAND1
-#> 20036                                          AGL Hydro Partnership  HALLWF2
-#> 20037                                          AGL Hydro Partnership MACARTH1
-#> 20038                                          AGL Hydro Partnership   BLUFF1
-#> 20039                                          AGL Hydro Partnership   BLUFF1
-#> 20040                                          AGL Hydro Partnership MACARTH1
-#> 20041                                          AGL Hydro Partnership OAKLAND1
-#> 20042                                          AGL Hydro Partnership  NYNGAN1
-#> 20043                                          AGL Hydro Partnership MACARTH1
-#> 20044                                          AGL Hydro Partnership  HALLWF2
-#> 20045                                          AGL Hydro Partnership OAKLAND1
-#> 20046                                          AGL Hydro Partnership   NBHWF1
-#> 20047                                          AGL Hydro Partnership OAKLAND1
-#> 20048                                          AGL Hydro Partnership     WPWF
-#> 20049                                          AGL Hydro Partnership MACARTH1
-#> 20050                                          AGL Hydro Partnership  HALLWF1
-#> 20051                                          AGL Hydro Partnership  HALLWF1
-#> 20052                                          AGL Hydro Partnership  HALLWF1
-#> 20053                                          AGL Hydro Partnership   NBHWF1
-#> 20054                                          AGL Hydro Partnership MACARTH1
-#> 20055                                          AGL Hydro Partnership MACARTH1
-#> 20056                                          AGL Hydro Partnership OAKLAND1
-#> 20057                                          AGL Hydro Partnership MACARTH1
-#> 20058                                          AGL Hydro Partnership   BLUFF1
-#> 20059                                          AGL Hydro Partnership OAKLAND1
-#> 20060                                          AGL Hydro Partnership  HALLWF2
-#> 20061                                          AGL Hydro Partnership  HALLWF1
+#> 20033                                          AGL Hydro Partnership  NYNGAN1
+#> 20034                                          AGL Hydro Partnership   BLUFF1
+#> 20035                                          AGL Hydro Partnership  HALLWF2
+#> 20036                                          AGL Hydro Partnership     WPWF
+#> 20037                                          AGL Hydro Partnership  HALLWF2
+#> 20038                                          AGL Hydro Partnership  HALLWF1
+#> 20039                                          AGL Hydro Partnership OAKLAND1
+#> 20040                                          AGL Hydro Partnership OAKLAND1
+#> 20041                                          AGL Hydro Partnership  HALLWF2
+#> 20042                                          AGL Hydro Partnership MACARTH1
+#> 20043                                          AGL Hydro Partnership   BLUFF1
+#> 20044                                          AGL Hydro Partnership   BLUFF1
+#> 20045                                          AGL Hydro Partnership MACARTH1
+#> 20046                                          AGL Hydro Partnership OAKLAND1
+#> 20047                                          AGL Hydro Partnership  NYNGAN1
+#> 20048                                          AGL Hydro Partnership MACARTH1
+#> 20049                                          AGL Hydro Partnership  HALLWF2
+#> 20050                                          AGL Hydro Partnership OAKLAND1
+#> 20051                                          AGL Hydro Partnership  HALLWF2
+#> 20052                                          AGL Hydro Partnership MACARTH1
+#> 20053                                          AGL Hydro Partnership OAKLAND1
+#> 20054                                          AGL Hydro Partnership  HALLWF2
+#> 20055                                          AGL Hydro Partnership  HALLWF1
+#> 20056                                          AGL Hydro Partnership  HALLWF1
+#> 20057                                          AGL Hydro Partnership  HALLWF1
+#> 20058                                          AGL Hydro Partnership   NBHWF1
+#> 20059                                          AGL Hydro Partnership MACARTH1
+#> 20060                                          AGL Hydro Partnership MACARTH1
+#> 20061                                          AGL Hydro Partnership OAKLAND1
 #> 20062                                          AGL Hydro Partnership MACARTH1
-#> 20063                                          AGL Hydro Partnership OAKLAND1
-#> 20064                                          AGL Hydro Partnership MACARTH1
-#> 20065                                          AGL Hydro Partnership   NBHWF1
-#> 20066                                          AGL Hydro Partnership  HALLWF2
-#> 20067                                          AGL Hydro Partnership OAKLAND1
-#> 20068                                          AGL Hydro Partnership  HALLWF2
-#> 20069                                          AGL Hydro Partnership   NBHWF1
+#> 20063                                          AGL Hydro Partnership MACARTH1
+#> 20064                                          AGL Hydro Partnership   NBHWF1
+#> 20065                                          AGL Hydro Partnership OAKLAND1
+#> 20066                                          AGL Hydro Partnership OAKLAND1
+#> 20067                                          AGL Hydro Partnership MACARTH1
+#> 20068                                          AGL Hydro Partnership OAKLAND1
+#> 20069                                          AGL Hydro Partnership MACARTH1
 #> 20070                                          AGL Hydro Partnership   NBHWF1
-#> 20071                                          AGL Hydro Partnership   BLUFF1
-#> 20072                                          AGL Hydro Partnership MACARTH1
-#> 20073                                          AGL Hydro Partnership   NBHWF1
-#> 20074                                          AGL Hydro Partnership  NYNGAN1
-#> 20075                                          AGL Hydro Partnership   BLUFF1
-#> 20076                                          AGL Hydro Partnership  HALLWF1
-#> 20077                                          AGL Hydro Partnership  HALLWF1
-#> 20078                                          AGL Hydro Partnership  HALLWF1
-#> 20079                                          AGL Hydro Partnership  HALLWF1
+#> 20071                                          AGL Hydro Partnership  HALLWF2
+#> 20072                                          AGL Hydro Partnership OAKLAND1
+#> 20073                                          AGL Hydro Partnership OAKLAND1
+#> 20074                                          AGL Hydro Partnership  HALLWF2
+#> 20075                                          AGL Hydro Partnership     WPWF
+#> 20076                                          AGL Hydro Partnership   BLUFF1
+#> 20077                                          AGL Hydro Partnership MACARTH1
+#> 20078                                          AGL Hydro Partnership   NBHWF1
+#> 20079                                          AGL Hydro Partnership  NYNGAN1
 #> 20080                                          AGL Hydro Partnership   BLUFF1
-#> 20081                                          AGL Hydro Partnership   NBHWF1
+#> 20081                                          AGL Hydro Partnership   BLUFF1
 #> 20082                                          AGL Hydro Partnership  HALLWF2
 #> 20083                                          AGL Hydro Partnership   NBHWF1
-#> 20084                                          AGL Hydro Partnership MACARTH1
-#> 20085                                          AGL Hydro Partnership   BLUFF1
-#> 20086                                          AGL Hydro Partnership  HALLWF1
+#> 20084                                          AGL Hydro Partnership  HALLWF1
+#> 20085                                          AGL Hydro Partnership  HALLWF1
+#> 20086                                          AGL Hydro Partnership   NBHWF1
 #> 20087                                          AGL Hydro Partnership  HALLWF2
-#> 20088                                          AGL Hydro Partnership OAKLAND1
-#> 21711                                  AGL SA Generation Pty Limited   TORRB1
-#> 21712                                  AGL SA Generation Pty Limited   TORNL1
-#> 21713                                  AGL SA Generation Pty Limited   TORRA1
-#> 21714                                  AGL SA Generation Pty Limited   TORRA2
-#> 21715                                  AGL SA Generation Pty Limited   TORNL1
-#> 21716                                  AGL SA Generation Pty Limited   TORRA1
-#> 21717                                  AGL SA Generation Pty Limited   TORRB1
-#> 21718                                  AGL SA Generation Pty Limited   TORNL1
-#> 21719                                  AGL SA Generation Pty Limited     WPWF
-#> 21720                                  AGL SA Generation Pty Limited   TORNL1
-#> 21721                                  AGL SA Generation Pty Limited   TORRB1
-#> 21722                                  AGL SA Generation Pty Limited   TORNL1
-#> 21723                                  AGL SA Generation Pty Limited   TORNL1
+#> 20088                                          AGL Hydro Partnership   NBHWF1
+#> 20089                                          AGL Hydro Partnership   NBHWF1
+#> 20090                                          AGL Hydro Partnership  HALLWF1
+#> 20091                                          AGL Hydro Partnership  HALLWF1
+#> 20092                                          AGL Hydro Partnership  HALLWF1
+#> 20093                                          AGL Hydro Partnership MACARTH1
+#> 20094                                          AGL Hydro Partnership  HALLWF2
+#> 20095                                          AGL Hydro Partnership   BLUFF1
+#> 20096                                          AGL Hydro Partnership  HALLWF1
+#> 20097                                          AGL Hydro Partnership   BLUFF1
+#> 20098                                          AGL Hydro Partnership OAKLAND1
+#> 21721                                  AGL SA Generation Pty Limited   TORRA1
+#> 21722                                  AGL SA Generation Pty Limited   TORRB1
+#> 21723                                  AGL SA Generation Pty Limited   TORRA1
 #> 21724                                  AGL SA Generation Pty Limited   TORNL1
 #> 21725                                  AGL SA Generation Pty Limited   TORNL1
-#> 21726                                  AGL SA Generation Pty Limited   TORNL1
-#> 21727                                  AGL SA Generation Pty Limited   TORRA3
+#> 21726                                  AGL SA Generation Pty Limited   TORRA2
+#> 21727                                  AGL SA Generation Pty Limited   TORNL1
 #> 21728                                  AGL SA Generation Pty Limited   TORNL1
-#> 21729                                  AGL SA Generation Pty Limited   TORRA2
-#> 21730                                  AGL SA Generation Pty Limited   TORRA2
-#> 21731                                  AGL SA Generation Pty Limited   TORRA2
-#> 21732                                  AGL SA Generation Pty Limited   TORRA2
+#> 21729                                  AGL SA Generation Pty Limited   TORRB1
+#> 21730                                  AGL SA Generation Pty Limited   TORNL1
+#> 21731                                  AGL SA Generation Pty Limited     WPWF
+#> 21732                                  AGL SA Generation Pty Limited   TORNL1
 #> 21733                                  AGL SA Generation Pty Limited   TORRB1
-#> 21734                                  AGL SA Generation Pty Limited   TORRA1
-#> 21735                                  AGL SA Generation Pty Limited   TORRB1
-#> 21736                                  AGL SA Generation Pty Limited   TORNL1
+#> 21734                                  AGL SA Generation Pty Limited   TORNL1
+#> 21735                                  AGL SA Generation Pty Limited   TORNL1
+#> 21736                                  AGL SA Generation Pty Limited   TORRA2
 #> 21737                                  AGL SA Generation Pty Limited   TORNL1
-#> 21738                                  AGL SA Generation Pty Limited   TORRB1
-#> 21739                                  AGL SA Generation Pty Limited   TORNL1
+#> 21738                                  AGL SA Generation Pty Limited   TORNL1
+#> 21739                                  AGL SA Generation Pty Limited   TORRA3
 #> 21740                                  AGL SA Generation Pty Limited   TORNL1
-#> 21741                                  AGL SA Generation Pty Limited   TORRB1
-#> 21742                                  AGL SA Generation Pty Limited   TORNL1
+#> 21741                                  AGL SA Generation Pty Limited   TORRA2
+#> 21742                                  AGL SA Generation Pty Limited   TORRA2
 #> 21743                                  AGL SA Generation Pty Limited   TORRA2
 #> 21744                                  AGL SA Generation Pty Limited   TORNL1
-#> 21745                                  AGL SA Generation Pty Limited   TORRA2
-#> 21746                                  AGL SA Generation Pty Limited   TORNL1
-#> 21747                                  AGL SA Generation Pty Limited   TORRA2
-#> 21748                                  AGL SA Generation Pty Limited   TORRA2
-#> 21749                                  AGL SA Generation Pty Limited   TORNL1
-#> 21750                                  AGL SA Generation Pty Limited   TORRA3
-#> 21751                                  AGL SA Generation Pty Limited   TORRA1
-#> 21752                                  AGL SA Generation Pty Limited     TIB1
-#> 21753                                  AGL SA Generation Pty Limited   TORNL1
-#> 21754                                  AGL SA Generation Pty Limited   TORRB1
-#> 21755                                  AGL SA Generation Pty Limited   TORRA1
-#> 21756                                  AGL SA Generation Pty Limited   TORRA1
-#> 21757                                  AGL SA Generation Pty Limited   TORRA1
-#> 21758                                  AGL SA Generation Pty Limited   TORNL1
+#> 21745                                  AGL SA Generation Pty Limited   TORNL1
+#> 21746                                  AGL SA Generation Pty Limited   TORRA1
+#> 21747                                  AGL SA Generation Pty Limited   TORRB1
+#> 21748                                  AGL SA Generation Pty Limited   TORNL1
+#> 21749                                  AGL SA Generation Pty Limited   TORRB1
+#> 21750                                  AGL SA Generation Pty Limited   TORRB1
+#> 21751                                  AGL SA Generation Pty Limited   TORNL1
+#> 21752                                  AGL SA Generation Pty Limited   TORRA2
+#> 21753                                  AGL SA Generation Pty Limited   TORRA2
+#> 21754                                  AGL SA Generation Pty Limited   TORNL1
+#> 21755                                  AGL SA Generation Pty Limited   TORRA2
+#> 21756                                  AGL SA Generation Pty Limited     TIB1
+#> 21757                                  AGL SA Generation Pty Limited   TORNL1
+#> 21758                                  AGL SA Generation Pty Limited   TORRA3
 #> 21759                                  AGL SA Generation Pty Limited   TORRA2
-#> 21760                                  AGL SA Generation Pty Limited   TORNL1
-#> 21761                                  AGL SA Generation Pty Limited   TORRA2
-#> 21762                                  AGL SA Generation Pty Limited   TORRA3
-#> 21763                                  AGL SA Generation Pty Limited   TORNL1
-#> 21764                                  AGL SA Generation Pty Limited   TORRA1
-#> 21765                                  AGL SA Generation Pty Limited   TORNL1
-#> 21766                                  AGL SA Generation Pty Limited   TORNL1
-#> 21767                                  AGL SA Generation Pty Limited  HALLWF1
+#> 21760                                  AGL SA Generation Pty Limited   TORRA1
+#> 21761                                  AGL SA Generation Pty Limited   TORNL1
+#> 21762                                  AGL SA Generation Pty Limited   TORNL1
+#> 21763                                  AGL SA Generation Pty Limited   TORRB1
+#> 21764                                  AGL SA Generation Pty Limited   TORNL1
+#> 21765                                  AGL SA Generation Pty Limited   TORRA1
+#> 21766                                  AGL SA Generation Pty Limited   TORRA3
+#> 21767                                  AGL SA Generation Pty Limited   TORRA1
 #> 21768                                  AGL SA Generation Pty Limited   TORNL1
-#> 21769                                  AGL SA Generation Pty Limited   TORRA2
-#> 21770                                  AGL SA Generation Pty Limited   TORRA2
-#> 21771                                  AGL SA Generation Pty Limited   TORRB1
-#> 21772                                  AGL SA Generation Pty Limited   TORRB1
-#> 21773                                  AGL SA Generation Pty Limited   TORRA3
-#> 21774                                  AGL SA Generation Pty Limited   TORNL1
-#> 21775                                  AGL SA Generation Pty Limited   TORRA1
-#> 21776                                  AGL SA Generation Pty Limited   TORRA1
-#> 21777                                  AGL SA Generation Pty Limited BARKIPS1
-#> 21778                                  AGL SA Generation Pty Limited   TORRA3
-#> 21779                                  AGL SA Generation Pty Limited   TORRB2
-#> 21780                                  AGL SA Generation Pty Limited   TORNL1
-#> 21781                                  AGL SA Generation Pty Limited   TORRB3
-#> 21782                                  AGL SA Generation Pty Limited   TORRA4
-#> 21783                                  AGL SA Generation Pty Limited BARKIPS1
+#> 21769                                  AGL SA Generation Pty Limited   TORNL1
+#> 21770                                  AGL SA Generation Pty Limited   TORNL1
+#> 21771                                  AGL SA Generation Pty Limited   TORRA2
+#> 21772                                  AGL SA Generation Pty Limited   TORNL1
+#> 21773                                  AGL SA Generation Pty Limited   TORRA2
+#> 21774                                  AGL SA Generation Pty Limited   TORRA2
+#> 21775                                  AGL SA Generation Pty Limited  HALLWF1
+#> 21776                                  AGL SA Generation Pty Limited   TORRB1
+#> 21777                                  AGL SA Generation Pty Limited   TORRA3
+#> 21778                                  AGL SA Generation Pty Limited   TORRA2
+#> 21779                                  AGL SA Generation Pty Limited   TORRB1
+#> 21780                                  AGL SA Generation Pty Limited   TORRB1
+#> 21781                                  AGL SA Generation Pty Limited   TORRA1
+#> 21782                                  AGL SA Generation Pty Limited   TORRA3
+#> 21783                                  AGL SA Generation Pty Limited   TORRB2
 #> 21784                                  AGL SA Generation Pty Limited   TORNL1
-#> 21785                                  AGL SA Generation Pty Limited   TORRB1
-#> 21786                                  AGL SA Generation Pty Limited     WPWF
-#> 21787                                  AGL SA Generation Pty Limited   TORNL1
+#> 21785                                  AGL SA Generation Pty Limited   TORRB3
+#> 21786                                  AGL SA Generation Pty Limited   TORRA4
+#> 21787                                  AGL SA Generation Pty Limited BARKIPS1
 #> 21788                                  AGL SA Generation Pty Limited   TORNL1
-#> 21789                                  AGL SA Generation Pty Limited   TORRA3
-#> 21790                                  AGL SA Generation Pty Limited   TORRA3
-#> 21791                                  AGL SA Generation Pty Limited   TORRB2
-#> 21792                                  AGL SA Generation Pty Limited   TORRB3
-#> 21793                                  AGL SA Generation Pty Limited   TORRA3
-#> 21794                                  AGL SA Generation Pty Limited   TORRB1
-#> 21795                                  AGL SA Generation Pty Limited   TORRA2
-#> 21796                                  AGL SA Generation Pty Limited   TORNL1
-#> 21797                                  AGL SA Generation Pty Limited   TORRB2
-#> 21798                                  AGL SA Generation Pty Limited   TORRB2
-#> 21799                                  AGL SA Generation Pty Limited     WPWF
-#> 21800                                  AGL SA Generation Pty Limited   TORRA3
-#> 21801                                  AGL SA Generation Pty Limited   TORRA3
-#> 21802                                  AGL SA Generation Pty Limited   TORRB1
-#> 21803                                  AGL SA Generation Pty Limited   TORRA3
-#> 21804                                  AGL SA Generation Pty Limited   TORRA3
-#> 21805                                  AGL SA Generation Pty Limited   TORRA1
-#> 21806                                  AGL SA Generation Pty Limited   TORRB3
-#> 21807                                  AGL SA Generation Pty Limited   TORRB1
-#> 21808                                  AGL SA Generation Pty Limited   TORRB2
-#> 21809                                  AGL SA Generation Pty Limited   TORRA3
-#> 21810                                  AGL SA Generation Pty Limited     TIB1
-#> 21811                                  AGL SA Generation Pty Limited   TORRA1
-#> 21812                                  AGL SA Generation Pty Limited   TORRA4
-#> 21813                                  AGL SA Generation Pty Limited     WPWF
-#> 21814                                  AGL SA Generation Pty Limited   TORRA3
-#> 21815                                  AGL SA Generation Pty Limited   TORRA3
-#> 21816                                  AGL SA Generation Pty Limited   TORRA3
+#> 21789                                  AGL SA Generation Pty Limited   TORRB1
+#> 21790                                  AGL SA Generation Pty Limited     WPWF
+#> 21791                                  AGL SA Generation Pty Limited   TORNL1
+#> 21792                                  AGL SA Generation Pty Limited   TORRA1
+#> 21793                                  AGL SA Generation Pty Limited   TORNL1
+#> 21794                                  AGL SA Generation Pty Limited   TORRA1
+#> 21795                                  AGL SA Generation Pty Limited   TORRB2
+#> 21796                                  AGL SA Generation Pty Limited   TORRB3
+#> 21797                                  AGL SA Generation Pty Limited   TORRA3
+#> 21798                                  AGL SA Generation Pty Limited   TORRB1
+#> 21799                                  AGL SA Generation Pty Limited   TORRA2
+#> 21800                                  AGL SA Generation Pty Limited   TORNL1
+#> 21801                                  AGL SA Generation Pty Limited   TORRB2
+#> 21802                                  AGL SA Generation Pty Limited   TORRB2
+#> 21803                                  AGL SA Generation Pty Limited     WPWF
+#> 21804                                  AGL SA Generation Pty Limited   TORNL1
+#> 21805                                  AGL SA Generation Pty Limited   TORNL1
+#> 21806                                  AGL SA Generation Pty Limited   TORRA1
+#> 21807                                  AGL SA Generation Pty Limited BARKIPS1
+#> 21808                                  AGL SA Generation Pty Limited   TORRA3
+#> 21809                                  AGL SA Generation Pty Limited   TORRA1
+#> 21810                                  AGL SA Generation Pty Limited   TORRB3
+#> 21811                                  AGL SA Generation Pty Limited   TORRB1
+#> 21812                                  AGL SA Generation Pty Limited   TORRB2
+#> 21813                                  AGL SA Generation Pty Limited   TORRA3
+#> 21814                                  AGL SA Generation Pty Limited     TIB1
+#> 21815                                  AGL SA Generation Pty Limited   TORRA1
+#> 21816                                  AGL SA Generation Pty Limited   TORRA4
 #> 21817                                  AGL SA Generation Pty Limited   TORRA3
-#> 21818                                  AGL SA Generation Pty Limited   TORRB4
+#> 21818                                  AGL SA Generation Pty Limited   TORRA3
 #> 21819                                  AGL SA Generation Pty Limited   TORRA3
-#> 21820                                  AGL SA Generation Pty Limited   TORRB3
-#> 21821                                  AGL SA Generation Pty Limited   TORRB1
-#> 21822                                  AGL SA Generation Pty Limited   TORRB1
-#> 21823                                  AGL SA Generation Pty Limited   TORRB2
-#> 21824                                  AGL SA Generation Pty Limited   TORRA1
-#> 21825                                  AGL SA Generation Pty Limited   TORRA2
-#> 21826                                  AGL SA Generation Pty Limited   TORNL1
-#> 21827                                  AGL SA Generation Pty Limited   TORRB1
-#> 21828                                  AGL SA Generation Pty Limited   TORNL1
-#> 21829                                  AGL SA Generation Pty Limited   NBHWF1
-#> 21830                                  AGL SA Generation Pty Limited   TORRB4
-#> 21831                                  AGL SA Generation Pty Limited   NBHWF1
-#> 21832                                  AGL SA Generation Pty Limited   TORRB2
-#> 21833                                  AGL SA Generation Pty Limited   TORRB3
-#> 21834                                  AGL SA Generation Pty Limited   TORRB3
-#> 21835                                  AGL SA Generation Pty Limited   TORRB3
+#> 21820                                  AGL SA Generation Pty Limited   TORRA3
+#> 21821                                  AGL SA Generation Pty Limited   TORRA3
+#> 21822                                  AGL SA Generation Pty Limited   TORRB4
+#> 21823                                  AGL SA Generation Pty Limited   TORRA3
+#> 21824                                  AGL SA Generation Pty Limited   TORRB3
+#> 21825                                  AGL SA Generation Pty Limited   TORRB1
+#> 21826                                  AGL SA Generation Pty Limited   TORRB1
+#> 21827                                  AGL SA Generation Pty Limited   TORRB2
+#> 21828                                  AGL SA Generation Pty Limited   TORRA1
+#> 21829                                  AGL SA Generation Pty Limited   TORRA2
+#> 21830                                  AGL SA Generation Pty Limited     WPWF
+#> 21831                                  AGL SA Generation Pty Limited   TORRA3
+#> 21832                                  AGL SA Generation Pty Limited   TORRB1
+#> 21833                                  AGL SA Generation Pty Limited   TORRA3
+#> 21834                                  AGL SA Generation Pty Limited   TORRB4
+#> 21835                                  AGL SA Generation Pty Limited   NBHWF1
 #> 21836                                  AGL SA Generation Pty Limited   TORRB2
-#> 21837                                  AGL SA Generation Pty Limited   TORRB1
-#> 21838                                  AGL SA Generation Pty Limited   TORRA1
-#> 21839                                  AGL SA Generation Pty Limited  HALLWF1
-#> 21840                                  AGL SA Generation Pty Limited   TORRA3
-#> 21841                                  AGL SA Generation Pty Limited   TORNL1
-#> 21842                                  AGL SA Generation Pty Limited   TORRB3
-#> 21843                                  AGL SA Generation Pty Limited   TORRA2
-#> 21844                                  AGL SA Generation Pty Limited   TORRA3
-#> 21845                                  AGL SA Generation Pty Limited   TORRB2
-#> 21846                                  AGL SA Generation Pty Limited   TORRA2
-#> 21847                                  AGL SA Generation Pty Limited   TORRA3
-#> 21848                                  AGL SA Generation Pty Limited   TORRA1
-#> 21849                                  AGL SA Generation Pty Limited   TORRB3
-#> 21850                                  AGL SA Generation Pty Limited   TORRA4
-#> 21851                                  AGL SA Generation Pty Limited   TORNL1
-#> 21852                                  AGL SA Generation Pty Limited   TORRA2
-#> 21853                                  AGL SA Generation Pty Limited   TORRA4
-#> 21854                                  AGL SA Generation Pty Limited   TORRA3
+#> 21837                                  AGL SA Generation Pty Limited   TORRB3
+#> 21838                                  AGL SA Generation Pty Limited   TORRB3
+#> 21839                                  AGL SA Generation Pty Limited   TORRB3
+#> 21840                                  AGL SA Generation Pty Limited   TORRB2
+#> 21841                                  AGL SA Generation Pty Limited   TORRB1
+#> 21842                                  AGL SA Generation Pty Limited   TORRA1
+#> 21843                                  AGL SA Generation Pty Limited   TORNL1
+#> 21844                                  AGL SA Generation Pty Limited   TORRB1
+#> 21845                                  AGL SA Generation Pty Limited   TORRA3
+#> 21846                                  AGL SA Generation Pty Limited   TORRA3
+#> 21847                                  AGL SA Generation Pty Limited   TORRA2
+#> 21848                                  AGL SA Generation Pty Limited   TORRA3
+#> 21849                                  AGL SA Generation Pty Limited   TORRB2
+#> 21850                                  AGL SA Generation Pty Limited   TORRA2
+#> 21851                                  AGL SA Generation Pty Limited   TORRA3
+#> 21852                                  AGL SA Generation Pty Limited   TORRA1
+#> 21853                                  AGL SA Generation Pty Limited   TORRB3
+#> 21854                                  AGL SA Generation Pty Limited   TORRA4
 #> 21855                                  AGL SA Generation Pty Limited   TORNL1
-#> 21856                                  AGL SA Generation Pty Limited   TORNL1
-#> 21857                                  AGL SA Generation Pty Limited   NBHWF1
-#> 21858                                  AGL SA Generation Pty Limited   TORRB4
-#> 21859                                  AGL SA Generation Pty Limited    TIBL1
-#> 21860                                  AGL SA Generation Pty Limited    TIBL1
-#> 21861                                  AGL SA Generation Pty Limited   TORRB3
-#> 21862                                  AGL SA Generation Pty Limited   TORRA3
-#> 21863                                  AGL SA Generation Pty Limited   TORRA2
-#> 21864                                  AGL SA Generation Pty Limited   TORRA4
-#> 21865                                  AGL SA Generation Pty Limited   TORRA4
-#> 21866                                  AGL SA Generation Pty Limited   TORRA1
+#> 21856                                  AGL SA Generation Pty Limited  HALLWF1
+#> 21857                                  AGL SA Generation Pty Limited   TORRA3
+#> 21858                                  AGL SA Generation Pty Limited   TORNL1
+#> 21859                                  AGL SA Generation Pty Limited   NBHWF1
+#> 21860                                  AGL SA Generation Pty Limited   TORNL1
+#> 21861                                  AGL SA Generation Pty Limited   NBHWF1
+#> 21862                                  AGL SA Generation Pty Limited   TORRB4
+#> 21863                                  AGL SA Generation Pty Limited    TIBL1
+#> 21864                                  AGL SA Generation Pty Limited    TIBL1
+#> 21865                                  AGL SA Generation Pty Limited   TORRB3
+#> 21866                                  AGL SA Generation Pty Limited   TORRA3
 #> 21867                                  AGL SA Generation Pty Limited   TORRA2
-#> 21868                                  AGL SA Generation Pty Limited   TORRA1
-#> 21869                                  AGL SA Generation Pty Limited   TORRA1
+#> 21868                                  AGL SA Generation Pty Limited   TORRA4
+#> 21869                                  AGL SA Generation Pty Limited   TORRA2
 #> 21870                                  AGL SA Generation Pty Limited   TORRA4
-#> 21871                                  AGL SA Generation Pty Limited   TORRA2
-#> 21872                                  AGL SA Generation Pty Limited   TORRA1
-#> 21873                                  AGL SA Generation Pty Limited   NBHWF1
-#> 21874                                  AGL SA Generation Pty Limited   NBHWF1
-#> 21875                                  AGL SA Generation Pty Limited   TORRB1
-#> 21876                                  AGL SA Generation Pty Limited   TORRB1
-#> 21877                                  AGL SA Generation Pty Limited   TORRB4
-#> 21878                                  AGL SA Generation Pty Limited   TORRB3
-#> 21879                                  AGL SA Generation Pty Limited   TORRB3
+#> 21871                                  AGL SA Generation Pty Limited   TORNL1
+#> 21872                                  AGL SA Generation Pty Limited   TORRB3
+#> 21873                                  AGL SA Generation Pty Limited   TORRA1
+#> 21874                                  AGL SA Generation Pty Limited   TORRA4
+#> 21875                                  AGL SA Generation Pty Limited   TORRA2
+#> 21876                                  AGL SA Generation Pty Limited   TORRA1
+#> 21877                                  AGL SA Generation Pty Limited   NBHWF1
+#> 21878                                  AGL SA Generation Pty Limited   NBHWF1
+#> 21879                                  AGL SA Generation Pty Limited   TORRB1
 #> 21880                                  AGL SA Generation Pty Limited   TORRB1
-#> 21881                                  AGL SA Generation Pty Limited     WPWF
-#> 21882                                  AGL SA Generation Pty Limited   TORRA3
+#> 21881                                  AGL SA Generation Pty Limited   TORRB4
+#> 21882                                  AGL SA Generation Pty Limited   TORRA4
 #> 21883                                  AGL SA Generation Pty Limited   TORRA1
-#> 21884                                  AGL SA Generation Pty Limited   TORRB4
-#> 21885                                  AGL SA Generation Pty Limited   TORRB4
+#> 21884                                  AGL SA Generation Pty Limited   TORRA3
+#> 21885                                  AGL SA Generation Pty Limited   TORNL1
 #> 21886                                  AGL SA Generation Pty Limited   TORRA3
-#> 21887                                  AGL SA Generation Pty Limited   TORRA3
-#> 21888                                  AGL SA Generation Pty Limited   TORRA3
-#> 21889                                  AGL SA Generation Pty Limited   TORRA3
-#> 21890                                  AGL SA Generation Pty Limited  HALLWF2
-#> 21891                                  AGL SA Generation Pty Limited   TORRA2
-#> 21892                                  AGL SA Generation Pty Limited   TORRA1
-#> 21893                                  AGL SA Generation Pty Limited   TORRB2
-#> 21894                                  AGL SA Generation Pty Limited   TORRA3
-#> 21895                                  AGL SA Generation Pty Limited   TORRA2
-#> 21896                                  AGL SA Generation Pty Limited   TORRB4
+#> 21887                                  AGL SA Generation Pty Limited   TORRA1
+#> 21888                                  AGL SA Generation Pty Limited   TORRB4
+#> 21889                                  AGL SA Generation Pty Limited   TORRB4
+#> 21890                                  AGL SA Generation Pty Limited   TORRA3
+#> 21891                                  AGL SA Generation Pty Limited   TORRA3
+#> 21892                                  AGL SA Generation Pty Limited   TORRA3
+#> 21893                                  AGL SA Generation Pty Limited   TORRA3
+#> 21894                                  AGL SA Generation Pty Limited  HALLWF2
+#> 21895                                  AGL SA Generation Pty Limited   TORRB3
+#> 21896                                  AGL SA Generation Pty Limited   TORRB3
 #> 21897                                  AGL SA Generation Pty Limited   TORRA2
-#> 21898                                  AGL SA Generation Pty Limited    TIBG1
-#> 21899                                  AGL SA Generation Pty Limited   TORRB4
-#> 21900                                  AGL SA Generation Pty Limited   TORRA4
-#> 21901                                  AGL SA Generation Pty Limited   TORRB4
-#> 21902                                  AGL SA Generation Pty Limited BARKIPS1
-#> 21903                                  AGL SA Generation Pty Limited   TORRB1
-#> 21904                                  AGL SA Generation Pty Limited BARKIPS1
-#> 21905                                  AGL SA Generation Pty Limited   TORRB1
-#> 21906                                  AGL SA Generation Pty Limited   TORRB1
-#> 21907                                  AGL SA Generation Pty Limited   TORRA2
-#> 21908                                  AGL SA Generation Pty Limited  HALLWF1
-#> 21909                                  AGL SA Generation Pty Limited   TORRB2
-#> 21910                                  AGL SA Generation Pty Limited   TORNL1
-#> 21911                                  AGL SA Generation Pty Limited   TORRB3
-#> 21912                                  AGL SA Generation Pty Limited   TORRB3
-#> 21913                                  AGL SA Generation Pty Limited   NBHWF1
-#> 21914                                  AGL SA Generation Pty Limited   TORRA2
-#> 21915                                  AGL SA Generation Pty Limited   TORRA2
-#> 21916                                  AGL SA Generation Pty Limited BARKIPS1
-#> 21917                                  AGL SA Generation Pty Limited   TORRA2
-#> 21918                                  AGL SA Generation Pty Limited   TORRB1
-#> 21919                                  AGL SA Generation Pty Limited  HALLWF2
-#> 21920                                  AGL SA Generation Pty Limited   TORRA1
-#> 21921                                  AGL SA Generation Pty Limited   TORRA1
-#> 21922                                  AGL SA Generation Pty Limited   TORNL1
-#> 21923                                  AGL SA Generation Pty Limited   TORRB3
-#> 21924                                  AGL SA Generation Pty Limited   TORRA1
-#> 21925                                  AGL SA Generation Pty Limited   TORRA3
-#> 21926                                  AGL SA Generation Pty Limited   TORRA1
+#> 21898                                  AGL SA Generation Pty Limited   TORRA1
+#> 21899                                  AGL SA Generation Pty Limited   TORRA2
+#> 21900                                  AGL SA Generation Pty Limited   TORRB4
+#> 21901                                  AGL SA Generation Pty Limited   TORRA2
+#> 21902                                  AGL SA Generation Pty Limited    TIBG1
+#> 21903                                  AGL SA Generation Pty Limited   TORRB4
+#> 21904                                  AGL SA Generation Pty Limited   TORRA4
+#> 21905                                  AGL SA Generation Pty Limited   TORRB4
+#> 21906                                  AGL SA Generation Pty Limited BARKIPS1
+#> 21907                                  AGL SA Generation Pty Limited   TORRB1
+#> 21908                                  AGL SA Generation Pty Limited   TORRA2
+#> 21909                                  AGL SA Generation Pty Limited   TORRA1
+#> 21910                                  AGL SA Generation Pty Limited   TORRB1
+#> 21911                                  AGL SA Generation Pty Limited     WPWF
+#> 21912                                  AGL SA Generation Pty Limited  HALLWF1
+#> 21913                                  AGL SA Generation Pty Limited   TORRB2
+#> 21914                                  AGL SA Generation Pty Limited   TORNL1
+#> 21915                                  AGL SA Generation Pty Limited   TORRB3
+#> 21916                                  AGL SA Generation Pty Limited   TORRB3
+#> 21917                                  AGL SA Generation Pty Limited   NBHWF1
+#> 21918                                  AGL SA Generation Pty Limited   TORRA2
+#> 21919                                  AGL SA Generation Pty Limited   TORRA2
+#> 21920                                  AGL SA Generation Pty Limited BARKIPS1
+#> 21921                                  AGL SA Generation Pty Limited BARKIPS1
+#> 21922                                  AGL SA Generation Pty Limited   TORRB1
+#> 21923                                  AGL SA Generation Pty Limited   TORRB2
+#> 21924                                  AGL SA Generation Pty Limited   TORRA3
+#> 21925                                  AGL SA Generation Pty Limited   TORRA1
+#> 21926                                  AGL SA Generation Pty Limited   TORNL1
 #> 21927                                  AGL SA Generation Pty Limited   TORRB3
-#> 21928                                  AGL SA Generation Pty Limited   TORRA3
-#> 21929                                  AGL SA Generation Pty Limited   TORRB2
-#> 21930                                  AGL SA Generation Pty Limited   TORRB2
-#> 21931                                  AGL SA Generation Pty Limited   TORRA4
-#> 21932                                  AGL SA Generation Pty Limited   TORRA4
-#> 21933                                  AGL SA Generation Pty Limited  HALLWF1
-#> 21934                                  AGL SA Generation Pty Limited   TORRB3
-#> 21935                                  AGL SA Generation Pty Limited   NBHWF1
-#> 21936                                  AGL SA Generation Pty Limited   BLUFF1
-#> 21937                                  AGL SA Generation Pty Limited    TIBG1
-#> 21938                                  AGL SA Generation Pty Limited   TORNL1
-#> 21939                                  AGL SA Generation Pty Limited  HALLWF1
-#> 21940                                  AGL SA Generation Pty Limited  HALLWF2
-#> 21941                                  AGL SA Generation Pty Limited   TORRA4
-#> 21942                                  AGL SA Generation Pty Limited    TIBL1
-#> 21943                                  AGL SA Generation Pty Limited   TORRA4
-#> 21944                                  AGL SA Generation Pty Limited   TORRB1
+#> 21928                                  AGL SA Generation Pty Limited   TORRA1
+#> 21929                                  AGL SA Generation Pty Limited   TORRA3
+#> 21930                                  AGL SA Generation Pty Limited   TORRA1
+#> 21931                                  AGL SA Generation Pty Limited   TORRB3
+#> 21932                                  AGL SA Generation Pty Limited   TORRA3
+#> 21933                                  AGL SA Generation Pty Limited   TORRB2
+#> 21934                                  AGL SA Generation Pty Limited   TORRB2
+#> 21935                                  AGL SA Generation Pty Limited   TORRB1
+#> 21936                                  AGL SA Generation Pty Limited   TORRB1
+#> 21937                                  AGL SA Generation Pty Limited   TORRA2
+#> 21938                                  AGL SA Generation Pty Limited   TORRB3
+#> 21939                                  AGL SA Generation Pty Limited   NBHWF1
+#> 21940                                  AGL SA Generation Pty Limited   BLUFF1
+#> 21941                                  AGL SA Generation Pty Limited    TIBG1
+#> 21942                                  AGL SA Generation Pty Limited   TORNL1
+#> 21943                                  AGL SA Generation Pty Limited  HALLWF1
+#> 21944                                  AGL SA Generation Pty Limited  HALLWF2
 #> 21945                                  AGL SA Generation Pty Limited   TORRA4
-#> 21946                                  AGL SA Generation Pty Limited   TORRA3
-#> 21947                                  AGL SA Generation Pty Limited   TORRA1
-#> 21948                                  AGL SA Generation Pty Limited   TORRA2
-#> 21949                                  AGL SA Generation Pty Limited   TORNL1
-#> 21950                                  AGL SA Generation Pty Limited   TORRA4
-#> 21951                                  AGL SA Generation Pty Limited   TORRA4
-#> 21952                                  AGL SA Generation Pty Limited   TORRA3
-#> 21953                                  AGL SA Generation Pty Limited   TORRA3
-#> 21954                                  AGL SA Generation Pty Limited   TORRA1
-#> 21955                                  AGL SA Generation Pty Limited   NBHWF1
-#> 21956                                  AGL SA Generation Pty Limited     WPWF
+#> 21946                                  AGL SA Generation Pty Limited    TIBL1
+#> 21947                                  AGL SA Generation Pty Limited   TORRA4
+#> 21948                                  AGL SA Generation Pty Limited   TORRA4
+#> 21949                                  AGL SA Generation Pty Limited  HALLWF2
+#> 21950                                  AGL SA Generation Pty Limited   TORRA1
+#> 21951                                  AGL SA Generation Pty Limited   TORRA1
+#> 21952                                  AGL SA Generation Pty Limited   TORRA2
+#> 21953                                  AGL SA Generation Pty Limited   TORNL1
+#> 21954                                  AGL SA Generation Pty Limited   TORRA4
+#> 21955                                  AGL SA Generation Pty Limited   TORRA4
+#> 21956                                  AGL SA Generation Pty Limited   TORRA3
 #> 21957                                  AGL SA Generation Pty Limited   TORRA3
-#> 21958                                  AGL SA Generation Pty Limited   TORRA2
-#> 21959                                  AGL SA Generation Pty Limited   TORRA1
-#> 21960                                  AGL SA Generation Pty Limited   BLUFF1
-#> 21961                                  AGL SA Generation Pty Limited   TORRA2
-#> 21962                                  AGL SA Generation Pty Limited   TORRB3
-#> 21963                                  AGL SA Generation Pty Limited   TORRA1
-#> 21964                                  AGL SA Generation Pty Limited   NBHWF1
-#> 21965                                  AGL SA Generation Pty Limited   TORRB2
-#> 21966                                  AGL SA Generation Pty Limited   TORRA4
-#> 21967                                  AGL SA Generation Pty Limited   TORRB3
-#> 21968                                  AGL SA Generation Pty Limited   TORRA3
-#> 21969                                  AGL SA Generation Pty Limited   BLUFF1
-#> 21970                                  AGL SA Generation Pty Limited   TORRA2
-#> 21971                                  AGL SA Generation Pty Limited   TORRA2
-#> 21972                                  AGL SA Generation Pty Limited   TORRB1
-#> 21973                                  AGL SA Generation Pty Limited   TORRB3
-#> 21974                                  AGL SA Generation Pty Limited   TORRB3
-#> 21975                                  AGL SA Generation Pty Limited   TORRB4
-#> 21976                                  AGL SA Generation Pty Limited   TORNL1
-#> 21977                                  AGL SA Generation Pty Limited  HALLWF2
-#> 21978                                  AGL SA Generation Pty Limited   TORRB2
-#> 21979                                  AGL SA Generation Pty Limited   TORRB3
-#> 21980                                  AGL SA Generation Pty Limited  HALLWF1
-#> 21981                                  AGL SA Generation Pty Limited   TORRA4
-#> 21982                                  AGL SA Generation Pty Limited   TORRA4
-#> 21983                                  AGL SA Generation Pty Limited   NBHWF1
-#> 21984                                  AGL SA Generation Pty Limited   TORRB4
-#> 21985                                  AGL SA Generation Pty Limited   TORRB3
-#> 21986                                  AGL SA Generation Pty Limited   TORRA1
-#> 21987                                  AGL SA Generation Pty Limited   TORRA1
-#> 21988                                  AGL SA Generation Pty Limited   TORRA1
-#> 21989                                  AGL SA Generation Pty Limited   TORRA3
-#> 21990                                  AGL SA Generation Pty Limited   TORRB2
+#> 21958                                  AGL SA Generation Pty Limited   TORRA1
+#> 21959                                  AGL SA Generation Pty Limited   NBHWF1
+#> 21960                                  AGL SA Generation Pty Limited     WPWF
+#> 21961                                  AGL SA Generation Pty Limited   TORRB1
+#> 21962                                  AGL SA Generation Pty Limited   TORRA4
+#> 21963                                  AGL SA Generation Pty Limited  HALLWF1
+#> 21964                                  AGL SA Generation Pty Limited   BLUFF1
+#> 21965                                  AGL SA Generation Pty Limited   TORRA2
+#> 21966                                  AGL SA Generation Pty Limited   TORRB3
+#> 21967                                  AGL SA Generation Pty Limited   TORRA1
+#> 21968                                  AGL SA Generation Pty Limited   NBHWF1
+#> 21969                                  AGL SA Generation Pty Limited   TORRB2
+#> 21970                                  AGL SA Generation Pty Limited   TORRA4
+#> 21971                                  AGL SA Generation Pty Limited   TORRB3
+#> 21972                                  AGL SA Generation Pty Limited   TORRA3
+#> 21973                                  AGL SA Generation Pty Limited   BLUFF1
+#> 21974                                  AGL SA Generation Pty Limited   TORRA2
+#> 21975                                  AGL SA Generation Pty Limited   TORRA4
+#> 21976                                  AGL SA Generation Pty Limited   TORRA3
+#> 21977                                  AGL SA Generation Pty Limited   TORRB3
+#> 21978                                  AGL SA Generation Pty Limited   TORRB3
+#> 21979                                  AGL SA Generation Pty Limited   TORRB4
+#> 21980                                  AGL SA Generation Pty Limited   TORNL1
+#> 21981                                  AGL SA Generation Pty Limited  HALLWF2
+#> 21982                                  AGL SA Generation Pty Limited   TORRB2
+#> 21983                                  AGL SA Generation Pty Limited   TORRB3
+#> 21984                                  AGL SA Generation Pty Limited  HALLWF1
+#> 21985                                  AGL SA Generation Pty Limited   TORRA4
+#> 21986                                  AGL SA Generation Pty Limited   TORRA4
+#> 21987                                  AGL SA Generation Pty Limited   NBHWF1
+#> 21988                                  AGL SA Generation Pty Limited   TORRA2
+#> 21989                                  AGL SA Generation Pty Limited   TORRB1
+#> 21990                                  AGL SA Generation Pty Limited   TORRA1
 #> 21991                                  AGL SA Generation Pty Limited   TORRA1
-#> 21992                                  AGL SA Generation Pty Limited   TORRB3
-#> 21993                                  AGL SA Generation Pty Limited   TORRA1
-#> 21994                                  AGL SA Generation Pty Limited   TORRB3
-#> 21995                                  AGL SA Generation Pty Limited   TORRA2
-#> 21996                                  AGL SA Generation Pty Limited   TORRB4
-#> 21997                                  AGL SA Generation Pty Limited BARKIPS1
-#> 21998                                  AGL SA Generation Pty Limited   TORRA2
-#> 21999                                  AGL SA Generation Pty Limited   TORRA4
-#> 22000                                  AGL SA Generation Pty Limited   TORRA1
-#> 22001                                  AGL SA Generation Pty Limited   TORRA1
-#> 22002                                  AGL SA Generation Pty Limited   TORRA3
-#> 22003                                  AGL SA Generation Pty Limited   TORRA1
-#> 22004                                  AGL SA Generation Pty Limited   TORNL1
-#> 22005                                  AGL SA Generation Pty Limited     WPWF
-#> 22006                                  AGL SA Generation Pty Limited   TORRB3
-#> 22007                                  AGL SA Generation Pty Limited   TORRB2
-#> 22008                                  AGL SA Generation Pty Limited   TORRB3
-#> 22009                                  AGL SA Generation Pty Limited   TORRA4
+#> 21992                                  AGL SA Generation Pty Limited   TORRA1
+#> 21993                                  AGL SA Generation Pty Limited   TORRA3
+#> 21994                                  AGL SA Generation Pty Limited   TORRB2
+#> 21995                                  AGL SA Generation Pty Limited   TORRA1
+#> 21996                                  AGL SA Generation Pty Limited   TORRB3
+#> 21997                                  AGL SA Generation Pty Limited   TORRA1
+#> 21998                                  AGL SA Generation Pty Limited   TORRB3
+#> 21999                                  AGL SA Generation Pty Limited   TORRA2
+#> 22000                                  AGL SA Generation Pty Limited   TORRB4
+#> 22001                                  AGL SA Generation Pty Limited   TORRB4
+#> 22002                                  AGL SA Generation Pty Limited   TORRB3
+#> 22003                                  AGL SA Generation Pty Limited   TORRA4
+#> 22004                                  AGL SA Generation Pty Limited   TORRA1
+#> 22005                                  AGL SA Generation Pty Limited   TORRA1
+#> 22006                                  AGL SA Generation Pty Limited   TORRA3
+#> 22007                                  AGL SA Generation Pty Limited   TORRA1
+#> 22008                                  AGL SA Generation Pty Limited   TORNL1
+#> 22009                                  AGL SA Generation Pty Limited     WPWF
 #> 22010                                  AGL SA Generation Pty Limited   TORRB3
 #> 22011                                  AGL SA Generation Pty Limited   TORRB2
-#> 22012                                  AGL SA Generation Pty Limited   TORRB4
-#> 22013                                  AGL SA Generation Pty Limited   TORRB1
-#> 22014                                  AGL SA Generation Pty Limited   TORRA4
-#> 22015                                  AGL SA Generation Pty Limited   TORRA2
-#> 22016                                  AGL SA Generation Pty Limited    TIBL1
-#> 22017                                  AGL SA Generation Pty Limited   TORRB3
-#> 22018                                  AGL SA Generation Pty Limited   TORRB4
-#> 22019                                  AGL SA Generation Pty Limited   TORRB2
-#> 22020                                  AGL SA Generation Pty Limited  HALLWF2
-#> 22021                                  AGL SA Generation Pty Limited   TORRB1
-#> 22022                                  AGL SA Generation Pty Limited   TORRB3
-#> 22023                                  AGL SA Generation Pty Limited   TORRA4
-#> 22024                                  AGL SA Generation Pty Limited   TORRB4
-#> 22025                                  AGL SA Generation Pty Limited   TORRA2
-#> 22026                                  AGL SA Generation Pty Limited   NBHWF1
+#> 22012                                  AGL SA Generation Pty Limited   TORRB3
+#> 22013                                  AGL SA Generation Pty Limited   TORRA4
+#> 22014                                  AGL SA Generation Pty Limited   TORRB3
+#> 22015                                  AGL SA Generation Pty Limited   TORRB2
+#> 22016                                  AGL SA Generation Pty Limited   TORRA2
+#> 22017                                  AGL SA Generation Pty Limited   TORRB1
+#> 22018                                  AGL SA Generation Pty Limited   TORRA4
+#> 22019                                  AGL SA Generation Pty Limited   TORRA2
+#> 22020                                  AGL SA Generation Pty Limited    TIBL1
+#> 22021                                  AGL SA Generation Pty Limited   TORRB3
+#> 22022                                  AGL SA Generation Pty Limited   TORRB4
+#> 22023                                  AGL SA Generation Pty Limited   TORRB2
+#> 22024                                  AGL SA Generation Pty Limited  HALLWF2
+#> 22025                                  AGL SA Generation Pty Limited   TORRB1
+#> 22026                                  AGL SA Generation Pty Limited   TORRB3
 #> 22027                                  AGL SA Generation Pty Limited   TORRA4
-#> 22028                                  AGL SA Generation Pty Limited   TORRB3
-#> 22029                                  AGL SA Generation Pty Limited   TORRA3
-#> 22030                                  AGL SA Generation Pty Limited   TORRB2
-#> 22031                                  AGL SA Generation Pty Limited   TORRB4
-#> 22032                                  AGL SA Generation Pty Limited   TORRB2
-#> 22033                                  AGL SA Generation Pty Limited   TORRA1
-#> 22034                                  AGL SA Generation Pty Limited   TORRB4
-#> 22035                                  AGL SA Generation Pty Limited   TORRB3
+#> 22028                                  AGL SA Generation Pty Limited   TORRA2
+#> 22029                                  AGL SA Generation Pty Limited   TORRA2
+#> 22030                                  AGL SA Generation Pty Limited   TORRA1
+#> 22031                                  AGL SA Generation Pty Limited   TORRA4
+#> 22032                                  AGL SA Generation Pty Limited   TORRB3
+#> 22033                                  AGL SA Generation Pty Limited   TORRA3
+#> 22034                                  AGL SA Generation Pty Limited   TORRB2
+#> 22035                                  AGL SA Generation Pty Limited   TORRB4
 #> 22036                                  AGL SA Generation Pty Limited   TORRB2
-#> 22037                                  AGL SA Generation Pty Limited   TORRB2
-#> 22038                                  AGL SA Generation Pty Limited   TORRB1
-#> 22039                                  AGL SA Generation Pty Limited   TORRB1
-#> 22040                                  AGL SA Generation Pty Limited   TORRA2
-#> 22041                                  AGL SA Generation Pty Limited   TORRA1
-#> 22042                                  AGL SA Generation Pty Limited   NBHWF1
-#> 22043                                  AGL SA Generation Pty Limited   TORNL1
-#> 22044                                  AGL SA Generation Pty Limited   TORRB1
-#> 22045                                  AGL SA Generation Pty Limited   TORRA2
-#> 22046                                  AGL SA Generation Pty Limited   BLUFF1
-#> 22047                                  AGL SA Generation Pty Limited  HALLWF1
-#> 22048                                  AGL SA Generation Pty Limited  HALLWF2
-#> 22049                                  AGL SA Generation Pty Limited   TORRA4
-#> 22050                                  AGL SA Generation Pty Limited   TORRB1
-#> 22051                                  AGL SA Generation Pty Limited   TORRA4
-#> 22052                                  AGL SA Generation Pty Limited   BLUFF1
-#> 22053                                  AGL SA Generation Pty Limited  HALLWF1
-#> 22054                                  AGL SA Generation Pty Limited   TORNL1
-#> 22055                                  AGL SA Generation Pty Limited    TIBL1
-#> 22056                                  AGL SA Generation Pty Limited   TORRA4
-#> 22057                                  AGL SA Generation Pty Limited    TIBL1
-#> 22058                                  AGL SA Generation Pty Limited   TORRB4
-#> 22059                                  AGL SA Generation Pty Limited     WPWF
-#> 22060                                  AGL SA Generation Pty Limited   TORRB3
-#> 22061                                  AGL SA Generation Pty Limited     WPWF
+#> 22037                                  AGL SA Generation Pty Limited   TORRA1
+#> 22038                                  AGL SA Generation Pty Limited   TORRB4
+#> 22039                                  AGL SA Generation Pty Limited   TORRB3
+#> 22040                                  AGL SA Generation Pty Limited   TORRB2
+#> 22041                                  AGL SA Generation Pty Limited   TORRB2
+#> 22042                                  AGL SA Generation Pty Limited BARKIPS1
+#> 22043                                  AGL SA Generation Pty Limited   TORRB1
+#> 22044                                  AGL SA Generation Pty Limited   TORRA2
+#> 22045                                  AGL SA Generation Pty Limited   TORRA1
+#> 22046                                  AGL SA Generation Pty Limited   NBHWF1
+#> 22047                                  AGL SA Generation Pty Limited   TORNL1
+#> 22048                                  AGL SA Generation Pty Limited   TORRB1
+#> 22049                                  AGL SA Generation Pty Limited   TORRA2
+#> 22050                                  AGL SA Generation Pty Limited   BLUFF1
+#> 22051                                  AGL SA Generation Pty Limited  HALLWF1
+#> 22052                                  AGL SA Generation Pty Limited  HALLWF2
+#> 22053                                  AGL SA Generation Pty Limited   TORRA4
+#> 22054                                  AGL SA Generation Pty Limited   TORRB1
+#> 22055                                  AGL SA Generation Pty Limited   TORRA4
+#> 22056                                  AGL SA Generation Pty Limited   TORRA2
+#> 22057                                  AGL SA Generation Pty Limited  HALLWF1
+#> 22058                                  AGL SA Generation Pty Limited   TORNL1
+#> 22059                                  AGL SA Generation Pty Limited    TIBL1
+#> 22060                                  AGL SA Generation Pty Limited   TORRA4
+#> 22061                                  AGL SA Generation Pty Limited    TIBL1
 #> 22062                                  AGL SA Generation Pty Limited   TORRB4
-#> 22063                                  AGL SA Generation Pty Limited   TORRB3
-#> 22064                                  AGL SA Generation Pty Limited   TORRB1
-#> 22065                                  AGL SA Generation Pty Limited   TORRB4
-#> 22066                                  AGL SA Generation Pty Limited   BLUFF1
-#> 22067                                  AGL SA Generation Pty Limited   TORRB4
-#> 22068                                  AGL SA Generation Pty Limited  HALLWF2
-#> 22069                                  AGL SA Generation Pty Limited   TORRB1
-#> 22070                                  AGL SA Generation Pty Limited   TORRB2
-#> 22071                                  AGL SA Generation Pty Limited   TORRA4
-#> 22072                                  AGL SA Generation Pty Limited  HALLWF1
-#> 22073                                  AGL SA Generation Pty Limited   TORRB3
-#> 22074                                  AGL SA Generation Pty Limited   TORRB4
-#> 22075                                  AGL SA Generation Pty Limited BARKIPS1
+#> 22063                                  AGL SA Generation Pty Limited     WPWF
+#> 22064                                  AGL SA Generation Pty Limited   TORRB3
+#> 22065                                  AGL SA Generation Pty Limited     WPWF
+#> 22066                                  AGL SA Generation Pty Limited   TORRB4
+#> 22067                                  AGL SA Generation Pty Limited   TORRB3
+#> 22068                                  AGL SA Generation Pty Limited   TORRB1
+#> 22069                                  AGL SA Generation Pty Limited   TORRB4
+#> 22070                                  AGL SA Generation Pty Limited   NBHWF1
+#> 22071                                  AGL SA Generation Pty Limited   TORRB4
+#> 22072                                  AGL SA Generation Pty Limited  HALLWF2
+#> 22073                                  AGL SA Generation Pty Limited   TORRB1
+#> 22074                                  AGL SA Generation Pty Limited   TORRB2
+#> 22075                                  AGL SA Generation Pty Limited   TORRA4
 #> 22076                                  AGL SA Generation Pty Limited  HALLWF1
 #> 22077                                  AGL SA Generation Pty Limited   TORRB3
 #> 22078                                  AGL SA Generation Pty Limited   TORRB4
-#> 22079                                  AGL SA Generation Pty Limited   TORRB4
-#> 22080                                  AGL SA Generation Pty Limited   TORRA2
-#> 22081                                  AGL SA Generation Pty Limited   TORRA3
+#> 22079                                  AGL SA Generation Pty Limited BARKIPS1
+#> 22080                                  AGL SA Generation Pty Limited  HALLWF1
+#> 22081                                  AGL SA Generation Pty Limited   TORRB3
 #> 22082                                  AGL SA Generation Pty Limited   TORRB1
-#> 22083                                  AGL SA Generation Pty Limited   TORRA4
-#> 22084                                  AGL SA Generation Pty Limited   TORRA1
-#> 22085                                  AGL SA Generation Pty Limited   TORRB1
-#> 22086                                  AGL SA Generation Pty Limited   TORRA2
-#> 22087                                  AGL SA Generation Pty Limited   TORRB2
-#> 22088                                  AGL SA Generation Pty Limited   TORRA3
-#> 22089                                  AGL SA Generation Pty Limited   TORRB2
-#> 22090                                  AGL SA Generation Pty Limited   TORRB3
-#> 22091                                  AGL SA Generation Pty Limited   TORRA1
-#> 22092                                  AGL SA Generation Pty Limited   BLUFF1
-#> 22093                                  AGL SA Generation Pty Limited   TORRB4
-#> 22094                                  AGL SA Generation Pty Limited    TIBL1
-#> 22095                                  AGL SA Generation Pty Limited  HALLWF2
-#> 22096                                  AGL SA Generation Pty Limited   TORRB1
-#> 22097                                  AGL SA Generation Pty Limited   TORRB3
-#> 22098                                  AGL SA Generation Pty Limited   TORRA1
-#> 22099                                  AGL SA Generation Pty Limited   TORRB3
-#> 22100                                  AGL SA Generation Pty Limited   TORRB3
-#> 22101                                  AGL SA Generation Pty Limited   TORRB1
-#> 22102                                  AGL SA Generation Pty Limited  HALLWF2
-#> 22103                                  AGL SA Generation Pty Limited   TORRB4
-#> 22104                                  AGL SA Generation Pty Limited  HALLWF1
-#> 22105                                  AGL SA Generation Pty Limited     WPWF
-#> 22106                                  AGL SA Generation Pty Limited   BLUFF1
-#> 22107                                  AGL SA Generation Pty Limited   TORRB1
-#> 22108                                  AGL SA Generation Pty Limited   TORRA2
-#> 22109                                  AGL SA Generation Pty Limited   TORRB1
-#> 22110                                  AGL SA Generation Pty Limited   TORRB1
-#> 22111                                  AGL SA Generation Pty Limited   TORRB3
-#> 22112                                  AGL SA Generation Pty Limited   NBHWF1
-#> 22113                                  AGL SA Generation Pty Limited     WPWF
-#> 22114                                  AGL SA Generation Pty Limited   TORRB2
-#> 22115                                  AGL SA Generation Pty Limited   TORRB2
-#> 22116                                  AGL SA Generation Pty Limited  HALLWF1
-#> 22117                                  AGL SA Generation Pty Limited   TORRB4
-#> 22118                                  AGL SA Generation Pty Limited   TORRA4
-#> 22119                                  AGL SA Generation Pty Limited   TORRA3
-#> 22120                                  AGL SA Generation Pty Limited   TORRB3
-#> 22121                                  AGL SA Generation Pty Limited   TORRB3
-#> 22122                                  AGL SA Generation Pty Limited   TORRB4
-#> 22123                                  AGL SA Generation Pty Limited   TORNL1
-#> 22124                                  AGL SA Generation Pty Limited   TORRB1
-#> 22125                                  AGL SA Generation Pty Limited   TORRB2
-#> 22126                                  AGL SA Generation Pty Limited   TORRA1
-#> 22127                                  AGL SA Generation Pty Limited   TORRB3
-#> 22128                                  AGL SA Generation Pty Limited   TORRA3
-#> 22129                                  AGL SA Generation Pty Limited   TORRB1
-#> 22130                                  AGL SA Generation Pty Limited   TORRA4
-#> 22131                                  AGL SA Generation Pty Limited   TORRA4
-#> 22132                                  AGL SA Generation Pty Limited   TORRB3
-#> 22133                                  AGL SA Generation Pty Limited   TORRB3
-#> 22134                                  AGL SA Generation Pty Limited   TORRB3
-#> 22135                                  AGL SA Generation Pty Limited   TORNL1
-#> 22136                                  AGL SA Generation Pty Limited   TORRB1
-#> 22137                                  AGL SA Generation Pty Limited   TORRA1
-#> 22138                                  AGL SA Generation Pty Limited   TORRB4
-#> 22139                                  AGL SA Generation Pty Limited   TORRB3
-#> 22140                                  AGL SA Generation Pty Limited   TORRB3
-#> 22141                                  AGL SA Generation Pty Limited   TORRB1
-#> 22142                                  AGL SA Generation Pty Limited   TORRB1
-#> 22143                                  AGL SA Generation Pty Limited   TORRA1
-#> 22144                                  AGL SA Generation Pty Limited   BLUFF1
-#> 22145                                  AGL SA Generation Pty Limited   TORRB2
-#> 22146                                  AGL SA Generation Pty Limited     WPWF
-#> 22147                                  AGL SA Generation Pty Limited   TORRB3
-#> 22148                                  AGL SA Generation Pty Limited   TORRA4
-#> 22149                                  AGL SA Generation Pty Limited   TORRB3
-#> 22150                                  AGL SA Generation Pty Limited   TORRB3
-#> 22151                                  AGL SA Generation Pty Limited   TORRB1
-#> 22152                                  AGL SA Generation Pty Limited   TORRB1
-#> 22153                                  AGL SA Generation Pty Limited   TORRB2
-#> 22154                                  AGL SA Generation Pty Limited   TORRB1
-#> 22155                                  AGL SA Generation Pty Limited   TORRA3
-#> 22156                                  AGL SA Generation Pty Limited   BLUFF1
-#> 22157                                  AGL SA Generation Pty Limited    TIBG1
-#> 22158                                  AGL SA Generation Pty Limited   TORRB4
-#> 22159                                  AGL SA Generation Pty Limited BARKIPS1
-#> 22160                                  AGL SA Generation Pty Limited  HALLWF2
-#> 22161                                  AGL SA Generation Pty Limited   TORRA4
-#> 22162                                  AGL SA Generation Pty Limited  HALLWF2
-#> 22163                                  AGL SA Generation Pty Limited   TORRB1
-#> 22164                                  AGL SA Generation Pty Limited   TORRB4
-#> 22165                                  AGL SA Generation Pty Limited   TORRB2
-#> 22166                                  AGL SA Generation Pty Limited   TORRB2
-#> 22167                                  AGL SA Generation Pty Limited   TORRA2
+#> 22083                                  AGL SA Generation Pty Limited   TORRB4
+#> 22084                                  AGL SA Generation Pty Limited   TORRA2
+#> 22085                                  AGL SA Generation Pty Limited   TORRA3
+#> 22086                                  AGL SA Generation Pty Limited   TORRB1
+#> 22087                                  AGL SA Generation Pty Limited   TORRA4
+#> 22088                                  AGL SA Generation Pty Limited   TORRA1
+#> 22089                                  AGL SA Generation Pty Limited   TORRB1
+#> 22090                                  AGL SA Generation Pty Limited   TORRA2
+#> 22091                                  AGL SA Generation Pty Limited   TORRB2
+#> 22092                                  AGL SA Generation Pty Limited   TORRA3
+#> 22093                                  AGL SA Generation Pty Limited   TORRB2
+#> 22094                                  AGL SA Generation Pty Limited   TORRB3
+#> 22095                                  AGL SA Generation Pty Limited   TORRA1
+#> 22096                                  AGL SA Generation Pty Limited   TORRA3
+#> 22097                                  AGL SA Generation Pty Limited   TORRB4
+#> 22098                                  AGL SA Generation Pty Limited    TIBL1
+#> 22099                                  AGL SA Generation Pty Limited  HALLWF2
+#> 22100                                  AGL SA Generation Pty Limited   TORRB1
+#> 22101                                  AGL SA Generation Pty Limited   TORRB3
+#> 22102                                  AGL SA Generation Pty Limited   TORRA1
+#> 22103                                  AGL SA Generation Pty Limited   TORRB3
+#> 22104                                  AGL SA Generation Pty Limited   TORRB3
+#> 22105                                  AGL SA Generation Pty Limited   TORRB1
+#> 22106                                  AGL SA Generation Pty Limited  HALLWF2
+#> 22107                                  AGL SA Generation Pty Limited   TORRB4
+#> 22108                                  AGL SA Generation Pty Limited  HALLWF1
+#> 22109                                  AGL SA Generation Pty Limited     WPWF
+#> 22110                                  AGL SA Generation Pty Limited   BLUFF1
+#> 22111                                  AGL SA Generation Pty Limited   TORRB1
+#> 22112                                  AGL SA Generation Pty Limited   TORRA2
+#> 22113                                  AGL SA Generation Pty Limited   TORRB1
+#> 22114                                  AGL SA Generation Pty Limited   TORRB1
+#> 22115                                  AGL SA Generation Pty Limited   TORRB3
+#> 22116                                  AGL SA Generation Pty Limited   NBHWF1
+#> 22117                                  AGL SA Generation Pty Limited     WPWF
+#> 22118                                  AGL SA Generation Pty Limited   TORRB2
+#> 22119                                  AGL SA Generation Pty Limited   TORRB2
+#> 22120                                  AGL SA Generation Pty Limited  HALLWF1
+#> 22121                                  AGL SA Generation Pty Limited   TORRB4
+#> 22122                                  AGL SA Generation Pty Limited   TORRA4
+#> 22123                                  AGL SA Generation Pty Limited   TORRA3
+#> 22124                                  AGL SA Generation Pty Limited   TORRB3
+#> 22125                                  AGL SA Generation Pty Limited   TORRB3
+#> 22126                                  AGL SA Generation Pty Limited   BLUFF1
+#> 22127                                  AGL SA Generation Pty Limited   TORNL1
+#> 22128                                  AGL SA Generation Pty Limited   TORRB1
+#> 22129                                  AGL SA Generation Pty Limited   TORRB2
+#> 22130                                  AGL SA Generation Pty Limited   TORRA1
+#> 22131                                  AGL SA Generation Pty Limited   TORRB3
+#> 22132                                  AGL SA Generation Pty Limited   TORRA3
+#> 22133                                  AGL SA Generation Pty Limited   TORRB1
+#> 22134                                  AGL SA Generation Pty Limited   TORRA4
+#> 22135                                  AGL SA Generation Pty Limited   TORRA4
+#> 22136                                  AGL SA Generation Pty Limited   TORRB3
+#> 22137                                  AGL SA Generation Pty Limited   BLUFF1
+#> 22138                                  AGL SA Generation Pty Limited   TORRB3
+#> 22139                                  AGL SA Generation Pty Limited   TORNL1
+#> 22140                                  AGL SA Generation Pty Limited   TORRB1
+#> 22141                                  AGL SA Generation Pty Limited   TORRA1
+#> 22142                                  AGL SA Generation Pty Limited   TORRB4
+#> 22143                                  AGL SA Generation Pty Limited   TORRB3
+#> 22144                                  AGL SA Generation Pty Limited   TORRB3
+#> 22145                                  AGL SA Generation Pty Limited   TORRB1
+#> 22146                                  AGL SA Generation Pty Limited   TORRB1
+#> 22147                                  AGL SA Generation Pty Limited   TORRA1
+#> 22148                                  AGL SA Generation Pty Limited   BLUFF1
+#> 22149                                  AGL SA Generation Pty Limited   TORRB2
+#> 22150                                  AGL SA Generation Pty Limited     WPWF
+#> 22151                                  AGL SA Generation Pty Limited   TORRB3
+#> 22152                                  AGL SA Generation Pty Limited   TORRA4
+#> 22153                                  AGL SA Generation Pty Limited   TORRB3
+#> 22154                                  AGL SA Generation Pty Limited   TORRB3
+#> 22155                                  AGL SA Generation Pty Limited   TORRB1
+#> 22156                                  AGL SA Generation Pty Limited   TORRB1
+#> 22157                                  AGL SA Generation Pty Limited   TORRB2
+#> 22158                                  AGL SA Generation Pty Limited   TORRB1
+#> 22159                                  AGL SA Generation Pty Limited   TORRA3
+#> 22160                                  AGL SA Generation Pty Limited   BLUFF1
+#> 22161                                  AGL SA Generation Pty Limited    TIBG1
+#> 22162                                  AGL SA Generation Pty Limited   TORRB4
+#> 22163                                  AGL SA Generation Pty Limited BARKIPS1
+#> 22164                                  AGL SA Generation Pty Limited  HALLWF2
+#> 22165                                  AGL SA Generation Pty Limited   TORRA4
+#> 22166                                  AGL SA Generation Pty Limited   BLUFF1
+#> 22167                                  AGL SA Generation Pty Limited   TORRB1
 #> 22168                                  AGL SA Generation Pty Limited   TORRB4
-#> 22169                                  AGL SA Generation Pty Limited   TORRA2
-#> 22170                                  AGL SA Generation Pty Limited   TORRB4
-#> 22171                                  AGL SA Generation Pty Limited   TORRA1
-#> 22172                                  AGL SA Generation Pty Limited   TORRB3
-#> 22173                                  AGL SA Generation Pty Limited  HALLWF1
-#> 22174                                  AGL SA Generation Pty Limited   TORRA4
-#> 22175                                  AGL SA Generation Pty Limited   TORRB3
-#> 22176                                  AGL SA Generation Pty Limited   TORRB4
-#> 22177                                  AGL SA Generation Pty Limited   TORRA3
-#> 22178                                  AGL SA Generation Pty Limited   BLUFF1
-#> 22179                                  AGL SA Generation Pty Limited     WPWF
-#> 22180                                  AGL SA Generation Pty Limited     WPWF
-#> 22181                                  AGL SA Generation Pty Limited     WPWF
+#> 22169                                  AGL SA Generation Pty Limited   TORRB2
+#> 22170                                  AGL SA Generation Pty Limited   TORRB2
+#> 22171                                  AGL SA Generation Pty Limited   TORRA2
+#> 22172                                  AGL SA Generation Pty Limited   TORRB4
+#> 22173                                  AGL SA Generation Pty Limited   TORRA2
+#> 22174                                  AGL SA Generation Pty Limited   TORRB4
+#> 22175                                  AGL SA Generation Pty Limited   TORRA1
+#> 22176                                  AGL SA Generation Pty Limited   TORRB3
+#> 22177                                  AGL SA Generation Pty Limited  HALLWF1
+#> 22178                                  AGL SA Generation Pty Limited   TORRA4
+#> 22179                                  AGL SA Generation Pty Limited   TORRB3
+#> 22180                                  AGL SA Generation Pty Limited   TORRB4
+#> 22181                                  AGL SA Generation Pty Limited   TORRB4
 #> 22182                                  AGL SA Generation Pty Limited   TORRB4
-#> 22183                                  AGL SA Generation Pty Limited   TORRA4
-#> 22184                                  AGL SA Generation Pty Limited   TORRA4
-#> 22185                                  AGL SA Generation Pty Limited   TORRB2
-#> 22186                                  AGL SA Generation Pty Limited  HALLWF2
-#> 22187                                  AGL SA Generation Pty Limited   TORRB2
-#> 22188                                  AGL SA Generation Pty Limited   TORRB4
-#> 22189                                  AGL SA Generation Pty Limited   TORRB3
-#> 22190                                  AGL SA Generation Pty Limited   TORRB2
-#> 22191                                  AGL SA Generation Pty Limited   TORRB4
-#> 22192                                  AGL SA Generation Pty Limited   TORRB2
-#> 22193                                  AGL SA Generation Pty Limited   TORRB2
-#> 22194                                  AGL SA Generation Pty Limited     WPWF
-#> 22195                                  AGL SA Generation Pty Limited   TORRA4
-#> 22196                                  AGL SA Generation Pty Limited BARKIPS1
-#> 22197                                  AGL SA Generation Pty Limited   TORRA1
-#> 22198                                  AGL SA Generation Pty Limited   TORRB2
-#> 22199                                  AGL SA Generation Pty Limited   TORRB1
-#> 22200                                  AGL SA Generation Pty Limited    TIBG1
-#> 22201                                  AGL SA Generation Pty Limited   TORRB2
-#> 22202                                  AGL SA Generation Pty Limited   TORRB4
-#> 22203                                  AGL SA Generation Pty Limited   TORRB4
-#> 22204                                  AGL SA Generation Pty Limited   TORRB4
-#> 22205                                  AGL SA Generation Pty Limited   BLUFF1
-#> 22206                                  AGL SA Generation Pty Limited   TORRA3
-#> 22207                                  AGL SA Generation Pty Limited   BLUFF1
-#> 22208                                  AGL SA Generation Pty Limited   TORRB1
-#> 22209                                  AGL SA Generation Pty Limited   TORRB4
-#> 22210                                  AGL SA Generation Pty Limited   TORRB1
-#> 22211                                  AGL SA Generation Pty Limited   TORRA4
-#> 22212                                  AGL SA Generation Pty Limited   TORRA4
+#> 22183                                  AGL SA Generation Pty Limited     WPWF
+#> 22184                                  AGL SA Generation Pty Limited     WPWF
+#> 22185                                  AGL SA Generation Pty Limited     WPWF
+#> 22186                                  AGL SA Generation Pty Limited   TORRB4
+#> 22187                                  AGL SA Generation Pty Limited   TORRA4
+#> 22188                                  AGL SA Generation Pty Limited   TORRA4
+#> 22189                                  AGL SA Generation Pty Limited   TORRB2
+#> 22190                                  AGL SA Generation Pty Limited  HALLWF2
+#> 22191                                  AGL SA Generation Pty Limited   TORRB2
+#> 22192                                  AGL SA Generation Pty Limited   TORRB4
+#> 22193                                  AGL SA Generation Pty Limited   TORRB3
+#> 22194                                  AGL SA Generation Pty Limited   TORRB2
+#> 22195                                  AGL SA Generation Pty Limited   TORRB4
+#> 22196                                  AGL SA Generation Pty Limited   TORRB2
+#> 22197                                  AGL SA Generation Pty Limited   TORRB4
+#> 22198                                  AGL SA Generation Pty Limited     WPWF
+#> 22199                                  AGL SA Generation Pty Limited   TORRA4
+#> 22200                                  AGL SA Generation Pty Limited BARKIPS1
+#> 22201                                  AGL SA Generation Pty Limited   TORRA1
+#> 22202                                  AGL SA Generation Pty Limited   TORRB2
+#> 22203                                  AGL SA Generation Pty Limited   TORRB1
+#> 22204                                  AGL SA Generation Pty Limited    TIBG1
+#> 22205                                  AGL SA Generation Pty Limited   TORRB2
+#> 22206                                  AGL SA Generation Pty Limited   TORRB4
+#> 22207                                  AGL SA Generation Pty Limited   TORRB4
+#> 22208                                  AGL SA Generation Pty Limited  HALLWF2
+#> 22209                                  AGL SA Generation Pty Limited   TORRA3
+#> 22210                                  AGL SA Generation Pty Limited   TORRA3
+#> 22211                                  AGL SA Generation Pty Limited   BLUFF1
+#> 22212                                  AGL SA Generation Pty Limited   TORRB1
 #> 22213                                  AGL SA Generation Pty Limited   TORRB4
-#> 22214                                  AGL SA Generation Pty Limited   TORRB2
-#> 22215                                  AGL SA Generation Pty Limited   TORRB2
-#> 22216                                  AGL SA Generation Pty Limited   TORRB4
-#> 22217                                  AGL SA Generation Pty Limited   TORRB2
+#> 22214                                  AGL SA Generation Pty Limited   TORRB1
+#> 22215                                  AGL SA Generation Pty Limited   BLUFF1
+#> 22216                                  AGL SA Generation Pty Limited   TORRA4
+#> 22217                                  AGL SA Generation Pty Limited   TORRB4
 #> 22218                                  AGL SA Generation Pty Limited   TORRB2
 #> 22219                                  AGL SA Generation Pty Limited   TORRA4
-#> 22220                                  AGL SA Generation Pty Limited   TORRB2
-#> 22221                                  AGL SA Generation Pty Limited     TIB1
-#> 22222                                  AGL SA Generation Pty Limited   TORRA4
-#> 22223                                  AGL SA Generation Pty Limited    TIBG1
-#> 22224                                  AGL SA Generation Pty Limited    TIBG1
-#> 22225                                  AGL SA Generation Pty Limited   TORRB1
-#> 22226                                  AGL SA Generation Pty Limited   TORRB2
-#> 22227                                  AGL SA Generation Pty Limited   TORRB4
-#> 22228                                  AGL SA Generation Pty Limited  HALLWF2
-#> 22229                                  AGL SA Generation Pty Limited   TORRA4
+#> 22220                                  AGL SA Generation Pty Limited   TORRB4
+#> 22221                                  AGL SA Generation Pty Limited   TORRB2
+#> 22222                                  AGL SA Generation Pty Limited   TORRB2
+#> 22223                                  AGL SA Generation Pty Limited   TORRB4
+#> 22224                                  AGL SA Generation Pty Limited   TORRB2
+#> 22225                                  AGL SA Generation Pty Limited     TIB1
+#> 22226                                  AGL SA Generation Pty Limited   TORRA4
+#> 22227                                  AGL SA Generation Pty Limited   TORRA4
+#> 22228                                  AGL SA Generation Pty Limited    TIBG1
+#> 22229                                  AGL SA Generation Pty Limited   TORRB1
 #> 22230                                  AGL SA Generation Pty Limited   TORRB2
-#> 22231                                  AGL SA Generation Pty Limited   TORRB2
-#> 22232                                  AGL SA Generation Pty Limited   TORRA4
-#> 22233                                  AGL SA Generation Pty Limited   TORRB4
-#> 22234                                  AGL SA Generation Pty Limited   TORRA4
+#> 22231                                  AGL SA Generation Pty Limited    TIBG1
+#> 22232                                  AGL SA Generation Pty Limited   TORRB2
+#> 22233                                  AGL SA Generation Pty Limited   TORRA4
+#> 22234                                  AGL SA Generation Pty Limited   TORRB2
 #> 22235                                  AGL SA Generation Pty Limited   TORRB4
-#> 22236                                  AGL SA Generation Pty Limited   TORRA3
-#> 22237                                  AGL SA Generation Pty Limited     TIB1
-#> 22238                                  AGL SA Generation Pty Limited   TORRB4
-#> 22239                                  AGL SA Generation Pty Limited   TORRB4
-#> 22240                                  AGL SA Generation Pty Limited   TORRB2
-#> 22241                                  AGL SA Generation Pty Limited   TORRB2
-#> 22242                                  AGL SA Generation Pty Limited   TORRB2
-#> 22243                                  AGL SA Generation Pty Limited    TIBG1
+#> 22236                                  AGL SA Generation Pty Limited  HALLWF2
+#> 22237                                  AGL SA Generation Pty Limited   TORRB4
+#> 22238                                  AGL SA Generation Pty Limited   BLUFF1
+#> 22239                                  AGL SA Generation Pty Limited   TORRB2
+#> 22240                                  AGL SA Generation Pty Limited   TORRA4
+#> 22241                                  AGL SA Generation Pty Limited     TIB1
+#> 22242                                  AGL SA Generation Pty Limited   TORRA4
+#> 22243                                  AGL SA Generation Pty Limited   TORRB4
 #> 22244                                  AGL SA Generation Pty Limited   TORRA3
 #> 22245                                  AGL SA Generation Pty Limited   TORRB2
 #> 22246                                  AGL SA Generation Pty Limited   TORRB4
-#> 22247                                  AGL SA Generation Pty Limited BARKIPS1
-#> 22248                                  AGL SA Generation Pty Limited   TORRB2
-#> 22249                                  AGL SA Generation Pty Limited   TORRB4
+#> 22247                                  AGL SA Generation Pty Limited   TORRB4
+#> 22248                                  AGL SA Generation Pty Limited   TORRB4
+#> 22249                                  AGL SA Generation Pty Limited   TORRB2
 #> 22250                                  AGL SA Generation Pty Limited   TORRB2
-#> 22251                                  AGL SA Generation Pty Limited   TORRA4
-#> 22252                                  AGL SA Generation Pty Limited   TORRA4
+#> 22251                                  AGL SA Generation Pty Limited    TIBG1
+#> 22252                                  AGL SA Generation Pty Limited   TORRA3
 #> 22253                                  AGL SA Generation Pty Limited   TORRB4
-#> 22254                                  AGL SA Generation Pty Limited  HALLWF2
-#> 22255                                  AGL SA Generation Pty Limited   TORRB4
-#> 22256                                  AGL SA Generation Pty Limited   TORRA2
-#> 22257                                  AGL SA Generation Pty Limited   TORRA3
-#> 22258                                  AGL SA Generation Pty Limited  HALLWF2
-#> 22259                                  AGL SA Generation Pty Limited   TORRB4
-#> 22260                                  AGL SA Generation Pty Limited BARKIPS1
-#> 22261                                  AGL SA Generation Pty Limited   TORRB4
-#> 22262                                  AGL SA Generation Pty Limited   TORRB2
+#> 22254                                  AGL SA Generation Pty Limited   TORRB4
+#> 22255                                  AGL SA Generation Pty Limited BARKIPS1
+#> 22256                                  AGL SA Generation Pty Limited   TORRB2
+#> 22257                                  AGL SA Generation Pty Limited   TORRB2
+#> 22258                                  AGL SA Generation Pty Limited   TORRB2
+#> 22259                                  AGL SA Generation Pty Limited   TORRA4
+#> 22260                                  AGL SA Generation Pty Limited   TORRA4
+#> 22261                                  AGL SA Generation Pty Limited   TORRB3
+#> 22262                                  AGL SA Generation Pty Limited  HALLWF2
 #> 22263                                  AGL SA Generation Pty Limited   TORRB4
+#> 22264                                  AGL SA Generation Pty Limited   TORRA2
+#> 22265                                  AGL SA Generation Pty Limited   TORRA3
+#> 22266                                  AGL SA Generation Pty Limited  HALLWF2
+#> 22267                                  AGL SA Generation Pty Limited   TORRB2
+#> 22268                                  AGL SA Generation Pty Limited   TORRB4
+#> 22269                                  AGL SA Generation Pty Limited BARKIPS1
+#> 22270                                  AGL SA Generation Pty Limited   TORRB4
+#> 22271                                  AGL SA Generation Pty Limited   TORRB4
+#> 22272                                  AGL SA Generation Pty Limited   TORRB2
+#> 22273                                  AGL SA Generation Pty Limited   TORRB4
 #>       stationid regionid  dispatchtype  schedule_type start_date   end_date
 #> 14     ASNACTEW     NSW1          LOAD  NON-SCHEDULED 2018-12-11 2019-07-01
 #> 15     ASNACTEW     NSW1          LOAD  NON-SCHEDULED 2019-07-01 2019-09-26
-#> 194        ICSM     QLD1     GENERATOR  NON-SCHEDULED 2024-07-01 2025-04-01
-#> 195        ICSM     QLD1     GENERATOR  NON-SCHEDULED 2025-07-01 2026-07-01
-#> 196    MORANBAH     QLD1     GENERATOR  NON-SCHEDULED 2023-07-01 2024-07-01
+#> 194    MORANBAH     QLD1     GENERATOR  NON-SCHEDULED 2022-06-28 2022-07-01
+#> 195        ICSM     QLD1     GENERATOR  NON-SCHEDULED 2024-07-01 2025-04-01
+#> 196        ICSM     QLD1     GENERATOR  NON-SCHEDULED 2025-04-01 2025-07-01
 #> 197        ICSM     QLD1     GENERATOR  NON-SCHEDULED 2026-07-13 2999-12-31
-#> 198        ICSM     QLD1     GENERATOR  NON-SCHEDULED 2025-04-01 2025-07-01
-#> 199        ICSM     QLD1     GENERATOR  NON-SCHEDULED 2026-07-01 2026-07-13
-#> 200    MORANBAH     QLD1     GENERATOR  NON-SCHEDULED 2022-06-28 2022-07-01
-#> 201    MORANBAH     QLD1     GENERATOR  NON-SCHEDULED 2024-07-01 2025-04-01
-#> 202        ICSM     QLD1     GENERATOR  NON-SCHEDULED 2022-07-01 2023-07-01
-#> 203    MORANBAH     QLD1     GENERATOR  NON-SCHEDULED 2022-07-01 2023-07-01
-#> 204        ICSM     QLD1     GENERATOR  NON-SCHEDULED 2023-07-01 2024-07-01
-#> 205        ICSM     QLD1     GENERATOR  NON-SCHEDULED 2022-06-28 2022-07-01
-#> 206    BHASZINC      SA1          LOAD  NON-SCHEDULED 2004-07-20 2004-12-22
-#> 207    BHASZINC      SA1          LOAD  NON-SCHEDULED 2008-07-01 2009-07-01
-#> 208      VSSAE1      SA1          LOAD  NON-SCHEDULED 2026-07-01 2999-12-31
-#> 209    BHASZINC      SA1          LOAD  NON-SCHEDULED 2000-11-21 2001-07-01
-#> 210    BHASZINC      SA1          LOAD  NON-SCHEDULED 2005-07-01 2006-07-01
-#> 211      VSSAE1      SA1          LOAD  NON-SCHEDULED 2024-08-06 2025-01-15
-#> 212    BHASZINC      SA1          LOAD  NON-SCHEDULED 2002-07-01 2003-07-01
-#> 213    BHASZINC      SA1          LOAD  NON-SCHEDULED 2007-07-01 2008-07-01
-#> 214    BHASZINC      SA1          LOAD  NON-SCHEDULED 2006-07-01 2007-01-16
-#> 215      VSSAE1      SA1          LOAD  NON-SCHEDULED 2020-02-25 2020-07-01
-#> 216      VSSAE1      SA1          LOAD  NON-SCHEDULED 2025-01-31 2025-07-01
-#> 217    BHASZINC      SA1          LOAD  NON-SCHEDULED 2001-10-09 2002-04-01
-#> 218    BHASZINC      SA1          LOAD  NON-SCHEDULED 2009-07-01 2009-09-04
+#> 198        ICSM     QLD1     GENERATOR  NON-SCHEDULED 2025-07-01 2026-07-01
+#> 199    MORANBAH     QLD1     GENERATOR  NON-SCHEDULED 2023-07-01 2024-07-01
+#> 200    MORANBAH     QLD1     GENERATOR  NON-SCHEDULED 2022-07-01 2023-07-01
+#> 201        ICSM     QLD1     GENERATOR  NON-SCHEDULED 2026-07-01 2026-07-13
+#> 202        ICSM     QLD1     GENERATOR  NON-SCHEDULED 2023-07-01 2024-07-01
+#> 203    MORANBAH     QLD1     GENERATOR  NON-SCHEDULED 2024-07-01 2025-04-01
+#> 204        ICSM     QLD1     GENERATOR  NON-SCHEDULED 2022-06-28 2022-07-01
+#> 205        ICSM     QLD1     GENERATOR  NON-SCHEDULED 2022-07-01 2023-07-01
+#> 206    BHASZINC      SA1          LOAD  NON-SCHEDULED 2008-07-01 2009-07-01
+#> 207      VSSAE1      SA1          LOAD  NON-SCHEDULED 2026-07-01 2999-12-31
+#> 208    BHASZINC      SA1          LOAD  NON-SCHEDULED 2004-07-20 2004-12-22
+#> 209    BHASZINC      SA1          LOAD  NON-SCHEDULED 2005-07-01 2006-07-01
+#> 210      VSSAE1      SA1          LOAD  NON-SCHEDULED 2024-08-06 2025-01-15
+#> 211    BHASZINC      SA1          LOAD  NON-SCHEDULED 2000-11-21 2001-07-01
+#> 212    BHASZINC      SA1          LOAD  NON-SCHEDULED 2007-07-01 2008-07-01
+#> 213    BHASZINC      SA1          LOAD  NON-SCHEDULED 2006-07-01 2007-01-16
+#> 214    BHASZINC      SA1          LOAD  NON-SCHEDULED 2002-07-01 2003-07-01
+#> 215    BHASZINC      SA1          LOAD  NON-SCHEDULED 2001-10-09 2002-04-01
+#> 216    BHASZINC      SA1          LOAD  NON-SCHEDULED 2009-07-01 2009-09-04
+#> 217      VSSAE1      SA1          LOAD  NON-SCHEDULED 2020-02-25 2020-07-01
+#> 218      VSSAE1      SA1          LOAD  NON-SCHEDULED 2022-07-01 2023-07-01
 #> 219      VSSAE1      SA1          LOAD  NON-SCHEDULED 2021-07-06 2022-07-01
-#> 220      VSSAE1      SA1          LOAD  NON-SCHEDULED 2022-07-01 2023-07-01
-#> 221    BHASZINC      SA1          LOAD  NON-SCHEDULED 2004-12-22 2005-07-01
-#> 222      VSSAE1      SA1          LOAD  NON-SCHEDULED 2020-07-01 2021-07-01
-#> 223    BHASZINC      SA1          LOAD  NON-SCHEDULED 2003-07-01 2004-07-01
-#> 224    BHASZINC      SA1          LOAD  NON-SCHEDULED 2001-07-01 2001-10-09
-#> 225    BHASZINC      SA1          LOAD  NON-SCHEDULED 2002-04-01 2002-07-01
-#> 226      VSSAE1      SA1          LOAD  NON-SCHEDULED 2025-01-15 2025-01-31
-#> 227      VSSAE1      SA1          LOAD  NON-SCHEDULED 2024-07-01 2024-08-06
-#> 228    BHASZINC      SA1          LOAD  NON-SCHEDULED 2007-01-16 2007-07-01
-#> 229      VSSAE1      SA1          LOAD  NON-SCHEDULED 2025-07-01 2026-07-01
-#> 230    BHASZINC      SA1          LOAD  NON-SCHEDULED 2004-07-01 2004-07-20
-#> 231      VSSAE1      SA1          LOAD  NON-SCHEDULED 2023-07-01 2024-07-01
-#> 232      VSSAE1      SA1          LOAD  NON-SCHEDULED 2021-07-01 2021-07-06
-#> 233     DRAESN1     NSW1          LOAD  NON-SCHEDULED 2022-02-22 2022-07-01
-#> 234     DRAESN3     NSW1          LOAD  NON-SCHEDULED 2026-04-24 2026-07-01
-#> 235     DRAESN1     NSW1          LOAD  NON-SCHEDULED 2024-04-23 2024-06-18
-#> 236     DRAESN3     NSW1          LOAD  NON-SCHEDULED 2025-07-18 2025-12-19
-#> 237     DRAESN3     NSW1          LOAD  NON-SCHEDULED 2025-12-19 2026-04-24
-#> 238     DRAESN1     NSW1          LOAD  NON-SCHEDULED 2024-06-18 2024-07-01
+#> 220      VSSAE1      SA1          LOAD  NON-SCHEDULED 2025-01-31 2025-07-01
+#> 221    BHASZINC      SA1          LOAD  NON-SCHEDULED 2003-07-01 2004-07-01
+#> 222    BHASZINC      SA1          LOAD  NON-SCHEDULED 2001-07-01 2001-10-09
+#> 223      VSSAE1      SA1          LOAD  NON-SCHEDULED 2025-07-01 2026-07-01
+#> 224    BHASZINC      SA1          LOAD  NON-SCHEDULED 2007-01-16 2007-07-01
+#> 225      VSSAE1      SA1          LOAD  NON-SCHEDULED 2024-07-01 2024-08-06
+#> 226      VSSAE1      SA1          LOAD  NON-SCHEDULED 2023-07-01 2024-07-01
+#> 227    BHASZINC      SA1          LOAD  NON-SCHEDULED 2004-07-01 2004-07-20
+#> 228    BHASZINC      SA1          LOAD  NON-SCHEDULED 2004-12-22 2005-07-01
+#> 229      VSSAE1      SA1          LOAD  NON-SCHEDULED 2021-07-01 2021-07-06
+#> 230    BHASZINC      SA1          LOAD  NON-SCHEDULED 2002-04-01 2002-07-01
+#> 231      VSSAE1      SA1          LOAD  NON-SCHEDULED 2020-07-01 2021-07-01
+#> 232      VSSAE1      SA1          LOAD  NON-SCHEDULED 2025-01-15 2025-01-31
+#> 233     DRAESN1     NSW1          LOAD  NON-SCHEDULED 2024-06-18 2024-07-01
+#> 234     DRAESN3     NSW1          LOAD  NON-SCHEDULED 2025-12-19 2026-04-24
+#> 235     DRAESN3     NSW1          LOAD  NON-SCHEDULED 2026-04-24 2026-07-01
+#> 236     DRAESS1      SA1          LOAD  NON-SCHEDULED 2026-04-24 2026-07-01
+#> 237     DRAESN3     NSW1          LOAD  NON-SCHEDULED 2025-07-18 2025-12-19
+#> 238     DRAESN1     NSW1          LOAD  NON-SCHEDULED 2022-02-22 2022-07-01
 #> 239     DRAESN3     NSW1          LOAD  NON-SCHEDULED 2024-04-23 2024-07-01
-#> 240     DRAESS1      SA1          LOAD  NON-SCHEDULED 2026-04-24 2026-07-01
-#> 241     DRAESN1     NSW1          LOAD  NON-SCHEDULED 2025-07-01 2025-07-18
+#> 240     DRAESN1     NSW1          LOAD  NON-SCHEDULED 2025-07-01 2025-07-18
+#> 241     DRAESN1     NSW1          LOAD  NON-SCHEDULED 2024-04-23 2024-06-18
 #> 242     DRAESN1     NSW1          LOAD  NON-SCHEDULED 2023-07-01 2024-04-23
 #> 243     DRAESN3     NSW1          LOAD  NON-SCHEDULED 2026-07-01 2999-12-31
-#> 244     DRAESS1      SA1          LOAD  NON-SCHEDULED 2026-07-01 2999-12-31
-#> 245     DRAESN3     NSW1          LOAD  NON-SCHEDULED 2025-07-01 2025-07-18
-#> 246     DRAESN1     NSW1          LOAD  NON-SCHEDULED 2022-07-01 2023-07-01
-#> 247     DRAESN1     NSW1          LOAD  NON-SCHEDULED 2024-07-01 2025-07-01
-#> 248     DRAESN3     NSW1          LOAD  NON-SCHEDULED 2024-07-01 2025-07-01
+#> 244     DRAESN1     NSW1          LOAD  NON-SCHEDULED 2022-07-01 2023-07-01
+#> 245     DRAESS1      SA1          LOAD  NON-SCHEDULED 2026-07-01 2999-12-31
+#> 246     DRAESN3     NSW1          LOAD  NON-SCHEDULED 2025-07-01 2025-07-18
+#> 247     DRAESN3     NSW1          LOAD  NON-SCHEDULED 2024-07-01 2025-07-01
+#> 248     DRAESN1     NSW1          LOAD  NON-SCHEDULED 2024-07-01 2025-07-01
 #> 249      LDBESS     NSW1 BIDIRECTIONAL      SCHEDULED 2026-07-01 2026-08-04
 #> 250      LDBESS     NSW1 BIDIRECTIONAL      SCHEDULED 2025-09-30 2026-07-01
 #> 251      LDBESS     NSW1 BIDIRECTIONAL      SCHEDULED 2026-08-04 2999-12-31
-#> 252     COOPGWF     QLD1     GENERATOR SEMI-SCHEDULED 2021-07-01 2022-07-01
-#> 253     COOPGWF     QLD1     GENERATOR SEMI-SCHEDULED 2024-06-03 2024-06-27
-#> 254     COOPGWF     QLD1     GENERATOR SEMI-SCHEDULED 2023-07-01 2024-06-03
-#> 255     COOPGWF     QLD1     GENERATOR SEMI-SCHEDULED 2022-07-01 2023-07-01
-#> 256     COOPGWF     QLD1     GENERATOR SEMI-SCHEDULED 2019-06-04 2019-07-01
-#> 257     COOPGWF     QLD1     GENERATOR SEMI-SCHEDULED 2020-07-01 2021-07-01
+#> 252     COOPGWF     QLD1     GENERATOR SEMI-SCHEDULED 2024-06-03 2024-06-27
+#> 253     COOPGWF     QLD1     GENERATOR SEMI-SCHEDULED 2022-07-01 2023-07-01
+#> 254     COOPGWF     QLD1     GENERATOR SEMI-SCHEDULED 2019-06-04 2019-07-01
+#> 255     COOPGWF     QLD1     GENERATOR SEMI-SCHEDULED 2020-07-01 2021-07-01
+#> 256     COOPGWF     QLD1     GENERATOR SEMI-SCHEDULED 2023-07-01 2024-06-03
+#> 257     COOPGWF     QLD1     GENERATOR SEMI-SCHEDULED 2021-07-01 2022-07-01
 #> 258     COOPGWF     QLD1     GENERATOR SEMI-SCHEDULED 2019-07-01 2020-07-01
-#> 259        STWF     NSW1     GENERATOR SEMI-SCHEDULED 2021-07-01 2022-07-01
-#> 260      NYNGAN     NSW1     GENERATOR SEMI-SCHEDULED 2024-06-20 2024-06-25
-#> 261        STWF     NSW1     GENERATOR SEMI-SCHEDULED 2024-06-03 2024-06-20
-#> 262        STWF     NSW1     GENERATOR SEMI-SCHEDULED 2022-07-01 2023-02-07
-#> 263        STWF     NSW1     GENERATOR SEMI-SCHEDULED 2018-02-26 2018-07-01
-#> 264      NYNGAN     NSW1     GENERATOR SEMI-SCHEDULED 2023-02-07 2023-07-01
-#> 265        STWF     NSW1     GENERATOR SEMI-SCHEDULED 2020-07-01 2021-07-01
-#> 266        STWF     NSW1     GENERATOR SEMI-SCHEDULED 2019-07-01 2020-07-01
-#> 267      NYNGAN     NSW1     GENERATOR SEMI-SCHEDULED 2024-06-03 2024-06-20
+#> 259        STWF     NSW1     GENERATOR SEMI-SCHEDULED 2019-07-01 2020-07-01
+#> 260        STWF     NSW1     GENERATOR SEMI-SCHEDULED 2020-07-01 2021-07-01
+#> 261        STWF     NSW1     GENERATOR SEMI-SCHEDULED 2018-02-26 2018-07-01
+#> 262        STWF     NSW1     GENERATOR SEMI-SCHEDULED 2021-07-01 2022-07-01
+#> 263        STWF     NSW1     GENERATOR SEMI-SCHEDULED 2024-06-03 2024-06-20
+#> 264        STWF     NSW1     GENERATOR SEMI-SCHEDULED 2022-07-01 2023-02-07
+#> 265      NYNGAN     NSW1     GENERATOR SEMI-SCHEDULED 2023-07-01 2024-06-03
+#> 266      NYNGAN     NSW1     GENERATOR SEMI-SCHEDULED 2024-06-20 2024-06-25
+#> 267        STWF     NSW1     GENERATOR SEMI-SCHEDULED 2023-07-01 2024-06-03
 #> 268        STWF     NSW1     GENERATOR SEMI-SCHEDULED 2023-02-07 2023-07-01
-#> 269      NYNGAN     NSW1     GENERATOR SEMI-SCHEDULED 2023-07-01 2024-06-03
-#> 270        STWF     NSW1     GENERATOR SEMI-SCHEDULED 2023-07-01 2024-06-03
+#> 269      NYNGAN     NSW1     GENERATOR SEMI-SCHEDULED 2024-06-03 2024-06-20
+#> 270      NYNGAN     NSW1     GENERATOR SEMI-SCHEDULED 2023-02-07 2023-07-01
 #> 271        STWF     NSW1     GENERATOR SEMI-SCHEDULED 2018-07-01 2019-07-01
-#> 272    YWNGAHYD     VIC1     GENERATOR  NON-SCHEDULED 2010-01-07 2010-07-01
-#> 273    COPTNHYD     NSW1     GENERATOR  NON-SCHEDULED 2010-07-01 2011-05-27
-#> 274    BDONGHYD     NSW1     GENERATOR  NON-SCHEDULED 2010-07-01 2011-05-27
-#> 275    GLBWNHYD     NSW1     GENERATOR  NON-SCHEDULED 2011-05-27 2012-07-01
-#> 276    COPTNHYD     NSW1     GENERATOR  NON-SCHEDULED 2012-12-07 2012-12-24
-#> 277    YWNGAHYD     VIC1     GENERATOR  NON-SCHEDULED 2010-07-01 2011-05-27
-#> 278    GLBWNHYD     NSW1     GENERATOR  NON-SCHEDULED 2010-07-01 2011-05-27
-#> 279    COPTNHYD     NSW1     GENERATOR  NON-SCHEDULED 2010-01-07 2010-07-01
-#> 280    BDONGHYD     NSW1     GENERATOR  NON-SCHEDULED 2012-07-01 2012-12-07
-#> 281    BDONGHYD     NSW1     GENERATOR  NON-SCHEDULED 2011-05-27 2012-07-01
-#> 282    BDONGHYD     NSW1     GENERATOR  NON-SCHEDULED 2010-01-07 2010-07-01
-#> 283    GLBWNHYD     NSW1     GENERATOR  NON-SCHEDULED 2012-07-01 2012-12-07
+#> 272    COPTNHYD     NSW1     GENERATOR  NON-SCHEDULED 2011-05-27 2012-07-01
+#> 273    YWNGAHYD     VIC1     GENERATOR  NON-SCHEDULED 2010-07-01 2011-05-27
+#> 274    COPTNHYD     NSW1     GENERATOR  NON-SCHEDULED 2012-12-07 2012-12-24
+#> 275    YWNGAHYD     VIC1     GENERATOR  NON-SCHEDULED 2010-01-07 2010-07-01
+#> 276    BDONGHYD     NSW1     GENERATOR  NON-SCHEDULED 2011-05-27 2012-07-01
+#> 277    GLBWNHYD     NSW1     GENERATOR  NON-SCHEDULED 2011-05-27 2012-07-01
+#> 278    BDONGHYD     NSW1     GENERATOR  NON-SCHEDULED 2012-07-01 2012-12-07
+#> 279    YWNGAHYD     VIC1     GENERATOR  NON-SCHEDULED 2012-12-24 2013-07-01
+#> 280    BDONGHYD     NSW1     GENERATOR  NON-SCHEDULED 2010-01-07 2010-07-01
+#> 281    BDONGHYD     NSW1     GENERATOR  NON-SCHEDULED 2010-07-01 2011-05-27
+#> 282    COPTNHYD     NSW1     GENERATOR  NON-SCHEDULED 2010-07-01 2011-05-27
+#> 283    COPTNHYD     NSW1     GENERATOR  NON-SCHEDULED 2010-01-07 2010-07-01
 #> 284    YWNGAHYD     VIC1     GENERATOR  NON-SCHEDULED 2012-07-01 2012-12-07
-#> 285    YWNGAHYD     VIC1     GENERATOR  NON-SCHEDULED 2012-12-24 2013-07-01
-#> 286    COPTNHYD     NSW1     GENERATOR  NON-SCHEDULED 2011-05-27 2012-07-01
-#> 287    COPTNHYD     NSW1     GENERATOR  NON-SCHEDULED 2012-07-01 2012-12-07
-#> 288    YWNGAHYD     VIC1     GENERATOR  NON-SCHEDULED 2011-05-27 2012-07-01
-#> 289    GLBWNHYD     NSW1     GENERATOR  NON-SCHEDULED 2010-01-07 2010-07-01
-#> 290    GLBWNHYD     NSW1     GENERATOR  NON-SCHEDULED 2012-12-07 2012-12-24
+#> 285    GLBWNHYD     NSW1     GENERATOR  NON-SCHEDULED 2010-07-01 2011-05-27
+#> 286    GLBWNHYD     NSW1     GENERATOR  NON-SCHEDULED 2012-07-01 2012-12-07
+#> 287    GLBWNHYD     NSW1     GENERATOR  NON-SCHEDULED 2010-01-07 2010-07-01
+#> 288    GLBWNHYD     NSW1     GENERATOR  NON-SCHEDULED 2012-12-07 2012-12-24
+#> 289    COPTNHYD     NSW1     GENERATOR  NON-SCHEDULED 2012-07-01 2012-12-07
+#> 290    YWNGAHYD     VIC1     GENERATOR  NON-SCHEDULED 2011-05-27 2012-07-01
 #> 291    YWNGAHYD     VIC1     GENERATOR  NON-SCHEDULED 2012-12-07 2012-12-24
-#> 292    WANDBESS     QLD1 BIDIRECTIONAL      SCHEDULED 2024-07-04 2024-07-26
-#> 293    WANDBESS     QLD1     GENERATOR      SCHEDULED 2024-07-01 2024-07-04
-#> 294    WANDBESS     QLD1          LOAD      SCHEDULED 2023-08-09 2024-06-03
-#> 295    WANDBESS     QLD1     GENERATOR      SCHEDULED 2021-07-06 2022-06-21
-#> 296    WANDBESS     QLD1 BIDIRECTIONAL      SCHEDULED 2024-12-12 2025-07-01
-#> 297    WANDBESS     QLD1     GENERATOR      SCHEDULED 2023-07-01 2023-08-09
-#> 298    WANDBESS     QLD1 BIDIRECTIONAL      SCHEDULED 2024-07-26 2024-12-12
-#> 299    WANDBESS     QLD1          LOAD      SCHEDULED 2022-07-01 2023-07-01
-#> 300    WANDBESS     QLD1 BIDIRECTIONAL      SCHEDULED 2026-07-01 2026-09-29
-#> 301    WANDBESS     QLD1     GENERATOR      SCHEDULED 2024-06-03 2024-07-01
-#> 302    WANDBESS     QLD1     GENERATOR      SCHEDULED 2024-07-04 2024-07-26
-#> 303    WANDBESS     QLD1          LOAD      SCHEDULED 2023-07-01 2023-08-09
-#> 304    WANDBESS     QLD1 BIDIRECTIONAL      SCHEDULED 2025-07-01 2026-07-01
-#> 305    WANDBESS     QLD1          LOAD      SCHEDULED 2024-07-04 2024-07-26
-#> 306    WANDBESS     QLD1          LOAD      SCHEDULED 2021-07-06 2022-06-21
-#> 307    WANDBESS     QLD1     GENERATOR      SCHEDULED 2023-08-09 2024-06-03
-#> 308    WANDBESS     QLD1     GENERATOR      SCHEDULED 2022-07-01 2023-07-01
-#> 309    WANDBESS     QLD1          LOAD      SCHEDULED 2022-06-21 2022-07-01
+#> 292    WANDBESS     QLD1 BIDIRECTIONAL      SCHEDULED 2024-12-12 2025-07-01
+#> 293    WANDBESS     QLD1          LOAD      SCHEDULED 2023-08-09 2024-06-03
+#> 294    WANDBESS     QLD1     GENERATOR      SCHEDULED 2024-07-01 2024-07-04
+#> 295    WANDBESS     QLD1     GENERATOR      SCHEDULED 2023-07-01 2023-08-09
+#> 296    WANDBESS     QLD1 BIDIRECTIONAL      SCHEDULED 2024-07-26 2024-12-12
+#> 297    WANDBESS     QLD1          LOAD      SCHEDULED 2023-07-01 2023-08-09
+#> 298    WANDBESS     QLD1 BIDIRECTIONAL      SCHEDULED 2025-07-01 2026-07-01
+#> 299    WANDBESS     QLD1     GENERATOR      SCHEDULED 2024-06-03 2024-07-01
+#> 300    WANDBESS     QLD1     GENERATOR      SCHEDULED 2024-07-04 2024-07-26
+#> 301    WANDBESS     QLD1          LOAD      SCHEDULED 2022-07-01 2023-07-01
+#> 302    WANDBESS     QLD1     GENERATOR      SCHEDULED 2023-08-09 2024-06-03
+#> 303    WANDBESS     QLD1          LOAD      SCHEDULED 2024-07-04 2024-07-26
+#> 304    WANDBESS     QLD1          LOAD      SCHEDULED 2022-06-21 2022-07-01
+#> 305    WANDBESS     QLD1          LOAD      SCHEDULED 2021-07-06 2022-06-21
+#> 306    WANDBESS     QLD1     GENERATOR      SCHEDULED 2022-06-21 2022-07-01
+#> 307    WANDBESS     QLD1     GENERATOR      SCHEDULED 2022-07-01 2023-07-01
+#> 308    WANDBESS     QLD1 BIDIRECTIONAL      SCHEDULED 2026-07-01 2026-09-29
+#> 309    WANDBESS     QLD1 BIDIRECTIONAL      SCHEDULED 2024-07-04 2024-07-26
 #> 310    WANDBESS     QLD1          LOAD      SCHEDULED 2024-07-01 2024-07-04
-#> 311    WANDBESS     QLD1     GENERATOR      SCHEDULED 2022-06-21 2022-07-01
-#> 312    WANDBESS     QLD1          LOAD      SCHEDULED 2024-06-03 2024-07-01
-#> 3965     DALNTH      SA1     GENERATOR      SCHEDULED 2019-05-15 2019-07-01
-#> 3966     DALNTH      SA1          LOAD      SCHEDULED 2019-07-01 2020-07-01
-#> 3967     DALNTH      SA1 BIDIRECTIONAL      SCHEDULED 2024-07-12 2024-07-31
-#> 3968     DALNTH      SA1     GENERATOR      SCHEDULED 2024-07-12 2024-07-31
-#> 3969     DALNTH      SA1     GENERATOR      SCHEDULED 2024-06-03 2024-07-01
-#> 3970     DALNTH      SA1     GENERATOR      SCHEDULED 2019-07-01 2020-07-01
-#> 3971     DALNTH      SA1     GENERATOR      SCHEDULED 2024-07-01 2024-07-12
-#> 3972     DALNTH      SA1     GENERATOR      SCHEDULED 2021-07-01 2021-09-08
-#> 3973     DALNTH      SA1 BIDIRECTIONAL      SCHEDULED 2025-07-01 2026-07-01
-#> 3974     DALNTH      SA1     GENERATOR      SCHEDULED 2018-06-05 2018-07-01
-#> 3975     DALNTH      SA1     GENERATOR      SCHEDULED 2020-07-01 2021-07-01
-#> 3976     DALNTH      SA1          LOAD      SCHEDULED 2021-09-08 2022-07-01
-#> 3977     DALNTH      SA1     GENERATOR      SCHEDULED 2021-09-08 2022-07-01
-#> 3978     DALNTH      SA1          LOAD      SCHEDULED 2020-07-01 2021-07-01
-#> 3979     DALNTH      SA1     GENERATOR      SCHEDULED 2018-07-01 2018-07-13
-#> 3980     DALNTH      SA1          LOAD      SCHEDULED 2024-07-12 2024-07-31
-#> 3981     DALNTH      SA1          LOAD      SCHEDULED 2021-07-01 2021-09-08
-#> 3982     DALNTH      SA1          LOAD      SCHEDULED 2018-06-05 2018-07-01
-#> 3983     DALNTH      SA1          LOAD      SCHEDULED 2022-07-01 2023-01-25
+#> 311    WANDBESS     QLD1          LOAD      SCHEDULED 2024-06-03 2024-07-01
+#> 312    WANDBESS     QLD1     GENERATOR      SCHEDULED 2021-07-06 2022-06-21
+#> 3965     DALNTH      SA1          LOAD      SCHEDULED 2019-07-01 2020-07-01
+#> 3966     DALNTH      SA1 BIDIRECTIONAL      SCHEDULED 2026-07-01 2999-12-31
+#> 3967     DALNTH      SA1     GENERATOR      SCHEDULED 2024-07-12 2024-07-31
+#> 3968     DALNTH      SA1     GENERATOR      SCHEDULED 2024-07-01 2024-07-12
+#> 3969     DALNTH      SA1 BIDIRECTIONAL      SCHEDULED 2024-07-31 2025-07-01
+#> 3970     DALNTH      SA1 BIDIRECTIONAL      SCHEDULED 2024-07-12 2024-07-31
+#> 3971     DALNTH      SA1     GENERATOR      SCHEDULED 2019-07-01 2020-07-01
+#> 3972     DALNTH      SA1     GENERATOR      SCHEDULED 2020-07-01 2021-07-01
+#> 3973     DALNTH      SA1     GENERATOR      SCHEDULED 2019-05-15 2019-07-01
+#> 3974     DALNTH      SA1     GENERATOR      SCHEDULED 2024-06-03 2024-07-01
+#> 3975     DALNTH      SA1     GENERATOR      SCHEDULED 2018-06-05 2018-07-01
+#> 3976     DALNTH      SA1     GENERATOR      SCHEDULED 2018-07-01 2018-07-13
+#> 3977     DALNTH      SA1     GENERATOR      SCHEDULED 2021-07-01 2021-09-08
+#> 3978     DALNTH      SA1     GENERATOR      SCHEDULED 2021-09-08 2022-07-01
+#> 3979     DALNTH      SA1 BIDIRECTIONAL      SCHEDULED 2025-07-01 2026-07-01
+#> 3980     DALNTH      SA1          LOAD      SCHEDULED 2020-07-01 2021-07-01
+#> 3981     DALNTH      SA1          LOAD      SCHEDULED 2021-09-08 2022-07-01
+#> 3982     DALNTH      SA1          LOAD      SCHEDULED 2024-07-12 2024-07-31
+#> 3983     DALNTH      SA1          LOAD      SCHEDULED 2018-06-05 2018-07-01
 #> 3984     DALNTH      SA1     GENERATOR      SCHEDULED 2018-07-13 2019-05-15
-#> 3985     DALNTH      SA1          LOAD      SCHEDULED 2023-07-01 2023-08-09
-#> 3986     DALNTH      SA1          LOAD      SCHEDULED 2018-07-01 2018-07-13
-#> 3987     DALNTH      SA1          LOAD      SCHEDULED 2023-01-25 2023-07-01
-#> 3988     DALNTH      SA1 BIDIRECTIONAL      SCHEDULED 2024-07-31 2025-07-01
-#> 3989     DALNTH      SA1          LOAD      SCHEDULED 2024-06-03 2024-07-01
-#> 3990     DALNTH      SA1     GENERATOR      SCHEDULED 2022-07-01 2023-01-25
+#> 3985     DALNTH      SA1          LOAD      SCHEDULED 2022-07-01 2023-01-25
+#> 3986     DALNTH      SA1     GENERATOR      SCHEDULED 2022-07-01 2023-01-25
+#> 3987     DALNTH      SA1          LOAD      SCHEDULED 2021-07-01 2021-09-08
+#> 3988     DALNTH      SA1          LOAD      SCHEDULED 2018-07-01 2018-07-13
+#> 3989     DALNTH      SA1          LOAD      SCHEDULED 2023-07-01 2023-08-09
+#> 3990     DALNTH      SA1          LOAD      SCHEDULED 2023-01-25 2023-07-01
 #> 3991     DALNTH      SA1          LOAD      SCHEDULED 2024-07-01 2024-07-12
 #> 3992     DALNTH      SA1          LOAD      SCHEDULED 2023-08-09 2024-06-03
 #> 3993     DALNTH      SA1     GENERATOR      SCHEDULED 2023-08-09 2024-06-03
-#> 3994     DALNTH      SA1     GENERATOR      SCHEDULED 2023-07-01 2023-08-09
-#> 3995     DALNTH      SA1     GENERATOR      SCHEDULED 2023-01-25 2023-07-01
-#> 3996     DALNTH      SA1 BIDIRECTIONAL      SCHEDULED 2026-07-01 2999-12-31
-#> 3997     DALNTH      SA1          LOAD      SCHEDULED 2018-07-13 2019-07-01
-#> 5917   EDLRGNRD     QLD1     GENERATOR  NON-SCHEDULED 2004-06-22 2004-07-01
-#> 5918   SUNCOAST     QLD1     GENERATOR  NON-SCHEDULED 2009-07-01 2010-03-19
-#> 5919   MORANBAH     QLD1     GENERATOR  NON-SCHEDULED 2008-02-01 2008-07-01
-#> 5920   EDLRGNRD     QLD1     GENERATOR  NON-SCHEDULED 2006-07-01 2006-12-07
-#> 5921   MORANBAH     QLD1     GENERATOR  NON-SCHEDULED 2007-07-01 2008-02-01
-#> 5922   SUNCOAST     QLD1     GENERATOR  NON-SCHEDULED 2007-07-01 2008-02-01
-#> 5923       ICSM     QLD1     GENERATOR  NON-SCHEDULED 2009-07-01 2009-11-23
-#> 5924       ICSM     QLD1     GENERATOR  NON-SCHEDULED 2007-03-01 2007-07-01
-#> 5925   EDLRGNRD     QLD1     GENERATOR  NON-SCHEDULED 2005-07-01 2006-02-22
-#> 5926       ICSM     QLD1     GENERATOR  NON-SCHEDULED 2007-07-01 2008-02-01
-#> 5927   EDLRGNRD     QLD1     GENERATOR  NON-SCHEDULED 2006-12-07 2007-01-16
-#> 5928   EDLRGNRD     QLD1     GENERATOR  NON-SCHEDULED 2007-07-01 2008-02-01
-#> 5929   EDLRGNRD     QLD1     GENERATOR  NON-SCHEDULED 2008-07-01 2009-07-01
-#> 5930   SUNCOAST     QLD1     GENERATOR  NON-SCHEDULED 2004-07-01 2005-07-01
-#> 5931   SUNCOAST     QLD1     GENERATOR  NON-SCHEDULED 2008-02-01 2008-07-01
-#> 5932   EDLRGNRD     QLD1     GENERATOR  NON-SCHEDULED 2006-02-22 2006-07-01
-#> 5933   SUNCOAST     QLD1     GENERATOR  NON-SCHEDULED 2007-03-01 2007-07-01
-#> 5934       ICSM     QLD1     GENERATOR  NON-SCHEDULED 2008-07-01 2009-07-01
-#> 5935       ICSM     QLD1     GENERATOR  NON-SCHEDULED 2009-11-23 2010-03-19
-#> 5936   SUNCOAST     QLD1     GENERATOR  NON-SCHEDULED 2008-07-01 2009-07-01
-#> 5937   EDLRGNRD     QLD1     GENERATOR  NON-SCHEDULED 2004-07-01 2005-07-01
-#> 5938   EDLRGNRD     QLD1     GENERATOR  NON-SCHEDULED 2008-02-01 2008-07-01
-#> 5939   MORANBAH     QLD1     GENERATOR  NON-SCHEDULED 2008-07-01 2009-07-01
-#> 5940   EDLRGNRD     QLD1     GENERATOR  NON-SCHEDULED 2009-07-01 2010-03-19
-#> 5941   EDLRGNRD     QLD1     GENERATOR  NON-SCHEDULED 2007-01-16 2007-03-01
-#> 5942   SUNCOAST     QLD1     GENERATOR  NON-SCHEDULED 2006-12-07 2007-01-16
-#> 5943       ICSM     QLD1     GENERATOR  NON-SCHEDULED 2008-02-01 2008-07-01
-#> 5944   EDLRGNRD     QLD1     GENERATOR  NON-SCHEDULED 2007-03-01 2007-07-01
-#> 5945   EDLRGNRD     QLD1     GENERATOR  NON-SCHEDULED 2010-03-19 2010-04-30
-#> 5946   SUNCOAST     QLD1     GENERATOR  NON-SCHEDULED 2004-06-15 2004-06-22
-#> 5947   SUNCOAST     QLD1     GENERATOR  NON-SCHEDULED 2004-06-22 2004-07-01
-#> 5948   SUNCOAST     QLD1     GENERATOR  NON-SCHEDULED 2005-07-01 2006-02-22
-#> 5949   SUNCOAST     QLD1     GENERATOR  NON-SCHEDULED 2006-02-22 2006-07-01
-#> 5950   SUNCOAST     QLD1     GENERATOR  NON-SCHEDULED 2006-07-01 2006-12-07
-#> 5951   MORANBAH     QLD1     GENERATOR  NON-SCHEDULED 2009-07-01 2010-03-19
-#> 5952   MORANBAH     QLD1     GENERATOR  NON-SCHEDULED 2007-03-01 2007-07-01
-#> 5953   SUNCOAST     QLD1     GENERATOR  NON-SCHEDULED 2007-01-16 2007-03-01
-#> 5954   SUNCOAST     QLD1     GENERATOR  NON-SCHEDULED 2003-08-14 2004-06-15
-#> 6908   JACKSGUL     NSW1     GENERATOR  NON-SCHEDULED 2007-01-16 2007-01-22
-#> 6909   JACKSGUL     NSW1     GENERATOR  NON-SCHEDULED 2006-12-07 2007-01-16
-#> 6910   KRCCOGEN     QLD1     GENERATOR  NON-SCHEDULED 2012-07-01 2012-12-14
-#> 6911   GRANGEAV     NSW1     GENERATOR  NON-SCHEDULED 2012-03-01 2012-07-01
-#> 6912   KRCCOGEN     QLD1     GENERATOR  NON-SCHEDULED 2009-09-04 2009-11-23
-#> 6913   KRCCOGEN     QLD1     GENERATOR  NON-SCHEDULED 2011-07-01 2012-07-01
-#> 6914   BROOKLYN     VIC1     GENERATOR  NON-SCHEDULED 2006-11-06 2006-12-07
-#> 6915     ERG_AS     QLD1          LOAD  NON-SCHEDULED 2008-02-04 2008-07-01
-#> 6916   BROOKLYN     VIC1     GENERATOR  NON-SCHEDULED 2006-12-07 2007-01-16
-#> 6917   BROOKLYN     VIC1     GENERATOR  NON-SCHEDULED 2007-07-01 2007-12-06
-#> 6918     ERG_AS     QLD1          LOAD  NON-SCHEDULED 2004-05-19 2004-07-01
-#> 6919   GRANGEAV     NSW1     GENERATOR  NON-SCHEDULED 2013-01-01 2013-07-01
-#> 6920   BROOKLYN     VIC1     GENERATOR  NON-SCHEDULED 2009-09-04 2010-07-01
-#> 6921   KRCCOGEN     QLD1     GENERATOR  NON-SCHEDULED 2009-11-23 2010-07-01
-#> 6922   BROOKLYN     VIC1     GENERATOR  NON-SCHEDULED 2007-01-22 2007-03-08
+#> 3994     DALNTH      SA1          LOAD      SCHEDULED 2024-06-03 2024-07-01
+#> 3995     DALNTH      SA1     GENERATOR      SCHEDULED 2023-07-01 2023-08-09
+#> 3996     DALNTH      SA1          LOAD      SCHEDULED 2018-07-13 2019-07-01
+#> 3997     DALNTH      SA1     GENERATOR      SCHEDULED 2023-01-25 2023-07-01
+#> 5922   EDLRGNRD     QLD1     GENERATOR  NON-SCHEDULED 2004-06-22 2004-07-01
+#> 5923   SUNCOAST     QLD1     GENERATOR  NON-SCHEDULED 2009-07-01 2010-03-19
+#> 5924   MORANBAH     QLD1     GENERATOR  NON-SCHEDULED 2008-02-01 2008-07-01
+#> 5925   EDLRGNRD     QLD1     GENERATOR  NON-SCHEDULED 2006-07-01 2006-12-07
+#> 5926   MORANBAH     QLD1     GENERATOR  NON-SCHEDULED 2007-07-01 2008-02-01
+#> 5927   SUNCOAST     QLD1     GENERATOR  NON-SCHEDULED 2007-07-01 2008-02-01
+#> 5928       ICSM     QLD1     GENERATOR  NON-SCHEDULED 2009-07-01 2009-11-23
+#> 5929       ICSM     QLD1     GENERATOR  NON-SCHEDULED 2007-03-01 2007-07-01
+#> 5930   EDLRGNRD     QLD1     GENERATOR  NON-SCHEDULED 2005-07-01 2006-02-22
+#> 5931       ICSM     QLD1     GENERATOR  NON-SCHEDULED 2007-07-01 2008-02-01
+#> 5932   EDLRGNRD     QLD1     GENERATOR  NON-SCHEDULED 2006-12-07 2007-01-16
+#> 5933   EDLRGNRD     QLD1     GENERATOR  NON-SCHEDULED 2007-07-01 2008-02-01
+#> 5934   EDLRGNRD     QLD1     GENERATOR  NON-SCHEDULED 2008-07-01 2009-07-01
+#> 5935   SUNCOAST     QLD1     GENERATOR  NON-SCHEDULED 2004-07-01 2005-07-01
+#> 5936   SUNCOAST     QLD1     GENERATOR  NON-SCHEDULED 2008-02-01 2008-07-01
+#> 5937   EDLRGNRD     QLD1     GENERATOR  NON-SCHEDULED 2006-02-22 2006-07-01
+#> 5938   SUNCOAST     QLD1     GENERATOR  NON-SCHEDULED 2007-03-01 2007-07-01
+#> 5939       ICSM     QLD1     GENERATOR  NON-SCHEDULED 2008-07-01 2009-07-01
+#> 5940       ICSM     QLD1     GENERATOR  NON-SCHEDULED 2009-11-23 2010-03-19
+#> 5941   SUNCOAST     QLD1     GENERATOR  NON-SCHEDULED 2008-07-01 2009-07-01
+#> 5942   EDLRGNRD     QLD1     GENERATOR  NON-SCHEDULED 2004-07-01 2005-07-01
+#> 5943   EDLRGNRD     QLD1     GENERATOR  NON-SCHEDULED 2008-02-01 2008-07-01
+#> 5944   MORANBAH     QLD1     GENERATOR  NON-SCHEDULED 2008-07-01 2009-07-01
+#> 5945   EDLRGNRD     QLD1     GENERATOR  NON-SCHEDULED 2009-07-01 2010-03-19
+#> 5946   EDLRGNRD     QLD1     GENERATOR  NON-SCHEDULED 2007-01-16 2007-03-01
+#> 5947   SUNCOAST     QLD1     GENERATOR  NON-SCHEDULED 2006-12-07 2007-01-16
+#> 5948       ICSM     QLD1     GENERATOR  NON-SCHEDULED 2008-02-01 2008-07-01
+#> 5949   EDLRGNRD     QLD1     GENERATOR  NON-SCHEDULED 2007-03-01 2007-07-01
+#> 5950   EDLRGNRD     QLD1     GENERATOR  NON-SCHEDULED 2010-03-19 2010-04-30
+#> 5951   SUNCOAST     QLD1     GENERATOR  NON-SCHEDULED 2004-06-15 2004-06-22
+#> 5952   SUNCOAST     QLD1     GENERATOR  NON-SCHEDULED 2004-06-22 2004-07-01
+#> 5953   SUNCOAST     QLD1     GENERATOR  NON-SCHEDULED 2005-07-01 2006-02-22
+#> 5954   SUNCOAST     QLD1     GENERATOR  NON-SCHEDULED 2006-02-22 2006-07-01
+#> 5955   SUNCOAST     QLD1     GENERATOR  NON-SCHEDULED 2006-07-01 2006-12-07
+#> 5956   MORANBAH     QLD1     GENERATOR  NON-SCHEDULED 2009-07-01 2010-03-19
+#> 5957   MORANBAH     QLD1     GENERATOR  NON-SCHEDULED 2007-03-01 2007-07-01
+#> 5958   SUNCOAST     QLD1     GENERATOR  NON-SCHEDULED 2007-01-16 2007-03-01
+#> 5959   SUNCOAST     QLD1     GENERATOR  NON-SCHEDULED 2003-08-14 2004-06-15
+#> 6913     ERG_AS     QLD1          LOAD  NON-SCHEDULED 2008-02-04 2008-07-01
+#> 6914   JACKSGUL     NSW1     GENERATOR  NON-SCHEDULED 2007-01-16 2007-01-22
+#> 6915   KRCCOGEN     QLD1     GENERATOR  NON-SCHEDULED 2012-07-01 2012-12-14
+#> 6916   GRANGEAV     NSW1     GENERATOR  NON-SCHEDULED 2013-01-01 2013-07-01
+#> 6917   JACKSGUL     NSW1     GENERATOR  NON-SCHEDULED 2006-12-07 2007-01-16
+#> 6918   KRCCOGEN     QLD1     GENERATOR  NON-SCHEDULED 2011-07-01 2012-07-01
+#> 6919   BROOKLYN     VIC1     GENERATOR  NON-SCHEDULED 2006-12-07 2007-01-16
+#> 6920   KRCCOGEN     QLD1     GENERATOR  NON-SCHEDULED 2009-09-04 2009-11-23
+#> 6921   BROOKLYN     VIC1     GENERATOR  NON-SCHEDULED 2007-01-22 2007-03-08
+#> 6922   GRANGEAV     NSW1     GENERATOR  NON-SCHEDULED 2012-03-01 2012-07-01
 #> 6923   BROOKLYN     VIC1     GENERATOR  NON-SCHEDULED 2006-11-01 2006-11-02
-#> 6924     ERG_AS     QLD1          LOAD  NON-SCHEDULED 2003-07-01 2003-10-22
-#> 6925   BROOKLYN     VIC1     GENERATOR  NON-SCHEDULED 2004-05-19 2004-07-01
-#> 6926   BROOKLYN     VIC1     GENERATOR  NON-SCHEDULED 2003-10-22 2004-05-19
-#> 6927   GRANGEAV     NSW1     GENERATOR  NON-SCHEDULED 2012-07-01 2012-12-14
-#> 6928   BROOKLYN     VIC1     GENERATOR  NON-SCHEDULED 2013-01-01 2013-07-01
-#> 6929   BROOKLYN     VIC1     GENERATOR  NON-SCHEDULED 2002-07-01 2003-07-01
-#> 6930     ERG_AS     QLD1          LOAD  NON-SCHEDULED 2008-07-01 2009-07-01
-#> 6931   BROOKLYN     VIC1     GENERATOR  NON-SCHEDULED 2006-11-02 2006-11-06
-#> 6932     WGULLY     NSW1     GENERATOR  NON-SCHEDULED 2005-11-23 2006-07-01
-#> 6933   JACKSGUL     NSW1     GENERATOR  NON-SCHEDULED 2003-10-22 2004-05-19
-#> 6934   BROOKLYN     VIC1     GENERATOR  NON-SCHEDULED 2007-03-08 2007-04-11
-#> 6935     WGULLY     NSW1     GENERATOR  NON-SCHEDULED 2005-07-01 2005-11-23
-#> 6936     ERG_AS     QLD1          LOAD  NON-SCHEDULED 2006-12-07 2007-01-16
-#> 6937     ERG_AS     QLD1          LOAD  NON-SCHEDULED 2005-06-08 2005-07-01
-#> 6938   GRANGEAV     NSW1     GENERATOR  NON-SCHEDULED 2010-07-01 2010-11-09
-#> 6939     ERG_AS     QLD1          LOAD  NON-SCHEDULED 2007-04-11 2007-07-01
-#> 6940   GRANGEAV     NSW1     GENERATOR  NON-SCHEDULED 2011-07-01 2012-03-01
-#> 6941   BROOKLYN     VIC1     GENERATOR  NON-SCHEDULED 2012-12-14 2013-01-01
-#> 6942   GRANGEAV     NSW1     GENERATOR  NON-SCHEDULED 2011-04-14 2011-05-24
-#> 6943     ERG_AS     QLD1          LOAD  NON-SCHEDULED 2003-10-22 2004-05-19
-#> 6944   KRCCOGEN     QLD1     GENERATOR  NON-SCHEDULED 2009-07-01 2009-09-04
-#> 6945     WGULLY     NSW1     GENERATOR  NON-SCHEDULED 2006-11-02 2006-11-06
-#> 6946     WGULLY     NSW1     GENERATOR  NON-SCHEDULED 2006-07-01 2006-11-01
-#> 6947   BROOKLYN     VIC1     GENERATOR  NON-SCHEDULED 2013-08-01 2013-08-19
-#> 6948   BROOKLYN     VIC1     GENERATOR  NON-SCHEDULED 2008-02-04 2008-07-01
-#> 6949   BROOKLYN     VIC1     GENERATOR  NON-SCHEDULED 2004-09-28 2005-06-08
-#> 6950   BROOKLYN     VIC1     GENERATOR  NON-SCHEDULED 2005-06-08 2005-07-01
-#> 6951     ERG_AS     QLD1          LOAD  NON-SCHEDULED 2004-09-28 2005-06-08
-#> 6952     ERG_AS     QLD1          LOAD  NON-SCHEDULED 2005-07-01 2005-11-23
-#> 6953   BROOKLYN     VIC1     GENERATOR  NON-SCHEDULED 2007-12-06 2008-02-04
-#> 6954     ERG_AS     QLD1          LOAD  NON-SCHEDULED 2006-07-01 2006-11-01
-#> 6955   GRANGEAV     NSW1     GENERATOR  NON-SCHEDULED 2011-05-27 2011-07-01
-#> 6956   KRCCOGEN     QLD1     GENERATOR  NON-SCHEDULED 2011-04-14 2011-07-01
-#> 6957   KRCCOGEN     QLD1     GENERATOR  NON-SCHEDULED 2010-07-01 2011-04-14
-#> 6958     WGULLY     NSW1     GENERATOR  NON-SCHEDULED 2007-01-16 2007-01-22
-#> 6959   JACKSGUL     NSW1     GENERATOR  NON-SCHEDULED 2005-07-01 2005-11-23
-#> 6960   BROOKLYN     VIC1     GENERATOR  NON-SCHEDULED 2007-04-11 2007-07-01
-#> 6961   BROOKLYN     VIC1     GENERATOR  NON-SCHEDULED 2010-07-01 2011-04-14
-#> 6962   GRANGEAV     NSW1     GENERATOR  NON-SCHEDULED 2013-07-01 2013-08-01
-#> 6963     ERG_AS     QLD1          LOAD  NON-SCHEDULED 2007-07-01 2008-02-04
-#> 6964   BROOKLYN     VIC1     GENERATOR  NON-SCHEDULED 2007-01-16 2007-01-22
-#> 6965   BROOKLYN     VIC1     GENERATOR  NON-SCHEDULED 2003-07-01 2003-10-22
-#> 6966     ERG_AS     QLD1          LOAD  NON-SCHEDULED 2004-07-01 2004-09-28
-#> 6967     ERG_AS     QLD1          LOAD  NON-SCHEDULED 2006-11-02 2006-11-06
-#> 6968    EASTCRK     NSW1     GENERATOR  NON-SCHEDULED 2003-07-01 2003-10-22
-#> 6969     ERG_AS     QLD1          LOAD  NON-SCHEDULED 2007-03-08 2007-04-11
-#> 6970     ERG_AS     QLD1          LOAD  NON-SCHEDULED 2002-07-01 2003-07-01
-#> 6971   JACKSGUL     NSW1     GENERATOR  NON-SCHEDULED 2006-11-02 2006-11-06
-#> 6972   BROOKLYN     VIC1     GENERATOR  NON-SCHEDULED 2013-07-15 2013-08-01
-#> 6973     WGULLY     NSW1     GENERATOR  NON-SCHEDULED 2006-12-07 2007-01-16
-#> 6974     WGULLY     NSW1     GENERATOR  NON-SCHEDULED 2005-06-08 2005-07-01
-#> 6975   GRANGEAV     NSW1     GENERATOR  NON-SCHEDULED 2006-11-20 2006-12-07
-#> 6976   JACKSGUL     NSW1     GENERATOR  NON-SCHEDULED 2006-11-06 2006-12-07
-#> 6977     ERG_AS     QLD1          LOAD  NON-SCHEDULED 2009-07-01 2009-09-04
-#> 6978     ERG_AS     QLD1          LOAD  NON-SCHEDULED 2005-11-23 2006-07-01
-#> 6979   GRANGEAV     NSW1     GENERATOR  NON-SCHEDULED 2009-07-01 2009-09-04
-#> 6980   BROOKLYN     VIC1     GENERATOR  NON-SCHEDULED 2005-07-01 2005-11-23
-#> 6981   JACKSGUL     NSW1     GENERATOR  NON-SCHEDULED 2007-03-08 2007-04-11
-#> 6982    EASTCRK     NSW1     GENERATOR  NON-SCHEDULED 2004-07-01 2004-09-28
-#> 6983   JACKSGUL     NSW1     GENERATOR  NON-SCHEDULED 2005-11-23 2006-07-01
-#> 6984   JACKSGUL     NSW1     GENERATOR  NON-SCHEDULED 2005-06-08 2005-07-01
-#> 6985     ERG_AS     QLD1          LOAD  NON-SCHEDULED 2002-04-01 2002-05-30
-#> 6986   JACKSGUL     NSW1     GENERATOR  NON-SCHEDULED 2004-07-01 2004-09-28
-#> 6987    GERMCRK     QLD1     GENERATOR  NON-SCHEDULED 2012-07-01 2012-12-14
-#> 6988   JACKSGUL     NSW1     GENERATOR  NON-SCHEDULED 2007-01-22 2007-03-08
-#> 6989   JACKSGUL     NSW1     GENERATOR  NON-SCHEDULED 2006-11-01 2006-11-02
-#> 6990     WGULLY     NSW1     GENERATOR  NON-SCHEDULED 2003-10-22 2004-05-19
-#> 6991     ERG_AS     QLD1          LOAD  NON-SCHEDULED 2007-01-16 2007-01-22
-#> 6992   GRANGEAV     NSW1     GENERATOR  NON-SCHEDULED 2010-11-09 2011-04-14
-#> 6993   BROOKLYN     VIC1     GENERATOR  NON-SCHEDULED 2004-07-01 2004-09-28
-#> 6994    EASTCRK     NSW1     GENERATOR  NON-SCHEDULED 2003-10-22 2004-05-19
-#> 6995   BROOKLYN     VIC1     GENERATOR  NON-SCHEDULED 2002-05-30 2002-07-01
-#> 6996     ERG_AS     QLD1          LOAD  NON-SCHEDULED 2002-05-30 2002-07-01
-#> 6997   JACKSGUL     NSW1     GENERATOR  NON-SCHEDULED 2006-07-01 2006-11-01
-#> 6998    GERMCRK     QLD1     GENERATOR  NON-SCHEDULED 2008-07-01 2009-07-01
-#> 6999    GERMCRK     QLD1     GENERATOR  NON-SCHEDULED 2011-07-01 2012-07-01
-#> 7000    EASTCRK     NSW1     GENERATOR  NON-SCHEDULED 2011-07-01 2012-07-01
-#> 7001   GRANGEAV     NSW1     GENERATOR  NON-SCHEDULED 2007-07-01 2008-02-04
-#> 7002   BROOKLYN     VIC1     GENERATOR  NON-SCHEDULED 2009-07-01 2009-09-04
-#> 7003     WGULLY     NSW1     GENERATOR  NON-SCHEDULED 2006-11-01 2006-11-02
-#> 7004     WGULLY     NSW1     GENERATOR  NON-SCHEDULED 2006-11-06 2006-12-07
-#> 7005   GRANGEAV     NSW1     GENERATOR  NON-SCHEDULED 2011-05-24 2011-05-27
-#> 7006   GRANGEAV     NSW1     GENERATOR  NON-SCHEDULED 2007-01-16 2007-01-22
-#> 7007   GRANGEAV     NSW1     GENERATOR  NON-SCHEDULED 2006-12-07 2007-01-16
-#> 7008    EASTCRK     NSW1     GENERATOR  NON-SCHEDULED 2002-07-01 2003-07-01
-#> 7009   GRANGEAV     NSW1     GENERATOR  NON-SCHEDULED 2008-07-01 2009-07-01
-#> 7010   BROOKLYN     VIC1     GENERATOR  NON-SCHEDULED 2013-08-19 2013-11-08
-#> 7011   JACKSGUL     NSW1     GENERATOR  NON-SCHEDULED 2004-05-19 2004-07-01
-#> 7012     WGULLY     NSW1     GENERATOR  NON-SCHEDULED 2004-09-28 2005-06-08
-#> 7013   JACKSGUL     NSW1     GENERATOR  NON-SCHEDULED 2013-07-01 2013-08-01
-#> 7014   BROOKLYN     VIC1     GENERATOR  NON-SCHEDULED 2012-03-01 2012-07-01
-#> 7015   BROOKLYN     VIC1     GENERATOR  NON-SCHEDULED 2011-04-14 2011-07-01
-#> 7016   GRANGEAV     NSW1     GENERATOR  NON-SCHEDULED 2006-11-06 2006-11-20
-#> 7017     WGULLY     NSW1     GENERATOR  NON-SCHEDULED 2003-07-01 2003-10-22
-#> 7018   BROOKLYN     VIC1     GENERATOR  NON-SCHEDULED 2006-07-01 2006-11-01
-#> 7019    GERMCRK     QLD1     GENERATOR  NON-SCHEDULED 2009-09-04 2010-07-01
-#> 7020    EASTCRK     NSW1     GENERATOR  NON-SCHEDULED 2004-05-19 2004-07-01
-#> 7021    EASTCRK     NSW1     GENERATOR  NON-SCHEDULED 2008-07-01 2009-07-01
-#> 7022   JACKSGUL     NSW1     GENERATOR  NON-SCHEDULED 2002-04-01 2002-05-30
-#> 7023     ERG_AS     QLD1          LOAD  NON-SCHEDULED 2007-01-22 2007-03-08
-#> 7024   JACKSGUL     NSW1     GENERATOR  NON-SCHEDULED 2001-05-31 2001-07-01
-#> 7025   BROOKLYN     VIC1     GENERATOR  NON-SCHEDULED 2013-07-01 2013-07-15
-#> 7026    EASTCRK     NSW1     GENERATOR  NON-SCHEDULED 2012-07-01 2012-12-14
-#> 7027    GERMCRK     QLD1     GENERATOR  NON-SCHEDULED 2011-04-14 2011-07-01
-#> 7028    GERMCRK     QLD1     GENERATOR  NON-SCHEDULED 2008-02-04 2008-07-01
-#> 7029   BROOKLYN     VIC1     GENERATOR  NON-SCHEDULED 2011-07-01 2012-03-01
-#> 7030    EASTCRK     NSW1     GENERATOR  NON-SCHEDULED 2006-12-07 2007-01-16
-#> 7031   BROOKLYN     VIC1     GENERATOR  NON-SCHEDULED 2005-11-23 2006-07-01
-#> 7032   JACKSGUL     NSW1     GENERATOR  NON-SCHEDULED 2008-02-04 2008-07-01
-#> 7033   GRANGEAV     NSW1     GENERATOR  NON-SCHEDULED 2007-03-08 2007-04-11
-#> 7034    GERMCRK     QLD1     GENERATOR  NON-SCHEDULED 2012-12-14 2013-01-01
-#> 7035   KRCCOGEN     QLD1     GENERATOR  NON-SCHEDULED 2008-07-01 2009-07-01
-#> 7036    GERMCRK     QLD1     GENERATOR  NON-SCHEDULED 2010-07-01 2011-04-14
-#> 7037     ERG_AS     QLD1          LOAD  NON-SCHEDULED 2006-11-01 2006-11-02
-#> 7038     ERG_AS     QLD1          LOAD  NON-SCHEDULED 2001-05-31 2001-07-01
-#> 7039   JACKSGUL     NSW1     GENERATOR  NON-SCHEDULED 2009-09-04 2010-07-01
-#> 7040    EASTCRK     NSW1     GENERATOR  NON-SCHEDULED 2013-12-15 2014-02-15
-#> 7041   JACKSGUL     NSW1     GENERATOR  NON-SCHEDULED 2012-10-27 2012-12-14
-#> 7042    GERMCRK     QLD1     GENERATOR  NON-SCHEDULED 2006-11-06 2006-12-07
-#> 7043     WGULLY     NSW1     GENERATOR  NON-SCHEDULED 2002-04-01 2002-05-30
-#> 7044   GRANGEAV     NSW1     GENERATOR  NON-SCHEDULED 2007-01-22 2007-03-08
-#> 7045     WGULLY     NSW1     GENERATOR  NON-SCHEDULED 2000-01-14 2000-07-01
-#> 7046   KRCCOGEN     QLD1     GENERATOR  NON-SCHEDULED 2008-02-04 2008-07-01
-#> 7047   JACKSGUL     NSW1     GENERATOR  NON-SCHEDULED 2012-12-14 2013-01-01
-#> 7048   JACKSGUL     NSW1     GENERATOR  NON-SCHEDULED 2010-07-01 2011-04-14
-#> 7049   JACKSGUL     NSW1     GENERATOR  NON-SCHEDULED 2004-09-28 2005-06-08
-#> 7050    EASTCRK     NSW1     GENERATOR  NON-SCHEDULED 2010-07-01 2011-04-14
-#> 7051   JACKSGUL     NSW1     GENERATOR  NON-SCHEDULED 2011-04-14 2011-07-01
-#> 7052    EASTCRK     NSW1     GENERATOR  NON-SCHEDULED 2013-07-01 2013-08-01
-#> 7053    GERMCRK     QLD1     GENERATOR  NON-SCHEDULED 2006-11-01 2006-11-02
-#> 7054   GRANGEAV     NSW1     GENERATOR  NON-SCHEDULED 2012-12-14 2013-01-01
-#> 7055   GRANGEAV     NSW1     GENERATOR  NON-SCHEDULED 2007-04-11 2007-07-01
-#> 7056   BROOKLYN     VIC1     GENERATOR  NON-SCHEDULED 2008-07-01 2009-07-01
-#> 7057    EASTCRK     NSW1     GENERATOR  NON-SCHEDULED 2005-11-23 2006-07-01
-#> 7058    GERMCRK     QLD1     GENERATOR  NON-SCHEDULED 2007-03-08 2007-04-11
-#> 7059     WGULLY     NSW1     GENERATOR  NON-SCHEDULED 2001-05-31 2001-07-01
-#> 7060     ERG_AS     QLD1          LOAD  NON-SCHEDULED 2001-07-01 2002-04-01
-#> 7061    EASTCRK     NSW1     GENERATOR  NON-SCHEDULED 2009-09-04 2010-07-01
-#> 7062    EASTCRK     NSW1     GENERATOR  NON-SCHEDULED 2008-02-04 2008-07-01
-#> 7063   JACKSGUL     NSW1     GENERATOR  NON-SCHEDULED 2003-07-01 2003-10-22
-#> 7064    EASTCRK     NSW1     GENERATOR  NON-SCHEDULED 2013-01-01 2013-07-01
-#> 7065   KRCCOGEN     QLD1     GENERATOR  NON-SCHEDULED 2007-03-08 2007-04-11
-#> 7066    EASTCRK     NSW1     GENERATOR  NON-SCHEDULED 2006-11-01 2006-11-02
-#> 7067   JACKSGUL     NSW1     GENERATOR  NON-SCHEDULED 2009-07-01 2009-09-04
-#> 7068    GERMCRK     QLD1     GENERATOR  NON-SCHEDULED 2007-04-11 2007-07-01
-#> 7069     ERG_AS     QLD1          LOAD  NON-SCHEDULED 2000-07-01 2001-05-31
-#> 7070     WGULLY     NSW1     GENERATOR  NON-SCHEDULED 2001-07-01 2002-04-01
-#> 7071    EASTCRK     NSW1     GENERATOR  NON-SCHEDULED 2007-01-16 2007-01-22
-#> 7072   GRANGEAV     NSW1     GENERATOR  NON-SCHEDULED 2008-02-04 2008-07-01
-#> 7073    EASTCRK     NSW1     GENERATOR  NON-SCHEDULED 2009-07-01 2009-09-04
-#> 7074   JACKSGUL     NSW1     GENERATOR  NON-SCHEDULED 2008-07-01 2009-07-01
-#> 7075     ERG_AS     QLD1          LOAD  NON-SCHEDULED 2006-11-06 2006-12-07
-#> 7076   JACKSGUL     NSW1     GENERATOR  NON-SCHEDULED 2007-07-01 2008-02-04
-#> 7077    EASTCRK     NSW1     GENERATOR  NON-SCHEDULED 2006-11-06 2006-12-07
-#> 7078   BROOKLYN     VIC1     GENERATOR  NON-SCHEDULED 2012-07-01 2012-12-14
-#> 7079    EASTCRK     NSW1     GENERATOR  NON-SCHEDULED 2007-04-11 2007-07-01
-#> 7080   KRCCOGEN     QLD1     GENERATOR  NON-SCHEDULED 2007-07-01 2008-02-04
-#> 7081   JACKSGUL     NSW1     GENERATOR  NON-SCHEDULED 2011-07-01 2012-07-01
-#> 7082    GERMCRK     QLD1     GENERATOR  NON-SCHEDULED 2007-01-22 2007-03-08
-#> 7083     WGULLY     NSW1     GENERATOR  NON-SCHEDULED 2004-07-01 2004-09-28
-#> 7084    EASTCRK     NSW1     GENERATOR  NON-SCHEDULED 2007-07-01 2008-02-04
-#> 7085    EASTCRK     NSW1     GENERATOR  NON-SCHEDULED 2006-07-01 2006-11-01
-#> 7086     ERG_AS     QLD1          LOAD  NON-SCHEDULED 2000-01-14 2000-07-01
-#> 7087    GERMCRK     QLD1     GENERATOR  NON-SCHEDULED 2009-07-01 2009-09-04
-#> 7088    GERMCRK     QLD1     GENERATOR  NON-SCHEDULED 2007-01-16 2007-01-22
-#> 7089    EASTCRK     NSW1     GENERATOR  NON-SCHEDULED 2013-08-01 2013-11-08
-#> 7090   KRCCOGEN     QLD1     GENERATOR  NON-SCHEDULED 2007-04-11 2007-07-01
-#> 7091    EASTCRK     NSW1     GENERATOR  NON-SCHEDULED 2005-06-08 2005-07-01
-#> 7092    EASTCRK     NSW1     GENERATOR  NON-SCHEDULED 2004-09-28 2005-06-08
-#> 7093     WGULLY     NSW1     GENERATOR  NON-SCHEDULED 2002-07-01 2003-07-01
-#> 7094    EASTCRK     NSW1     GENERATOR  NON-SCHEDULED 2007-01-22 2007-03-08
-#> 7095     WGULLY     NSW1     GENERATOR  NON-SCHEDULED 2000-07-01 2001-05-31
-#> 7096    EASTCRK     NSW1     GENERATOR  NON-SCHEDULED 2002-05-30 2002-07-01
-#> 7097     WGULLY     NSW1     GENERATOR  NON-SCHEDULED 2004-05-19 2004-07-01
-#> 7098   JACKSGUL     NSW1     GENERATOR  NON-SCHEDULED 2001-07-01 2002-04-01
-#> 7099    GERMCRK     QLD1     GENERATOR  NON-SCHEDULED 2006-12-07 2007-01-16
-#> 7100    EASTCRK     NSW1     GENERATOR  NON-SCHEDULED 2013-11-08 2013-12-15
-#> 7101   JACKSGUL     NSW1     GENERATOR  NON-SCHEDULED 2013-01-01 2013-07-01
-#> 7102   JACKSGUL     NSW1     GENERATOR  NON-SCHEDULED 2002-07-01 2003-07-01
-#> 7103   JACKSGUL     NSW1     GENERATOR  NON-SCHEDULED 2002-05-30 2002-07-01
-#> 7104    GERMCRK     QLD1     GENERATOR  NON-SCHEDULED 2007-07-01 2008-02-04
-#> 7105    EASTCRK     NSW1     GENERATOR  NON-SCHEDULED 2012-12-14 2013-01-01
-#> 7106    GERMCRK     QLD1     GENERATOR  NON-SCHEDULED 2006-11-02 2006-11-06
-#> 7107    EASTCRK     NSW1     GENERATOR  NON-SCHEDULED 2006-11-02 2006-11-06
-#> 7108     ERG_AS     QLD1          LOAD  NON-SCHEDULED 1999-10-14 2000-01-14
-#> 7109   JACKSGUL     NSW1     GENERATOR  NON-SCHEDULED 2007-04-11 2007-07-01
-#> 7110    EASTCRK     NSW1     GENERATOR  NON-SCHEDULED 2005-07-01 2005-11-23
-#> 7111   JACKSGUL     NSW1     GENERATOR  NON-SCHEDULED 2012-07-01 2012-10-27
+#> 6924   BROOKLYN     VIC1     GENERATOR  NON-SCHEDULED 2004-05-19 2004-07-01
+#> 6925   BROOKLYN     VIC1     GENERATOR  NON-SCHEDULED 2007-07-01 2007-12-06
+#> 6926   BROOKLYN     VIC1     GENERATOR  NON-SCHEDULED 2006-11-06 2006-12-07
+#> 6927     ERG_AS     QLD1          LOAD  NON-SCHEDULED 2003-07-01 2003-10-22
+#> 6928   BROOKLYN     VIC1     GENERATOR  NON-SCHEDULED 2009-09-04 2010-07-01
+#> 6929     ERG_AS     QLD1          LOAD  NON-SCHEDULED 2008-07-01 2009-07-01
+#> 6930     ERG_AS     QLD1          LOAD  NON-SCHEDULED 2004-05-19 2004-07-01
+#> 6931   GRANGEAV     NSW1     GENERATOR  NON-SCHEDULED 2012-07-01 2012-12-14
+#> 6932   JACKSGUL     NSW1     GENERATOR  NON-SCHEDULED 2003-10-22 2004-05-19
+#> 6933   KRCCOGEN     QLD1     GENERATOR  NON-SCHEDULED 2009-11-23 2010-07-01
+#> 6934     WGULLY     NSW1     GENERATOR  NON-SCHEDULED 2005-07-01 2005-11-23
+#> 6935   BROOKLYN     VIC1     GENERATOR  NON-SCHEDULED 2006-11-02 2006-11-06
+#> 6936     ERG_AS     QLD1          LOAD  NON-SCHEDULED 2005-06-08 2005-07-01
+#> 6937   GRANGEAV     NSW1     GENERATOR  NON-SCHEDULED 2010-07-01 2010-11-09
+#> 6938   BROOKLYN     VIC1     GENERATOR  NON-SCHEDULED 2003-10-22 2004-05-19
+#> 6939   GRANGEAV     NSW1     GENERATOR  NON-SCHEDULED 2011-07-01 2012-03-01
+#> 6940   BROOKLYN     VIC1     GENERATOR  NON-SCHEDULED 2013-01-01 2013-07-01
+#> 6941   BROOKLYN     VIC1     GENERATOR  NON-SCHEDULED 2002-07-01 2003-07-01
+#> 6942     ERG_AS     QLD1          LOAD  NON-SCHEDULED 2003-10-22 2004-05-19
+#> 6943   KRCCOGEN     QLD1     GENERATOR  NON-SCHEDULED 2009-07-01 2009-09-04
+#> 6944     WGULLY     NSW1     GENERATOR  NON-SCHEDULED 2005-11-23 2006-07-01
+#> 6945     WGULLY     NSW1     GENERATOR  NON-SCHEDULED 2006-07-01 2006-11-01
+#> 6946   BROOKLYN     VIC1     GENERATOR  NON-SCHEDULED 2007-03-08 2007-04-11
+#> 6947     ERG_AS     QLD1          LOAD  NON-SCHEDULED 2007-04-11 2007-07-01
+#> 6948     ERG_AS     QLD1          LOAD  NON-SCHEDULED 2006-12-07 2007-01-16
+#> 6949   BROOKLYN     VIC1     GENERATOR  NON-SCHEDULED 2005-06-08 2005-07-01
+#> 6950     ERG_AS     QLD1          LOAD  NON-SCHEDULED 2004-09-28 2005-06-08
+#> 6951     ERG_AS     QLD1          LOAD  NON-SCHEDULED 2005-07-01 2005-11-23
+#> 6952   BROOKLYN     VIC1     GENERATOR  NON-SCHEDULED 2007-12-06 2008-02-04
+#> 6953   BROOKLYN     VIC1     GENERATOR  NON-SCHEDULED 2012-12-14 2013-01-01
+#> 6954   GRANGEAV     NSW1     GENERATOR  NON-SCHEDULED 2011-04-14 2011-05-24
+#> 6955   BROOKLYN     VIC1     GENERATOR  NON-SCHEDULED 2013-08-01 2013-08-19
+#> 6956   KRCCOGEN     QLD1     GENERATOR  NON-SCHEDULED 2010-07-01 2011-04-14
+#> 6957     WGULLY     NSW1     GENERATOR  NON-SCHEDULED 2006-11-02 2006-11-06
+#> 6958   JACKSGUL     NSW1     GENERATOR  NON-SCHEDULED 2005-07-01 2005-11-23
+#> 6959   BROOKLYN     VIC1     GENERATOR  NON-SCHEDULED 2007-04-11 2007-07-01
+#> 6960   BROOKLYN     VIC1     GENERATOR  NON-SCHEDULED 2008-02-04 2008-07-01
+#> 6961   BROOKLYN     VIC1     GENERATOR  NON-SCHEDULED 2004-09-28 2005-06-08
+#> 6962     ERG_AS     QLD1          LOAD  NON-SCHEDULED 2007-07-01 2008-02-04
+#> 6963   BROOKLYN     VIC1     GENERATOR  NON-SCHEDULED 2007-01-16 2007-01-22
+#> 6964   BROOKLYN     VIC1     GENERATOR  NON-SCHEDULED 2003-07-01 2003-10-22
+#> 6965     ERG_AS     QLD1          LOAD  NON-SCHEDULED 2004-07-01 2004-09-28
+#> 6966     ERG_AS     QLD1          LOAD  NON-SCHEDULED 2006-07-01 2006-11-01
+#> 6967   GRANGEAV     NSW1     GENERATOR  NON-SCHEDULED 2011-05-27 2011-07-01
+#> 6968   KRCCOGEN     QLD1     GENERATOR  NON-SCHEDULED 2011-04-14 2011-07-01
+#> 6969     ERG_AS     QLD1          LOAD  NON-SCHEDULED 2002-07-01 2003-07-01
+#> 6970     WGULLY     NSW1     GENERATOR  NON-SCHEDULED 2007-01-16 2007-01-22
+#> 6971   BROOKLYN     VIC1     GENERATOR  NON-SCHEDULED 2013-07-15 2013-08-01
+#> 6972     WGULLY     NSW1     GENERATOR  NON-SCHEDULED 2006-12-07 2007-01-16
+#> 6973   BROOKLYN     VIC1     GENERATOR  NON-SCHEDULED 2010-07-01 2011-04-14
+#> 6974   GRANGEAV     NSW1     GENERATOR  NON-SCHEDULED 2013-07-01 2013-08-01
+#> 6975   JACKSGUL     NSW1     GENERATOR  NON-SCHEDULED 2006-11-06 2006-12-07
+#> 6976     ERG_AS     QLD1          LOAD  NON-SCHEDULED 2009-07-01 2009-09-04
+#> 6977     ERG_AS     QLD1          LOAD  NON-SCHEDULED 2005-11-23 2006-07-01
+#> 6978   GRANGEAV     NSW1     GENERATOR  NON-SCHEDULED 2009-07-01 2009-09-04
+#> 6979     ERG_AS     QLD1          LOAD  NON-SCHEDULED 2006-11-02 2006-11-06
+#> 6980    EASTCRK     NSW1     GENERATOR  NON-SCHEDULED 2003-07-01 2003-10-22
+#> 6981     ERG_AS     QLD1          LOAD  NON-SCHEDULED 2007-03-08 2007-04-11
+#> 6982   JACKSGUL     NSW1     GENERATOR  NON-SCHEDULED 2005-11-23 2006-07-01
+#> 6983   JACKSGUL     NSW1     GENERATOR  NON-SCHEDULED 2006-11-02 2006-11-06
+#> 6984     ERG_AS     QLD1          LOAD  NON-SCHEDULED 2002-04-01 2002-05-30
+#> 6985   JACKSGUL     NSW1     GENERATOR  NON-SCHEDULED 2004-07-01 2004-09-28
+#> 6986     WGULLY     NSW1     GENERATOR  NON-SCHEDULED 2005-06-08 2005-07-01
+#> 6987   GRANGEAV     NSW1     GENERATOR  NON-SCHEDULED 2006-11-20 2006-12-07
+#> 6988   JACKSGUL     NSW1     GENERATOR  NON-SCHEDULED 2006-11-01 2006-11-02
+#> 6989     WGULLY     NSW1     GENERATOR  NON-SCHEDULED 2003-10-22 2004-05-19
+#> 6990     ERG_AS     QLD1          LOAD  NON-SCHEDULED 2007-01-16 2007-01-22
+#> 6991   GRANGEAV     NSW1     GENERATOR  NON-SCHEDULED 2010-11-09 2011-04-14
+#> 6992   BROOKLYN     VIC1     GENERATOR  NON-SCHEDULED 2005-07-01 2005-11-23
+#> 6993    EASTCRK     NSW1     GENERATOR  NON-SCHEDULED 2003-10-22 2004-05-19
+#> 6994    EASTCRK     NSW1     GENERATOR  NON-SCHEDULED 2004-07-01 2004-09-28
+#> 6995     ERG_AS     QLD1          LOAD  NON-SCHEDULED 2002-05-30 2002-07-01
+#> 6996   JACKSGUL     NSW1     GENERATOR  NON-SCHEDULED 2005-06-08 2005-07-01
+#> 6997   BROOKLYN     VIC1     GENERATOR  NON-SCHEDULED 2013-08-19 2013-11-08
+#> 6998    GERMCRK     QLD1     GENERATOR  NON-SCHEDULED 2011-07-01 2012-07-01
+#> 6999    EASTCRK     NSW1     GENERATOR  NON-SCHEDULED 2011-07-01 2012-07-01
+#> 7000   JACKSGUL     NSW1     GENERATOR  NON-SCHEDULED 2007-01-22 2007-03-08
+#> 7001   BROOKLYN     VIC1     GENERATOR  NON-SCHEDULED 2009-07-01 2009-09-04
+#> 7002     WGULLY     NSW1     GENERATOR  NON-SCHEDULED 2006-11-01 2006-11-02
+#> 7003     WGULLY     NSW1     GENERATOR  NON-SCHEDULED 2006-11-06 2006-12-07
+#> 7004   GRANGEAV     NSW1     GENERATOR  NON-SCHEDULED 2011-05-24 2011-05-27
+#> 7005   BROOKLYN     VIC1     GENERATOR  NON-SCHEDULED 2004-07-01 2004-09-28
+#> 7006   GRANGEAV     NSW1     GENERATOR  NON-SCHEDULED 2006-12-07 2007-01-16
+#> 7007   BROOKLYN     VIC1     GENERATOR  NON-SCHEDULED 2002-05-30 2002-07-01
+#> 7008   GRANGEAV     NSW1     GENERATOR  NON-SCHEDULED 2008-07-01 2009-07-01
+#> 7009   JACKSGUL     NSW1     GENERATOR  NON-SCHEDULED 2006-07-01 2006-11-01
+#> 7010   JACKSGUL     NSW1     GENERATOR  NON-SCHEDULED 2004-05-19 2004-07-01
+#> 7011     WGULLY     NSW1     GENERATOR  NON-SCHEDULED 2004-09-28 2005-06-08
+#> 7012   JACKSGUL     NSW1     GENERATOR  NON-SCHEDULED 2013-07-01 2013-08-01
+#> 7013    GERMCRK     QLD1     GENERATOR  NON-SCHEDULED 2012-07-01 2012-12-14
+#> 7014   BROOKLYN     VIC1     GENERATOR  NON-SCHEDULED 2011-04-14 2011-07-01
+#> 7015   GRANGEAV     NSW1     GENERATOR  NON-SCHEDULED 2006-11-06 2006-11-20
+#> 7016     WGULLY     NSW1     GENERATOR  NON-SCHEDULED 2003-07-01 2003-10-22
+#> 7017   BROOKLYN     VIC1     GENERATOR  NON-SCHEDULED 2006-07-01 2006-11-01
+#> 7018    GERMCRK     QLD1     GENERATOR  NON-SCHEDULED 2009-09-04 2010-07-01
+#> 7019    EASTCRK     NSW1     GENERATOR  NON-SCHEDULED 2004-05-19 2004-07-01
+#> 7020    EASTCRK     NSW1     GENERATOR  NON-SCHEDULED 2002-07-01 2003-07-01
+#> 7021   JACKSGUL     NSW1     GENERATOR  NON-SCHEDULED 2007-03-08 2007-04-11
+#> 7022     ERG_AS     QLD1          LOAD  NON-SCHEDULED 2007-01-22 2007-03-08
+#> 7023   JACKSGUL     NSW1     GENERATOR  NON-SCHEDULED 2001-05-31 2001-07-01
+#> 7024    GERMCRK     QLD1     GENERATOR  NON-SCHEDULED 2008-07-01 2009-07-01
+#> 7025    EASTCRK     NSW1     GENERATOR  NON-SCHEDULED 2012-07-01 2012-12-14
+#> 7026    GERMCRK     QLD1     GENERATOR  NON-SCHEDULED 2011-04-14 2011-07-01
+#> 7027   GRANGEAV     NSW1     GENERATOR  NON-SCHEDULED 2007-07-01 2008-02-04
+#> 7028   BROOKLYN     VIC1     GENERATOR  NON-SCHEDULED 2011-07-01 2012-03-01
+#> 7029    EASTCRK     NSW1     GENERATOR  NON-SCHEDULED 2006-12-07 2007-01-16
+#> 7030   BROOKLYN     VIC1     GENERATOR  NON-SCHEDULED 2005-11-23 2006-07-01
+#> 7031   JACKSGUL     NSW1     GENERATOR  NON-SCHEDULED 2008-02-04 2008-07-01
+#> 7032   GRANGEAV     NSW1     GENERATOR  NON-SCHEDULED 2007-01-16 2007-01-22
+#> 7033    GERMCRK     QLD1     GENERATOR  NON-SCHEDULED 2012-12-14 2013-01-01
+#> 7034   KRCCOGEN     QLD1     GENERATOR  NON-SCHEDULED 2008-07-01 2009-07-01
+#> 7035    GERMCRK     QLD1     GENERATOR  NON-SCHEDULED 2010-07-01 2011-04-14
+#> 7036     ERG_AS     QLD1          LOAD  NON-SCHEDULED 2006-11-01 2006-11-02
+#> 7037     ERG_AS     QLD1          LOAD  NON-SCHEDULED 2001-05-31 2001-07-01
+#> 7038   BROOKLYN     VIC1     GENERATOR  NON-SCHEDULED 2013-07-01 2013-07-15
+#> 7039    EASTCRK     NSW1     GENERATOR  NON-SCHEDULED 2013-12-15 2014-02-15
+#> 7040   BROOKLYN     VIC1     GENERATOR  NON-SCHEDULED 2012-03-01 2012-07-01
+#> 7041    GERMCRK     QLD1     GENERATOR  NON-SCHEDULED 2006-11-06 2006-12-07
+#> 7042     WGULLY     NSW1     GENERATOR  NON-SCHEDULED 2002-04-01 2002-05-30
+#> 7043   GRANGEAV     NSW1     GENERATOR  NON-SCHEDULED 2007-01-22 2007-03-08
+#> 7044     WGULLY     NSW1     GENERATOR  NON-SCHEDULED 2000-01-14 2000-07-01
+#> 7045   KRCCOGEN     QLD1     GENERATOR  NON-SCHEDULED 2008-02-04 2008-07-01
+#> 7046   JACKSGUL     NSW1     GENERATOR  NON-SCHEDULED 2012-12-14 2013-01-01
+#> 7047   JACKSGUL     NSW1     GENERATOR  NON-SCHEDULED 2010-07-01 2011-04-14
+#> 7048   JACKSGUL     NSW1     GENERATOR  NON-SCHEDULED 2004-09-28 2005-06-08
+#> 7049    EASTCRK     NSW1     GENERATOR  NON-SCHEDULED 2007-07-01 2008-02-04
+#> 7050    EASTCRK     NSW1     GENERATOR  NON-SCHEDULED 2008-07-01 2009-07-01
+#> 7051    EASTCRK     NSW1     GENERATOR  NON-SCHEDULED 2013-07-01 2013-08-01
+#> 7052   JACKSGUL     NSW1     GENERATOR  NON-SCHEDULED 2009-09-04 2010-07-01
+#> 7053   GRANGEAV     NSW1     GENERATOR  NON-SCHEDULED 2012-12-14 2013-01-01
+#> 7054    GERMCRK     QLD1     GENERATOR  NON-SCHEDULED 2008-02-04 2008-07-01
+#> 7055   BROOKLYN     VIC1     GENERATOR  NON-SCHEDULED 2008-07-01 2009-07-01
+#> 7056    EASTCRK     NSW1     GENERATOR  NON-SCHEDULED 2005-11-23 2006-07-01
+#> 7057    GERMCRK     QLD1     GENERATOR  NON-SCHEDULED 2007-03-08 2007-04-11
+#> 7058     WGULLY     NSW1     GENERATOR  NON-SCHEDULED 2001-05-31 2001-07-01
+#> 7059     ERG_AS     QLD1          LOAD  NON-SCHEDULED 2001-07-01 2002-04-01
+#> 7060    EASTCRK     NSW1     GENERATOR  NON-SCHEDULED 2009-09-04 2010-07-01
+#> 7061   JACKSGUL     NSW1     GENERATOR  NON-SCHEDULED 2002-04-01 2002-05-30
+#> 7062   JACKSGUL     NSW1     GENERATOR  NON-SCHEDULED 2003-07-01 2003-10-22
+#> 7063    EASTCRK     NSW1     GENERATOR  NON-SCHEDULED 2013-01-01 2013-07-01
+#> 7064   JACKSGUL     NSW1     GENERATOR  NON-SCHEDULED 2011-04-14 2011-07-01
+#> 7065    EASTCRK     NSW1     GENERATOR  NON-SCHEDULED 2006-11-01 2006-11-02
+#> 7066    GERMCRK     QLD1     GENERATOR  NON-SCHEDULED 2006-11-01 2006-11-02
+#> 7067   JACKSGUL     NSW1     GENERATOR  NON-SCHEDULED 2012-10-27 2012-12-14
+#> 7068     ERG_AS     QLD1          LOAD  NON-SCHEDULED 2000-07-01 2001-05-31
+#> 7069     WGULLY     NSW1     GENERATOR  NON-SCHEDULED 2001-07-01 2002-04-01
+#> 7070    EASTCRK     NSW1     GENERATOR  NON-SCHEDULED 2007-01-16 2007-01-22
+#> 7071   GRANGEAV     NSW1     GENERATOR  NON-SCHEDULED 2008-02-04 2008-07-01
+#> 7072   GRANGEAV     NSW1     GENERATOR  NON-SCHEDULED 2007-03-08 2007-04-11
+#> 7073   JACKSGUL     NSW1     GENERATOR  NON-SCHEDULED 2008-07-01 2009-07-01
+#> 7074     ERG_AS     QLD1          LOAD  NON-SCHEDULED 2006-11-06 2006-12-07
+#> 7075   JACKSGUL     NSW1     GENERATOR  NON-SCHEDULED 2007-07-01 2008-02-04
+#> 7076    EASTCRK     NSW1     GENERATOR  NON-SCHEDULED 2010-07-01 2011-04-14
+#> 7077   KRCCOGEN     QLD1     GENERATOR  NON-SCHEDULED 2007-03-08 2007-04-11
+#> 7078    EASTCRK     NSW1     GENERATOR  NON-SCHEDULED 2008-02-04 2008-07-01
+#> 7079   KRCCOGEN     QLD1     GENERATOR  NON-SCHEDULED 2007-07-01 2008-02-04
+#> 7080   JACKSGUL     NSW1     GENERATOR  NON-SCHEDULED 2011-07-01 2012-07-01
+#> 7081   GRANGEAV     NSW1     GENERATOR  NON-SCHEDULED 2007-04-11 2007-07-01
+#> 7082    EASTCRK     NSW1     GENERATOR  NON-SCHEDULED 2007-04-11 2007-07-01
+#> 7083    EASTCRK     NSW1     GENERATOR  NON-SCHEDULED 2009-07-01 2009-09-04
+#> 7084    EASTCRK     NSW1     GENERATOR  NON-SCHEDULED 2006-07-01 2006-11-01
+#> 7085    GERMCRK     QLD1     GENERATOR  NON-SCHEDULED 2007-01-22 2007-03-08
+#> 7086     WGULLY     NSW1     GENERATOR  NON-SCHEDULED 2004-07-01 2004-09-28
+#> 7087    GERMCRK     QLD1     GENERATOR  NON-SCHEDULED 2007-01-16 2007-01-22
+#> 7088    EASTCRK     NSW1     GENERATOR  NON-SCHEDULED 2013-08-01 2013-11-08
+#> 7089    EASTCRK     NSW1     GENERATOR  NON-SCHEDULED 2006-11-06 2006-12-07
+#> 7090    GERMCRK     QLD1     GENERATOR  NON-SCHEDULED 2007-04-11 2007-07-01
+#> 7091    EASTCRK     NSW1     GENERATOR  NON-SCHEDULED 2004-09-28 2005-06-08
+#> 7092     WGULLY     NSW1     GENERATOR  NON-SCHEDULED 2002-07-01 2003-07-01
+#> 7093   JACKSGUL     NSW1     GENERATOR  NON-SCHEDULED 2009-07-01 2009-09-04
+#> 7094    EASTCRK     NSW1     GENERATOR  NON-SCHEDULED 2005-06-08 2005-07-01
+#> 7095    EASTCRK     NSW1     GENERATOR  NON-SCHEDULED 2002-05-30 2002-07-01
+#> 7096     WGULLY     NSW1     GENERATOR  NON-SCHEDULED 2004-05-19 2004-07-01
+#> 7097   KRCCOGEN     QLD1     GENERATOR  NON-SCHEDULED 2007-04-11 2007-07-01
+#> 7098     ERG_AS     QLD1          LOAD  NON-SCHEDULED 2000-01-14 2000-07-01
+#> 7099    EASTCRK     NSW1     GENERATOR  NON-SCHEDULED 2013-11-08 2013-12-15
+#> 7100   BROOKLYN     VIC1     GENERATOR  NON-SCHEDULED 2012-07-01 2012-12-14
+#> 7101    EASTCRK     NSW1     GENERATOR  NON-SCHEDULED 2007-01-22 2007-03-08
+#> 7102     WGULLY     NSW1     GENERATOR  NON-SCHEDULED 2000-07-01 2001-05-31
+#> 7103   JACKSGUL     NSW1     GENERATOR  NON-SCHEDULED 2013-01-01 2013-07-01
+#> 7104    EASTCRK     NSW1     GENERATOR  NON-SCHEDULED 2012-12-14 2013-01-01
+#> 7105   JACKSGUL     NSW1     GENERATOR  NON-SCHEDULED 2001-07-01 2002-04-01
+#> 7106    GERMCRK     QLD1     GENERATOR  NON-SCHEDULED 2006-12-07 2007-01-16
+#> 7107     ERG_AS     QLD1          LOAD  NON-SCHEDULED 1999-10-14 2000-01-14
+#> 7108   JACKSGUL     NSW1     GENERATOR  NON-SCHEDULED 2007-04-11 2007-07-01
+#> 7109   JACKSGUL     NSW1     GENERATOR  NON-SCHEDULED 2002-07-01 2003-07-01
+#> 7110   JACKSGUL     NSW1     GENERATOR  NON-SCHEDULED 2002-05-30 2002-07-01
+#> 7111    GERMCRK     QLD1     GENERATOR  NON-SCHEDULED 2007-07-01 2008-02-04
 #> 7112     WGULLY     NSW1     GENERATOR  NON-SCHEDULED 2002-05-30 2002-07-01
-#> 7113    EASTCRK     NSW1     GENERATOR  NON-SCHEDULED 2007-03-08 2007-04-11
-#> 7114    EASTCRK     NSW1     GENERATOR  NON-SCHEDULED 2011-04-14 2011-07-01
-#> 7115   GRANGEAV     NSW1     GENERATOR  NON-SCHEDULED 2009-09-04 2010-07-01
-#> 10381  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2011-04-14 2011-07-01
-#> 10382  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2007-01-16 2007-07-01
-#> 10383  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2018-07-01 2019-07-01
-#> 10384  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2000-07-01 2001-07-01
-#> 10385  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2001-09-13 2002-04-01
-#> 10386  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2007-07-01 2008-07-01
-#> 10387  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2007-07-01 2008-07-01
-#> 10388  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2006-07-01 2007-01-16
-#> 10389  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2016-07-01 2017-07-01
-#> 10390  LOYYANGA     VIC1     GENERATOR      SCHEDULED 1999-07-01 2000-07-01
-#> 10391  LOYYANGA     VIC1     GENERATOR  NON-SCHEDULED 2004-04-08 2004-06-08
-#> 10392  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2017-07-01 2018-07-01
-#> 10393  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2002-07-01 2002-07-09
-#> 10394  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2019-07-01 2020-07-01
-#> 10395  LOYYANGA     VIC1     GENERATOR  NON-SCHEDULED 2004-06-08 2004-07-01
-#> 10396  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2006-07-01 2007-01-16
-#> 10397  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2001-07-01 2001-09-04
-#> 10398  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2024-07-01 2025-07-01
-#> 10399  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2004-06-08 2004-07-01
-#> 10400  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2013-07-01 2014-03-20
-#> 10401  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2014-07-01 2014-12-17
-#> 10402  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2004-07-01 2005-07-01
-#> 10403  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2022-07-01 2023-07-01
-#> 10404  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2011-01-18 2011-04-14
-#> 10405  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2010-10-27 2011-01-18
-#> 10406  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2002-04-01 2002-07-01
-#> 10407  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2007-01-16 2007-07-01
-#> 10408  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2001-09-04 2001-09-13
-#> 10409  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2017-07-01 2018-07-01
-#> 10410  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2012-10-05 2013-07-01
-#> 10411  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2007-07-01 2008-07-01
-#> 10412  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2009-07-01 2010-07-01
-#> 10413  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2023-07-01 2024-06-03
-#> 10414  LOYYANGA     VIC1     GENERATOR  NON-SCHEDULED 2004-02-03 2004-04-08
-#> 10415  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2012-07-01 2012-10-05
-#> 10416  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2013-07-01 2014-07-01
-#> 10417  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2002-04-01 2002-07-01
-#> 10418  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2010-10-27 2011-01-18
+#> 7113    GERMCRK     QLD1     GENERATOR  NON-SCHEDULED 2009-07-01 2009-09-04
+#> 7114    EASTCRK     NSW1     GENERATOR  NON-SCHEDULED 2006-11-02 2006-11-06
+#> 7115    GERMCRK     QLD1     GENERATOR  NON-SCHEDULED 2006-11-02 2006-11-06
+#> 7116    EASTCRK     NSW1     GENERATOR  NON-SCHEDULED 2005-07-01 2005-11-23
+#> 7117   JACKSGUL     NSW1     GENERATOR  NON-SCHEDULED 2012-07-01 2012-10-27
+#> 7118    EASTCRK     NSW1     GENERATOR  NON-SCHEDULED 2011-04-14 2011-07-01
+#> 7119    EASTCRK     NSW1     GENERATOR  NON-SCHEDULED 2007-03-08 2007-04-11
+#> 7120   GRANGEAV     NSW1     GENERATOR  NON-SCHEDULED 2009-09-04 2010-07-01
+#> 10388  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2011-04-14 2011-07-01
+#> 10389  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2007-01-16 2007-07-01
+#> 10390  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2001-09-13 2002-04-01
+#> 10391  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2006-07-01 2007-01-16
+#> 10392  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2016-07-01 2017-07-01
+#> 10393  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2017-07-01 2018-07-01
+#> 10394  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2000-07-01 2001-07-01
+#> 10395  LOYYANGA     VIC1     GENERATOR      SCHEDULED 1999-07-01 2000-07-01
+#> 10396  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2007-07-01 2008-07-01
+#> 10397  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2007-07-01 2008-07-01
+#> 10398  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2001-07-01 2001-09-04
+#> 10399  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2024-07-01 2025-07-01
+#> 10400  LOYYANGA     VIC1     GENERATOR  NON-SCHEDULED 2004-06-08 2004-07-01
+#> 10401  LOYYANGA     VIC1     GENERATOR  NON-SCHEDULED 2004-04-08 2004-06-08
+#> 10402  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2014-07-01 2014-12-17
+#> 10403  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2004-07-01 2005-07-01
+#> 10404  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2022-07-01 2023-07-01
+#> 10405  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2011-01-18 2011-04-14
+#> 10406  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2010-10-27 2011-01-18
+#> 10407  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2006-07-01 2007-01-16
+#> 10408  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2018-07-01 2019-07-01
+#> 10409  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2004-06-08 2004-07-01
+#> 10410  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2013-07-01 2014-03-20
+#> 10411  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2012-10-05 2013-07-01
+#> 10412  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2007-07-01 2008-07-01
+#> 10413  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2009-07-01 2010-07-01
+#> 10414  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2023-07-01 2024-06-03
+#> 10415  LOYYANGA     VIC1     GENERATOR  NON-SCHEDULED 2004-02-03 2004-04-08
+#> 10416  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2012-07-01 2012-10-05
+#> 10417  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2013-07-01 2014-07-01
+#> 10418  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2002-04-01 2002-07-01
 #> 10419  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2010-10-27 2011-01-18
-#> 10420  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2011-07-01 2012-07-01
-#> 10421  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2004-04-08 2004-06-08
-#> 10422  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2026-07-01 2999-12-31
-#> 10423  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2002-07-09 2003-03-25
-#> 10424  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2004-02-03 2004-04-08
-#> 10425  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2003-12-23 2004-01-15
-#> 10426  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2011-07-01 2012-07-01
-#> 10427  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2010-07-01 2010-10-27
-#> 10428  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2015-07-01 2016-07-01
-#> 10429  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2006-07-01 2007-01-16
-#> 10430  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2004-07-01 2005-07-01
-#> 10431  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2002-04-01 2002-07-01
-#> 10432  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2020-07-01 2021-07-01
-#> 10433  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2011-01-18 2011-04-14
-#> 10434  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2004-07-01 2005-07-01
-#> 10435  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2023-07-01 2024-06-03
-#> 10436  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2024-06-03 2024-07-01
-#> 10437  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2016-07-01 2017-07-01
-#> 10438  LOYYANGA     VIC1     GENERATOR      SCHEDULED 1998-10-25 1999-07-01
-#> 10439  LOYYANGA     VIC1     GENERATOR  NON-SCHEDULED 2001-09-04 2002-04-01
-#> 10440  LOYYANGA     VIC1     GENERATOR  NON-SCHEDULED 2003-12-23 2004-01-15
-#> 10441  LOYYANGA     VIC1     GENERATOR  NON-SCHEDULED 2004-01-15 2004-02-03
-#> 10442  LOYYANGA     VIC1     GENERATOR  NON-SCHEDULED 2026-07-01 2999-12-31
-#> 10443  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2008-07-01 2009-07-01
-#> 10444  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2014-03-20 2014-07-01
-#> 10445  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2010-07-01 2010-10-27
-#> 10446  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2025-07-01 2026-07-01
-#> 10447  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2005-07-01 2006-07-01
-#> 10448  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2004-06-08 2004-07-01
-#> 10449  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2022-07-01 2023-07-01
-#> 10450  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2004-01-15 2004-02-03
-#> 10451  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2012-10-05 2013-07-01
-#> 10452  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2013-07-01 2014-07-01
-#> 10453  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2012-07-01 2012-10-05
-#> 10454  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2014-12-17 2015-07-01
-#> 10455  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2004-06-08 2004-07-01
-#> 10456  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2007-05-24 2007-07-01
-#> 10457  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2025-07-01 2026-07-01
-#> 10458  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2012-10-05 2013-07-01
-#> 10459  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2019-07-01 2020-07-01
-#> 10460  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2011-04-14 2011-07-01
-#> 10461  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2002-04-01 2002-07-01
-#> 10462  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2005-07-01 2006-07-01
-#> 10463  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2002-07-09 2003-03-25
-#> 10464  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2021-07-01 2022-07-01
-#> 10465  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2023-07-01 2024-06-03
-#> 10466  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2003-07-01 2003-12-23
-#> 10467  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2004-04-08 2004-06-08
-#> 10468  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2004-02-03 2004-04-08
-#> 10469  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2004-01-15 2004-02-03
-#> 10470  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2005-07-01 2006-07-01
-#> 10471  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2026-07-01 2999-12-31
-#> 10472  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2025-07-01 2026-07-01
-#> 10473  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2011-01-18 2011-04-14
-#> 10474  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2021-07-01 2022-07-01
-#> 10475  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2001-09-04 2001-09-13
-#> 10476  LOYYANGA     VIC1     GENERATOR  NON-SCHEDULED 2003-03-25 2003-07-01
-#> 10477  LOYYANGA     VIC1     GENERATOR  NON-SCHEDULED 2001-07-01 2001-09-04
-#> 10478  LOYYANGA     VIC1     GENERATOR  NON-SCHEDULED 2000-07-01 2001-07-01
-#> 10479  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2012-07-01 2012-10-05
-#> 10480  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2016-07-01 2017-07-01
-#> 10481  LOYYANGA     VIC1     GENERATOR  NON-SCHEDULED 2003-07-01 2003-12-23
-#> 10482  LOYYANGA     VIC1     GENERATOR  NON-SCHEDULED 1999-07-01 2000-07-01
-#> 10483  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2004-07-01 2005-07-01
-#> 10484  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2025-07-01 2026-07-01
-#> 10485  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2015-07-01 2016-07-01
-#> 10486  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2011-07-01 2011-11-07
-#> 10487  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2002-07-09 2003-03-25
-#> 10488  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2003-03-25 2003-07-01
-#> 10489  LOYYANGA     VIC1     GENERATOR  NON-SCHEDULED 2011-04-14 2011-07-01
-#> 10490  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2009-07-01 2010-07-01
-#> 10491  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2010-10-27 2011-01-18
-#> 10492  LOYYANGA     VIC1     GENERATOR  NON-SCHEDULED 2023-07-01 2024-07-01
-#> 10493  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2002-07-01 2002-07-09
-#> 10494  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2015-07-01 2016-07-01
-#> 10495  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2014-07-01 2015-07-01
-#> 10496  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2015-07-01 2016-07-01
-#> 10497  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2004-02-03 2004-04-08
-#> 10498  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2026-07-01 2999-12-31
-#> 10499  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2011-07-01 2012-07-01
-#> 10500  LOYYANGA     VIC1     GENERATOR  NON-SCHEDULED 2012-10-05 2013-07-01
-#> 10501  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2001-07-01 2001-09-04
-#> 10502  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2024-07-01 2025-07-01
-#> 10503  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2001-07-01 2001-09-04
-#> 10504  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2000-07-01 2001-07-01
-#> 10505  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2002-07-01 2002-07-09
-#> 10506  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2004-01-15 2004-02-03
-#> 10507  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2003-03-25 2003-07-01
-#> 10508  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2001-09-13 2002-04-01
-#> 10509  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2024-07-01 2025-07-01
-#> 10510  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2000-07-01 2001-07-01
-#> 10511  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2022-07-01 2023-07-01
-#> 10512  LOYYANGA     VIC1     GENERATOR  NON-SCHEDULED 2012-07-01 2012-10-05
-#> 10513  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2019-07-01 2020-07-01
-#> 10514  LOYYANGA     VIC1     GENERATOR  NON-SCHEDULED 2002-07-09 2003-03-25
-#> 10515  LOYYANGA     VIC1     GENERATOR  NON-SCHEDULED 1998-10-25 1999-07-01
-#> 10516  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2002-07-09 2003-03-25
-#> 10517  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2004-06-08 2004-07-01
-#> 10518  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2003-07-01 2003-12-23
-#> 10519  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2019-07-01 2020-07-01
-#> 10520  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2008-07-01 2009-07-01
-#> 10521  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2007-01-16 2007-05-24
-#> 10522  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2004-04-08 2004-06-08
-#> 10523  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2013-07-01 2014-07-01
-#> 10524  LOYYANGA     VIC1     GENERATOR  NON-SCHEDULED 2015-07-01 2016-07-01
-#> 10525  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2014-07-01 2015-07-01
-#> 10526  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2008-07-01 2009-07-01
-#> 10527  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2007-07-01 2008-07-01
-#> 10528  LOYYANGA     VIC1     GENERATOR  NON-SCHEDULED 2011-07-01 2012-07-01
-#> 10529  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2008-11-15 2009-07-01
-#> 10530  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2000-07-01 2001-07-01
-#> 10531  LOYYANGA     VIC1     GENERATOR      SCHEDULED 1998-10-25 1999-07-01
-#> 10532  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2003-03-25 2003-07-01
-#> 10533  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2021-07-01 2022-07-01
-#> 10534  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2001-09-04 2001-09-13
-#> 10535  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2024-06-03 2024-07-01
-#> 10536  LOYYANGA     VIC1     GENERATOR  NON-SCHEDULED 2013-07-01 2014-07-01
-#> 10537  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2003-12-23 2004-01-15
-#> 10538  LOYYANGA     VIC1     GENERATOR      SCHEDULED 1999-07-01 2000-07-01
-#> 10539  LOYYANGA     VIC1     GENERATOR  NON-SCHEDULED 2017-07-01 2018-07-01
-#> 10540  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2018-07-01 2019-07-01
-#> 10541  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2014-07-01 2015-07-01
-#> 10542  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2024-06-03 2024-07-01
-#> 10543  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2018-07-01 2019-07-01
-#> 10544  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2003-07-01 2003-12-09
-#> 10545  LOYYANGA     VIC1     GENERATOR  NON-SCHEDULED 2018-07-01 2019-07-01
-#> 10546  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2011-11-07 2012-07-01
-#> 10547  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2003-12-23 2004-01-15
-#> 10548  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2016-07-01 2017-07-01
-#> 10549  LOYYANGA     VIC1     GENERATOR  NON-SCHEDULED 2024-07-01 2025-07-01
-#> 10550  LOYYANGA     VIC1     GENERATOR  NON-SCHEDULED 2009-07-01 2010-07-01
-#> 10551  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2003-03-25 2003-07-01
-#> 10552  LOYYANGA     VIC1     GENERATOR  NON-SCHEDULED 2025-07-01 2026-07-01
-#> 10553  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2004-02-03 2004-04-08
-#> 10554  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2020-07-01 2021-07-01
-#> 10555  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2004-04-08 2004-06-08
-#> 10556  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2003-12-23 2004-01-15
-#> 10557  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2023-07-01 2024-06-03
-#> 10558  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2003-12-09 2003-12-23
-#> 10559  LOYYANGA     VIC1     GENERATOR      SCHEDULED 1999-07-01 2000-07-01
-#> 10560  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2001-09-13 2002-04-01
-#> 10561  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2022-07-01 2023-07-01
-#> 10562  LOYYANGA     VIC1     GENERATOR  NON-SCHEDULED 2016-07-01 2017-07-01
-#> 10563  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2011-04-14 2011-07-01
-#> 10564  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2012-10-05 2013-07-01
-#> 10565  LOYYANGA     VIC1     GENERATOR  NON-SCHEDULED 2007-01-16 2007-07-01
-#> 10566  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2011-04-14 2011-07-01
-#> 10567  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2011-01-18 2011-04-14
-#> 10568  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2007-01-16 2007-06-05
-#> 10569  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2010-07-01 2010-10-27
-#> 10570  LOYYANGA     VIC1     GENERATOR  NON-SCHEDULED 2019-07-01 2020-07-01
-#> 10571  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2007-06-05 2007-07-01
-#> 10572  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2001-09-13 2002-04-01
-#> 10573  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2009-07-01 2010-07-01
-#> 10574  LOYYANGA     VIC1     GENERATOR  NON-SCHEDULED 2004-07-01 2005-07-01
-#> 10575  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2024-07-01 2025-07-01
-#> 10576  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2012-07-01 2012-10-05
-#> 10577  LOYYANGA     VIC1     GENERATOR  NON-SCHEDULED 2014-07-01 2015-07-01
-#> 10578  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2026-07-01 2999-12-31
-#> 10579  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2020-07-01 2021-07-01
-#> 10580  LOYYANGA     VIC1     GENERATOR  NON-SCHEDULED 2007-07-01 2008-07-01
-#> 10581  LOYYANGA     VIC1     GENERATOR      SCHEDULED 1999-07-01 2000-07-01
-#> 10582  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2020-07-01 2021-07-01
-#> 10583  LOYYANGA     VIC1     GENERATOR  NON-SCHEDULED 2002-04-01 2002-07-01
-#> 10584  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2017-07-01 2018-07-01
-#> 10585  LOYYANGA     VIC1     GENERATOR  NON-SCHEDULED 2021-07-01 2022-07-01
-#> 10586  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2001-07-01 2001-09-04
-#> 10587  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2003-07-01 2003-12-23
-#> 10588  LOYYANGA     VIC1     GENERATOR      SCHEDULED 1998-10-25 1999-07-01
-#> 10589  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2009-07-01 2010-07-01
-#> 10590  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2004-01-15 2004-02-03
-#> 10591  LOYYANGA     VIC1     GENERATOR  NON-SCHEDULED 2005-07-01 2006-07-01
-#> 10592  LOYYANGA     VIC1     GENERATOR  NON-SCHEDULED 2008-07-01 2009-07-01
-#> 10593  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2017-07-01 2018-07-01
-#> 10594  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2002-07-01 2002-07-09
-#> 10595  LOYYANGA     VIC1     GENERATOR  NON-SCHEDULED 2002-07-01 2002-07-09
-#> 10596  LOYYANGA     VIC1     GENERATOR  NON-SCHEDULED 2022-07-01 2023-07-01
-#> 10597  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2018-07-01 2019-07-01
-#> 10598  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2001-09-04 2001-09-13
-#> 10599  LOYYANGA     VIC1     GENERATOR  NON-SCHEDULED 2010-07-01 2011-04-14
-#> 10600  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2008-07-01 2008-11-15
-#> 10601  LOYYANGA     VIC1     GENERATOR  NON-SCHEDULED 2020-07-01 2021-07-01
-#> 10602  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2006-07-01 2007-01-16
-#> 10603  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2010-07-01 2010-10-27
-#> 10604  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2024-06-03 2024-07-01
-#> 10605  LOYYANGA     VIC1     GENERATOR      SCHEDULED 1998-10-25 1999-07-01
-#> 10606  LOYYANGA     VIC1     GENERATOR  NON-SCHEDULED 2006-07-01 2007-01-16
-#> 10607  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2005-07-01 2006-07-01
-#> 10608  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2021-07-01 2022-07-01
-#> 10769     BAYSW     NSW1     GENERATOR      SCHEDULED 2024-11-08 2025-07-01
-#> 10770   LIDDELL     NSW1     GENERATOR      SCHEDULED 2005-05-31 2005-07-01
-#> 10771     BAYSW     NSW1     GENERATOR      SCHEDULED 2000-07-01 2000-09-11
-#> 10772     BAYSW     NSW1     GENERATOR      SCHEDULED 2000-07-01 2000-09-11
-#> 10773     BAYSW     NSW1     GENERATOR      SCHEDULED 1999-07-01 2000-07-01
-#> 10774     BAYSW     NSW1     GENERATOR      SCHEDULED 2024-06-03 2024-07-01
-#> 10775     BAYSW     NSW1     GENERATOR      SCHEDULED 2024-06-03 2024-07-01
-#> 10776   LIDDELL     NSW1     GENERATOR  NON-SCHEDULED 2011-04-14 2011-07-01
-#> 10777   LIDDELL     NSW1     GENERATOR  NON-SCHEDULED 2010-07-01 2011-04-14
-#> 10778   LIDDELL     NSW1     GENERATOR      SCHEDULED 2009-09-10 2009-10-01
-#> 10779   LIDDELL     NSW1     GENERATOR      SCHEDULED 2014-09-03 2015-07-01
-#> 10780   LIDDELL     NSW1     GENERATOR      SCHEDULED 2022-07-01 2023-05-01
-#> 10781     BAYSW     NSW1     GENERATOR      SCHEDULED 2024-11-08 2025-07-01
-#> 10782     BAYSW     NSW1     GENERATOR      SCHEDULED 2001-07-01 2001-09-12
-#> 10783     BAYSW     NSW1     GENERATOR      SCHEDULED 2019-07-01 2020-07-01
-#> 10784    TOMAGO     NSW1          LOAD  NON-SCHEDULED 2009-07-01 2009-09-10
-#> 10785     BAYSW     NSW1     GENERATOR      SCHEDULED 2026-07-01 2999-12-31
-#> 10786    TOMAGO     NSW1          LOAD  NON-SCHEDULED 2004-07-01 2005-07-01
-#> 10787   HUNTVGT     NSW1     GENERATOR      SCHEDULED 2017-07-01 2018-07-01
-#> 10788     BAYSW     NSW1     GENERATOR      SCHEDULED 2021-07-01 2022-03-15
-#> 10789   HUNTVGT     NSW1     GENERATOR      SCHEDULED 2011-04-14 2011-07-01
-#> 10790     BAYSW     NSW1     GENERATOR      SCHEDULED 1998-10-25 1999-07-01
-#> 10791     BAYSW     NSW1     GENERATOR      SCHEDULED 2023-07-01 2023-11-28
-#> 10792    TOMAGO     NSW1          LOAD  NON-SCHEDULED 2009-03-20 2009-07-01
-#> 10793     BAYSW     NSW1     GENERATOR      SCHEDULED 2025-07-01 2025-09-16
-#> 10794   LIDDELL     NSW1     GENERATOR      SCHEDULED 1998-10-25 1999-07-01
-#> 10795   HUNTVGT     NSW1     GENERATOR      SCHEDULED 2011-01-18 2011-04-14
-#> 10796   LIDDELL     NSW1     GENERATOR      SCHEDULED 1999-07-01 2000-07-01
-#> 10797   HUNTVGT     NSW1     GENERATOR      SCHEDULED 2012-07-01 2013-07-01
-#> 10798   LIDDELL     NSW1     GENERATOR      SCHEDULED 2001-10-09 2002-04-01
-#> 10799   LIDDELL     NSW1     GENERATOR  NON-SCHEDULED 2009-07-01 2009-09-10
-#> 10800   LIDDELL     NSW1     GENERATOR      SCHEDULED 2012-07-01 2013-07-01
-#> 10801   LIDDELL     NSW1     GENERATOR      SCHEDULED 2002-04-01 2002-07-01
-#> 10802     BAYSW     NSW1     GENERATOR      SCHEDULED 2025-07-01 2025-09-16
-#> 10803   LIDDELL     NSW1     GENERATOR  NON-SCHEDULED 2007-07-01 2008-07-01
-#> 10804   LIDDELL     NSW1     GENERATOR      SCHEDULED 2010-10-27 2011-01-18
-#> 10805     BAYSW     NSW1     GENERATOR      SCHEDULED 2012-07-01 2013-07-01
-#> 10806     BAYSW     NSW1     GENERATOR      SCHEDULED 2016-07-01 2017-07-01
-#> 10807   LIDDELL     NSW1     GENERATOR      SCHEDULED 2000-12-19 2001-07-01
-#> 10808   HUNTVGT     NSW1     GENERATOR      SCHEDULED 2010-07-01 2010-10-27
-#> 10809   LIDDELL     NSW1     GENERATOR      SCHEDULED 2014-07-01 2014-09-03
-#> 10810   LIDDELL     NSW1     GENERATOR      SCHEDULED 2002-04-01 2002-07-01
-#> 10811     BAYSW     NSW1     GENERATOR      SCHEDULED 2000-12-19 2001-07-01
-#> 10812   LIDDELL     NSW1     GENERATOR      SCHEDULED 2022-03-15 2022-04-01
-#> 10813   LIDDELL     NSW1     GENERATOR      SCHEDULED 2002-07-01 2003-07-01
-#> 10814   LIDDELL     NSW1     GENERATOR  NON-SCHEDULED 2011-07-01 2012-07-01
-#> 10815     BAYSW     NSW1     GENERATOR      SCHEDULED 2023-07-01 2023-11-28
-#> 10816     BAYSW     NSW1     GENERATOR      SCHEDULED 2014-09-03 2015-07-01
-#> 10817   LIDDELL     NSW1     GENERATOR  NON-SCHEDULED 2006-07-01 2007-01-16
-#> 10818     BAYSW     NSW1     GENERATOR      SCHEDULED 2013-07-01 2014-07-01
-#> 10819   LIDDELL     NSW1     GENERATOR      SCHEDULED 1999-07-01 2000-07-01
-#> 10820     BAYSW     NSW1     GENERATOR      SCHEDULED 2019-07-01 2020-07-01
-#> 10821     BAYSW     NSW1     GENERATOR      SCHEDULED 2017-07-01 2018-07-01
-#> 10822   LIDDELL     NSW1     GENERATOR      SCHEDULED 2000-07-01 2000-09-11
-#> 10823     BAYSW     NSW1     GENERATOR      SCHEDULED 2001-10-09 2002-04-01
-#> 10824   HUNTVGT     NSW1     GENERATOR      SCHEDULED 2018-07-01 2019-07-01
-#> 10825     BAYSW     NSW1     GENERATOR      SCHEDULED 2000-09-11 2000-12-19
-#> 10826     BAYSW     NSW1     GENERATOR      SCHEDULED 2024-07-01 2024-11-08
-#> 10827     BAYSW     NSW1     GENERATOR      SCHEDULED 2020-07-01 2021-07-01
-#> 10828     BAYSW     NSW1     GENERATOR      SCHEDULED 2022-07-01 2023-07-01
-#> 10829     BAYSW     NSW1     GENERATOR      SCHEDULED 2020-07-01 2021-07-01
-#> 10830   HUNTVGT     NSW1     GENERATOR      SCHEDULED 2013-07-01 2014-07-01
-#> 10831    TOMAGO     NSW1          LOAD  NON-SCHEDULED 2000-07-01 2000-09-11
-#> 10832   LIDDELL     NSW1     GENERATOR      SCHEDULED 2002-04-01 2002-07-01
-#> 10833    TOMAGO     NSW1          LOAD  NON-SCHEDULED 2000-12-19 2001-07-01
-#> 10834   LIDDELL     NSW1     GENERATOR      SCHEDULED 2011-04-14 2011-07-01
-#> 10835   LIDDELL     NSW1     GENERATOR      SCHEDULED 2000-09-11 2000-12-19
-#> 10836   LIDDELL     NSW1     GENERATOR      SCHEDULED 2011-07-01 2012-07-01
-#> 10837     BAYSW     NSW1     GENERATOR      SCHEDULED 2026-07-01 2999-12-31
+#> 10420  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2002-04-01 2002-07-01
+#> 10421  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2002-07-01 2002-07-09
+#> 10422  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2001-09-04 2001-09-13
+#> 10423  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2017-07-01 2018-07-01
+#> 10424  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2002-07-09 2003-03-25
+#> 10425  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2004-02-03 2004-04-08
+#> 10426  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2003-12-23 2004-01-15
+#> 10427  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2011-07-01 2012-07-01
+#> 10428  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2010-07-01 2010-10-27
+#> 10429  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2015-07-01 2016-07-01
+#> 10430  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2006-07-01 2007-01-16
+#> 10431  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2004-07-01 2005-07-01
+#> 10432  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2002-04-01 2002-07-01
+#> 10433  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2010-10-27 2011-01-18
+#> 10434  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2011-07-01 2012-07-01
+#> 10435  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2019-07-01 2020-07-01
+#> 10436  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2004-04-08 2004-06-08
+#> 10437  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2024-06-03 2024-07-01
+#> 10438  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2016-07-01 2017-07-01
+#> 10439  LOYYANGA     VIC1     GENERATOR      SCHEDULED 1998-10-25 1999-07-01
+#> 10440  LOYYANGA     VIC1     GENERATOR  NON-SCHEDULED 2001-09-04 2002-04-01
+#> 10441  LOYYANGA     VIC1     GENERATOR  NON-SCHEDULED 2003-12-23 2004-01-15
+#> 10442  LOYYANGA     VIC1     GENERATOR  NON-SCHEDULED 2004-01-15 2004-02-03
+#> 10443  LOYYANGA     VIC1     GENERATOR  NON-SCHEDULED 2026-07-01 2999-12-31
+#> 10444  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2008-07-01 2009-07-01
+#> 10445  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2014-03-20 2014-07-01
+#> 10446  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2020-07-01 2021-07-01
+#> 10447  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2011-01-18 2011-04-14
+#> 10448  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2007-01-16 2007-07-01
+#> 10449  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2023-07-01 2024-06-03
+#> 10450  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2022-07-01 2023-07-01
+#> 10451  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2004-01-15 2004-02-03
+#> 10452  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2012-10-05 2013-07-01
+#> 10453  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2013-07-01 2014-07-01
+#> 10454  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2012-07-01 2012-10-05
+#> 10455  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2014-12-17 2015-07-01
+#> 10456  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2004-06-08 2004-07-01
+#> 10457  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2007-05-24 2007-07-01
+#> 10458  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2025-07-01 2026-07-01
+#> 10459  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2010-07-01 2010-10-27
+#> 10460  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2025-07-01 2026-07-01
+#> 10461  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2011-04-14 2011-07-01
+#> 10462  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2002-04-01 2002-07-01
+#> 10463  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2004-07-01 2005-07-01
+#> 10464  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2002-07-09 2003-03-25
+#> 10465  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2021-07-01 2022-07-01
+#> 10466  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2023-07-01 2024-06-03
+#> 10467  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2003-07-01 2003-12-23
+#> 10468  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2004-04-08 2004-06-08
+#> 10469  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2004-02-03 2004-04-08
+#> 10470  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2004-01-15 2004-02-03
+#> 10471  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2005-07-01 2006-07-01
+#> 10472  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2012-10-05 2013-07-01
+#> 10473  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2019-07-01 2020-07-01
+#> 10474  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2011-01-18 2011-04-14
+#> 10475  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2005-07-01 2006-07-01
+#> 10476  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2001-09-04 2001-09-13
+#> 10477  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2004-06-08 2004-07-01
+#> 10478  LOYYANGA     VIC1     GENERATOR  NON-SCHEDULED 2001-07-01 2001-09-04
+#> 10479  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2026-07-01 2999-12-31
+#> 10480  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2012-07-01 2012-10-05
+#> 10481  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2016-07-01 2017-07-01
+#> 10482  LOYYANGA     VIC1     GENERATOR  NON-SCHEDULED 2003-07-01 2003-12-23
+#> 10483  LOYYANGA     VIC1     GENERATOR  NON-SCHEDULED 1999-07-01 2000-07-01
+#> 10484  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2004-07-01 2005-07-01
+#> 10485  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2025-07-01 2026-07-01
+#> 10486  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2025-07-01 2026-07-01
+#> 10487  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2011-07-01 2011-11-07
+#> 10488  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2002-07-09 2003-03-25
+#> 10489  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2021-07-01 2022-07-01
+#> 10490  LOYYANGA     VIC1     GENERATOR  NON-SCHEDULED 2011-04-14 2011-07-01
+#> 10491  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2009-07-01 2010-07-01
+#> 10492  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2010-10-27 2011-01-18
+#> 10493  LOYYANGA     VIC1     GENERATOR  NON-SCHEDULED 2023-07-01 2024-07-01
+#> 10494  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2002-07-01 2002-07-09
+#> 10495  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2015-07-01 2016-07-01
+#> 10496  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2014-07-01 2015-07-01
+#> 10497  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2015-07-01 2016-07-01
+#> 10498  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2004-02-03 2004-04-08
+#> 10499  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2015-07-01 2016-07-01
+#> 10500  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2011-07-01 2012-07-01
+#> 10501  LOYYANGA     VIC1     GENERATOR  NON-SCHEDULED 2012-10-05 2013-07-01
+#> 10502  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2001-07-01 2001-09-04
+#> 10503  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2024-07-01 2025-07-01
+#> 10504  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2001-07-01 2001-09-04
+#> 10505  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2000-07-01 2001-07-01
+#> 10506  LOYYANGA     VIC1     GENERATOR  NON-SCHEDULED 2000-07-01 2001-07-01
+#> 10507  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2004-01-15 2004-02-03
+#> 10508  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2003-03-25 2003-07-01
+#> 10509  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2001-09-13 2002-04-01
+#> 10510  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2024-07-01 2025-07-01
+#> 10511  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2000-07-01 2001-07-01
+#> 10512  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2026-07-01 2999-12-31
+#> 10513  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2026-07-01 2999-12-31
+#> 10514  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2019-07-01 2020-07-01
+#> 10515  LOYYANGA     VIC1     GENERATOR  NON-SCHEDULED 2002-07-09 2003-03-25
+#> 10516  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2003-03-25 2003-07-01
+#> 10517  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2005-07-01 2006-07-01
+#> 10518  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2004-06-08 2004-07-01
+#> 10519  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2003-07-01 2003-12-23
+#> 10520  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2019-07-01 2020-07-01
+#> 10521  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2008-07-01 2009-07-01
+#> 10522  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2007-01-16 2007-05-24
+#> 10523  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2004-04-08 2004-06-08
+#> 10524  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2013-07-01 2014-07-01
+#> 10525  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2022-07-01 2023-07-01
+#> 10526  LOYYANGA     VIC1     GENERATOR  NON-SCHEDULED 2012-07-01 2012-10-05
+#> 10527  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2008-07-01 2009-07-01
+#> 10528  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2007-07-01 2008-07-01
+#> 10529  LOYYANGA     VIC1     GENERATOR  NON-SCHEDULED 2011-07-01 2012-07-01
+#> 10530  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2008-11-15 2009-07-01
+#> 10531  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2000-07-01 2001-07-01
+#> 10532  LOYYANGA     VIC1     GENERATOR      SCHEDULED 1998-10-25 1999-07-01
+#> 10533  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2002-07-01 2002-07-09
+#> 10534  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2021-07-01 2022-07-01
+#> 10535  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2001-09-04 2001-09-13
+#> 10536  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2024-06-03 2024-07-01
+#> 10537  LOYYANGA     VIC1     GENERATOR  NON-SCHEDULED 2013-07-01 2014-07-01
+#> 10538  LOYYANGA     VIC1     GENERATOR  NON-SCHEDULED 2015-07-01 2016-07-01
+#> 10539  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2014-07-01 2015-07-01
+#> 10540  LOYYANGA     VIC1     GENERATOR  NON-SCHEDULED 2017-07-01 2018-07-01
+#> 10541  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2018-07-01 2019-07-01
+#> 10542  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2014-07-01 2015-07-01
+#> 10543  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2024-06-03 2024-07-01
+#> 10544  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2018-07-01 2019-07-01
+#> 10545  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2003-07-01 2003-12-09
+#> 10546  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2003-03-25 2003-07-01
+#> 10547  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2011-11-07 2012-07-01
+#> 10548  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2003-12-23 2004-01-15
+#> 10549  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2016-07-01 2017-07-01
+#> 10550  LOYYANGA     VIC1     GENERATOR  NON-SCHEDULED 2024-07-01 2025-07-01
+#> 10551  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2003-12-23 2004-01-15
+#> 10552  LOYYANGA     VIC1     GENERATOR      SCHEDULED 1999-07-01 2000-07-01
+#> 10553  LOYYANGA     VIC1     GENERATOR  NON-SCHEDULED 2025-07-01 2026-07-01
+#> 10554  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2004-02-03 2004-04-08
+#> 10555  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2020-07-01 2021-07-01
+#> 10556  LOYYANGA     VIC1     GENERATOR  NON-SCHEDULED 1998-10-25 1999-07-01
+#> 10557  LOYYANGA     VIC1     GENERATOR  NON-SCHEDULED 2003-03-25 2003-07-01
+#> 10558  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2023-07-01 2024-06-03
+#> 10559  LOYYANGA     VIC1     GENERATOR  NON-SCHEDULED 2018-07-01 2019-07-01
+#> 10560  LOYYANGA     VIC1     GENERATOR      SCHEDULED 1999-07-01 2000-07-01
+#> 10561  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2001-09-13 2002-04-01
+#> 10562  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2022-07-01 2023-07-01
+#> 10563  LOYYANGA     VIC1     GENERATOR  NON-SCHEDULED 2016-07-01 2017-07-01
+#> 10564  LOYYANGA     VIC1     GENERATOR  NON-SCHEDULED 2009-07-01 2010-07-01
+#> 10565  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2003-03-25 2003-07-01
+#> 10566  LOYYANGA     VIC1     GENERATOR  NON-SCHEDULED 2007-01-16 2007-07-01
+#> 10567  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2011-04-14 2011-07-01
+#> 10568  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2011-01-18 2011-04-14
+#> 10569  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2007-01-16 2007-06-05
+#> 10570  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2010-07-01 2010-10-27
+#> 10571  LOYYANGA     VIC1     GENERATOR  NON-SCHEDULED 2019-07-01 2020-07-01
+#> 10572  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2003-12-09 2003-12-23
+#> 10573  LOYYANGA     VIC1     GENERATOR  NON-SCHEDULED 2002-04-01 2002-07-01
+#> 10574  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2009-07-01 2010-07-01
+#> 10575  LOYYANGA     VIC1     GENERATOR  NON-SCHEDULED 2004-07-01 2005-07-01
+#> 10576  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2024-07-01 2025-07-01
+#> 10577  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2011-04-14 2011-07-01
+#> 10578  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2012-10-05 2013-07-01
+#> 10579  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2026-07-01 2999-12-31
+#> 10580  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2020-07-01 2021-07-01
+#> 10581  LOYYANGA     VIC1     GENERATOR  NON-SCHEDULED 2007-07-01 2008-07-01
+#> 10582  LOYYANGA     VIC1     GENERATOR      SCHEDULED 1999-07-01 2000-07-01
+#> 10583  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2020-07-01 2021-07-01
+#> 10584  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2002-07-09 2003-03-25
+#> 10585  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2007-06-05 2007-07-01
+#> 10586  LOYYANGA     VIC1     GENERATOR  NON-SCHEDULED 2021-07-01 2022-07-01
+#> 10587  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2017-07-01 2018-07-01
+#> 10588  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2003-07-01 2003-12-23
+#> 10589  LOYYANGA     VIC1     GENERATOR      SCHEDULED 1998-10-25 1999-07-01
+#> 10590  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2012-07-01 2012-10-05
+#> 10591  LOYYANGA     VIC1     GENERATOR  NON-SCHEDULED 2014-07-01 2015-07-01
+#> 10592  LOYYANGA     VIC1     GENERATOR  NON-SCHEDULED 2005-07-01 2006-07-01
+#> 10593  LOYYANGA     VIC1     GENERATOR  NON-SCHEDULED 2008-07-01 2009-07-01
+#> 10594  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2009-07-01 2010-07-01
+#> 10595  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2004-01-15 2004-02-03
+#> 10596  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2004-04-08 2004-06-08
+#> 10597  LOYYANGA     VIC1     GENERATOR  NON-SCHEDULED 2022-07-01 2023-07-01
+#> 10598  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2003-12-23 2004-01-15
+#> 10599  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2001-09-04 2001-09-13
+#> 10600  LOYYANGA     VIC1     GENERATOR  NON-SCHEDULED 2010-07-01 2011-04-14
+#> 10601  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2001-09-13 2002-04-01
+#> 10602  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2001-07-01 2001-09-04
+#> 10603  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2002-07-01 2002-07-09
+#> 10604  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2010-07-01 2010-10-27
+#> 10605  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2008-07-01 2008-11-15
+#> 10606  LOYYANGA     VIC1     GENERATOR  NON-SCHEDULED 2002-07-01 2002-07-09
+#> 10607  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2017-07-01 2018-07-01
+#> 10608  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2018-07-01 2019-07-01
+#> 10609  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2024-06-03 2024-07-01
+#> 10610  LOYYANGA     VIC1     GENERATOR  NON-SCHEDULED 2020-07-01 2021-07-01
+#> 10611  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2006-07-01 2007-01-16
+#> 10612  LOYYANGA     VIC1     GENERATOR  NON-SCHEDULED 2006-07-01 2007-01-16
+#> 10613  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2005-07-01 2006-07-01
+#> 10614  LOYYANGA     VIC1     GENERATOR      SCHEDULED 1998-10-25 1999-07-01
+#> 10615  LOYYANGA     VIC1     GENERATOR      SCHEDULED 2021-07-01 2022-07-01
+#> 10776   LIDDELL     NSW1     GENERATOR      SCHEDULED 2005-05-31 2005-07-01
+#> 10777     BAYSW     NSW1     GENERATOR      SCHEDULED 2000-07-01 2000-09-11
+#> 10778   LIDDELL     NSW1     GENERATOR  NON-SCHEDULED 2010-07-01 2011-04-14
+#> 10779     BAYSW     NSW1     GENERATOR      SCHEDULED 1999-07-01 2000-07-01
+#> 10780     BAYSW     NSW1     GENERATOR      SCHEDULED 2000-07-01 2000-09-11
+#> 10781   LIDDELL     NSW1     GENERATOR  NON-SCHEDULED 2011-04-14 2011-07-01
+#> 10782     BAYSW     NSW1     GENERATOR      SCHEDULED 2024-11-08 2025-07-01
+#> 10783   LIDDELL     NSW1     GENERATOR      SCHEDULED 2009-09-10 2009-10-01
+#> 10784   LIDDELL     NSW1     GENERATOR      SCHEDULED 2014-09-03 2015-07-01
+#> 10785     BAYSW     NSW1     GENERATOR      SCHEDULED 2024-11-08 2025-07-01
+#> 10786     BAYSW     NSW1     GENERATOR      SCHEDULED 2026-07-01 2999-12-31
+#> 10787    TOMAGO     NSW1          LOAD  NON-SCHEDULED 2004-07-01 2005-07-01
+#> 10788     BAYSW     NSW1     GENERATOR      SCHEDULED 2024-06-03 2024-07-01
+#> 10789     BAYSW     NSW1     GENERATOR      SCHEDULED 2021-07-01 2022-03-15
+#> 10790     BAYSW     NSW1     GENERATOR      SCHEDULED 2024-06-03 2024-07-01
+#> 10791     BAYSW     NSW1     GENERATOR      SCHEDULED 1998-10-25 1999-07-01
+#> 10792   HUNTVGT     NSW1     GENERATOR      SCHEDULED 2017-07-01 2018-07-01
+#> 10793    TOMAGO     NSW1          LOAD  NON-SCHEDULED 2009-03-20 2009-07-01
+#> 10794    TOMAGO     NSW1          LOAD  NON-SCHEDULED 2009-07-01 2009-09-10
+#> 10795   LIDDELL     NSW1     GENERATOR      SCHEDULED 2022-07-01 2023-05-01
+#> 10796     BAYSW     NSW1     GENERATOR      SCHEDULED 2001-07-01 2001-09-12
+#> 10797     BAYSW     NSW1     GENERATOR      SCHEDULED 2019-07-01 2020-07-01
+#> 10798   HUNTVGT     NSW1     GENERATOR      SCHEDULED 2012-07-01 2013-07-01
+#> 10799   LIDDELL     NSW1     GENERATOR      SCHEDULED 2001-10-09 2002-04-01
+#> 10800   HUNTVGT     NSW1     GENERATOR      SCHEDULED 2011-01-18 2011-04-14
+#> 10801   LIDDELL     NSW1     GENERATOR      SCHEDULED 2012-07-01 2013-07-01
+#> 10802   LIDDELL     NSW1     GENERATOR      SCHEDULED 2002-04-01 2002-07-01
+#> 10803     BAYSW     NSW1     GENERATOR      SCHEDULED 2025-07-01 2025-09-16
+#> 10804   LIDDELL     NSW1     GENERATOR  NON-SCHEDULED 2007-07-01 2008-07-01
+#> 10805     BAYSW     NSW1     GENERATOR      SCHEDULED 2023-07-01 2023-11-28
+#> 10806   LIDDELL     NSW1     GENERATOR      SCHEDULED 1999-07-01 2000-07-01
+#> 10807     BAYSW     NSW1     GENERATOR      SCHEDULED 2016-07-01 2017-07-01
+#> 10808   HUNTVGT     NSW1     GENERATOR      SCHEDULED 2011-04-14 2011-07-01
+#> 10809   HUNTVGT     NSW1     GENERATOR      SCHEDULED 2010-07-01 2010-10-27
+#> 10810   LIDDELL     NSW1     GENERATOR      SCHEDULED 2014-07-01 2014-09-03
+#> 10811   LIDDELL     NSW1     GENERATOR      SCHEDULED 2002-04-01 2002-07-01
+#> 10812     BAYSW     NSW1     GENERATOR      SCHEDULED 2000-12-19 2001-07-01
+#> 10813   LIDDELL     NSW1     GENERATOR  NON-SCHEDULED 2009-07-01 2009-09-10
+#> 10814   LIDDELL     NSW1     GENERATOR      SCHEDULED 2002-07-01 2003-07-01
+#> 10815   LIDDELL     NSW1     GENERATOR  NON-SCHEDULED 2011-07-01 2012-07-01
+#> 10816     BAYSW     NSW1     GENERATOR      SCHEDULED 2025-07-01 2025-09-16
+#> 10817     BAYSW     NSW1     GENERATOR      SCHEDULED 2014-09-03 2015-07-01
+#> 10818   LIDDELL     NSW1     GENERATOR      SCHEDULED 2010-10-27 2011-01-18
+#> 10819     BAYSW     NSW1     GENERATOR      SCHEDULED 2012-07-01 2013-07-01
+#> 10820   LIDDELL     NSW1     GENERATOR      SCHEDULED 1999-07-01 2000-07-01
+#> 10821   LIDDELL     NSW1     GENERATOR      SCHEDULED 1998-10-25 1999-07-01
+#> 10822     BAYSW     NSW1     GENERATOR      SCHEDULED 2017-07-01 2018-07-01
+#> 10823   LIDDELL     NSW1     GENERATOR      SCHEDULED 2000-07-01 2000-09-11
+#> 10824     BAYSW     NSW1     GENERATOR      SCHEDULED 2001-10-09 2002-04-01
+#> 10825   HUNTVGT     NSW1     GENERATOR      SCHEDULED 2018-07-01 2019-07-01
+#> 10826   LIDDELL     NSW1     GENERATOR      SCHEDULED 2022-03-15 2022-04-01
+#> 10827     BAYSW     NSW1     GENERATOR      SCHEDULED 2024-07-01 2024-11-08
+#> 10828     BAYSW     NSW1     GENERATOR      SCHEDULED 2020-07-01 2021-07-01
+#> 10829     BAYSW     NSW1     GENERATOR      SCHEDULED 2023-07-01 2023-11-28
+#> 10830     BAYSW     NSW1     GENERATOR      SCHEDULED 2020-07-01 2021-07-01
+#> 10831   LIDDELL     NSW1     GENERATOR  NON-SCHEDULED 2006-07-01 2007-01-16
+#> 10832     BAYSW     NSW1     GENERATOR      SCHEDULED 2013-07-01 2014-07-01
+#> 10833   LIDDELL     NSW1     GENERATOR      SCHEDULED 2002-04-01 2002-07-01
+#> 10834   LIDDELL     NSW1     GENERATOR      SCHEDULED 2000-12-19 2001-07-01
+#> 10835   LIDDELL     NSW1     GENERATOR      SCHEDULED 2011-04-14 2011-07-01
+#> 10836   LIDDELL     NSW1     GENERATOR      SCHEDULED 2000-09-11 2000-12-19
+#> 10837   LIDDELL     NSW1     GENERATOR      SCHEDULED 2011-07-01 2012-07-01
 #> 10838     BAYSW     NSW1     GENERATOR      SCHEDULED 2026-07-01 2999-12-31
-#> 10839     BAYSW     NSW1     GENERATOR      SCHEDULED 2018-07-01 2019-07-01
-#> 10840   LIDDELL     NSW1     GENERATOR      SCHEDULED 2010-10-27 2011-01-18
-#> 10841    TOMAGO     NSW1          LOAD  NON-SCHEDULED 2000-09-11 2000-12-19
-#> 10842   HUNTVGT     NSW1     GENERATOR      SCHEDULED 2011-07-01 2012-07-01
-#> 10843     BAYSW     NSW1     GENERATOR      SCHEDULED 2014-07-01 2014-09-03
-#> 10844   LIDDELL     NSW1     GENERATOR      SCHEDULED 2000-07-01 2000-09-11
-#> 10845    BHBESS     NSW1 BIDIRECTIONAL      SCHEDULED 2024-07-04 2024-07-26
-#> 10846   LIDDELL     NSW1     GENERATOR  NON-SCHEDULED 2015-07-01 2016-07-01
-#> 10847    BHBESS     NSW1 BIDIRECTIONAL      SCHEDULED 2024-07-26 2025-07-01
-#> 10848   HUNTVGT     NSW1     GENERATOR      SCHEDULED 2015-07-01 2016-07-01
-#> 10849   LIDDELL     NSW1     GENERATOR      SCHEDULED 2012-07-01 2013-07-01
-#> 10850   LIDDELL     NSW1     GENERATOR  NON-SCHEDULED 2005-07-01 2006-07-01
-#> 10851    BHBESS     NSW1 BIDIRECTIONAL      SCHEDULED 2026-07-01 2999-12-31
-#> 10852     BAYSW     NSW1     GENERATOR      SCHEDULED 2025-07-01 2025-09-16
-#> 10853   LIDDELL     NSW1     GENERATOR      SCHEDULED 1998-10-26 1999-07-01
-#> 10854   LIDDELL     NSW1     GENERATOR      SCHEDULED 2001-09-13 2001-10-09
-#> 10855   HUNTVGT     NSW1     GENERATOR      SCHEDULED 2016-07-01 2017-07-01
-#> 10856     BAYSW     NSW1     GENERATOR      SCHEDULED 2015-07-01 2016-07-01
-#> 10857   LIDDELL     NSW1     GENERATOR  NON-SCHEDULED 2014-07-01 2014-09-03
-#> 10858   HUNTVGT     NSW1     GENERATOR      SCHEDULED 2014-09-03 2015-07-01
-#> 10859   HUNTVGT     NSW1     GENERATOR      SCHEDULED 2014-07-01 2014-09-03
-#> 10860   LIDDELL     NSW1     GENERATOR      SCHEDULED 2001-07-01 2001-09-12
-#> 10861   LIDDELL     NSW1     GENERATOR      SCHEDULED 2007-01-16 2007-07-01
-#> 10862    TOMAGO     NSW1          LOAD  NON-SCHEDULED 2009-03-20 2009-07-01
-#> 10863   LIDDELL     NSW1     GENERATOR      SCHEDULED 2011-07-01 2012-07-01
-#> 10864   LIDDELL     NSW1     GENERATOR      SCHEDULED 2010-07-01 2010-10-27
-#> 10865   LIDDELL     NSW1     GENERATOR      SCHEDULED 2002-07-01 2003-07-01
-#> 10866   LIDDELL     NSW1     GENERATOR  NON-SCHEDULED 2007-01-16 2007-07-01
-#> 10867    TOMAGO     NSW1          LOAD  NON-SCHEDULED 2008-07-01 2009-03-20
-#> 10868   LIDDELL     NSW1     GENERATOR      SCHEDULED 2001-10-09 2002-04-01
-#> 10869   LIDDELL     NSW1     GENERATOR      SCHEDULED 1998-10-25 1998-10-26
-#> 10870    TOMAGO     NSW1          LOAD  NON-SCHEDULED 2000-12-19 2001-07-01
-#> 10871   LIDDELL     NSW1     GENERATOR  NON-SCHEDULED 2012-07-01 2013-07-01
-#> 10872   LIDDELL     NSW1     GENERATOR      SCHEDULED 2003-07-01 2003-12-09
-#> 10873   LIDDELL     NSW1     GENERATOR      SCHEDULED 2006-07-01 2007-01-16
-#> 10874    TOMAGO     NSW1          LOAD  NON-SCHEDULED 2001-07-01 2001-09-11
-#> 10875     BAYSW     NSW1     GENERATOR      SCHEDULED 2011-07-01 2012-07-01
-#> 10876   LIDDELL     NSW1     GENERATOR      SCHEDULED 2013-07-01 2014-07-01
-#> 10877   LIDDELL     NSW1     GENERATOR      SCHEDULED 2019-07-01 2020-07-01
-#> 10878   LIDDELL     NSW1     GENERATOR      SCHEDULED 2016-07-01 2017-07-01
-#> 10879   LIDDELL     NSW1     GENERATOR  NON-SCHEDULED 2014-09-03 2015-07-01
-#> 10880   LIDDELL     NSW1     GENERATOR      SCHEDULED 2006-07-01 2007-01-16
-#> 10881   LIDDELL     NSW1     GENERATOR      SCHEDULED 2005-05-31 2005-07-01
-#> 10882   LIDDELL     NSW1     GENERATOR      SCHEDULED 2007-07-01 2008-07-01
-#> 10883     BAYSW     NSW1     GENERATOR      SCHEDULED 2021-07-01 2022-03-15
-#> 10884    TOMAGO     NSW1          LOAD  NON-SCHEDULED 2001-09-11 2001-09-12
-#> 10885    TOMAGO     NSW1          LOAD  NON-SCHEDULED 2001-09-12 2001-10-09
-#> 10886     BAYSW     NSW1     GENERATOR      SCHEDULED 2009-09-10 2009-10-01
-#> 10887   LIDDELL     NSW1     GENERATOR      SCHEDULED 2004-04-29 2004-07-01
-#> 10888    TOMAGO     NSW1          LOAD  NON-SCHEDULED 2000-09-11 2000-12-19
-#> 10889   LIDDELL     NSW1     GENERATOR  NON-SCHEDULED 2004-07-01 2005-07-01
-#> 10890     BAYSW     NSW1     GENERATOR      SCHEDULED 2001-07-01 2001-09-12
-#> 10891     BAYSW     NSW1     GENERATOR      SCHEDULED 2022-03-15 2022-07-01
-#> 10892   LIDDELL     NSW1     GENERATOR      SCHEDULED 2001-09-13 2001-10-09
-#> 10893   LIDDELL     NSW1     GENERATOR      SCHEDULED 2005-07-01 2006-07-01
-#> 10894   LIDDELL     NSW1     GENERATOR  NON-SCHEDULED 2008-07-01 2009-07-01
-#> 10895    TOMAGO     NSW1          LOAD  NON-SCHEDULED 2005-07-01 2006-07-01
-#> 10896     BAYSW     NSW1     GENERATOR      SCHEDULED 2017-07-01 2018-07-01
-#> 10897   LIDDELL     NSW1     GENERATOR      SCHEDULED 2000-12-19 2001-07-01
-#> 10898   LIDDELL     NSW1     GENERATOR      SCHEDULED 2001-10-09 2002-04-01
-#> 10899     BAYSW     NSW1     GENERATOR      SCHEDULED 1999-07-01 2000-07-01
-#> 10900     BAYSW     NSW1     GENERATOR      SCHEDULED 2012-07-01 2013-07-01
-#> 10901   LIDDELL     NSW1     GENERATOR      SCHEDULED 2004-07-01 2005-05-31
-#> 10902   LIDDELL     NSW1     GENERATOR  NON-SCHEDULED 2002-04-01 2002-07-01
-#> 10903     BAYSW     NSW1     GENERATOR      SCHEDULED 2018-07-01 2019-07-01
-#> 10904   LIDDELL     NSW1     GENERATOR  NON-SCHEDULED 2001-10-09 2002-04-01
-#> 10905   LIDDELL     NSW1     GENERATOR      SCHEDULED 2015-07-01 2016-07-01
-#> 10906     BAYSW     NSW1     GENERATOR      SCHEDULED 2026-07-01 2999-12-31
-#> 10907   LIDDELL     NSW1     GENERATOR      SCHEDULED 2004-07-01 2005-05-31
-#> 10908   LIDDELL     NSW1     GENERATOR      SCHEDULED 2003-07-01 2003-12-09
-#> 10909   HUNTVGT     NSW1     GENERATOR      SCHEDULED 2019-07-01 2020-07-01
-#> 10910     BAYSW     NSW1     GENERATOR      SCHEDULED 2016-07-01 2017-07-01
-#> 10911   LIDDELL     NSW1     GENERATOR      SCHEDULED 2009-09-10 2009-10-01
-#> 10912   LIDDELL     NSW1     GENERATOR      SCHEDULED 2000-07-01 2000-09-11
-#> 10913   LIDDELL     NSW1     GENERATOR      SCHEDULED 2001-09-13 2001-10-09
-#> 10914   LIDDELL     NSW1     GENERATOR      SCHEDULED 2010-07-01 2010-10-27
-#> 10915   LIDDELL     NSW1     GENERATOR      SCHEDULED 2008-07-01 2009-07-01
-#> 10916   LIDDELL     NSW1     GENERATOR      SCHEDULED 2000-12-19 2001-07-01
-#> 10917   HUNTVGT     NSW1     GENERATOR      SCHEDULED 2009-07-01 2009-09-10
-#> 10918   LIDDELL     NSW1     GENERATOR      SCHEDULED 2011-01-18 2011-04-14
-#> 10919     BAYSW     NSW1     GENERATOR      SCHEDULED 2023-11-28 2024-06-03
-#> 10920   LIDDELL     NSW1     GENERATOR  NON-SCHEDULED 2023-11-28 2024-07-01
-#> 10921    TOMAGO     NSW1          LOAD  NON-SCHEDULED 2006-07-01 2007-01-16
-#> 10922   LIDDELL     NSW1     GENERATOR      SCHEDULED 2014-07-01 2014-09-03
-#> 10923   LIDDELL     NSW1     GENERATOR  NON-SCHEDULED 2022-03-15 2022-04-01
-#> 10924   LIDDELL     NSW1     GENERATOR      SCHEDULED 2013-07-01 2014-07-01
-#> 10925   LIDDELL     NSW1     GENERATOR      SCHEDULED 2001-09-12 2001-09-13
-#> 10926   LIDDELL     NSW1     GENERATOR      SCHEDULED 1999-07-01 2000-07-01
-#> 10927   HUNTVGT     NSW1     GENERATOR      SCHEDULED 2021-07-01 2022-03-15
-#> 10928    TOMAGO     NSW1          LOAD  NON-SCHEDULED 2008-07-01 2009-03-20
-#> 10929     BAYSW     NSW1     GENERATOR      SCHEDULED 2004-04-29 2004-07-01
-#> 10930     BAYSW     NSW1     GENERATOR      SCHEDULED 2010-10-27 2011-01-18
-#> 10931   LIDDELL     NSW1     GENERATOR      SCHEDULED 2018-07-01 2019-07-01
-#> 10932     BAYSW     NSW1     GENERATOR      SCHEDULED 2009-07-01 2009-09-10
-#> 10933   LIDDELL     NSW1     GENERATOR      SCHEDULED 2000-09-11 2000-12-19
-#> 10934   HUNTVGT     NSW1     GENERATOR      SCHEDULED 2020-07-01 2021-07-01
-#> 10935     BAYSW     NSW1     GENERATOR      SCHEDULED 2025-07-01 2025-09-16
-#> 10936     BAYSW     NSW1     GENERATOR      SCHEDULED 2011-04-14 2011-07-01
-#> 10937    TOMAGO     NSW1          LOAD  NON-SCHEDULED 2007-07-01 2008-07-01
-#> 10938   LIDDELL     NSW1     GENERATOR      SCHEDULED 2022-04-02 2022-07-01
-#> 10939     BAYSW     NSW1     GENERATOR      SCHEDULED 2001-09-12 2001-09-13
-#> 10940     BAYSW     NSW1     GENERATOR      SCHEDULED 2015-07-01 2016-07-01
-#> 10941     BAYSW     NSW1     GENERATOR      SCHEDULED 2000-12-19 2001-07-01
-#> 10942   LIDDELL     NSW1     GENERATOR      SCHEDULED 2022-04-01 2022-04-02
-#> 10943     BAYSW     NSW1     GENERATOR      SCHEDULED 2009-10-01 2010-07-01
-#> 10944     BAYSW     NSW1     GENERATOR      SCHEDULED 2007-09-20 2008-07-01
-#> 10945    TOMAGO     NSW1          LOAD  NON-SCHEDULED 2006-07-01 2007-01-16
-#> 10946     BAYSW     NSW1     GENERATOR      SCHEDULED 2009-10-01 2010-05-27
-#> 10947   LIDDELL     NSW1     GENERATOR      SCHEDULED 2001-07-01 2001-09-12
-#> 10948   LIDDELL     NSW1     GENERATOR  NON-SCHEDULED 2022-07-01 2023-05-01
-#> 10949    TOMAGO     NSW1          LOAD  NON-SCHEDULED 2007-01-16 2007-07-01
-#> 10950   LIDDELL     NSW1     GENERATOR      SCHEDULED 2000-09-11 2000-12-19
-#> 10951     BAYSW     NSW1     GENERATOR      SCHEDULED 2013-07-01 2014-07-01
-#> 10952    BHBESS     NSW1          LOAD      SCHEDULED 2024-07-01 2024-07-04
-#> 10953     BAYSW     NSW1     GENERATOR      SCHEDULED 2014-09-03 2015-07-01
-#> 10954    TOMAGO     NSW1          LOAD  NON-SCHEDULED 2007-07-01 2008-07-01
-#> 10955   LIDDELL     NSW1     GENERATOR      SCHEDULED 2001-07-01 2001-09-12
-#> 10956     BAYSW     NSW1     GENERATOR      SCHEDULED 2009-07-01 2009-09-10
-#> 10957    TOMAGO     NSW1          LOAD  NON-SCHEDULED 2009-07-01 2009-09-10
-#> 10958   LIDDELL     NSW1     GENERATOR  NON-SCHEDULED 2023-07-01 2023-11-28
-#> 10959     BAYSW     NSW1     GENERATOR      SCHEDULED 2010-05-27 2010-07-01
-#> 10960     BAYSW     NSW1     GENERATOR      SCHEDULED 2011-07-01 2012-07-01
-#> 10961    TOMAGO     NSW1          LOAD  NON-SCHEDULED 2004-07-01 2005-07-01
-#> 10962   LIDDELL     NSW1     GENERATOR      SCHEDULED 2014-07-01 2014-09-03
-#> 10963     BAYSW     NSW1     GENERATOR      SCHEDULED 2006-07-01 2007-01-16
-#> 10964   LIDDELL     NSW1     GENERATOR      SCHEDULED 2001-09-12 2001-09-13
-#> 10965     BAYSW     NSW1     GENERATOR      SCHEDULED 2011-04-14 2011-07-01
-#> 10966   LIDDELL     NSW1     GENERATOR      SCHEDULED 2022-07-01 2023-05-01
-#> 10967   LIDDELL     NSW1     GENERATOR      SCHEDULED 2001-09-12 2001-09-13
-#> 10968     BAYSW     NSW1     GENERATOR      SCHEDULED 2011-04-14 2011-07-01
-#> 10969     BAYSW     NSW1     GENERATOR      SCHEDULED 2001-10-09 2002-04-01
-#> 10970   LIDDELL     NSW1     GENERATOR  NON-SCHEDULED 2002-07-01 2003-07-01
-#> 10971    BHBESS     NSW1     GENERATOR      SCHEDULED 2023-11-28 2024-06-03
-#> 10972   LIDDELL     NSW1     GENERATOR      SCHEDULED 2008-07-01 2009-07-01
-#> 10973   LIDDELL     NSW1     GENERATOR  NON-SCHEDULED 2023-05-01 2023-07-01
-#> 10974   LIDDELL     NSW1     GENERATOR  NON-SCHEDULED 2024-07-01 2025-07-01
-#> 10975     BAYSW     NSW1     GENERATOR      SCHEDULED 2005-05-31 2005-07-01
-#> 10976   LIDDELL     NSW1     GENERATOR      SCHEDULED 2010-10-27 2011-01-18
-#> 10977    BHBESS     NSW1     GENERATOR      SCHEDULED 2024-07-04 2024-07-26
-#> 10978   LIDDELL     NSW1     GENERATOR      SCHEDULED 2011-07-01 2012-07-01
-#> 10979     BAYSW     NSW1     GENERATOR      SCHEDULED 2012-07-01 2013-07-01
-#> 10980    TOMAGO     NSW1          LOAD  NON-SCHEDULED 2001-09-12 2001-10-09
-#> 10981     BAYSW     NSW1     GENERATOR      SCHEDULED 2003-07-01 2003-12-09
-#> 10982   LIDDELL     NSW1     GENERATOR  NON-SCHEDULED 2009-09-10 2010-07-01
-#> 10983     BAYSW     NSW1     GENERATOR      SCHEDULED 2003-12-09 2004-04-29
-#> 10984   LIDDELL     NSW1     GENERATOR      SCHEDULED 2020-07-01 2021-07-01
-#> 10985   LIDDELL     NSW1     GENERATOR      SCHEDULED 2017-07-01 2018-07-01
-#> 10986   LIDDELL     NSW1     GENERATOR      SCHEDULED 2014-09-03 2015-07-01
-#> 10987     BAYSW     NSW1     GENERATOR      SCHEDULED 2004-07-01 2005-05-31
-#> 10988    TOMAGO     NSW1          LOAD  NON-SCHEDULED 2003-07-01 2004-07-01
+#> 10839     BAYSW     NSW1     GENERATOR      SCHEDULED 2000-09-11 2000-12-19
+#> 10840     BAYSW     NSW1     GENERATOR      SCHEDULED 2018-07-01 2019-07-01
+#> 10841   LIDDELL     NSW1     GENERATOR      SCHEDULED 2010-10-27 2011-01-18
+#> 10842     BAYSW     NSW1     GENERATOR      SCHEDULED 2022-07-01 2023-07-01
+#> 10843   HUNTVGT     NSW1     GENERATOR      SCHEDULED 2011-07-01 2012-07-01
+#> 10844   HUNTVGT     NSW1     GENERATOR      SCHEDULED 2013-07-01 2014-07-01
+#> 10845    TOMAGO     NSW1          LOAD  NON-SCHEDULED 2000-07-01 2000-09-11
+#> 10846    BHBESS     NSW1 BIDIRECTIONAL      SCHEDULED 2024-07-04 2024-07-26
+#> 10847     BAYSW     NSW1     GENERATOR      SCHEDULED 2019-07-01 2020-07-01
+#> 10848    BHBESS     NSW1 BIDIRECTIONAL      SCHEDULED 2024-07-26 2025-07-01
+#> 10849   HUNTVGT     NSW1     GENERATOR      SCHEDULED 2015-07-01 2016-07-01
+#> 10850   LIDDELL     NSW1     GENERATOR      SCHEDULED 2012-07-01 2013-07-01
+#> 10851   LIDDELL     NSW1     GENERATOR  NON-SCHEDULED 2005-07-01 2006-07-01
+#> 10852     BAYSW     NSW1     GENERATOR      SCHEDULED 2026-07-01 2999-12-31
+#> 10853     BAYSW     NSW1     GENERATOR      SCHEDULED 2025-07-01 2025-09-16
+#> 10854   LIDDELL     NSW1     GENERATOR      SCHEDULED 1998-10-26 1999-07-01
+#> 10855    TOMAGO     NSW1          LOAD  NON-SCHEDULED 2000-09-11 2000-12-19
+#> 10856   HUNTVGT     NSW1     GENERATOR      SCHEDULED 2016-07-01 2017-07-01
+#> 10857     BAYSW     NSW1     GENERATOR      SCHEDULED 2014-07-01 2014-09-03
+#> 10858   LIDDELL     NSW1     GENERATOR      SCHEDULED 2000-07-01 2000-09-11
+#> 10859   HUNTVGT     NSW1     GENERATOR      SCHEDULED 2014-09-03 2015-07-01
+#> 10860    TOMAGO     NSW1          LOAD  NON-SCHEDULED 2000-12-19 2001-07-01
+#> 10861   LIDDELL     NSW1     GENERATOR      SCHEDULED 2001-07-01 2001-09-12
+#> 10862   LIDDELL     NSW1     GENERATOR      SCHEDULED 2007-01-16 2007-07-01
+#> 10863    TOMAGO     NSW1          LOAD  NON-SCHEDULED 2009-03-20 2009-07-01
+#> 10864   LIDDELL     NSW1     GENERATOR      SCHEDULED 2011-07-01 2012-07-01
+#> 10865    BHBESS     NSW1 BIDIRECTIONAL      SCHEDULED 2026-07-01 2999-12-31
+#> 10866   LIDDELL     NSW1     GENERATOR      SCHEDULED 2002-07-01 2003-07-01
+#> 10867   LIDDELL     NSW1     GENERATOR  NON-SCHEDULED 2007-01-16 2007-07-01
+#> 10868   LIDDELL     NSW1     GENERATOR      SCHEDULED 2001-09-13 2001-10-09
+#> 10869   LIDDELL     NSW1     GENERATOR      SCHEDULED 2001-10-09 2002-04-01
+#> 10870     BAYSW     NSW1     GENERATOR      SCHEDULED 2015-07-01 2016-07-01
+#> 10871   LIDDELL     NSW1     GENERATOR  NON-SCHEDULED 2014-07-01 2014-09-03
+#> 10872   LIDDELL     NSW1     GENERATOR  NON-SCHEDULED 2012-07-01 2013-07-01
+#> 10873   LIDDELL     NSW1     GENERATOR  NON-SCHEDULED 2015-07-01 2016-07-01
+#> 10874   LIDDELL     NSW1     GENERATOR      SCHEDULED 2006-07-01 2007-01-16
+#> 10875    TOMAGO     NSW1          LOAD  NON-SCHEDULED 2001-07-01 2001-09-11
+#> 10876     BAYSW     NSW1     GENERATOR      SCHEDULED 2011-07-01 2012-07-01
+#> 10877   LIDDELL     NSW1     GENERATOR      SCHEDULED 2013-07-01 2014-07-01
+#> 10878   LIDDELL     NSW1     GENERATOR      SCHEDULED 2010-07-01 2010-10-27
+#> 10879   LIDDELL     NSW1     GENERATOR      SCHEDULED 2016-07-01 2017-07-01
+#> 10880   LIDDELL     NSW1     GENERATOR  NON-SCHEDULED 2014-09-03 2015-07-01
+#> 10881    TOMAGO     NSW1          LOAD  NON-SCHEDULED 2008-07-01 2009-03-20
+#> 10882   LIDDELL     NSW1     GENERATOR      SCHEDULED 2005-05-31 2005-07-01
+#> 10883   LIDDELL     NSW1     GENERATOR      SCHEDULED 1998-10-25 1998-10-26
+#> 10884    TOMAGO     NSW1          LOAD  NON-SCHEDULED 2000-12-19 2001-07-01
+#> 10885    TOMAGO     NSW1          LOAD  NON-SCHEDULED 2001-09-11 2001-09-12
+#> 10886   HUNTVGT     NSW1     GENERATOR      SCHEDULED 2014-07-01 2014-09-03
+#> 10887     BAYSW     NSW1     GENERATOR      SCHEDULED 2009-09-10 2009-10-01
+#> 10888   LIDDELL     NSW1     GENERATOR      SCHEDULED 2004-04-29 2004-07-01
+#> 10889    TOMAGO     NSW1          LOAD  NON-SCHEDULED 2000-09-11 2000-12-19
+#> 10890   LIDDELL     NSW1     GENERATOR  NON-SCHEDULED 2004-07-01 2005-07-01
+#> 10891   LIDDELL     NSW1     GENERATOR      SCHEDULED 2019-07-01 2020-07-01
+#> 10892     BAYSW     NSW1     GENERATOR      SCHEDULED 2022-03-15 2022-07-01
+#> 10893   LIDDELL     NSW1     GENERATOR      SCHEDULED 2001-09-13 2001-10-09
+#> 10894   LIDDELL     NSW1     GENERATOR      SCHEDULED 2006-07-01 2007-01-16
+#> 10895   LIDDELL     NSW1     GENERATOR  NON-SCHEDULED 2008-07-01 2009-07-01
+#> 10896   LIDDELL     NSW1     GENERATOR      SCHEDULED 2007-07-01 2008-07-01
+#> 10897     BAYSW     NSW1     GENERATOR      SCHEDULED 2021-07-01 2022-03-15
+#> 10898   LIDDELL     NSW1     GENERATOR      SCHEDULED 2000-12-19 2001-07-01
+#> 10899   LIDDELL     NSW1     GENERATOR      SCHEDULED 2003-07-01 2003-12-09
+#> 10900     BAYSW     NSW1     GENERATOR      SCHEDULED 1999-07-01 2000-07-01
+#> 10901     BAYSW     NSW1     GENERATOR      SCHEDULED 2012-07-01 2013-07-01
+#> 10902   LIDDELL     NSW1     GENERATOR      SCHEDULED 2004-07-01 2005-05-31
+#> 10903   LIDDELL     NSW1     GENERATOR  NON-SCHEDULED 2002-04-01 2002-07-01
+#> 10904     BAYSW     NSW1     GENERATOR      SCHEDULED 2001-07-01 2001-09-12
+#> 10905   LIDDELL     NSW1     GENERATOR  NON-SCHEDULED 2001-10-09 2002-04-01
+#> 10906   LIDDELL     NSW1     GENERATOR      SCHEDULED 2015-07-01 2016-07-01
+#> 10907   LIDDELL     NSW1     GENERATOR      SCHEDULED 2005-07-01 2006-07-01
+#> 10908   LIDDELL     NSW1     GENERATOR      SCHEDULED 2004-07-01 2005-05-31
+#> 10909    TOMAGO     NSW1          LOAD  NON-SCHEDULED 2005-07-01 2006-07-01
+#> 10910     BAYSW     NSW1     GENERATOR      SCHEDULED 2017-07-01 2018-07-01
+#> 10911     BAYSW     NSW1     GENERATOR      SCHEDULED 2016-07-01 2017-07-01
+#> 10912    TOMAGO     NSW1          LOAD  NON-SCHEDULED 2001-09-12 2001-10-09
+#> 10913   LIDDELL     NSW1     GENERATOR      SCHEDULED 2000-07-01 2000-09-11
+#> 10914   LIDDELL     NSW1     GENERATOR      SCHEDULED 2001-09-13 2001-10-09
+#> 10915   LIDDELL     NSW1     GENERATOR      SCHEDULED 2010-07-01 2010-10-27
+#> 10916   LIDDELL     NSW1     GENERATOR      SCHEDULED 2008-07-01 2009-07-01
+#> 10917     BAYSW     NSW1     GENERATOR      SCHEDULED 2018-07-01 2019-07-01
+#> 10918   HUNTVGT     NSW1     GENERATOR      SCHEDULED 2009-07-01 2009-09-10
+#> 10919   LIDDELL     NSW1     GENERATOR      SCHEDULED 2011-01-18 2011-04-14
+#> 10920     BAYSW     NSW1     GENERATOR      SCHEDULED 2026-07-01 2999-12-31
+#> 10921   LIDDELL     NSW1     GENERATOR  NON-SCHEDULED 2023-11-28 2024-07-01
+#> 10922   LIDDELL     NSW1     GENERATOR      SCHEDULED 2003-07-01 2003-12-09
+#> 10923   HUNTVGT     NSW1     GENERATOR      SCHEDULED 2019-07-01 2020-07-01
+#> 10924   LIDDELL     NSW1     GENERATOR  NON-SCHEDULED 2022-03-15 2022-04-01
+#> 10925   LIDDELL     NSW1     GENERATOR      SCHEDULED 2001-10-09 2002-04-01
+#> 10926   LIDDELL     NSW1     GENERATOR      SCHEDULED 2001-09-12 2001-09-13
+#> 10927   LIDDELL     NSW1     GENERATOR      SCHEDULED 1999-07-01 2000-07-01
+#> 10928   HUNTVGT     NSW1     GENERATOR      SCHEDULED 2021-07-01 2022-03-15
+#> 10929    TOMAGO     NSW1          LOAD  NON-SCHEDULED 2008-07-01 2009-03-20
+#> 10930   LIDDELL     NSW1     GENERATOR      SCHEDULED 2000-12-19 2001-07-01
+#> 10931     BAYSW     NSW1     GENERATOR      SCHEDULED 2010-10-27 2011-01-18
+#> 10932   LIDDELL     NSW1     GENERATOR      SCHEDULED 2018-07-01 2019-07-01
+#> 10933     BAYSW     NSW1     GENERATOR      SCHEDULED 2023-11-28 2024-06-03
+#> 10934   LIDDELL     NSW1     GENERATOR      SCHEDULED 2000-09-11 2000-12-19
+#> 10935    TOMAGO     NSW1          LOAD  NON-SCHEDULED 2006-07-01 2007-01-16
+#> 10936   LIDDELL     NSW1     GENERATOR      SCHEDULED 2014-07-01 2014-09-03
+#> 10937     BAYSW     NSW1     GENERATOR      SCHEDULED 2011-04-14 2011-07-01
+#> 10938   LIDDELL     NSW1     GENERATOR      SCHEDULED 2009-09-10 2009-10-01
+#> 10939   LIDDELL     NSW1     GENERATOR      SCHEDULED 2022-04-02 2022-07-01
+#> 10940     BAYSW     NSW1     GENERATOR      SCHEDULED 2001-09-12 2001-09-13
+#> 10941     BAYSW     NSW1     GENERATOR      SCHEDULED 2015-07-01 2016-07-01
+#> 10942     BAYSW     NSW1     GENERATOR      SCHEDULED 2000-12-19 2001-07-01
+#> 10943     BAYSW     NSW1     GENERATOR      SCHEDULED 2004-04-29 2004-07-01
+#> 10944     BAYSW     NSW1     GENERATOR      SCHEDULED 2009-10-01 2010-07-01
+#> 10945     BAYSW     NSW1     GENERATOR      SCHEDULED 2007-09-20 2008-07-01
+#> 10946     BAYSW     NSW1     GENERATOR      SCHEDULED 2009-07-01 2009-09-10
+#> 10947     BAYSW     NSW1     GENERATOR      SCHEDULED 2009-10-01 2010-05-27
+#> 10948   HUNTVGT     NSW1     GENERATOR      SCHEDULED 2020-07-01 2021-07-01
+#> 10949     BAYSW     NSW1     GENERATOR      SCHEDULED 2025-07-01 2025-09-16
+#> 10950    TOMAGO     NSW1          LOAD  NON-SCHEDULED 2007-01-16 2007-07-01
+#> 10951   LIDDELL     NSW1     GENERATOR      SCHEDULED 2013-07-01 2014-07-01
+#> 10952     BAYSW     NSW1     GENERATOR      SCHEDULED 2013-07-01 2014-07-01
+#> 10953    BHBESS     NSW1          LOAD      SCHEDULED 2024-07-01 2024-07-04
+#> 10954     BAYSW     NSW1     GENERATOR      SCHEDULED 2014-09-03 2015-07-01
+#> 10955    TOMAGO     NSW1          LOAD  NON-SCHEDULED 2007-07-01 2008-07-01
+#> 10956   LIDDELL     NSW1     GENERATOR      SCHEDULED 2022-04-01 2022-04-02
+#> 10957     BAYSW     NSW1     GENERATOR      SCHEDULED 2009-07-01 2009-09-10
+#> 10958    TOMAGO     NSW1          LOAD  NON-SCHEDULED 2009-07-01 2009-09-10
+#> 10959    TOMAGO     NSW1          LOAD  NON-SCHEDULED 2006-07-01 2007-01-16
+#> 10960     BAYSW     NSW1     GENERATOR      SCHEDULED 2010-05-27 2010-07-01
+#> 10961   LIDDELL     NSW1     GENERATOR      SCHEDULED 2001-07-01 2001-09-12
+#> 10962   LIDDELL     NSW1     GENERATOR  NON-SCHEDULED 2022-07-01 2023-05-01
+#> 10963   LIDDELL     NSW1     GENERATOR      SCHEDULED 2014-07-01 2014-09-03
+#> 10964    TOMAGO     NSW1          LOAD  NON-SCHEDULED 2007-07-01 2008-07-01
+#> 10965   LIDDELL     NSW1     GENERATOR      SCHEDULED 2001-09-12 2001-09-13
+#> 10966     BAYSW     NSW1     GENERATOR      SCHEDULED 2011-04-14 2011-07-01
+#> 10967   LIDDELL     NSW1     GENERATOR      SCHEDULED 2022-07-01 2023-05-01
+#> 10968   LIDDELL     NSW1     GENERATOR      SCHEDULED 2001-09-12 2001-09-13
+#> 10969   LIDDELL     NSW1     GENERATOR      SCHEDULED 2001-07-01 2001-09-12
+#> 10970     BAYSW     NSW1     GENERATOR      SCHEDULED 2001-10-09 2002-04-01
+#> 10971   LIDDELL     NSW1     GENERATOR  NON-SCHEDULED 2002-07-01 2003-07-01
+#> 10972   LIDDELL     NSW1     GENERATOR  NON-SCHEDULED 2023-07-01 2023-11-28
+#> 10973   LIDDELL     NSW1     GENERATOR      SCHEDULED 2008-07-01 2009-07-01
+#> 10974     BAYSW     NSW1     GENERATOR      SCHEDULED 2011-07-01 2012-07-01
+#> 10975    TOMAGO     NSW1          LOAD  NON-SCHEDULED 2004-07-01 2005-07-01
+#> 10976     BAYSW     NSW1     GENERATOR      SCHEDULED 2005-05-31 2005-07-01
+#> 10977   LIDDELL     NSW1     GENERATOR      SCHEDULED 2000-09-11 2000-12-19
+#> 10978    BHBESS     NSW1     GENERATOR      SCHEDULED 2024-07-04 2024-07-26
+#> 10979   LIDDELL     NSW1     GENERATOR      SCHEDULED 2011-07-01 2012-07-01
+#> 10980     BAYSW     NSW1     GENERATOR      SCHEDULED 2012-07-01 2013-07-01
+#> 10981    TOMAGO     NSW1          LOAD  NON-SCHEDULED 2001-09-12 2001-10-09
+#> 10982     BAYSW     NSW1     GENERATOR      SCHEDULED 2011-04-14 2011-07-01
+#> 10983   LIDDELL     NSW1     GENERATOR  NON-SCHEDULED 2009-09-10 2010-07-01
+#> 10984     BAYSW     NSW1     GENERATOR      SCHEDULED 2003-12-09 2004-04-29
+#> 10985    BHBESS     NSW1     GENERATOR      SCHEDULED 2023-11-28 2024-06-03
+#> 10986   LIDDELL     NSW1     GENERATOR      SCHEDULED 2017-07-01 2018-07-01
+#> 10987   LIDDELL     NSW1     GENERATOR  NON-SCHEDULED 2023-05-01 2023-07-01
+#> 10988   LIDDELL     NSW1     GENERATOR  NON-SCHEDULED 2024-07-01 2025-07-01
 #> 10989    TOMAGO     NSW1          LOAD  NON-SCHEDULED 2003-07-01 2004-07-01
-#> 10990    TOMAGO     NSW1          LOAD  NON-SCHEDULED 2002-07-01 2003-07-01
-#> 10991    TOMAGO     NSW1          LOAD  NON-SCHEDULED 2001-07-01 2001-09-11
-#> 10992   LIDDELL     NSW1     GENERATOR      SCHEDULED 2011-01-18 2011-04-14
-#> 10993     BAYSW     NSW1     GENERATOR      SCHEDULED 2001-07-01 2001-09-12
-#> 10994     BAYSW     NSW1     GENERATOR      SCHEDULED 2009-09-10 2009-10-01
-#> 10995     BAYSW     NSW1     GENERATOR      SCHEDULED 2022-07-01 2023-07-01
-#> 10996   LIDDELL     NSW1     GENERATOR      SCHEDULED 2011-01-18 2011-04-14
-#> 10997    TOMAGO     NSW1          LOAD  NON-SCHEDULED 1999-07-01 2000-07-01
-#> 10998   LIDDELL     NSW1     GENERATOR      SCHEDULED 2005-07-01 2006-07-01
-#> 10999     BAYSW     NSW1     GENERATOR      SCHEDULED 2001-09-12 2001-09-13
-#> 11000     BAYSW     NSW1     GENERATOR      SCHEDULED 2007-01-16 2007-07-01
-#> 11001   LIDDELL     NSW1     GENERATOR      SCHEDULED 2015-07-01 2016-07-01
-#> 11002     BAYSW     NSW1     GENERATOR      SCHEDULED 2007-09-20 2008-07-01
-#> 11003   LIDDELL     NSW1     GENERATOR      SCHEDULED 2012-07-01 2013-07-01
-#> 11004   LIDDELL     NSW1     GENERATOR  NON-SCHEDULED 2017-07-01 2018-07-01
-#> 11005     BAYSW     NSW1     GENERATOR      SCHEDULED 2010-10-27 2011-01-18
-#> 11006     BAYSW     NSW1     GENERATOR      SCHEDULED 1999-07-01 2000-07-01
-#> 11007    TOMAGO     NSW1          LOAD  NON-SCHEDULED 2000-07-01 2000-09-11
-#> 11008     BAYSW     NSW1     GENERATOR      SCHEDULED 2011-07-01 2012-07-01
-#> 11009     BAYSW     NSW1     GENERATOR      SCHEDULED 1998-10-25 1999-07-01
-#> 11010   LIDDELL     NSW1     GENERATOR      SCHEDULED 2007-01-16 2007-07-01
-#> 11011     BAYSW     NSW1     GENERATOR      SCHEDULED 2000-12-19 2001-07-01
-#> 11012     BAYSW     NSW1     GENERATOR      SCHEDULED 2007-07-01 2007-09-20
-#> 11013     BAYSW     NSW1     GENERATOR      SCHEDULED 2000-09-11 2000-12-19
-#> 11014     BAYSW     NSW1     GENERATOR  NON-SCHEDULED 2002-04-01 2002-07-01
-#> 11015     BAYSW     NSW1     GENERATOR      SCHEDULED 2002-07-01 2003-07-01
-#> 11016     BAYSW     NSW1     GENERATOR      SCHEDULED 2001-09-13 2001-10-09
-#> 11017    TOMAGO     NSW1          LOAD  NON-SCHEDULED 2001-10-09 2002-04-01
-#> 11018    BHBESS     NSW1     GENERATOR      SCHEDULED 2024-07-01 2024-07-04
-#> 11019    BHBESS     NSW1     GENERATOR      SCHEDULED 2024-06-03 2024-07-01
-#> 11020   LIDDELL     NSW1     GENERATOR      SCHEDULED 2009-10-01 2010-07-01
-#> 11021     BAYSW     NSW1     GENERATOR      SCHEDULED 2001-09-13 2001-10-09
-#> 11022   LIDDELL     NSW1     GENERATOR      SCHEDULED 2022-04-02 2022-07-01
-#> 11023    TOMAGO     NSW1          LOAD  NON-SCHEDULED 2007-01-16 2007-07-01
-#> 11024    TOMAGO     NSW1          LOAD  NON-SCHEDULED 2000-09-11 2000-12-19
-#> 11025     BAYSW     NSW1     GENERATOR      SCHEDULED 2003-07-01 2003-12-09
-#> 11026   LIDDELL     NSW1     GENERATOR  NON-SCHEDULED 2022-04-02 2022-07-01
-#> 11027   LIDDELL     NSW1     GENERATOR      SCHEDULED 2013-07-01 2014-07-01
-#> 11028    TOMAGO     NSW1          LOAD  NON-SCHEDULED 2002-07-01 2003-07-01
-#> 11029     BAYSW     NSW1     GENERATOR      SCHEDULED 2023-11-28 2024-06-03
-#> 11030   LIDDELL     NSW1     GENERATOR      SCHEDULED 2003-12-09 2004-04-29
-#> 11031    TOMAGO     NSW1          LOAD  NON-SCHEDULED 2001-10-09 2002-04-01
-#> 11032   LIDDELL     NSW1     GENERATOR      SCHEDULED 2007-01-16 2007-07-01
-#> 11033     BAYSW     NSW1     GENERATOR      SCHEDULED 2022-03-15 2022-07-01
-#> 11034    TOMAGO     NSW1          LOAD  NON-SCHEDULED 2002-07-01 2003-07-01
-#> 11035   LIDDELL     NSW1     GENERATOR      SCHEDULED 2015-07-01 2016-07-01
-#> 11036   LIDDELL     NSW1     GENERATOR      SCHEDULED 2014-09-03 2015-07-01
-#> 11037     BAYSW     NSW1     GENERATOR      SCHEDULED 2010-07-01 2010-10-27
-#> 11038   LIDDELL     NSW1     GENERATOR      SCHEDULED 2016-07-01 2017-07-01
-#> 11039   LIDDELL     NSW1     GENERATOR      SCHEDULED 2002-04-01 2002-07-01
-#> 11040     BAYSW     NSW1     GENERATOR      SCHEDULED 2001-07-01 2001-09-12
-#> 11041   LIDDELL     NSW1     GENERATOR      SCHEDULED 2011-07-01 2012-07-01
-#> 11042   LIDDELL     NSW1     GENERATOR      SCHEDULED 2003-12-09 2004-04-29
-#> 11043     BAYSW     NSW1     GENERATOR      SCHEDULED 2022-03-15 2022-07-01
-#> 11044     BAYSW     NSW1     GENERATOR      SCHEDULED 2001-09-12 2001-09-13
-#> 11045   LIDDELL     NSW1     GENERATOR  NON-SCHEDULED 2026-07-01 2999-12-31
-#> 11046   LIDDELL     NSW1     GENERATOR      SCHEDULED 2020-07-01 2021-07-01
-#> 11047   LIDDELL     NSW1     GENERATOR  NON-SCHEDULED 2025-07-01 2026-07-01
-#> 11048    TOMAGO     NSW1          LOAD  NON-SCHEDULED 1999-07-01 2000-07-01
-#> 11049     BAYSW     NSW1     GENERATOR      SCHEDULED 2011-01-18 2011-04-14
-#> 11050   LIDDELL     NSW1     GENERATOR      SCHEDULED 2022-03-15 2022-04-01
-#> 11051   LIDDELL     NSW1     GENERATOR      SCHEDULED 2007-07-01 2008-07-01
-#> 11052     BAYSW     NSW1     GENERATOR      SCHEDULED 2023-11-28 2024-06-03
-#> 11053   LIDDELL     NSW1     GENERATOR      SCHEDULED 2022-03-15 2022-04-01
-#> 11054     BAYSW     NSW1     GENERATOR  NON-SCHEDULED 2001-10-09 2002-04-01
-#> 11055     BAYSW     NSW1     GENERATOR      SCHEDULED 2002-04-01 2002-07-01
-#> 11056   LIDDELL     NSW1     GENERATOR      SCHEDULED 2019-07-01 2020-07-01
-#> 11057     BAYSW     NSW1     GENERATOR      SCHEDULED 2022-03-15 2022-07-01
-#> 11058   LIDDELL     NSW1     GENERATOR      SCHEDULED 1998-10-25 1999-07-01
-#> 11059     BAYSW     NSW1     GENERATOR      SCHEDULED 2006-07-01 2007-01-16
-#> 11060    BHBESS     NSW1          LOAD      SCHEDULED 2023-11-28 2024-06-03
-#> 11061   LIDDELL     NSW1     GENERATOR      SCHEDULED 2009-07-01 2009-09-10
-#> 11062     BAYSW     NSW1     GENERATOR      SCHEDULED 2014-07-01 2014-09-03
-#> 11063   LIDDELL     NSW1     GENERATOR      SCHEDULED 2021-07-01 2022-03-15
-#> 11064   LIDDELL     NSW1     GENERATOR  NON-SCHEDULED 2003-07-01 2004-07-01
-#> 11065    TOMAGO     NSW1          LOAD  NON-SCHEDULED 2005-07-01 2006-07-01
-#> 11066   LIDDELL     NSW1     GENERATOR      SCHEDULED 2014-07-01 2014-09-03
-#> 11067   LIDDELL     NSW1     GENERATOR      SCHEDULED 2013-07-01 2014-07-01
-#> 11068     BAYSW     NSW1     GENERATOR  NON-SCHEDULED 2001-09-12 2001-10-09
-#> 11069    TOMAGO     NSW1          LOAD  NON-SCHEDULED 2005-07-01 2006-07-01
-#> 11070     BAYSW     NSW1     GENERATOR      SCHEDULED 2024-07-01 2024-11-08
-#> 11071   LIDDELL     NSW1     GENERATOR      SCHEDULED 2009-09-10 2009-10-01
-#> 11072     BAYSW     NSW1     GENERATOR      SCHEDULED 2010-10-27 2011-01-18
-#> 11073   LIDDELL     NSW1     GENERATOR  NON-SCHEDULED 2000-12-19 2001-07-01
-#> 11074   LIDDELL     NSW1     GENERATOR      SCHEDULED 2009-10-01 2010-07-01
-#> 11075   LIDDELL     NSW1     GENERATOR  NON-SCHEDULED 2020-07-01 2021-07-01
-#> 11076   LIDDELL     NSW1     GENERATOR      SCHEDULED 2011-04-14 2011-07-01
-#> 11077   LIDDELL     NSW1     GENERATOR      SCHEDULED 2009-09-10 2009-10-01
-#> 11078   LIDDELL     NSW1     GENERATOR  NON-SCHEDULED 2013-07-01 2014-07-01
-#> 11079     BAYSW     NSW1     GENERATOR      SCHEDULED 2011-01-18 2011-04-14
-#> 11080     BAYSW     NSW1     GENERATOR  NON-SCHEDULED 2002-07-01 2003-07-01
-#> 11081   LIDDELL     NSW1     GENERATOR      SCHEDULED 2012-07-01 2013-07-01
-#> 11082     BAYSW     NSW1     GENERATOR      SCHEDULED 2009-06-09 2009-09-10
-#> 11083     BAYSW     NSW1     GENERATOR      SCHEDULED 2002-04-01 2002-07-01
-#> 11084     BAYSW     NSW1     GENERATOR      SCHEDULED 2009-09-10 2009-10-01
-#> 11085   LIDDELL     NSW1     GENERATOR  NON-SCHEDULED 2016-07-01 2017-07-01
-#> 11086     BAYSW     NSW1     GENERATOR      SCHEDULED 2001-09-13 2001-10-09
-#> 11087   LIDDELL     NSW1     GENERATOR      SCHEDULED 2019-07-01 2020-07-01
-#> 11088     BAYSW     NSW1     GENERATOR      SCHEDULED 2024-11-08 2025-07-01
-#> 11089   LIDDELL     NSW1     GENERATOR      SCHEDULED 2009-10-01 2010-07-01
-#> 11090   LIDDELL     NSW1     GENERATOR  NON-SCHEDULED 2001-09-12 2001-10-09
-#> 11091     BAYSW     NSW1     GENERATOR      SCHEDULED 2009-09-10 2009-10-01
-#> 11092   LIDDELL     NSW1     GENERATOR      SCHEDULED 2010-10-27 2011-01-18
-#> 11093   LIDDELL     NSW1     GENERATOR  NON-SCHEDULED 2021-07-01 2022-03-15
-#> 11094     BAYSW     NSW1     GENERATOR      SCHEDULED 2008-07-01 2009-06-09
-#> 11095    TOMAGO     NSW1          LOAD  NON-SCHEDULED 2004-07-01 2005-07-01
-#> 11096     BAYSW     NSW1     GENERATOR  NON-SCHEDULED 2001-07-01 2001-09-12
-#> 11097   LIDDELL     NSW1     GENERATOR      SCHEDULED 2021-07-01 2022-03-15
-#> 11098    TOMAGO     NSW1          LOAD  NON-SCHEDULED 2001-09-11 2001-09-12
-#> 11099   LIDDELL     NSW1     GENERATOR      SCHEDULED 2008-07-01 2009-07-01
-#> 11100   LIDDELL     NSW1     GENERATOR      SCHEDULED 2010-07-01 2010-10-27
-#> 11101    TOMAGO     NSW1          LOAD  NON-SCHEDULED 2001-09-11 2001-09-12
-#> 11102    TOMAGO     NSW1          LOAD  NON-SCHEDULED 2001-10-09 2002-04-01
-#> 11103    BHBESS     NSW1          LOAD      SCHEDULED 2024-06-03 2024-07-01
-#> 11104     BAYSW     NSW1     GENERATOR      SCHEDULED 2000-09-11 2000-12-19
-#> 11105    BHBESS     NSW1 BIDIRECTIONAL      SCHEDULED 2025-07-01 2026-07-01
-#> 11106    TOMAGO     NSW1          LOAD  NON-SCHEDULED 2009-07-01 2009-09-10
-#> 11107   LIDDELL     NSW1     GENERATOR  NON-SCHEDULED 2018-07-01 2019-07-01
-#> 11108     BAYSW     NSW1     GENERATOR      SCHEDULED 2004-07-01 2005-05-31
-#> 11109   LIDDELL     NSW1     GENERATOR  NON-SCHEDULED 2019-07-01 2020-07-01
-#> 11110    TOMAGO     NSW1          LOAD  NON-SCHEDULED 2001-09-12 2001-10-09
-#> 11111   LIDDELL     NSW1     GENERATOR      SCHEDULED 2004-04-29 2004-07-01
-#> 11112    TOMAGO     NSW1          LOAD  NON-SCHEDULED 1999-07-01 2000-07-01
-#> 11113   LIDDELL     NSW1     GENERATOR      SCHEDULED 2015-07-01 2016-07-01
-#> 11114     BAYSW     NSW1     GENERATOR      SCHEDULED 2022-07-01 2023-07-01
-#> 11115    TOMAGO     NSW1          LOAD  NON-SCHEDULED 2002-04-01 2002-07-01
-#> 11116   LIDDELL     NSW1     GENERATOR      SCHEDULED 2022-04-01 2022-04-02
-#> 11117   LIDDELL     NSW1     GENERATOR      SCHEDULED 2002-07-01 2003-07-01
-#> 11118     BAYSW     NSW1     GENERATOR      SCHEDULED 2010-07-01 2010-10-27
-#> 11119     BAYSW     NSW1     GENERATOR      SCHEDULED 2021-07-01 2022-03-15
-#> 11120     BAYSW     NSW1     GENERATOR      SCHEDULED 2005-05-31 2005-07-01
-#> 11121     BAYSW     NSW1     GENERATOR      SCHEDULED 2009-07-01 2009-09-10
-#> 11122     BAYSW     NSW1     GENERATOR  NON-SCHEDULED 2000-12-19 2001-07-01
-#> 11123   LIDDELL     NSW1     GENERATOR      SCHEDULED 2022-04-01 2022-04-02
-#> 11124   LIDDELL     NSW1     GENERATOR      SCHEDULED 2016-07-01 2017-07-01
-#> 11125     BAYSW     NSW1     GENERATOR      SCHEDULED 2023-11-28 2024-06-03
-#> 11126   LIDDELL     NSW1     GENERATOR      SCHEDULED 2022-07-01 2023-05-01
-#> 11127   LIDDELL     NSW1     GENERATOR      SCHEDULED 2011-04-14 2011-07-01
-#> 11128     BAYSW     NSW1     GENERATOR      SCHEDULED 2005-07-01 2006-07-01
-#> 11129    TOMAGO     NSW1          LOAD  NON-SCHEDULED 2000-12-19 2001-07-01
-#> 11130     BAYSW     NSW1     GENERATOR      SCHEDULED 2000-07-01 2000-09-11
-#> 11131     BAYSW     NSW1     GENERATOR      SCHEDULED 2003-12-09 2004-04-29
-#> 11132     BAYSW     NSW1     GENERATOR      SCHEDULED 2002-04-01 2002-07-01
-#> 11133     BAYSW     NSW1     GENERATOR      SCHEDULED 2004-04-29 2004-07-01
-#> 11134     BAYSW     NSW1     GENERATOR      SCHEDULED 2007-07-01 2007-09-20
-#> 11135   LIDDELL     NSW1     GENERATOR      SCHEDULED 2010-07-01 2010-10-27
-#> 11136     BAYSW     NSW1     GENERATOR      SCHEDULED 2007-01-16 2007-07-01
-#> 11137   LIDDELL     NSW1     GENERATOR      SCHEDULED 2003-12-09 2004-04-29
-#> 11138     BAYSW     NSW1     GENERATOR      SCHEDULED 2024-11-08 2025-07-01
-#> 11139    TOMAGO     NSW1          LOAD  NON-SCHEDULED 2006-07-01 2007-01-16
-#> 11140   LIDDELL     NSW1     GENERATOR  NON-SCHEDULED 2000-07-01 2000-09-11
-#> 11141     BAYSW     NSW1     GENERATOR      SCHEDULED 2014-07-01 2014-09-03
-#> 11142   LIDDELL     NSW1     GENERATOR      SCHEDULED 2018-07-01 2019-07-01
-#> 11143     BAYSW     NSW1     GENERATOR      SCHEDULED 2002-07-01 2003-07-01
-#> 11144    BHBESS     NSW1          LOAD      SCHEDULED 2024-07-04 2024-07-26
-#> 11145     BAYSW     NSW1     GENERATOR      SCHEDULED 2008-07-01 2009-07-01
-#> 11146   HUNTVGT     NSW1     GENERATOR      SCHEDULED 2006-07-01 2007-01-16
-#> 11147     BAYSW     NSW1     GENERATOR      SCHEDULED 2008-07-01 2009-07-01
-#> 11148     BAYSW     NSW1     GENERATOR  NON-SCHEDULED 2000-09-11 2000-12-19
-#> 11149     BAYSW     NSW1     GENERATOR      SCHEDULED 2015-07-01 2016-07-01
-#> 11150     BAYSW     NSW1     GENERATOR      SCHEDULED 2003-07-01 2003-12-09
-#> 11151    TOMAGO     NSW1          LOAD  NON-SCHEDULED 2007-01-16 2007-07-01
-#> 11152     BAYSW     NSW1     GENERATOR      SCHEDULED 2007-09-20 2008-07-01
-#> 11153   LIDDELL     NSW1     GENERATOR      SCHEDULED 2020-07-01 2021-07-01
-#> 11154   LIDDELL     NSW1     GENERATOR      SCHEDULED 2009-10-01 2010-07-01
-#> 11155     BAYSW     NSW1     GENERATOR  NON-SCHEDULED 2003-07-01 2004-07-01
-#> 11156   LIDDELL     NSW1     GENERATOR      SCHEDULED 2017-07-01 2018-07-01
-#> 11157     BAYSW     NSW1     GENERATOR      SCHEDULED 2002-04-01 2002-07-01
-#> 11158     BAYSW     NSW1     GENERATOR      SCHEDULED 2010-10-27 2011-01-18
-#> 11159   LIDDELL     NSW1     GENERATOR  NON-SCHEDULED 2001-07-01 2001-09-12
-#> 11160    TOMAGO     NSW1          LOAD  NON-SCHEDULED 2001-07-01 2001-09-11
-#> 11161   HUNTVGT     NSW1     GENERATOR      SCHEDULED 2000-12-19 2001-07-01
-#> 11162   LIDDELL     NSW1     GENERATOR      SCHEDULED 2001-09-12 2001-09-13
-#> 11163     BAYSW     NSW1     GENERATOR  NON-SCHEDULED 2000-07-01 2000-09-11
-#> 11164     BAYSW     NSW1     GENERATOR  NON-SCHEDULED 1999-07-01 2000-07-01
-#> 11165     BAYSW     NSW1     GENERATOR      SCHEDULED 2023-07-01 2023-11-28
-#> 11166     BAYSW     NSW1     GENERATOR      SCHEDULED 2024-07-01 2024-11-08
-#> 11167   LIDDELL     NSW1     GENERATOR  NON-SCHEDULED 2022-04-01 2022-04-02
-#> 11168     BAYSW     NSW1     GENERATOR      SCHEDULED 2005-07-01 2006-07-01
-#> 11169   LIDDELL     NSW1     GENERATOR      SCHEDULED 2009-07-01 2009-09-10
-#> 11170   LIDDELL     NSW1     GENERATOR      SCHEDULED 2009-07-01 2009-09-10
-#> 11171     BAYSW     NSW1     GENERATOR      SCHEDULED 2024-06-03 2024-07-01
-#> 11172     BAYSW     NSW1     GENERATOR      SCHEDULED 2001-10-09 2002-04-01
-#> 11173    TOMAGO     NSW1          LOAD  NON-SCHEDULED 2008-07-01 2009-03-20
-#> 11174     BAYSW     NSW1     GENERATOR      SCHEDULED 2005-07-01 2006-07-01
-#> 11175   LIDDELL     NSW1     GENERATOR      SCHEDULED 2017-07-01 2018-07-01
-#> 11176   HUNTVGT     NSW1     GENERATOR      SCHEDULED 2000-07-01 2000-09-11
-#> 11177   LIDDELL     NSW1     GENERATOR  NON-SCHEDULED 1998-10-25 1999-07-01
-#> 11178     BAYSW     NSW1     GENERATOR      SCHEDULED 2024-07-01 2024-11-08
-#> 11179   LIDDELL     NSW1     GENERATOR      SCHEDULED 2003-07-01 2003-12-09
-#> 11180   LIDDELL     NSW1     GENERATOR      SCHEDULED 2021-07-01 2022-03-15
-#> 11181   LIDDELL     NSW1     GENERATOR      SCHEDULED 2022-03-15 2022-04-01
-#> 11182     BAYSW     NSW1     GENERATOR      SCHEDULED 2021-07-01 2022-03-15
-#> 11183   LIDDELL     NSW1     GENERATOR  NON-SCHEDULED 1999-07-01 2000-07-01
-#> 11184    TOMAGO     NSW1          LOAD  NON-SCHEDULED 2000-07-01 2000-09-11
-#> 11185    TOMAGO     NSW1          LOAD  NON-SCHEDULED 2002-04-01 2002-07-01
-#> 11186   LIDDELL     NSW1     GENERATOR      SCHEDULED 2022-04-02 2022-07-01
-#> 11187   LIDDELL     NSW1     GENERATOR      SCHEDULED 2005-07-01 2006-07-01
-#> 11188     BAYSW     NSW1     GENERATOR      SCHEDULED 2004-04-29 2004-07-01
-#> 11189   LIDDELL     NSW1     GENERATOR      SCHEDULED 2017-07-01 2018-07-01
-#> 11190   LIDDELL     NSW1     GENERATOR      SCHEDULED 2016-07-01 2017-07-01
-#> 11191     BAYSW     NSW1     GENERATOR      SCHEDULED 2010-07-01 2010-10-27
-#> 11192   LIDDELL     NSW1     GENERATOR      SCHEDULED 2014-09-03 2015-07-01
-#> 11193    TOMAGO     NSW1          LOAD  NON-SCHEDULED 2003-07-01 2004-07-01
-#> 11194   LIDDELL     NSW1     GENERATOR  NON-SCHEDULED 2000-09-11 2000-12-19
-#> 11195   HUNTVGT     NSW1     GENERATOR      SCHEDULED 2002-04-01 2002-07-01
-#> 11196   HUNTVGT     NSW1     GENERATOR      SCHEDULED 2004-07-01 2005-07-01
-#> 11197    TOMAGO     NSW1          LOAD  NON-SCHEDULED 2009-03-20 2009-07-01
-#> 11198     BAYSW     NSW1     GENERATOR  NON-SCHEDULED 2004-07-01 2005-07-01
-#> 11199     BAYSW     NSW1     GENERATOR      SCHEDULED 2013-07-01 2014-07-01
-#> 11200   HUNTVGT     NSW1     GENERATOR      SCHEDULED 2005-07-01 2006-07-01
-#> 11201   LIDDELL     NSW1     GENERATOR      SCHEDULED 2008-07-01 2009-07-01
-#> 11202     BAYSW     NSW1     GENERATOR      SCHEDULED 2007-09-20 2008-07-01
-#> 11203     BAYSW     NSW1     GENERATOR      SCHEDULED 2025-09-16 2026-07-01
-#> 11204   LIDDELL     NSW1     GENERATOR      SCHEDULED 2019-07-01 2020-07-01
-#> 11205   HUNTVGT     NSW1     GENERATOR      SCHEDULED 1998-10-25 1999-07-01
-#> 11206     BAYSW     NSW1     GENERATOR      SCHEDULED 2019-07-01 2020-07-01
-#> 11207     BAYSW     NSW1     GENERATOR      SCHEDULED 2023-07-01 2023-11-28
-#> 11208   LIDDELL     NSW1     GENERATOR      SCHEDULED 2007-07-01 2008-07-01
-#> 11209   LIDDELL     NSW1     GENERATOR      SCHEDULED 2021-07-01 2022-03-15
-#> 11210   LIDDELL     NSW1     GENERATOR      SCHEDULED 2022-04-01 2022-04-02
-#> 11211   LIDDELL     NSW1     GENERATOR      SCHEDULED 2003-12-09 2004-04-29
-#> 11212   LIDDELL     NSW1     GENERATOR      SCHEDULED 2020-07-01 2021-07-01
-#> 11213   LIDDELL     NSW1     GENERATOR      SCHEDULED 2006-07-01 2007-01-16
-#> 11214     BAYSW     NSW1     GENERATOR      SCHEDULED 2004-07-01 2005-05-31
-#> 11215     BAYSW     NSW1     GENERATOR      SCHEDULED 2002-07-01 2003-07-01
-#> 11216     BAYSW     NSW1     GENERATOR      SCHEDULED 2017-07-01 2018-07-01
-#> 11217     BAYSW     NSW1     GENERATOR      SCHEDULED 2008-07-01 2009-07-01
-#> 11218     BAYSW     NSW1     GENERATOR  NON-SCHEDULED 1998-10-25 1999-07-01
-#> 11219   LIDDELL     NSW1     GENERATOR      SCHEDULED 2009-07-01 2009-09-10
-#> 11220     BAYSW     NSW1     GENERATOR      SCHEDULED 2020-06-15 2020-07-01
-#> 11221   LIDDELL     NSW1     GENERATOR      SCHEDULED 2018-07-01 2019-07-01
-#> 11222     BAYSW     NSW1     GENERATOR      SCHEDULED 2000-07-01 2000-09-11
-#> 11223     BAYSW     NSW1     GENERATOR      SCHEDULED 2007-07-01 2007-09-20
-#> 11224     BAYSW     NSW1     GENERATOR      SCHEDULED 2013-07-01 2014-07-01
-#> 11225     BAYSW     NSW1     GENERATOR      SCHEDULED 2014-09-03 2015-07-01
-#> 11226   LIDDELL     NSW1     GENERATOR      SCHEDULED 2001-07-01 2001-09-12
-#> 11227     BAYSW     NSW1     GENERATOR      SCHEDULED 1999-07-01 2000-07-01
-#> 11228   HUNTVGT     NSW1     GENERATOR      SCHEDULED 2007-01-16 2007-07-01
-#> 11229     BAYSW     NSW1     GENERATOR      SCHEDULED 2003-07-01 2003-12-09
-#> 11230   LIDDELL     NSW1     GENERATOR      SCHEDULED 2018-07-01 2019-07-01
-#> 11231     BAYSW     NSW1     GENERATOR  NON-SCHEDULED 2005-07-01 2006-07-01
-#> 11232   HUNTVGT     NSW1     GENERATOR      SCHEDULED 1999-07-01 2000-07-01
-#> 11233     BAYSW     NSW1     GENERATOR      SCHEDULED 2004-04-29 2004-07-01
-#> 11234   LIDDELL     NSW1     GENERATOR      SCHEDULED 2004-07-01 2005-05-31
-#> 11235     BAYSW     NSW1     GENERATOR      SCHEDULED 2003-12-09 2004-04-29
-#> 11236     BAYSW     NSW1     GENERATOR      SCHEDULED 2009-10-01 2010-07-01
-#> 11237   LIDDELL     NSW1     GENERATOR      SCHEDULED 2005-05-31 2005-07-01
-#> 11238     BAYSW     NSW1     GENERATOR      SCHEDULED 2005-07-01 2006-07-01
-#> 11239   LIDDELL     NSW1     GENERATOR      SCHEDULED 2011-04-14 2011-07-01
-#> 11240    TOMAGO     NSW1          LOAD  NON-SCHEDULED 2007-07-01 2008-07-01
-#> 11241   LIDDELL     NSW1     GENERATOR      SCHEDULED 2007-07-01 2008-07-01
-#> 11242   HUNTVGT     NSW1     GENERATOR      SCHEDULED 2003-07-01 2004-07-01
-#> 11243   HUNTVGT     NSW1     GENERATOR      SCHEDULED 2000-09-11 2000-12-19
-#> 11244     BAYSW     NSW1     GENERATOR      SCHEDULED 2002-07-01 2003-07-01
-#> 11245     BAYSW     NSW1     GENERATOR      SCHEDULED 2018-07-01 2019-07-01
-#> 11246     BAYSW     NSW1     GENERATOR  NON-SCHEDULED 2007-01-16 2007-07-01
-#> 11247     BAYSW     NSW1     GENERATOR      SCHEDULED 2016-07-01 2017-07-01
-#> 11248     BAYSW     NSW1     GENERATOR      SCHEDULED 2024-06-03 2024-07-01
-#> 11249     BAYSW     NSW1     GENERATOR      SCHEDULED 2020-07-01 2021-07-01
+#> 10990     BAYSW     NSW1     GENERATOR      SCHEDULED 2006-07-01 2007-01-16
+#> 10991    TOMAGO     NSW1          LOAD  NON-SCHEDULED 2002-07-01 2003-07-01
+#> 10992    TOMAGO     NSW1          LOAD  NON-SCHEDULED 2001-07-01 2001-09-11
+#> 10993   LIDDELL     NSW1     GENERATOR      SCHEDULED 2011-01-18 2011-04-14
+#> 10994     BAYSW     NSW1     GENERATOR      SCHEDULED 2001-07-01 2001-09-12
+#> 10995     BAYSW     NSW1     GENERATOR      SCHEDULED 2003-07-01 2003-12-09
+#> 10996     BAYSW     NSW1     GENERATOR      SCHEDULED 2022-07-01 2023-07-01
+#> 10997   LIDDELL     NSW1     GENERATOR      SCHEDULED 2011-01-18 2011-04-14
+#> 10998   LIDDELL     NSW1     GENERATOR      SCHEDULED 2020-07-01 2021-07-01
+#> 10999   LIDDELL     NSW1     GENERATOR      SCHEDULED 2005-07-01 2006-07-01
+#> 11000   LIDDELL     NSW1     GENERATOR      SCHEDULED 2014-09-03 2015-07-01
+#> 11001     BAYSW     NSW1     GENERATOR      SCHEDULED 2004-07-01 2005-05-31
+#> 11002   LIDDELL     NSW1     GENERATOR      SCHEDULED 2015-07-01 2016-07-01
+#> 11003   LIDDELL     NSW1     GENERATOR      SCHEDULED 2010-10-27 2011-01-18
+#> 11004   LIDDELL     NSW1     GENERATOR      SCHEDULED 2012-07-01 2013-07-01
+#> 11005   LIDDELL     NSW1     GENERATOR  NON-SCHEDULED 2017-07-01 2018-07-01
+#> 11006     BAYSW     NSW1     GENERATOR      SCHEDULED 2010-10-27 2011-01-18
+#> 11007     BAYSW     NSW1     GENERATOR      SCHEDULED 1999-07-01 2000-07-01
+#> 11008    TOMAGO     NSW1          LOAD  NON-SCHEDULED 2000-07-01 2000-09-11
+#> 11009     BAYSW     NSW1     GENERATOR      SCHEDULED 2011-07-01 2012-07-01
+#> 11010     BAYSW     NSW1     GENERATOR      SCHEDULED 1998-10-25 1999-07-01
+#> 11011    TOMAGO     NSW1          LOAD  NON-SCHEDULED 1999-07-01 2000-07-01
+#> 11012     BAYSW     NSW1     GENERATOR      SCHEDULED 2000-12-19 2001-07-01
+#> 11013     BAYSW     NSW1     GENERATOR      SCHEDULED 2001-09-12 2001-09-13
+#> 11014     BAYSW     NSW1     GENERATOR      SCHEDULED 2007-01-16 2007-07-01
+#> 11015     BAYSW     NSW1     GENERATOR  NON-SCHEDULED 2002-04-01 2002-07-01
+#> 11016    TOMAGO     NSW1          LOAD  NON-SCHEDULED 2003-07-01 2004-07-01
+#> 11017     BAYSW     NSW1     GENERATOR      SCHEDULED 2001-09-13 2001-10-09
+#> 11018    TOMAGO     NSW1          LOAD  NON-SCHEDULED 2001-10-09 2002-04-01
+#> 11019    BHBESS     NSW1     GENERATOR      SCHEDULED 2024-07-01 2024-07-04
+#> 11020    BHBESS     NSW1     GENERATOR      SCHEDULED 2024-06-03 2024-07-01
+#> 11021   LIDDELL     NSW1     GENERATOR      SCHEDULED 2009-10-01 2010-07-01
+#> 11022     BAYSW     NSW1     GENERATOR      SCHEDULED 2001-09-13 2001-10-09
+#> 11023   LIDDELL     NSW1     GENERATOR      SCHEDULED 2022-04-02 2022-07-01
+#> 11024   LIDDELL     NSW1     GENERATOR      SCHEDULED 2007-01-16 2007-07-01
+#> 11025    TOMAGO     NSW1          LOAD  NON-SCHEDULED 2000-09-11 2000-12-19
+#> 11026     BAYSW     NSW1     GENERATOR      SCHEDULED 2007-07-01 2007-09-20
+#> 11027     BAYSW     NSW1     GENERATOR      SCHEDULED 2000-09-11 2000-12-19
+#> 11028   LIDDELL     NSW1     GENERATOR      SCHEDULED 2013-07-01 2014-07-01
+#> 11029     BAYSW     NSW1     GENERATOR      SCHEDULED 2007-09-20 2008-07-01
+#> 11030     BAYSW     NSW1     GENERATOR      SCHEDULED 2023-11-28 2024-06-03
+#> 11031   LIDDELL     NSW1     GENERATOR      SCHEDULED 2003-12-09 2004-04-29
+#> 11032    TOMAGO     NSW1          LOAD  NON-SCHEDULED 2001-10-09 2002-04-01
+#> 11033   LIDDELL     NSW1     GENERATOR      SCHEDULED 2007-01-16 2007-07-01
+#> 11034     BAYSW     NSW1     GENERATOR      SCHEDULED 2022-03-15 2022-07-01
+#> 11035     BAYSW     NSW1     GENERATOR      SCHEDULED 2009-09-10 2009-10-01
+#> 11036   LIDDELL     NSW1     GENERATOR      SCHEDULED 2015-07-01 2016-07-01
+#> 11037    TOMAGO     NSW1          LOAD  NON-SCHEDULED 2007-01-16 2007-07-01
+#> 11038     BAYSW     NSW1     GENERATOR      SCHEDULED 2010-07-01 2010-10-27
+#> 11039     BAYSW     NSW1     GENERATOR      SCHEDULED 2003-07-01 2003-12-09
+#> 11040   LIDDELL     NSW1     GENERATOR  NON-SCHEDULED 2022-04-02 2022-07-01
+#> 11041     BAYSW     NSW1     GENERATOR      SCHEDULED 2001-07-01 2001-09-12
+#> 11042     BAYSW     NSW1     GENERATOR      SCHEDULED 2002-07-01 2003-07-01
+#> 11043   LIDDELL     NSW1     GENERATOR      SCHEDULED 2003-12-09 2004-04-29
+#> 11044     BAYSW     NSW1     GENERATOR      SCHEDULED 2022-03-15 2022-07-01
+#> 11045     BAYSW     NSW1     GENERATOR      SCHEDULED 2001-09-12 2001-09-13
+#> 11046   LIDDELL     NSW1     GENERATOR  NON-SCHEDULED 2026-07-01 2999-12-31
+#> 11047   LIDDELL     NSW1     GENERATOR      SCHEDULED 2020-07-01 2021-07-01
+#> 11048   LIDDELL     NSW1     GENERATOR  NON-SCHEDULED 2025-07-01 2026-07-01
+#> 11049    TOMAGO     NSW1          LOAD  NON-SCHEDULED 1999-07-01 2000-07-01
+#> 11050   LIDDELL     NSW1     GENERATOR      SCHEDULED 2014-09-03 2015-07-01
+#> 11051   LIDDELL     NSW1     GENERATOR      SCHEDULED 2022-03-15 2022-04-01
+#> 11052   LIDDELL     NSW1     GENERATOR      SCHEDULED 2016-07-01 2017-07-01
+#> 11053   LIDDELL     NSW1     GENERATOR      SCHEDULED 2002-04-01 2002-07-01
+#> 11054   LIDDELL     NSW1     GENERATOR      SCHEDULED 2022-03-15 2022-04-01
+#> 11055   LIDDELL     NSW1     GENERATOR      SCHEDULED 2011-07-01 2012-07-01
+#> 11056    TOMAGO     NSW1          LOAD  NON-SCHEDULED 2002-07-01 2003-07-01
+#> 11057   LIDDELL     NSW1     GENERATOR      SCHEDULED 2019-07-01 2020-07-01
+#> 11058     BAYSW     NSW1     GENERATOR      SCHEDULED 2022-03-15 2022-07-01
+#> 11059   LIDDELL     NSW1     GENERATOR      SCHEDULED 1998-10-25 1999-07-01
+#> 11060     BAYSW     NSW1     GENERATOR      SCHEDULED 2006-07-01 2007-01-16
+#> 11061    BHBESS     NSW1          LOAD      SCHEDULED 2023-11-28 2024-06-03
+#> 11062   LIDDELL     NSW1     GENERATOR      SCHEDULED 2009-07-01 2009-09-10
+#> 11063     BAYSW     NSW1     GENERATOR      SCHEDULED 2011-01-18 2011-04-14
+#> 11064   LIDDELL     NSW1     GENERATOR      SCHEDULED 2021-07-01 2022-03-15
+#> 11065   LIDDELL     NSW1     GENERATOR      SCHEDULED 2007-07-01 2008-07-01
+#> 11066     BAYSW     NSW1     GENERATOR      SCHEDULED 2023-11-28 2024-06-03
+#> 11067   LIDDELL     NSW1     GENERATOR      SCHEDULED 2014-07-01 2014-09-03
+#> 11068     BAYSW     NSW1     GENERATOR  NON-SCHEDULED 2001-10-09 2002-04-01
+#> 11069     BAYSW     NSW1     GENERATOR  NON-SCHEDULED 2001-09-12 2001-10-09
+#> 11070     BAYSW     NSW1     GENERATOR      SCHEDULED 2002-04-01 2002-07-01
+#> 11071     BAYSW     NSW1     GENERATOR      SCHEDULED 2024-07-01 2024-11-08
+#> 11072   LIDDELL     NSW1     GENERATOR      SCHEDULED 2009-09-10 2009-10-01
+#> 11073     BAYSW     NSW1     GENERATOR      SCHEDULED 2010-10-27 2011-01-18
+#> 11074   LIDDELL     NSW1     GENERATOR  NON-SCHEDULED 2000-12-19 2001-07-01
+#> 11075    TOMAGO     NSW1          LOAD  NON-SCHEDULED 2002-07-01 2003-07-01
+#> 11076     BAYSW     NSW1     GENERATOR      SCHEDULED 2014-07-01 2014-09-03
+#> 11077   LIDDELL     NSW1     GENERATOR      SCHEDULED 2011-04-14 2011-07-01
+#> 11078   LIDDELL     NSW1     GENERATOR  NON-SCHEDULED 2003-07-01 2004-07-01
+#> 11079    TOMAGO     NSW1          LOAD  NON-SCHEDULED 2005-07-01 2006-07-01
+#> 11080     BAYSW     NSW1     GENERATOR      SCHEDULED 2011-01-18 2011-04-14
+#> 11081     BAYSW     NSW1     GENERATOR  NON-SCHEDULED 2002-07-01 2003-07-01
+#> 11082   LIDDELL     NSW1     GENERATOR      SCHEDULED 2013-07-01 2014-07-01
+#> 11083     BAYSW     NSW1     GENERATOR      SCHEDULED 2009-06-09 2009-09-10
+#> 11084     BAYSW     NSW1     GENERATOR      SCHEDULED 2002-04-01 2002-07-01
+#> 11085     BAYSW     NSW1     GENERATOR      SCHEDULED 2009-09-10 2009-10-01
+#> 11086   LIDDELL     NSW1     GENERATOR  NON-SCHEDULED 2016-07-01 2017-07-01
+#> 11087     BAYSW     NSW1     GENERATOR      SCHEDULED 2001-09-13 2001-10-09
+#> 11088   LIDDELL     NSW1     GENERATOR      SCHEDULED 2019-07-01 2020-07-01
+#> 11089     BAYSW     NSW1     GENERATOR      SCHEDULED 2024-11-08 2025-07-01
+#> 11090   LIDDELL     NSW1     GENERATOR      SCHEDULED 2009-10-01 2010-07-01
+#> 11091   LIDDELL     NSW1     GENERATOR      SCHEDULED 2009-09-10 2009-10-01
+#> 11092   LIDDELL     NSW1     GENERATOR  NON-SCHEDULED 2013-07-01 2014-07-01
+#> 11093   LIDDELL     NSW1     GENERATOR      SCHEDULED 2010-10-27 2011-01-18
+#> 11094   LIDDELL     NSW1     GENERATOR  NON-SCHEDULED 2021-07-01 2022-03-15
+#> 11095     BAYSW     NSW1     GENERATOR      SCHEDULED 2008-07-01 2009-06-09
+#> 11096   LIDDELL     NSW1     GENERATOR      SCHEDULED 2012-07-01 2013-07-01
+#> 11097     BAYSW     NSW1     GENERATOR  NON-SCHEDULED 2001-07-01 2001-09-12
+#> 11098   LIDDELL     NSW1     GENERATOR      SCHEDULED 2021-07-01 2022-03-15
+#> 11099    TOMAGO     NSW1          LOAD  NON-SCHEDULED 2001-09-11 2001-09-12
+#> 11100   LIDDELL     NSW1     GENERATOR      SCHEDULED 2008-07-01 2009-07-01
+#> 11101   LIDDELL     NSW1     GENERATOR      SCHEDULED 2010-07-01 2010-10-27
+#> 11102   LIDDELL     NSW1     GENERATOR      SCHEDULED 2009-10-01 2010-07-01
+#> 11103   LIDDELL     NSW1     GENERATOR  NON-SCHEDULED 2020-07-01 2021-07-01
+#> 11104   LIDDELL     NSW1     GENERATOR  NON-SCHEDULED 2001-09-12 2001-10-09
+#> 11105     BAYSW     NSW1     GENERATOR      SCHEDULED 2000-09-11 2000-12-19
+#> 11106     BAYSW     NSW1     GENERATOR      SCHEDULED 2009-09-10 2009-10-01
+#> 11107    TOMAGO     NSW1          LOAD  NON-SCHEDULED 2009-07-01 2009-09-10
+#> 11108   LIDDELL     NSW1     GENERATOR  NON-SCHEDULED 2018-07-01 2019-07-01
+#> 11109     BAYSW     NSW1     GENERATOR      SCHEDULED 2004-07-01 2005-05-31
+#> 11110    TOMAGO     NSW1          LOAD  NON-SCHEDULED 2005-07-01 2006-07-01
+#> 11111    TOMAGO     NSW1          LOAD  NON-SCHEDULED 2001-09-12 2001-10-09
+#> 11112   LIDDELL     NSW1     GENERATOR      SCHEDULED 2004-04-29 2004-07-01
+#> 11113    TOMAGO     NSW1          LOAD  NON-SCHEDULED 1999-07-01 2000-07-01
+#> 11114   LIDDELL     NSW1     GENERATOR      SCHEDULED 2015-07-01 2016-07-01
+#> 11115     BAYSW     NSW1     GENERATOR      SCHEDULED 2022-07-01 2023-07-01
+#> 11116    TOMAGO     NSW1          LOAD  NON-SCHEDULED 2002-04-01 2002-07-01
+#> 11117   LIDDELL     NSW1     GENERATOR      SCHEDULED 2022-04-01 2022-04-02
+#> 11118   LIDDELL     NSW1     GENERATOR      SCHEDULED 2002-07-01 2003-07-01
+#> 11119     BAYSW     NSW1     GENERATOR      SCHEDULED 2010-07-01 2010-10-27
+#> 11120     BAYSW     NSW1     GENERATOR      SCHEDULED 2021-07-01 2022-03-15
+#> 11121     BAYSW     NSW1     GENERATOR      SCHEDULED 2005-05-31 2005-07-01
+#> 11122     BAYSW     NSW1     GENERATOR      SCHEDULED 2009-07-01 2009-09-10
+#> 11123     BAYSW     NSW1     GENERATOR  NON-SCHEDULED 2000-12-19 2001-07-01
+#> 11124   LIDDELL     NSW1     GENERATOR      SCHEDULED 2022-04-01 2022-04-02
+#> 11125   LIDDELL     NSW1     GENERATOR      SCHEDULED 2016-07-01 2017-07-01
+#> 11126     BAYSW     NSW1     GENERATOR      SCHEDULED 2023-11-28 2024-06-03
+#> 11127   LIDDELL     NSW1     GENERATOR      SCHEDULED 2022-07-01 2023-05-01
+#> 11128   LIDDELL     NSW1     GENERATOR      SCHEDULED 2011-04-14 2011-07-01
+#> 11129    TOMAGO     NSW1          LOAD  NON-SCHEDULED 2001-09-11 2001-09-12
+#> 11130    TOMAGO     NSW1          LOAD  NON-SCHEDULED 2001-10-09 2002-04-01
+#> 11131     BAYSW     NSW1     GENERATOR      SCHEDULED 2000-07-01 2000-09-11
+#> 11132     BAYSW     NSW1     GENERATOR      SCHEDULED 2003-12-09 2004-04-29
+#> 11133    BHBESS     NSW1 BIDIRECTIONAL      SCHEDULED 2025-07-01 2026-07-01
+#> 11134     BAYSW     NSW1     GENERATOR      SCHEDULED 2004-04-29 2004-07-01
+#> 11135   HUNTVGT     NSW1     GENERATOR      SCHEDULED 2006-07-01 2007-01-16
+#> 11136    TOMAGO     NSW1          LOAD  NON-SCHEDULED 2004-07-01 2005-07-01
+#> 11137   LIDDELL     NSW1     GENERATOR  NON-SCHEDULED 2019-07-01 2020-07-01
+#> 11138   LIDDELL     NSW1     GENERATOR      SCHEDULED 2003-12-09 2004-04-29
+#> 11139     BAYSW     NSW1     GENERATOR      SCHEDULED 2024-11-08 2025-07-01
+#> 11140    TOMAGO     NSW1          LOAD  NON-SCHEDULED 2006-07-01 2007-01-16
+#> 11141   LIDDELL     NSW1     GENERATOR  NON-SCHEDULED 2000-07-01 2000-09-11
+#> 11142     BAYSW     NSW1     GENERATOR      SCHEDULED 2014-07-01 2014-09-03
+#> 11143   LIDDELL     NSW1     GENERATOR      SCHEDULED 2018-07-01 2019-07-01
+#> 11144    BHBESS     NSW1          LOAD      SCHEDULED 2024-06-03 2024-07-01
+#> 11145    BHBESS     NSW1          LOAD      SCHEDULED 2024-07-04 2024-07-26
+#> 11146     BAYSW     NSW1     GENERATOR      SCHEDULED 2008-07-01 2009-07-01
+#> 11147     BAYSW     NSW1     GENERATOR      SCHEDULED 2002-04-01 2002-07-01
+#> 11148     BAYSW     NSW1     GENERATOR      SCHEDULED 2008-07-01 2009-07-01
+#> 11149     BAYSW     NSW1     GENERATOR  NON-SCHEDULED 2000-09-11 2000-12-19
+#> 11150     BAYSW     NSW1     GENERATOR      SCHEDULED 2015-07-01 2016-07-01
+#> 11151     BAYSW     NSW1     GENERATOR      SCHEDULED 2003-07-01 2003-12-09
+#> 11152    TOMAGO     NSW1          LOAD  NON-SCHEDULED 2007-01-16 2007-07-01
+#> 11153     BAYSW     NSW1     GENERATOR      SCHEDULED 2007-09-20 2008-07-01
+#> 11154   LIDDELL     NSW1     GENERATOR      SCHEDULED 2020-07-01 2021-07-01
+#> 11155   LIDDELL     NSW1     GENERATOR      SCHEDULED 2009-10-01 2010-07-01
+#> 11156     BAYSW     NSW1     GENERATOR      SCHEDULED 2005-07-01 2006-07-01
+#> 11157   LIDDELL     NSW1     GENERATOR      SCHEDULED 2017-07-01 2018-07-01
+#> 11158     BAYSW     NSW1     GENERATOR      SCHEDULED 2002-04-01 2002-07-01
+#> 11159     BAYSW     NSW1     GENERATOR      SCHEDULED 2010-10-27 2011-01-18
+#> 11160   LIDDELL     NSW1     GENERATOR  NON-SCHEDULED 2001-07-01 2001-09-12
+#> 11161    TOMAGO     NSW1          LOAD  NON-SCHEDULED 2001-07-01 2001-09-11
+#> 11162   HUNTVGT     NSW1     GENERATOR      SCHEDULED 2000-12-19 2001-07-01
+#> 11163   LIDDELL     NSW1     GENERATOR      SCHEDULED 2010-07-01 2010-10-27
+#> 11164     BAYSW     NSW1     GENERATOR  NON-SCHEDULED 2000-07-01 2000-09-11
+#> 11165     BAYSW     NSW1     GENERATOR  NON-SCHEDULED 1999-07-01 2000-07-01
+#> 11166     BAYSW     NSW1     GENERATOR      SCHEDULED 2023-07-01 2023-11-28
+#> 11167     BAYSW     NSW1     GENERATOR      SCHEDULED 2024-07-01 2024-11-08
+#> 11168   LIDDELL     NSW1     GENERATOR  NON-SCHEDULED 2022-04-01 2022-04-02
+#> 11169     BAYSW     NSW1     GENERATOR      SCHEDULED 2005-07-01 2006-07-01
+#> 11170    TOMAGO     NSW1          LOAD  NON-SCHEDULED 2000-12-19 2001-07-01
+#> 11171     BAYSW     NSW1     GENERATOR      SCHEDULED 2002-07-01 2003-07-01
+#> 11172     BAYSW     NSW1     GENERATOR      SCHEDULED 2024-06-03 2024-07-01
+#> 11173     BAYSW     NSW1     GENERATOR      SCHEDULED 2001-10-09 2002-04-01
+#> 11174    TOMAGO     NSW1          LOAD  NON-SCHEDULED 2008-07-01 2009-03-20
+#> 11175     BAYSW     NSW1     GENERATOR      SCHEDULED 2007-07-01 2007-09-20
+#> 11176   LIDDELL     NSW1     GENERATOR      SCHEDULED 2017-07-01 2018-07-01
+#> 11177     BAYSW     NSW1     GENERATOR      SCHEDULED 2007-01-16 2007-07-01
+#> 11178   LIDDELL     NSW1     GENERATOR  NON-SCHEDULED 1998-10-25 1999-07-01
+#> 11179     BAYSW     NSW1     GENERATOR      SCHEDULED 2024-07-01 2024-11-08
+#> 11180   LIDDELL     NSW1     GENERATOR      SCHEDULED 2003-07-01 2003-12-09
+#> 11181   LIDDELL     NSW1     GENERATOR      SCHEDULED 2021-07-01 2022-03-15
+#> 11182   LIDDELL     NSW1     GENERATOR      SCHEDULED 2022-03-15 2022-04-01
+#> 11183     BAYSW     NSW1     GENERATOR      SCHEDULED 2021-07-01 2022-03-15
+#> 11184   LIDDELL     NSW1     GENERATOR  NON-SCHEDULED 1999-07-01 2000-07-01
+#> 11185   LIDDELL     NSW1     GENERATOR      SCHEDULED 2009-07-01 2009-09-10
+#> 11186    TOMAGO     NSW1          LOAD  NON-SCHEDULED 2002-04-01 2002-07-01
+#> 11187     BAYSW     NSW1     GENERATOR  NON-SCHEDULED 2004-07-01 2005-07-01
+#> 11188   LIDDELL     NSW1     GENERATOR      SCHEDULED 2005-07-01 2006-07-01
+#> 11189     BAYSW     NSW1     GENERATOR      SCHEDULED 2004-04-29 2004-07-01
+#> 11190   LIDDELL     NSW1     GENERATOR      SCHEDULED 2017-07-01 2018-07-01
+#> 11191   LIDDELL     NSW1     GENERATOR      SCHEDULED 2016-07-01 2017-07-01
+#> 11192     BAYSW     NSW1     GENERATOR      SCHEDULED 2010-07-01 2010-10-27
+#> 11193   LIDDELL     NSW1     GENERATOR      SCHEDULED 2014-09-03 2015-07-01
+#> 11194    TOMAGO     NSW1          LOAD  NON-SCHEDULED 2003-07-01 2004-07-01
+#> 11195   LIDDELL     NSW1     GENERATOR  NON-SCHEDULED 2000-09-11 2000-12-19
+#> 11196     BAYSW     NSW1     GENERATOR  NON-SCHEDULED 2003-07-01 2004-07-01
+#> 11197   LIDDELL     NSW1     GENERATOR      SCHEDULED 2009-07-01 2009-09-10
+#> 11198    TOMAGO     NSW1          LOAD  NON-SCHEDULED 2009-03-20 2009-07-01
+#> 11199    TOMAGO     NSW1          LOAD  NON-SCHEDULED 2000-07-01 2000-09-11
+#> 11200     BAYSW     NSW1     GENERATOR      SCHEDULED 2013-07-01 2014-07-01
+#> 11201   HUNTVGT     NSW1     GENERATOR      SCHEDULED 2005-07-01 2006-07-01
+#> 11202     BAYSW     NSW1     GENERATOR      SCHEDULED 2005-07-01 2006-07-01
+#> 11203   HUNTVGT     NSW1     GENERATOR      SCHEDULED 2010-10-27 2011-01-18
+#> 11204   HUNTVGT     NSW1     GENERATOR      SCHEDULED 2000-07-01 2000-09-11
+#> 11205   LIDDELL     NSW1     GENERATOR      SCHEDULED 2019-07-01 2020-07-01
+#> 11206   LIDDELL     NSW1     GENERATOR      SCHEDULED 2001-09-12 2001-09-13
+#> 11207     BAYSW     NSW1     GENERATOR      SCHEDULED 2019-07-01 2020-07-01
+#> 11208     BAYSW     NSW1     GENERATOR      SCHEDULED 2023-07-01 2023-11-28
+#> 11209   LIDDELL     NSW1     GENERATOR      SCHEDULED 2007-07-01 2008-07-01
+#> 11210   LIDDELL     NSW1     GENERATOR      SCHEDULED 2021-07-01 2022-03-15
+#> 11211   HUNTVGT     NSW1     GENERATOR      SCHEDULED 2004-07-01 2005-07-01
+#> 11212   LIDDELL     NSW1     GENERATOR      SCHEDULED 2003-12-09 2004-04-29
+#> 11213   LIDDELL     NSW1     GENERATOR      SCHEDULED 2020-07-01 2021-07-01
+#> 11214   LIDDELL     NSW1     GENERATOR      SCHEDULED 2006-07-01 2007-01-16
+#> 11215     BAYSW     NSW1     GENERATOR      SCHEDULED 2004-07-01 2005-05-31
+#> 11216     BAYSW     NSW1     GENERATOR      SCHEDULED 2002-07-01 2003-07-01
+#> 11217     BAYSW     NSW1     GENERATOR      SCHEDULED 2017-07-01 2018-07-01
+#> 11218     BAYSW     NSW1     GENERATOR      SCHEDULED 2008-07-01 2009-07-01
+#> 11219     BAYSW     NSW1     GENERATOR  NON-SCHEDULED 1998-10-25 1999-07-01
+#> 11220   LIDDELL     NSW1     GENERATOR      SCHEDULED 2009-07-01 2009-09-10
+#> 11221     BAYSW     NSW1     GENERATOR      SCHEDULED 2020-06-15 2020-07-01
+#> 11222   LIDDELL     NSW1     GENERATOR      SCHEDULED 2018-07-01 2019-07-01
+#> 11223     BAYSW     NSW1     GENERATOR      SCHEDULED 2000-07-01 2000-09-11
+#> 11224     BAYSW     NSW1     GENERATOR      SCHEDULED 2007-07-01 2007-09-20
+#> 11225   LIDDELL     NSW1     GENERATOR      SCHEDULED 2022-04-01 2022-04-02
+#> 11226     BAYSW     NSW1     GENERATOR      SCHEDULED 2014-09-03 2015-07-01
+#> 11227   LIDDELL     NSW1     GENERATOR      SCHEDULED 2022-04-02 2022-07-01
+#> 11228     BAYSW     NSW1     GENERATOR      SCHEDULED 2013-07-01 2014-07-01
+#> 11229   HUNTVGT     NSW1     GENERATOR      SCHEDULED 2007-01-16 2007-07-01
+#> 11230     BAYSW     NSW1     GENERATOR      SCHEDULED 2007-09-20 2008-07-01
+#> 11231   LIDDELL     NSW1     GENERATOR      SCHEDULED 2018-07-01 2019-07-01
+#> 11232     BAYSW     NSW1     GENERATOR  NON-SCHEDULED 2005-07-01 2006-07-01
+#> 11233   HUNTVGT     NSW1     GENERATOR      SCHEDULED 1998-10-25 1999-07-01
+#> 11234     BAYSW     NSW1     GENERATOR      SCHEDULED 2004-04-29 2004-07-01
+#> 11235   LIDDELL     NSW1     GENERATOR      SCHEDULED 2004-07-01 2005-05-31
+#> 11236     BAYSW     NSW1     GENERATOR      SCHEDULED 2003-12-09 2004-04-29
+#> 11237     BAYSW     NSW1     GENERATOR      SCHEDULED 2009-10-01 2010-07-01
+#> 11238   LIDDELL     NSW1     GENERATOR      SCHEDULED 2005-05-31 2005-07-01
+#> 11239     BAYSW     NSW1     GENERATOR      SCHEDULED 2005-07-01 2006-07-01
+#> 11240   LIDDELL     NSW1     GENERATOR      SCHEDULED 2011-04-14 2011-07-01
+#> 11241    TOMAGO     NSW1          LOAD  NON-SCHEDULED 2007-07-01 2008-07-01
+#> 11242   LIDDELL     NSW1     GENERATOR      SCHEDULED 2007-07-01 2008-07-01
+#> 11243   HUNTVGT     NSW1     GENERATOR      SCHEDULED 2003-07-01 2004-07-01
+#> 11244     BAYSW     NSW1     GENERATOR      SCHEDULED 2025-09-16 2026-07-01
+#> 11245   HUNTVGT     NSW1     GENERATOR      SCHEDULED 2000-09-11 2000-12-19
+#> 11246     BAYSW     NSW1     GENERATOR      SCHEDULED 2018-07-01 2019-07-01
+#> 11247   HUNTVGT     NSW1     GENERATOR      SCHEDULED 1999-07-01 2000-07-01
+#> 11248     BAYSW     NSW1     GENERATOR      SCHEDULED 2016-07-01 2017-07-01
+#> 11249     BAYSW     NSW1     GENERATOR      SCHEDULED 2024-06-03 2024-07-01
 #> 11250     BAYSW     NSW1     GENERATOR      SCHEDULED 2020-07-01 2021-07-01
-#> 11251     BAYSW     NSW1     GENERATOR      SCHEDULED 2019-07-01 2020-06-15
-#> 11252     BAYSW     NSW1     GENERATOR      SCHEDULED 2007-01-16 2007-07-01
-#> 11253   LIDDELL     NSW1     GENERATOR      SCHEDULED 2006-07-01 2007-01-16
-#> 11254   LIDDELL     NSW1     GENERATOR      SCHEDULED 2003-07-01 2003-12-09
-#> 11255   LIDDELL     NSW1     GENERATOR      SCHEDULED 2005-05-31 2005-07-01
-#> 11256   HUNTVGT     NSW1     GENERATOR      SCHEDULED 2001-07-01 2001-09-12
-#> 11257     BAYSW     NSW1     GENERATOR      SCHEDULED 2007-01-16 2007-07-01
-#> 11258     BAYSW     NSW1     GENERATOR  NON-SCHEDULED 2007-07-01 2007-09-20
-#> 11259     BAYSW     NSW1     GENERATOR      SCHEDULED 2001-10-09 2002-04-01
-#> 11260   LIDDELL     NSW1     GENERATOR      SCHEDULED 2002-07-01 2003-07-01
-#> 11261     BAYSW     NSW1     GENERATOR      SCHEDULED 2011-01-18 2011-04-14
-#> 11262     BAYSW     NSW1     GENERATOR      SCHEDULED 2015-07-01 2016-07-01
-#> 11263   HUNTVGT     NSW1     GENERATOR      SCHEDULED 2009-03-10 2009-07-01
-#> 11264     BAYSW     NSW1     GENERATOR      SCHEDULED 2011-04-14 2011-07-01
-#> 11265   LIDDELL     NSW1     GENERATOR      SCHEDULED 2011-01-18 2011-04-14
-#> 11266     BAYSW     NSW1     GENERATOR      SCHEDULED 2016-07-01 2017-07-01
-#> 11267     BAYSW     NSW1     GENERATOR      SCHEDULED 2011-01-18 2011-04-14
-#> 11268     BAYSW     NSW1     GENERATOR      SCHEDULED 2022-07-01 2023-07-01
-#> 11269   HUNTVGT     NSW1     GENERATOR      SCHEDULED 2009-09-10 2010-07-01
-#> 11270     BAYSW     NSW1     GENERATOR      SCHEDULED 2000-12-19 2001-07-01
-#> 11271     BAYSW     NSW1     GENERATOR      SCHEDULED 2006-07-01 2007-01-16
-#> 11272     BAYSW     NSW1     GENERATOR      SCHEDULED 2025-09-16 2026-07-01
-#> 11273     BAYSW     NSW1     GENERATOR      SCHEDULED 2009-10-01 2010-07-01
-#> 11274   HUNTVGT     NSW1     GENERATOR      SCHEDULED 2008-07-01 2009-03-10
-#> 11275     BAYSW     NSW1     GENERATOR      SCHEDULED 2025-09-16 2026-07-01
-#> 11276     BAYSW     NSW1     GENERATOR      SCHEDULED 2014-09-03 2015-07-01
-#> 11277   LIDDELL     NSW1     GENERATOR      SCHEDULED 1998-10-25 1999-07-01
-#> 11278   HUNTVGT     NSW1     GENERATOR      SCHEDULED 2007-07-01 2008-07-01
-#> 11279   LIDDELL     NSW1     GENERATOR      SCHEDULED 2004-04-29 2004-07-01
-#> 11280    TOMAGO     NSW1          LOAD  NON-SCHEDULED 2002-04-01 2002-07-01
-#> 11281     BAYSW     NSW1     GENERATOR      SCHEDULED 2018-07-01 2019-07-01
-#> 11282     BAYSW     NSW1     GENERATOR      SCHEDULED 2000-09-11 2000-12-19
-#> 11283     BAYSW     NSW1     GENERATOR      SCHEDULED 2001-09-12 2001-09-13
-#> 11284     BAYSW     NSW1     GENERATOR      SCHEDULED 2004-07-01 2005-05-31
-#> 11285   HUNTVGT     NSW1     GENERATOR      SCHEDULED 2010-10-27 2011-01-18
-#> 11286     BAYSW     NSW1     GENERATOR      SCHEDULED 2001-09-13 2001-10-09
-#> 11287   LIDDELL     NSW1     GENERATOR      SCHEDULED 2004-07-01 2004-12-01
-#> 11288     BAYSW     NSW1     GENERATOR      SCHEDULED 2003-12-09 2004-04-29
-#> 11289     BAYSW     NSW1     GENERATOR      SCHEDULED 2025-09-16 2026-07-01
-#> 11290     BAYSW     NSW1     GENERATOR      SCHEDULED 2007-07-01 2007-09-20
-#> 11291   HUNTVGT     NSW1     GENERATOR      SCHEDULED 2001-09-12 2001-10-09
-#> 11292   LIDDELL     NSW1     GENERATOR      SCHEDULED 2001-09-13 2001-10-09
-#> 11293     BAYSW     NSW1     GENERATOR      SCHEDULED 2005-05-31 2005-07-01
-#> 11294     BAYSW     NSW1     GENERATOR      SCHEDULED 2006-07-01 2007-01-16
-#> 11295     BAYSW     NSW1     GENERATOR      SCHEDULED 2010-07-01 2010-10-27
-#> 11296     BAYSW     NSW1     GENERATOR      SCHEDULED 2005-05-31 2005-07-01
-#> 11297     BAYSW     NSW1     GENERATOR      SCHEDULED 1998-10-25 1999-07-01
-#> 11298   LIDDELL     NSW1     GENERATOR      SCHEDULED 2005-07-01 2006-07-01
-#> 11299     BAYSW     NSW1     GENERATOR      SCHEDULED 2017-07-01 2018-07-01
-#> 11300   HUNTVGT     NSW1     GENERATOR      SCHEDULED 2001-10-09 2002-04-01
-#> 11301     BAYSW     NSW1     GENERATOR      SCHEDULED 2011-07-01 2012-07-01
-#> 11302     BAYSW     NSW1     GENERATOR      SCHEDULED 1998-10-25 1999-07-01
-#> 11303   LIDDELL     NSW1     GENERATOR      SCHEDULED 2000-09-11 2000-12-19
-#> 11304   LIDDELL     NSW1     GENERATOR      SCHEDULED 1999-07-01 2000-07-01
-#> 11305   LIDDELL     NSW1     GENERATOR      SCHEDULED 2004-04-29 2004-07-01
-#> 11306   HUNTVGT     NSW1     GENERATOR      SCHEDULED 2002-07-01 2003-07-01
-#> 11307   LIDDELL     NSW1     GENERATOR      SCHEDULED 2001-10-09 2002-04-01
-#> 11308     BAYSW     NSW1     GENERATOR  NON-SCHEDULED 2006-07-01 2007-01-16
-#> 11309     BAYSW     NSW1     GENERATOR      SCHEDULED 2014-07-01 2014-09-03
-#> 11310   LIDDELL     NSW1     GENERATOR      SCHEDULED 2000-12-19 2001-07-01
-#> 11311   LIDDELL     NSW1     GENERATOR      SCHEDULED 2007-01-16 2007-07-01
-#> 11312   LIDDELL     NSW1     GENERATOR      SCHEDULED 2004-12-01 2005-05-31
-#> 11313     BAYSW     NSW1     GENERATOR      SCHEDULED 2012-07-01 2013-07-01
-#> 11314   LIDDELL     NSW1     GENERATOR      SCHEDULED 2000-07-01 2000-09-11
-#> 18702       UWS     NSW1     GENERATOR  NON-SCHEDULED 2001-07-01 2001-10-09
-#> 18703       UWS     NSW1     GENERATOR  NON-SCHEDULED 2003-10-22 2004-07-01
-#> 18704    AGLSOM     VIC1     GENERATOR  NON-SCHEDULED 2002-01-10 2002-04-01
-#> 18705    AGLHAL      SA1     GENERATOR  NON-SCHEDULED 2003-07-01 2003-10-22
-#> 18706       UWS     NSW1     GENERATOR  NON-SCHEDULED 2001-10-09 2001-12-18
-#> 18707    AGLHAL      SA1     GENERATOR      SCHEDULED 2006-02-22 2006-03-01
-#> 18708       UWS     NSW1     GENERATOR  NON-SCHEDULED 2002-01-10 2002-04-01
-#> 18709    AGLHAL      SA1     GENERATOR      SCHEDULED 2003-10-22 2004-06-15
-#> 18710    AGLHAL      SA1     GENERATOR      SCHEDULED 2005-07-01 2006-02-22
-#> 18711       UWS     NSW1     GENERATOR  NON-SCHEDULED 2004-07-01 2004-07-20
-#> 18712    AGLSOM     VIC1     GENERATOR  NON-SCHEDULED 2002-05-01 2002-07-01
-#> 18713    AGLHAL      SA1     GENERATOR  NON-SCHEDULED 2002-04-01 2002-05-01
-#> 18714       UWS     NSW1     GENERATOR  NON-SCHEDULED 2005-07-01 2006-03-01
-#> 18715    AGLSOM     VIC1     GENERATOR      SCHEDULED 2003-10-22 2004-06-15
-#> 18716    AGLSOM     VIC1     GENERATOR  NON-SCHEDULED 2003-07-01 2003-10-22
-#> 18717       UWS     NSW1     GENERATOR  NON-SCHEDULED 2004-07-20 2005-07-01
-#> 18718    AGLSOM     VIC1     GENERATOR      SCHEDULED 2004-06-15 2004-07-01
-#> 18719   ENERGYB     VIC1     GENERATOR  NON-SCHEDULED 2016-03-04 2016-03-11
-#> 18720    AGLHAL      SA1     GENERATOR      SCHEDULED 2004-07-01 2004-07-20
-#> 18721   ENERGYB     VIC1     GENERATOR      SCHEDULED 2016-03-04 2016-03-11
-#> 18722    AGLSOM     VIC1     GENERATOR  NON-SCHEDULED 2002-07-01 2003-07-01
-#> 18723       UWS     NSW1     GENERATOR  NON-SCHEDULED 2002-04-01 2002-05-01
-#> 18724       UWS     NSW1     GENERATOR  NON-SCHEDULED 2000-04-13 2000-07-01
-#> 18725       UWS     NSW1     GENERATOR  NON-SCHEDULED 2000-07-01 2001-07-01
-#> 18726    AGLHAL      SA1     GENERATOR      SCHEDULED 2004-07-20 2005-07-01
-#> 18727    AGLSOM     VIC1     GENERATOR      SCHEDULED 2006-02-22 2006-03-01
-#> 18728    AGLSOM     VIC1     GENERATOR      SCHEDULED 2004-07-01 2004-07-20
-#> 18729    AGLHAL      SA1     GENERATOR  NON-SCHEDULED 2002-01-10 2002-04-01
-#> 18730       UWS     NSW1     GENERATOR  NON-SCHEDULED 2003-07-01 2003-10-22
-#> 18731    AGLHAL      SA1     GENERATOR      SCHEDULED 2004-06-15 2004-07-01
-#> 18732   AGLNOW1     NSW1     GENERATOR  NON-SCHEDULED 2002-05-01 2002-07-01
-#> 18733    AGLSOM     VIC1     GENERATOR      SCHEDULED 2005-07-01 2006-02-22
-#> 18734   AGLNOW1     NSW1     GENERATOR  NON-SCHEDULED 2004-07-20 2005-07-01
-#> 18735   AGLNOW1     NSW1     GENERATOR  NON-SCHEDULED 2003-07-01 2003-10-22
-#> 18736    AGLHAL      SA1     GENERATOR  NON-SCHEDULED 2002-05-01 2002-07-01
-#> 18737   AGLNOW1     NSW1     GENERATOR  NON-SCHEDULED 2003-10-22 2004-06-15
-#> 18738   AGLNOW1     NSW1     GENERATOR  NON-SCHEDULED 2005-07-01 2006-02-22
-#> 18739   ENERGYB     VIC1     GENERATOR      SCHEDULED 2016-03-04 2016-03-11
-#> 18740    AGLSOM     VIC1     GENERATOR      SCHEDULED 2004-07-20 2005-07-01
-#> 18741   ENERGYB     VIC1     GENERATOR      SCHEDULED 2016-03-04 2016-03-11
-#> 18742    AGLHAL      SA1     GENERATOR  NON-SCHEDULED 2001-12-18 2002-01-10
-#> 18743       UWS     NSW1     GENERATOR  NON-SCHEDULED 2002-07-01 2003-07-01
-#> 18744   AGLNOW1     NSW1     GENERATOR  NON-SCHEDULED 2004-06-15 2004-07-01
-#> 18745   AGLNOW1     NSW1     GENERATOR  NON-SCHEDULED 2004-07-01 2004-07-20
-#> 18746   AGLNOW1     NSW1     GENERATOR  NON-SCHEDULED 2006-02-22 2006-03-01
-#> 18747   AGLNOW1     NSW1     GENERATOR  NON-SCHEDULED 2002-07-01 2003-07-01
-#> 18748    AGLHAL      SA1     GENERATOR  NON-SCHEDULED 2002-07-01 2003-07-01
-#> 18749       UWS     NSW1     GENERATOR  NON-SCHEDULED 2002-05-01 2002-07-01
-#> 18750    AGLSOM     VIC1     GENERATOR  NON-SCHEDULED 2002-04-01 2002-05-01
+#> 11251     BAYSW     NSW1     GENERATOR      SCHEDULED 2020-07-01 2021-07-01
+#> 11252     BAYSW     NSW1     GENERATOR      SCHEDULED 2019-07-01 2020-06-15
+#> 11253     BAYSW     NSW1     GENERATOR      SCHEDULED 2007-01-16 2007-07-01
+#> 11254   LIDDELL     NSW1     GENERATOR      SCHEDULED 2006-07-01 2007-01-16
+#> 11255   LIDDELL     NSW1     GENERATOR      SCHEDULED 2003-07-01 2003-12-09
+#> 11256   LIDDELL     NSW1     GENERATOR      SCHEDULED 2005-05-31 2005-07-01
+#> 11257     BAYSW     NSW1     GENERATOR      SCHEDULED 2003-07-01 2003-12-09
+#> 11258   HUNTVGT     NSW1     GENERATOR      SCHEDULED 2001-07-01 2001-09-12
+#> 11259     BAYSW     NSW1     GENERATOR  NON-SCHEDULED 2007-07-01 2007-09-20
+#> 11260     BAYSW     NSW1     GENERATOR      SCHEDULED 2001-10-09 2002-04-01
+#> 11261   LIDDELL     NSW1     GENERATOR      SCHEDULED 2002-07-01 2003-07-01
+#> 11262     BAYSW     NSW1     GENERATOR      SCHEDULED 2011-01-18 2011-04-14
+#> 11263     BAYSW     NSW1     GENERATOR      SCHEDULED 2015-07-01 2016-07-01
+#> 11264   HUNTVGT     NSW1     GENERATOR      SCHEDULED 2009-03-10 2009-07-01
+#> 11265     BAYSW     NSW1     GENERATOR      SCHEDULED 2014-07-01 2014-09-03
+#> 11266   LIDDELL     NSW1     GENERATOR      SCHEDULED 2011-01-18 2011-04-14
+#> 11267     BAYSW     NSW1     GENERATOR      SCHEDULED 2016-07-01 2017-07-01
+#> 11268     BAYSW     NSW1     GENERATOR      SCHEDULED 2011-01-18 2011-04-14
+#> 11269     BAYSW     NSW1     GENERATOR      SCHEDULED 2022-07-01 2023-07-01
+#> 11270   LIDDELL     NSW1     GENERATOR      SCHEDULED 2008-07-01 2009-07-01
+#> 11271   LIDDELL     NSW1     GENERATOR      SCHEDULED 2001-07-01 2001-09-12
+#> 11272     BAYSW     NSW1     GENERATOR      SCHEDULED 2002-07-01 2003-07-01
+#> 11273     BAYSW     NSW1     GENERATOR      SCHEDULED 2006-07-01 2007-01-16
+#> 11274     BAYSW     NSW1     GENERATOR      SCHEDULED 2009-10-01 2010-07-01
+#> 11275   HUNTVGT     NSW1     GENERATOR      SCHEDULED 2008-07-01 2009-03-10
+#> 11276     BAYSW     NSW1     GENERATOR      SCHEDULED 2025-09-16 2026-07-01
+#> 11277   HUNTVGT     NSW1     GENERATOR      SCHEDULED 2009-09-10 2010-07-01
+#> 11278   LIDDELL     NSW1     GENERATOR      SCHEDULED 2000-09-11 2000-12-19
+#> 11279   HUNTVGT     NSW1     GENERATOR      SCHEDULED 2007-07-01 2008-07-01
+#> 11280   LIDDELL     NSW1     GENERATOR      SCHEDULED 2004-04-29 2004-07-01
+#> 11281    TOMAGO     NSW1          LOAD  NON-SCHEDULED 2002-04-01 2002-07-01
+#> 11282     BAYSW     NSW1     GENERATOR      SCHEDULED 2018-07-01 2019-07-01
+#> 11283     BAYSW     NSW1     GENERATOR      SCHEDULED 2000-09-11 2000-12-19
+#> 11284     BAYSW     NSW1     GENERATOR      SCHEDULED 2001-09-12 2001-09-13
+#> 11285     BAYSW     NSW1     GENERATOR      SCHEDULED 2007-01-16 2007-07-01
+#> 11286     BAYSW     NSW1     GENERATOR      SCHEDULED 2004-07-01 2005-05-31
+#> 11287     BAYSW     NSW1     GENERATOR      SCHEDULED 2014-09-03 2015-07-01
+#> 11288     BAYSW     NSW1     GENERATOR      SCHEDULED 2007-07-01 2007-09-20
+#> 11289     BAYSW     NSW1     GENERATOR  NON-SCHEDULED 2007-01-16 2007-07-01
+#> 11290     BAYSW     NSW1     GENERATOR      SCHEDULED 2025-09-16 2026-07-01
+#> 11291   LIDDELL     NSW1     GENERATOR      SCHEDULED 2005-07-01 2006-07-01
+#> 11292   HUNTVGT     NSW1     GENERATOR      SCHEDULED 2001-09-12 2001-10-09
+#> 11293   LIDDELL     NSW1     GENERATOR      SCHEDULED 2001-09-13 2001-10-09
+#> 11294     BAYSW     NSW1     GENERATOR      SCHEDULED 2005-05-31 2005-07-01
+#> 11295     BAYSW     NSW1     GENERATOR      SCHEDULED 2006-07-01 2007-01-16
+#> 11296   LIDDELL     NSW1     GENERATOR      SCHEDULED 2000-07-01 2000-09-11
+#> 11297     BAYSW     NSW1     GENERATOR      SCHEDULED 2001-09-13 2001-10-09
+#> 11298     BAYSW     NSW1     GENERATOR      SCHEDULED 1998-10-25 1999-07-01
+#> 11299     BAYSW     NSW1     GENERATOR      SCHEDULED 2003-12-09 2004-04-29
+#> 11300     BAYSW     NSW1     GENERATOR      SCHEDULED 2017-07-01 2018-07-01
+#> 11301   LIDDELL     NSW1     GENERATOR      SCHEDULED 2004-07-01 2004-12-01
+#> 11302     BAYSW     NSW1     GENERATOR      SCHEDULED 2005-05-31 2005-07-01
+#> 11303     BAYSW     NSW1     GENERATOR      SCHEDULED 1998-10-25 1999-07-01
+#> 11304   LIDDELL     NSW1     GENERATOR      SCHEDULED 2000-12-19 2001-07-01
+#> 11305     BAYSW     NSW1     GENERATOR      SCHEDULED 2025-09-16 2026-07-01
+#> 11306   LIDDELL     NSW1     GENERATOR      SCHEDULED 1998-10-25 1999-07-01
+#> 11307   HUNTVGT     NSW1     GENERATOR      SCHEDULED 2002-07-01 2003-07-01
+#> 11308   LIDDELL     NSW1     GENERATOR      SCHEDULED 2001-10-09 2002-04-01
+#> 11309     BAYSW     NSW1     GENERATOR      SCHEDULED 2010-07-01 2010-10-27
+#> 11310   HUNTVGT     NSW1     GENERATOR      SCHEDULED 2002-04-01 2002-07-01
+#> 11311   LIDDELL     NSW1     GENERATOR      SCHEDULED 2004-04-29 2004-07-01
+#> 11312   LIDDELL     NSW1     GENERATOR      SCHEDULED 2007-01-16 2007-07-01
+#> 11313     BAYSW     NSW1     GENERATOR  NON-SCHEDULED 2006-07-01 2007-01-16
+#> 11314     BAYSW     NSW1     GENERATOR      SCHEDULED 2000-12-19 2001-07-01
+#> 11315   HUNTVGT     NSW1     GENERATOR      SCHEDULED 2001-10-09 2002-04-01
+#> 11316     BAYSW     NSW1     GENERATOR      SCHEDULED 1999-07-01 2000-07-01
+#> 11317     BAYSW     NSW1     GENERATOR      SCHEDULED 2012-07-01 2013-07-01
+#> 11318     BAYSW     NSW1     GENERATOR      SCHEDULED 2011-07-01 2012-07-01
+#> 11319     BAYSW     NSW1     GENERATOR      SCHEDULED 2011-04-14 2011-07-01
+#> 11320   LIDDELL     NSW1     GENERATOR      SCHEDULED 1999-07-01 2000-07-01
+#> 11321   LIDDELL     NSW1     GENERATOR      SCHEDULED 2004-12-01 2005-05-31
+#> 18712    AGLSOM     VIC1     GENERATOR  NON-SCHEDULED 2002-01-10 2002-04-01
+#> 18713    AGLHAL      SA1     GENERATOR      SCHEDULED 2006-02-22 2006-03-01
+#> 18714       UWS     NSW1     GENERATOR  NON-SCHEDULED 2001-07-01 2001-10-09
+#> 18715    AGLHAL      SA1     GENERATOR      SCHEDULED 2005-07-01 2006-02-22
+#> 18716    AGLSOM     VIC1     GENERATOR  NON-SCHEDULED 2002-05-01 2002-07-01
+#> 18717    AGLHAL      SA1     GENERATOR      SCHEDULED 2003-10-22 2004-06-15
+#> 18718       UWS     NSW1     GENERATOR  NON-SCHEDULED 2001-10-09 2001-12-18
+#> 18719    AGLSOM     VIC1     GENERATOR      SCHEDULED 2003-10-22 2004-06-15
+#> 18720    AGLSOM     VIC1     GENERATOR  NON-SCHEDULED 2003-07-01 2003-10-22
+#> 18721    AGLHAL      SA1     GENERATOR  NON-SCHEDULED 2002-04-01 2002-05-01
+#> 18722    AGLHAL      SA1     GENERATOR  NON-SCHEDULED 2003-07-01 2003-10-22
+#> 18723    AGLSOM     VIC1     GENERATOR  NON-SCHEDULED 2002-07-01 2003-07-01
+#> 18724    AGLHAL      SA1     GENERATOR      SCHEDULED 2004-07-01 2004-07-20
+#> 18725       UWS     NSW1     GENERATOR  NON-SCHEDULED 2004-07-01 2004-07-20
+#> 18726    AGLSOM     VIC1     GENERATOR      SCHEDULED 2004-06-15 2004-07-01
+#> 18727       UWS     NSW1     GENERATOR  NON-SCHEDULED 2002-04-01 2002-05-01
+#> 18728       UWS     NSW1     GENERATOR  NON-SCHEDULED 2000-04-13 2000-07-01
+#> 18729   ENERGYB     VIC1     GENERATOR      SCHEDULED 2016-03-04 2016-03-11
+#> 18730    AGLHAL      SA1     GENERATOR      SCHEDULED 2004-07-20 2005-07-01
+#> 18731    AGLSOM     VIC1     GENERATOR      SCHEDULED 2006-02-22 2006-03-01
+#> 18732    AGLSOM     VIC1     GENERATOR      SCHEDULED 2004-07-01 2004-07-20
+#> 18733       UWS     NSW1     GENERATOR  NON-SCHEDULED 2000-07-01 2001-07-01
+#> 18734       UWS     NSW1     GENERATOR  NON-SCHEDULED 2004-07-20 2005-07-01
+#> 18735    AGLHAL      SA1     GENERATOR      SCHEDULED 2004-06-15 2004-07-01
+#> 18736   ENERGYB     VIC1     GENERATOR  NON-SCHEDULED 2016-03-04 2016-03-11
+#> 18737    AGLHAL      SA1     GENERATOR  NON-SCHEDULED 2002-01-10 2002-04-01
+#> 18738   AGLNOW1     NSW1     GENERATOR  NON-SCHEDULED 2003-10-22 2004-06-15
+#> 18739   AGLNOW1     NSW1     GENERATOR  NON-SCHEDULED 2003-07-01 2003-10-22
+#> 18740    AGLHAL      SA1     GENERATOR  NON-SCHEDULED 2002-05-01 2002-07-01
+#> 18741    AGLSOM     VIC1     GENERATOR      SCHEDULED 2005-07-01 2006-02-22
+#> 18742   AGLNOW1     NSW1     GENERATOR  NON-SCHEDULED 2005-07-01 2006-02-22
+#> 18743   AGLNOW1     NSW1     GENERATOR  NON-SCHEDULED 2004-07-20 2005-07-01
+#> 18744    AGLSOM     VIC1     GENERATOR      SCHEDULED 2004-07-20 2005-07-01
+#> 18745   ENERGYB     VIC1     GENERATOR      SCHEDULED 2016-03-04 2016-03-11
+#> 18746    AGLHAL      SA1     GENERATOR  NON-SCHEDULED 2001-12-18 2002-01-10
+#> 18747       UWS     NSW1     GENERATOR  NON-SCHEDULED 2003-10-22 2004-07-01
+#> 18748   AGLNOW1     NSW1     GENERATOR  NON-SCHEDULED 2004-06-15 2004-07-01
+#> 18749   AGLNOW1     NSW1     GENERATOR  NON-SCHEDULED 2002-05-01 2002-07-01
+#> 18750   AGLNOW1     NSW1     GENERATOR  NON-SCHEDULED 2004-07-01 2004-07-20
 #> 18751       UWS     NSW1     GENERATOR  NON-SCHEDULED 2001-12-18 2002-01-10
-#> 18765      ICSM     QLD1     GENERATOR  NON-SCHEDULED 2012-12-07 2012-12-24
-#> 18766   RUBICON     VIC1     GENERATOR  NON-SCHEDULED 2018-05-29 2018-07-01
-#> 18767  WYANGALB     NSW1     GENERATOR  NON-SCHEDULED 2012-03-01 2012-07-01
-#> 18768    WKIEWA     VIC1     GENERATOR      SCHEDULED 2017-07-01 2018-07-01
-#> 18769   RUBICON     VIC1     GENERATOR  NON-SCHEDULED 2012-02-17 2012-07-01
-#> 18770    YABULU     QLD1     GENERATOR      SCHEDULED 2011-07-01 2012-07-01
-#> 18771  WYANGALB     NSW1     GENERATOR  NON-SCHEDULED 2011-07-01 2012-03-01
-#> 18772      ICSM     QLD1     GENERATOR  NON-SCHEDULED 2010-04-30 2010-07-01
-#> 18773    CLOVER     VIC1     GENERATOR  NON-SCHEDULED 2010-07-01 2011-05-27
-#> 18774    EILDON     VIC1     GENERATOR      SCHEDULED 2016-07-01 2016-11-19
-#> 18775   RUBICON     VIC1     GENERATOR  NON-SCHEDULED 2019-07-01 2020-07-01
-#> 18776      ICSM     QLD1     GENERATOR  NON-SCHEDULED 2012-12-24 2013-04-01
-#> 18777    CLOVER     VIC1     GENERATOR  NON-SCHEDULED 2006-08-08 2006-08-25
-#> 18778   RUBICON     VIC1     GENERATOR  NON-SCHEDULED 2018-07-01 2019-07-01
-#> 18779      BAPS     VIC1     GENERATOR  NON-SCHEDULED 2007-07-01 2007-07-02
-#> 18780   RUBICON     VIC1     GENERATOR  NON-SCHEDULED 2026-07-01 2999-12-31
-#> 18781    EILDON     VIC1     GENERATOR      SCHEDULED 2014-07-01 2014-07-25
-#> 18782    EILDON     VIC1     GENERATOR      SCHEDULED 2006-07-01 2006-08-04
-#> 18783    EILDON     VIC1     GENERATOR      SCHEDULED 2007-01-16 2007-07-01
-#> 18784   PINDARI     NSW1     GENERATOR  NON-SCHEDULED 2020-07-01 2021-07-01
-#> 18785    EILDON     VIC1     GENERATOR      SCHEDULED 2017-07-01 2018-07-01
-#> 18786    EILDON     VIC1     GENERATOR      SCHEDULED 1999-10-14 2000-07-01
-#> 18787   PINDARI     NSW1     GENERATOR  NON-SCHEDULED 2019-07-01 2020-07-01
-#> 18788  GLBWNHYD     NSW1     GENERATOR  NON-SCHEDULED 2013-04-01 2013-07-01
-#> 18789  WYANGALB     NSW1     GENERATOR  NON-SCHEDULED 2011-04-14 2011-05-27
-#> 18790      ICSM     QLD1     GENERATOR  NON-SCHEDULED 2013-04-01 2013-07-01
-#> 18791    EILDON     VIC1     GENERATOR      SCHEDULED 2015-07-01 2015-10-30
-#> 18792  GLBWNHYD     NSW1     GENERATOR  NON-SCHEDULED 2015-10-30 2016-01-15
-#> 18793      BAPS     VIC1     GENERATOR  NON-SCHEDULED 2007-01-16 2007-07-01
-#> 18794   RUBICON     VIC1     GENERATOR  NON-SCHEDULED 2010-01-07 2010-01-15
-#> 18795    YABULU     QLD1     GENERATOR      SCHEDULED 2011-04-14 2011-07-01
-#> 18796    EILDON     VIC1     GENERATOR      SCHEDULED 1999-07-01 1999-10-14
-#> 18797      WPWF      SA1     GENERATOR  NON-SCHEDULED 2014-07-01 2014-07-25
-#> 18798  BDONGHYD     NSW1     GENERATOR  NON-SCHEDULED 2022-06-10 2022-06-28
-#> 18799  BDONGHYD     NSW1     GENERATOR  NON-SCHEDULED 2022-06-28 2022-07-01
-#> 18800  WYANGALB     NSW1     GENERATOR  NON-SCHEDULED 2010-01-15 2010-03-19
-#> 18801   RUBICON     VIC1     GENERATOR  NON-SCHEDULED 2022-07-01 2023-07-01
-#> 18802  WYANGALB     NSW1     GENERATOR  NON-SCHEDULED 2010-07-01 2011-04-14
-#> 18803    CLOVER     VIC1     GENERATOR  NON-SCHEDULED 2011-05-27 2012-07-01
-#> 18804  GLBWNHYD     NSW1     GENERATOR  NON-SCHEDULED 2015-01-01 2015-07-01
-#> 18805   RUBICON     VIC1     GENERATOR  NON-SCHEDULED 2010-07-01 2012-02-17
-#> 18806     OAKEY     QLD1     GENERATOR      SCHEDULED 2010-04-30 2010-07-01
-#> 18807   PINDARI     NSW1     GENERATOR  NON-SCHEDULED 2017-07-01 2018-07-01
-#> 18808   PINDARI     NSW1     GENERATOR  NON-SCHEDULED 2018-07-01 2019-07-01
-#> 18809      ICSM     QLD1     GENERATOR  NON-SCHEDULED 2010-03-19 2010-04-30
-#> 18810    EILDON     VIC1     GENERATOR      SCHEDULED 2016-01-15 2016-07-01
-#> 18811    EILDON     VIC1     GENERATOR      SCHEDULED 2016-11-19 2017-07-01
-#> 18812    YABULU     QLD1     GENERATOR      SCHEDULED 2012-07-01 2012-12-07
-#> 18813      BAPS     VIC1     GENERATOR  NON-SCHEDULED 2008-07-01 2009-07-01
-#> 18814   RUBICON     VIC1     GENERATOR  NON-SCHEDULED 2021-07-01 2021-12-31
-#> 18815      ICSM     QLD1     GENERATOR  NON-SCHEDULED 2015-10-30 2016-01-15
-#> 18816    EILDON     VIC1     GENERATOR      SCHEDULED 2013-07-01 2014-07-01
-#> 18817  GLBWNHYD     NSW1     GENERATOR  NON-SCHEDULED 2014-08-26 2015-01-01
-#> 18818  BDONGHYD     NSW1     GENERATOR  NON-SCHEDULED 2021-07-01 2021-12-31
-#> 18819   PINDARI     NSW1     GENERATOR  NON-SCHEDULED 2023-10-10 2024-07-01
-#> 18820      BAPS     VIC1     GENERATOR  NON-SCHEDULED 2006-02-22 2006-03-01
-#> 18821    EILDON     VIC1     GENERATOR      SCHEDULED 1998-10-25 1999-07-01
-#> 18822     MCKAY     VIC1     GENERATOR      SCHEDULED 2001-07-01 2001-09-13
-#> 18823  BDONGHYD     NSW1     GENERATOR  NON-SCHEDULED 2022-07-01 2023-07-01
-#> 18824  BDONGHYD     NSW1     GENERATOR  NON-SCHEDULED 2023-07-01 2023-10-10
-#> 18825  BDONGHYD     NSW1     GENERATOR  NON-SCHEDULED 2024-07-01 2025-07-01
-#> 18826    EILDON     VIC1     GENERATOR      SCHEDULED 2018-07-01 2019-07-01
-#> 18827   RUBICON     VIC1     GENERATOR  NON-SCHEDULED 2020-07-01 2021-07-01
-#> 18828    EILDON     VIC1     GENERATOR      SCHEDULED 2011-04-14 2011-07-01
-#> 18829  GLBWNHYD     NSW1     GENERATOR  NON-SCHEDULED 2014-07-25 2014-08-26
-#> 18830      ICSM     QLD1     GENERATOR  NON-SCHEDULED 2016-01-15 2016-07-01
-#> 18831    WKIEWA     VIC1     GENERATOR      SCHEDULED 2024-07-01 2025-07-01
-#> 18832   PINDARI     NSW1     GENERATOR  NON-SCHEDULED 2016-07-01 2016-11-19
-#> 18833    WKIEWA     VIC1     GENERATOR      SCHEDULED 2024-06-03 2024-07-01
-#> 18834    EILDON     VIC1     GENERATOR      SCHEDULED 2006-02-22 2006-03-01
-#> 18835  BDONGHYD     NSW1     GENERATOR  NON-SCHEDULED 2015-10-30 2016-01-15
-#> 18836  BDONGHYD     NSW1     GENERATOR  NON-SCHEDULED 2016-01-15 2016-07-01
-#> 18837     OAKEY     QLD1     GENERATOR      SCHEDULED 2010-03-19 2010-04-30
-#> 18838    EILDON     VIC1     GENERATOR      SCHEDULED 2000-07-01 2000-07-20
-#> 18839    EILDON     VIC1     GENERATOR      SCHEDULED 2000-07-20 2000-12-19
-#> 18840      ICSM     QLD1     GENERATOR  NON-SCHEDULED 2014-07-25 2014-08-26
-#> 18841    EILDON     VIC1     GENERATOR      SCHEDULED 2011-01-18 2011-04-14
-#> 18842  MORANBAH     QLD1     GENERATOR  NON-SCHEDULED 2010-07-01 2011-04-14
-#> 18843     DARTM     VIC1     GENERATOR      SCHEDULED 2002-04-01 2002-07-01
-#> 18844      BAPS     VIC1     GENERATOR  NON-SCHEDULED 2006-07-01 2006-08-04
-#> 18845      BAPS     VIC1     GENERATOR  NON-SCHEDULED 2006-03-29 2006-07-01
-#> 18846  BDONGHYD     NSW1     GENERATOR  NON-SCHEDULED 2015-01-01 2015-07-01
-#> 18847     MCKAY     VIC1     GENERATOR      SCHEDULED 2000-12-19 2001-07-01
-#> 18848     OAKEY     QLD1     GENERATOR      SCHEDULED 2011-04-14 2011-07-01
-#> 18849     OAKEY     QLD1     GENERATOR      SCHEDULED 2011-07-01 2012-07-01
-#> 18850   PINDARI     NSW1     GENERATOR  NON-SCHEDULED 2022-06-28 2022-07-01
-#> 18851    EILDON     VIC1     GENERATOR      SCHEDULED 2021-12-01 2021-12-31
-#> 18852    WKIEWA     VIC1     GENERATOR      SCHEDULED 2018-07-01 2019-07-01
-#> 18853    WKIEWA     VIC1     GENERATOR      SCHEDULED 2019-07-01 2020-07-01
-#> 18854      BAPS     VIC1     GENERATOR  NON-SCHEDULED 2010-07-01 2010-11-09
-#> 18855      ICSM     QLD1     GENERATOR  NON-SCHEDULED 2015-01-01 2015-07-01
-#> 18856    YABULU     QLD1     GENERATOR      SCHEDULED 2015-07-01 2015-10-30
-#> 18857   PINDARI     NSW1     GENERATOR  NON-SCHEDULED 2015-07-01 2015-10-30
-#> 18858    WKIEWA     VIC1     GENERATOR      SCHEDULED 2023-07-01 2023-10-10
-#> 18859      BAPS     VIC1     GENERATOR  NON-SCHEDULED 2006-02-02 2006-02-22
-#> 18860     OAKEY     QLD1     GENERATOR      SCHEDULED 2011-01-18 2011-04-14
-#> 18861    WKIEWA     VIC1     GENERATOR      SCHEDULED 2026-07-01 2999-12-31
-#> 18862    EILDON     VIC1     GENERATOR      SCHEDULED 2011-07-01 2012-07-01
-#> 18863    EILDON     VIC1     GENERATOR      SCHEDULED 2012-07-01 2012-12-07
-#> 18864     OAKEY     QLD1     GENERATOR      SCHEDULED 2010-10-27 2011-01-18
-#> 18865     OAKEY     QLD1     GENERATOR      SCHEDULED 2012-12-07 2012-12-24
-#> 18866  MORANBAH     QLD1     GENERATOR  NON-SCHEDULED 2016-07-01 2016-11-19
-#> 18867    WKIEWA     VIC1     GENERATOR      SCHEDULED 2020-07-01 2021-07-01
-#> 18868      ICSM     QLD1     GENERATOR  NON-SCHEDULED 2014-08-26 2015-01-01
-#> 18869    YABULU     QLD1     GENERATOR      SCHEDULED 2014-07-01 2014-07-25
-#> 18870    WKIEWA     VIC1     GENERATOR      SCHEDULED 2022-07-01 2023-07-01
-#> 18871      BAPS     VIC1     GENERATOR  NON-SCHEDULED 2006-02-01 2006-02-02
-#> 18872    EILDON     VIC1     GENERATOR      SCHEDULED 2010-07-01 2010-10-27
-#> 18873    WKIEWA     VIC1     GENERATOR      SCHEDULED 2026-07-01 2026-09-29
-#> 18874    EILDON     VIC1     GENERATOR      SCHEDULED 2024-07-01 2025-07-01
-#> 18875    CLOVER     VIC1     GENERATOR  NON-SCHEDULED 2024-07-01 2025-07-01
-#> 18876     MCKAY     VIC1     GENERATOR      SCHEDULED 2003-07-01 2003-12-23
-#> 18877    AGLSOM     VIC1     GENERATOR      SCHEDULED 2022-06-28 2022-07-01
-#> 18878    AGLSOM     VIC1     GENERATOR      SCHEDULED 2023-10-10 2024-06-03
-#> 18879      WPWF      SA1     GENERATOR  NON-SCHEDULED 2015-07-01 2015-10-30
-#> 18880    EILDON     VIC1     GENERATOR      SCHEDULED 2019-07-01 2020-07-01
-#> 18881    WKIEWA     VIC1     GENERATOR      SCHEDULED 2021-07-01 2021-12-01
-#> 18882    EILDON     VIC1     GENERATOR      SCHEDULED 2021-07-01 2021-12-01
-#> 18883     OAKEY     QLD1     GENERATOR      SCHEDULED 2009-07-01 2010-01-15
-#> 18884    EILDON     VIC1     GENERATOR      SCHEDULED 2009-07-01 2010-01-15
-#> 18885   PINDARI     NSW1     GENERATOR  NON-SCHEDULED 2010-01-15 2010-03-19
-#> 18886   PINDARI     NSW1     GENERATOR  NON-SCHEDULED 2007-12-01 2008-07-01
-#> 18887    EILDON     VIC1     GENERATOR      SCHEDULED 2004-06-15 2004-07-01
-#> 18888    AGLSOM     VIC1     GENERATOR      SCHEDULED 2006-07-27 2006-08-04
-#> 18889    WKIEWA     VIC1     GENERATOR      SCHEDULED 2006-07-01 2006-08-04
-#> 18890  WYANGALA     NSW1     GENERATOR  NON-SCHEDULED 2014-07-01 2014-07-25
-#> 18891   RUBICON     VIC1     GENERATOR  NON-SCHEDULED 2006-03-29 2006-08-04
-#> 18892    EILDON     VIC1     GENERATOR      SCHEDULED 2022-07-01 2023-07-01
-#> 18893    EILDON     VIC1     GENERATOR      SCHEDULED 2023-07-01 2023-10-10
-#> 18894     MCKAY     VIC1     GENERATOR      SCHEDULED 2018-07-01 2019-07-01
-#> 18895      BAPS     VIC1     GENERATOR  NON-SCHEDULED 2009-07-01 2010-01-15
-#> 18896    WKIEWA     VIC1     GENERATOR      SCHEDULED 2021-12-01 2021-12-31
-#> 18897     OAKEY     QLD1     GENERATOR      SCHEDULED 2008-07-01 2009-07-01
-#> 18898    EILDON     VIC1     GENERATOR      SCHEDULED 2003-12-23 2004-06-15
-#> 18899     OAKEY     QLD1     GENERATOR      SCHEDULED 2010-07-01 2010-10-27
-#> 18900   RUBICON     VIC1     GENERATOR  NON-SCHEDULED 2015-01-01 2015-07-01
-#> 18901     DARTM     VIC1     GENERATOR      SCHEDULED 2006-02-01 2006-02-22
-#> 18902     DARTM     VIC1     GENERATOR      SCHEDULED 2006-03-01 2006-03-29
-#> 18903     DARTM     VIC1     GENERATOR      SCHEDULED 2006-03-29 2006-07-01
-#> 18904     DARTM     VIC1     GENERATOR      SCHEDULED 2006-08-04 2006-08-25
-#> 18905     DARTM     VIC1     GENERATOR      SCHEDULED 2006-08-25 2007-01-16
-#> 18906   PINDARI     NSW1     GENERATOR  NON-SCHEDULED 2021-07-01 2021-12-31
-#> 18907    CLOVER     VIC1     GENERATOR  NON-SCHEDULED 2016-06-24 2016-07-01
-#> 18908    EILDON     VIC1     GENERATOR      SCHEDULED 2020-07-01 2021-07-01
-#> 18909    EILDON     VIC1     GENERATOR      SCHEDULED 2022-06-28 2022-07-01
-#> 18910    EILDON     VIC1     GENERATOR      SCHEDULED 2008-07-01 2009-07-01
-#> 18911   PINDARI     NSW1     GENERATOR  NON-SCHEDULED 2013-07-01 2014-07-01
-#> 18912   PINDARI     NSW1     GENERATOR  NON-SCHEDULED 2014-07-01 2014-07-25
-#> 18913     DARTM     VIC1     GENERATOR      SCHEDULED 2013-04-01 2013-07-01
-#> 18914    AGLSOM     VIC1     GENERATOR      SCHEDULED 2021-12-31 2022-03-10
-#> 18915     DARTM     VIC1     GENERATOR      SCHEDULED 2014-07-25 2014-08-26
-#> 18916     DARTM     VIC1     GENERATOR      SCHEDULED 2015-01-01 2015-07-01
-#> 18917     MCKAY     VIC1     GENERATOR      SCHEDULED 2003-12-23 2004-06-15
-#> 18918    WKIEWA     VIC1     GENERATOR      SCHEDULED 2015-10-30 2016-01-15
-#> 18919     OAKEY     QLD1     GENERATOR      SCHEDULED 2010-04-30 2010-07-01
-#> 18920   PINDARI     NSW1     GENERATOR  NON-SCHEDULED 2014-08-26 2015-01-01
-#> 18921    EILDON     VIC1     GENERATOR      SCHEDULED 2001-07-01 2001-09-13
-#> 18922    CLOVER     VIC1     GENERATOR  NON-SCHEDULED 2018-07-01 2019-07-01
-#> 18923    CLOVER     VIC1     GENERATOR  NON-SCHEDULED 2019-07-01 2020-07-01
-#> 18924    EILDON     VIC1     GENERATOR      SCHEDULED 2021-12-01 2021-12-31
-#> 18925  BDONGHYD     NSW1     GENERATOR  NON-SCHEDULED 2014-08-26 2015-01-01
-#> 18926   AGLNOW1     NSW1     GENERATOR  NON-SCHEDULED 2016-07-01 2016-11-19
-#> 18927    EILDON     VIC1     GENERATOR      SCHEDULED 2003-07-01 2003-12-23
-#> 18928   PINDARI     NSW1     GENERATOR  NON-SCHEDULED 2022-03-10 2022-06-10
-#> 18929   PINDARI     NSW1     GENERATOR  NON-SCHEDULED 2022-06-10 2022-06-28
-#> 18930    EILDON     VIC1     GENERATOR      SCHEDULED 2004-12-15 2005-07-01
-#> 18931    EILDON     VIC1     GENERATOR      SCHEDULED 2005-07-01 2006-02-01
-#> 18932   RUBICON     VIC1     GENERATOR  NON-SCHEDULED 2009-11-26 2010-01-07
-#> 18933    EILDON     VIC1     GENERATOR      SCHEDULED 2021-12-31 2022-03-10
-#> 18934    EILDON     VIC1     GENERATOR      SCHEDULED 2022-03-10 2022-06-10
-#> 18935    EILDON     VIC1     GENERATOR      SCHEDULED 2022-06-10 2022-06-28
-#> 18936    YABULU     QLD1     GENERATOR      SCHEDULED 2013-07-01 2014-07-01
-#> 18937     OAKEY     QLD1     GENERATOR      SCHEDULED 2007-12-06 2008-07-01
-#> 18938   AGLNOW1     NSW1     GENERATOR  NON-SCHEDULED 2015-07-01 2015-10-30
-#> 18939     MCKAY     VIC1     GENERATOR      SCHEDULED 1999-10-14 2000-07-01
-#> 18940     MCKAY     VIC1     GENERATOR      SCHEDULED 2000-07-01 2000-07-20
-#> 18941     MCKAY     VIC1     GENERATOR      SCHEDULED 2000-07-20 2000-12-19
-#> 18942     MCKAY     VIC1     GENERATOR      SCHEDULED 2022-03-10 2022-06-10
-#> 18943     MCKAY     VIC1     GENERATOR      SCHEDULED 2022-06-10 2022-06-28
-#> 18944     MCKAY     VIC1     GENERATOR      SCHEDULED 2001-09-13 2001-10-09
-#> 18945     MCKAY     VIC1     GENERATOR      SCHEDULED 2001-10-09 2002-04-01
-#> 18946     MCKAY     VIC1     GENERATOR      SCHEDULED 2002-07-01 2002-07-09
-#> 18947    AGLSOM     VIC1     GENERATOR      SCHEDULED 2014-07-25 2014-08-26
-#> 18948    CLOVER     VIC1     GENERATOR  NON-SCHEDULED 2017-12-18 2018-07-01
-#> 18949  WYANGALB     NSW1     GENERATOR  NON-SCHEDULED 2013-07-01 2014-07-01
-#> 18950    CLOVER     VIC1     GENERATOR  NON-SCHEDULED 2025-07-01 2025-09-16
-#> 18951    EILDON     VIC1     GENERATOR      SCHEDULED 2023-10-10 2024-06-03
-#> 18952     DARTM     VIC1     GENERATOR      SCHEDULED 2012-12-24 2013-04-01
-#> 18953  BDONGHYD     NSW1     GENERATOR  NON-SCHEDULED 2014-07-25 2014-08-26
-#> 18954  YWNGAHYD     VIC1     GENERATOR  NON-SCHEDULED 2023-10-10 2024-07-01
-#> 18955    YABULU     QLD1     GENERATOR      SCHEDULED 2021-07-01 2021-12-31
-#> 18956   PINDARI     NSW1     GENERATOR  NON-SCHEDULED 2010-03-19 2010-04-30
-#> 18957    AGLSOM     VIC1     GENERATOR      SCHEDULED 2022-06-10 2022-06-28
-#> 18958    EILDON     VIC1     GENERATOR      SCHEDULED 1999-10-14 2000-07-01
-#> 18959    EILDON     VIC1     GENERATOR      SCHEDULED 2000-07-01 2000-07-20
-#> 18960     OAKEY     QLD1     GENERATOR      SCHEDULED 2010-10-27 2011-01-18
-#> 18961  BDONGHYD     NSW1     GENERATOR  NON-SCHEDULED 2023-10-10 2024-07-01
-#> 18962   PINDARI     NSW1     GENERATOR  NON-SCHEDULED 2016-01-15 2016-07-01
-#> 18963     DARTM     VIC1     GENERATOR      SCHEDULED 2010-10-27 2011-01-18
-#> 18964     DARTM     VIC1     GENERATOR      SCHEDULED 2012-12-07 2012-12-24
-#> 18965     OAKEY     QLD1     GENERATOR      SCHEDULED 2007-09-01 2007-12-01
-#> 18966    EILDON     VIC1     GENERATOR      SCHEDULED 2002-07-09 2003-07-01
-#> 18967    WKIEWA     VIC1     GENERATOR      SCHEDULED 2003-12-23 2004-06-15
-#> 18968     MCKAY     VIC1     GENERATOR      SCHEDULED 2010-07-01 2010-10-27
-#> 18969  WYANGALA     NSW1     GENERATOR  NON-SCHEDULED 2013-07-01 2014-07-01
-#> 18970    WKIEWA     VIC1     GENERATOR      SCHEDULED 2004-12-15 2005-07-01
-#> 18971    WKIEWA     VIC1     GENERATOR      SCHEDULED 2005-07-01 2006-02-01
-#> 18972     MCKAY     VIC1     GENERATOR      SCHEDULED 2012-07-01 2012-12-07
-#> 18973     OAKEY     QLD1     GENERATOR      SCHEDULED 2012-07-01 2012-12-07
-#> 18974     OAKEY     QLD1     GENERATOR      SCHEDULED 2013-07-01 2014-07-01
-#> 18975     OAKEY     QLD1     GENERATOR      SCHEDULED 2014-07-01 2014-07-25
-#> 18976     MCKAY     VIC1     GENERATOR      SCHEDULED 2014-08-26 2015-01-01
-#> 18977   PINDARI     NSW1     GENERATOR  NON-SCHEDULED 2021-12-31 2022-03-10
-#> 18978     MCKAY     VIC1     GENERATOR      SCHEDULED 2019-07-01 2020-07-01
-#> 18979     MCKAY     VIC1     GENERATOR      SCHEDULED 2020-07-01 2021-07-01
-#> 18980     MCKAY     VIC1     GENERATOR      SCHEDULED 2021-07-01 2021-12-01
-#> 18981    YABULU     QLD1     GENERATOR      SCHEDULED 2016-07-01 2016-11-19
-#> 18982  MORANBAH     QLD1     GENERATOR  NON-SCHEDULED 2011-04-14 2011-07-01
-#> 18983     MCKAY     VIC1     GENERATOR      SCHEDULED 2023-07-01 2023-10-10
-#> 18984     MCKAY     VIC1     GENERATOR      SCHEDULED 2024-06-03 2024-07-01
-#> 18985  MORANBAH     QLD1     GENERATOR  NON-SCHEDULED 2013-07-01 2014-07-01
-#> 18986    CLOVER     VIC1     GENERATOR  NON-SCHEDULED 2006-03-29 2006-08-04
-#> 18987     DARTM     VIC1     GENERATOR      SCHEDULED 2025-07-01 2026-07-01
-#> 18988     DARTM     VIC1     GENERATOR      SCHEDULED 2010-03-19 2010-04-30
-#> 18989  WYANGALA     NSW1     GENERATOR  NON-SCHEDULED 2014-08-26 2015-01-01
-#> 18990     MCKAY     VIC1     GENERATOR      SCHEDULED 2015-01-01 2015-07-01
-#> 18991  WYANGALB     NSW1     GENERATOR  NON-SCHEDULED 2010-04-30 2010-07-01
-#> 18992    CLOVER     VIC1     GENERATOR  NON-SCHEDULED 2020-07-01 2021-07-01
-#> 18993    EILDON     VIC1     GENERATOR      SCHEDULED 2022-07-01 2023-07-01
-#> 18994    EILDON     VIC1     GENERATOR      SCHEDULED 2023-07-01 2023-10-10
-#> 18995    EILDON     VIC1     GENERATOR      SCHEDULED 2024-06-03 2024-07-01
-#> 18996     MCKAY     VIC1     GENERATOR      SCHEDULED 2002-07-09 2003-07-01
-#> 18997    EILDON     VIC1     GENERATOR      SCHEDULED 2007-12-01 2008-07-01
-#> 18998    CLOVER     VIC1     GENERATOR      SCHEDULED 1998-10-25 1999-07-01
-#> 18999    CLOVER     VIC1     GENERATOR      SCHEDULED 1999-07-01 1999-10-14
-#> 19000  BDONGHYD     NSW1     GENERATOR  NON-SCHEDULED 2016-11-19 2017-07-01
-#> 19001    EILDON     VIC1     GENERATOR      SCHEDULED 2000-12-19 2001-07-01
-#> 19002   KINCUMB     NSW1     GENERATOR  NON-SCHEDULED 2014-08-26 2015-01-01
-#> 19003  WYANGALB     NSW1     GENERATOR  NON-SCHEDULED 2010-03-19 2010-04-30
-#> 19004     MCKAY     VIC1     GENERATOR      SCHEDULED 2009-09-22 2010-01-15
-#> 19005   AGLNOW1     NSW1     GENERATOR  NON-SCHEDULED 2013-07-01 2013-12-15
-#> 19006    WKIEWA     VIC1     GENERATOR      SCHEDULED 2003-07-01 2003-12-23
-#> 19007   AGLNOW1     NSW1     GENERATOR  NON-SCHEDULED 2014-07-01 2014-07-25
-#> 19008    EILDON     VIC1     GENERATOR      SCHEDULED 2002-07-01 2002-07-09
-#> 19009    EILDON     VIC1     GENERATOR      SCHEDULED 2004-07-01 2004-12-15
-#> 19010     MCKAY     VIC1     GENERATOR      SCHEDULED 2011-01-18 2011-04-14
-#> 19011     MCKAY     VIC1     GENERATOR      SCHEDULED 2011-04-14 2011-07-01
-#> 19012    AGLSOM     VIC1     GENERATOR      SCHEDULED 2007-01-16 2007-07-01
-#> 19013    AGLSOM     VIC1     GENERATOR      SCHEDULED 2007-07-01 2007-07-02
-#> 19014     MCKAY     VIC1     GENERATOR      SCHEDULED 2013-04-01 2013-07-01
-#> 19015     MCKAY     VIC1     GENERATOR      SCHEDULED 2014-07-25 2014-08-26
-#> 19016     MCKAY     VIC1     GENERATOR      SCHEDULED 2014-07-01 2014-07-25
-#> 19017     MCKAY     VIC1     GENERATOR      SCHEDULED 2016-07-01 2016-11-19
-#> 19018   PINDARI     NSW1     GENERATOR  NON-SCHEDULED 2012-07-01 2012-12-07
-#> 19019   RUBICON     VIC1     GENERATOR  NON-SCHEDULED 2014-07-25 2014-08-26
-#> 19020   RUBICON     VIC1     GENERATOR  NON-SCHEDULED 2014-08-26 2015-01-01
-#> 19021      BAPS     VIC1     GENERATOR  NON-SCHEDULED 2016-01-15 2016-07-01
-#> 19022   RUBICON     VIC1     GENERATOR  NON-SCHEDULED 2015-07-01 2015-10-30
-#> 19023   RUBICON     VIC1     GENERATOR  NON-SCHEDULED 2015-10-30 2016-01-15
-#> 19024   RUBICON     VIC1     GENERATOR  NON-SCHEDULED 2016-01-15 2016-07-01
-#> 19025   RUBICON     VIC1     GENERATOR  NON-SCHEDULED 2016-07-01 2016-11-19
-#> 19026   RUBICON     VIC1     GENERATOR  NON-SCHEDULED 2016-11-19 2017-07-01
-#> 19027   RUBICON     VIC1     GENERATOR  NON-SCHEDULED 2017-07-01 2018-05-29
-#> 19028  WYANGALA     NSW1     GENERATOR  NON-SCHEDULED 2014-07-25 2014-08-26
-#> 19029     DARTM     VIC1     GENERATOR      SCHEDULED 2007-12-01 2008-07-01
-#> 19030     DARTM     VIC1     GENERATOR      SCHEDULED 2010-04-30 2010-07-01
-#> 19031  COPTNHYD     NSW1     GENERATOR  NON-SCHEDULED 2025-07-01 2026-07-01
-#> 19032  GLBWNHYD     NSW1     GENERATOR  NON-SCHEDULED 2022-06-10 2022-06-28
-#> 19033  GLBWNHYD     NSW1     GENERATOR  NON-SCHEDULED 2022-06-28 2022-07-01
-#> 19034  GLBWNHYD     NSW1     GENERATOR  NON-SCHEDULED 2023-10-10 2024-07-01
-#> 19035    AGLHAL      SA1     GENERATOR      SCHEDULED 2006-08-04 2006-08-25
-#> 19036  COPTNHYD     NSW1     GENERATOR  NON-SCHEDULED 2013-07-01 2014-07-01
-#> 19037     DARTM     VIC1     GENERATOR      SCHEDULED 2014-08-26 2015-01-01
-#> 19038     DARTM     VIC1     GENERATOR      SCHEDULED 2015-10-30 2016-01-15
-#> 19039     DARTM     VIC1     GENERATOR      SCHEDULED 2016-01-15 2016-07-01
-#> 19040    WKIEWA     VIC1     GENERATOR      SCHEDULED 2016-01-15 2016-07-01
-#> 19041  BDONGHYD     NSW1     GENERATOR  NON-SCHEDULED 2021-12-31 2022-03-10
-#> 19042   PINDARI     NSW1     GENERATOR  NON-SCHEDULED 2015-01-01 2015-07-01
-#> 19043   PINDARI     NSW1     GENERATOR  NON-SCHEDULED 2016-11-19 2017-07-01
-#> 19044    EILDON     VIC1     GENERATOR      SCHEDULED 2001-09-13 2001-10-09
-#> 19045   KINCUMB     NSW1     GENERATOR  NON-SCHEDULED 2015-07-01 2015-10-30
-#> 19046   AGLNOW1     NSW1     GENERATOR  NON-SCHEDULED 2013-12-15 2014-07-01
-#> 19047  WYANGALA     NSW1     GENERATOR  NON-SCHEDULED 2010-01-15 2010-03-19
-#> 19048  WYANGALA     NSW1     GENERATOR  NON-SCHEDULED 2010-07-01 2011-04-14
-#> 19049    YABULU     QLD1     GENERATOR      SCHEDULED 2008-07-01 2009-07-01
-#> 19050    WKIEWA     VIC1     GENERATOR      SCHEDULED 2004-07-01 2004-12-15
-#> 19051  WYANGALA     NSW1     GENERATOR  NON-SCHEDULED 2012-07-01 2012-12-07
-#> 19052     MCKAY     VIC1     GENERATOR      SCHEDULED 2011-07-01 2012-07-01
-#> 19053    EILDON     VIC1     GENERATOR      SCHEDULED 2020-07-01 2021-07-01
-#> 19054    EILDON     VIC1     GENERATOR      SCHEDULED 2021-07-01 2021-12-01
-#> 19055     MCKAY     VIC1     GENERATOR      SCHEDULED 2013-07-01 2014-07-01
-#> 19056    AGLSOM     VIC1     GENERATOR      SCHEDULED 2009-07-01 2010-01-15
-#> 19057    AGLSOM     VIC1     GENERATOR      SCHEDULED 2010-07-01 2010-10-27
-#> 19058    AGLSOM     VIC1     GENERATOR      SCHEDULED 2011-01-18 2011-04-14
-#> 19059     MCKAY     VIC1     GENERATOR      SCHEDULED 2015-10-30 2016-01-15
-#> 19060     MCKAY     VIC1     GENERATOR      SCHEDULED 2016-01-15 2016-07-01
-#> 19061     MCKAY     VIC1     GENERATOR      SCHEDULED 2016-11-19 2017-07-01
-#> 19062     MCKAY     VIC1     GENERATOR      SCHEDULED 2021-12-31 2022-03-10
-#> 19063    AGLSOM     VIC1     GENERATOR      SCHEDULED 2013-12-15 2014-07-01
-#> 19064    AGLSOM     VIC1     GENERATOR      SCHEDULED 2014-07-01 2014-07-25
-#> 19065     MCKAY     VIC1     GENERATOR      SCHEDULED 2022-06-28 2022-07-01
-#> 19066     MCKAY     VIC1     GENERATOR      SCHEDULED 2023-10-10 2024-06-03
-#> 19067     MCKAY     VIC1     GENERATOR      SCHEDULED 2002-04-01 2002-07-01
-#> 19068     MCKAY     VIC1     GENERATOR      SCHEDULED 2002-07-09 2003-07-01
-#> 19069  WYANGALB     NSW1     GENERATOR  NON-SCHEDULED 2012-07-01 2012-12-07
-#> 19070     MCKAY     VIC1     GENERATOR      SCHEDULED 2003-12-23 2004-06-15
-#> 19071  WYANGALB     NSW1     GENERATOR  NON-SCHEDULED 2014-07-01 2014-07-25
-#> 19072  BDONGHYD     NSW1     GENERATOR  NON-SCHEDULED 2012-12-24 2013-04-01
-#> 19073  BDONGHYD     NSW1     GENERATOR  NON-SCHEDULED 2013-04-01 2013-07-01
-#> 19074   PINDARI     NSW1     GENERATOR  NON-SCHEDULED 2007-09-01 2007-12-01
-#> 19075    AGLSOM     VIC1     GENERATOR      SCHEDULED 2016-01-15 2016-07-01
-#> 19076    AGLSOM     VIC1     GENERATOR      SCHEDULED 2016-11-19 2017-07-01
-#> 19077     MCKAY     VIC1     GENERATOR      SCHEDULED 2007-12-01 2008-07-01
-#> 19078    AGLSOM     VIC1     GENERATOR      SCHEDULED 2022-03-10 2022-06-10
-#> 19079    EILDON     VIC1     GENERATOR      SCHEDULED 1999-07-01 1999-10-14
-#> 19080    YABULU     QLD1     GENERATOR      SCHEDULED 2023-07-01 2023-10-10
-#> 19081    WKIEWA     VIC1     GENERATOR      SCHEDULED 2016-11-19 2017-01-13
-#> 19082    WKIEWA     VIC1     GENERATOR      SCHEDULED 2021-12-31 2022-03-10
-#> 19083   PINDARI     NSW1     GENERATOR  NON-SCHEDULED 2015-10-30 2016-01-15
-#> 19084   PINDARI     NSW1     GENERATOR  NON-SCHEDULED 2014-07-25 2014-08-26
-#> 19085    EILDON     VIC1     GENERATOR      SCHEDULED 2000-12-19 2001-07-01
-#> 19086    EILDON     VIC1     GENERATOR      SCHEDULED 2001-07-01 2001-09-13
-#> 19087    EILDON     VIC1     GENERATOR      SCHEDULED 2001-09-13 2001-10-09
-#> 19088    EILDON     VIC1     GENERATOR      SCHEDULED 2001-10-09 2002-04-01
-#> 19089    WKIEWA     VIC1     GENERATOR      SCHEDULED 2004-06-15 2004-07-01
-#> 19090    EILDON     VIC1     GENERATOR      SCHEDULED 2015-07-01 2015-10-30
-#> 19091    YABULU     QLD1     GENERATOR      SCHEDULED 2009-07-01 2010-01-15
-#> 19092   RUBICON     VIC1     GENERATOR  NON-SCHEDULED 2001-10-09 2004-06-15
-#> 19093   RUBICON     VIC1     GENERATOR  NON-SCHEDULED 2004-06-15 2006-02-22
-#> 19094   RUBICON     VIC1     GENERATOR  NON-SCHEDULED 2006-02-22 2006-03-29
-#> 19095    AGLSOM     VIC1     GENERATOR      SCHEDULED 2008-07-01 2009-07-01
-#> 19096  YWNGAHYD     VIC1     GENERATOR  NON-SCHEDULED 2026-07-01 2999-12-31
-#> 19097   AGLNOW1     NSW1     GENERATOR  NON-SCHEDULED 2020-07-01 2021-07-01
-#> 19098    EILDON     VIC1     GENERATOR      SCHEDULED 2024-06-03 2024-07-01
-#> 19099    EILDON     VIC1     GENERATOR      SCHEDULED 2007-07-01 2007-07-02
-#> 19100     MCKAY     VIC1     GENERATOR      SCHEDULED 2017-07-01 2018-07-01
-#> 19101      BAPS     VIC1     GENERATOR  NON-SCHEDULED 2015-10-30 2016-01-15
-#> 19102    WKIEWA     VIC1     GENERATOR      SCHEDULED 2022-07-01 2023-07-01
-#> 19103     MCKAY     VIC1     GENERATOR      SCHEDULED 2021-12-01 2021-12-31
-#> 19104  MORANBAH     QLD1     GENERATOR  NON-SCHEDULED 2011-07-01 2012-07-01
-#> 19105  MORANBAH     QLD1     GENERATOR  NON-SCHEDULED 2012-07-01 2012-12-07
-#> 19106     OAKEY     QLD1     GENERATOR      SCHEDULED 2010-01-15 2010-03-19
-#> 19107  YWNGAHYD     VIC1     GENERATOR  NON-SCHEDULED 2025-07-01 2026-07-01
-#> 19108  WYANGALA     NSW1     GENERATOR  NON-SCHEDULED 2013-04-01 2013-07-01
-#> 19109     MCKAY     VIC1     GENERATOR      SCHEDULED 1999-07-01 1999-10-14
-#> 19110     MCKAY     VIC1     GENERATOR      SCHEDULED 1999-10-14 2000-07-01
-#> 19111     MCKAY     VIC1     GENERATOR      SCHEDULED 2000-07-01 2000-07-20
-#> 19112     MCKAY     VIC1     GENERATOR      SCHEDULED 2000-07-20 2000-12-19
-#> 19113  MORANBAH     QLD1     GENERATOR  NON-SCHEDULED 2020-07-01 2021-07-01
-#> 19114  MORANBAH     QLD1     GENERATOR  NON-SCHEDULED 2021-07-01 2021-12-31
-#> 19115    CLOVER     VIC1     GENERATOR  NON-SCHEDULED 2021-07-01 2021-12-31
-#> 19116    CLOVER     VIC1     GENERATOR  NON-SCHEDULED 2022-07-01 2023-07-01
-#> 19117    CLOVER     VIC1     GENERATOR  NON-SCHEDULED 2023-07-01 2023-10-10
-#> 19118    WKIEWA     VIC1     GENERATOR      SCHEDULED 2014-07-25 2014-08-26
-#> 19119    WKIEWA     VIC1     GENERATOR      SCHEDULED 2014-08-26 2015-01-01
-#> 19120    WKIEWA     VIC1     GENERATOR      SCHEDULED 2015-01-01 2015-07-01
-#> 19121    EILDON     VIC1     GENERATOR      SCHEDULED 2009-07-01 2010-01-15
-#> 19122   PINDARI     NSW1     GENERATOR  NON-SCHEDULED 2012-12-07 2012-12-24
-#> 19123    EILDON     VIC1     GENERATOR      SCHEDULED 2012-12-07 2012-12-24
-#> 19124      WPWF      SA1     GENERATOR  NON-SCHEDULED 2008-07-01 2008-11-20
-#> 19125      WPWF      SA1     GENERATOR  NON-SCHEDULED 2008-11-20 2009-01-22
-#> 19126     MCKAY     VIC1     GENERATOR      SCHEDULED 2004-12-15 2005-07-01
-#> 19127   KINCUMB     NSW1     GENERATOR  NON-SCHEDULED 2016-07-01 2016-11-19
-#> 19128   KINCUMB     NSW1     GENERATOR  NON-SCHEDULED 2017-07-01 2018-07-01
-#> 19129    EILDON     VIC1     GENERATOR      SCHEDULED 2013-07-01 2014-07-01
-#> 19130    EILDON     VIC1     GENERATOR      SCHEDULED 2025-07-01 2026-07-01
-#> 19131    AGLSOM     VIC1     GENERATOR      SCHEDULED 2026-07-01 2999-12-31
-#> 19132    YABULU     QLD1     GENERATOR      SCHEDULED 2010-07-01 2010-10-27
-#> 19133    YABULU     QLD1     GENERATOR      SCHEDULED 2011-01-18 2011-04-14
-#> 19134   AGLNOW1     NSW1     GENERATOR  NON-SCHEDULED 2018-07-01 2019-07-01
-#> 19135   AGLNOW1     NSW1     GENERATOR  NON-SCHEDULED 2019-07-01 2020-07-01
-#> 19136      WPWF      SA1     GENERATOR  NON-SCHEDULED 2006-03-01 2006-03-29
-#> 19137   PINDARI     NSW1     GENERATOR  NON-SCHEDULED 2011-04-14 2011-07-01
-#> 19138   PINDARI     NSW1     GENERATOR  NON-SCHEDULED 2011-07-01 2012-07-01
-#> 19139   RUBICON     VIC1     GENERATOR  NON-SCHEDULED 2014-07-01 2014-07-25
-#> 19140    WKIEWA     VIC1     GENERATOR      SCHEDULED 2026-09-29 2999-12-31
-#> 19141    AGLSOM     VIC1     GENERATOR      SCHEDULED 2011-07-01 2012-07-01
-#> 19142    AGLSOM     VIC1     GENERATOR      SCHEDULED 2012-07-01 2012-12-07
-#> 19143      BAPS     VIC1     GENERATOR  NON-SCHEDULED 2016-11-19 2017-07-01
-#> 19144      BAPS     VIC1     GENERATOR  NON-SCHEDULED 2021-12-31 2022-03-10
-#> 19145      BAPS     VIC1     GENERATOR  NON-SCHEDULED 2022-03-10 2022-06-10
-#> 19146      BAPS     VIC1     GENERATOR  NON-SCHEDULED 2022-06-10 2022-06-28
-#> 19147      BAPS     VIC1     GENERATOR  NON-SCHEDULED 2022-06-28 2022-07-01
-#> 19148      BAPS     VIC1     GENERATOR  NON-SCHEDULED 2023-10-10 2024-07-01
-#> 19149   RUBICON     VIC1     GENERATOR  NON-SCHEDULED 2021-12-31 2022-03-10
-#> 19150   PINDARI     NSW1     GENERATOR  NON-SCHEDULED 2022-07-01 2023-07-01
-#> 19151     DARTM     VIC1     GENERATOR      SCHEDULED 2010-01-15 2010-03-19
-#> 19152    YABULU     QLD1     GENERATOR      SCHEDULED 2016-01-15 2016-07-01
-#> 19153    YABULU     QLD1     GENERATOR      SCHEDULED 2016-11-19 2017-07-01
-#> 19154    YABULU     QLD1     GENERATOR      SCHEDULED 2021-12-31 2022-03-10
-#> 19155  SUNCOAST     QLD1     GENERATOR  NON-SCHEDULED 2010-05-17 2010-07-01
-#> 19156  SUNCOAST     QLD1     GENERATOR  NON-SCHEDULED 2010-07-01 2011-04-14
-#> 19157  SUNCOAST     QLD1     GENERATOR  NON-SCHEDULED 2011-04-14 2011-05-27
-#> 19158  COPTNHYD     NSW1     GENERATOR  NON-SCHEDULED 2014-07-01 2014-07-25
-#> 19159   AGLSITA     NSW1     GENERATOR  NON-SCHEDULED 2020-07-01 2021-07-01
-#> 19160   AGLSITA     NSW1     GENERATOR  NON-SCHEDULED 2021-07-01 2021-12-31
-#> 19161     OAKEY     QLD1     GENERATOR      SCHEDULED 2007-12-01 2007-12-06
-#> 19162     OAKEY     QLD1     GENERATOR      SCHEDULED 2010-01-15 2010-03-19
-#> 19163  BDONGHYD     NSW1     GENERATOR  NON-SCHEDULED 2022-03-10 2022-06-10
-#> 19164     DARTM     VIC1     GENERATOR      SCHEDULED 2022-03-10 2022-06-10
-#> 19165     DARTM     VIC1     GENERATOR      SCHEDULED 2022-06-10 2022-06-28
-#> 19166     DARTM     VIC1     GENERATOR      SCHEDULED 2022-06-28 2022-07-01
-#> 19167     DARTM     VIC1     GENERATOR      SCHEDULED 2023-10-10 2024-06-03
-#> 19168    YABULU     QLD1     GENERATOR      SCHEDULED 2012-12-24 2013-04-01
-#> 19169    YABULU     QLD1     GENERATOR      SCHEDULED 2013-04-01 2013-07-01
-#> 19170    YABULU     QLD1     GENERATOR      SCHEDULED 2014-07-25 2014-08-26
-#> 19171    YABULU     QLD1     GENERATOR      SCHEDULED 2014-08-26 2015-01-01
-#> 19172  GLBWNHYD     NSW1     GENERATOR  NON-SCHEDULED 2015-07-01 2015-10-30
-#> 19173    YABULU     QLD1     GENERATOR      SCHEDULED 2015-01-01 2015-07-01
-#> 19174    YABULU     QLD1     GENERATOR      SCHEDULED 2015-10-30 2016-01-15
-#> 19175    YABULU     QLD1     GENERATOR      SCHEDULED 2016-01-15 2016-07-01
-#> 19176   PINDARI     NSW1     GENERATOR  NON-SCHEDULED 2025-07-01 2026-07-01
-#> 19177      WPWF      SA1     GENERATOR  NON-SCHEDULED 2006-03-29 2006-07-01
-#> 19178      WPWF      SA1     GENERATOR  NON-SCHEDULED 2006-08-04 2006-08-25
-#> 19179      WPWF      SA1     GENERATOR  NON-SCHEDULED 2006-08-25 2007-01-16
-#> 19180    AGLSOM     VIC1     GENERATOR      SCHEDULED 2011-04-14 2011-07-01
-#> 19181    EILDON     VIC1     GENERATOR      SCHEDULED 2024-07-01 2025-07-01
-#> 19182    WKIEWA     VIC1     GENERATOR      SCHEDULED 2021-12-01 2021-12-31
-#> 19183    AGLSOM     VIC1     GENERATOR      SCHEDULED 2013-07-01 2013-12-15
-#> 19184      WPWF      SA1     GENERATOR  NON-SCHEDULED 2010-03-19 2010-04-30
-#> 19185      WPWF      SA1     GENERATOR  NON-SCHEDULED 2010-04-30 2010-07-01
-#> 19186    AGLSOM     VIC1     GENERATOR      SCHEDULED 2015-07-01 2015-10-30
-#> 19187    AGLSOM     VIC1     GENERATOR      SCHEDULED 2016-07-01 2016-11-19
-#> 19188    AGLSOM     VIC1     GENERATOR      SCHEDULED 2017-07-01 2018-07-01
-#> 19189     MCKAY     VIC1     GENERATOR      SCHEDULED 2006-02-01 2006-02-13
-#> 19190     MCKAY     VIC1     GENERATOR      SCHEDULED 2003-07-01 2003-12-23
-#> 19191     MCKAY     VIC1     GENERATOR      SCHEDULED 2006-03-29 2006-07-01
-#> 19192     MCKAY     VIC1     GENERATOR      SCHEDULED 2006-08-04 2006-08-25
-#> 19193   PINDARI     NSW1     GENERATOR  NON-SCHEDULED 2006-08-25 2007-01-16
-#> 19194   PINDARI     NSW1     GENERATOR  NON-SCHEDULED 2007-07-02 2007-09-01
-#> 19195  YWNGAHYD     VIC1     GENERATOR  NON-SCHEDULED 2022-06-28 2022-07-01
-#> 19196    YABULU     QLD1     GENERATOR      SCHEDULED 2019-07-01 2020-07-01
-#> 19197    YABULU     QLD1     GENERATOR      SCHEDULED 2020-07-01 2021-07-01
-#> 19198    EILDON     VIC1     GENERATOR      SCHEDULED 2006-07-01 2006-08-04
-#> 19199    EILDON     VIC1     GENERATOR      SCHEDULED 1998-10-25 1999-07-01
-#> 19200     MCKAY     VIC1     GENERATOR      SCHEDULED 2006-02-22 2006-03-01
-#> 19201     MCKAY     VIC1     GENERATOR      SCHEDULED 2006-07-01 2006-08-04
-#> 19202     MCKAY     VIC1     GENERATOR      SCHEDULED 2007-01-16 2007-07-01
-#> 19203      WPWF      SA1     GENERATOR  NON-SCHEDULED 2007-12-19 2008-07-01
-#> 19204   PINDARI     NSW1     GENERATOR  NON-SCHEDULED 2012-12-24 2013-04-01
-#> 19205   PINDARI     NSW1     GENERATOR  NON-SCHEDULED 2013-04-01 2013-07-01
-#> 19206   AGLNOW1     NSW1     GENERATOR  NON-SCHEDULED 2011-04-14 2011-07-01
-#> 19207   AGLNOW1     NSW1     GENERATOR  NON-SCHEDULED 2011-07-01 2012-07-01
-#> 19208   AGLNOW1     NSW1     GENERATOR  NON-SCHEDULED 2012-07-01 2012-12-07
-#> 19209    EILDON     VIC1     GENERATOR      SCHEDULED 2012-07-01 2012-12-07
-#> 19210    EILDON     VIC1     GENERATOR      SCHEDULED 2025-07-01 2026-07-01
-#> 19211    EILDON     VIC1     GENERATOR      SCHEDULED 2014-07-01 2014-07-25
-#> 19212    EILDON     VIC1     GENERATOR      SCHEDULED 2016-07-01 2016-11-19
-#> 19213    EILDON     VIC1     GENERATOR      SCHEDULED 2017-07-01 2018-07-01
-#> 19214   AGLNOW1     NSW1     GENERATOR  NON-SCHEDULED 2017-07-01 2018-07-01
-#> 19215    EILDON     VIC1     GENERATOR      SCHEDULED 2019-07-01 2020-07-01
-#> 19216    WKIEWA     VIC1     GENERATOR      SCHEDULED 2006-02-22 2006-03-01
-#> 19217   RUBICON     VIC1     GENERATOR  NON-SCHEDULED 2012-12-24 2013-04-01
-#> 19218    WKIEWA     VIC1     GENERATOR      SCHEDULED 2018-07-01 2019-07-01
-#> 19219     MCKAY     VIC1     GENERATOR      SCHEDULED 2015-07-01 2015-10-30
-#> 19220   AGLSITA     NSW1     GENERATOR  NON-SCHEDULED 2017-07-01 2018-07-01
-#> 19221   PINDARI     NSW1     GENERATOR  NON-SCHEDULED 2009-07-01 2010-01-15
-#> 19222      WPWF      SA1     GENERATOR  NON-SCHEDULED 2007-09-01 2007-12-01
-#> 19223  YWNGAHYD     VIC1     GENERATOR  NON-SCHEDULED 2016-07-01 2016-11-19
-#> 19224    WKIEWA     VIC1     GENERATOR      SCHEDULED 2023-07-01 2023-10-10
-#> 19225     MCKAY     VIC1     GENERATOR      SCHEDULED 2022-07-01 2023-07-01
-#> 19226     OAKEY     QLD1     GENERATOR      SCHEDULED 2007-12-01 2007-12-06
-#> 19227  WYANGALA     NSW1     GENERATOR  NON-SCHEDULED 2010-03-19 2010-04-30
-#> 19228  WYANGALA     NSW1     GENERATOR  NON-SCHEDULED 2010-04-30 2010-07-01
-#> 19229     MCKAY     VIC1     GENERATOR      SCHEDULED 1998-10-25 1999-07-01
-#> 19230  EDLRGNRD     QLD1     GENERATOR  NON-SCHEDULED 2012-12-24 2013-04-01
-#> 19231      BAPS     VIC1     GENERATOR  NON-SCHEDULED 2015-07-01 2015-10-30
-#> 19232    EILDON     VIC1     GENERATOR      SCHEDULED 2002-04-01 2002-07-01
-#> 19233    EILDON     VIC1     GENERATOR      SCHEDULED 2006-02-01 2006-02-22
-#> 19234    EILDON     VIC1     GENERATOR      SCHEDULED 2006-03-01 2006-03-29
-#> 19235  WYANGALB     NSW1     GENERATOR  NON-SCHEDULED 2012-12-07 2012-12-24
-#> 19236  WYANGALB     NSW1     GENERATOR  NON-SCHEDULED 2012-12-24 2013-04-01
-#> 19237  WYANGALB     NSW1     GENERATOR  NON-SCHEDULED 2013-04-01 2013-07-01
-#> 19238  WYANGALB     NSW1     GENERATOR  NON-SCHEDULED 2014-07-25 2014-08-26
-#> 19239  WYANGALB     NSW1     GENERATOR  NON-SCHEDULED 2014-08-26 2015-01-01
-#> 19240      BAPS     VIC1     GENERATOR  NON-SCHEDULED 2024-07-01 2025-07-01
-#> 19241    EILDON     VIC1     GENERATOR      SCHEDULED 2007-09-01 2007-12-01
-#> 19242    EILDON     VIC1     GENERATOR      SCHEDULED 2010-01-15 2010-03-19
-#> 19243    EILDON     VIC1     GENERATOR      SCHEDULED 2010-07-01 2010-10-27
-#> 19244    CLOVER     VIC1     GENERATOR      SCHEDULED 1999-07-01 1999-10-14
-#> 19245    EILDON     VIC1     GENERATOR      SCHEDULED 2010-10-27 2011-01-18
-#> 19246     MCKAY     VIC1     GENERATOR      SCHEDULED 2004-07-01 2004-12-15
-#> 19247      WPWF      SA1     GENERATOR  NON-SCHEDULED 2007-07-17 2007-09-01
-#> 19248      WPWF      SA1     GENERATOR  NON-SCHEDULED 2009-01-22 2009-07-01
-#> 19249      WPWF      SA1     GENERATOR  NON-SCHEDULED 2009-07-01 2010-01-15
-#> 19250   RUBICON     VIC1     GENERATOR  NON-SCHEDULED 2025-07-01 2026-07-01
-#> 19251   KINCUMB     NSW1     GENERATOR  NON-SCHEDULED 2019-07-01 2020-07-01
-#> 19252   KINCUMB     NSW1     GENERATOR  NON-SCHEDULED 2020-07-01 2021-07-01
-#> 19253   KINCUMB     NSW1     GENERATOR  NON-SCHEDULED 2021-07-01 2021-12-31
-#> 19254      WPWF      SA1     GENERATOR  NON-SCHEDULED 2013-12-15 2014-07-01
-#> 19255    WKIEWA     VIC1     GENERATOR      SCHEDULED 2017-07-01 2018-07-01
-#> 19256      WPWF      SA1     GENERATOR  NON-SCHEDULED 2013-07-01 2013-12-15
-#> 19257   AGLNOW1     NSW1     GENERATOR  NON-SCHEDULED 2016-01-15 2016-07-01
-#> 19258    WKIEWA     VIC1     GENERATOR      SCHEDULED 2007-01-16 2007-07-01
-#> 19259   RUBICON     VIC1     GENERATOR  NON-SCHEDULED 2013-07-01 2014-07-01
-#> 19260    WKIEWA     VIC1     GENERATOR      SCHEDULED 2020-07-01 2021-07-01
-#> 19261      WPWF      SA1     GENERATOR  NON-SCHEDULED 2007-07-02 2007-07-17
-#> 19262      BAPS     VIC1     GENERATOR  NON-SCHEDULED 2012-12-24 2013-04-01
-#> 19263      WPWF      SA1     GENERATOR  NON-SCHEDULED 2007-12-01 2007-12-19
-#> 19264      WPWF      SA1     GENERATOR  NON-SCHEDULED 2010-01-15 2010-02-09
-#> 19265    WKIEWA     VIC1     GENERATOR      SCHEDULED 2024-06-03 2024-07-01
-#> 19266    WKIEWA     VIC1     GENERATOR      SCHEDULED 2024-07-01 2025-07-01
-#> 19267    WKIEWA     VIC1     GENERATOR      SCHEDULED 1998-10-25 1999-07-01
-#> 19268    WKIEWA     VIC1     GENERATOR      SCHEDULED 1999-07-01 1999-10-14
-#> 19269    WKIEWA     VIC1     GENERATOR      SCHEDULED 1999-10-14 2000-07-01
-#> 19270     DARTM     VIC1     GENERATOR      SCHEDULED 2007-07-02 2007-09-01
-#> 19271     DARTM     VIC1     GENERATOR      SCHEDULED 2007-09-01 2007-12-01
-#> 19272  GLBWNHYD     NSW1     GENERATOR  NON-SCHEDULED 2016-11-19 2017-07-01
-#> 19273  GLBWNHYD     NSW1     GENERATOR  NON-SCHEDULED 2021-12-31 2022-03-10
-#> 19274  GLBWNHYD     NSW1     GENERATOR  NON-SCHEDULED 2022-03-10 2022-06-10
-#> 19275   RUBICON     VIC1     GENERATOR  NON-SCHEDULED 2023-10-10 2024-07-01
-#> 19276    WKIEWA     VIC1     GENERATOR      SCHEDULED 2023-10-10 2024-06-03
-#> 19277  GLBWNHYD     NSW1     GENERATOR  NON-SCHEDULED 2025-07-01 2026-07-01
-#> 19278    AGLHAL      SA1     GENERATOR      SCHEDULED 2006-03-29 2006-07-01
-#> 19279   AGLSITA     NSW1     GENERATOR  NON-SCHEDULED 2018-07-01 2019-07-01
-#> 19280  COPTNHYD     NSW1     GENERATOR  NON-SCHEDULED 2015-07-01 2015-10-30
-#> 19281  COPTNHYD     NSW1     GENERATOR  NON-SCHEDULED 2016-07-01 2016-11-19
-#> 19282    WKIEWA     VIC1     GENERATOR      SCHEDULED 2000-07-20 2000-12-19
-#> 19283    CLOVER     VIC1     GENERATOR      SCHEDULED 1998-10-25 1999-07-01
-#> 19284     DARTM     VIC1     GENERATOR      SCHEDULED 2021-12-31 2022-03-10
-#> 19285    WKIEWA     VIC1     GENERATOR      SCHEDULED 2001-07-01 2001-09-13
-#> 19286    WKIEWA     VIC1     GENERATOR      SCHEDULED 2001-09-13 2001-10-09
-#> 19287    WKIEWA     VIC1     GENERATOR      SCHEDULED 2001-10-09 2002-04-01
-#> 19288    WKIEWA     VIC1     GENERATOR      SCHEDULED 2002-07-01 2002-07-09
-#> 19289    WKIEWA     VIC1     GENERATOR      SCHEDULED 2002-07-09 2003-07-01
-#> 19290      BAPS     VIC1     GENERATOR  NON-SCHEDULED 2006-03-01 2006-03-29
-#> 19291     MCKAY     VIC1     GENERATOR      SCHEDULED 2026-07-01 2999-12-31
-#> 19292   AGLNOW1     NSW1     GENERATOR  NON-SCHEDULED 2012-12-07 2012-12-24
-#> 19293   AGLNOW1     NSW1     GENERATOR  NON-SCHEDULED 2012-12-24 2013-04-01
-#> 19294   AGLNOW1     NSW1     GENERATOR  NON-SCHEDULED 2013-04-01 2013-07-01
-#> 19295    AGLSOM     VIC1     GENERATOR      SCHEDULED 2006-03-01 2006-03-29
-#> 19296    WKIEWA     VIC1     GENERATOR      SCHEDULED 2014-07-01 2014-07-25
-#> 19297    WKIEWA     VIC1     GENERATOR      SCHEDULED 2006-08-04 2006-08-25
-#> 19298   PINDARI     NSW1     GENERATOR  NON-SCHEDULED 2007-07-01 2007-07-02
-#> 19299    WKIEWA     VIC1     GENERATOR      SCHEDULED 2007-07-01 2007-07-02
-#> 19300    WKIEWA     VIC1     GENERATOR      SCHEDULED 2008-07-01 2009-07-01
-#> 19301   AGLSITA     NSW1     GENERATOR  NON-SCHEDULED 2016-11-19 2017-07-01
-#> 19302    WKIEWA     VIC1     GENERATOR      SCHEDULED 2009-07-01 2010-01-15
-#> 19303   PINDARI     NSW1     GENERATOR  NON-SCHEDULED 2010-07-01 2011-04-14
-#> 19304    WKIEWA     VIC1     GENERATOR      SCHEDULED 2010-04-30 2010-07-01
-#> 19305    WKIEWA     VIC1     GENERATOR      SCHEDULED 2011-07-01 2012-07-01
-#> 19306    WKIEWA     VIC1     GENERATOR      SCHEDULED 2012-07-01 2012-12-07
-#> 19307      WPWF      SA1     GENERATOR  NON-SCHEDULED 2012-12-07 2012-12-24
-#> 19308   RUBICON     VIC1     GENERATOR  NON-SCHEDULED 2023-07-01 2023-10-10
-#> 19309   RUBICON     VIC1     GENERATOR  NON-SCHEDULED 2024-07-01 2025-07-01
-#> 19310    AGLSOM     VIC1     GENERATOR      SCHEDULED 2018-07-01 2019-07-01
-#> 19311     MCKAY     VIC1     GENERATOR      SCHEDULED 2006-03-01 2006-03-29
-#> 19312    AGLSOM     VIC1     GENERATOR      SCHEDULED 2020-07-01 2021-07-01
-#> 19313    AGLSOM     VIC1     GENERATOR      SCHEDULED 2021-07-01 2021-12-31
-#> 19314     MCKAY     VIC1     GENERATOR      SCHEDULED 2004-06-15 2004-07-01
-#> 19315    AGLSOM     VIC1     GENERATOR      SCHEDULED 2015-01-01 2015-07-01
-#> 19316    AGLSOM     VIC1     GENERATOR      SCHEDULED 2015-10-30 2016-01-15
-#> 19317     MCKAY     VIC1     GENERATOR      SCHEDULED 2004-07-01 2004-12-15
-#> 19318     MCKAY     VIC1     GENERATOR      SCHEDULED 2004-12-15 2005-07-01
-#> 19319     MCKAY     VIC1     GENERATOR      SCHEDULED 2005-07-01 2006-02-01
-#> 19320     MCKAY     VIC1     GENERATOR      SCHEDULED 2006-02-13 2006-02-22
-#> 19321    EILDON     VIC1     GENERATOR      SCHEDULED 2007-01-16 2007-07-01
-#> 19322    YABULU     QLD1     GENERATOR      SCHEDULED 2022-07-01 2023-07-01
-#> 19323    EILDON     VIC1     GENERATOR      SCHEDULED 2008-07-01 2009-07-01
-#> 19324     MCKAY     VIC1     GENERATOR      SCHEDULED 2007-07-01 2007-07-02
-#> 19325     MCKAY     VIC1     GENERATOR      SCHEDULED 2008-07-01 2009-07-01
-#> 19326     MCKAY     VIC1     GENERATOR      SCHEDULED 2009-07-01 2009-09-22
-#> 19327    EILDON     VIC1     GENERATOR      SCHEDULED 2011-01-18 2011-04-14
-#> 19328    EILDON     VIC1     GENERATOR      SCHEDULED 2011-04-14 2011-07-01
-#> 19329    EILDON     VIC1     GENERATOR      SCHEDULED 2011-07-01 2012-07-01
-#> 19330  COPTNHYD     NSW1     GENERATOR  NON-SCHEDULED 2023-07-01 2023-10-10
-#> 19331   KINCUMB     NSW1     GENERATOR  NON-SCHEDULED 2018-07-01 2019-07-01
-#> 19332      BAPS     VIC1     GENERATOR  NON-SCHEDULED 2007-07-02 2007-09-01
-#> 19333      BAPS     VIC1     GENERATOR  NON-SCHEDULED 2007-09-01 2007-12-01
-#> 19334      WPWF      SA1     GENERATOR  NON-SCHEDULED 2011-07-01 2012-07-01
-#> 19335    EILDON     VIC1     GENERATOR      SCHEDULED 2018-07-01 2019-07-01
-#> 19336      BAPS     VIC1     GENERATOR  NON-SCHEDULED 2007-12-01 2008-07-01
-#> 19337    WKIEWA     VIC1     GENERATOR      SCHEDULED 2015-07-01 2015-10-30
-#> 19338    WKIEWA     VIC1     GENERATOR      SCHEDULED 2016-07-01 2016-07-26
-#> 19339    WKIEWA     VIC1     GENERATOR      SCHEDULED 2007-07-02 2007-09-01
-#> 19340   AGLNOW1     NSW1     GENERATOR  NON-SCHEDULED 2021-07-01 2021-12-31
-#> 19341    WKIEWA     VIC1     GENERATOR      SCHEDULED 2019-07-01 2020-07-01
-#> 19342      BAPS     VIC1     GENERATOR  NON-SCHEDULED 2012-12-07 2012-12-24
-#> 19343    WKIEWA     VIC1     GENERATOR      SCHEDULED 2010-07-01 2010-10-27
-#> 19344    WKIEWA     VIC1     GENERATOR      SCHEDULED 2011-01-18 2011-04-14
-#> 19345  YWNGAHYD     VIC1     GENERATOR  NON-SCHEDULED 2017-07-01 2018-07-01
-#> 19346      BAPS     VIC1     GENERATOR  NON-SCHEDULED 2010-11-09 2011-04-14
-#> 19347      BAPS     VIC1     GENERATOR  NON-SCHEDULED 2011-04-14 2011-07-01
-#> 19348    WKIEWA     VIC1     GENERATOR      SCHEDULED 2006-03-01 2006-03-29
-#> 19349    WKIEWA     VIC1     GENERATOR      SCHEDULED 2006-03-29 2006-07-01
-#> 19350  EDLRGNRD     QLD1     GENERATOR  NON-SCHEDULED 2012-12-07 2012-12-24
-#> 19351    WOYWOY     NSW1     GENERATOR  NON-SCHEDULED 2015-07-01 2015-10-30
-#> 19352    WOYWOY     NSW1     GENERATOR  NON-SCHEDULED 2016-07-01 2016-11-19
-#> 19353     OAKEY     QLD1     GENERATOR      SCHEDULED 2012-12-24 2013-04-01
-#> 19354     OAKEY     QLD1     GENERATOR      SCHEDULED 2013-04-01 2013-07-01
-#> 19355     OAKEY     QLD1     GENERATOR      SCHEDULED 2014-07-25 2014-08-26
-#> 19356     MCKAY     VIC1     GENERATOR      SCHEDULED 2000-12-19 2001-07-01
-#> 19357     MCKAY     VIC1     GENERATOR      SCHEDULED 2001-07-01 2001-09-13
-#> 19358     MCKAY     VIC1     GENERATOR      SCHEDULED 2001-09-13 2001-10-09
-#> 19359     MCKAY     VIC1     GENERATOR      SCHEDULED 2001-10-09 2002-04-01
-#> 19360     MCKAY     VIC1     GENERATOR      SCHEDULED 2002-07-01 2002-07-09
-#> 19361    WKIEWA     VIC1     GENERATOR      SCHEDULED 2013-04-01 2013-07-01
-#> 19362    EILDON     VIC1     GENERATOR      SCHEDULED 2007-07-02 2007-09-01
-#> 19363    EILDON     VIC1     GENERATOR      SCHEDULED 2026-07-01 2999-12-31
-#> 19364      WPWF      SA1     GENERATOR  NON-SCHEDULED 2006-07-01 2006-08-04
-#> 19365      WPWF      SA1     GENERATOR  NON-SCHEDULED 2007-01-16 2007-07-01
-#> 19366     MCKAY     VIC1     GENERATOR      SCHEDULED 2004-06-15 2004-07-01
-#> 19367    EILDON     VIC1     GENERATOR      SCHEDULED 2010-03-19 2010-04-30
-#> 19368  COPTNHYD     NSW1     GENERATOR  NON-SCHEDULED 2021-07-01 2021-12-31
-#> 19369  COPTNHYD     NSW1     GENERATOR  NON-SCHEDULED 2022-07-01 2023-07-01
-#> 19370   KINCUMB     NSW1     GENERATOR  NON-SCHEDULED 2016-11-19 2017-07-01
-#> 19371  COPTNHYD     NSW1     GENERATOR  NON-SCHEDULED 2024-07-01 2025-07-01
-#> 19372     MCKAY     VIC1     GENERATOR      SCHEDULED 2006-08-25 2007-01-16
-#> 19373  WYANGALA     NSW1     GENERATOR  NON-SCHEDULED 2011-04-14 2011-07-01
-#> 19374  WYANGALA     NSW1     GENERATOR  NON-SCHEDULED 2011-07-01 2012-07-01
-#> 19375      WPWF      SA1     GENERATOR  NON-SCHEDULED 2012-07-01 2012-12-07
-#> 19376    CLOVER     VIC1     GENERATOR  NON-SCHEDULED 2015-10-30 2016-01-15
-#> 19377      BAPS     VIC1     GENERATOR  NON-SCHEDULED 2010-01-15 2010-03-19
-#> 19378      BAPS     VIC1     GENERATOR  NON-SCHEDULED 2010-03-19 2010-04-30
-#> 19379    WKIEWA     VIC1     GENERATOR      SCHEDULED 2016-07-26 2016-11-19
-#> 19380   RUBICON     VIC1     GENERATOR  NON-SCHEDULED 2013-04-01 2013-07-01
-#> 19381     MCKAY     VIC1     GENERATOR      SCHEDULED 2012-12-24 2013-04-01
-#> 19382  GLBWNHYD     NSW1     GENERATOR  NON-SCHEDULED 2021-07-01 2021-12-31
-#> 19383    WKIEWA     VIC1     GENERATOR      SCHEDULED 2007-12-01 2008-07-01
-#> 19384      BAPS     VIC1     GENERATOR  NON-SCHEDULED 2013-04-01 2013-07-01
-#> 19385    WKIEWA     VIC1     GENERATOR      SCHEDULED 2011-04-14 2011-07-01
-#> 19386  YWNGAHYD     VIC1     GENERATOR  NON-SCHEDULED 2018-07-01 2019-07-01
-#> 19387  YWNGAHYD     VIC1     GENERATOR  NON-SCHEDULED 2019-07-01 2020-07-01
-#> 19388  YWNGAHYD     VIC1     GENERATOR  NON-SCHEDULED 2020-07-01 2021-07-01
-#> 19389  YWNGAHYD     VIC1     GENERATOR  NON-SCHEDULED 2021-07-01 2021-12-31
-#> 19390  YWNGAHYD     VIC1     GENERATOR  NON-SCHEDULED 2022-07-01 2023-07-01
-#> 19391    WKIEWA     VIC1     GENERATOR      SCHEDULED 2000-07-01 2000-07-20
-#> 19392    WKIEWA     VIC1     GENERATOR      SCHEDULED 2000-07-20 2000-12-19
-#> 19393   RUBICON     VIC1     GENERATOR  NON-SCHEDULED 2022-03-10 2022-06-10
-#> 19394   RUBICON     VIC1     GENERATOR  NON-SCHEDULED 2022-06-10 2022-06-28
-#> 19395   RUBICON     VIC1     GENERATOR  NON-SCHEDULED 2022-06-28 2022-07-01
-#> 19396    YABULU     QLD1     GENERATOR      SCHEDULED 2015-10-30 2016-01-15
-#> 19397      ICSM     QLD1     GENERATOR  NON-SCHEDULED 2013-07-01 2014-07-01
-#> 19398    WKIEWA     VIC1     GENERATOR      SCHEDULED 2002-07-01 2002-07-09
-#> 19399  COPTNHYD     NSW1     GENERATOR  NON-SCHEDULED 2012-12-24 2013-04-01
-#> 19400     OAKEY     QLD1     GENERATOR      SCHEDULED 2007-09-01 2007-12-01
-#> 19401   AGLSITA     NSW1     GENERATOR  NON-SCHEDULED 2019-07-01 2020-07-01
-#> 19402    WKIEWA     VIC1     GENERATOR      SCHEDULED 1999-10-14 2000-07-01
-#> 19403    WKIEWA     VIC1     GENERATOR      SCHEDULED 2000-07-01 2000-07-20
-#> 19404     DARTM     VIC1     GENERATOR      SCHEDULED 2016-11-19 2017-07-01
-#> 19405    CLOVER     VIC1     GENERATOR  NON-SCHEDULED 2025-09-16 2026-07-01
-#> 19406  COPTNHYD     NSW1     GENERATOR  NON-SCHEDULED 2019-07-01 2020-07-01
-#> 19407  COPTNHYD     NSW1     GENERATOR  NON-SCHEDULED 2020-07-01 2021-07-01
-#> 19408   AGLNOW1     NSW1     GENERATOR  NON-SCHEDULED 2008-07-01 2009-07-01
-#> 19409   KINCUMB     NSW1     GENERATOR  NON-SCHEDULED 2016-01-15 2016-07-01
-#> 19410   AGLNOW1     NSW1     GENERATOR  NON-SCHEDULED 2007-07-02 2007-09-01
-#> 19411    WKIEWA     VIC1     GENERATOR      SCHEDULED 2022-03-10 2022-06-10
-#> 19412      WPWF      SA1     GENERATOR  NON-SCHEDULED 2010-02-09 2010-03-19
-#> 19413      WPWF      SA1     GENERATOR  NON-SCHEDULED 2010-07-01 2011-04-14
-#> 19414      WPWF      SA1     GENERATOR  NON-SCHEDULED 2011-04-14 2011-07-01
-#> 19415   RUBICON     VIC1     GENERATOR  NON-SCHEDULED 1998-10-25 2001-10-09
-#> 19416    WKIEWA     VIC1     GENERATOR      SCHEDULED 2002-04-01 2002-07-01
-#> 19417  GLBWNHYD     NSW1     GENERATOR  NON-SCHEDULED 2016-07-01 2016-11-19
-#> 19418  GLBWNHYD     NSW1     GENERATOR  NON-SCHEDULED 2017-07-01 2018-07-01
-#> 19419   PINDARI     NSW1     GENERATOR  NON-SCHEDULED 2007-01-16 2007-07-01
-#> 19420    WKIEWA     VIC1     GENERATOR      SCHEDULED 2017-01-13 2017-07-01
-#> 19421   PINDARI     NSW1     GENERATOR  NON-SCHEDULED 2008-07-01 2009-07-01
-#> 19422    WKIEWA     VIC1     GENERATOR      SCHEDULED 2006-08-25 2007-01-16
-#> 19423   AGLNOW1     NSW1     GENERATOR  NON-SCHEDULED 2021-12-31 2022-03-10
-#> 19424  BDONGHYD     NSW1     GENERATOR  NON-SCHEDULED 2012-12-07 2012-12-24
-#> 19425      BAPS     VIC1     GENERATOR  NON-SCHEDULED 2014-07-25 2014-08-26
-#> 19426  BDONGHYD     NSW1     GENERATOR  NON-SCHEDULED 2015-07-01 2015-10-30
-#> 19427  BDONGHYD     NSW1     GENERATOR  NON-SCHEDULED 2016-07-01 2016-11-19
-#> 19428    WKIEWA     VIC1     GENERATOR      SCHEDULED 2013-07-01 2014-07-01
-#> 19429  EDLRGNRD     QLD1     GENERATOR  NON-SCHEDULED 2010-05-17 2010-07-01
-#> 19430      ICSM     QLD1     GENERATOR  NON-SCHEDULED 2016-11-19 2017-07-01
-#> 19431      WPWF      SA1     GENERATOR  NON-SCHEDULED 2014-08-26 2015-01-01
-#> 19432    AGLSOM     VIC1     GENERATOR      SCHEDULED 2019-07-01 2020-07-01
-#> 19433    AGLSOM     VIC1     GENERATOR      SCHEDULED 2013-04-01 2013-07-01
-#> 19434      WPWF      SA1     GENERATOR  NON-SCHEDULED 2015-01-01 2015-07-01
-#> 19435    AGLSOM     VIC1     GENERATOR      SCHEDULED 2014-08-26 2015-01-01
-#> 19436    YABULU     QLD1     GENERATOR      SCHEDULED 2013-07-01 2014-07-01
-#> 19437    AGLSOM     VIC1     GENERATOR      SCHEDULED 2022-07-01 2023-07-01
-#> 19438     MCKAY     VIC1     GENERATOR      SCHEDULED 2006-08-25 2007-01-16
-#> 19439     MCKAY     VIC1     GENERATOR      SCHEDULED 2007-07-02 2007-09-01
-#> 19440     MCKAY     VIC1     GENERATOR      SCHEDULED 2007-09-01 2007-12-01
-#> 19441    EILDON     VIC1     GENERATOR      SCHEDULED 2006-02-22 2006-03-01
-#> 19442   AGLNOW1     NSW1     GENERATOR  NON-SCHEDULED 2006-07-01 2006-08-04
-#> 19443   AGLNOW1     NSW1     GENERATOR  NON-SCHEDULED 2007-01-16 2007-07-01
-#> 19444    WKIEWA     VIC1     GENERATOR      SCHEDULED 2025-07-01 2026-06-30
-#> 19445    WKIEWA     VIC1     GENERATOR      SCHEDULED 2025-07-01 2026-06-30
-#> 19446   PINDARI     NSW1     GENERATOR  NON-SCHEDULED 2010-04-30 2010-07-01
-#> 19447    EILDON     VIC1     GENERATOR      SCHEDULED 2000-07-20 2000-12-19
-#> 19448      WPWF      SA1     GENERATOR  NON-SCHEDULED 2007-07-01 2007-07-02
-#> 19449   AGLNOW1     NSW1     GENERATOR  NON-SCHEDULED 2006-08-25 2007-01-16
-#> 19450     OAKEY     QLD1     GENERATOR      SCHEDULED 2011-01-18 2011-04-14
-#> 19451    YABULU     QLD1     GENERATOR      SCHEDULED 2012-12-07 2012-12-24
-#> 19452     DARTM     VIC1     GENERATOR      SCHEDULED 2004-06-15 2004-07-01
-#> 19453  GLBWNHYD     NSW1     GENERATOR  NON-SCHEDULED 2012-12-24 2013-04-01
-#> 19454  GLBWNHYD     NSW1     GENERATOR  NON-SCHEDULED 2013-07-01 2014-07-01
-#> 19455  MORANBAH     QLD1     GENERATOR  NON-SCHEDULED 2010-04-30 2010-07-01
-#> 19456    WOYWOY     NSW1     GENERATOR  NON-SCHEDULED 2014-08-26 2015-01-01
-#> 19457    WKIEWA     VIC1     GENERATOR      SCHEDULED 2006-02-01 2006-02-22
-#> 19458    WKIEWA     VIC1     GENERATOR      SCHEDULED 2006-03-01 2006-03-29
-#> 19459  GLBWNHYD     NSW1     GENERATOR  NON-SCHEDULED 2018-07-01 2019-07-01
-#> 19460   PINDARI     NSW1     GENERATOR  NON-SCHEDULED 2026-07-01 2999-12-31
-#> 19461  GLBWNHYD     NSW1     GENERATOR  NON-SCHEDULED 2020-07-01 2021-07-01
-#> 19462   AGLNOW1     NSW1     GENERATOR  NON-SCHEDULED 2015-10-30 2016-01-15
-#> 19463    WKIEWA     VIC1     GENERATOR      SCHEDULED 2007-09-01 2007-12-01
-#> 19464  MORANBAH     QLD1     GENERATOR  NON-SCHEDULED 2015-10-30 2016-01-15
-#> 19465  BDONGHYD     NSW1     GENERATOR  NON-SCHEDULED 2013-07-01 2014-07-01
-#> 19466    WKIEWA     VIC1     GENERATOR      SCHEDULED 2010-10-27 2011-01-18
-#> 19467    WKIEWA     VIC1     GENERATOR      SCHEDULED 2002-04-01 2002-07-01
-#> 19468    WKIEWA     VIC1     GENERATOR      SCHEDULED 2006-02-01 2006-02-22
-#> 19469    YABULU     QLD1     GENERATOR      SCHEDULED 2017-07-01 2018-07-01
-#> 19470      BAPS     VIC1     GENERATOR  NON-SCHEDULED 2011-07-01 2012-07-01
-#> 19471    WOYWOY     NSW1     GENERATOR  NON-SCHEDULED 2014-07-25 2014-08-26
-#> 19472      BAPS     VIC1     GENERATOR  NON-SCHEDULED 2013-07-01 2014-07-01
-#> 19473      BAPS     VIC1     GENERATOR  NON-SCHEDULED 2014-07-01 2014-07-25
-#> 19474  WYANGALA     NSW1     GENERATOR  NON-SCHEDULED 2012-12-24 2013-04-01
-#> 19475      BAPS     VIC1     GENERATOR  NON-SCHEDULED 2016-07-01 2016-11-19
-#> 19476      BAPS     VIC1     GENERATOR  NON-SCHEDULED 2017-07-01 2018-07-01
-#> 19477      BAPS     VIC1     GENERATOR  NON-SCHEDULED 2018-07-01 2019-07-01
-#> 19478      BAPS     VIC1     GENERATOR  NON-SCHEDULED 2019-07-01 2020-07-01
-#> 19479      BAPS     VIC1     GENERATOR  NON-SCHEDULED 2020-07-01 2021-07-01
-#> 19480      BAPS     VIC1     GENERATOR  NON-SCHEDULED 2021-07-01 2021-12-31
-#> 19481      BAPS     VIC1     GENERATOR  NON-SCHEDULED 2022-07-01 2023-07-01
-#> 19482      BAPS     VIC1     GENERATOR  NON-SCHEDULED 2023-07-01 2023-10-10
-#> 19483    WKIEWA     VIC1     GENERATOR      SCHEDULED 2012-12-24 2013-04-01
-#> 19484     OAKEY     QLD1     GENERATOR      SCHEDULED 2009-07-01 2010-01-15
-#> 19485   AGLNOW1     NSW1     GENERATOR  NON-SCHEDULED 2006-03-29 2006-07-01
-#> 19486  BDONGHYD     NSW1     GENERATOR  NON-SCHEDULED 2025-07-01 2026-07-01
-#> 19487    EILDON     VIC1     GENERATOR      SCHEDULED 2010-04-30 2010-07-01
-#> 19488   KINCUMB     NSW1     GENERATOR  NON-SCHEDULED 2015-10-30 2016-01-15
-#> 19489   AGLNOW1     NSW1     GENERATOR  NON-SCHEDULED 2007-07-01 2007-07-02
-#> 19490  SUNCOAST     QLD1     GENERATOR  NON-SCHEDULED 2013-07-01 2014-07-01
-#> 19491   AGLNOW1     NSW1     GENERATOR  NON-SCHEDULED 2007-09-01 2007-12-01
-#> 19492   AGLNOW1     NSW1     GENERATOR  NON-SCHEDULED 2007-12-01 2008-07-01
-#> 19493    WKIEWA     VIC1     GENERATOR      SCHEDULED 2022-06-10 2022-06-28
-#> 19494    WKIEWA     VIC1     GENERATOR      SCHEDULED 2022-06-28 2022-07-01
-#> 19495  GLBWNHYD     NSW1     GENERATOR  NON-SCHEDULED 2014-07-01 2014-07-25
-#> 19496    WKIEWA     VIC1     GENERATOR      SCHEDULED 2023-10-10 2024-06-03
-#> 19497      BAPS     VIC1     GENERATOR  NON-SCHEDULED 2026-07-01 2999-12-31
-#> 19498    WKIEWA     VIC1     GENERATOR      SCHEDULED 2013-07-01 2014-07-01
-#> 19499    WKIEWA     VIC1     GENERATOR      SCHEDULED 2006-03-29 2006-07-01
-#> 19500  GLBWNHYD     NSW1     GENERATOR  NON-SCHEDULED 2019-07-01 2020-07-01
-#> 19501      BAPS     VIC1     GENERATOR  NON-SCHEDULED 2010-04-30 2010-07-01
-#> 19502   RUBICON     VIC1     GENERATOR  NON-SCHEDULED 2007-12-01 2009-11-26
-#> 19503   AGLNOW1     NSW1     GENERATOR  NON-SCHEDULED 2016-11-19 2017-07-01
-#> 19504  SUNCOAST     QLD1     GENERATOR  NON-SCHEDULED 2010-04-30 2010-05-17
-#> 19505    WKIEWA     VIC1     GENERATOR      SCHEDULED 2010-01-15 2010-03-19
-#> 19506  BDONGHYD     NSW1     GENERATOR  NON-SCHEDULED 2014-07-01 2014-07-25
-#> 19507  COPTNHYD     NSW1     GENERATOR  NON-SCHEDULED 2026-07-01 2999-12-31
-#> 19508    WKIEWA     VIC1     GENERATOR      SCHEDULED 2012-12-24 2013-04-01
-#> 19509    WKIEWA     VIC1     GENERATOR      SCHEDULED 2013-04-01 2013-07-01
-#> 19510    WKIEWA     VIC1     GENERATOR      SCHEDULED 2014-07-25 2014-08-26
-#> 19511    WKIEWA     VIC1     GENERATOR      SCHEDULED 2014-08-26 2015-01-01
-#> 19512    YABULU     QLD1     GENERATOR      SCHEDULED 2012-12-24 2013-04-01
-#> 19513    YABULU     QLD1     GENERATOR      SCHEDULED 2013-04-01 2013-07-01
-#> 19514    YABULU     QLD1     GENERATOR      SCHEDULED 2014-07-25 2014-08-26
-#> 19515    YABULU     QLD1     GENERATOR      SCHEDULED 2014-08-26 2015-01-01
-#> 19516    YABULU     QLD1     GENERATOR      SCHEDULED 2015-01-01 2015-07-01
-#> 19517   PINDARI     NSW1     GENERATOR  NON-SCHEDULED 2023-07-01 2023-10-10
-#> 19518   PINDARI     NSW1     GENERATOR  NON-SCHEDULED 2024-07-01 2025-07-01
-#> 19519      ICSM     QLD1     GENERATOR  NON-SCHEDULED 2014-07-01 2014-07-25
-#> 19520    YABULU     QLD1     GENERATOR      SCHEDULED 2022-03-10 2022-06-10
-#> 19521    YABULU     QLD1     GENERATOR      SCHEDULED 2022-06-10 2022-06-28
-#> 19522     OAKEY     QLD1     GENERATOR      SCHEDULED 2007-12-06 2008-07-01
-#> 19523     OAKEY     QLD1     GENERATOR      SCHEDULED 2008-07-01 2009-07-01
-#> 19524  GLBWNHYD     NSW1     GENERATOR  NON-SCHEDULED 2024-07-01 2025-07-01
-#> 19525    EILDON     VIC1     GENERATOR      SCHEDULED 2007-07-01 2007-07-02
-#> 19526  COPTNHYD     NSW1     GENERATOR  NON-SCHEDULED 2018-07-01 2019-07-01
-#> 19527   KINCUMB     NSW1     GENERATOR  NON-SCHEDULED 2015-01-01 2015-07-01
-#> 19528   AGLNOW1     NSW1     GENERATOR  NON-SCHEDULED 2010-07-01 2011-04-14
-#> 19529     OAKEY     QLD1     GENERATOR      SCHEDULED 2010-07-01 2010-10-27
-#> 19530     DARTM     VIC1     GENERATOR      SCHEDULED 2024-07-01 2025-07-01
-#> 19531     MCKAY     VIC1     GENERATOR      SCHEDULED 2002-04-01 2002-07-01
-#> 19532     MCKAY     VIC1     GENERATOR      SCHEDULED 2006-02-01 2006-02-13
-#> 19533   AGLNOW1     NSW1     GENERATOR  NON-SCHEDULED 2010-01-15 2010-03-19
-#> 19534   AGLNOW1     NSW1     GENERATOR  NON-SCHEDULED 2010-03-19 2010-04-30
-#> 19535  MORANBAH     QLD1     GENERATOR  NON-SCHEDULED 2010-03-19 2010-04-30
-#> 19536    WKIEWA     VIC1     GENERATOR      SCHEDULED 2011-01-18 2011-04-14
-#> 19537    EILDON     VIC1     GENERATOR      SCHEDULED 2014-07-25 2014-08-26
-#> 19538    EILDON     VIC1     GENERATOR      SCHEDULED 2014-08-26 2015-01-01
-#> 19539   AGLNOW1     NSW1     GENERATOR  NON-SCHEDULED 2014-07-25 2014-08-26
-#> 19540     MCKAY     VIC1     GENERATOR      SCHEDULED 2009-07-01 2009-09-22
-#> 19541   AGLNOW1     NSW1     GENERATOR  NON-SCHEDULED 2015-01-01 2015-07-01
-#> 19542     MCKAY     VIC1     GENERATOR      SCHEDULED 2010-04-30 2010-07-01
-#> 19543    CLOVER     VIC1     GENERATOR  NON-SCHEDULED 2026-07-01 2999-12-31
-#> 19544  MORANBAH     QLD1     GENERATOR  NON-SCHEDULED 2014-08-26 2015-01-01
-#> 19545   AGLSITA     NSW1     GENERATOR  NON-SCHEDULED 2021-12-31 2022-03-10
-#> 19546    WKIEWA     VIC1     GENERATOR      SCHEDULED 2010-03-19 2010-04-30
-#> 19547     DARTM     VIC1     GENERATOR      SCHEDULED 2014-07-01 2014-07-25
-#> 19548     DARTM     VIC1     GENERATOR      SCHEDULED 2015-07-01 2015-10-30
-#> 19549    AGLSOM     VIC1     GENERATOR      SCHEDULED 2010-01-15 2010-03-19
-#> 19550    AGLSOM     VIC1     GENERATOR      SCHEDULED 2010-03-19 2010-04-30
-#> 19551    AGLSOM     VIC1     GENERATOR      SCHEDULED 2010-04-30 2010-07-01
-#> 19552      ICSM     QLD1     GENERATOR  NON-SCHEDULED 2021-12-31 2022-03-10
-#> 19553  WYANGALB     NSW1     GENERATOR  NON-SCHEDULED 2011-05-27 2011-07-01
-#> 19554      ICSM     QLD1     GENERATOR  NON-SCHEDULED 2022-06-10 2022-06-28
-#> 19555    WKIEWA     VIC1     GENERATOR      SCHEDULED 2017-01-13 2017-07-01
-#> 19556  EDLRGNRD     QLD1     GENERATOR  NON-SCHEDULED 2011-04-14 2011-07-01
-#> 19557  EDLRGNRD     QLD1     GENERATOR  NON-SCHEDULED 2011-07-01 2012-04-01
-#> 19558    YABULU     QLD1     GENERATOR      SCHEDULED 2014-07-01 2014-07-25
-#> 19559    YABULU     QLD1     GENERATOR      SCHEDULED 2018-07-01 2019-07-01
-#> 19560  YWNGAHYD     VIC1     GENERATOR  NON-SCHEDULED 2022-06-10 2022-06-28
-#> 19561     DARTM     VIC1     GENERATOR      SCHEDULED 2024-06-03 2024-07-01
-#> 19562    AGLSOM     VIC1     GENERATOR      SCHEDULED 2024-07-01 2025-07-01
-#> 19563  GLBWNHYD     NSW1     GENERATOR  NON-SCHEDULED 2022-07-01 2023-07-01
-#> 19564    EILDON     VIC1     GENERATOR      SCHEDULED 2006-08-25 2007-01-16
-#> 19565    WKIEWA     VIC1     GENERATOR      SCHEDULED 1999-07-01 1999-10-14
-#> 19566  COPTNHYD     NSW1     GENERATOR  NON-SCHEDULED 2017-07-01 2018-07-01
-#> 19567   AGLNOW1     NSW1     GENERATOR  NON-SCHEDULED 2009-07-01 2010-01-15
-#> 19568    WKIEWA     VIC1     GENERATOR      SCHEDULED 2000-12-19 2001-07-01
-#> 19569  SUNCOAST     QLD1     GENERATOR  NON-SCHEDULED 2011-07-01 2012-07-01
-#> 19570    WKIEWA     VIC1     GENERATOR      SCHEDULED 2004-06-15 2004-07-01
-#> 19571    YABULU     QLD1     GENERATOR      SCHEDULED 2007-12-01 2008-07-01
-#> 19572    YABULU     QLD1     GENERATOR      SCHEDULED 2010-01-15 2010-03-19
-#> 19573     MCKAY     VIC1     GENERATOR      SCHEDULED 2006-03-01 2006-03-29
-#> 19574    EILDON     VIC1     GENERATOR      SCHEDULED 2012-12-24 2013-04-01
-#> 19575   AGLNOW1     NSW1     GENERATOR  NON-SCHEDULED 2010-04-30 2010-07-01
-#> 19576     MCKAY     VIC1     GENERATOR      SCHEDULED 2005-07-01 2006-02-01
-#> 19577    CLOVER     VIC1     GENERATOR  NON-SCHEDULED 2015-01-01 2015-07-01
-#> 19578    WOYWOY     NSW1     GENERATOR  NON-SCHEDULED 2015-01-01 2015-07-01
-#> 19579    EILDON     VIC1     GENERATOR      SCHEDULED 2015-01-01 2015-07-01
-#> 19580    AGLSOM     VIC1     GENERATOR      SCHEDULED 2006-07-01 2006-07-27
-#> 19581  MORANBAH     QLD1     GENERATOR  NON-SCHEDULED 2012-12-24 2013-04-01
-#> 19582     MCKAY     VIC1     GENERATOR      SCHEDULED 2008-07-01 2009-07-01
-#> 19583     MCKAY     VIC1     GENERATOR      SCHEDULED 2010-10-27 2011-01-18
-#> 19584     MCKAY     VIC1     GENERATOR      SCHEDULED 2012-12-07 2012-12-24
-#> 19585   RUBICON     VIC1     GENERATOR  NON-SCHEDULED 2010-04-30 2010-07-01
-#> 19586   AGLSITA     NSW1     GENERATOR  NON-SCHEDULED 2022-03-10 2022-06-10
-#> 19587      BAPS     VIC1     GENERATOR  NON-SCHEDULED 2014-08-26 2015-01-01
-#> 19588      BAPS     VIC1     GENERATOR  NON-SCHEDULED 2015-01-01 2015-07-01
-#> 19589    YABULU     QLD1     GENERATOR      SCHEDULED 2010-01-15 2010-03-19
-#> 19590    YABULU     QLD1     GENERATOR      SCHEDULED 2010-03-19 2010-04-30
-#> 19591    YABULU     QLD1     GENERATOR      SCHEDULED 2010-04-30 2010-07-01
-#> 19592      BAPS     VIC1     GENERATOR  NON-SCHEDULED 2012-07-01 2012-12-07
-#> 19593    YABULU     QLD1     GENERATOR      SCHEDULED 2019-07-01 2020-07-01
-#> 19594     OAKEY     QLD1     GENERATOR      SCHEDULED 2010-03-19 2010-04-30
-#> 19595     MCKAY     VIC1     GENERATOR      SCHEDULED 2024-07-01 2025-07-01
-#> 19596    WKIEWA     VIC1     GENERATOR      SCHEDULED 2007-07-02 2007-09-01
-#> 19597    WKIEWA     VIC1     GENERATOR      SCHEDULED 2007-09-01 2007-12-01
-#> 19598    WOYWOY     NSW1     GENERATOR  NON-SCHEDULED 2017-07-01 2018-07-01
-#> 19599    WOYWOY     NSW1     GENERATOR  NON-SCHEDULED 2018-07-01 2019-07-01
-#> 19600    WOYWOY     NSW1     GENERATOR  NON-SCHEDULED 2019-07-01 2020-07-01
-#> 19601     OAKEY     QLD1     GENERATOR      SCHEDULED 2014-08-26 2015-01-01
-#> 19602    WOYWOY     NSW1     GENERATOR  NON-SCHEDULED 2021-07-01 2021-12-31
-#> 19603    WKIEWA     VIC1     GENERATOR      SCHEDULED 2012-12-07 2012-12-24
-#> 19604    WKIEWA     VIC1     GENERATOR      SCHEDULED 1998-10-25 1999-07-01
-#> 19605    EILDON     VIC1     GENERATOR      SCHEDULED 2004-12-15 2005-07-01
-#> 19606  GLBWNHYD     NSW1     GENERATOR  NON-SCHEDULED 2023-07-01 2023-10-10
-#> 19607  SUNCOAST     QLD1     GENERATOR  NON-SCHEDULED 2014-07-01 2014-07-25
-#> 19608    WKIEWA     VIC1     GENERATOR      SCHEDULED 2004-12-15 2005-07-01
-#> 19609    AGLHAL      SA1     GENERATOR      SCHEDULED 2006-08-25 2007-01-16
-#> 19610    EILDON     VIC1     GENERATOR      SCHEDULED 2016-01-15 2016-07-01
-#> 19611  SUNCOAST     QLD1     GENERATOR  NON-SCHEDULED 2012-07-01 2012-12-07
-#> 19612   AGLNOW1     NSW1     GENERATOR  NON-SCHEDULED 2006-08-04 2006-08-25
-#> 19613    YABULU     QLD1     GENERATOR      SCHEDULED 2010-03-19 2010-04-30
-#> 19614     MCKAY     VIC1     GENERATOR      SCHEDULED 2006-03-29 2006-07-01
-#> 19615      BAPS     VIC1     GENERATOR  NON-SCHEDULED 2006-08-04 2006-08-25
-#> 19616     DARTM     VIC1     GENERATOR      SCHEDULED 2003-12-23 2004-06-15
-#> 19617      BAPS     VIC1     GENERATOR  NON-SCHEDULED 2006-08-25 2007-01-16
-#> 19618     OAKEY     QLD1     GENERATOR      SCHEDULED 2012-12-24 2013-04-01
-#> 19619     DARTM     VIC1     GENERATOR      SCHEDULED 2004-07-01 2004-12-15
-#> 19620  MORANBAH     QLD1     GENERATOR  NON-SCHEDULED 2012-12-07 2012-12-24
-#> 19621     MCKAY     VIC1     GENERATOR      SCHEDULED 2010-03-19 2010-04-30
-#> 19622    CLOVER     VIC1     GENERATOR  NON-SCHEDULED 2016-07-01 2016-11-19
-#> 19623    WKIEWA     VIC1     GENERATOR      SCHEDULED 2026-06-30 2026-07-01
-#> 19624    EILDON     VIC1     GENERATOR      SCHEDULED 2016-11-19 2017-07-01
-#> 19625    CLOVER     VIC1     GENERATOR  NON-SCHEDULED 2021-12-31 2022-03-10
-#> 19626  MORANBAH     QLD1     GENERATOR  NON-SCHEDULED 2016-01-15 2016-07-01
-#> 19627  BDONGHYD     NSW1     GENERATOR  NON-SCHEDULED 2026-07-01 2999-12-31
-#> 19628    AGLSOM     VIC1     GENERATOR      SCHEDULED 2006-03-29 2006-07-01
-#> 19629    AGLSOM     VIC1     GENERATOR      SCHEDULED 2006-08-04 2006-08-25
-#> 19630    AGLSOM     VIC1     GENERATOR      SCHEDULED 2006-08-25 2007-01-16
-#> 19631    AGLSOM     VIC1     GENERATOR      SCHEDULED 2007-07-02 2007-09-01
-#> 19632    YABULU     QLD1     GENERATOR      SCHEDULED 2010-10-27 2011-01-18
-#> 19633    WKIEWA     VIC1     GENERATOR      SCHEDULED 2015-01-01 2015-07-01
-#> 19634    WKIEWA     VIC1     GENERATOR      SCHEDULED 2015-10-30 2016-01-15
-#> 19635  GLBWNHYD     NSW1     GENERATOR  NON-SCHEDULED 2016-01-15 2016-07-01
-#> 19636    CLOVER     VIC1     GENERATOR  NON-SCHEDULED 2006-08-25 2007-07-02
-#> 19637    WKIEWA     VIC1     GENERATOR      SCHEDULED 2021-12-31 2022-03-10
-#> 19638  COPTNHYD     NSW1     GENERATOR  NON-SCHEDULED 2022-06-28 2022-07-01
-#> 19639  COPTNHYD     NSW1     GENERATOR  NON-SCHEDULED 2023-10-10 2024-07-01
-#> 19640    WKIEWA     VIC1     GENERATOR      SCHEDULED 2022-06-28 2022-07-01
-#> 19641    EILDON     VIC1     GENERATOR      SCHEDULED 2014-08-26 2015-01-01
-#> 19642    WKIEWA     VIC1     GENERATOR      SCHEDULED 2002-07-09 2003-07-01
-#> 19643    WKIEWA     VIC1     GENERATOR      SCHEDULED 2003-07-01 2003-12-23
-#> 19644   AGLNOW1     NSW1     GENERATOR  NON-SCHEDULED 2006-03-01 2006-03-29
-#> 19645    EILDON     VIC1     GENERATOR      SCHEDULED 2026-07-01 2999-12-31
-#> 19646     DARTM     VIC1     GENERATOR      SCHEDULED 2026-07-01 2999-12-31
-#> 19647    AGLHAL      SA1     GENERATOR      SCHEDULED 2006-03-01 2006-03-29
-#> 19648    WKIEWA     VIC1     GENERATOR      SCHEDULED 2004-07-01 2004-12-15
-#> 19649     MCKAY     VIC1     GENERATOR      SCHEDULED 2007-01-16 2007-07-01
-#> 19650    CLOVER     VIC1     GENERATOR  NON-SCHEDULED 2016-11-19 2017-07-01
-#> 19651     DARTM     VIC1     GENERATOR      SCHEDULED 2000-07-01 2000-07-20
-#> 19652      ICSM     QLD1     GENERATOR  NON-SCHEDULED 2017-07-01 2018-07-01
-#> 19653    AGLHAL      SA1     GENERATOR      SCHEDULED 2006-07-01 2006-08-04
-#> 19654    YABULU     QLD1     GENERATOR      SCHEDULED 2010-04-30 2010-07-01
-#> 19655     MCKAY     VIC1     GENERATOR      SCHEDULED 2006-08-04 2006-08-25
-#> 19656     OAKEY     QLD1     GENERATOR      SCHEDULED 2012-07-01 2012-12-07
-#> 19657    CLOVER     VIC1     GENERATOR  NON-SCHEDULED 2014-08-26 2015-01-01
-#> 19658    WKIEWA     VIC1     GENERATOR      SCHEDULED 2009-07-01 2010-01-15
-#> 19659     OAKEY     QLD1     GENERATOR      SCHEDULED 2013-04-01 2013-07-01
-#> 19660     MCKAY     VIC1     GENERATOR      SCHEDULED 2010-01-15 2010-03-19
-#> 19661     OAKEY     QLD1     GENERATOR      SCHEDULED 2014-08-26 2015-01-01
-#> 19662    AGLSOM     VIC1     GENERATOR      SCHEDULED 2012-12-24 2013-04-01
-#> 19663      WPWF      SA1     GENERATOR  NON-SCHEDULED 2014-07-25 2014-08-26
-#> 19664    CLOVER     VIC1     GENERATOR  NON-SCHEDULED 2017-07-01 2017-12-18
-#> 19665   RUBICON     VIC1     GENERATOR  NON-SCHEDULED 2010-01-15 2010-03-19
-#> 19666     DARTM     VIC1     GENERATOR      SCHEDULED 2011-04-28 2011-07-01
-#> 19667  MORANBAH     QLD1     GENERATOR  NON-SCHEDULED 2016-11-19 2017-07-01
-#> 19668    WKIEWA     VIC1     GENERATOR      SCHEDULED 2021-07-01 2021-12-01
-#> 19669  MORANBAH     QLD1     GENERATOR  NON-SCHEDULED 2022-03-10 2022-06-10
-#> 19670    WKIEWA     VIC1     GENERATOR      SCHEDULED 2012-12-07 2012-12-24
-#> 19671  COPTNHYD     NSW1     GENERATOR  NON-SCHEDULED 2014-07-25 2014-08-26
-#> 19672    WKIEWA     VIC1     GENERATOR      SCHEDULED 2014-07-01 2014-07-25
-#> 19673    AGLSOM     VIC1     GENERATOR      SCHEDULED 2010-10-27 2011-01-18
-#> 19674      ICSM     QLD1     GENERATOR  NON-SCHEDULED 2022-03-10 2022-06-10
-#> 19675     DARTM     VIC1     GENERATOR      SCHEDULED 1999-10-14 2000-07-01
-#> 19676     MCKAY     VIC1     GENERATOR      SCHEDULED 2007-12-01 2008-07-01
-#> 19677    EILDON     VIC1     GENERATOR      SCHEDULED 2002-07-01 2002-07-09
-#> 19678    EILDON     VIC1     GENERATOR      SCHEDULED 2002-07-09 2003-07-01
-#> 19679  EDLRGNRD     QLD1     GENERATOR  NON-SCHEDULED 2012-04-01 2012-07-01
-#> 19680    YABULU     QLD1     GENERATOR      SCHEDULED 2015-07-01 2015-10-30
-#> 19681    AGLSOM     VIC1     GENERATOR      SCHEDULED 2023-07-01 2023-10-10
-#> 19682    AGLSOM     VIC1     GENERATOR      SCHEDULED 2024-06-03 2024-07-01
-#> 19683    EILDON     VIC1     GENERATOR      SCHEDULED 2005-07-01 2006-02-01
-#> 19684    EILDON     VIC1     GENERATOR      SCHEDULED 2006-08-04 2006-08-25
-#> 19685    WKIEWA     VIC1     GENERATOR      SCHEDULED 2003-12-23 2004-06-15
-#> 19686    EILDON     VIC1     GENERATOR      SCHEDULED 2004-07-01 2004-12-15
-#> 19687  SUNCOAST     QLD1     GENERATOR  NON-SCHEDULED 2011-05-27 2011-07-01
-#> 19688    CLOVER     VIC1     GENERATOR  NON-SCHEDULED 2016-01-15 2016-06-24
-#> 19689    YABULU     QLD1     GENERATOR      SCHEDULED 2020-07-01 2021-07-01
-#> 19690    EILDON     VIC1     GENERATOR      SCHEDULED 2015-10-30 2016-01-15
-#> 19691   RUBICON     VIC1     GENERATOR  NON-SCHEDULED 2007-09-01 2007-12-01
-#> 19692    EILDON     VIC1     GENERATOR      SCHEDULED 2015-01-01 2015-07-01
-#> 19693     DARTM     VIC1     GENERATOR      SCHEDULED 2001-07-01 2001-09-13
-#> 19694    AGLHAL      SA1     GENERATOR      SCHEDULED 2007-01-16 2007-07-01
-#> 19695    YABULU     QLD1     GENERATOR      SCHEDULED 2010-10-27 2011-01-18
-#> 19696     OAKEY     QLD1     GENERATOR      SCHEDULED 2011-07-01 2012-07-01
-#> 19697     OAKEY     QLD1     GENERATOR      SCHEDULED 2013-07-01 2014-07-01
-#> 19698     OAKEY     QLD1     GENERATOR      SCHEDULED 2012-12-07 2012-12-24
-#> 19699    CLOVER     VIC1     GENERATOR  NON-SCHEDULED 2015-07-01 2015-10-30
-#> 19700     OAKEY     QLD1     GENERATOR      SCHEDULED 2014-07-25 2014-08-26
-#> 19701    YABULU     QLD1     GENERATOR      SCHEDULED 2012-12-07 2012-12-24
-#> 19702    CLOVER     VIC1     GENERATOR  NON-SCHEDULED 2006-08-04 2006-08-08
-#> 19703  WYANGALA     NSW1     GENERATOR  NON-SCHEDULED 2012-12-07 2012-12-24
-#> 19704  EDLRGNRD     QLD1     GENERATOR  NON-SCHEDULED 2010-04-30 2010-05-17
-#> 19705  SUNCOAST     QLD1     GENERATOR  NON-SCHEDULED 2010-03-19 2010-04-30
-#> 19706    EILDON     VIC1     GENERATOR      SCHEDULED 2022-03-10 2022-06-10
-#> 19707     DARTM     VIC1     GENERATOR      SCHEDULED 2011-07-01 2012-07-01
-#> 19708     DARTM     VIC1     GENERATOR      SCHEDULED 2012-07-01 2012-12-07
-#> 19709     DARTM     VIC1     GENERATOR      SCHEDULED 2013-07-01 2014-07-01
-#> 19710    YABULU     QLD1     GENERATOR      SCHEDULED 2007-12-01 2008-07-01
-#> 19711    YABULU     QLD1     GENERATOR      SCHEDULED 2008-07-01 2009-02-12
-#> 19712  COPTNHYD     NSW1     GENERATOR  NON-SCHEDULED 2014-08-26 2015-01-01
-#> 19713    YABULU     QLD1     GENERATOR      SCHEDULED 2018-07-01 2019-07-01
-#> 19714     DARTM     VIC1     GENERATOR      SCHEDULED 1999-07-01 1999-10-14
-#> 19715     MCKAY     VIC1     GENERATOR      SCHEDULED 2006-07-01 2006-08-04
-#> 19716    CLOVER     VIC1     GENERATOR  NON-SCHEDULED 2013-04-01 2013-07-01
-#> 19717    WKIEWA     VIC1     GENERATOR      SCHEDULED 2012-07-01 2012-12-07
-#> 19718  MORANBAH     QLD1     GENERATOR  NON-SCHEDULED 2014-07-01 2014-07-25
-#> 19719  MORANBAH     QLD1     GENERATOR  NON-SCHEDULED 2015-07-01 2015-10-30
-#> 19720    WKIEWA     VIC1     GENERATOR      SCHEDULED 2007-12-01 2008-07-01
-#> 19721  MORANBAH     QLD1     GENERATOR  NON-SCHEDULED 2017-07-01 2018-07-01
-#> 19722  MORANBAH     QLD1     GENERATOR  NON-SCHEDULED 2018-07-01 2019-07-01
-#> 19723    EILDON     VIC1     GENERATOR      SCHEDULED 2006-03-29 2006-07-01
-#> 19724      ICSM     QLD1     GENERATOR  NON-SCHEDULED 2016-07-01 2016-11-19
-#> 19725     DARTM     VIC1     GENERATOR      SCHEDULED 2023-07-01 2023-10-10
-#> 19726    WOYWOY     NSW1     GENERATOR  NON-SCHEDULED 2020-07-01 2021-07-01
-#> 19727     MCKAY     VIC1     GENERATOR      SCHEDULED 2007-09-01 2007-12-01
-#> 19728    WKIEWA     VIC1     GENERATOR      SCHEDULED 2015-07-01 2015-10-30
-#> 19729  COPTNHYD     NSW1     GENERATOR  NON-SCHEDULED 2016-11-19 2017-07-01
-#> 19730    WKIEWA     VIC1     GENERATOR      SCHEDULED 2016-01-15 2016-07-01
-#> 19731   AGLNOW1     NSW1     GENERATOR  NON-SCHEDULED 2014-08-26 2015-01-01
-#> 19732    WOYWOY     NSW1     GENERATOR  NON-SCHEDULED 2016-01-15 2016-07-01
-#> 19733    EILDON     VIC1     GENERATOR      SCHEDULED 2015-10-30 2016-01-15
-#> 19734    WKIEWA     VIC1     GENERATOR      SCHEDULED 2005-07-01 2006-02-01
-#> 19735    AGLHAL      SA1     GENERATOR      SCHEDULED 2007-07-01 2007-07-02
-#> 19736     DARTM     VIC1     GENERATOR      SCHEDULED 2001-10-09 2002-04-01
-#> 19737  SUNCOAST     QLD1     GENERATOR  NON-SCHEDULED 2015-05-15 2015-07-01
-#> 19738     OAKEY     QLD1     GENERATOR      SCHEDULED 2014-07-01 2014-07-25
-#> 19739     MCKAY     VIC1     GENERATOR      SCHEDULED 2006-02-13 2006-02-22
-#> 19740  COPTNHYD     NSW1     GENERATOR  NON-SCHEDULED 2015-01-01 2015-07-01
-#> 19741    EILDON     VIC1     GENERATOR      SCHEDULED 2004-06-15 2004-07-01
-#> 19742    EILDON     VIC1     GENERATOR      SCHEDULED 2003-07-01 2003-12-23
-#> 19743    AGLSOM     VIC1     GENERATOR      SCHEDULED 2012-12-07 2012-12-24
-#> 19744    WKIEWA     VIC1     GENERATOR      SCHEDULED 2016-11-19 2017-01-13
-#> 19745  YWNGAHYD     VIC1     GENERATOR  NON-SCHEDULED 2024-07-01 2025-07-01
-#> 19746    EILDON     VIC1     GENERATOR      SCHEDULED 2021-12-31 2022-03-10
-#> 19747   RUBICON     VIC1     GENERATOR  NON-SCHEDULED 2012-07-01 2012-12-07
-#> 19748   RUBICON     VIC1     GENERATOR  NON-SCHEDULED 2012-12-07 2012-12-24
-#> 19749  MORANBAH     QLD1     GENERATOR  NON-SCHEDULED 2021-12-31 2022-03-10
-#> 19750    EILDON     VIC1     GENERATOR      SCHEDULED 2002-04-01 2002-07-01
-#> 19751  MORANBAH     QLD1     GENERATOR  NON-SCHEDULED 2022-06-10 2022-06-28
-#> 19752     MCKAY     VIC1     GENERATOR      SCHEDULED 2025-07-01 2026-07-01
-#> 19753    YABULU     QLD1     GENERATOR      SCHEDULED 2022-06-28 2022-07-01
-#> 19754    EILDON     VIC1     GENERATOR      SCHEDULED 2013-04-01 2013-07-01
-#> 19755    WKIEWA     VIC1     GENERATOR      SCHEDULED 2010-07-01 2010-10-27
-#> 19756     MCKAY     VIC1     GENERATOR      SCHEDULED 2006-02-22 2006-03-01
-#> 19757   RUBICON     VIC1     GENERATOR  NON-SCHEDULED 2006-08-04 2006-08-25
-#> 19758     MCKAY     VIC1     GENERATOR      SCHEDULED 2007-07-01 2007-07-02
-#> 19759    WKIEWA     VIC1     GENERATOR      SCHEDULED 2000-12-19 2001-07-01
-#> 19760    WKIEWA     VIC1     GENERATOR      SCHEDULED 2022-03-10 2022-06-10
-#> 19761    EILDON     VIC1     GENERATOR      SCHEDULED 2014-07-25 2014-08-26
-#> 19762    WKIEWA     VIC1     GENERATOR      SCHEDULED 2001-10-09 2002-04-01
-#> 19763      ICSM     QLD1     GENERATOR  NON-SCHEDULED 2015-07-01 2015-10-30
-#> 19764  YWNGAHYD     VIC1     GENERATOR  NON-SCHEDULED 2022-03-10 2022-06-10
-#> 19765    WKIEWA     VIC1     GENERATOR      SCHEDULED 2010-10-27 2011-01-18
-#> 19766    CLOVER     VIC1     GENERATOR  NON-SCHEDULED 2014-07-25 2014-08-26
-#> 19767  BDONGHYD     NSW1     GENERATOR  NON-SCHEDULED 2017-07-01 2018-07-01
-#> 19768  COPTNHYD     NSW1     GENERATOR  NON-SCHEDULED 2013-04-01 2013-07-01
-#> 19769     DARTM     VIC1     GENERATOR      SCHEDULED 2017-07-01 2017-07-15
-#> 19770    WKIEWA     VIC1     GENERATOR      SCHEDULED 2016-07-26 2016-11-19
-#> 19771  BDONGHYD     NSW1     GENERATOR  NON-SCHEDULED 2020-07-01 2021-07-01
-#> 19772   RUBICON     VIC1     GENERATOR  NON-SCHEDULED 2007-07-02 2007-09-01
-#> 19773    WOYWOY     NSW1     GENERATOR  NON-SCHEDULED 2016-11-19 2017-07-01
-#> 19774      ICSM     QLD1     GENERATOR  NON-SCHEDULED 2018-07-01 2019-07-01
-#> 19775     OAKEY     QLD1     GENERATOR      SCHEDULED 2011-04-14 2011-07-01
-#> 19776      ICSM     QLD1     GENERATOR  NON-SCHEDULED 2019-07-01 2020-07-01
-#> 19777     DARTM     VIC1     GENERATOR      SCHEDULED 2002-07-01 2002-07-09
-#> 19778  SUNCOAST     QLD1     GENERATOR  NON-SCHEDULED 2015-07-01 2015-10-30
-#> 19779  YWNGAHYD     VIC1     GENERATOR  NON-SCHEDULED 2014-07-01 2014-07-25
-#> 19780  YWNGAHYD     VIC1     GENERATOR  NON-SCHEDULED 2016-01-15 2016-07-01
-#> 19781    EILDON     VIC1     GENERATOR      SCHEDULED 2003-12-23 2004-06-15
-#> 19782  YWNGAHYD     VIC1     GENERATOR  NON-SCHEDULED 2014-08-26 2015-01-01
-#> 19783  COPTNHYD     NSW1     GENERATOR  NON-SCHEDULED 2015-10-30 2016-01-15
-#> 19784    WKIEWA     VIC1     GENERATOR      SCHEDULED 2011-04-14 2011-07-01
-#> 19785      ICSM     QLD1     GENERATOR  NON-SCHEDULED 2011-04-14 2011-07-01
-#> 19786    YABULU     QLD1     GENERATOR      SCHEDULED 2011-01-18 2011-04-28
-#> 19787    CLOVER     VIC1     GENERATOR  NON-SCHEDULED 2022-03-10 2022-06-10
-#> 19788     DARTM     VIC1     GENERATOR      SCHEDULED 2011-01-18 2011-04-28
-#> 19789    CLOVER     VIC1     GENERATOR  NON-SCHEDULED 2023-10-10 2024-07-01
-#> 19790  SUNCOAST     QLD1     GENERATOR  NON-SCHEDULED 2012-12-24 2013-04-01
-#> 19791  SUNCOAST     QLD1     GENERATOR  NON-SCHEDULED 2013-04-01 2013-07-01
-#> 19792     DARTM     VIC1     GENERATOR      SCHEDULED 1998-10-25 1999-07-01
-#> 19793    CLOVER     VIC1     GENERATOR  NON-SCHEDULED 2014-07-01 2014-07-25
-#> 19794     MCKAY     VIC1     GENERATOR      SCHEDULED 2007-07-02 2007-09-01
-#> 19795    WKIEWA     VIC1     GENERATOR      SCHEDULED 2008-07-01 2009-07-01
-#> 19796    CLOVER     VIC1     GENERATOR  NON-SCHEDULED 2013-07-01 2014-07-01
-#> 19797  COPTNHYD     NSW1     GENERATOR  NON-SCHEDULED 2016-01-15 2016-07-01
-#> 19798     DARTM     VIC1     GENERATOR      SCHEDULED 2004-12-15 2005-07-01
-#> 19799    WOYWOY     NSW1     GENERATOR  NON-SCHEDULED 2015-10-30 2016-01-15
-#> 19800     DARTM     VIC1     GENERATOR      SCHEDULED 2019-07-01 2020-07-01
-#> 19801  EDLRGNRD     QLD1     GENERATOR  NON-SCHEDULED 2012-07-01 2012-12-07
-#> 19802    YABULU     QLD1     GENERATOR      SCHEDULED 2016-07-01 2016-11-19
-#> 19803    YABULU     QLD1     GENERATOR      SCHEDULED 2017-07-01 2018-07-01
-#> 19804    WKIEWA     VIC1     GENERATOR      SCHEDULED 2010-04-30 2010-07-01
-#> 19805    WKIEWA     VIC1     GENERATOR      SCHEDULED 2006-07-01 2006-08-04
-#> 19806  SUNCOAST     QLD1     GENERATOR  NON-SCHEDULED 2014-07-25 2014-08-26
-#> 19807  YWNGAHYD     VIC1     GENERATOR  NON-SCHEDULED 2015-07-01 2015-10-30
-#> 19808     DARTM     VIC1     GENERATOR      SCHEDULED 2016-07-01 2016-11-19
-#> 19809    EILDON     VIC1     GENERATOR      SCHEDULED 2006-03-01 2006-03-29
-#> 19810  BDONGHYD     NSW1     GENERATOR  NON-SCHEDULED 2018-07-01 2019-07-01
-#> 19811    WKIEWA     VIC1     GENERATOR      SCHEDULED 2006-08-04 2006-08-25
-#> 19812    WKIEWA     VIC1     GENERATOR      SCHEDULED 2006-08-25 2007-01-16
-#> 19813     DARTM     VIC1     GENERATOR      SCHEDULED 2006-02-22 2006-03-01
-#> 19814  MORANBAH     QLD1     GENERATOR  NON-SCHEDULED 2013-04-01 2013-07-01
-#> 19815     DARTM     VIC1     GENERATOR      SCHEDULED 2001-09-13 2001-10-09
-#> 19816    CLOVER     VIC1     GENERATOR  NON-SCHEDULED 2007-07-02 2007-09-01
-#> 19817      ICSM     QLD1     GENERATOR  NON-SCHEDULED 2020-07-01 2021-07-01
-#> 19818    CLOVER     VIC1     GENERATOR  NON-SCHEDULED 2022-06-28 2022-07-01
-#> 19819     DARTM     VIC1     GENERATOR      SCHEDULED 2022-07-01 2023-07-01
-#> 19820  MORANBAH     QLD1     GENERATOR  NON-SCHEDULED 2019-07-01 2020-07-01
-#> 19821  YWNGAHYD     VIC1     GENERATOR  NON-SCHEDULED 2015-10-30 2016-01-15
-#> 19822    WKIEWA     VIC1     GENERATOR      SCHEDULED 2007-07-01 2007-07-02
-#> 19823     DARTM     VIC1     GENERATOR      SCHEDULED 2003-07-01 2003-12-23
-#> 19824    WKIEWA     VIC1     GENERATOR      SCHEDULED 2016-07-01 2016-07-26
-#> 19825  COPTNHYD     NSW1     GENERATOR  NON-SCHEDULED 2021-12-31 2022-03-10
-#> 19826    YABULU     QLD1     GENERATOR      SCHEDULED 2022-07-01 2023-07-01
-#> 19827    EILDON     VIC1     GENERATOR      SCHEDULED 2012-12-07 2012-12-24
-#> 19828  MORANBAH     QLD1     GENERATOR  NON-SCHEDULED 2015-01-01 2015-07-01
-#> 19829    EILDON     VIC1     GENERATOR      SCHEDULED 2022-06-28 2022-07-01
-#> 19830    EILDON     VIC1     GENERATOR      SCHEDULED 2023-10-10 2024-06-03
-#> 19831      ICSM     QLD1     GENERATOR  NON-SCHEDULED 2012-07-01 2012-12-07
-#> 19832    WKIEWA     VIC1     GENERATOR      SCHEDULED 2006-02-22 2006-03-01
-#> 19833    WKIEWA     VIC1     GENERATOR      SCHEDULED 2007-01-16 2007-07-01
-#> 19834    CLOVER     VIC1     GENERATOR  NON-SCHEDULED 2012-12-24 2013-04-01
-#> 19835    EILDON     VIC1     GENERATOR      SCHEDULED 2006-02-01 2006-02-22
-#> 19836     MCKAY     VIC1     GENERATOR      SCHEDULED 1998-10-25 1999-07-01
-#> 19837    EILDON     VIC1     GENERATOR      SCHEDULED 2006-03-29 2006-07-01
-#> 19838    EILDON     VIC1     GENERATOR      SCHEDULED 2006-08-25 2007-01-16
-#> 19839   RUBICON     VIC1     GENERATOR  NON-SCHEDULED 2006-08-25 2007-07-02
-#> 19840     DARTM     VIC1     GENERATOR      SCHEDULED 2005-07-01 2006-02-01
-#> 19841    YABULU     QLD1     GENERATOR      SCHEDULED 2023-07-01 2023-10-10
-#> 19842    WKIEWA     VIC1     GENERATOR      SCHEDULED 2010-01-15 2010-03-19
-#> 19843    WKIEWA     VIC1     GENERATOR      SCHEDULED 2010-03-19 2010-04-30
-#> 19844     DARTM     VIC1     GENERATOR      SCHEDULED 2000-07-20 2000-12-19
-#> 19845     DARTM     VIC1     GENERATOR      SCHEDULED 2007-07-01 2007-07-02
-#> 19846  YWNGAHYD     VIC1     GENERATOR  NON-SCHEDULED 2013-07-01 2014-07-01
-#> 19847     DARTM     VIC1     GENERATOR      SCHEDULED 2010-07-01 2010-10-27
-#> 19848  YWNGAHYD     VIC1     GENERATOR  NON-SCHEDULED 2015-01-01 2015-07-01
-#> 19849     DARTM     VIC1     GENERATOR      SCHEDULED 2002-07-09 2003-07-01
-#> 19850    CLOVER     VIC1     GENERATOR  NON-SCHEDULED 2010-04-30 2010-07-01
-#> 19851     MCKAY     VIC1     GENERATOR      SCHEDULED 1999-07-01 1999-10-14
-#> 19852  YWNGAHYD     VIC1     GENERATOR  NON-SCHEDULED 2023-07-01 2023-10-10
-#> 19853    EILDON     VIC1     GENERATOR      SCHEDULED 2010-10-27 2011-01-18
-#> 19854     DARTM     VIC1     GENERATOR      SCHEDULED 2006-07-01 2006-08-04
-#> 19855    CLOVER     VIC1     GENERATOR  NON-SCHEDULED 2007-12-01 2010-01-15
-#> 19856    YABULU     QLD1     GENERATOR      SCHEDULED 2016-11-19 2017-07-01
-#> 19857    CLOVER     VIC1     GENERATOR  NON-SCHEDULED 2022-06-10 2022-06-28
-#> 19858  YWNGAHYD     VIC1     GENERATOR  NON-SCHEDULED 2021-12-31 2022-03-10
-#> 19859    AGLSOM     VIC1     GENERATOR      SCHEDULED 2025-07-01 2026-07-01
-#> 19860     DARTM     VIC1     GENERATOR      SCHEDULED 2021-12-01 2021-12-31
-#> 19861      ICSM     QLD1     GENERATOR  NON-SCHEDULED 2021-07-01 2021-12-31
-#> 19862    YABULU     QLD1     GENERATOR      SCHEDULED 2022-06-10 2022-06-28
-#> 19863    YABULU     QLD1     GENERATOR      SCHEDULED 2022-03-10 2022-06-10
-#> 19864    CLOVER     VIC1     GENERATOR  NON-SCHEDULED 2010-03-19 2010-04-30
-#> 19865      WPWF      SA1     GENERATOR  NON-SCHEDULED 2013-04-01 2013-07-01
-#> 19866    WKIEWA     VIC1     GENERATOR      SCHEDULED 2011-07-01 2012-07-01
-#> 19867    YABULU     QLD1     GENERATOR      SCHEDULED 2010-07-01 2010-10-27
-#> 19868     DARTM     VIC1     GENERATOR      SCHEDULED 2007-01-16 2007-07-01
-#> 19869    WKIEWA     VIC1     GENERATOR      SCHEDULED 2022-06-10 2022-06-28
-#> 19870      ICSM     QLD1     GENERATOR  NON-SCHEDULED 2011-07-01 2012-07-01
-#> 19871    EILDON     VIC1     GENERATOR      SCHEDULED 2022-06-10 2022-06-28
-#> 19872     DARTM     VIC1     GENERATOR      SCHEDULED 2000-12-19 2001-07-01
-#> 19873    CLOVER     VIC1     GENERATOR  NON-SCHEDULED 2007-09-01 2007-12-01
-#> 19874    YABULU     QLD1     GENERATOR      SCHEDULED 2021-12-31 2022-03-10
-#> 19875  YWNGAHYD     VIC1     GENERATOR  NON-SCHEDULED 2014-07-25 2014-08-26
-#> 19876    CLOVER     VIC1     GENERATOR  NON-SCHEDULED 2012-12-07 2012-12-24
-#> 19877     DARTM     VIC1     GENERATOR      SCHEDULED 2008-07-01 2009-07-01
-#> 19878    AGLSOM     VIC1     GENERATOR      SCHEDULED 2007-09-01 2007-12-01
-#> 19879  EDLRGNRD     QLD1     GENERATOR  NON-SCHEDULED 2010-07-01 2011-04-14
-#> 19880      BAPS     VIC1     GENERATOR  NON-SCHEDULED 2025-07-01 2026-07-01
-#> 19881    EILDON     VIC1     GENERATOR      SCHEDULED 2012-12-24 2013-04-01
-#> 19882    YABULU     QLD1     GENERATOR      SCHEDULED 2011-04-28 2011-07-01
-#> 19883   RUBICON     VIC1     GENERATOR  NON-SCHEDULED 2010-03-19 2010-04-30
-#> 19884  YWNGAHYD     VIC1     GENERATOR  NON-SCHEDULED 2016-11-19 2017-07-01
-#> 19885    WKIEWA     VIC1     GENERATOR      SCHEDULED 2001-09-13 2001-10-09
-#> 19886     DARTM     VIC1     GENERATOR      SCHEDULED 2021-07-01 2021-12-01
-#> 19887  COPTNHYD     NSW1     GENERATOR  NON-SCHEDULED 2022-06-10 2022-06-28
-#> 19888    YABULU     QLD1     GENERATOR      SCHEDULED 2012-07-01 2012-12-07
-#> 19889  SUNCOAST     QLD1     GENERATOR  NON-SCHEDULED 2012-12-07 2012-12-24
-#> 19890    CLOVER     VIC1     GENERATOR  NON-SCHEDULED 2012-07-01 2012-12-07
-#> 19891  SUNCOAST     QLD1     GENERATOR  NON-SCHEDULED 2014-08-26 2015-01-01
-#> 19892    EILDON     VIC1     GENERATOR      SCHEDULED 2007-07-02 2007-09-01
-#> 19893    EILDON     VIC1     GENERATOR      SCHEDULED 2010-03-19 2010-04-30
-#> 19894    YABULU     QLD1     GENERATOR      SCHEDULED 2021-07-01 2021-12-31
-#> 19895    EILDON     VIC1     GENERATOR      SCHEDULED 2010-01-15 2010-03-19
-#> 19896     DARTM     VIC1     GENERATOR      SCHEDULED 2020-07-01 2021-07-01
-#> 19897  SUNCOAST     QLD1     GENERATOR  NON-SCHEDULED 2015-10-30 2016-01-15
-#> 19898  MORANBAH     QLD1     GENERATOR  NON-SCHEDULED 2014-07-25 2014-08-26
-#> 19899    YABULU     QLD1     GENERATOR      SCHEDULED 2011-07-01 2012-07-01
-#> 19900    WKIEWA     VIC1     GENERATOR      SCHEDULED 2001-07-01 2001-09-13
-#> 19901  GLBWNHYD     NSW1     GENERATOR  NON-SCHEDULED 2026-07-01 2999-12-31
-#> 19902  COPTNHYD     NSW1     GENERATOR  NON-SCHEDULED 2022-03-10 2022-06-10
-#> 19903    WKIEWA     VIC1     GENERATOR      SCHEDULED 2026-06-30 2026-07-01
-#> 19904    CLOVER     VIC1     GENERATOR  NON-SCHEDULED 2010-01-15 2010-03-19
-#> 19905    EILDON     VIC1     GENERATOR      SCHEDULED 2007-12-01 2008-07-01
-#> 19906      WPWF      SA1     GENERATOR  NON-SCHEDULED 2012-12-24 2013-04-01
-#> 19907    EILDON     VIC1     GENERATOR      SCHEDULED 2013-04-01 2013-07-01
-#> 19908     DARTM     VIC1     GENERATOR      SCHEDULED 2017-07-15 2018-07-01
-#> 19909    AGLSOM     VIC1     GENERATOR      SCHEDULED 2007-12-01 2008-07-01
-#> 19910    YABULU     QLD1     GENERATOR      SCHEDULED 2009-07-01 2010-01-15
-#> 19911  SUNCOAST     QLD1     GENERATOR  NON-SCHEDULED 2015-01-01 2015-05-15
-#> 19912     DARTM     VIC1     GENERATOR      SCHEDULED 2018-07-01 2019-07-01
-#> 19913    EILDON     VIC1     GENERATOR      SCHEDULED 2006-08-04 2006-08-25
-#> 19914     DARTM     VIC1     GENERATOR      SCHEDULED 2009-07-01 2010-01-15
-#> 19915  BDONGHYD     NSW1     GENERATOR  NON-SCHEDULED 2019-07-01 2020-07-01
-#> 19916    EILDON     VIC1     GENERATOR      SCHEDULED 2001-10-09 2002-04-01
-#> 19917    YABULU     QLD1     GENERATOR      SCHEDULED 2009-02-12 2009-07-01
-#> 19918    EILDON     VIC1     GENERATOR      SCHEDULED 2010-04-30 2010-07-01
-#> 19919    EILDON     VIC1     GENERATOR      SCHEDULED 2007-09-01 2007-12-01
-#> 19920      ICSM     QLD1     GENERATOR  NON-SCHEDULED 2010-07-01 2011-04-14
-#> 19921    YABULU     QLD1     GENERATOR      SCHEDULED 2022-06-28 2022-07-01
-#> 19922    HALLWF      SA1     GENERATOR SEMI-SCHEDULED 2009-04-09 2009-05-11
-#> 19923    HALLWF      SA1     GENERATOR      SCHEDULED 2008-11-20 2009-01-22
-#> 19924   BROKENH     NSW1     GENERATOR SEMI-SCHEDULED 2017-07-01 2017-07-18
-#> 19925   BROKENH     NSW1     GENERATOR SEMI-SCHEDULED 2020-07-01 2021-07-01
-#> 19926   MACARTH     VIC1     GENERATOR SEMI-SCHEDULED 2024-07-01 2024-07-02
-#> 19927    HALLWF      SA1     GENERATOR      SCHEDULED 2007-12-19 2008-07-01
-#> 19928   BROKENH     NSW1     GENERATOR SEMI-SCHEDULED 2024-06-25 2024-07-01
-#> 19929   MACARTH     VIC1     GENERATOR SEMI-SCHEDULED 2012-08-21 2013-02-08
-#> 19930     NBHWF      SA1     GENERATOR SEMI-SCHEDULED 2013-12-15 2014-07-01
-#> 19931   BROKENH     NSW1     GENERATOR SEMI-SCHEDULED 2015-08-25 2015-10-30
-#> 19932    HALLWF      SA1     GENERATOR SEMI-SCHEDULED 2014-12-16 2015-07-01
-#> 19933    HALLWF      SA1     GENERATOR      SCHEDULED 2009-01-22 2009-04-09
-#> 19934    NYNGAN     NSW1     GENERATOR SEMI-SCHEDULED 2015-09-24 2015-10-30
-#> 19935    HALLWF      SA1     GENERATOR SEMI-SCHEDULED 2009-07-01 2009-11-23
-#> 19936   MACARTH     VIC1     GENERATOR SEMI-SCHEDULED 2013-02-08 2013-07-01
-#> 19937   BROKENH     NSW1     GENERATOR SEMI-SCHEDULED 2016-07-01 2017-06-29
-#> 19938    NYNGAN     NSW1     GENERATOR SEMI-SCHEDULED 2015-08-16 2015-08-25
-#> 19939   MACARTH     VIC1     GENERATOR SEMI-SCHEDULED 2014-12-16 2015-07-01
-#> 19940     NBHWF      SA1     GENERATOR SEMI-SCHEDULED 2013-07-01 2013-12-15
-#> 19941    NYNGAN     NSW1     GENERATOR SEMI-SCHEDULED 2016-07-01 2017-06-29
-#> 19942   BROKENH     NSW1     GENERATOR SEMI-SCHEDULED 2018-07-01 2019-07-01
-#> 19943   BROKENH     NSW1     GENERATOR SEMI-SCHEDULED 2023-07-01 2024-06-03
-#> 19944   OAKLAND     VIC1     GENERATOR SEMI-SCHEDULED 2025-07-01 2026-07-01
-#> 19945    NYNGAN     NSW1     GENERATOR SEMI-SCHEDULED 2015-10-30 2016-07-01
-#> 19946    HALLWF      SA1     GENERATOR SEMI-SCHEDULED 2015-10-30 2016-07-01
-#> 19947   BROKENH     NSW1     GENERATOR SEMI-SCHEDULED 2017-07-18 2018-07-01
-#> 19948   BROKENH     NSW1     GENERATOR SEMI-SCHEDULED 2019-07-01 2020-07-01
-#> 19949   HALLWF2      SA1     GENERATOR SEMI-SCHEDULED 2011-04-14 2011-07-01
-#> 19950    NYNGAN     NSW1     GENERATOR SEMI-SCHEDULED 2017-06-29 2017-07-01
-#> 19951     NBHWF      SA1     GENERATOR SEMI-SCHEDULED 2012-07-01 2012-08-21
-#> 19952   BROKENH     NSW1     GENERATOR SEMI-SCHEDULED 2024-07-01 2024-07-02
-#> 19953     NBHWF      SA1     GENERATOR SEMI-SCHEDULED 2010-07-19 2011-01-18
-#> 19954   BROKENH     NSW1     GENERATOR SEMI-SCHEDULED 2024-06-03 2024-06-25
-#> 19955    NYNGAN     NSW1     GENERATOR SEMI-SCHEDULED 2015-08-25 2015-09-24
-#> 19956    HALLWF      SA1     GENERATOR      SCHEDULED 2008-07-01 2008-11-20
-#> 19957    NYNGAN     NSW1     GENERATOR SEMI-SCHEDULED 2015-07-01 2015-08-16
-#> 19958   HALLWF2      SA1     GENERATOR SEMI-SCHEDULED 2011-01-18 2011-04-14
-#> 19959    NYNGAN     NSW1     GENERATOR SEMI-SCHEDULED 2018-02-26 2018-07-01
-#> 19960    HALLWF      SA1     GENERATOR SEMI-SCHEDULED 2009-05-11 2009-07-01
-#> 19961   BROKENH     NSW1     GENERATOR SEMI-SCHEDULED 2021-07-01 2022-07-01
-#> 19962   MACARTH     VIC1     GENERATOR SEMI-SCHEDULED 2013-07-01 2014-07-01
-#> 19963    NYNGAN     NSW1     GENERATOR SEMI-SCHEDULED 2017-07-18 2018-02-26
-#> 19964    HALLWF      SA1     GENERATOR SEMI-SCHEDULED 2009-11-23 2010-02-09
-#> 19965    HALLWF      SA1     GENERATOR SEMI-SCHEDULED 2011-07-05 2011-08-05
-#> 19966   MACARTH     VIC1     GENERATOR SEMI-SCHEDULED 2015-07-01 2015-08-25
-#> 19967   OAKLAND     VIC1     GENERATOR SEMI-SCHEDULED 2014-07-01 2014-12-16
-#> 19968     NBHWF      SA1     GENERATOR SEMI-SCHEDULED 2014-07-01 2014-12-16
-#> 19969   MACARTH     VIC1     GENERATOR SEMI-SCHEDULED 2017-07-01 2017-07-18
-#> 19970    HALLWF      SA1     GENERATOR SEMI-SCHEDULED 2010-07-01 2010-07-19
-#> 19971     NBHWF      SA1     GENERATOR SEMI-SCHEDULED 2011-07-05 2011-08-05
-#> 19972     NBHWF      SA1     GENERATOR SEMI-SCHEDULED 2011-07-01 2011-07-05
-#> 19973   HALLWF2      SA1     GENERATOR SEMI-SCHEDULED 2011-07-01 2011-07-05
-#> 19974   MACARTH     VIC1     GENERATOR SEMI-SCHEDULED 2019-07-01 2020-07-01
-#> 19975   BROKENH     NSW1     GENERATOR SEMI-SCHEDULED 2023-02-07 2023-07-01
-#> 19976   BROKENH     NSW1     GENERATOR SEMI-SCHEDULED 2022-07-01 2023-02-07
-#> 19977   BROKENH     NSW1     GENERATOR SEMI-SCHEDULED 2017-06-29 2017-07-01
-#> 19978   OAKLAND     VIC1     GENERATOR SEMI-SCHEDULED 2017-07-18 2018-07-01
-#> 19979   MACARTH     VIC1     GENERATOR SEMI-SCHEDULED 2014-07-01 2014-12-16
-#> 19980     BLUFF      SA1     GENERATOR SEMI-SCHEDULED 2015-08-25 2015-10-30
-#> 19981   HALLWF2      SA1     GENERATOR SEMI-SCHEDULED 2016-07-01 2017-06-29
-#> 19982   OAKLAND     VIC1     GENERATOR SEMI-SCHEDULED 2012-07-01 2012-08-21
-#> 19983   MACARTH     VIC1     GENERATOR SEMI-SCHEDULED 2025-07-01 2026-07-01
-#> 19984    NYNGAN     NSW1     GENERATOR SEMI-SCHEDULED 2014-12-16 2015-07-01
-#> 19985   MACARTH     VIC1     GENERATOR SEMI-SCHEDULED 2016-07-01 2017-06-29
-#> 19986     BLUFF      SA1     GENERATOR SEMI-SCHEDULED 2011-08-05 2012-01-10
-#> 19987   HALLWF2      SA1     GENERATOR SEMI-SCHEDULED 2015-08-25 2015-10-30
-#> 19988    HALLWF      SA1     GENERATOR SEMI-SCHEDULED 2012-08-21 2013-07-01
-#> 19989    HALLWF      SA1     GENERATOR SEMI-SCHEDULED 2015-08-25 2015-10-30
-#> 19990    HALLWF      SA1     GENERATOR SEMI-SCHEDULED 2010-07-19 2011-01-18
-#> 19991   OAKLAND     VIC1     GENERATOR SEMI-SCHEDULED 2015-07-01 2015-08-25
-#> 19992     BLUFF      SA1     GENERATOR SEMI-SCHEDULED 2012-08-21 2013-07-01
-#> 19993   OAKLAND     VIC1     GENERATOR SEMI-SCHEDULED 2024-07-01 2024-07-02
-#> 19994   OAKLAND     VIC1     GENERATOR SEMI-SCHEDULED 2014-12-16 2015-07-01
-#> 19995   HALLWF2      SA1     GENERATOR SEMI-SCHEDULED 2012-07-01 2012-08-21
-#> 19996    HALLWF      SA1     GENERATOR SEMI-SCHEDULED 2011-08-05 2012-07-01
-#> 19997   OAKLAND     VIC1     GENERATOR SEMI-SCHEDULED 2024-07-02 2025-07-01
-#> 19998   OAKLAND     VIC1     GENERATOR SEMI-SCHEDULED 2017-06-29 2017-07-01
-#> 19999   MACARTH     VIC1     GENERATOR SEMI-SCHEDULED 2018-07-01 2019-07-01
-#> 20000   HALLWF2      SA1     GENERATOR SEMI-SCHEDULED 2014-12-16 2015-07-01
-#> 20001   BROKENH     NSW1     GENERATOR SEMI-SCHEDULED 2015-10-30 2016-07-01
-#> 20002     BLUFF      SA1     GENERATOR SEMI-SCHEDULED 2017-06-29 2017-07-01
-#> 20003   OAKLAND     VIC1     GENERATOR SEMI-SCHEDULED 2024-06-03 2024-07-01
-#> 20004     BLUFF      SA1     GENERATOR SEMI-SCHEDULED 2014-12-16 2015-07-01
-#> 20005   OAKLAND     VIC1     GENERATOR SEMI-SCHEDULED 2016-07-01 2017-06-29
-#> 20006   OAKLAND     VIC1     GENERATOR SEMI-SCHEDULED 2026-07-01 2999-12-31
-#> 20007   OAKLAND     VIC1     GENERATOR SEMI-SCHEDULED 2018-07-01 2019-07-01
-#> 20008    NYNGAN     NSW1     GENERATOR SEMI-SCHEDULED 2022-07-01 2023-02-07
-#> 20009   HALLWF2      SA1     GENERATOR SEMI-SCHEDULED 2010-07-01 2010-07-19
-#> 20010     NBHWF      SA1     GENERATOR SEMI-SCHEDULED 2015-10-30 2016-07-01
-#> 20011     NBHWF      SA1     GENERATOR SEMI-SCHEDULED 2017-07-01 2017-07-18
-#> 20012    HALLWF      SA1     GENERATOR SEMI-SCHEDULED 2011-01-18 2011-04-14
-#> 20013     NBHWF      SA1     GENERATOR SEMI-SCHEDULED 2011-01-18 2011-05-24
-#> 20014     BLUFF      SA1     GENERATOR SEMI-SCHEDULED 2015-10-30 2016-07-01
-#> 20015   OAKLAND     VIC1     GENERATOR SEMI-SCHEDULED 2012-08-21 2013-07-01
-#> 20016   HALLWF2      SA1     GENERATOR SEMI-SCHEDULED 2015-10-30 2016-07-01
-#> 20017   OAKLAND     VIC1     GENERATOR SEMI-SCHEDULED 2017-07-01 2017-07-18
-#> 20018    NYNGAN     NSW1     GENERATOR SEMI-SCHEDULED 2021-07-01 2022-07-01
-#> 20019   HALLWF2      SA1     GENERATOR SEMI-SCHEDULED 2010-02-09 2010-07-01
-#> 20020    HALLWF      SA1     GENERATOR SEMI-SCHEDULED 2017-06-29 2017-07-01
-#> 20021   OAKLAND     VIC1     GENERATOR SEMI-SCHEDULED 2019-07-01 2020-07-01
-#> 20022   OAKLAND     VIC1     GENERATOR SEMI-SCHEDULED 2015-10-30 2016-07-01
-#> 20023   HALLWF2      SA1     GENERATOR SEMI-SCHEDULED 2009-05-11 2009-07-01
-#> 20024    HALLWF      SA1     GENERATOR SEMI-SCHEDULED 2013-12-15 2014-07-01
-#> 20025     BLUFF      SA1     GENERATOR SEMI-SCHEDULED 2012-01-10 2012-07-01
-#> 20026    NYNGAN     NSW1     GENERATOR SEMI-SCHEDULED 2018-07-01 2019-07-01
-#> 20027   HALLWF2      SA1     GENERATOR SEMI-SCHEDULED 2010-07-19 2011-01-18
-#> 20028    NYNGAN     NSW1     GENERATOR SEMI-SCHEDULED 2020-07-01 2021-07-01
-#> 20029     BLUFF      SA1     GENERATOR SEMI-SCHEDULED 2011-07-05 2011-08-05
-#> 20030   HALLWF2      SA1     GENERATOR SEMI-SCHEDULED 2011-07-05 2011-08-05
-#> 20031      WPWF      SA1     GENERATOR  NON-SCHEDULED 2016-07-01 2017-06-29
-#> 20032   HALLWF2      SA1     GENERATOR SEMI-SCHEDULED 2011-08-05 2012-07-01
-#> 20033   MACARTH     VIC1     GENERATOR SEMI-SCHEDULED 2026-07-01 2999-12-31
-#> 20034   OAKLAND     VIC1     GENERATOR SEMI-SCHEDULED 2020-07-01 2020-07-28
-#> 20035   OAKLAND     VIC1     GENERATOR SEMI-SCHEDULED 2013-07-01 2014-07-01
-#> 20036   HALLWF2      SA1     GENERATOR SEMI-SCHEDULED 2014-07-01 2014-12-16
-#> 20037   MACARTH     VIC1     GENERATOR SEMI-SCHEDULED 2021-07-01 2022-07-01
-#> 20038     BLUFF      SA1     GENERATOR SEMI-SCHEDULED 2017-07-01 2017-07-18
-#> 20039     BLUFF      SA1     GENERATOR SEMI-SCHEDULED 2012-07-01 2012-08-21
-#> 20040   MACARTH     VIC1     GENERATOR SEMI-SCHEDULED 2024-07-02 2025-07-01
-#> 20041   OAKLAND     VIC1     GENERATOR SEMI-SCHEDULED 2012-01-10 2012-07-01
-#> 20042    NYNGAN     NSW1     GENERATOR SEMI-SCHEDULED 2019-07-01 2020-07-01
-#> 20043   MACARTH     VIC1     GENERATOR SEMI-SCHEDULED 2017-07-18 2018-07-01
-#> 20044   HALLWF2      SA1     GENERATOR SEMI-SCHEDULED 2012-08-21 2013-07-01
-#> 20045   OAKLAND     VIC1     GENERATOR SEMI-SCHEDULED 2021-07-01 2022-07-01
-#> 20046     NBHWF      SA1     GENERATOR SEMI-SCHEDULED 2017-06-29 2017-07-01
-#> 20047   OAKLAND     VIC1     GENERATOR SEMI-SCHEDULED 2020-07-28 2021-07-01
-#> 20048      WPWF      SA1     GENERATOR  NON-SCHEDULED 2015-10-30 2016-07-01
-#> 20049   MACARTH     VIC1     GENERATOR SEMI-SCHEDULED 2022-07-01 2023-02-07
-#> 20050    HALLWF      SA1     GENERATOR SEMI-SCHEDULED 2010-02-09 2010-07-01
-#> 20051    HALLWF      SA1     GENERATOR SEMI-SCHEDULED 2013-07-01 2013-12-15
-#> 20052    HALLWF      SA1     GENERATOR SEMI-SCHEDULED 2011-04-14 2011-07-01
-#> 20053     NBHWF      SA1     GENERATOR SEMI-SCHEDULED 2011-05-24 2011-07-01
-#> 20054   MACARTH     VIC1     GENERATOR SEMI-SCHEDULED 2015-10-30 2016-07-01
-#> 20055   MACARTH     VIC1     GENERATOR SEMI-SCHEDULED 2015-08-25 2015-10-30
-#> 20056   OAKLAND     VIC1     GENERATOR SEMI-SCHEDULED 2011-08-05 2012-01-10
-#> 20057   MACARTH     VIC1     GENERATOR SEMI-SCHEDULED 2024-06-03 2024-07-01
-#> 20058     BLUFF      SA1     GENERATOR SEMI-SCHEDULED 2013-12-15 2014-07-01
-#> 20059   OAKLAND     VIC1     GENERATOR SEMI-SCHEDULED 2022-07-01 2023-02-07
-#> 20060   HALLWF2      SA1     GENERATOR SEMI-SCHEDULED 2009-11-23 2010-02-09
-#> 20061    HALLWF      SA1     GENERATOR SEMI-SCHEDULED 2012-07-01 2012-08-21
-#> 20062   MACARTH     VIC1     GENERATOR SEMI-SCHEDULED 2023-02-07 2023-07-01
-#> 20063   OAKLAND     VIC1     GENERATOR SEMI-SCHEDULED 2015-08-25 2015-10-30
-#> 20064   MACARTH     VIC1     GENERATOR SEMI-SCHEDULED 2017-06-29 2017-07-01
-#> 20065     NBHWF      SA1     GENERATOR SEMI-SCHEDULED 2012-08-21 2013-07-01
-#> 20066   HALLWF2      SA1     GENERATOR SEMI-SCHEDULED 2015-07-01 2015-08-25
-#> 20067   OAKLAND     VIC1     GENERATOR SEMI-SCHEDULED 2023-07-01 2024-06-03
-#> 20068   HALLWF2      SA1     GENERATOR SEMI-SCHEDULED 2009-07-01 2009-11-23
-#> 20069     NBHWF      SA1     GENERATOR SEMI-SCHEDULED 2016-07-01 2017-06-29
-#> 20070     NBHWF      SA1     GENERATOR SEMI-SCHEDULED 2011-08-05 2012-07-01
-#> 20071     BLUFF      SA1     GENERATOR SEMI-SCHEDULED 2014-07-01 2014-12-16
-#> 20072   MACARTH     VIC1     GENERATOR SEMI-SCHEDULED 2023-07-01 2024-06-03
-#> 20073     NBHWF      SA1     GENERATOR SEMI-SCHEDULED 2014-12-16 2015-07-01
-#> 20074    NYNGAN     NSW1     GENERATOR SEMI-SCHEDULED 2017-07-01 2017-07-18
-#> 20075     BLUFF      SA1     GENERATOR SEMI-SCHEDULED 2013-07-01 2013-12-15
-#> 20076    HALLWF      SA1     GENERATOR SEMI-SCHEDULED 2011-07-01 2011-07-05
-#> 20077    HALLWF      SA1     GENERATOR SEMI-SCHEDULED 2017-07-01 2017-07-18
-#> 20078    HALLWF      SA1     GENERATOR SEMI-SCHEDULED 2014-07-01 2014-12-16
-#> 20079    HALLWF      SA1     GENERATOR SEMI-SCHEDULED 2015-07-01 2015-08-25
-#> 20080     BLUFF      SA1     GENERATOR SEMI-SCHEDULED 2015-07-01 2015-08-25
-#> 20081     NBHWF      SA1     GENERATOR SEMI-SCHEDULED 2015-08-25 2015-10-30
-#> 20082   HALLWF2      SA1     GENERATOR SEMI-SCHEDULED 2013-07-01 2013-12-15
-#> 20083     NBHWF      SA1     GENERATOR SEMI-SCHEDULED 2015-07-01 2015-08-25
-#> 20084   MACARTH     VIC1     GENERATOR SEMI-SCHEDULED 2020-07-01 2021-07-01
-#> 20085     BLUFF      SA1     GENERATOR SEMI-SCHEDULED 2016-07-01 2017-06-29
-#> 20086    HALLWF      SA1     GENERATOR SEMI-SCHEDULED 2016-07-01 2017-06-29
-#> 20087   HALLWF2      SA1     GENERATOR SEMI-SCHEDULED 2013-12-15 2014-07-01
-#> 20088   OAKLAND     VIC1     GENERATOR SEMI-SCHEDULED 2023-02-07 2023-07-01
-#> 21711    TORRIS      SA1     GENERATOR      SCHEDULED 2024-07-01 2025-07-01
-#> 21712    TORRIS      SA1     GENERATOR  NON-SCHEDULED 2023-04-26 2023-07-01
-#> 21713    TORRIS      SA1     GENERATOR      SCHEDULED 2002-04-01 2002-07-01
-#> 21714    TORRIS      SA1     GENERATOR      SCHEDULED 2004-09-14 2004-10-26
-#> 21715    TORRIS      SA1     GENERATOR  NON-SCHEDULED 2020-09-30 2021-07-01
-#> 21716    TORRIS      SA1     GENERATOR      SCHEDULED 2000-07-01 2001-07-01
-#> 21717    TORRIS      SA1     GENERATOR      SCHEDULED 2023-07-01 2023-10-09
-#> 21718    TORRIS      SA1     GENERATOR  NON-SCHEDULED 2024-07-01 2025-07-01
-#> 21719      WPWF      SA1     GENERATOR SEMI-SCHEDULED 2024-07-01 2025-07-01
-#> 21720    TORRIS      SA1     GENERATOR  NON-SCHEDULED 2023-07-01 2024-07-01
-#> 21721    TORRIS      SA1     GENERATOR      SCHEDULED 2024-06-03 2024-07-01
-#> 21722    TORRIS      SA1     GENERATOR  NON-SCHEDULED 2017-06-29 2017-07-01
-#> 21723    TORRIS      SA1     GENERATOR  NON-SCHEDULED 2008-07-01 2009-07-01
-#> 21724    TORRIS      SA1     GENERATOR  NON-SCHEDULED 2017-07-01 2017-07-18
-#> 21725    TORRIS      SA1     GENERATOR  NON-SCHEDULED 2025-07-01 2026-07-01
-#> 21726    TORRIS      SA1     GENERATOR  NON-SCHEDULED 2016-07-01 2017-06-29
-#> 21727    TORRIS      SA1     GENERATOR      SCHEDULED 2007-01-16 2007-07-01
-#> 21728    TORRIS      SA1     GENERATOR  NON-SCHEDULED 2010-07-01 2011-04-14
-#> 21729    TORRIS      SA1     GENERATOR      SCHEDULED 2001-10-16 2001-11-05
-#> 21730    TORRIS      SA1     GENERATOR      SCHEDULED 2001-07-01 2001-09-13
-#> 21731    TORRIS      SA1     GENERATOR      SCHEDULED 2004-07-01 2004-09-14
-#> 21732    TORRIS      SA1     GENERATOR      SCHEDULED 2006-07-01 2007-01-16
-#> 21733    TORRIS      SA1     GENERATOR      SCHEDULED 2022-07-01 2022-09-30
-#> 21734    TORRIS      SA1     GENERATOR      SCHEDULED 1998-11-29 1999-07-01
-#> 21735    TORRIS      SA1     GENERATOR      SCHEDULED 2010-10-27 2011-01-18
-#> 21736    TORRIS      SA1     GENERATOR  NON-SCHEDULED 2019-07-01 2019-10-15
-#> 21737    TORRIS      SA1     GENERATOR  NON-SCHEDULED 2014-07-01 2015-07-01
-#> 21738    TORRIS      SA1     GENERATOR      SCHEDULED 2021-07-01 2021-09-30
-#> 21739    TORRIS      SA1     GENERATOR  NON-SCHEDULED 2017-07-18 2018-07-01
-#> 21740    TORRIS      SA1     GENERATOR  NON-SCHEDULED 2019-10-15 2020-07-01
-#> 21741    TORRIS      SA1     GENERATOR      SCHEDULED 2026-07-01 2999-12-31
-#> 21742    TORRIS      SA1     GENERATOR  NON-SCHEDULED 2021-09-30 2022-07-01
-#> 21743    TORRIS      SA1     GENERATOR      SCHEDULED 2003-10-22 2003-12-03
-#> 21744    TORRIS      SA1     GENERATOR  NON-SCHEDULED 2018-07-01 2019-07-01
-#> 21745    TORRIS      SA1     GENERATOR      SCHEDULED 2003-12-03 2004-07-01
-#> 21746    TORRIS      SA1     GENERATOR  NON-SCHEDULED 2012-07-01 2013-07-01
-#> 21747    TORRIS      SA1     GENERATOR      SCHEDULED 2005-07-01 2006-07-01
-#> 21748    TORRIS      SA1     GENERATOR      SCHEDULED 2001-09-13 2001-10-16
-#> 21749    TORRIS      SA1     GENERATOR  NON-SCHEDULED 2015-07-01 2016-07-01
-#> 21750    TORRIS      SA1     GENERATOR      SCHEDULED 2014-07-01 2015-07-01
-#> 21751    TORRIS      SA1     GENERATOR      SCHEDULED 1998-10-25 1998-11-29
-#> 21752    TIBESS      SA1 BIDIRECTIONAL      SCHEDULED 2025-07-01 2026-07-01
-#> 21753    TORRIS      SA1     GENERATOR  NON-SCHEDULED 2010-02-09 2010-07-01
-#> 21754    TORRIS      SA1     GENERATOR      SCHEDULED 2022-09-30 2023-04-26
-#> 21755    TORRIS      SA1     GENERATOR      SCHEDULED 2012-07-01 2013-07-01
-#> 21756    TORRIS      SA1     GENERATOR      SCHEDULED 2001-11-05 2002-04-01
-#> 21757    TORRIS      SA1     GENERATOR      SCHEDULED 2003-07-01 2003-10-16
-#> 21758    TORRIS      SA1     GENERATOR  NON-SCHEDULED 2011-04-14 2011-07-01
-#> 21759    TORRIS      SA1     GENERATOR      SCHEDULED 2000-07-01 2001-07-01
-#> 21760    TORRIS      SA1     GENERATOR  NON-SCHEDULED 2022-07-01 2022-09-30
-#> 21761    TORRIS      SA1     GENERATOR      SCHEDULED 2004-10-26 2005-07-01
-#> 21762    TORRIS      SA1     GENERATOR      SCHEDULED 2005-07-01 2006-07-01
-#> 21763    TORRIS      SA1     GENERATOR  NON-SCHEDULED 2022-09-30 2023-04-26
-#> 21764    TORRIS      SA1     GENERATOR      SCHEDULED 2001-09-13 2001-10-16
-#> 21765    TORRIS      SA1     GENERATOR  NON-SCHEDULED 2014-04-25 2014-07-01
-#> 21766    TORRIS      SA1     GENERATOR  NON-SCHEDULED 2009-07-01 2010-02-09
-#> 21767    HALLWF      SA1     GENERATOR SEMI-SCHEDULED 2026-07-01 2999-12-31
-#> 21768    TORRIS      SA1     GENERATOR  NON-SCHEDULED 2013-12-15 2014-04-25
-#> 21769    TORRIS      SA1     GENERATOR      SCHEDULED 2003-07-01 2003-10-16
-#> 21770    TORRIS      SA1     GENERATOR      SCHEDULED 2002-07-09 2003-07-01
-#> 21771    TORRIS      SA1     GENERATOR      SCHEDULED 2016-07-01 2017-06-29
-#> 21772    TORRIS      SA1     GENERATOR      SCHEDULED 2014-07-01 2015-07-01
-#> 21773    TORRIS      SA1     GENERATOR      SCHEDULED 2004-07-01 2004-09-14
-#> 21774    TORRIS      SA1     GENERATOR  NON-SCHEDULED 2020-07-01 2020-09-30
-#> 21775    TORRIS      SA1     GENERATOR      SCHEDULED 2010-10-27 2011-01-18
-#> 21776    TORRIS      SA1     GENERATOR      SCHEDULED 1999-07-01 2000-07-01
-#> 21777   BARKIPS      SA1     GENERATOR      SCHEDULED 2021-07-01 2022-07-01
-#> 21778    TORRIS      SA1     GENERATOR      SCHEDULED 2011-04-14 2011-07-01
-#> 21779    TORRIS      SA1     GENERATOR      SCHEDULED 1998-10-25 1998-11-29
-#> 21780    TORRIS      SA1     GENERATOR  NON-SCHEDULED 2011-07-01 2012-07-01
-#> 21781    TORRIS      SA1     GENERATOR      SCHEDULED 2004-09-14 2004-10-26
-#> 21782    TORRIS      SA1     GENERATOR      SCHEDULED 2007-01-16 2007-07-01
-#> 21783   BARKIPS      SA1     GENERATOR      SCHEDULED 2025-07-01 2026-07-01
-#> 21784    TORRIS      SA1     GENERATOR  NON-SCHEDULED 2007-01-16 2007-07-01
-#> 21785    TORRIS      SA1     GENERATOR      SCHEDULED 2025-07-01 2026-07-01
-#> 21786      WPWF      SA1     GENERATOR SEMI-SCHEDULED 2021-12-09 2022-07-01
-#> 21787    TORRIS      SA1     GENERATOR  NON-SCHEDULED 2004-09-14 2004-10-26
-#> 21788    TORRIS      SA1     GENERATOR  NON-SCHEDULED 2021-07-01 2021-09-30
-#> 21789    TORRIS      SA1     GENERATOR      SCHEDULED 2016-07-01 2017-06-29
-#> 21790    TORRIS      SA1     GENERATOR      SCHEDULED 2015-07-01 2016-07-01
-#> 21791    TORRIS      SA1     GENERATOR      SCHEDULED 2026-07-01 2999-12-31
-#> 21792    TORRIS      SA1     GENERATOR      SCHEDULED 2004-07-01 2004-09-14
-#> 21793    TORRIS      SA1     GENERATOR      SCHEDULED 2010-07-01 2010-10-27
-#> 21794    TORRIS      SA1     GENERATOR      SCHEDULED 2021-09-30 2022-07-01
-#> 21795    TORRIS      SA1     GENERATOR      SCHEDULED 2003-10-16 2003-10-22
-#> 21796    TORRIS      SA1     GENERATOR  NON-SCHEDULED 2007-07-17 2008-07-01
-#> 21797    TORRIS      SA1     GENERATOR      SCHEDULED 1998-11-29 1999-07-01
-#> 21798    TORRIS      SA1     GENERATOR      SCHEDULED 2001-07-01 2001-09-13
-#> 21799      WPWF      SA1     GENERATOR SEMI-SCHEDULED 2024-06-03 2024-07-01
-#> 21800    TORRIS      SA1     GENERATOR      SCHEDULED 2011-07-01 2012-07-01
-#> 21801    TORRIS      SA1     GENERATOR      SCHEDULED 2012-07-01 2013-07-01
-#> 21802    TORRIS      SA1     GENERATOR      SCHEDULED 2023-10-09 2024-06-03
-#> 21803    TORRIS      SA1     GENERATOR      SCHEDULED 2003-12-03 2004-07-01
-#> 21804    TORRIS      SA1     GENERATOR      SCHEDULED 2003-10-22 2003-12-03
-#> 21805    TORRIS      SA1     GENERATOR      SCHEDULED 2011-07-01 2012-07-01
-#> 21806    TORRIS      SA1     GENERATOR      SCHEDULED 2004-10-26 2005-07-01
-#> 21807    TORRIS      SA1     GENERATOR      SCHEDULED 2017-07-18 2017-07-25
-#> 21808    TORRIS      SA1     GENERATOR      SCHEDULED 2002-04-01 2002-07-01
-#> 21809    TORRIS      SA1     GENERATOR      SCHEDULED 2010-05-25 2010-07-01
-#> 21810    TIBESS      SA1 BIDIRECTIONAL      SCHEDULED 2026-07-01 2999-12-31
-#> 21811    TORRIS      SA1     GENERATOR      SCHEDULED 2011-01-18 2011-04-14
+#> 18752    AGLHAL      SA1     GENERATOR  NON-SCHEDULED 2002-07-01 2003-07-01
+#> 18753       UWS     NSW1     GENERATOR  NON-SCHEDULED 2002-01-10 2002-04-01
+#> 18754   AGLNOW1     NSW1     GENERATOR  NON-SCHEDULED 2006-02-22 2006-03-01
+#> 18755   AGLNOW1     NSW1     GENERATOR  NON-SCHEDULED 2002-07-01 2003-07-01
+#> 18756       UWS     NSW1     GENERATOR  NON-SCHEDULED 2002-07-01 2003-07-01
+#> 18757    AGLSOM     VIC1     GENERATOR  NON-SCHEDULED 2002-04-01 2002-05-01
+#> 18758       UWS     NSW1     GENERATOR  NON-SCHEDULED 2002-05-01 2002-07-01
+#> 18759   ENERGYB     VIC1     GENERATOR      SCHEDULED 2016-03-04 2016-03-11
+#> 18760       UWS     NSW1     GENERATOR  NON-SCHEDULED 2003-07-01 2003-10-22
+#> 18761       UWS     NSW1     GENERATOR  NON-SCHEDULED 2005-07-01 2006-03-01
+#> 18775      ICSM     QLD1     GENERATOR  NON-SCHEDULED 2012-12-07 2012-12-24
+#> 18776   RUBICON     VIC1     GENERATOR  NON-SCHEDULED 2018-05-29 2018-07-01
+#> 18777  WYANGALB     NSW1     GENERATOR  NON-SCHEDULED 2012-03-01 2012-07-01
+#> 18778    WKIEWA     VIC1     GENERATOR      SCHEDULED 2017-07-01 2018-07-01
+#> 18779   RUBICON     VIC1     GENERATOR  NON-SCHEDULED 2012-02-17 2012-07-01
+#> 18780    YABULU     QLD1     GENERATOR      SCHEDULED 2011-07-01 2012-07-01
+#> 18781  WYANGALB     NSW1     GENERATOR  NON-SCHEDULED 2011-07-01 2012-03-01
+#> 18782      ICSM     QLD1     GENERATOR  NON-SCHEDULED 2010-04-30 2010-07-01
+#> 18783    CLOVER     VIC1     GENERATOR  NON-SCHEDULED 2010-07-01 2011-05-27
+#> 18784    EILDON     VIC1     GENERATOR      SCHEDULED 2016-07-01 2016-11-19
+#> 18785   RUBICON     VIC1     GENERATOR  NON-SCHEDULED 2019-07-01 2020-07-01
+#> 18786      ICSM     QLD1     GENERATOR  NON-SCHEDULED 2012-12-24 2013-04-01
+#> 18787    CLOVER     VIC1     GENERATOR  NON-SCHEDULED 2006-08-08 2006-08-25
+#> 18788   RUBICON     VIC1     GENERATOR  NON-SCHEDULED 2018-07-01 2019-07-01
+#> 18789      BAPS     VIC1     GENERATOR  NON-SCHEDULED 2007-07-01 2007-07-02
+#> 18790   RUBICON     VIC1     GENERATOR  NON-SCHEDULED 2026-07-01 2999-12-31
+#> 18791    EILDON     VIC1     GENERATOR      SCHEDULED 2014-07-01 2014-07-25
+#> 18792    EILDON     VIC1     GENERATOR      SCHEDULED 2006-07-01 2006-08-04
+#> 18793    EILDON     VIC1     GENERATOR      SCHEDULED 2007-01-16 2007-07-01
+#> 18794   PINDARI     NSW1     GENERATOR  NON-SCHEDULED 2020-07-01 2021-07-01
+#> 18795    EILDON     VIC1     GENERATOR      SCHEDULED 2017-07-01 2018-07-01
+#> 18796    EILDON     VIC1     GENERATOR      SCHEDULED 1999-10-14 2000-07-01
+#> 18797   PINDARI     NSW1     GENERATOR  NON-SCHEDULED 2019-07-01 2020-07-01
+#> 18798  GLBWNHYD     NSW1     GENERATOR  NON-SCHEDULED 2013-04-01 2013-07-01
+#> 18799  WYANGALB     NSW1     GENERATOR  NON-SCHEDULED 2011-04-14 2011-05-27
+#> 18800      ICSM     QLD1     GENERATOR  NON-SCHEDULED 2013-04-01 2013-07-01
+#> 18801    EILDON     VIC1     GENERATOR      SCHEDULED 2015-07-01 2015-10-30
+#> 18802  GLBWNHYD     NSW1     GENERATOR  NON-SCHEDULED 2015-10-30 2016-01-15
+#> 18803      BAPS     VIC1     GENERATOR  NON-SCHEDULED 2007-01-16 2007-07-01
+#> 18804   RUBICON     VIC1     GENERATOR  NON-SCHEDULED 2010-01-07 2010-01-15
+#> 18805    YABULU     QLD1     GENERATOR      SCHEDULED 2011-04-14 2011-07-01
+#> 18806    EILDON     VIC1     GENERATOR      SCHEDULED 1999-07-01 1999-10-14
+#> 18807      WPWF      SA1     GENERATOR  NON-SCHEDULED 2014-07-01 2014-07-25
+#> 18808  BDONGHYD     NSW1     GENERATOR  NON-SCHEDULED 2022-06-10 2022-06-28
+#> 18809  BDONGHYD     NSW1     GENERATOR  NON-SCHEDULED 2022-06-28 2022-07-01
+#> 18810  WYANGALB     NSW1     GENERATOR  NON-SCHEDULED 2010-01-15 2010-03-19
+#> 18811   RUBICON     VIC1     GENERATOR  NON-SCHEDULED 2022-07-01 2023-07-01
+#> 18812  WYANGALB     NSW1     GENERATOR  NON-SCHEDULED 2010-07-01 2011-04-14
+#> 18813    CLOVER     VIC1     GENERATOR  NON-SCHEDULED 2011-05-27 2012-07-01
+#> 18814  GLBWNHYD     NSW1     GENERATOR  NON-SCHEDULED 2015-01-01 2015-07-01
+#> 18815   RUBICON     VIC1     GENERATOR  NON-SCHEDULED 2010-07-01 2012-02-17
+#> 18816     OAKEY     QLD1     GENERATOR      SCHEDULED 2010-04-30 2010-07-01
+#> 18817   PINDARI     NSW1     GENERATOR  NON-SCHEDULED 2017-07-01 2018-07-01
+#> 18818   PINDARI     NSW1     GENERATOR  NON-SCHEDULED 2018-07-01 2019-07-01
+#> 18819      ICSM     QLD1     GENERATOR  NON-SCHEDULED 2010-03-19 2010-04-30
+#> 18820    EILDON     VIC1     GENERATOR      SCHEDULED 2016-01-15 2016-07-01
+#> 18821    EILDON     VIC1     GENERATOR      SCHEDULED 2016-11-19 2017-07-01
+#> 18822    YABULU     QLD1     GENERATOR      SCHEDULED 2012-07-01 2012-12-07
+#> 18823      BAPS     VIC1     GENERATOR  NON-SCHEDULED 2008-07-01 2009-07-01
+#> 18824   RUBICON     VIC1     GENERATOR  NON-SCHEDULED 2021-07-01 2021-12-31
+#> 18825      ICSM     QLD1     GENERATOR  NON-SCHEDULED 2015-10-30 2016-01-15
+#> 18826    EILDON     VIC1     GENERATOR      SCHEDULED 2013-07-01 2014-07-01
+#> 18827  GLBWNHYD     NSW1     GENERATOR  NON-SCHEDULED 2014-08-26 2015-01-01
+#> 18828  BDONGHYD     NSW1     GENERATOR  NON-SCHEDULED 2021-07-01 2021-12-31
+#> 18829   PINDARI     NSW1     GENERATOR  NON-SCHEDULED 2023-10-10 2024-07-01
+#> 18830      BAPS     VIC1     GENERATOR  NON-SCHEDULED 2006-02-22 2006-03-01
+#> 18831    EILDON     VIC1     GENERATOR      SCHEDULED 1998-10-25 1999-07-01
+#> 18832     MCKAY     VIC1     GENERATOR      SCHEDULED 2001-07-01 2001-09-13
+#> 18833  BDONGHYD     NSW1     GENERATOR  NON-SCHEDULED 2022-07-01 2023-07-01
+#> 18834  BDONGHYD     NSW1     GENERATOR  NON-SCHEDULED 2023-07-01 2023-10-10
+#> 18835  BDONGHYD     NSW1     GENERATOR  NON-SCHEDULED 2024-07-01 2025-07-01
+#> 18836    EILDON     VIC1     GENERATOR      SCHEDULED 2018-07-01 2019-07-01
+#> 18837   RUBICON     VIC1     GENERATOR  NON-SCHEDULED 2020-07-01 2021-07-01
+#> 18838    EILDON     VIC1     GENERATOR      SCHEDULED 2011-04-14 2011-07-01
+#> 18839  GLBWNHYD     NSW1     GENERATOR  NON-SCHEDULED 2014-07-25 2014-08-26
+#> 18840      ICSM     QLD1     GENERATOR  NON-SCHEDULED 2016-01-15 2016-07-01
+#> 18841    WKIEWA     VIC1     GENERATOR      SCHEDULED 2024-07-01 2025-07-01
+#> 18842   PINDARI     NSW1     GENERATOR  NON-SCHEDULED 2016-07-01 2016-11-19
+#> 18843    WKIEWA     VIC1     GENERATOR      SCHEDULED 2024-06-03 2024-07-01
+#> 18844    EILDON     VIC1     GENERATOR      SCHEDULED 2006-02-22 2006-03-01
+#> 18845  BDONGHYD     NSW1     GENERATOR  NON-SCHEDULED 2015-10-30 2016-01-15
+#> 18846  BDONGHYD     NSW1     GENERATOR  NON-SCHEDULED 2016-01-15 2016-07-01
+#> 18847     OAKEY     QLD1     GENERATOR      SCHEDULED 2010-03-19 2010-04-30
+#> 18848    EILDON     VIC1     GENERATOR      SCHEDULED 2000-07-01 2000-07-20
+#> 18849    EILDON     VIC1     GENERATOR      SCHEDULED 2000-07-20 2000-12-19
+#> 18850      ICSM     QLD1     GENERATOR  NON-SCHEDULED 2014-07-25 2014-08-26
+#> 18851    EILDON     VIC1     GENERATOR      SCHEDULED 2011-01-18 2011-04-14
+#> 18852  MORANBAH     QLD1     GENERATOR  NON-SCHEDULED 2010-07-01 2011-04-14
+#> 18853     DARTM     VIC1     GENERATOR      SCHEDULED 2002-04-01 2002-07-01
+#> 18854      BAPS     VIC1     GENERATOR  NON-SCHEDULED 2006-07-01 2006-08-04
+#> 18855      BAPS     VIC1     GENERATOR  NON-SCHEDULED 2006-03-29 2006-07-01
+#> 18856  BDONGHYD     NSW1     GENERATOR  NON-SCHEDULED 2015-01-01 2015-07-01
+#> 18857     MCKAY     VIC1     GENERATOR      SCHEDULED 2000-12-19 2001-07-01
+#> 18858     OAKEY     QLD1     GENERATOR      SCHEDULED 2011-04-14 2011-07-01
+#> 18859     OAKEY     QLD1     GENERATOR      SCHEDULED 2011-07-01 2012-07-01
+#> 18860   PINDARI     NSW1     GENERATOR  NON-SCHEDULED 2022-06-28 2022-07-01
+#> 18861    EILDON     VIC1     GENERATOR      SCHEDULED 2021-12-01 2021-12-31
+#> 18862    WKIEWA     VIC1     GENERATOR      SCHEDULED 2018-07-01 2019-07-01
+#> 18863    WKIEWA     VIC1     GENERATOR      SCHEDULED 2019-07-01 2020-07-01
+#> 18864      BAPS     VIC1     GENERATOR  NON-SCHEDULED 2010-07-01 2010-11-09
+#> 18865      ICSM     QLD1     GENERATOR  NON-SCHEDULED 2015-01-01 2015-07-01
+#> 18866    YABULU     QLD1     GENERATOR      SCHEDULED 2015-07-01 2015-10-30
+#> 18867   PINDARI     NSW1     GENERATOR  NON-SCHEDULED 2015-07-01 2015-10-30
+#> 18868    WKIEWA     VIC1     GENERATOR      SCHEDULED 2023-07-01 2023-10-10
+#> 18869      BAPS     VIC1     GENERATOR  NON-SCHEDULED 2006-02-02 2006-02-22
+#> 18870     OAKEY     QLD1     GENERATOR      SCHEDULED 2011-01-18 2011-04-14
+#> 18871    WKIEWA     VIC1     GENERATOR      SCHEDULED 2026-07-01 2999-12-31
+#> 18872    EILDON     VIC1     GENERATOR      SCHEDULED 2011-07-01 2012-07-01
+#> 18873    EILDON     VIC1     GENERATOR      SCHEDULED 2012-07-01 2012-12-07
+#> 18874     OAKEY     QLD1     GENERATOR      SCHEDULED 2010-10-27 2011-01-18
+#> 18875     OAKEY     QLD1     GENERATOR      SCHEDULED 2012-12-07 2012-12-24
+#> 18876  MORANBAH     QLD1     GENERATOR  NON-SCHEDULED 2016-07-01 2016-11-19
+#> 18877    WKIEWA     VIC1     GENERATOR      SCHEDULED 2020-07-01 2021-07-01
+#> 18878      ICSM     QLD1     GENERATOR  NON-SCHEDULED 2014-08-26 2015-01-01
+#> 18879    YABULU     QLD1     GENERATOR      SCHEDULED 2014-07-01 2014-07-25
+#> 18880    WKIEWA     VIC1     GENERATOR      SCHEDULED 2022-07-01 2023-07-01
+#> 18881      BAPS     VIC1     GENERATOR  NON-SCHEDULED 2006-02-01 2006-02-02
+#> 18882    EILDON     VIC1     GENERATOR      SCHEDULED 2010-07-01 2010-10-27
+#> 18883    WKIEWA     VIC1     GENERATOR      SCHEDULED 2026-07-01 2026-09-29
+#> 18884    EILDON     VIC1     GENERATOR      SCHEDULED 2024-07-01 2025-07-01
+#> 18885    CLOVER     VIC1     GENERATOR  NON-SCHEDULED 2024-07-01 2025-07-01
+#> 18886     MCKAY     VIC1     GENERATOR      SCHEDULED 2003-07-01 2003-12-23
+#> 18887    AGLSOM     VIC1     GENERATOR      SCHEDULED 2022-06-28 2022-07-01
+#> 18888    AGLSOM     VIC1     GENERATOR      SCHEDULED 2023-10-10 2024-06-03
+#> 18889      WPWF      SA1     GENERATOR  NON-SCHEDULED 2015-07-01 2015-10-30
+#> 18890    EILDON     VIC1     GENERATOR      SCHEDULED 2019-07-01 2020-07-01
+#> 18891    WKIEWA     VIC1     GENERATOR      SCHEDULED 2021-07-01 2021-12-01
+#> 18892    EILDON     VIC1     GENERATOR      SCHEDULED 2021-07-01 2021-12-01
+#> 18893     OAKEY     QLD1     GENERATOR      SCHEDULED 2009-07-01 2010-01-15
+#> 18894    EILDON     VIC1     GENERATOR      SCHEDULED 2009-07-01 2010-01-15
+#> 18895   PINDARI     NSW1     GENERATOR  NON-SCHEDULED 2010-01-15 2010-03-19
+#> 18896   PINDARI     NSW1     GENERATOR  NON-SCHEDULED 2007-12-01 2008-07-01
+#> 18897    EILDON     VIC1     GENERATOR      SCHEDULED 2004-06-15 2004-07-01
+#> 18898    AGLSOM     VIC1     GENERATOR      SCHEDULED 2006-07-27 2006-08-04
+#> 18899    WKIEWA     VIC1     GENERATOR      SCHEDULED 2006-07-01 2006-08-04
+#> 18900  WYANGALA     NSW1     GENERATOR  NON-SCHEDULED 2014-07-01 2014-07-25
+#> 18901   RUBICON     VIC1     GENERATOR  NON-SCHEDULED 2006-03-29 2006-08-04
+#> 18902    EILDON     VIC1     GENERATOR      SCHEDULED 2022-07-01 2023-07-01
+#> 18903    EILDON     VIC1     GENERATOR      SCHEDULED 2023-07-01 2023-10-10
+#> 18904     MCKAY     VIC1     GENERATOR      SCHEDULED 2018-07-01 2019-07-01
+#> 18905      BAPS     VIC1     GENERATOR  NON-SCHEDULED 2009-07-01 2010-01-15
+#> 18906    WKIEWA     VIC1     GENERATOR      SCHEDULED 2021-12-01 2021-12-31
+#> 18907     OAKEY     QLD1     GENERATOR      SCHEDULED 2008-07-01 2009-07-01
+#> 18908    EILDON     VIC1     GENERATOR      SCHEDULED 2003-12-23 2004-06-15
+#> 18909     OAKEY     QLD1     GENERATOR      SCHEDULED 2010-07-01 2010-10-27
+#> 18910   RUBICON     VIC1     GENERATOR  NON-SCHEDULED 2015-01-01 2015-07-01
+#> 18911     DARTM     VIC1     GENERATOR      SCHEDULED 2006-02-01 2006-02-22
+#> 18912     DARTM     VIC1     GENERATOR      SCHEDULED 2006-03-01 2006-03-29
+#> 18913     DARTM     VIC1     GENERATOR      SCHEDULED 2006-03-29 2006-07-01
+#> 18914     DARTM     VIC1     GENERATOR      SCHEDULED 2006-08-04 2006-08-25
+#> 18915     DARTM     VIC1     GENERATOR      SCHEDULED 2006-08-25 2007-01-16
+#> 18916   PINDARI     NSW1     GENERATOR  NON-SCHEDULED 2021-07-01 2021-12-31
+#> 18917    CLOVER     VIC1     GENERATOR  NON-SCHEDULED 2016-06-24 2016-07-01
+#> 18918    EILDON     VIC1     GENERATOR      SCHEDULED 2020-07-01 2021-07-01
+#> 18919    EILDON     VIC1     GENERATOR      SCHEDULED 2022-06-28 2022-07-01
+#> 18920    EILDON     VIC1     GENERATOR      SCHEDULED 2008-07-01 2009-07-01
+#> 18921   PINDARI     NSW1     GENERATOR  NON-SCHEDULED 2013-07-01 2014-07-01
+#> 18922   PINDARI     NSW1     GENERATOR  NON-SCHEDULED 2014-07-01 2014-07-25
+#> 18923     DARTM     VIC1     GENERATOR      SCHEDULED 2013-04-01 2013-07-01
+#> 18924    AGLSOM     VIC1     GENERATOR      SCHEDULED 2021-12-31 2022-03-10
+#> 18925     DARTM     VIC1     GENERATOR      SCHEDULED 2014-07-25 2014-08-26
+#> 18926     DARTM     VIC1     GENERATOR      SCHEDULED 2015-01-01 2015-07-01
+#> 18927     MCKAY     VIC1     GENERATOR      SCHEDULED 2003-12-23 2004-06-15
+#> 18928    WKIEWA     VIC1     GENERATOR      SCHEDULED 2015-10-30 2016-01-15
+#> 18929     OAKEY     QLD1     GENERATOR      SCHEDULED 2010-04-30 2010-07-01
+#> 18930   PINDARI     NSW1     GENERATOR  NON-SCHEDULED 2014-08-26 2015-01-01
+#> 18931    EILDON     VIC1     GENERATOR      SCHEDULED 2001-07-01 2001-09-13
+#> 18932    CLOVER     VIC1     GENERATOR  NON-SCHEDULED 2018-07-01 2019-07-01
+#> 18933    CLOVER     VIC1     GENERATOR  NON-SCHEDULED 2019-07-01 2020-07-01
+#> 18934    EILDON     VIC1     GENERATOR      SCHEDULED 2021-12-01 2021-12-31
+#> 18935  BDONGHYD     NSW1     GENERATOR  NON-SCHEDULED 2014-08-26 2015-01-01
+#> 18936   AGLNOW1     NSW1     GENERATOR  NON-SCHEDULED 2016-07-01 2016-11-19
+#> 18937    EILDON     VIC1     GENERATOR      SCHEDULED 2003-07-01 2003-12-23
+#> 18938   PINDARI     NSW1     GENERATOR  NON-SCHEDULED 2022-03-10 2022-06-10
+#> 18939   PINDARI     NSW1     GENERATOR  NON-SCHEDULED 2022-06-10 2022-06-28
+#> 18940    EILDON     VIC1     GENERATOR      SCHEDULED 2004-12-15 2005-07-01
+#> 18941    EILDON     VIC1     GENERATOR      SCHEDULED 2005-07-01 2006-02-01
+#> 18942   RUBICON     VIC1     GENERATOR  NON-SCHEDULED 2009-11-26 2010-01-07
+#> 18943    EILDON     VIC1     GENERATOR      SCHEDULED 2021-12-31 2022-03-10
+#> 18944    EILDON     VIC1     GENERATOR      SCHEDULED 2022-03-10 2022-06-10
+#> 18945    EILDON     VIC1     GENERATOR      SCHEDULED 2022-06-10 2022-06-28
+#> 18946    YABULU     QLD1     GENERATOR      SCHEDULED 2013-07-01 2014-07-01
+#> 18947     OAKEY     QLD1     GENERATOR      SCHEDULED 2007-12-06 2008-07-01
+#> 18948   AGLNOW1     NSW1     GENERATOR  NON-SCHEDULED 2015-07-01 2015-10-30
+#> 18949     MCKAY     VIC1     GENERATOR      SCHEDULED 1999-10-14 2000-07-01
+#> 18950     MCKAY     VIC1     GENERATOR      SCHEDULED 2000-07-01 2000-07-20
+#> 18951     MCKAY     VIC1     GENERATOR      SCHEDULED 2000-07-20 2000-12-19
+#> 18952     MCKAY     VIC1     GENERATOR      SCHEDULED 2022-03-10 2022-06-10
+#> 18953     MCKAY     VIC1     GENERATOR      SCHEDULED 2022-06-10 2022-06-28
+#> 18954     MCKAY     VIC1     GENERATOR      SCHEDULED 2001-09-13 2001-10-09
+#> 18955     MCKAY     VIC1     GENERATOR      SCHEDULED 2001-10-09 2002-04-01
+#> 18956     MCKAY     VIC1     GENERATOR      SCHEDULED 2002-07-01 2002-07-09
+#> 18957    AGLSOM     VIC1     GENERATOR      SCHEDULED 2014-07-25 2014-08-26
+#> 18958    CLOVER     VIC1     GENERATOR  NON-SCHEDULED 2017-12-18 2018-07-01
+#> 18959  WYANGALB     NSW1     GENERATOR  NON-SCHEDULED 2013-07-01 2014-07-01
+#> 18960    CLOVER     VIC1     GENERATOR  NON-SCHEDULED 2025-07-01 2025-09-16
+#> 18961    EILDON     VIC1     GENERATOR      SCHEDULED 2023-10-10 2024-06-03
+#> 18962     DARTM     VIC1     GENERATOR      SCHEDULED 2012-12-24 2013-04-01
+#> 18963  BDONGHYD     NSW1     GENERATOR  NON-SCHEDULED 2014-07-25 2014-08-26
+#> 18964  YWNGAHYD     VIC1     GENERATOR  NON-SCHEDULED 2023-10-10 2024-07-01
+#> 18965    YABULU     QLD1     GENERATOR      SCHEDULED 2021-07-01 2021-12-31
+#> 18966   PINDARI     NSW1     GENERATOR  NON-SCHEDULED 2010-03-19 2010-04-30
+#> 18967    AGLSOM     VIC1     GENERATOR      SCHEDULED 2022-06-10 2022-06-28
+#> 18968    EILDON     VIC1     GENERATOR      SCHEDULED 1999-10-14 2000-07-01
+#> 18969    EILDON     VIC1     GENERATOR      SCHEDULED 2000-07-01 2000-07-20
+#> 18970     OAKEY     QLD1     GENERATOR      SCHEDULED 2010-10-27 2011-01-18
+#> 18971  BDONGHYD     NSW1     GENERATOR  NON-SCHEDULED 2023-10-10 2024-07-01
+#> 18972   PINDARI     NSW1     GENERATOR  NON-SCHEDULED 2016-01-15 2016-07-01
+#> 18973     DARTM     VIC1     GENERATOR      SCHEDULED 2010-10-27 2011-01-18
+#> 18974     DARTM     VIC1     GENERATOR      SCHEDULED 2012-12-07 2012-12-24
+#> 18975     OAKEY     QLD1     GENERATOR      SCHEDULED 2007-09-01 2007-12-01
+#> 18976    EILDON     VIC1     GENERATOR      SCHEDULED 2002-07-09 2003-07-01
+#> 18977    WKIEWA     VIC1     GENERATOR      SCHEDULED 2003-12-23 2004-06-15
+#> 18978     MCKAY     VIC1     GENERATOR      SCHEDULED 2010-07-01 2010-10-27
+#> 18979  WYANGALA     NSW1     GENERATOR  NON-SCHEDULED 2013-07-01 2014-07-01
+#> 18980    WKIEWA     VIC1     GENERATOR      SCHEDULED 2004-12-15 2005-07-01
+#> 18981    WKIEWA     VIC1     GENERATOR      SCHEDULED 2005-07-01 2006-02-01
+#> 18982     MCKAY     VIC1     GENERATOR      SCHEDULED 2012-07-01 2012-12-07
+#> 18983     OAKEY     QLD1     GENERATOR      SCHEDULED 2012-07-01 2012-12-07
+#> 18984     OAKEY     QLD1     GENERATOR      SCHEDULED 2013-07-01 2014-07-01
+#> 18985     OAKEY     QLD1     GENERATOR      SCHEDULED 2014-07-01 2014-07-25
+#> 18986     MCKAY     VIC1     GENERATOR      SCHEDULED 2014-08-26 2015-01-01
+#> 18987   PINDARI     NSW1     GENERATOR  NON-SCHEDULED 2021-12-31 2022-03-10
+#> 18988     MCKAY     VIC1     GENERATOR      SCHEDULED 2019-07-01 2020-07-01
+#> 18989     MCKAY     VIC1     GENERATOR      SCHEDULED 2020-07-01 2021-07-01
+#> 18990     MCKAY     VIC1     GENERATOR      SCHEDULED 2021-07-01 2021-12-01
+#> 18991    YABULU     QLD1     GENERATOR      SCHEDULED 2016-07-01 2016-11-19
+#> 18992  MORANBAH     QLD1     GENERATOR  NON-SCHEDULED 2011-04-14 2011-07-01
+#> 18993     MCKAY     VIC1     GENERATOR      SCHEDULED 2023-07-01 2023-10-10
+#> 18994     MCKAY     VIC1     GENERATOR      SCHEDULED 2024-06-03 2024-07-01
+#> 18995  MORANBAH     QLD1     GENERATOR  NON-SCHEDULED 2013-07-01 2014-07-01
+#> 18996    CLOVER     VIC1     GENERATOR  NON-SCHEDULED 2006-03-29 2006-08-04
+#> 18997     DARTM     VIC1     GENERATOR      SCHEDULED 2025-07-01 2026-07-01
+#> 18998     DARTM     VIC1     GENERATOR      SCHEDULED 2010-03-19 2010-04-30
+#> 18999  WYANGALA     NSW1     GENERATOR  NON-SCHEDULED 2014-08-26 2015-01-01
+#> 19000     MCKAY     VIC1     GENERATOR      SCHEDULED 2015-01-01 2015-07-01
+#> 19001  WYANGALB     NSW1     GENERATOR  NON-SCHEDULED 2010-04-30 2010-07-01
+#> 19002    CLOVER     VIC1     GENERATOR  NON-SCHEDULED 2020-07-01 2021-07-01
+#> 19003    EILDON     VIC1     GENERATOR      SCHEDULED 2022-07-01 2023-07-01
+#> 19004    EILDON     VIC1     GENERATOR      SCHEDULED 2023-07-01 2023-10-10
+#> 19005    EILDON     VIC1     GENERATOR      SCHEDULED 2024-06-03 2024-07-01
+#> 19006     MCKAY     VIC1     GENERATOR      SCHEDULED 2002-07-09 2003-07-01
+#> 19007    EILDON     VIC1     GENERATOR      SCHEDULED 2007-12-01 2008-07-01
+#> 19008    CLOVER     VIC1     GENERATOR      SCHEDULED 1998-10-25 1999-07-01
+#> 19009    CLOVER     VIC1     GENERATOR      SCHEDULED 1999-07-01 1999-10-14
+#> 19010  BDONGHYD     NSW1     GENERATOR  NON-SCHEDULED 2016-11-19 2017-07-01
+#> 19011    EILDON     VIC1     GENERATOR      SCHEDULED 2000-12-19 2001-07-01
+#> 19012   KINCUMB     NSW1     GENERATOR  NON-SCHEDULED 2014-08-26 2015-01-01
+#> 19013  WYANGALB     NSW1     GENERATOR  NON-SCHEDULED 2010-03-19 2010-04-30
+#> 19014     MCKAY     VIC1     GENERATOR      SCHEDULED 2009-09-22 2010-01-15
+#> 19015   AGLNOW1     NSW1     GENERATOR  NON-SCHEDULED 2013-07-01 2013-12-15
+#> 19016    WKIEWA     VIC1     GENERATOR      SCHEDULED 2003-07-01 2003-12-23
+#> 19017   AGLNOW1     NSW1     GENERATOR  NON-SCHEDULED 2014-07-01 2014-07-25
+#> 19018    EILDON     VIC1     GENERATOR      SCHEDULED 2002-07-01 2002-07-09
+#> 19019    EILDON     VIC1     GENERATOR      SCHEDULED 2004-07-01 2004-12-15
+#> 19020     MCKAY     VIC1     GENERATOR      SCHEDULED 2011-01-18 2011-04-14
+#> 19021     MCKAY     VIC1     GENERATOR      SCHEDULED 2011-04-14 2011-07-01
+#> 19022    AGLSOM     VIC1     GENERATOR      SCHEDULED 2007-01-16 2007-07-01
+#> 19023    AGLSOM     VIC1     GENERATOR      SCHEDULED 2007-07-01 2007-07-02
+#> 19024     MCKAY     VIC1     GENERATOR      SCHEDULED 2013-04-01 2013-07-01
+#> 19025     MCKAY     VIC1     GENERATOR      SCHEDULED 2014-07-25 2014-08-26
+#> 19026     MCKAY     VIC1     GENERATOR      SCHEDULED 2014-07-01 2014-07-25
+#> 19027     MCKAY     VIC1     GENERATOR      SCHEDULED 2016-07-01 2016-11-19
+#> 19028   PINDARI     NSW1     GENERATOR  NON-SCHEDULED 2012-07-01 2012-12-07
+#> 19029   RUBICON     VIC1     GENERATOR  NON-SCHEDULED 2014-07-25 2014-08-26
+#> 19030   RUBICON     VIC1     GENERATOR  NON-SCHEDULED 2014-08-26 2015-01-01
+#> 19031      BAPS     VIC1     GENERATOR  NON-SCHEDULED 2016-01-15 2016-07-01
+#> 19032   RUBICON     VIC1     GENERATOR  NON-SCHEDULED 2015-07-01 2015-10-30
+#> 19033   RUBICON     VIC1     GENERATOR  NON-SCHEDULED 2015-10-30 2016-01-15
+#> 19034   RUBICON     VIC1     GENERATOR  NON-SCHEDULED 2016-01-15 2016-07-01
+#> 19035   RUBICON     VIC1     GENERATOR  NON-SCHEDULED 2016-07-01 2016-11-19
+#> 19036   RUBICON     VIC1     GENERATOR  NON-SCHEDULED 2016-11-19 2017-07-01
+#> 19037   RUBICON     VIC1     GENERATOR  NON-SCHEDULED 2017-07-01 2018-05-29
+#> 19038  WYANGALA     NSW1     GENERATOR  NON-SCHEDULED 2014-07-25 2014-08-26
+#> 19039     DARTM     VIC1     GENERATOR      SCHEDULED 2007-12-01 2008-07-01
+#> 19040     DARTM     VIC1     GENERATOR      SCHEDULED 2010-04-30 2010-07-01
+#> 19041  COPTNHYD     NSW1     GENERATOR  NON-SCHEDULED 2025-07-01 2026-07-01
+#> 19042  GLBWNHYD     NSW1     GENERATOR  NON-SCHEDULED 2022-06-10 2022-06-28
+#> 19043  GLBWNHYD     NSW1     GENERATOR  NON-SCHEDULED 2022-06-28 2022-07-01
+#> 19044  GLBWNHYD     NSW1     GENERATOR  NON-SCHEDULED 2023-10-10 2024-07-01
+#> 19045    AGLHAL      SA1     GENERATOR      SCHEDULED 2006-08-04 2006-08-25
+#> 19046  COPTNHYD     NSW1     GENERATOR  NON-SCHEDULED 2013-07-01 2014-07-01
+#> 19047     DARTM     VIC1     GENERATOR      SCHEDULED 2014-08-26 2015-01-01
+#> 19048     DARTM     VIC1     GENERATOR      SCHEDULED 2015-10-30 2016-01-15
+#> 19049     DARTM     VIC1     GENERATOR      SCHEDULED 2016-01-15 2016-07-01
+#> 19050    WKIEWA     VIC1     GENERATOR      SCHEDULED 2016-01-15 2016-07-01
+#> 19051  BDONGHYD     NSW1     GENERATOR  NON-SCHEDULED 2021-12-31 2022-03-10
+#> 19052   PINDARI     NSW1     GENERATOR  NON-SCHEDULED 2015-01-01 2015-07-01
+#> 19053   PINDARI     NSW1     GENERATOR  NON-SCHEDULED 2016-11-19 2017-07-01
+#> 19054    EILDON     VIC1     GENERATOR      SCHEDULED 2001-09-13 2001-10-09
+#> 19055   KINCUMB     NSW1     GENERATOR  NON-SCHEDULED 2015-07-01 2015-10-30
+#> 19056   AGLNOW1     NSW1     GENERATOR  NON-SCHEDULED 2013-12-15 2014-07-01
+#> 19057  WYANGALA     NSW1     GENERATOR  NON-SCHEDULED 2010-01-15 2010-03-19
+#> 19058  WYANGALA     NSW1     GENERATOR  NON-SCHEDULED 2010-07-01 2011-04-14
+#> 19059    YABULU     QLD1     GENERATOR      SCHEDULED 2008-07-01 2009-07-01
+#> 19060    WKIEWA     VIC1     GENERATOR      SCHEDULED 2004-07-01 2004-12-15
+#> 19061  WYANGALA     NSW1     GENERATOR  NON-SCHEDULED 2012-07-01 2012-12-07
+#> 19062     MCKAY     VIC1     GENERATOR      SCHEDULED 2011-07-01 2012-07-01
+#> 19063    EILDON     VIC1     GENERATOR      SCHEDULED 2020-07-01 2021-07-01
+#> 19064    EILDON     VIC1     GENERATOR      SCHEDULED 2021-07-01 2021-12-01
+#> 19065     MCKAY     VIC1     GENERATOR      SCHEDULED 2013-07-01 2014-07-01
+#> 19066    AGLSOM     VIC1     GENERATOR      SCHEDULED 2009-07-01 2010-01-15
+#> 19067    AGLSOM     VIC1     GENERATOR      SCHEDULED 2010-07-01 2010-10-27
+#> 19068    AGLSOM     VIC1     GENERATOR      SCHEDULED 2011-01-18 2011-04-14
+#> 19069     MCKAY     VIC1     GENERATOR      SCHEDULED 2015-10-30 2016-01-15
+#> 19070     MCKAY     VIC1     GENERATOR      SCHEDULED 2016-01-15 2016-07-01
+#> 19071     MCKAY     VIC1     GENERATOR      SCHEDULED 2016-11-19 2017-07-01
+#> 19072     MCKAY     VIC1     GENERATOR      SCHEDULED 2021-12-31 2022-03-10
+#> 19073    AGLSOM     VIC1     GENERATOR      SCHEDULED 2013-12-15 2014-07-01
+#> 19074    AGLSOM     VIC1     GENERATOR      SCHEDULED 2014-07-01 2014-07-25
+#> 19075     MCKAY     VIC1     GENERATOR      SCHEDULED 2022-06-28 2022-07-01
+#> 19076     MCKAY     VIC1     GENERATOR      SCHEDULED 2023-10-10 2024-06-03
+#> 19077     MCKAY     VIC1     GENERATOR      SCHEDULED 2002-04-01 2002-07-01
+#> 19078     MCKAY     VIC1     GENERATOR      SCHEDULED 2002-07-09 2003-07-01
+#> 19079  WYANGALB     NSW1     GENERATOR  NON-SCHEDULED 2012-07-01 2012-12-07
+#> 19080     MCKAY     VIC1     GENERATOR      SCHEDULED 2003-12-23 2004-06-15
+#> 19081  WYANGALB     NSW1     GENERATOR  NON-SCHEDULED 2014-07-01 2014-07-25
+#> 19082  BDONGHYD     NSW1     GENERATOR  NON-SCHEDULED 2012-12-24 2013-04-01
+#> 19083  BDONGHYD     NSW1     GENERATOR  NON-SCHEDULED 2013-04-01 2013-07-01
+#> 19084   PINDARI     NSW1     GENERATOR  NON-SCHEDULED 2007-09-01 2007-12-01
+#> 19085    AGLSOM     VIC1     GENERATOR      SCHEDULED 2016-01-15 2016-07-01
+#> 19086    AGLSOM     VIC1     GENERATOR      SCHEDULED 2016-11-19 2017-07-01
+#> 19087     MCKAY     VIC1     GENERATOR      SCHEDULED 2007-12-01 2008-07-01
+#> 19088    AGLSOM     VIC1     GENERATOR      SCHEDULED 2022-03-10 2022-06-10
+#> 19089    EILDON     VIC1     GENERATOR      SCHEDULED 1999-07-01 1999-10-14
+#> 19090    YABULU     QLD1     GENERATOR      SCHEDULED 2023-07-01 2023-10-10
+#> 19091    WKIEWA     VIC1     GENERATOR      SCHEDULED 2016-11-19 2017-01-13
+#> 19092    WKIEWA     VIC1     GENERATOR      SCHEDULED 2021-12-31 2022-03-10
+#> 19093   PINDARI     NSW1     GENERATOR  NON-SCHEDULED 2015-10-30 2016-01-15
+#> 19094   PINDARI     NSW1     GENERATOR  NON-SCHEDULED 2014-07-25 2014-08-26
+#> 19095    EILDON     VIC1     GENERATOR      SCHEDULED 2000-12-19 2001-07-01
+#> 19096    EILDON     VIC1     GENERATOR      SCHEDULED 2001-07-01 2001-09-13
+#> 19097    EILDON     VIC1     GENERATOR      SCHEDULED 2001-09-13 2001-10-09
+#> 19098    EILDON     VIC1     GENERATOR      SCHEDULED 2001-10-09 2002-04-01
+#> 19099    WKIEWA     VIC1     GENERATOR      SCHEDULED 2004-06-15 2004-07-01
+#> 19100    EILDON     VIC1     GENERATOR      SCHEDULED 2015-07-01 2015-10-30
+#> 19101    YABULU     QLD1     GENERATOR      SCHEDULED 2009-07-01 2010-01-15
+#> 19102   RUBICON     VIC1     GENERATOR  NON-SCHEDULED 2001-10-09 2004-06-15
+#> 19103   RUBICON     VIC1     GENERATOR  NON-SCHEDULED 2004-06-15 2006-02-22
+#> 19104   RUBICON     VIC1     GENERATOR  NON-SCHEDULED 2006-02-22 2006-03-29
+#> 19105    AGLSOM     VIC1     GENERATOR      SCHEDULED 2008-07-01 2009-07-01
+#> 19106  YWNGAHYD     VIC1     GENERATOR  NON-SCHEDULED 2026-07-01 2999-12-31
+#> 19107   AGLNOW1     NSW1     GENERATOR  NON-SCHEDULED 2020-07-01 2021-07-01
+#> 19108    EILDON     VIC1     GENERATOR      SCHEDULED 2024-06-03 2024-07-01
+#> 19109    EILDON     VIC1     GENERATOR      SCHEDULED 2007-07-01 2007-07-02
+#> 19110     MCKAY     VIC1     GENERATOR      SCHEDULED 2017-07-01 2018-07-01
+#> 19111      BAPS     VIC1     GENERATOR  NON-SCHEDULED 2015-10-30 2016-01-15
+#> 19112    WKIEWA     VIC1     GENERATOR      SCHEDULED 2022-07-01 2023-07-01
+#> 19113     MCKAY     VIC1     GENERATOR      SCHEDULED 2021-12-01 2021-12-31
+#> 19114  MORANBAH     QLD1     GENERATOR  NON-SCHEDULED 2011-07-01 2012-07-01
+#> 19115  MORANBAH     QLD1     GENERATOR  NON-SCHEDULED 2012-07-01 2012-12-07
+#> 19116     OAKEY     QLD1     GENERATOR      SCHEDULED 2010-01-15 2010-03-19
+#> 19117  YWNGAHYD     VIC1     GENERATOR  NON-SCHEDULED 2025-07-01 2026-07-01
+#> 19118  WYANGALA     NSW1     GENERATOR  NON-SCHEDULED 2013-04-01 2013-07-01
+#> 19119     MCKAY     VIC1     GENERATOR      SCHEDULED 1999-07-01 1999-10-14
+#> 19120     MCKAY     VIC1     GENERATOR      SCHEDULED 1999-10-14 2000-07-01
+#> 19121     MCKAY     VIC1     GENERATOR      SCHEDULED 2000-07-01 2000-07-20
+#> 19122     MCKAY     VIC1     GENERATOR      SCHEDULED 2000-07-20 2000-12-19
+#> 19123  MORANBAH     QLD1     GENERATOR  NON-SCHEDULED 2020-07-01 2021-07-01
+#> 19124  MORANBAH     QLD1     GENERATOR  NON-SCHEDULED 2021-07-01 2021-12-31
+#> 19125    CLOVER     VIC1     GENERATOR  NON-SCHEDULED 2021-07-01 2021-12-31
+#> 19126    CLOVER     VIC1     GENERATOR  NON-SCHEDULED 2022-07-01 2023-07-01
+#> 19127    CLOVER     VIC1     GENERATOR  NON-SCHEDULED 2023-07-01 2023-10-10
+#> 19128    WKIEWA     VIC1     GENERATOR      SCHEDULED 2014-07-25 2014-08-26
+#> 19129    WKIEWA     VIC1     GENERATOR      SCHEDULED 2014-08-26 2015-01-01
+#> 19130    WKIEWA     VIC1     GENERATOR      SCHEDULED 2015-01-01 2015-07-01
+#> 19131    EILDON     VIC1     GENERATOR      SCHEDULED 2009-07-01 2010-01-15
+#> 19132   PINDARI     NSW1     GENERATOR  NON-SCHEDULED 2012-12-07 2012-12-24
+#> 19133    EILDON     VIC1     GENERATOR      SCHEDULED 2012-12-07 2012-12-24
+#> 19134      WPWF      SA1     GENERATOR  NON-SCHEDULED 2008-07-01 2008-11-20
+#> 19135      WPWF      SA1     GENERATOR  NON-SCHEDULED 2008-11-20 2009-01-22
+#> 19136     MCKAY     VIC1     GENERATOR      SCHEDULED 2004-12-15 2005-07-01
+#> 19137   KINCUMB     NSW1     GENERATOR  NON-SCHEDULED 2016-07-01 2016-11-19
+#> 19138   KINCUMB     NSW1     GENERATOR  NON-SCHEDULED 2017-07-01 2018-07-01
+#> 19139    EILDON     VIC1     GENERATOR      SCHEDULED 2013-07-01 2014-07-01
+#> 19140    EILDON     VIC1     GENERATOR      SCHEDULED 2025-07-01 2026-07-01
+#> 19141    AGLSOM     VIC1     GENERATOR      SCHEDULED 2026-07-01 2999-12-31
+#> 19142    YABULU     QLD1     GENERATOR      SCHEDULED 2010-07-01 2010-10-27
+#> 19143    YABULU     QLD1     GENERATOR      SCHEDULED 2011-01-18 2011-04-14
+#> 19144   AGLNOW1     NSW1     GENERATOR  NON-SCHEDULED 2018-07-01 2019-07-01
+#> 19145   AGLNOW1     NSW1     GENERATOR  NON-SCHEDULED 2019-07-01 2020-07-01
+#> 19146      WPWF      SA1     GENERATOR  NON-SCHEDULED 2006-03-01 2006-03-29
+#> 19147   PINDARI     NSW1     GENERATOR  NON-SCHEDULED 2011-04-14 2011-07-01
+#> 19148   PINDARI     NSW1     GENERATOR  NON-SCHEDULED 2011-07-01 2012-07-01
+#> 19149   RUBICON     VIC1     GENERATOR  NON-SCHEDULED 2014-07-01 2014-07-25
+#> 19150    WKIEWA     VIC1     GENERATOR      SCHEDULED 2026-09-29 2999-12-31
+#> 19151    AGLSOM     VIC1     GENERATOR      SCHEDULED 2011-07-01 2012-07-01
+#> 19152    AGLSOM     VIC1     GENERATOR      SCHEDULED 2012-07-01 2012-12-07
+#> 19153      BAPS     VIC1     GENERATOR  NON-SCHEDULED 2016-11-19 2017-07-01
+#> 19154      BAPS     VIC1     GENERATOR  NON-SCHEDULED 2021-12-31 2022-03-10
+#> 19155      BAPS     VIC1     GENERATOR  NON-SCHEDULED 2022-03-10 2022-06-10
+#> 19156      BAPS     VIC1     GENERATOR  NON-SCHEDULED 2022-06-10 2022-06-28
+#> 19157      BAPS     VIC1     GENERATOR  NON-SCHEDULED 2022-06-28 2022-07-01
+#> 19158      BAPS     VIC1     GENERATOR  NON-SCHEDULED 2023-10-10 2024-07-01
+#> 19159   RUBICON     VIC1     GENERATOR  NON-SCHEDULED 2021-12-31 2022-03-10
+#> 19160   PINDARI     NSW1     GENERATOR  NON-SCHEDULED 2022-07-01 2023-07-01
+#> 19161     DARTM     VIC1     GENERATOR      SCHEDULED 2010-01-15 2010-03-19
+#> 19162    YABULU     QLD1     GENERATOR      SCHEDULED 2016-01-15 2016-07-01
+#> 19163    YABULU     QLD1     GENERATOR      SCHEDULED 2016-11-19 2017-07-01
+#> 19164    YABULU     QLD1     GENERATOR      SCHEDULED 2021-12-31 2022-03-10
+#> 19165  SUNCOAST     QLD1     GENERATOR  NON-SCHEDULED 2010-05-17 2010-07-01
+#> 19166  SUNCOAST     QLD1     GENERATOR  NON-SCHEDULED 2010-07-01 2011-04-14
+#> 19167  SUNCOAST     QLD1     GENERATOR  NON-SCHEDULED 2011-04-14 2011-05-27
+#> 19168  COPTNHYD     NSW1     GENERATOR  NON-SCHEDULED 2014-07-01 2014-07-25
+#> 19169   AGLSITA     NSW1     GENERATOR  NON-SCHEDULED 2020-07-01 2021-07-01
+#> 19170   AGLSITA     NSW1     GENERATOR  NON-SCHEDULED 2021-07-01 2021-12-31
+#> 19171     OAKEY     QLD1     GENERATOR      SCHEDULED 2007-12-01 2007-12-06
+#> 19172     OAKEY     QLD1     GENERATOR      SCHEDULED 2010-01-15 2010-03-19
+#> 19173  BDONGHYD     NSW1     GENERATOR  NON-SCHEDULED 2022-03-10 2022-06-10
+#> 19174     DARTM     VIC1     GENERATOR      SCHEDULED 2022-03-10 2022-06-10
+#> 19175     DARTM     VIC1     GENERATOR      SCHEDULED 2022-06-10 2022-06-28
+#> 19176     DARTM     VIC1     GENERATOR      SCHEDULED 2022-06-28 2022-07-01
+#> 19177     DARTM     VIC1     GENERATOR      SCHEDULED 2023-10-10 2024-06-03
+#> 19178    YABULU     QLD1     GENERATOR      SCHEDULED 2012-12-24 2013-04-01
+#> 19179    YABULU     QLD1     GENERATOR      SCHEDULED 2013-04-01 2013-07-01
+#> 19180    YABULU     QLD1     GENERATOR      SCHEDULED 2014-07-25 2014-08-26
+#> 19181    YABULU     QLD1     GENERATOR      SCHEDULED 2014-08-26 2015-01-01
+#> 19182  GLBWNHYD     NSW1     GENERATOR  NON-SCHEDULED 2015-07-01 2015-10-30
+#> 19183    YABULU     QLD1     GENERATOR      SCHEDULED 2015-01-01 2015-07-01
+#> 19184    YABULU     QLD1     GENERATOR      SCHEDULED 2015-10-30 2016-01-15
+#> 19185    YABULU     QLD1     GENERATOR      SCHEDULED 2016-01-15 2016-07-01
+#> 19186   PINDARI     NSW1     GENERATOR  NON-SCHEDULED 2025-07-01 2026-07-01
+#> 19187      WPWF      SA1     GENERATOR  NON-SCHEDULED 2006-03-29 2006-07-01
+#> 19188      WPWF      SA1     GENERATOR  NON-SCHEDULED 2006-08-04 2006-08-25
+#> 19189      WPWF      SA1     GENERATOR  NON-SCHEDULED 2006-08-25 2007-01-16
+#> 19190    AGLSOM     VIC1     GENERATOR      SCHEDULED 2011-04-14 2011-07-01
+#> 19191    EILDON     VIC1     GENERATOR      SCHEDULED 2024-07-01 2025-07-01
+#> 19192    WKIEWA     VIC1     GENERATOR      SCHEDULED 2021-12-01 2021-12-31
+#> 19193    AGLSOM     VIC1     GENERATOR      SCHEDULED 2013-07-01 2013-12-15
+#> 19194      WPWF      SA1     GENERATOR  NON-SCHEDULED 2010-03-19 2010-04-30
+#> 19195      WPWF      SA1     GENERATOR  NON-SCHEDULED 2010-04-30 2010-07-01
+#> 19196    AGLSOM     VIC1     GENERATOR      SCHEDULED 2015-07-01 2015-10-30
+#> 19197    AGLSOM     VIC1     GENERATOR      SCHEDULED 2016-07-01 2016-11-19
+#> 19198    AGLSOM     VIC1     GENERATOR      SCHEDULED 2017-07-01 2018-07-01
+#> 19199     MCKAY     VIC1     GENERATOR      SCHEDULED 2006-02-01 2006-02-13
+#> 19200     MCKAY     VIC1     GENERATOR      SCHEDULED 2003-07-01 2003-12-23
+#> 19201     MCKAY     VIC1     GENERATOR      SCHEDULED 2006-03-29 2006-07-01
+#> 19202     MCKAY     VIC1     GENERATOR      SCHEDULED 2006-08-04 2006-08-25
+#> 19203   PINDARI     NSW1     GENERATOR  NON-SCHEDULED 2006-08-25 2007-01-16
+#> 19204   PINDARI     NSW1     GENERATOR  NON-SCHEDULED 2007-07-02 2007-09-01
+#> 19205  YWNGAHYD     VIC1     GENERATOR  NON-SCHEDULED 2022-06-28 2022-07-01
+#> 19206    YABULU     QLD1     GENERATOR      SCHEDULED 2019-07-01 2020-07-01
+#> 19207    YABULU     QLD1     GENERATOR      SCHEDULED 2020-07-01 2021-07-01
+#> 19208    EILDON     VIC1     GENERATOR      SCHEDULED 2006-07-01 2006-08-04
+#> 19209    EILDON     VIC1     GENERATOR      SCHEDULED 1998-10-25 1999-07-01
+#> 19210     MCKAY     VIC1     GENERATOR      SCHEDULED 2006-02-22 2006-03-01
+#> 19211     MCKAY     VIC1     GENERATOR      SCHEDULED 2006-07-01 2006-08-04
+#> 19212     MCKAY     VIC1     GENERATOR      SCHEDULED 2007-01-16 2007-07-01
+#> 19213      WPWF      SA1     GENERATOR  NON-SCHEDULED 2007-12-19 2008-07-01
+#> 19214   PINDARI     NSW1     GENERATOR  NON-SCHEDULED 2012-12-24 2013-04-01
+#> 19215   PINDARI     NSW1     GENERATOR  NON-SCHEDULED 2013-04-01 2013-07-01
+#> 19216   AGLNOW1     NSW1     GENERATOR  NON-SCHEDULED 2011-04-14 2011-07-01
+#> 19217   AGLNOW1     NSW1     GENERATOR  NON-SCHEDULED 2011-07-01 2012-07-01
+#> 19218   AGLNOW1     NSW1     GENERATOR  NON-SCHEDULED 2012-07-01 2012-12-07
+#> 19219    EILDON     VIC1     GENERATOR      SCHEDULED 2012-07-01 2012-12-07
+#> 19220    EILDON     VIC1     GENERATOR      SCHEDULED 2025-07-01 2026-07-01
+#> 19221    EILDON     VIC1     GENERATOR      SCHEDULED 2014-07-01 2014-07-25
+#> 19222    EILDON     VIC1     GENERATOR      SCHEDULED 2016-07-01 2016-11-19
+#> 19223    EILDON     VIC1     GENERATOR      SCHEDULED 2017-07-01 2018-07-01
+#> 19224   AGLNOW1     NSW1     GENERATOR  NON-SCHEDULED 2017-07-01 2018-07-01
+#> 19225    EILDON     VIC1     GENERATOR      SCHEDULED 2019-07-01 2020-07-01
+#> 19226    WKIEWA     VIC1     GENERATOR      SCHEDULED 2006-02-22 2006-03-01
+#> 19227   RUBICON     VIC1     GENERATOR  NON-SCHEDULED 2012-12-24 2013-04-01
+#> 19228    WKIEWA     VIC1     GENERATOR      SCHEDULED 2018-07-01 2019-07-01
+#> 19229     MCKAY     VIC1     GENERATOR      SCHEDULED 2015-07-01 2015-10-30
+#> 19230   AGLSITA     NSW1     GENERATOR  NON-SCHEDULED 2017-07-01 2018-07-01
+#> 19231   PINDARI     NSW1     GENERATOR  NON-SCHEDULED 2009-07-01 2010-01-15
+#> 19232      WPWF      SA1     GENERATOR  NON-SCHEDULED 2007-09-01 2007-12-01
+#> 19233  YWNGAHYD     VIC1     GENERATOR  NON-SCHEDULED 2016-07-01 2016-11-19
+#> 19234    WKIEWA     VIC1     GENERATOR      SCHEDULED 2023-07-01 2023-10-10
+#> 19235     MCKAY     VIC1     GENERATOR      SCHEDULED 2022-07-01 2023-07-01
+#> 19236     OAKEY     QLD1     GENERATOR      SCHEDULED 2007-12-01 2007-12-06
+#> 19237  WYANGALA     NSW1     GENERATOR  NON-SCHEDULED 2010-03-19 2010-04-30
+#> 19238  WYANGALA     NSW1     GENERATOR  NON-SCHEDULED 2010-04-30 2010-07-01
+#> 19239     MCKAY     VIC1     GENERATOR      SCHEDULED 1998-10-25 1999-07-01
+#> 19240  EDLRGNRD     QLD1     GENERATOR  NON-SCHEDULED 2012-12-24 2013-04-01
+#> 19241      BAPS     VIC1     GENERATOR  NON-SCHEDULED 2015-07-01 2015-10-30
+#> 19242    EILDON     VIC1     GENERATOR      SCHEDULED 2002-04-01 2002-07-01
+#> 19243    EILDON     VIC1     GENERATOR      SCHEDULED 2006-02-01 2006-02-22
+#> 19244    EILDON     VIC1     GENERATOR      SCHEDULED 2006-03-01 2006-03-29
+#> 19245  WYANGALB     NSW1     GENERATOR  NON-SCHEDULED 2012-12-07 2012-12-24
+#> 19246  WYANGALB     NSW1     GENERATOR  NON-SCHEDULED 2012-12-24 2013-04-01
+#> 19247  WYANGALB     NSW1     GENERATOR  NON-SCHEDULED 2013-04-01 2013-07-01
+#> 19248  WYANGALB     NSW1     GENERATOR  NON-SCHEDULED 2014-07-25 2014-08-26
+#> 19249  WYANGALB     NSW1     GENERATOR  NON-SCHEDULED 2014-08-26 2015-01-01
+#> 19250      BAPS     VIC1     GENERATOR  NON-SCHEDULED 2024-07-01 2025-07-01
+#> 19251    EILDON     VIC1     GENERATOR      SCHEDULED 2007-09-01 2007-12-01
+#> 19252    EILDON     VIC1     GENERATOR      SCHEDULED 2010-01-15 2010-03-19
+#> 19253    EILDON     VIC1     GENERATOR      SCHEDULED 2010-07-01 2010-10-27
+#> 19254    CLOVER     VIC1     GENERATOR      SCHEDULED 1999-07-01 1999-10-14
+#> 19255    EILDON     VIC1     GENERATOR      SCHEDULED 2010-10-27 2011-01-18
+#> 19256     MCKAY     VIC1     GENERATOR      SCHEDULED 2004-07-01 2004-12-15
+#> 19257      WPWF      SA1     GENERATOR  NON-SCHEDULED 2007-07-17 2007-09-01
+#> 19258      WPWF      SA1     GENERATOR  NON-SCHEDULED 2009-01-22 2009-07-01
+#> 19259      WPWF      SA1     GENERATOR  NON-SCHEDULED 2009-07-01 2010-01-15
+#> 19260   RUBICON     VIC1     GENERATOR  NON-SCHEDULED 2025-07-01 2026-07-01
+#> 19261   KINCUMB     NSW1     GENERATOR  NON-SCHEDULED 2019-07-01 2020-07-01
+#> 19262   KINCUMB     NSW1     GENERATOR  NON-SCHEDULED 2020-07-01 2021-07-01
+#> 19263   KINCUMB     NSW1     GENERATOR  NON-SCHEDULED 2021-07-01 2021-12-31
+#> 19264      WPWF      SA1     GENERATOR  NON-SCHEDULED 2013-12-15 2014-07-01
+#> 19265    WKIEWA     VIC1     GENERATOR      SCHEDULED 2017-07-01 2018-07-01
+#> 19266      WPWF      SA1     GENERATOR  NON-SCHEDULED 2013-07-01 2013-12-15
+#> 19267   AGLNOW1     NSW1     GENERATOR  NON-SCHEDULED 2016-01-15 2016-07-01
+#> 19268    WKIEWA     VIC1     GENERATOR      SCHEDULED 2007-01-16 2007-07-01
+#> 19269   RUBICON     VIC1     GENERATOR  NON-SCHEDULED 2013-07-01 2014-07-01
+#> 19270    WKIEWA     VIC1     GENERATOR      SCHEDULED 2020-07-01 2021-07-01
+#> 19271      WPWF      SA1     GENERATOR  NON-SCHEDULED 2007-07-02 2007-07-17
+#> 19272      BAPS     VIC1     GENERATOR  NON-SCHEDULED 2012-12-24 2013-04-01
+#> 19273      WPWF      SA1     GENERATOR  NON-SCHEDULED 2007-12-01 2007-12-19
+#> 19274      WPWF      SA1     GENERATOR  NON-SCHEDULED 2010-01-15 2010-02-09
+#> 19275    WKIEWA     VIC1     GENERATOR      SCHEDULED 2024-06-03 2024-07-01
+#> 19276    WKIEWA     VIC1     GENERATOR      SCHEDULED 2024-07-01 2025-07-01
+#> 19277    WKIEWA     VIC1     GENERATOR      SCHEDULED 1998-10-25 1999-07-01
+#> 19278    WKIEWA     VIC1     GENERATOR      SCHEDULED 1999-07-01 1999-10-14
+#> 19279    WKIEWA     VIC1     GENERATOR      SCHEDULED 1999-10-14 2000-07-01
+#> 19280     DARTM     VIC1     GENERATOR      SCHEDULED 2007-07-02 2007-09-01
+#> 19281     DARTM     VIC1     GENERATOR      SCHEDULED 2007-09-01 2007-12-01
+#> 19282  GLBWNHYD     NSW1     GENERATOR  NON-SCHEDULED 2016-11-19 2017-07-01
+#> 19283  GLBWNHYD     NSW1     GENERATOR  NON-SCHEDULED 2021-12-31 2022-03-10
+#> 19284  GLBWNHYD     NSW1     GENERATOR  NON-SCHEDULED 2022-03-10 2022-06-10
+#> 19285   RUBICON     VIC1     GENERATOR  NON-SCHEDULED 2023-10-10 2024-07-01
+#> 19286    WKIEWA     VIC1     GENERATOR      SCHEDULED 2023-10-10 2024-06-03
+#> 19287  GLBWNHYD     NSW1     GENERATOR  NON-SCHEDULED 2025-07-01 2026-07-01
+#> 19288    AGLHAL      SA1     GENERATOR      SCHEDULED 2006-03-29 2006-07-01
+#> 19289   AGLSITA     NSW1     GENERATOR  NON-SCHEDULED 2018-07-01 2019-07-01
+#> 19290  COPTNHYD     NSW1     GENERATOR  NON-SCHEDULED 2015-07-01 2015-10-30
+#> 19291  COPTNHYD     NSW1     GENERATOR  NON-SCHEDULED 2016-07-01 2016-11-19
+#> 19292    WKIEWA     VIC1     GENERATOR      SCHEDULED 2000-07-20 2000-12-19
+#> 19293    CLOVER     VIC1     GENERATOR      SCHEDULED 1998-10-25 1999-07-01
+#> 19294     DARTM     VIC1     GENERATOR      SCHEDULED 2021-12-31 2022-03-10
+#> 19295    WKIEWA     VIC1     GENERATOR      SCHEDULED 2001-07-01 2001-09-13
+#> 19296    WKIEWA     VIC1     GENERATOR      SCHEDULED 2001-09-13 2001-10-09
+#> 19297    WKIEWA     VIC1     GENERATOR      SCHEDULED 2001-10-09 2002-04-01
+#> 19298    WKIEWA     VIC1     GENERATOR      SCHEDULED 2002-07-01 2002-07-09
+#> 19299    WKIEWA     VIC1     GENERATOR      SCHEDULED 2002-07-09 2003-07-01
+#> 19300      BAPS     VIC1     GENERATOR  NON-SCHEDULED 2006-03-01 2006-03-29
+#> 19301     MCKAY     VIC1     GENERATOR      SCHEDULED 2026-07-01 2999-12-31
+#> 19302   AGLNOW1     NSW1     GENERATOR  NON-SCHEDULED 2012-12-07 2012-12-24
+#> 19303   AGLNOW1     NSW1     GENERATOR  NON-SCHEDULED 2012-12-24 2013-04-01
+#> 19304   AGLNOW1     NSW1     GENERATOR  NON-SCHEDULED 2013-04-01 2013-07-01
+#> 19305    AGLSOM     VIC1     GENERATOR      SCHEDULED 2006-03-01 2006-03-29
+#> 19306    WKIEWA     VIC1     GENERATOR      SCHEDULED 2014-07-01 2014-07-25
+#> 19307    WKIEWA     VIC1     GENERATOR      SCHEDULED 2006-08-04 2006-08-25
+#> 19308   PINDARI     NSW1     GENERATOR  NON-SCHEDULED 2007-07-01 2007-07-02
+#> 19309    WKIEWA     VIC1     GENERATOR      SCHEDULED 2007-07-01 2007-07-02
+#> 19310    WKIEWA     VIC1     GENERATOR      SCHEDULED 2008-07-01 2009-07-01
+#> 19311   AGLSITA     NSW1     GENERATOR  NON-SCHEDULED 2016-11-19 2017-07-01
+#> 19312    WKIEWA     VIC1     GENERATOR      SCHEDULED 2009-07-01 2010-01-15
+#> 19313   PINDARI     NSW1     GENERATOR  NON-SCHEDULED 2010-07-01 2011-04-14
+#> 19314    WKIEWA     VIC1     GENERATOR      SCHEDULED 2010-04-30 2010-07-01
+#> 19315    WKIEWA     VIC1     GENERATOR      SCHEDULED 2011-07-01 2012-07-01
+#> 19316    WKIEWA     VIC1     GENERATOR      SCHEDULED 2012-07-01 2012-12-07
+#> 19317      WPWF      SA1     GENERATOR  NON-SCHEDULED 2012-12-07 2012-12-24
+#> 19318   RUBICON     VIC1     GENERATOR  NON-SCHEDULED 2023-07-01 2023-10-10
+#> 19319   RUBICON     VIC1     GENERATOR  NON-SCHEDULED 2024-07-01 2025-07-01
+#> 19320    AGLSOM     VIC1     GENERATOR      SCHEDULED 2018-07-01 2019-07-01
+#> 19321     MCKAY     VIC1     GENERATOR      SCHEDULED 2006-03-01 2006-03-29
+#> 19322    AGLSOM     VIC1     GENERATOR      SCHEDULED 2020-07-01 2021-07-01
+#> 19323    AGLSOM     VIC1     GENERATOR      SCHEDULED 2021-07-01 2021-12-31
+#> 19324     MCKAY     VIC1     GENERATOR      SCHEDULED 2004-06-15 2004-07-01
+#> 19325    AGLSOM     VIC1     GENERATOR      SCHEDULED 2015-01-01 2015-07-01
+#> 19326    AGLSOM     VIC1     GENERATOR      SCHEDULED 2015-10-30 2016-01-15
+#> 19327     MCKAY     VIC1     GENERATOR      SCHEDULED 2004-07-01 2004-12-15
+#> 19328     MCKAY     VIC1     GENERATOR      SCHEDULED 2004-12-15 2005-07-01
+#> 19329     MCKAY     VIC1     GENERATOR      SCHEDULED 2005-07-01 2006-02-01
+#> 19330     MCKAY     VIC1     GENERATOR      SCHEDULED 2006-02-13 2006-02-22
+#> 19331    EILDON     VIC1     GENERATOR      SCHEDULED 2007-01-16 2007-07-01
+#> 19332    YABULU     QLD1     GENERATOR      SCHEDULED 2022-07-01 2023-07-01
+#> 19333    EILDON     VIC1     GENERATOR      SCHEDULED 2008-07-01 2009-07-01
+#> 19334     MCKAY     VIC1     GENERATOR      SCHEDULED 2007-07-01 2007-07-02
+#> 19335     MCKAY     VIC1     GENERATOR      SCHEDULED 2008-07-01 2009-07-01
+#> 19336     MCKAY     VIC1     GENERATOR      SCHEDULED 2009-07-01 2009-09-22
+#> 19337    EILDON     VIC1     GENERATOR      SCHEDULED 2011-01-18 2011-04-14
+#> 19338    EILDON     VIC1     GENERATOR      SCHEDULED 2011-04-14 2011-07-01
+#> 19339    EILDON     VIC1     GENERATOR      SCHEDULED 2011-07-01 2012-07-01
+#> 19340  COPTNHYD     NSW1     GENERATOR  NON-SCHEDULED 2023-07-01 2023-10-10
+#> 19341   KINCUMB     NSW1     GENERATOR  NON-SCHEDULED 2018-07-01 2019-07-01
+#> 19342      BAPS     VIC1     GENERATOR  NON-SCHEDULED 2007-07-02 2007-09-01
+#> 19343      BAPS     VIC1     GENERATOR  NON-SCHEDULED 2007-09-01 2007-12-01
+#> 19344      WPWF      SA1     GENERATOR  NON-SCHEDULED 2011-07-01 2012-07-01
+#> 19345    EILDON     VIC1     GENERATOR      SCHEDULED 2018-07-01 2019-07-01
+#> 19346      BAPS     VIC1     GENERATOR  NON-SCHEDULED 2007-12-01 2008-07-01
+#> 19347    WKIEWA     VIC1     GENERATOR      SCHEDULED 2015-07-01 2015-10-30
+#> 19348    WKIEWA     VIC1     GENERATOR      SCHEDULED 2016-07-01 2016-07-26
+#> 19349    WKIEWA     VIC1     GENERATOR      SCHEDULED 2007-07-02 2007-09-01
+#> 19350   AGLNOW1     NSW1     GENERATOR  NON-SCHEDULED 2021-07-01 2021-12-31
+#> 19351    WKIEWA     VIC1     GENERATOR      SCHEDULED 2019-07-01 2020-07-01
+#> 19352      BAPS     VIC1     GENERATOR  NON-SCHEDULED 2012-12-07 2012-12-24
+#> 19353    WKIEWA     VIC1     GENERATOR      SCHEDULED 2010-07-01 2010-10-27
+#> 19354    WKIEWA     VIC1     GENERATOR      SCHEDULED 2011-01-18 2011-04-14
+#> 19355  YWNGAHYD     VIC1     GENERATOR  NON-SCHEDULED 2017-07-01 2018-07-01
+#> 19356      BAPS     VIC1     GENERATOR  NON-SCHEDULED 2010-11-09 2011-04-14
+#> 19357      BAPS     VIC1     GENERATOR  NON-SCHEDULED 2011-04-14 2011-07-01
+#> 19358    WKIEWA     VIC1     GENERATOR      SCHEDULED 2006-03-01 2006-03-29
+#> 19359    WKIEWA     VIC1     GENERATOR      SCHEDULED 2006-03-29 2006-07-01
+#> 19360  EDLRGNRD     QLD1     GENERATOR  NON-SCHEDULED 2012-12-07 2012-12-24
+#> 19361    WOYWOY     NSW1     GENERATOR  NON-SCHEDULED 2015-07-01 2015-10-30
+#> 19362    WOYWOY     NSW1     GENERATOR  NON-SCHEDULED 2016-07-01 2016-11-19
+#> 19363     OAKEY     QLD1     GENERATOR      SCHEDULED 2012-12-24 2013-04-01
+#> 19364     OAKEY     QLD1     GENERATOR      SCHEDULED 2013-04-01 2013-07-01
+#> 19365     OAKEY     QLD1     GENERATOR      SCHEDULED 2014-07-25 2014-08-26
+#> 19366     MCKAY     VIC1     GENERATOR      SCHEDULED 2000-12-19 2001-07-01
+#> 19367     MCKAY     VIC1     GENERATOR      SCHEDULED 2001-07-01 2001-09-13
+#> 19368     MCKAY     VIC1     GENERATOR      SCHEDULED 2001-09-13 2001-10-09
+#> 19369     MCKAY     VIC1     GENERATOR      SCHEDULED 2001-10-09 2002-04-01
+#> 19370     MCKAY     VIC1     GENERATOR      SCHEDULED 2002-07-01 2002-07-09
+#> 19371    WKIEWA     VIC1     GENERATOR      SCHEDULED 2013-04-01 2013-07-01
+#> 19372    EILDON     VIC1     GENERATOR      SCHEDULED 2007-07-02 2007-09-01
+#> 19373    EILDON     VIC1     GENERATOR      SCHEDULED 2026-07-01 2999-12-31
+#> 19374      WPWF      SA1     GENERATOR  NON-SCHEDULED 2006-07-01 2006-08-04
+#> 19375      WPWF      SA1     GENERATOR  NON-SCHEDULED 2007-01-16 2007-07-01
+#> 19376     MCKAY     VIC1     GENERATOR      SCHEDULED 2004-06-15 2004-07-01
+#> 19377    EILDON     VIC1     GENERATOR      SCHEDULED 2010-03-19 2010-04-30
+#> 19378  COPTNHYD     NSW1     GENERATOR  NON-SCHEDULED 2021-07-01 2021-12-31
+#> 19379  COPTNHYD     NSW1     GENERATOR  NON-SCHEDULED 2022-07-01 2023-07-01
+#> 19380   KINCUMB     NSW1     GENERATOR  NON-SCHEDULED 2016-11-19 2017-07-01
+#> 19381  COPTNHYD     NSW1     GENERATOR  NON-SCHEDULED 2024-07-01 2025-07-01
+#> 19382     MCKAY     VIC1     GENERATOR      SCHEDULED 2006-08-25 2007-01-16
+#> 19383  WYANGALA     NSW1     GENERATOR  NON-SCHEDULED 2011-04-14 2011-07-01
+#> 19384  WYANGALA     NSW1     GENERATOR  NON-SCHEDULED 2011-07-01 2012-07-01
+#> 19385      WPWF      SA1     GENERATOR  NON-SCHEDULED 2012-07-01 2012-12-07
+#> 19386    CLOVER     VIC1     GENERATOR  NON-SCHEDULED 2015-10-30 2016-01-15
+#> 19387      BAPS     VIC1     GENERATOR  NON-SCHEDULED 2010-01-15 2010-03-19
+#> 19388      BAPS     VIC1     GENERATOR  NON-SCHEDULED 2010-03-19 2010-04-30
+#> 19389    WKIEWA     VIC1     GENERATOR      SCHEDULED 2016-07-26 2016-11-19
+#> 19390   RUBICON     VIC1     GENERATOR  NON-SCHEDULED 2013-04-01 2013-07-01
+#> 19391     MCKAY     VIC1     GENERATOR      SCHEDULED 2012-12-24 2013-04-01
+#> 19392  GLBWNHYD     NSW1     GENERATOR  NON-SCHEDULED 2021-07-01 2021-12-31
+#> 19393    WKIEWA     VIC1     GENERATOR      SCHEDULED 2007-12-01 2008-07-01
+#> 19394      BAPS     VIC1     GENERATOR  NON-SCHEDULED 2013-04-01 2013-07-01
+#> 19395    WKIEWA     VIC1     GENERATOR      SCHEDULED 2011-04-14 2011-07-01
+#> 19396  YWNGAHYD     VIC1     GENERATOR  NON-SCHEDULED 2018-07-01 2019-07-01
+#> 19397  YWNGAHYD     VIC1     GENERATOR  NON-SCHEDULED 2019-07-01 2020-07-01
+#> 19398  YWNGAHYD     VIC1     GENERATOR  NON-SCHEDULED 2020-07-01 2021-07-01
+#> 19399  YWNGAHYD     VIC1     GENERATOR  NON-SCHEDULED 2021-07-01 2021-12-31
+#> 19400  YWNGAHYD     VIC1     GENERATOR  NON-SCHEDULED 2022-07-01 2023-07-01
+#> 19401    WKIEWA     VIC1     GENERATOR      SCHEDULED 2000-07-01 2000-07-20
+#> 19402    WKIEWA     VIC1     GENERATOR      SCHEDULED 2000-07-20 2000-12-19
+#> 19403   RUBICON     VIC1     GENERATOR  NON-SCHEDULED 2022-03-10 2022-06-10
+#> 19404   RUBICON     VIC1     GENERATOR  NON-SCHEDULED 2022-06-10 2022-06-28
+#> 19405   RUBICON     VIC1     GENERATOR  NON-SCHEDULED 2022-06-28 2022-07-01
+#> 19406    YABULU     QLD1     GENERATOR      SCHEDULED 2015-10-30 2016-01-15
+#> 19407      ICSM     QLD1     GENERATOR  NON-SCHEDULED 2013-07-01 2014-07-01
+#> 19408    WKIEWA     VIC1     GENERATOR      SCHEDULED 2002-07-01 2002-07-09
+#> 19409  COPTNHYD     NSW1     GENERATOR  NON-SCHEDULED 2012-12-24 2013-04-01
+#> 19410     OAKEY     QLD1     GENERATOR      SCHEDULED 2007-09-01 2007-12-01
+#> 19411   AGLSITA     NSW1     GENERATOR  NON-SCHEDULED 2019-07-01 2020-07-01
+#> 19412    WKIEWA     VIC1     GENERATOR      SCHEDULED 1999-10-14 2000-07-01
+#> 19413    WKIEWA     VIC1     GENERATOR      SCHEDULED 2000-07-01 2000-07-20
+#> 19414     DARTM     VIC1     GENERATOR      SCHEDULED 2016-11-19 2017-07-01
+#> 19415    CLOVER     VIC1     GENERATOR  NON-SCHEDULED 2025-09-16 2026-07-01
+#> 19416  COPTNHYD     NSW1     GENERATOR  NON-SCHEDULED 2019-07-01 2020-07-01
+#> 19417  COPTNHYD     NSW1     GENERATOR  NON-SCHEDULED 2020-07-01 2021-07-01
+#> 19418   AGLNOW1     NSW1     GENERATOR  NON-SCHEDULED 2008-07-01 2009-07-01
+#> 19419   KINCUMB     NSW1     GENERATOR  NON-SCHEDULED 2016-01-15 2016-07-01
+#> 19420   AGLNOW1     NSW1     GENERATOR  NON-SCHEDULED 2007-07-02 2007-09-01
+#> 19421    WKIEWA     VIC1     GENERATOR      SCHEDULED 2022-03-10 2022-06-10
+#> 19422      WPWF      SA1     GENERATOR  NON-SCHEDULED 2010-02-09 2010-03-19
+#> 19423      WPWF      SA1     GENERATOR  NON-SCHEDULED 2010-07-01 2011-04-14
+#> 19424      WPWF      SA1     GENERATOR  NON-SCHEDULED 2011-04-14 2011-07-01
+#> 19425   RUBICON     VIC1     GENERATOR  NON-SCHEDULED 1998-10-25 2001-10-09
+#> 19426    WKIEWA     VIC1     GENERATOR      SCHEDULED 2002-04-01 2002-07-01
+#> 19427  GLBWNHYD     NSW1     GENERATOR  NON-SCHEDULED 2016-07-01 2016-11-19
+#> 19428  GLBWNHYD     NSW1     GENERATOR  NON-SCHEDULED 2017-07-01 2018-07-01
+#> 19429   PINDARI     NSW1     GENERATOR  NON-SCHEDULED 2007-01-16 2007-07-01
+#> 19430    WKIEWA     VIC1     GENERATOR      SCHEDULED 2017-01-13 2017-07-01
+#> 19431   PINDARI     NSW1     GENERATOR  NON-SCHEDULED 2008-07-01 2009-07-01
+#> 19432    WKIEWA     VIC1     GENERATOR      SCHEDULED 2006-08-25 2007-01-16
+#> 19433   AGLNOW1     NSW1     GENERATOR  NON-SCHEDULED 2021-12-31 2022-03-10
+#> 19434  BDONGHYD     NSW1     GENERATOR  NON-SCHEDULED 2012-12-07 2012-12-24
+#> 19435      BAPS     VIC1     GENERATOR  NON-SCHEDULED 2014-07-25 2014-08-26
+#> 19436  BDONGHYD     NSW1     GENERATOR  NON-SCHEDULED 2015-07-01 2015-10-30
+#> 19437  BDONGHYD     NSW1     GENERATOR  NON-SCHEDULED 2016-07-01 2016-11-19
+#> 19438    WKIEWA     VIC1     GENERATOR      SCHEDULED 2013-07-01 2014-07-01
+#> 19439  EDLRGNRD     QLD1     GENERATOR  NON-SCHEDULED 2010-05-17 2010-07-01
+#> 19440      ICSM     QLD1     GENERATOR  NON-SCHEDULED 2016-11-19 2017-07-01
+#> 19441      WPWF      SA1     GENERATOR  NON-SCHEDULED 2014-08-26 2015-01-01
+#> 19442    AGLSOM     VIC1     GENERATOR      SCHEDULED 2019-07-01 2020-07-01
+#> 19443    AGLSOM     VIC1     GENERATOR      SCHEDULED 2013-04-01 2013-07-01
+#> 19444      WPWF      SA1     GENERATOR  NON-SCHEDULED 2015-01-01 2015-07-01
+#> 19445    AGLSOM     VIC1     GENERATOR      SCHEDULED 2014-08-26 2015-01-01
+#> 19446    YABULU     QLD1     GENERATOR      SCHEDULED 2013-07-01 2014-07-01
+#> 19447    AGLSOM     VIC1     GENERATOR      SCHEDULED 2022-07-01 2023-07-01
+#> 19448     MCKAY     VIC1     GENERATOR      SCHEDULED 2006-08-25 2007-01-16
+#> 19449     MCKAY     VIC1     GENERATOR      SCHEDULED 2007-07-02 2007-09-01
+#> 19450     MCKAY     VIC1     GENERATOR      SCHEDULED 2007-09-01 2007-12-01
+#> 19451    EILDON     VIC1     GENERATOR      SCHEDULED 2006-02-22 2006-03-01
+#> 19452   AGLNOW1     NSW1     GENERATOR  NON-SCHEDULED 2006-07-01 2006-08-04
+#> 19453   AGLNOW1     NSW1     GENERATOR  NON-SCHEDULED 2007-01-16 2007-07-01
+#> 19454    WKIEWA     VIC1     GENERATOR      SCHEDULED 2025-07-01 2026-06-30
+#> 19455    WKIEWA     VIC1     GENERATOR      SCHEDULED 2025-07-01 2026-06-30
+#> 19456   PINDARI     NSW1     GENERATOR  NON-SCHEDULED 2010-04-30 2010-07-01
+#> 19457    EILDON     VIC1     GENERATOR      SCHEDULED 2000-07-20 2000-12-19
+#> 19458      WPWF      SA1     GENERATOR  NON-SCHEDULED 2007-07-01 2007-07-02
+#> 19459   AGLNOW1     NSW1     GENERATOR  NON-SCHEDULED 2006-08-25 2007-01-16
+#> 19460     OAKEY     QLD1     GENERATOR      SCHEDULED 2011-01-18 2011-04-14
+#> 19461    YABULU     QLD1     GENERATOR      SCHEDULED 2012-12-07 2012-12-24
+#> 19462     DARTM     VIC1     GENERATOR      SCHEDULED 2004-06-15 2004-07-01
+#> 19463  GLBWNHYD     NSW1     GENERATOR  NON-SCHEDULED 2012-12-24 2013-04-01
+#> 19464  GLBWNHYD     NSW1     GENERATOR  NON-SCHEDULED 2013-07-01 2014-07-01
+#> 19465  MORANBAH     QLD1     GENERATOR  NON-SCHEDULED 2010-04-30 2010-07-01
+#> 19466    WOYWOY     NSW1     GENERATOR  NON-SCHEDULED 2014-08-26 2015-01-01
+#> 19467    WKIEWA     VIC1     GENERATOR      SCHEDULED 2006-02-01 2006-02-22
+#> 19468    WKIEWA     VIC1     GENERATOR      SCHEDULED 2006-03-01 2006-03-29
+#> 19469  GLBWNHYD     NSW1     GENERATOR  NON-SCHEDULED 2018-07-01 2019-07-01
+#> 19470   PINDARI     NSW1     GENERATOR  NON-SCHEDULED 2026-07-01 2999-12-31
+#> 19471  GLBWNHYD     NSW1     GENERATOR  NON-SCHEDULED 2020-07-01 2021-07-01
+#> 19472   AGLNOW1     NSW1     GENERATOR  NON-SCHEDULED 2015-10-30 2016-01-15
+#> 19473    WKIEWA     VIC1     GENERATOR      SCHEDULED 2007-09-01 2007-12-01
+#> 19474  MORANBAH     QLD1     GENERATOR  NON-SCHEDULED 2015-10-30 2016-01-15
+#> 19475  BDONGHYD     NSW1     GENERATOR  NON-SCHEDULED 2013-07-01 2014-07-01
+#> 19476    WKIEWA     VIC1     GENERATOR      SCHEDULED 2010-10-27 2011-01-18
+#> 19477    WKIEWA     VIC1     GENERATOR      SCHEDULED 2002-04-01 2002-07-01
+#> 19478    WKIEWA     VIC1     GENERATOR      SCHEDULED 2006-02-01 2006-02-22
+#> 19479    YABULU     QLD1     GENERATOR      SCHEDULED 2017-07-01 2018-07-01
+#> 19480      BAPS     VIC1     GENERATOR  NON-SCHEDULED 2011-07-01 2012-07-01
+#> 19481    WOYWOY     NSW1     GENERATOR  NON-SCHEDULED 2014-07-25 2014-08-26
+#> 19482      BAPS     VIC1     GENERATOR  NON-SCHEDULED 2013-07-01 2014-07-01
+#> 19483      BAPS     VIC1     GENERATOR  NON-SCHEDULED 2014-07-01 2014-07-25
+#> 19484  WYANGALA     NSW1     GENERATOR  NON-SCHEDULED 2012-12-24 2013-04-01
+#> 19485      BAPS     VIC1     GENERATOR  NON-SCHEDULED 2016-07-01 2016-11-19
+#> 19486      BAPS     VIC1     GENERATOR  NON-SCHEDULED 2017-07-01 2018-07-01
+#> 19487      BAPS     VIC1     GENERATOR  NON-SCHEDULED 2018-07-01 2019-07-01
+#> 19488      BAPS     VIC1     GENERATOR  NON-SCHEDULED 2019-07-01 2020-07-01
+#> 19489      BAPS     VIC1     GENERATOR  NON-SCHEDULED 2020-07-01 2021-07-01
+#> 19490      BAPS     VIC1     GENERATOR  NON-SCHEDULED 2021-07-01 2021-12-31
+#> 19491      BAPS     VIC1     GENERATOR  NON-SCHEDULED 2022-07-01 2023-07-01
+#> 19492      BAPS     VIC1     GENERATOR  NON-SCHEDULED 2023-07-01 2023-10-10
+#> 19493    WKIEWA     VIC1     GENERATOR      SCHEDULED 2012-12-24 2013-04-01
+#> 19494     OAKEY     QLD1     GENERATOR      SCHEDULED 2009-07-01 2010-01-15
+#> 19495   AGLNOW1     NSW1     GENERATOR  NON-SCHEDULED 2006-03-29 2006-07-01
+#> 19496  BDONGHYD     NSW1     GENERATOR  NON-SCHEDULED 2025-07-01 2026-07-01
+#> 19497    EILDON     VIC1     GENERATOR      SCHEDULED 2010-04-30 2010-07-01
+#> 19498   KINCUMB     NSW1     GENERATOR  NON-SCHEDULED 2015-10-30 2016-01-15
+#> 19499   AGLNOW1     NSW1     GENERATOR  NON-SCHEDULED 2007-07-01 2007-07-02
+#> 19500  SUNCOAST     QLD1     GENERATOR  NON-SCHEDULED 2013-07-01 2014-07-01
+#> 19501   AGLNOW1     NSW1     GENERATOR  NON-SCHEDULED 2007-09-01 2007-12-01
+#> 19502   AGLNOW1     NSW1     GENERATOR  NON-SCHEDULED 2007-12-01 2008-07-01
+#> 19503    WKIEWA     VIC1     GENERATOR      SCHEDULED 2022-06-10 2022-06-28
+#> 19504    WKIEWA     VIC1     GENERATOR      SCHEDULED 2022-06-28 2022-07-01
+#> 19505  GLBWNHYD     NSW1     GENERATOR  NON-SCHEDULED 2014-07-01 2014-07-25
+#> 19506    WKIEWA     VIC1     GENERATOR      SCHEDULED 2023-10-10 2024-06-03
+#> 19507      BAPS     VIC1     GENERATOR  NON-SCHEDULED 2026-07-01 2999-12-31
+#> 19508    WKIEWA     VIC1     GENERATOR      SCHEDULED 2013-07-01 2014-07-01
+#> 19509    WKIEWA     VIC1     GENERATOR      SCHEDULED 2006-03-29 2006-07-01
+#> 19510  GLBWNHYD     NSW1     GENERATOR  NON-SCHEDULED 2019-07-01 2020-07-01
+#> 19511      BAPS     VIC1     GENERATOR  NON-SCHEDULED 2010-04-30 2010-07-01
+#> 19512   RUBICON     VIC1     GENERATOR  NON-SCHEDULED 2007-12-01 2009-11-26
+#> 19513   AGLNOW1     NSW1     GENERATOR  NON-SCHEDULED 2016-11-19 2017-07-01
+#> 19514  SUNCOAST     QLD1     GENERATOR  NON-SCHEDULED 2010-04-30 2010-05-17
+#> 19515    WKIEWA     VIC1     GENERATOR      SCHEDULED 2010-01-15 2010-03-19
+#> 19516  BDONGHYD     NSW1     GENERATOR  NON-SCHEDULED 2014-07-01 2014-07-25
+#> 19517  COPTNHYD     NSW1     GENERATOR  NON-SCHEDULED 2026-07-01 2999-12-31
+#> 19518    WKIEWA     VIC1     GENERATOR      SCHEDULED 2012-12-24 2013-04-01
+#> 19519    WKIEWA     VIC1     GENERATOR      SCHEDULED 2013-04-01 2013-07-01
+#> 19520    WKIEWA     VIC1     GENERATOR      SCHEDULED 2014-07-25 2014-08-26
+#> 19521    WKIEWA     VIC1     GENERATOR      SCHEDULED 2014-08-26 2015-01-01
+#> 19522    YABULU     QLD1     GENERATOR      SCHEDULED 2012-12-24 2013-04-01
+#> 19523    YABULU     QLD1     GENERATOR      SCHEDULED 2013-04-01 2013-07-01
+#> 19524    YABULU     QLD1     GENERATOR      SCHEDULED 2014-07-25 2014-08-26
+#> 19525    YABULU     QLD1     GENERATOR      SCHEDULED 2014-08-26 2015-01-01
+#> 19526    YABULU     QLD1     GENERATOR      SCHEDULED 2015-01-01 2015-07-01
+#> 19527   PINDARI     NSW1     GENERATOR  NON-SCHEDULED 2023-07-01 2023-10-10
+#> 19528   PINDARI     NSW1     GENERATOR  NON-SCHEDULED 2024-07-01 2025-07-01
+#> 19529      ICSM     QLD1     GENERATOR  NON-SCHEDULED 2014-07-01 2014-07-25
+#> 19530    YABULU     QLD1     GENERATOR      SCHEDULED 2022-03-10 2022-06-10
+#> 19531    YABULU     QLD1     GENERATOR      SCHEDULED 2022-06-10 2022-06-28
+#> 19532     OAKEY     QLD1     GENERATOR      SCHEDULED 2007-12-06 2008-07-01
+#> 19533     OAKEY     QLD1     GENERATOR      SCHEDULED 2008-07-01 2009-07-01
+#> 19534  GLBWNHYD     NSW1     GENERATOR  NON-SCHEDULED 2024-07-01 2025-07-01
+#> 19535    EILDON     VIC1     GENERATOR      SCHEDULED 2007-07-01 2007-07-02
+#> 19536  COPTNHYD     NSW1     GENERATOR  NON-SCHEDULED 2018-07-01 2019-07-01
+#> 19537   KINCUMB     NSW1     GENERATOR  NON-SCHEDULED 2015-01-01 2015-07-01
+#> 19538   AGLNOW1     NSW1     GENERATOR  NON-SCHEDULED 2010-07-01 2011-04-14
+#> 19539     OAKEY     QLD1     GENERATOR      SCHEDULED 2010-07-01 2010-10-27
+#> 19540     DARTM     VIC1     GENERATOR      SCHEDULED 2024-07-01 2025-07-01
+#> 19541     MCKAY     VIC1     GENERATOR      SCHEDULED 2002-04-01 2002-07-01
+#> 19542     MCKAY     VIC1     GENERATOR      SCHEDULED 2006-02-01 2006-02-13
+#> 19543   AGLNOW1     NSW1     GENERATOR  NON-SCHEDULED 2010-01-15 2010-03-19
+#> 19544   AGLNOW1     NSW1     GENERATOR  NON-SCHEDULED 2010-03-19 2010-04-30
+#> 19545  MORANBAH     QLD1     GENERATOR  NON-SCHEDULED 2010-03-19 2010-04-30
+#> 19546    WKIEWA     VIC1     GENERATOR      SCHEDULED 2011-01-18 2011-04-14
+#> 19547    EILDON     VIC1     GENERATOR      SCHEDULED 2014-07-25 2014-08-26
+#> 19548    EILDON     VIC1     GENERATOR      SCHEDULED 2014-08-26 2015-01-01
+#> 19549   AGLNOW1     NSW1     GENERATOR  NON-SCHEDULED 2014-07-25 2014-08-26
+#> 19550     MCKAY     VIC1     GENERATOR      SCHEDULED 2009-07-01 2009-09-22
+#> 19551   AGLNOW1     NSW1     GENERATOR  NON-SCHEDULED 2015-01-01 2015-07-01
+#> 19552     MCKAY     VIC1     GENERATOR      SCHEDULED 2010-04-30 2010-07-01
+#> 19553    CLOVER     VIC1     GENERATOR  NON-SCHEDULED 2026-07-01 2999-12-31
+#> 19554  MORANBAH     QLD1     GENERATOR  NON-SCHEDULED 2014-08-26 2015-01-01
+#> 19555   AGLSITA     NSW1     GENERATOR  NON-SCHEDULED 2021-12-31 2022-03-10
+#> 19556    WKIEWA     VIC1     GENERATOR      SCHEDULED 2010-03-19 2010-04-30
+#> 19557     DARTM     VIC1     GENERATOR      SCHEDULED 2014-07-01 2014-07-25
+#> 19558     DARTM     VIC1     GENERATOR      SCHEDULED 2015-07-01 2015-10-30
+#> 19559    AGLSOM     VIC1     GENERATOR      SCHEDULED 2010-01-15 2010-03-19
+#> 19560    AGLSOM     VIC1     GENERATOR      SCHEDULED 2010-03-19 2010-04-30
+#> 19561    AGLSOM     VIC1     GENERATOR      SCHEDULED 2010-04-30 2010-07-01
+#> 19562      ICSM     QLD1     GENERATOR  NON-SCHEDULED 2021-12-31 2022-03-10
+#> 19563  WYANGALB     NSW1     GENERATOR  NON-SCHEDULED 2011-05-27 2011-07-01
+#> 19564      ICSM     QLD1     GENERATOR  NON-SCHEDULED 2022-06-10 2022-06-28
+#> 19565    WKIEWA     VIC1     GENERATOR      SCHEDULED 2017-01-13 2017-07-01
+#> 19566  EDLRGNRD     QLD1     GENERATOR  NON-SCHEDULED 2011-04-14 2011-07-01
+#> 19567  EDLRGNRD     QLD1     GENERATOR  NON-SCHEDULED 2011-07-01 2012-04-01
+#> 19568    YABULU     QLD1     GENERATOR      SCHEDULED 2014-07-01 2014-07-25
+#> 19569    YABULU     QLD1     GENERATOR      SCHEDULED 2018-07-01 2019-07-01
+#> 19570  YWNGAHYD     VIC1     GENERATOR  NON-SCHEDULED 2022-06-10 2022-06-28
+#> 19571     DARTM     VIC1     GENERATOR      SCHEDULED 2024-06-03 2024-07-01
+#> 19572    AGLSOM     VIC1     GENERATOR      SCHEDULED 2024-07-01 2025-07-01
+#> 19573  GLBWNHYD     NSW1     GENERATOR  NON-SCHEDULED 2022-07-01 2023-07-01
+#> 19574    EILDON     VIC1     GENERATOR      SCHEDULED 2006-08-25 2007-01-16
+#> 19575    WKIEWA     VIC1     GENERATOR      SCHEDULED 1999-07-01 1999-10-14
+#> 19576  COPTNHYD     NSW1     GENERATOR  NON-SCHEDULED 2017-07-01 2018-07-01
+#> 19577   AGLNOW1     NSW1     GENERATOR  NON-SCHEDULED 2009-07-01 2010-01-15
+#> 19578    WKIEWA     VIC1     GENERATOR      SCHEDULED 2000-12-19 2001-07-01
+#> 19579  SUNCOAST     QLD1     GENERATOR  NON-SCHEDULED 2011-07-01 2012-07-01
+#> 19580    WKIEWA     VIC1     GENERATOR      SCHEDULED 2004-06-15 2004-07-01
+#> 19581    YABULU     QLD1     GENERATOR      SCHEDULED 2007-12-01 2008-07-01
+#> 19582    YABULU     QLD1     GENERATOR      SCHEDULED 2010-01-15 2010-03-19
+#> 19583     MCKAY     VIC1     GENERATOR      SCHEDULED 2006-03-01 2006-03-29
+#> 19584    EILDON     VIC1     GENERATOR      SCHEDULED 2012-12-24 2013-04-01
+#> 19585   AGLNOW1     NSW1     GENERATOR  NON-SCHEDULED 2010-04-30 2010-07-01
+#> 19586     MCKAY     VIC1     GENERATOR      SCHEDULED 2005-07-01 2006-02-01
+#> 19587    CLOVER     VIC1     GENERATOR  NON-SCHEDULED 2015-01-01 2015-07-01
+#> 19588    WOYWOY     NSW1     GENERATOR  NON-SCHEDULED 2015-01-01 2015-07-01
+#> 19589    EILDON     VIC1     GENERATOR      SCHEDULED 2015-01-01 2015-07-01
+#> 19590    AGLSOM     VIC1     GENERATOR      SCHEDULED 2006-07-01 2006-07-27
+#> 19591  MORANBAH     QLD1     GENERATOR  NON-SCHEDULED 2012-12-24 2013-04-01
+#> 19592     MCKAY     VIC1     GENERATOR      SCHEDULED 2008-07-01 2009-07-01
+#> 19593     MCKAY     VIC1     GENERATOR      SCHEDULED 2010-10-27 2011-01-18
+#> 19594     MCKAY     VIC1     GENERATOR      SCHEDULED 2012-12-07 2012-12-24
+#> 19595   RUBICON     VIC1     GENERATOR  NON-SCHEDULED 2010-04-30 2010-07-01
+#> 19596   AGLSITA     NSW1     GENERATOR  NON-SCHEDULED 2022-03-10 2022-06-10
+#> 19597      BAPS     VIC1     GENERATOR  NON-SCHEDULED 2014-08-26 2015-01-01
+#> 19598      BAPS     VIC1     GENERATOR  NON-SCHEDULED 2015-01-01 2015-07-01
+#> 19599    YABULU     QLD1     GENERATOR      SCHEDULED 2010-01-15 2010-03-19
+#> 19600    YABULU     QLD1     GENERATOR      SCHEDULED 2010-03-19 2010-04-30
+#> 19601    YABULU     QLD1     GENERATOR      SCHEDULED 2010-04-30 2010-07-01
+#> 19602      BAPS     VIC1     GENERATOR  NON-SCHEDULED 2012-07-01 2012-12-07
+#> 19603    YABULU     QLD1     GENERATOR      SCHEDULED 2019-07-01 2020-07-01
+#> 19604     OAKEY     QLD1     GENERATOR      SCHEDULED 2010-03-19 2010-04-30
+#> 19605     MCKAY     VIC1     GENERATOR      SCHEDULED 2024-07-01 2025-07-01
+#> 19606    WKIEWA     VIC1     GENERATOR      SCHEDULED 2007-07-02 2007-09-01
+#> 19607    WKIEWA     VIC1     GENERATOR      SCHEDULED 2007-09-01 2007-12-01
+#> 19608    WOYWOY     NSW1     GENERATOR  NON-SCHEDULED 2017-07-01 2018-07-01
+#> 19609    WOYWOY     NSW1     GENERATOR  NON-SCHEDULED 2018-07-01 2019-07-01
+#> 19610    WOYWOY     NSW1     GENERATOR  NON-SCHEDULED 2019-07-01 2020-07-01
+#> 19611     OAKEY     QLD1     GENERATOR      SCHEDULED 2014-08-26 2015-01-01
+#> 19612    WOYWOY     NSW1     GENERATOR  NON-SCHEDULED 2021-07-01 2021-12-31
+#> 19613    WKIEWA     VIC1     GENERATOR      SCHEDULED 2012-12-07 2012-12-24
+#> 19614    WKIEWA     VIC1     GENERATOR      SCHEDULED 1998-10-25 1999-07-01
+#> 19615    EILDON     VIC1     GENERATOR      SCHEDULED 2004-12-15 2005-07-01
+#> 19616  GLBWNHYD     NSW1     GENERATOR  NON-SCHEDULED 2023-07-01 2023-10-10
+#> 19617  SUNCOAST     QLD1     GENERATOR  NON-SCHEDULED 2014-07-01 2014-07-25
+#> 19618    WKIEWA     VIC1     GENERATOR      SCHEDULED 2004-12-15 2005-07-01
+#> 19619    AGLHAL      SA1     GENERATOR      SCHEDULED 2006-08-25 2007-01-16
+#> 19620    EILDON     VIC1     GENERATOR      SCHEDULED 2016-01-15 2016-07-01
+#> 19621  SUNCOAST     QLD1     GENERATOR  NON-SCHEDULED 2012-07-01 2012-12-07
+#> 19622   AGLNOW1     NSW1     GENERATOR  NON-SCHEDULED 2006-08-04 2006-08-25
+#> 19623    YABULU     QLD1     GENERATOR      SCHEDULED 2010-03-19 2010-04-30
+#> 19624     MCKAY     VIC1     GENERATOR      SCHEDULED 2006-03-29 2006-07-01
+#> 19625      BAPS     VIC1     GENERATOR  NON-SCHEDULED 2006-08-04 2006-08-25
+#> 19626     DARTM     VIC1     GENERATOR      SCHEDULED 2003-12-23 2004-06-15
+#> 19627      BAPS     VIC1     GENERATOR  NON-SCHEDULED 2006-08-25 2007-01-16
+#> 19628     OAKEY     QLD1     GENERATOR      SCHEDULED 2012-12-24 2013-04-01
+#> 19629     DARTM     VIC1     GENERATOR      SCHEDULED 2004-07-01 2004-12-15
+#> 19630  MORANBAH     QLD1     GENERATOR  NON-SCHEDULED 2012-12-07 2012-12-24
+#> 19631     MCKAY     VIC1     GENERATOR      SCHEDULED 2010-03-19 2010-04-30
+#> 19632    CLOVER     VIC1     GENERATOR  NON-SCHEDULED 2016-07-01 2016-11-19
+#> 19633    WKIEWA     VIC1     GENERATOR      SCHEDULED 2026-06-30 2026-07-01
+#> 19634    EILDON     VIC1     GENERATOR      SCHEDULED 2016-11-19 2017-07-01
+#> 19635    CLOVER     VIC1     GENERATOR  NON-SCHEDULED 2021-12-31 2022-03-10
+#> 19636  MORANBAH     QLD1     GENERATOR  NON-SCHEDULED 2016-01-15 2016-07-01
+#> 19637  BDONGHYD     NSW1     GENERATOR  NON-SCHEDULED 2026-07-01 2999-12-31
+#> 19638    AGLSOM     VIC1     GENERATOR      SCHEDULED 2006-03-29 2006-07-01
+#> 19639    AGLSOM     VIC1     GENERATOR      SCHEDULED 2006-08-04 2006-08-25
+#> 19640    AGLSOM     VIC1     GENERATOR      SCHEDULED 2006-08-25 2007-01-16
+#> 19641    AGLSOM     VIC1     GENERATOR      SCHEDULED 2007-07-02 2007-09-01
+#> 19642    YABULU     QLD1     GENERATOR      SCHEDULED 2010-10-27 2011-01-18
+#> 19643    WKIEWA     VIC1     GENERATOR      SCHEDULED 2015-01-01 2015-07-01
+#> 19644    WKIEWA     VIC1     GENERATOR      SCHEDULED 2015-10-30 2016-01-15
+#> 19645  GLBWNHYD     NSW1     GENERATOR  NON-SCHEDULED 2016-01-15 2016-07-01
+#> 19646    CLOVER     VIC1     GENERATOR  NON-SCHEDULED 2006-08-25 2007-07-02
+#> 19647    WKIEWA     VIC1     GENERATOR      SCHEDULED 2021-12-31 2022-03-10
+#> 19648  COPTNHYD     NSW1     GENERATOR  NON-SCHEDULED 2022-06-28 2022-07-01
+#> 19649  COPTNHYD     NSW1     GENERATOR  NON-SCHEDULED 2023-10-10 2024-07-01
+#> 19650    WKIEWA     VIC1     GENERATOR      SCHEDULED 2022-06-28 2022-07-01
+#> 19651    EILDON     VIC1     GENERATOR      SCHEDULED 2014-08-26 2015-01-01
+#> 19652    WKIEWA     VIC1     GENERATOR      SCHEDULED 2002-07-09 2003-07-01
+#> 19653    WKIEWA     VIC1     GENERATOR      SCHEDULED 2003-07-01 2003-12-23
+#> 19654   AGLNOW1     NSW1     GENERATOR  NON-SCHEDULED 2006-03-01 2006-03-29
+#> 19655    EILDON     VIC1     GENERATOR      SCHEDULED 2026-07-01 2999-12-31
+#> 19656     DARTM     VIC1     GENERATOR      SCHEDULED 2026-07-01 2999-12-31
+#> 19657    AGLHAL      SA1     GENERATOR      SCHEDULED 2006-03-01 2006-03-29
+#> 19658    WKIEWA     VIC1     GENERATOR      SCHEDULED 2004-07-01 2004-12-15
+#> 19659     MCKAY     VIC1     GENERATOR      SCHEDULED 2007-01-16 2007-07-01
+#> 19660    CLOVER     VIC1     GENERATOR  NON-SCHEDULED 2016-11-19 2017-07-01
+#> 19661     DARTM     VIC1     GENERATOR      SCHEDULED 2000-07-01 2000-07-20
+#> 19662      ICSM     QLD1     GENERATOR  NON-SCHEDULED 2017-07-01 2018-07-01
+#> 19663    AGLHAL      SA1     GENERATOR      SCHEDULED 2006-07-01 2006-08-04
+#> 19664    YABULU     QLD1     GENERATOR      SCHEDULED 2010-04-30 2010-07-01
+#> 19665     MCKAY     VIC1     GENERATOR      SCHEDULED 2006-08-04 2006-08-25
+#> 19666     OAKEY     QLD1     GENERATOR      SCHEDULED 2012-07-01 2012-12-07
+#> 19667    CLOVER     VIC1     GENERATOR  NON-SCHEDULED 2014-08-26 2015-01-01
+#> 19668    WKIEWA     VIC1     GENERATOR      SCHEDULED 2009-07-01 2010-01-15
+#> 19669     OAKEY     QLD1     GENERATOR      SCHEDULED 2013-04-01 2013-07-01
+#> 19670     MCKAY     VIC1     GENERATOR      SCHEDULED 2010-01-15 2010-03-19
+#> 19671     OAKEY     QLD1     GENERATOR      SCHEDULED 2014-08-26 2015-01-01
+#> 19672    AGLSOM     VIC1     GENERATOR      SCHEDULED 2012-12-24 2013-04-01
+#> 19673      WPWF      SA1     GENERATOR  NON-SCHEDULED 2014-07-25 2014-08-26
+#> 19674    CLOVER     VIC1     GENERATOR  NON-SCHEDULED 2017-07-01 2017-12-18
+#> 19675   RUBICON     VIC1     GENERATOR  NON-SCHEDULED 2010-01-15 2010-03-19
+#> 19676     DARTM     VIC1     GENERATOR      SCHEDULED 2011-04-28 2011-07-01
+#> 19677  MORANBAH     QLD1     GENERATOR  NON-SCHEDULED 2016-11-19 2017-07-01
+#> 19678    WKIEWA     VIC1     GENERATOR      SCHEDULED 2021-07-01 2021-12-01
+#> 19679  MORANBAH     QLD1     GENERATOR  NON-SCHEDULED 2022-03-10 2022-06-10
+#> 19680    WKIEWA     VIC1     GENERATOR      SCHEDULED 2012-12-07 2012-12-24
+#> 19681  COPTNHYD     NSW1     GENERATOR  NON-SCHEDULED 2014-07-25 2014-08-26
+#> 19682    WKIEWA     VIC1     GENERATOR      SCHEDULED 2014-07-01 2014-07-25
+#> 19683    AGLSOM     VIC1     GENERATOR      SCHEDULED 2010-10-27 2011-01-18
+#> 19684      ICSM     QLD1     GENERATOR  NON-SCHEDULED 2022-03-10 2022-06-10
+#> 19685     DARTM     VIC1     GENERATOR      SCHEDULED 1999-10-14 2000-07-01
+#> 19686     MCKAY     VIC1     GENERATOR      SCHEDULED 2007-12-01 2008-07-01
+#> 19687    EILDON     VIC1     GENERATOR      SCHEDULED 2002-07-01 2002-07-09
+#> 19688    EILDON     VIC1     GENERATOR      SCHEDULED 2002-07-09 2003-07-01
+#> 19689  EDLRGNRD     QLD1     GENERATOR  NON-SCHEDULED 2012-04-01 2012-07-01
+#> 19690    YABULU     QLD1     GENERATOR      SCHEDULED 2015-07-01 2015-10-30
+#> 19691    AGLSOM     VIC1     GENERATOR      SCHEDULED 2023-07-01 2023-10-10
+#> 19692    AGLSOM     VIC1     GENERATOR      SCHEDULED 2024-06-03 2024-07-01
+#> 19693    EILDON     VIC1     GENERATOR      SCHEDULED 2005-07-01 2006-02-01
+#> 19694    EILDON     VIC1     GENERATOR      SCHEDULED 2006-08-04 2006-08-25
+#> 19695    WKIEWA     VIC1     GENERATOR      SCHEDULED 2003-12-23 2004-06-15
+#> 19696    EILDON     VIC1     GENERATOR      SCHEDULED 2004-07-01 2004-12-15
+#> 19697  SUNCOAST     QLD1     GENERATOR  NON-SCHEDULED 2011-05-27 2011-07-01
+#> 19698    CLOVER     VIC1     GENERATOR  NON-SCHEDULED 2016-01-15 2016-06-24
+#> 19699    YABULU     QLD1     GENERATOR      SCHEDULED 2020-07-01 2021-07-01
+#> 19700    EILDON     VIC1     GENERATOR      SCHEDULED 2015-10-30 2016-01-15
+#> 19701   RUBICON     VIC1     GENERATOR  NON-SCHEDULED 2007-09-01 2007-12-01
+#> 19702    EILDON     VIC1     GENERATOR      SCHEDULED 2015-01-01 2015-07-01
+#> 19703     DARTM     VIC1     GENERATOR      SCHEDULED 2001-07-01 2001-09-13
+#> 19704    AGLHAL      SA1     GENERATOR      SCHEDULED 2007-01-16 2007-07-01
+#> 19705    YABULU     QLD1     GENERATOR      SCHEDULED 2010-10-27 2011-01-18
+#> 19706     OAKEY     QLD1     GENERATOR      SCHEDULED 2011-07-01 2012-07-01
+#> 19707     OAKEY     QLD1     GENERATOR      SCHEDULED 2013-07-01 2014-07-01
+#> 19708     OAKEY     QLD1     GENERATOR      SCHEDULED 2012-12-07 2012-12-24
+#> 19709    CLOVER     VIC1     GENERATOR  NON-SCHEDULED 2015-07-01 2015-10-30
+#> 19710     OAKEY     QLD1     GENERATOR      SCHEDULED 2014-07-25 2014-08-26
+#> 19711    YABULU     QLD1     GENERATOR      SCHEDULED 2012-12-07 2012-12-24
+#> 19712    CLOVER     VIC1     GENERATOR  NON-SCHEDULED 2006-08-04 2006-08-08
+#> 19713  WYANGALA     NSW1     GENERATOR  NON-SCHEDULED 2012-12-07 2012-12-24
+#> 19714  EDLRGNRD     QLD1     GENERATOR  NON-SCHEDULED 2010-04-30 2010-05-17
+#> 19715  SUNCOAST     QLD1     GENERATOR  NON-SCHEDULED 2010-03-19 2010-04-30
+#> 19716    EILDON     VIC1     GENERATOR      SCHEDULED 2022-03-10 2022-06-10
+#> 19717     DARTM     VIC1     GENERATOR      SCHEDULED 2011-07-01 2012-07-01
+#> 19718     DARTM     VIC1     GENERATOR      SCHEDULED 2012-07-01 2012-12-07
+#> 19719     DARTM     VIC1     GENERATOR      SCHEDULED 2013-07-01 2014-07-01
+#> 19720    YABULU     QLD1     GENERATOR      SCHEDULED 2007-12-01 2008-07-01
+#> 19721    YABULU     QLD1     GENERATOR      SCHEDULED 2008-07-01 2009-02-12
+#> 19722  COPTNHYD     NSW1     GENERATOR  NON-SCHEDULED 2014-08-26 2015-01-01
+#> 19723    YABULU     QLD1     GENERATOR      SCHEDULED 2018-07-01 2019-07-01
+#> 19724     DARTM     VIC1     GENERATOR      SCHEDULED 1999-07-01 1999-10-14
+#> 19725     MCKAY     VIC1     GENERATOR      SCHEDULED 2006-07-01 2006-08-04
+#> 19726    CLOVER     VIC1     GENERATOR  NON-SCHEDULED 2013-04-01 2013-07-01
+#> 19727    WKIEWA     VIC1     GENERATOR      SCHEDULED 2012-07-01 2012-12-07
+#> 19728  MORANBAH     QLD1     GENERATOR  NON-SCHEDULED 2014-07-01 2014-07-25
+#> 19729  MORANBAH     QLD1     GENERATOR  NON-SCHEDULED 2015-07-01 2015-10-30
+#> 19730    WKIEWA     VIC1     GENERATOR      SCHEDULED 2007-12-01 2008-07-01
+#> 19731  MORANBAH     QLD1     GENERATOR  NON-SCHEDULED 2017-07-01 2018-07-01
+#> 19732  MORANBAH     QLD1     GENERATOR  NON-SCHEDULED 2018-07-01 2019-07-01
+#> 19733    EILDON     VIC1     GENERATOR      SCHEDULED 2006-03-29 2006-07-01
+#> 19734      ICSM     QLD1     GENERATOR  NON-SCHEDULED 2016-07-01 2016-11-19
+#> 19735     DARTM     VIC1     GENERATOR      SCHEDULED 2023-07-01 2023-10-10
+#> 19736    WOYWOY     NSW1     GENERATOR  NON-SCHEDULED 2020-07-01 2021-07-01
+#> 19737     MCKAY     VIC1     GENERATOR      SCHEDULED 2007-09-01 2007-12-01
+#> 19738    WKIEWA     VIC1     GENERATOR      SCHEDULED 2015-07-01 2015-10-30
+#> 19739  COPTNHYD     NSW1     GENERATOR  NON-SCHEDULED 2016-11-19 2017-07-01
+#> 19740    WKIEWA     VIC1     GENERATOR      SCHEDULED 2016-01-15 2016-07-01
+#> 19741   AGLNOW1     NSW1     GENERATOR  NON-SCHEDULED 2014-08-26 2015-01-01
+#> 19742    WOYWOY     NSW1     GENERATOR  NON-SCHEDULED 2016-01-15 2016-07-01
+#> 19743    EILDON     VIC1     GENERATOR      SCHEDULED 2015-10-30 2016-01-15
+#> 19744    WKIEWA     VIC1     GENERATOR      SCHEDULED 2005-07-01 2006-02-01
+#> 19745    AGLHAL      SA1     GENERATOR      SCHEDULED 2007-07-01 2007-07-02
+#> 19746     DARTM     VIC1     GENERATOR      SCHEDULED 2001-10-09 2002-04-01
+#> 19747  SUNCOAST     QLD1     GENERATOR  NON-SCHEDULED 2015-05-15 2015-07-01
+#> 19748     OAKEY     QLD1     GENERATOR      SCHEDULED 2014-07-01 2014-07-25
+#> 19749     MCKAY     VIC1     GENERATOR      SCHEDULED 2006-02-13 2006-02-22
+#> 19750  COPTNHYD     NSW1     GENERATOR  NON-SCHEDULED 2015-01-01 2015-07-01
+#> 19751    EILDON     VIC1     GENERATOR      SCHEDULED 2004-06-15 2004-07-01
+#> 19752    EILDON     VIC1     GENERATOR      SCHEDULED 2003-07-01 2003-12-23
+#> 19753    AGLSOM     VIC1     GENERATOR      SCHEDULED 2012-12-07 2012-12-24
+#> 19754    WKIEWA     VIC1     GENERATOR      SCHEDULED 2016-11-19 2017-01-13
+#> 19755  YWNGAHYD     VIC1     GENERATOR  NON-SCHEDULED 2024-07-01 2025-07-01
+#> 19756    EILDON     VIC1     GENERATOR      SCHEDULED 2021-12-31 2022-03-10
+#> 19757   RUBICON     VIC1     GENERATOR  NON-SCHEDULED 2012-07-01 2012-12-07
+#> 19758   RUBICON     VIC1     GENERATOR  NON-SCHEDULED 2012-12-07 2012-12-24
+#> 19759  MORANBAH     QLD1     GENERATOR  NON-SCHEDULED 2021-12-31 2022-03-10
+#> 19760    EILDON     VIC1     GENERATOR      SCHEDULED 2002-04-01 2002-07-01
+#> 19761  MORANBAH     QLD1     GENERATOR  NON-SCHEDULED 2022-06-10 2022-06-28
+#> 19762     MCKAY     VIC1     GENERATOR      SCHEDULED 2025-07-01 2026-07-01
+#> 19763    YABULU     QLD1     GENERATOR      SCHEDULED 2022-06-28 2022-07-01
+#> 19764    EILDON     VIC1     GENERATOR      SCHEDULED 2013-04-01 2013-07-01
+#> 19765    WKIEWA     VIC1     GENERATOR      SCHEDULED 2010-07-01 2010-10-27
+#> 19766     MCKAY     VIC1     GENERATOR      SCHEDULED 2006-02-22 2006-03-01
+#> 19767   RUBICON     VIC1     GENERATOR  NON-SCHEDULED 2006-08-04 2006-08-25
+#> 19768     MCKAY     VIC1     GENERATOR      SCHEDULED 2007-07-01 2007-07-02
+#> 19769    WKIEWA     VIC1     GENERATOR      SCHEDULED 2000-12-19 2001-07-01
+#> 19770    WKIEWA     VIC1     GENERATOR      SCHEDULED 2022-03-10 2022-06-10
+#> 19771    EILDON     VIC1     GENERATOR      SCHEDULED 2014-07-25 2014-08-26
+#> 19772    WKIEWA     VIC1     GENERATOR      SCHEDULED 2001-10-09 2002-04-01
+#> 19773      ICSM     QLD1     GENERATOR  NON-SCHEDULED 2015-07-01 2015-10-30
+#> 19774  YWNGAHYD     VIC1     GENERATOR  NON-SCHEDULED 2022-03-10 2022-06-10
+#> 19775    WKIEWA     VIC1     GENERATOR      SCHEDULED 2010-10-27 2011-01-18
+#> 19776    CLOVER     VIC1     GENERATOR  NON-SCHEDULED 2014-07-25 2014-08-26
+#> 19777  BDONGHYD     NSW1     GENERATOR  NON-SCHEDULED 2017-07-01 2018-07-01
+#> 19778  COPTNHYD     NSW1     GENERATOR  NON-SCHEDULED 2013-04-01 2013-07-01
+#> 19779     DARTM     VIC1     GENERATOR      SCHEDULED 2017-07-01 2017-07-15
+#> 19780    WKIEWA     VIC1     GENERATOR      SCHEDULED 2016-07-26 2016-11-19
+#> 19781  BDONGHYD     NSW1     GENERATOR  NON-SCHEDULED 2020-07-01 2021-07-01
+#> 19782   RUBICON     VIC1     GENERATOR  NON-SCHEDULED 2007-07-02 2007-09-01
+#> 19783    WOYWOY     NSW1     GENERATOR  NON-SCHEDULED 2016-11-19 2017-07-01
+#> 19784      ICSM     QLD1     GENERATOR  NON-SCHEDULED 2018-07-01 2019-07-01
+#> 19785     OAKEY     QLD1     GENERATOR      SCHEDULED 2011-04-14 2011-07-01
+#> 19786      ICSM     QLD1     GENERATOR  NON-SCHEDULED 2019-07-01 2020-07-01
+#> 19787     DARTM     VIC1     GENERATOR      SCHEDULED 2002-07-01 2002-07-09
+#> 19788  SUNCOAST     QLD1     GENERATOR  NON-SCHEDULED 2015-07-01 2015-10-30
+#> 19789  YWNGAHYD     VIC1     GENERATOR  NON-SCHEDULED 2014-07-01 2014-07-25
+#> 19790  YWNGAHYD     VIC1     GENERATOR  NON-SCHEDULED 2016-01-15 2016-07-01
+#> 19791    EILDON     VIC1     GENERATOR      SCHEDULED 2003-12-23 2004-06-15
+#> 19792  YWNGAHYD     VIC1     GENERATOR  NON-SCHEDULED 2014-08-26 2015-01-01
+#> 19793  COPTNHYD     NSW1     GENERATOR  NON-SCHEDULED 2015-10-30 2016-01-15
+#> 19794    WKIEWA     VIC1     GENERATOR      SCHEDULED 2011-04-14 2011-07-01
+#> 19795      ICSM     QLD1     GENERATOR  NON-SCHEDULED 2011-04-14 2011-07-01
+#> 19796    YABULU     QLD1     GENERATOR      SCHEDULED 2011-01-18 2011-04-28
+#> 19797    CLOVER     VIC1     GENERATOR  NON-SCHEDULED 2022-03-10 2022-06-10
+#> 19798     DARTM     VIC1     GENERATOR      SCHEDULED 2011-01-18 2011-04-28
+#> 19799    CLOVER     VIC1     GENERATOR  NON-SCHEDULED 2023-10-10 2024-07-01
+#> 19800  SUNCOAST     QLD1     GENERATOR  NON-SCHEDULED 2012-12-24 2013-04-01
+#> 19801  SUNCOAST     QLD1     GENERATOR  NON-SCHEDULED 2013-04-01 2013-07-01
+#> 19802     DARTM     VIC1     GENERATOR      SCHEDULED 1998-10-25 1999-07-01
+#> 19803    CLOVER     VIC1     GENERATOR  NON-SCHEDULED 2014-07-01 2014-07-25
+#> 19804     MCKAY     VIC1     GENERATOR      SCHEDULED 2007-07-02 2007-09-01
+#> 19805    WKIEWA     VIC1     GENERATOR      SCHEDULED 2008-07-01 2009-07-01
+#> 19806    CLOVER     VIC1     GENERATOR  NON-SCHEDULED 2013-07-01 2014-07-01
+#> 19807  COPTNHYD     NSW1     GENERATOR  NON-SCHEDULED 2016-01-15 2016-07-01
+#> 19808     DARTM     VIC1     GENERATOR      SCHEDULED 2004-12-15 2005-07-01
+#> 19809    WOYWOY     NSW1     GENERATOR  NON-SCHEDULED 2015-10-30 2016-01-15
+#> 19810     DARTM     VIC1     GENERATOR      SCHEDULED 2019-07-01 2020-07-01
+#> 19811  EDLRGNRD     QLD1     GENERATOR  NON-SCHEDULED 2012-07-01 2012-12-07
+#> 19812    YABULU     QLD1     GENERATOR      SCHEDULED 2016-07-01 2016-11-19
+#> 19813    YABULU     QLD1     GENERATOR      SCHEDULED 2017-07-01 2018-07-01
+#> 19814    WKIEWA     VIC1     GENERATOR      SCHEDULED 2010-04-30 2010-07-01
+#> 19815    WKIEWA     VIC1     GENERATOR      SCHEDULED 2006-07-01 2006-08-04
+#> 19816  SUNCOAST     QLD1     GENERATOR  NON-SCHEDULED 2014-07-25 2014-08-26
+#> 19817  YWNGAHYD     VIC1     GENERATOR  NON-SCHEDULED 2015-07-01 2015-10-30
+#> 19818     DARTM     VIC1     GENERATOR      SCHEDULED 2016-07-01 2016-11-19
+#> 19819    EILDON     VIC1     GENERATOR      SCHEDULED 2006-03-01 2006-03-29
+#> 19820  BDONGHYD     NSW1     GENERATOR  NON-SCHEDULED 2018-07-01 2019-07-01
+#> 19821    WKIEWA     VIC1     GENERATOR      SCHEDULED 2006-08-04 2006-08-25
+#> 19822    WKIEWA     VIC1     GENERATOR      SCHEDULED 2006-08-25 2007-01-16
+#> 19823     DARTM     VIC1     GENERATOR      SCHEDULED 2006-02-22 2006-03-01
+#> 19824  MORANBAH     QLD1     GENERATOR  NON-SCHEDULED 2013-04-01 2013-07-01
+#> 19825     DARTM     VIC1     GENERATOR      SCHEDULED 2001-09-13 2001-10-09
+#> 19826    CLOVER     VIC1     GENERATOR  NON-SCHEDULED 2007-07-02 2007-09-01
+#> 19827      ICSM     QLD1     GENERATOR  NON-SCHEDULED 2020-07-01 2021-07-01
+#> 19828    CLOVER     VIC1     GENERATOR  NON-SCHEDULED 2022-06-28 2022-07-01
+#> 19829     DARTM     VIC1     GENERATOR      SCHEDULED 2022-07-01 2023-07-01
+#> 19830  MORANBAH     QLD1     GENERATOR  NON-SCHEDULED 2019-07-01 2020-07-01
+#> 19831  YWNGAHYD     VIC1     GENERATOR  NON-SCHEDULED 2015-10-30 2016-01-15
+#> 19832    WKIEWA     VIC1     GENERATOR      SCHEDULED 2007-07-01 2007-07-02
+#> 19833     DARTM     VIC1     GENERATOR      SCHEDULED 2003-07-01 2003-12-23
+#> 19834    WKIEWA     VIC1     GENERATOR      SCHEDULED 2016-07-01 2016-07-26
+#> 19835  COPTNHYD     NSW1     GENERATOR  NON-SCHEDULED 2021-12-31 2022-03-10
+#> 19836    YABULU     QLD1     GENERATOR      SCHEDULED 2022-07-01 2023-07-01
+#> 19837    EILDON     VIC1     GENERATOR      SCHEDULED 2012-12-07 2012-12-24
+#> 19838  MORANBAH     QLD1     GENERATOR  NON-SCHEDULED 2015-01-01 2015-07-01
+#> 19839    EILDON     VIC1     GENERATOR      SCHEDULED 2022-06-28 2022-07-01
+#> 19840    EILDON     VIC1     GENERATOR      SCHEDULED 2023-10-10 2024-06-03
+#> 19841      ICSM     QLD1     GENERATOR  NON-SCHEDULED 2012-07-01 2012-12-07
+#> 19842    WKIEWA     VIC1     GENERATOR      SCHEDULED 2006-02-22 2006-03-01
+#> 19843    WKIEWA     VIC1     GENERATOR      SCHEDULED 2007-01-16 2007-07-01
+#> 19844    CLOVER     VIC1     GENERATOR  NON-SCHEDULED 2012-12-24 2013-04-01
+#> 19845    EILDON     VIC1     GENERATOR      SCHEDULED 2006-02-01 2006-02-22
+#> 19846     MCKAY     VIC1     GENERATOR      SCHEDULED 1998-10-25 1999-07-01
+#> 19847    EILDON     VIC1     GENERATOR      SCHEDULED 2006-03-29 2006-07-01
+#> 19848    EILDON     VIC1     GENERATOR      SCHEDULED 2006-08-25 2007-01-16
+#> 19849   RUBICON     VIC1     GENERATOR  NON-SCHEDULED 2006-08-25 2007-07-02
+#> 19850     DARTM     VIC1     GENERATOR      SCHEDULED 2005-07-01 2006-02-01
+#> 19851    YABULU     QLD1     GENERATOR      SCHEDULED 2023-07-01 2023-10-10
+#> 19852    WKIEWA     VIC1     GENERATOR      SCHEDULED 2010-01-15 2010-03-19
+#> 19853    WKIEWA     VIC1     GENERATOR      SCHEDULED 2010-03-19 2010-04-30
+#> 19854     DARTM     VIC1     GENERATOR      SCHEDULED 2000-07-20 2000-12-19
+#> 19855     DARTM     VIC1     GENERATOR      SCHEDULED 2007-07-01 2007-07-02
+#> 19856  YWNGAHYD     VIC1     GENERATOR  NON-SCHEDULED 2013-07-01 2014-07-01
+#> 19857     DARTM     VIC1     GENERATOR      SCHEDULED 2010-07-01 2010-10-27
+#> 19858  YWNGAHYD     VIC1     GENERATOR  NON-SCHEDULED 2015-01-01 2015-07-01
+#> 19859     DARTM     VIC1     GENERATOR      SCHEDULED 2002-07-09 2003-07-01
+#> 19860    CLOVER     VIC1     GENERATOR  NON-SCHEDULED 2010-04-30 2010-07-01
+#> 19861     MCKAY     VIC1     GENERATOR      SCHEDULED 1999-07-01 1999-10-14
+#> 19862  YWNGAHYD     VIC1     GENERATOR  NON-SCHEDULED 2023-07-01 2023-10-10
+#> 19863    EILDON     VIC1     GENERATOR      SCHEDULED 2010-10-27 2011-01-18
+#> 19864     DARTM     VIC1     GENERATOR      SCHEDULED 2006-07-01 2006-08-04
+#> 19865    CLOVER     VIC1     GENERATOR  NON-SCHEDULED 2007-12-01 2010-01-15
+#> 19866    YABULU     QLD1     GENERATOR      SCHEDULED 2016-11-19 2017-07-01
+#> 19867    CLOVER     VIC1     GENERATOR  NON-SCHEDULED 2022-06-10 2022-06-28
+#> 19868  YWNGAHYD     VIC1     GENERATOR  NON-SCHEDULED 2021-12-31 2022-03-10
+#> 19869    AGLSOM     VIC1     GENERATOR      SCHEDULED 2025-07-01 2026-07-01
+#> 19870     DARTM     VIC1     GENERATOR      SCHEDULED 2021-12-01 2021-12-31
+#> 19871      ICSM     QLD1     GENERATOR  NON-SCHEDULED 2021-07-01 2021-12-31
+#> 19872    YABULU     QLD1     GENERATOR      SCHEDULED 2022-06-10 2022-06-28
+#> 19873    YABULU     QLD1     GENERATOR      SCHEDULED 2022-03-10 2022-06-10
+#> 19874    CLOVER     VIC1     GENERATOR  NON-SCHEDULED 2010-03-19 2010-04-30
+#> 19875      WPWF      SA1     GENERATOR  NON-SCHEDULED 2013-04-01 2013-07-01
+#> 19876    WKIEWA     VIC1     GENERATOR      SCHEDULED 2011-07-01 2012-07-01
+#> 19877    YABULU     QLD1     GENERATOR      SCHEDULED 2010-07-01 2010-10-27
+#> 19878     DARTM     VIC1     GENERATOR      SCHEDULED 2007-01-16 2007-07-01
+#> 19879    WKIEWA     VIC1     GENERATOR      SCHEDULED 2022-06-10 2022-06-28
+#> 19880      ICSM     QLD1     GENERATOR  NON-SCHEDULED 2011-07-01 2012-07-01
+#> 19881    EILDON     VIC1     GENERATOR      SCHEDULED 2022-06-10 2022-06-28
+#> 19882     DARTM     VIC1     GENERATOR      SCHEDULED 2000-12-19 2001-07-01
+#> 19883    CLOVER     VIC1     GENERATOR  NON-SCHEDULED 2007-09-01 2007-12-01
+#> 19884    YABULU     QLD1     GENERATOR      SCHEDULED 2021-12-31 2022-03-10
+#> 19885  YWNGAHYD     VIC1     GENERATOR  NON-SCHEDULED 2014-07-25 2014-08-26
+#> 19886    CLOVER     VIC1     GENERATOR  NON-SCHEDULED 2012-12-07 2012-12-24
+#> 19887     DARTM     VIC1     GENERATOR      SCHEDULED 2008-07-01 2009-07-01
+#> 19888    AGLSOM     VIC1     GENERATOR      SCHEDULED 2007-09-01 2007-12-01
+#> 19889  EDLRGNRD     QLD1     GENERATOR  NON-SCHEDULED 2010-07-01 2011-04-14
+#> 19890      BAPS     VIC1     GENERATOR  NON-SCHEDULED 2025-07-01 2026-07-01
+#> 19891    EILDON     VIC1     GENERATOR      SCHEDULED 2012-12-24 2013-04-01
+#> 19892    YABULU     QLD1     GENERATOR      SCHEDULED 2011-04-28 2011-07-01
+#> 19893   RUBICON     VIC1     GENERATOR  NON-SCHEDULED 2010-03-19 2010-04-30
+#> 19894  YWNGAHYD     VIC1     GENERATOR  NON-SCHEDULED 2016-11-19 2017-07-01
+#> 19895    WKIEWA     VIC1     GENERATOR      SCHEDULED 2001-09-13 2001-10-09
+#> 19896     DARTM     VIC1     GENERATOR      SCHEDULED 2021-07-01 2021-12-01
+#> 19897  COPTNHYD     NSW1     GENERATOR  NON-SCHEDULED 2022-06-10 2022-06-28
+#> 19898    YABULU     QLD1     GENERATOR      SCHEDULED 2012-07-01 2012-12-07
+#> 19899  SUNCOAST     QLD1     GENERATOR  NON-SCHEDULED 2012-12-07 2012-12-24
+#> 19900    CLOVER     VIC1     GENERATOR  NON-SCHEDULED 2012-07-01 2012-12-07
+#> 19901  SUNCOAST     QLD1     GENERATOR  NON-SCHEDULED 2014-08-26 2015-01-01
+#> 19902    EILDON     VIC1     GENERATOR      SCHEDULED 2007-07-02 2007-09-01
+#> 19903    EILDON     VIC1     GENERATOR      SCHEDULED 2010-03-19 2010-04-30
+#> 19904    YABULU     QLD1     GENERATOR      SCHEDULED 2021-07-01 2021-12-31
+#> 19905    EILDON     VIC1     GENERATOR      SCHEDULED 2010-01-15 2010-03-19
+#> 19906     DARTM     VIC1     GENERATOR      SCHEDULED 2020-07-01 2021-07-01
+#> 19907  SUNCOAST     QLD1     GENERATOR  NON-SCHEDULED 2015-10-30 2016-01-15
+#> 19908  MORANBAH     QLD1     GENERATOR  NON-SCHEDULED 2014-07-25 2014-08-26
+#> 19909    YABULU     QLD1     GENERATOR      SCHEDULED 2011-07-01 2012-07-01
+#> 19910    WKIEWA     VIC1     GENERATOR      SCHEDULED 2001-07-01 2001-09-13
+#> 19911  GLBWNHYD     NSW1     GENERATOR  NON-SCHEDULED 2026-07-01 2999-12-31
+#> 19912  COPTNHYD     NSW1     GENERATOR  NON-SCHEDULED 2022-03-10 2022-06-10
+#> 19913    WKIEWA     VIC1     GENERATOR      SCHEDULED 2026-06-30 2026-07-01
+#> 19914    CLOVER     VIC1     GENERATOR  NON-SCHEDULED 2010-01-15 2010-03-19
+#> 19915    EILDON     VIC1     GENERATOR      SCHEDULED 2007-12-01 2008-07-01
+#> 19916      WPWF      SA1     GENERATOR  NON-SCHEDULED 2012-12-24 2013-04-01
+#> 19917    EILDON     VIC1     GENERATOR      SCHEDULED 2013-04-01 2013-07-01
+#> 19918     DARTM     VIC1     GENERATOR      SCHEDULED 2017-07-15 2018-07-01
+#> 19919    AGLSOM     VIC1     GENERATOR      SCHEDULED 2007-12-01 2008-07-01
+#> 19920    YABULU     QLD1     GENERATOR      SCHEDULED 2009-07-01 2010-01-15
+#> 19921  SUNCOAST     QLD1     GENERATOR  NON-SCHEDULED 2015-01-01 2015-05-15
+#> 19922     DARTM     VIC1     GENERATOR      SCHEDULED 2018-07-01 2019-07-01
+#> 19923    EILDON     VIC1     GENERATOR      SCHEDULED 2006-08-04 2006-08-25
+#> 19924     DARTM     VIC1     GENERATOR      SCHEDULED 2009-07-01 2010-01-15
+#> 19925  BDONGHYD     NSW1     GENERATOR  NON-SCHEDULED 2019-07-01 2020-07-01
+#> 19926    EILDON     VIC1     GENERATOR      SCHEDULED 2001-10-09 2002-04-01
+#> 19927    YABULU     QLD1     GENERATOR      SCHEDULED 2009-02-12 2009-07-01
+#> 19928    EILDON     VIC1     GENERATOR      SCHEDULED 2010-04-30 2010-07-01
+#> 19929    EILDON     VIC1     GENERATOR      SCHEDULED 2007-09-01 2007-12-01
+#> 19930      ICSM     QLD1     GENERATOR  NON-SCHEDULED 2010-07-01 2011-04-14
+#> 19931    YABULU     QLD1     GENERATOR      SCHEDULED 2022-06-28 2022-07-01
+#> 19932    HALLWF      SA1     GENERATOR      SCHEDULED 2008-11-20 2009-01-22
+#> 19933   MACARTH     VIC1     GENERATOR SEMI-SCHEDULED 2024-07-01 2024-07-02
+#> 19934   BROKENH     NSW1     GENERATOR SEMI-SCHEDULED 2020-07-01 2021-07-01
+#> 19935     NBHWF      SA1     GENERATOR SEMI-SCHEDULED 2013-12-15 2014-07-01
+#> 19936    HALLWF      SA1     GENERATOR      SCHEDULED 2007-12-19 2008-07-01
+#> 19937    HALLWF      SA1     GENERATOR SEMI-SCHEDULED 2009-04-09 2009-05-11
+#> 19938   MACARTH     VIC1     GENERATOR SEMI-SCHEDULED 2012-08-21 2013-02-08
+#> 19939    NYNGAN     NSW1     GENERATOR SEMI-SCHEDULED 2015-09-24 2015-10-30
+#> 19940   BROKENH     NSW1     GENERATOR SEMI-SCHEDULED 2015-08-25 2015-10-30
+#> 19941   BROKENH     NSW1     GENERATOR SEMI-SCHEDULED 2024-06-25 2024-07-01
+#> 19942   BROKENH     NSW1     GENERATOR SEMI-SCHEDULED 2017-07-01 2017-07-18
+#> 19943    HALLWF      SA1     GENERATOR      SCHEDULED 2009-01-22 2009-04-09
+#> 19944   MACARTH     VIC1     GENERATOR SEMI-SCHEDULED 2014-12-16 2015-07-01
+#> 19945    HALLWF      SA1     GENERATOR SEMI-SCHEDULED 2014-12-16 2015-07-01
+#> 19946   BROKENH     NSW1     GENERATOR SEMI-SCHEDULED 2016-07-01 2017-06-29
+#> 19947   BROKENH     NSW1     GENERATOR SEMI-SCHEDULED 2018-07-01 2019-07-01
+#> 19948   BROKENH     NSW1     GENERATOR SEMI-SCHEDULED 2023-07-01 2024-06-03
+#> 19949     NBHWF      SA1     GENERATOR SEMI-SCHEDULED 2013-07-01 2013-12-15
+#> 19950    NYNGAN     NSW1     GENERATOR SEMI-SCHEDULED 2015-10-30 2016-07-01
+#> 19951    NYNGAN     NSW1     GENERATOR SEMI-SCHEDULED 2016-07-01 2017-06-29
+#> 19952   BROKENH     NSW1     GENERATOR SEMI-SCHEDULED 2017-07-18 2018-07-01
+#> 19953   OAKLAND     VIC1     GENERATOR SEMI-SCHEDULED 2025-07-01 2026-07-01
+#> 19954    HALLWF      SA1     GENERATOR SEMI-SCHEDULED 2009-07-01 2009-11-23
+#> 19955    NYNGAN     NSW1     GENERATOR SEMI-SCHEDULED 2017-06-29 2017-07-01
+#> 19956    NYNGAN     NSW1     GENERATOR SEMI-SCHEDULED 2015-08-16 2015-08-25
+#> 19957   BROKENH     NSW1     GENERATOR SEMI-SCHEDULED 2019-07-01 2020-07-01
+#> 19958     NBHWF      SA1     GENERATOR SEMI-SCHEDULED 2010-07-19 2011-01-18
+#> 19959   MACARTH     VIC1     GENERATOR SEMI-SCHEDULED 2013-02-08 2013-07-01
+#> 19960    NYNGAN     NSW1     GENERATOR SEMI-SCHEDULED 2015-08-25 2015-09-24
+#> 19961     NBHWF      SA1     GENERATOR SEMI-SCHEDULED 2012-07-01 2012-08-21
+#> 19962    NYNGAN     NSW1     GENERATOR SEMI-SCHEDULED 2015-07-01 2015-08-16
+#> 19963   HALLWF2      SA1     GENERATOR SEMI-SCHEDULED 2011-01-18 2011-04-14
+#> 19964    HALLWF      SA1     GENERATOR SEMI-SCHEDULED 2015-10-30 2016-07-01
+#> 19965    HALLWF      SA1     GENERATOR SEMI-SCHEDULED 2009-05-11 2009-07-01
+#> 19966   BROKENH     NSW1     GENERATOR SEMI-SCHEDULED 2021-07-01 2022-07-01
+#> 19967   MACARTH     VIC1     GENERATOR SEMI-SCHEDULED 2013-07-01 2014-07-01
+#> 19968    NYNGAN     NSW1     GENERATOR SEMI-SCHEDULED 2017-07-18 2018-02-26
+#> 19969    HALLWF      SA1     GENERATOR SEMI-SCHEDULED 2009-11-23 2010-02-09
+#> 19970   BROKENH     NSW1     GENERATOR SEMI-SCHEDULED 2024-07-01 2024-07-02
+#> 19971   MACARTH     VIC1     GENERATOR SEMI-SCHEDULED 2015-07-01 2015-08-25
+#> 19972   BROKENH     NSW1     GENERATOR SEMI-SCHEDULED 2024-06-03 2024-06-25
+#> 19973   HALLWF2      SA1     GENERATOR SEMI-SCHEDULED 2011-04-14 2011-07-01
+#> 19974    HALLWF      SA1     GENERATOR      SCHEDULED 2008-07-01 2008-11-20
+#> 19975    HALLWF      SA1     GENERATOR SEMI-SCHEDULED 2010-07-01 2010-07-19
+#> 19976     NBHWF      SA1     GENERATOR SEMI-SCHEDULED 2011-07-05 2011-08-05
+#> 19977     NBHWF      SA1     GENERATOR SEMI-SCHEDULED 2011-07-01 2011-07-05
+#> 19978   HALLWF2      SA1     GENERATOR SEMI-SCHEDULED 2011-07-01 2011-07-05
+#> 19979   MACARTH     VIC1     GENERATOR SEMI-SCHEDULED 2019-07-01 2020-07-01
+#> 19980   BROKENH     NSW1     GENERATOR SEMI-SCHEDULED 2023-02-07 2023-07-01
+#> 19981   BROKENH     NSW1     GENERATOR SEMI-SCHEDULED 2022-07-01 2023-02-07
+#> 19982   BROKENH     NSW1     GENERATOR SEMI-SCHEDULED 2017-06-29 2017-07-01
+#> 19983    HALLWF      SA1     GENERATOR SEMI-SCHEDULED 2011-07-05 2011-08-05
+#> 19984   MACARTH     VIC1     GENERATOR SEMI-SCHEDULED 2014-07-01 2014-12-16
+#> 19985     BLUFF      SA1     GENERATOR SEMI-SCHEDULED 2015-08-25 2015-10-30
+#> 19986    NYNGAN     NSW1     GENERATOR SEMI-SCHEDULED 2018-02-26 2018-07-01
+#> 19987   MACARTH     VIC1     GENERATOR SEMI-SCHEDULED 2017-07-01 2017-07-18
+#> 19988   MACARTH     VIC1     GENERATOR SEMI-SCHEDULED 2025-07-01 2026-07-01
+#> 19989    NYNGAN     NSW1     GENERATOR SEMI-SCHEDULED 2014-12-16 2015-07-01
+#> 19990   MACARTH     VIC1     GENERATOR SEMI-SCHEDULED 2016-07-01 2017-06-29
+#> 19991     BLUFF      SA1     GENERATOR SEMI-SCHEDULED 2011-08-05 2012-01-10
+#> 19992   HALLWF2      SA1     GENERATOR SEMI-SCHEDULED 2015-08-25 2015-10-30
+#> 19993    HALLWF      SA1     GENERATOR SEMI-SCHEDULED 2012-08-21 2013-07-01
+#> 19994    HALLWF      SA1     GENERATOR SEMI-SCHEDULED 2015-08-25 2015-10-30
+#> 19995    HALLWF      SA1     GENERATOR SEMI-SCHEDULED 2010-07-19 2011-01-18
+#> 19996   OAKLAND     VIC1     GENERATOR SEMI-SCHEDULED 2017-07-18 2018-07-01
+#> 19997     BLUFF      SA1     GENERATOR SEMI-SCHEDULED 2012-08-21 2013-07-01
+#> 19998   OAKLAND     VIC1     GENERATOR SEMI-SCHEDULED 2024-07-01 2024-07-02
+#> 19999     NBHWF      SA1     GENERATOR SEMI-SCHEDULED 2014-07-01 2014-12-16
+#> 20000   OAKLAND     VIC1     GENERATOR SEMI-SCHEDULED 2012-07-01 2012-08-21
+#> 20001    HALLWF      SA1     GENERATOR SEMI-SCHEDULED 2011-08-05 2012-07-01
+#> 20002   OAKLAND     VIC1     GENERATOR SEMI-SCHEDULED 2024-07-02 2025-07-01
+#> 20003   OAKLAND     VIC1     GENERATOR SEMI-SCHEDULED 2017-06-29 2017-07-01
+#> 20004   MACARTH     VIC1     GENERATOR SEMI-SCHEDULED 2018-07-01 2019-07-01
+#> 20005   HALLWF2      SA1     GENERATOR SEMI-SCHEDULED 2014-12-16 2015-07-01
+#> 20006   BROKENH     NSW1     GENERATOR SEMI-SCHEDULED 2015-10-30 2016-07-01
+#> 20007     BLUFF      SA1     GENERATOR SEMI-SCHEDULED 2017-06-29 2017-07-01
+#> 20008   OAKLAND     VIC1     GENERATOR SEMI-SCHEDULED 2024-06-03 2024-07-01
+#> 20009     BLUFF      SA1     GENERATOR SEMI-SCHEDULED 2014-12-16 2015-07-01
+#> 20010   OAKLAND     VIC1     GENERATOR SEMI-SCHEDULED 2015-07-01 2015-08-25
+#> 20011   OAKLAND     VIC1     GENERATOR SEMI-SCHEDULED 2026-07-01 2999-12-31
+#> 20012   OAKLAND     VIC1     GENERATOR SEMI-SCHEDULED 2014-12-16 2015-07-01
+#> 20013   HALLWF2      SA1     GENERATOR SEMI-SCHEDULED 2012-07-01 2012-08-21
+#> 20014   HALLWF2      SA1     GENERATOR SEMI-SCHEDULED 2010-07-01 2010-07-19
+#> 20015   HALLWF2      SA1     GENERATOR SEMI-SCHEDULED 2016-07-01 2017-06-29
+#> 20016     NBHWF      SA1     GENERATOR SEMI-SCHEDULED 2017-07-01 2017-07-18
+#> 20017    HALLWF      SA1     GENERATOR SEMI-SCHEDULED 2011-01-18 2011-04-14
+#> 20018     NBHWF      SA1     GENERATOR SEMI-SCHEDULED 2011-01-18 2011-05-24
+#> 20019     BLUFF      SA1     GENERATOR SEMI-SCHEDULED 2015-10-30 2016-07-01
+#> 20020   OAKLAND     VIC1     GENERATOR SEMI-SCHEDULED 2012-08-21 2013-07-01
+#> 20021   HALLWF2      SA1     GENERATOR SEMI-SCHEDULED 2015-10-30 2016-07-01
+#> 20022   OAKLAND     VIC1     GENERATOR SEMI-SCHEDULED 2017-07-01 2017-07-18
+#> 20023    NYNGAN     NSW1     GENERATOR SEMI-SCHEDULED 2021-07-01 2022-07-01
+#> 20024   OAKLAND     VIC1     GENERATOR SEMI-SCHEDULED 2016-07-01 2017-06-29
+#> 20025   OAKLAND     VIC1     GENERATOR SEMI-SCHEDULED 2018-07-01 2019-07-01
+#> 20026    NYNGAN     NSW1     GENERATOR SEMI-SCHEDULED 2022-07-01 2023-02-07
+#> 20027   OAKLAND     VIC1     GENERATOR SEMI-SCHEDULED 2015-10-30 2016-07-01
+#> 20028     NBHWF      SA1     GENERATOR SEMI-SCHEDULED 2015-10-30 2016-07-01
+#> 20029    HALLWF      SA1     GENERATOR SEMI-SCHEDULED 2013-12-15 2014-07-01
+#> 20030     BLUFF      SA1     GENERATOR SEMI-SCHEDULED 2012-01-10 2012-07-01
+#> 20031    NYNGAN     NSW1     GENERATOR SEMI-SCHEDULED 2018-07-01 2019-07-01
+#> 20032   HALLWF2      SA1     GENERATOR SEMI-SCHEDULED 2010-07-19 2011-01-18
+#> 20033    NYNGAN     NSW1     GENERATOR SEMI-SCHEDULED 2020-07-01 2021-07-01
+#> 20034     BLUFF      SA1     GENERATOR SEMI-SCHEDULED 2011-07-05 2011-08-05
+#> 20035   HALLWF2      SA1     GENERATOR SEMI-SCHEDULED 2011-07-05 2011-08-05
+#> 20036      WPWF      SA1     GENERATOR  NON-SCHEDULED 2016-07-01 2017-06-29
+#> 20037   HALLWF2      SA1     GENERATOR SEMI-SCHEDULED 2011-08-05 2012-07-01
+#> 20038    HALLWF      SA1     GENERATOR SEMI-SCHEDULED 2017-06-29 2017-07-01
+#> 20039   OAKLAND     VIC1     GENERATOR SEMI-SCHEDULED 2019-07-01 2020-07-01
+#> 20040   OAKLAND     VIC1     GENERATOR SEMI-SCHEDULED 2014-07-01 2014-12-16
+#> 20041   HALLWF2      SA1     GENERATOR SEMI-SCHEDULED 2009-05-11 2009-07-01
+#> 20042   MACARTH     VIC1     GENERATOR SEMI-SCHEDULED 2021-07-01 2022-07-01
+#> 20043     BLUFF      SA1     GENERATOR SEMI-SCHEDULED 2017-07-01 2017-07-18
+#> 20044     BLUFF      SA1     GENERATOR SEMI-SCHEDULED 2012-07-01 2012-08-21
+#> 20045   MACARTH     VIC1     GENERATOR SEMI-SCHEDULED 2024-07-02 2025-07-01
+#> 20046   OAKLAND     VIC1     GENERATOR SEMI-SCHEDULED 2012-01-10 2012-07-01
+#> 20047    NYNGAN     NSW1     GENERATOR SEMI-SCHEDULED 2019-07-01 2020-07-01
+#> 20048   MACARTH     VIC1     GENERATOR SEMI-SCHEDULED 2017-07-18 2018-07-01
+#> 20049   HALLWF2      SA1     GENERATOR SEMI-SCHEDULED 2012-08-21 2013-07-01
+#> 20050   OAKLAND     VIC1     GENERATOR SEMI-SCHEDULED 2021-07-01 2022-07-01
+#> 20051   HALLWF2      SA1     GENERATOR SEMI-SCHEDULED 2010-02-09 2010-07-01
+#> 20052   MACARTH     VIC1     GENERATOR SEMI-SCHEDULED 2026-07-01 2999-12-31
+#> 20053   OAKLAND     VIC1     GENERATOR SEMI-SCHEDULED 2013-07-01 2014-07-01
+#> 20054   HALLWF2      SA1     GENERATOR SEMI-SCHEDULED 2014-07-01 2014-12-16
+#> 20055    HALLWF      SA1     GENERATOR SEMI-SCHEDULED 2010-02-09 2010-07-01
+#> 20056    HALLWF      SA1     GENERATOR SEMI-SCHEDULED 2013-07-01 2013-12-15
+#> 20057    HALLWF      SA1     GENERATOR SEMI-SCHEDULED 2011-04-14 2011-07-01
+#> 20058     NBHWF      SA1     GENERATOR SEMI-SCHEDULED 2011-05-24 2011-07-01
+#> 20059   MACARTH     VIC1     GENERATOR SEMI-SCHEDULED 2015-10-30 2016-07-01
+#> 20060   MACARTH     VIC1     GENERATOR SEMI-SCHEDULED 2015-08-25 2015-10-30
+#> 20061   OAKLAND     VIC1     GENERATOR SEMI-SCHEDULED 2011-08-05 2012-01-10
+#> 20062   MACARTH     VIC1     GENERATOR SEMI-SCHEDULED 2024-06-03 2024-07-01
+#> 20063   MACARTH     VIC1     GENERATOR SEMI-SCHEDULED 2022-07-01 2023-02-07
+#> 20064     NBHWF      SA1     GENERATOR SEMI-SCHEDULED 2017-06-29 2017-07-01
+#> 20065   OAKLAND     VIC1     GENERATOR SEMI-SCHEDULED 2020-07-28 2021-07-01
+#> 20066   OAKLAND     VIC1     GENERATOR SEMI-SCHEDULED 2020-07-01 2020-07-28
+#> 20067   MACARTH     VIC1     GENERATOR SEMI-SCHEDULED 2023-02-07 2023-07-01
+#> 20068   OAKLAND     VIC1     GENERATOR SEMI-SCHEDULED 2015-08-25 2015-10-30
+#> 20069   MACARTH     VIC1     GENERATOR SEMI-SCHEDULED 2017-06-29 2017-07-01
+#> 20070     NBHWF      SA1     GENERATOR SEMI-SCHEDULED 2012-08-21 2013-07-01
+#> 20071   HALLWF2      SA1     GENERATOR SEMI-SCHEDULED 2015-07-01 2015-08-25
+#> 20072   OAKLAND     VIC1     GENERATOR SEMI-SCHEDULED 2023-07-01 2024-06-03
+#> 20073   OAKLAND     VIC1     GENERATOR SEMI-SCHEDULED 2022-07-01 2023-02-07
+#> 20074   HALLWF2      SA1     GENERATOR SEMI-SCHEDULED 2009-11-23 2010-02-09
+#> 20075      WPWF      SA1     GENERATOR  NON-SCHEDULED 2015-10-30 2016-07-01
+#> 20076     BLUFF      SA1     GENERATOR SEMI-SCHEDULED 2013-12-15 2014-07-01
+#> 20077   MACARTH     VIC1     GENERATOR SEMI-SCHEDULED 2023-07-01 2024-06-03
+#> 20078     NBHWF      SA1     GENERATOR SEMI-SCHEDULED 2014-12-16 2015-07-01
+#> 20079    NYNGAN     NSW1     GENERATOR SEMI-SCHEDULED 2017-07-01 2017-07-18
+#> 20080     BLUFF      SA1     GENERATOR SEMI-SCHEDULED 2013-07-01 2013-12-15
+#> 20081     BLUFF      SA1     GENERATOR SEMI-SCHEDULED 2014-07-01 2014-12-16
+#> 20082   HALLWF2      SA1     GENERATOR SEMI-SCHEDULED 2009-07-01 2009-11-23
+#> 20083     NBHWF      SA1     GENERATOR SEMI-SCHEDULED 2016-07-01 2017-06-29
+#> 20084    HALLWF      SA1     GENERATOR SEMI-SCHEDULED 2012-07-01 2012-08-21
+#> 20085    HALLWF      SA1     GENERATOR SEMI-SCHEDULED 2011-07-01 2011-07-05
+#> 20086     NBHWF      SA1     GENERATOR SEMI-SCHEDULED 2015-08-25 2015-10-30
+#> 20087   HALLWF2      SA1     GENERATOR SEMI-SCHEDULED 2013-07-01 2013-12-15
+#> 20088     NBHWF      SA1     GENERATOR SEMI-SCHEDULED 2015-07-01 2015-08-25
+#> 20089     NBHWF      SA1     GENERATOR SEMI-SCHEDULED 2011-08-05 2012-07-01
+#> 20090    HALLWF      SA1     GENERATOR SEMI-SCHEDULED 2015-07-01 2015-08-25
+#> 20091    HALLWF      SA1     GENERATOR SEMI-SCHEDULED 2017-07-01 2017-07-18
+#> 20092    HALLWF      SA1     GENERATOR SEMI-SCHEDULED 2014-07-01 2014-12-16
+#> 20093   MACARTH     VIC1     GENERATOR SEMI-SCHEDULED 2020-07-01 2021-07-01
+#> 20094   HALLWF2      SA1     GENERATOR SEMI-SCHEDULED 2013-12-15 2014-07-01
+#> 20095     BLUFF      SA1     GENERATOR SEMI-SCHEDULED 2016-07-01 2017-06-29
+#> 20096    HALLWF      SA1     GENERATOR SEMI-SCHEDULED 2016-07-01 2017-06-29
+#> 20097     BLUFF      SA1     GENERATOR SEMI-SCHEDULED 2015-07-01 2015-08-25
+#> 20098   OAKLAND     VIC1     GENERATOR SEMI-SCHEDULED 2023-02-07 2023-07-01
+#> 21721    TORRIS      SA1     GENERATOR      SCHEDULED 2002-04-01 2002-07-01
+#> 21722    TORRIS      SA1     GENERATOR      SCHEDULED 2024-07-01 2025-07-01
+#> 21723    TORRIS      SA1     GENERATOR      SCHEDULED 2000-07-01 2001-07-01
+#> 21724    TORRIS      SA1     GENERATOR  NON-SCHEDULED 2023-04-26 2023-07-01
+#> 21725    TORRIS      SA1     GENERATOR  NON-SCHEDULED 2023-07-01 2024-07-01
+#> 21726    TORRIS      SA1     GENERATOR      SCHEDULED 2004-09-14 2004-10-26
+#> 21727    TORRIS      SA1     GENERATOR  NON-SCHEDULED 2020-09-30 2021-07-01
+#> 21728    TORRIS      SA1     GENERATOR  NON-SCHEDULED 2017-07-01 2017-07-18
+#> 21729    TORRIS      SA1     GENERATOR      SCHEDULED 2023-07-01 2023-10-09
+#> 21730    TORRIS      SA1     GENERATOR  NON-SCHEDULED 2024-07-01 2025-07-01
+#> 21731      WPWF      SA1     GENERATOR SEMI-SCHEDULED 2024-07-01 2025-07-01
+#> 21732    TORRIS      SA1     GENERATOR  NON-SCHEDULED 2010-07-01 2011-04-14
+#> 21733    TORRIS      SA1     GENERATOR      SCHEDULED 2024-06-03 2024-07-01
+#> 21734    TORRIS      SA1     GENERATOR  NON-SCHEDULED 2017-06-29 2017-07-01
+#> 21735    TORRIS      SA1     GENERATOR  NON-SCHEDULED 2008-07-01 2009-07-01
+#> 21736    TORRIS      SA1     GENERATOR      SCHEDULED 2006-07-01 2007-01-16
+#> 21737    TORRIS      SA1     GENERATOR  NON-SCHEDULED 2025-07-01 2026-07-01
+#> 21738    TORRIS      SA1     GENERATOR  NON-SCHEDULED 2016-07-01 2017-06-29
+#> 21739    TORRIS      SA1     GENERATOR      SCHEDULED 2007-01-16 2007-07-01
+#> 21740    TORRIS      SA1     GENERATOR  NON-SCHEDULED 2019-07-01 2019-10-15
+#> 21741    TORRIS      SA1     GENERATOR      SCHEDULED 2001-10-16 2001-11-05
+#> 21742    TORRIS      SA1     GENERATOR      SCHEDULED 2001-07-01 2001-09-13
+#> 21743    TORRIS      SA1     GENERATOR      SCHEDULED 2004-07-01 2004-09-14
+#> 21744    TORRIS      SA1     GENERATOR  NON-SCHEDULED 2019-10-15 2020-07-01
+#> 21745    TORRIS      SA1     GENERATOR  NON-SCHEDULED 2014-07-01 2015-07-01
+#> 21746    TORRIS      SA1     GENERATOR      SCHEDULED 1998-11-29 1999-07-01
+#> 21747    TORRIS      SA1     GENERATOR      SCHEDULED 2010-10-27 2011-01-18
+#> 21748    TORRIS      SA1     GENERATOR  NON-SCHEDULED 2018-07-01 2019-07-01
+#> 21749    TORRIS      SA1     GENERATOR      SCHEDULED 2026-07-01 2999-12-31
+#> 21750    TORRIS      SA1     GENERATOR      SCHEDULED 2021-07-01 2021-09-30
+#> 21751    TORRIS      SA1     GENERATOR  NON-SCHEDULED 2017-07-18 2018-07-01
+#> 21752    TORRIS      SA1     GENERATOR      SCHEDULED 2001-09-13 2001-10-16
+#> 21753    TORRIS      SA1     GENERATOR      SCHEDULED 2003-12-03 2004-07-01
+#> 21754    TORRIS      SA1     GENERATOR  NON-SCHEDULED 2012-07-01 2013-07-01
+#> 21755    TORRIS      SA1     GENERATOR      SCHEDULED 2003-10-22 2003-12-03
+#> 21756    TIBESS      SA1 BIDIRECTIONAL      SCHEDULED 2025-07-01 2026-07-01
+#> 21757    TORRIS      SA1     GENERATOR  NON-SCHEDULED 2015-07-01 2016-07-01
+#> 21758    TORRIS      SA1     GENERATOR      SCHEDULED 2014-07-01 2015-07-01
+#> 21759    TORRIS      SA1     GENERATOR      SCHEDULED 2005-07-01 2006-07-01
+#> 21760    TORRIS      SA1     GENERATOR      SCHEDULED 2001-11-05 2002-04-01
+#> 21761    TORRIS      SA1     GENERATOR  NON-SCHEDULED 2010-02-09 2010-07-01
+#> 21762    TORRIS      SA1     GENERATOR  NON-SCHEDULED 2011-04-14 2011-07-01
+#> 21763    TORRIS      SA1     GENERATOR      SCHEDULED 2022-07-01 2022-09-30
+#> 21764    TORRIS      SA1     GENERATOR  NON-SCHEDULED 2022-07-01 2022-09-30
+#> 21765    TORRIS      SA1     GENERATOR      SCHEDULED 2003-07-01 2003-10-16
+#> 21766    TORRIS      SA1     GENERATOR      SCHEDULED 2005-07-01 2006-07-01
+#> 21767    TORRIS      SA1     GENERATOR      SCHEDULED 2012-07-01 2013-07-01
+#> 21768    TORRIS      SA1     GENERATOR  NON-SCHEDULED 2021-09-30 2022-07-01
+#> 21769    TORRIS      SA1     GENERATOR  NON-SCHEDULED 2014-04-25 2014-07-01
+#> 21770    TORRIS      SA1     GENERATOR  NON-SCHEDULED 2009-07-01 2010-02-09
+#> 21771    TORRIS      SA1     GENERATOR      SCHEDULED 2000-07-01 2001-07-01
+#> 21772    TORRIS      SA1     GENERATOR  NON-SCHEDULED 2013-12-15 2014-04-25
+#> 21773    TORRIS      SA1     GENERATOR      SCHEDULED 2003-07-01 2003-10-16
+#> 21774    TORRIS      SA1     GENERATOR      SCHEDULED 2002-07-09 2003-07-01
+#> 21775    HALLWF      SA1     GENERATOR SEMI-SCHEDULED 2026-07-01 2999-12-31
+#> 21776    TORRIS      SA1     GENERATOR      SCHEDULED 2014-07-01 2015-07-01
+#> 21777    TORRIS      SA1     GENERATOR      SCHEDULED 2004-07-01 2004-09-14
+#> 21778    TORRIS      SA1     GENERATOR      SCHEDULED 2004-10-26 2005-07-01
+#> 21779    TORRIS      SA1     GENERATOR      SCHEDULED 2016-07-01 2017-06-29
+#> 21780    TORRIS      SA1     GENERATOR      SCHEDULED 2022-09-30 2023-04-26
+#> 21781    TORRIS      SA1     GENERATOR      SCHEDULED 1998-10-25 1998-11-29
+#> 21782    TORRIS      SA1     GENERATOR      SCHEDULED 2011-04-14 2011-07-01
+#> 21783    TORRIS      SA1     GENERATOR      SCHEDULED 1998-10-25 1998-11-29
+#> 21784    TORRIS      SA1     GENERATOR  NON-SCHEDULED 2011-07-01 2012-07-01
+#> 21785    TORRIS      SA1     GENERATOR      SCHEDULED 2004-09-14 2004-10-26
+#> 21786    TORRIS      SA1     GENERATOR      SCHEDULED 2007-01-16 2007-07-01
+#> 21787   BARKIPS      SA1     GENERATOR      SCHEDULED 2025-07-01 2026-07-01
+#> 21788    TORRIS      SA1     GENERATOR  NON-SCHEDULED 2007-01-16 2007-07-01
+#> 21789    TORRIS      SA1     GENERATOR      SCHEDULED 2025-07-01 2026-07-01
+#> 21790      WPWF      SA1     GENERATOR SEMI-SCHEDULED 2021-12-09 2022-07-01
+#> 21791    TORRIS      SA1     GENERATOR  NON-SCHEDULED 2020-07-01 2020-09-30
+#> 21792    TORRIS      SA1     GENERATOR      SCHEDULED 2010-10-27 2011-01-18
+#> 21793    TORRIS      SA1     GENERATOR  NON-SCHEDULED 2022-09-30 2023-04-26
+#> 21794    TORRIS      SA1     GENERATOR      SCHEDULED 2001-09-13 2001-10-16
+#> 21795    TORRIS      SA1     GENERATOR      SCHEDULED 2026-07-01 2999-12-31
+#> 21796    TORRIS      SA1     GENERATOR      SCHEDULED 2004-07-01 2004-09-14
+#> 21797    TORRIS      SA1     GENERATOR      SCHEDULED 2010-07-01 2010-10-27
+#> 21798    TORRIS      SA1     GENERATOR      SCHEDULED 2021-09-30 2022-07-01
+#> 21799    TORRIS      SA1     GENERATOR      SCHEDULED 2003-10-16 2003-10-22
+#> 21800    TORRIS      SA1     GENERATOR  NON-SCHEDULED 2007-07-17 2008-07-01
+#> 21801    TORRIS      SA1     GENERATOR      SCHEDULED 1998-11-29 1999-07-01
+#> 21802    TORRIS      SA1     GENERATOR      SCHEDULED 2001-07-01 2001-09-13
+#> 21803      WPWF      SA1     GENERATOR SEMI-SCHEDULED 2024-06-03 2024-07-01
+#> 21804    TORRIS      SA1     GENERATOR  NON-SCHEDULED 2004-09-14 2004-10-26
+#> 21805    TORRIS      SA1     GENERATOR  NON-SCHEDULED 2021-07-01 2021-09-30
+#> 21806    TORRIS      SA1     GENERATOR      SCHEDULED 1999-07-01 2000-07-01
+#> 21807   BARKIPS      SA1     GENERATOR      SCHEDULED 2021-07-01 2022-07-01
+#> 21808    TORRIS      SA1     GENERATOR      SCHEDULED 2003-10-22 2003-12-03
+#> 21809    TORRIS      SA1     GENERATOR      SCHEDULED 2011-07-01 2012-07-01
+#> 21810    TORRIS      SA1     GENERATOR      SCHEDULED 2004-10-26 2005-07-01
+#> 21811    TORRIS      SA1     GENERATOR      SCHEDULED 2017-07-18 2017-07-25
 #> 21812    TORRIS      SA1     GENERATOR      SCHEDULED 2002-04-01 2002-07-01
-#> 21813      WPWF      SA1     GENERATOR SEMI-SCHEDULED 2023-07-01 2024-06-03
-#> 21814    TORRIS      SA1     GENERATOR      SCHEDULED 2004-09-14 2004-10-26
-#> 21815    TORRIS      SA1     GENERATOR      SCHEDULED 2007-07-01 2007-07-17
-#> 21816    TORRIS      SA1     GENERATOR      SCHEDULED 2003-10-16 2003-10-22
-#> 21817    TORRIS      SA1     GENERATOR      SCHEDULED 2010-02-09 2010-05-25
-#> 21818    TORRIS      SA1     GENERATOR      SCHEDULED 1999-07-01 2000-07-01
-#> 21819    TORRIS      SA1     GENERATOR      SCHEDULED 2008-07-01 2009-07-01
-#> 21820    TORRIS      SA1     GENERATOR      SCHEDULED 2024-07-01 2025-07-01
-#> 21821    TORRIS      SA1     GENERATOR      SCHEDULED 2020-09-30 2021-07-01
-#> 21822    TORRIS      SA1     GENERATOR      SCHEDULED 2020-07-01 2020-09-30
-#> 21823    TORRIS      SA1     GENERATOR      SCHEDULED 2013-07-01 2013-12-15
-#> 21824    TORRIS      SA1     GENERATOR      SCHEDULED 2017-06-29 2017-07-01
-#> 21825    TORRIS      SA1     GENERATOR      SCHEDULED 2001-11-05 2002-04-01
-#> 21826    TORRIS      SA1     GENERATOR  NON-SCHEDULED 2006-07-01 2007-01-16
-#> 21827    TORRIS      SA1     GENERATOR      SCHEDULED 2012-07-01 2013-07-01
-#> 21828    TORRIS      SA1     GENERATOR  NON-SCHEDULED 2026-07-01 2999-12-31
-#> 21829     NBHWF      SA1     GENERATOR SEMI-SCHEDULED 2020-07-01 2021-07-01
-#> 21830    TORRIS      SA1     GENERATOR      SCHEDULED 2025-07-01 2026-07-01
-#> 21831     NBHWF      SA1     GENERATOR SEMI-SCHEDULED 2021-07-01 2022-07-01
-#> 21832    TORRIS      SA1     GENERATOR      SCHEDULED 2025-07-01 2026-07-01
-#> 21833    TORRIS      SA1     GENERATOR      SCHEDULED 2002-07-01 2002-07-09
-#> 21834    TORRIS      SA1     GENERATOR      SCHEDULED 2005-07-01 2006-07-01
-#> 21835    TORRIS      SA1     GENERATOR      SCHEDULED 2003-10-22 2004-07-01
-#> 21836    TORRIS      SA1     GENERATOR      SCHEDULED 2009-07-01 2010-02-09
-#> 21837    TORRIS      SA1     GENERATOR      SCHEDULED 2019-07-01 2019-10-15
-#> 21838    TORRIS      SA1     GENERATOR      SCHEDULED 2001-07-01 2001-09-13
-#> 21839    HALLWF      SA1     GENERATOR SEMI-SCHEDULED 2023-07-01 2024-06-03
-#> 21840    TORRIS      SA1     GENERATOR      SCHEDULED 2004-10-26 2005-07-01
-#> 21841    TORRIS      SA1     GENERATOR  NON-SCHEDULED 2002-07-09 2003-07-01
-#> 21842    TORRIS      SA1     GENERATOR      SCHEDULED 2001-11-05 2002-04-01
-#> 21843    TORRIS      SA1     GENERATOR      SCHEDULED 2010-05-25 2010-07-01
-#> 21844    TORRIS      SA1     GENERATOR      SCHEDULED 2003-07-01 2003-10-16
-#> 21845    TORRIS      SA1     GENERATOR      SCHEDULED 2001-09-13 2001-10-16
-#> 21846    TORRIS      SA1     GENERATOR      SCHEDULED 2002-04-01 2002-07-01
-#> 21847    TORRIS      SA1     GENERATOR      SCHEDULED 2001-09-13 2001-10-16
-#> 21848    TORRIS      SA1     GENERATOR      SCHEDULED 2011-04-14 2011-07-01
-#> 21849    TORRIS      SA1     GENERATOR      SCHEDULED 2003-07-01 2003-10-22
-#> 21850    TORRIS      SA1     GENERATOR      SCHEDULED 2004-09-14 2004-10-26
-#> 21851    TORRIS      SA1     GENERATOR  NON-SCHEDULED 2007-07-01 2007-07-17
-#> 21852    TORRIS      SA1     GENERATOR      SCHEDULED 2007-01-16 2007-07-01
-#> 21853    TORRIS      SA1     GENERATOR      SCHEDULED 2010-10-27 2011-01-18
-#> 21854    TORRIS      SA1     GENERATOR      SCHEDULED 2013-12-15 2014-07-01
-#> 21855    TORRIS      SA1     GENERATOR  NON-SCHEDULED 2005-07-01 2006-07-01
-#> 21856    TORRIS      SA1     GENERATOR  NON-SCHEDULED 2003-07-01 2003-10-22
-#> 21857     NBHWF      SA1     GENERATOR SEMI-SCHEDULED 2019-07-01 2019-10-15
-#> 21858    TORRIS      SA1     GENERATOR      SCHEDULED 2023-10-09 2024-06-03
-#> 21859    TIBESS      SA1          LOAD      SCHEDULED 2024-06-03 2024-07-01
-#> 21860    TIBESS      SA1          LOAD      SCHEDULED 2024-07-12 2024-07-31
-#> 21861    TORRIS      SA1     GENERATOR      SCHEDULED 2002-07-09 2003-07-01
-#> 21862    TORRIS      SA1     GENERATOR      SCHEDULED 1999-07-01 2000-07-01
-#> 21863    TORRIS      SA1     GENERATOR      SCHEDULED 2019-07-01 2019-10-15
-#> 21864    TORRIS      SA1     GENERATOR      SCHEDULED 2007-07-01 2007-07-17
-#> 21865    TORRIS      SA1     GENERATOR      SCHEDULED 2013-07-01 2013-12-15
-#> 21866    TORRIS      SA1     GENERATOR      SCHEDULED 2003-10-16 2003-10-22
-#> 21867    TORRIS      SA1     GENERATOR      SCHEDULED 1999-07-01 2000-07-01
-#> 21868    TORRIS      SA1     GENERATOR      SCHEDULED 2003-12-03 2004-07-01
-#> 21869    TORRIS      SA1     GENERATOR      SCHEDULED 2003-10-22 2003-12-03
-#> 21870    TORRIS      SA1     GENERATOR      SCHEDULED 2003-12-03 2004-07-01
-#> 21871    TORRIS      SA1     GENERATOR      SCHEDULED 2013-07-01 2013-12-15
-#> 21872    TORRIS      SA1     GENERATOR      SCHEDULED 2001-10-16 2001-11-05
-#> 21873     NBHWF      SA1     GENERATOR SEMI-SCHEDULED 2023-04-26 2023-07-01
-#> 21874     NBHWF      SA1     GENERATOR SEMI-SCHEDULED 2025-07-01 2026-07-01
+#> 21813    TORRIS      SA1     GENERATOR      SCHEDULED 2010-05-25 2010-07-01
+#> 21814    TIBESS      SA1 BIDIRECTIONAL      SCHEDULED 2026-07-01 2999-12-31
+#> 21815    TORRIS      SA1     GENERATOR      SCHEDULED 2011-01-18 2011-04-14
+#> 21816    TORRIS      SA1     GENERATOR      SCHEDULED 2002-04-01 2002-07-01
+#> 21817    TORRIS      SA1     GENERATOR      SCHEDULED 2011-07-01 2012-07-01
+#> 21818    TORRIS      SA1     GENERATOR      SCHEDULED 2012-07-01 2013-07-01
+#> 21819    TORRIS      SA1     GENERATOR      SCHEDULED 2016-07-01 2017-06-29
+#> 21820    TORRIS      SA1     GENERATOR      SCHEDULED 2015-07-01 2016-07-01
+#> 21821    TORRIS      SA1     GENERATOR      SCHEDULED 2010-02-09 2010-05-25
+#> 21822    TORRIS      SA1     GENERATOR      SCHEDULED 1999-07-01 2000-07-01
+#> 21823    TORRIS      SA1     GENERATOR      SCHEDULED 2008-07-01 2009-07-01
+#> 21824    TORRIS      SA1     GENERATOR      SCHEDULED 2024-07-01 2025-07-01
+#> 21825    TORRIS      SA1     GENERATOR      SCHEDULED 2020-09-30 2021-07-01
+#> 21826    TORRIS      SA1     GENERATOR      SCHEDULED 2020-07-01 2020-09-30
+#> 21827    TORRIS      SA1     GENERATOR      SCHEDULED 2013-07-01 2013-12-15
+#> 21828    TORRIS      SA1     GENERATOR      SCHEDULED 2017-06-29 2017-07-01
+#> 21829    TORRIS      SA1     GENERATOR      SCHEDULED 2001-11-05 2002-04-01
+#> 21830      WPWF      SA1     GENERATOR SEMI-SCHEDULED 2023-07-01 2024-06-03
+#> 21831    TORRIS      SA1     GENERATOR      SCHEDULED 2004-09-14 2004-10-26
+#> 21832    TORRIS      SA1     GENERATOR      SCHEDULED 2023-10-09 2024-06-03
+#> 21833    TORRIS      SA1     GENERATOR      SCHEDULED 2003-12-03 2004-07-01
+#> 21834    TORRIS      SA1     GENERATOR      SCHEDULED 2025-07-01 2026-07-01
+#> 21835     NBHWF      SA1     GENERATOR SEMI-SCHEDULED 2021-07-01 2022-07-01
+#> 21836    TORRIS      SA1     GENERATOR      SCHEDULED 2025-07-01 2026-07-01
+#> 21837    TORRIS      SA1     GENERATOR      SCHEDULED 2002-07-01 2002-07-09
+#> 21838    TORRIS      SA1     GENERATOR      SCHEDULED 2005-07-01 2006-07-01
+#> 21839    TORRIS      SA1     GENERATOR      SCHEDULED 2003-10-22 2004-07-01
+#> 21840    TORRIS      SA1     GENERATOR      SCHEDULED 2009-07-01 2010-02-09
+#> 21841    TORRIS      SA1     GENERATOR      SCHEDULED 2019-07-01 2019-10-15
+#> 21842    TORRIS      SA1     GENERATOR      SCHEDULED 2001-07-01 2001-09-13
+#> 21843    TORRIS      SA1     GENERATOR  NON-SCHEDULED 2006-07-01 2007-01-16
+#> 21844    TORRIS      SA1     GENERATOR      SCHEDULED 2012-07-01 2013-07-01
+#> 21845    TORRIS      SA1     GENERATOR      SCHEDULED 2007-07-01 2007-07-17
+#> 21846    TORRIS      SA1     GENERATOR      SCHEDULED 2003-10-16 2003-10-22
+#> 21847    TORRIS      SA1     GENERATOR      SCHEDULED 2010-05-25 2010-07-01
+#> 21848    TORRIS      SA1     GENERATOR      SCHEDULED 2003-07-01 2003-10-16
+#> 21849    TORRIS      SA1     GENERATOR      SCHEDULED 2001-09-13 2001-10-16
+#> 21850    TORRIS      SA1     GENERATOR      SCHEDULED 2002-04-01 2002-07-01
+#> 21851    TORRIS      SA1     GENERATOR      SCHEDULED 2001-09-13 2001-10-16
+#> 21852    TORRIS      SA1     GENERATOR      SCHEDULED 2011-04-14 2011-07-01
+#> 21853    TORRIS      SA1     GENERATOR      SCHEDULED 2003-07-01 2003-10-22
+#> 21854    TORRIS      SA1     GENERATOR      SCHEDULED 2004-09-14 2004-10-26
+#> 21855    TORRIS      SA1     GENERATOR  NON-SCHEDULED 2007-07-01 2007-07-17
+#> 21856    HALLWF      SA1     GENERATOR SEMI-SCHEDULED 2023-07-01 2024-06-03
+#> 21857    TORRIS      SA1     GENERATOR      SCHEDULED 2004-10-26 2005-07-01
+#> 21858    TORRIS      SA1     GENERATOR  NON-SCHEDULED 2026-07-01 2999-12-31
+#> 21859     NBHWF      SA1     GENERATOR SEMI-SCHEDULED 2020-07-01 2021-07-01
+#> 21860    TORRIS      SA1     GENERATOR  NON-SCHEDULED 2003-07-01 2003-10-22
+#> 21861     NBHWF      SA1     GENERATOR SEMI-SCHEDULED 2019-07-01 2019-10-15
+#> 21862    TORRIS      SA1     GENERATOR      SCHEDULED 2023-10-09 2024-06-03
+#> 21863    TIBESS      SA1          LOAD      SCHEDULED 2024-06-03 2024-07-01
+#> 21864    TIBESS      SA1          LOAD      SCHEDULED 2024-07-12 2024-07-31
+#> 21865    TORRIS      SA1     GENERATOR      SCHEDULED 2002-07-09 2003-07-01
+#> 21866    TORRIS      SA1     GENERATOR      SCHEDULED 1999-07-01 2000-07-01
+#> 21867    TORRIS      SA1     GENERATOR      SCHEDULED 2019-07-01 2019-10-15
+#> 21868    TORRIS      SA1     GENERATOR      SCHEDULED 2007-07-01 2007-07-17
+#> 21869    TORRIS      SA1     GENERATOR      SCHEDULED 2007-01-16 2007-07-01
+#> 21870    TORRIS      SA1     GENERATOR      SCHEDULED 2010-10-27 2011-01-18
+#> 21871    TORRIS      SA1     GENERATOR  NON-SCHEDULED 2002-07-09 2003-07-01
+#> 21872    TORRIS      SA1     GENERATOR      SCHEDULED 2001-11-05 2002-04-01
+#> 21873    TORRIS      SA1     GENERATOR      SCHEDULED 2003-10-22 2003-12-03
+#> 21874    TORRIS      SA1     GENERATOR      SCHEDULED 2003-12-03 2004-07-01
 #> 21875    TORRIS      SA1     GENERATOR      SCHEDULED 2013-07-01 2013-12-15
-#> 21876    TORRIS      SA1     GENERATOR      SCHEDULED 2023-04-26 2023-07-01
-#> 21877    TORRIS      SA1     GENERATOR      SCHEDULED 1998-10-25 1998-11-29
-#> 21878    TORRIS      SA1     GENERATOR      SCHEDULED 2026-07-01 2999-12-31
-#> 21879    TORRIS      SA1     GENERATOR      SCHEDULED 2001-10-16 2001-11-05
-#> 21880    TORRIS      SA1     GENERATOR      SCHEDULED 2013-12-15 2014-07-01
-#> 21881      WPWF      SA1     GENERATOR SEMI-SCHEDULED 2022-07-01 2023-04-26
-#> 21882    TORRIS      SA1     GENERATOR      SCHEDULED 2009-07-01 2010-02-09
-#> 21883    TORRIS      SA1     GENERATOR      SCHEDULED 2002-07-09 2003-07-01
-#> 21884    TORRIS      SA1     GENERATOR      SCHEDULED 2022-09-30 2023-04-26
-#> 21885    TORRIS      SA1     GENERATOR      SCHEDULED 1998-11-29 1999-07-01
-#> 21886    TORRIS      SA1     GENERATOR      SCHEDULED 2001-07-01 2001-09-13
-#> 21887    TORRIS      SA1     GENERATOR      SCHEDULED 2001-10-16 2001-11-05
-#> 21888    TORRIS      SA1     GENERATOR      SCHEDULED 1998-11-29 1999-07-01
-#> 21889    TORRIS      SA1     GENERATOR      SCHEDULED 1998-10-25 1998-11-29
-#> 21890   HALLWF2      SA1     GENERATOR SEMI-SCHEDULED 2017-06-29 2017-07-01
-#> 21891    TORRIS      SA1     GENERATOR      SCHEDULED 2002-07-01 2002-07-09
-#> 21892    TORRIS      SA1     GENERATOR      SCHEDULED 2016-07-01 2017-06-29
-#> 21893    TORRIS      SA1     GENERATOR      SCHEDULED 2000-07-01 2001-07-01
-#> 21894    TORRIS      SA1     GENERATOR      SCHEDULED 2019-10-15 2020-07-01
-#> 21895    TORRIS      SA1     GENERATOR      SCHEDULED 2010-02-09 2010-05-25
-#> 21896    TORRIS      SA1     GENERATOR      SCHEDULED 2023-07-01 2023-10-09
-#> 21897    TORRIS      SA1     GENERATOR      SCHEDULED 2007-07-01 2007-07-17
-#> 21898    TIBESS      SA1     GENERATOR      SCHEDULED 2024-07-01 2024-07-12
-#> 21899    TORRIS      SA1     GENERATOR      SCHEDULED 2020-09-30 2021-07-01
-#> 21900    TORRIS      SA1     GENERATOR      SCHEDULED 2003-07-01 2003-10-16
-#> 21901    TORRIS      SA1     GENERATOR      SCHEDULED 2024-06-03 2024-07-01
-#> 21902   BARKIPS      SA1     GENERATOR      SCHEDULED 2026-07-01 2999-12-31
-#> 21903    TORRIS      SA1     GENERATOR      SCHEDULED 2002-04-01 2002-07-01
-#> 21904   BARKIPS      SA1     GENERATOR      SCHEDULED 2019-10-15 2020-06-10
-#> 21905    TORRIS      SA1     GENERATOR      SCHEDULED 2015-07-01 2016-07-01
-#> 21906    TORRIS      SA1     GENERATOR      SCHEDULED 2011-07-01 2012-07-01
-#> 21907    TORRIS      SA1     GENERATOR      SCHEDULED 2007-07-17 2008-07-01
-#> 21908    HALLWF      SA1     GENERATOR SEMI-SCHEDULED 2023-04-26 2023-07-01
-#> 21909    TORRIS      SA1     GENERATOR      SCHEDULED 1999-07-01 2000-07-01
-#> 21910    TORRIS      SA1     GENERATOR  NON-SCHEDULED 2002-07-01 2002-07-09
-#> 21911    TORRIS      SA1     GENERATOR      SCHEDULED 2008-07-01 2009-07-01
-#> 21912    TORRIS      SA1     GENERATOR      SCHEDULED 2011-04-14 2011-07-01
-#> 21913     NBHWF      SA1     GENERATOR SEMI-SCHEDULED 2019-10-15 2020-07-01
-#> 21914    TORRIS      SA1     GENERATOR      SCHEDULED 2009-07-01 2010-02-09
-#> 21915    TORRIS      SA1     GENERATOR      SCHEDULED 2017-06-29 2017-07-01
-#> 21916   BARKIPS      SA1     GENERATOR      SCHEDULED 2020-06-10 2020-07-01
-#> 21917    TORRIS      SA1     GENERATOR      SCHEDULED 2017-07-18 2018-07-01
-#> 21918    TORRIS      SA1     GENERATOR      SCHEDULED 2019-10-15 2020-07-01
-#> 21919   HALLWF2      SA1     GENERATOR SEMI-SCHEDULED 2026-07-01 2999-12-31
-#> 21920    TORRIS      SA1     GENERATOR      SCHEDULED 2009-07-01 2010-02-09
-#> 21921    TORRIS      SA1     GENERATOR      SCHEDULED 2002-07-01 2002-07-09
-#> 21922    TORRIS      SA1     GENERATOR  NON-SCHEDULED 2004-07-01 2004-09-14
-#> 21923    TORRIS      SA1     GENERATOR      SCHEDULED 2010-02-09 2010-07-01
-#> 21924    TORRIS      SA1     GENERATOR      SCHEDULED 2010-02-09 2010-05-25
-#> 21925    TORRIS      SA1     GENERATOR      SCHEDULED 2007-07-17 2008-07-01
-#> 21926    TORRIS      SA1     GENERATOR      SCHEDULED 2010-07-01 2010-10-27
-#> 21927    TORRIS      SA1     GENERATOR      SCHEDULED 2023-10-09 2024-06-03
-#> 21928    TORRIS      SA1     GENERATOR      SCHEDULED 2000-07-01 2001-07-01
-#> 21929    TORRIS      SA1     GENERATOR      SCHEDULED 2008-07-01 2009-07-01
-#> 21930    TORRIS      SA1     GENERATOR      SCHEDULED 2007-07-17 2008-07-01
-#> 21931    TORRIS      SA1     GENERATOR      SCHEDULED 2019-10-15 2020-07-01
-#> 21932    TORRIS      SA1     GENERATOR      SCHEDULED 2017-06-29 2017-07-01
-#> 21933    HALLWF      SA1     GENERATOR SEMI-SCHEDULED 2017-07-18 2018-07-01
-#> 21934    TORRIS      SA1     GENERATOR      SCHEDULED 2001-09-13 2001-10-16
-#> 21935     NBHWF      SA1     GENERATOR SEMI-SCHEDULED 2017-07-18 2018-07-01
-#> 21936     BLUFF      SA1     GENERATOR SEMI-SCHEDULED 2024-07-01 2025-07-01
-#> 21937    TIBESS      SA1     GENERATOR      SCHEDULED 2024-07-12 2024-07-31
-#> 21938    TORRIS      SA1     GENERATOR  NON-SCHEDULED 1999-07-01 2000-07-01
-#> 21939    HALLWF      SA1     GENERATOR SEMI-SCHEDULED 2021-07-01 2022-07-01
-#> 21940   HALLWF2      SA1     GENERATOR SEMI-SCHEDULED 2023-07-01 2024-06-03
-#> 21941    TORRIS      SA1     GENERATOR      SCHEDULED 2003-10-22 2003-12-03
-#> 21942    TIBESS      SA1          LOAD      SCHEDULED 2024-07-01 2024-07-12
-#> 21943    TORRIS      SA1     GENERATOR      SCHEDULED 2004-07-01 2004-09-14
-#> 21944    TORRIS      SA1     GENERATOR      SCHEDULED 2017-06-29 2017-07-01
-#> 21945    TORRIS      SA1     GENERATOR      SCHEDULED 2004-10-26 2005-07-01
-#> 21946    TORRIS      SA1     GENERATOR      SCHEDULED 2011-01-18 2011-04-14
-#> 21947    TORRIS      SA1     GENERATOR      SCHEDULED 2013-07-01 2013-12-15
-#> 21948    TORRIS      SA1     GENERATOR      SCHEDULED 1998-11-29 1999-07-01
-#> 21949    TORRIS      SA1     GENERATOR  NON-SCHEDULED 2004-10-26 2005-07-01
-#> 21950    TORRIS      SA1     GENERATOR      SCHEDULED 2014-07-01 2015-07-01
-#> 21951    TORRIS      SA1     GENERATOR      SCHEDULED 2015-07-01 2016-07-01
-#> 21952    TORRIS      SA1     GENERATOR      SCHEDULED 2002-07-01 2002-07-09
-#> 21953    TORRIS      SA1     GENERATOR      SCHEDULED 2002-07-09 2003-07-01
-#> 21954    TORRIS      SA1     GENERATOR      SCHEDULED 2019-10-15 2020-07-01
-#> 21955     NBHWF      SA1     GENERATOR SEMI-SCHEDULED 2018-07-01 2019-07-01
-#> 21956      WPWF      SA1     GENERATOR SEMI-SCHEDULED 2026-07-01 2999-12-31
-#> 21957    TORRIS      SA1     GENERATOR      SCHEDULED 2020-09-30 2021-07-01
-#> 21958    TORRIS      SA1     GENERATOR      SCHEDULED 2015-07-01 2016-07-01
-#> 21959    TORRIS      SA1     GENERATOR      SCHEDULED 2005-07-01 2006-07-01
-#> 21960     BLUFF      SA1     GENERATOR SEMI-SCHEDULED 2024-06-03 2024-07-01
-#> 21961    TORRIS      SA1     GENERATOR      SCHEDULED 2008-07-01 2009-07-01
-#> 21962    TORRIS      SA1     GENERATOR      SCHEDULED 2010-07-01 2010-10-27
-#> 21963    TORRIS      SA1     GENERATOR      SCHEDULED 2007-07-17 2008-07-01
-#> 21964     NBHWF      SA1     GENERATOR SEMI-SCHEDULED 2024-07-01 2025-07-01
-#> 21965    TORRIS      SA1     GENERATOR      SCHEDULED 2012-07-01 2013-07-01
-#> 21966    TORRIS      SA1     GENERATOR      SCHEDULED 2013-12-15 2014-07-01
-#> 21967    TORRIS      SA1     GENERATOR      SCHEDULED 2024-06-03 2024-07-01
-#> 21968    TORRIS      SA1     GENERATOR      SCHEDULED 2001-11-05 2002-04-01
-#> 21969     BLUFF      SA1     GENERATOR SEMI-SCHEDULED 2025-07-01 2026-07-01
-#> 21970    TORRIS      SA1     GENERATOR      SCHEDULED 2018-07-01 2019-07-01
-#> 21971    TORRIS      SA1     GENERATOR      SCHEDULED 2020-07-01 2020-09-30
-#> 21972    TORRIS      SA1     GENERATOR      SCHEDULED 2018-07-01 2019-07-01
-#> 21973    TORRIS      SA1     GENERATOR      SCHEDULED 2001-07-01 2001-09-13
-#> 21974    TORRIS      SA1     GENERATOR      SCHEDULED 2021-07-01 2021-09-30
-#> 21975    TORRIS      SA1     GENERATOR      SCHEDULED 2021-09-30 2022-07-01
-#> 21976    TORRIS      SA1     GENERATOR  NON-SCHEDULED 2003-10-22 2004-07-01
-#> 21977   HALLWF2      SA1     GENERATOR SEMI-SCHEDULED 2025-07-01 2026-07-01
-#> 21978    TORRIS      SA1     GENERATOR      SCHEDULED 2010-02-09 2010-07-01
-#> 21979    TORRIS      SA1     GENERATOR      SCHEDULED 2023-07-01 2023-10-09
-#> 21980    HALLWF      SA1     GENERATOR SEMI-SCHEDULED 2020-07-01 2021-07-01
-#> 21981    TORRIS      SA1     GENERATOR      SCHEDULED 2002-07-01 2002-07-09
-#> 21982    TORRIS      SA1     GENERATOR      SCHEDULED 2003-10-16 2003-10-22
-#> 21983     NBHWF      SA1     GENERATOR SEMI-SCHEDULED 2026-07-01 2999-12-31
-#> 21984    TORRIS      SA1     GENERATOR      SCHEDULED 2024-07-01 2025-07-01
-#> 21985    TORRIS      SA1     GENERATOR      SCHEDULED 2025-07-01 2026-07-01
-#> 21986    TORRIS      SA1     GENERATOR      SCHEDULED 2004-07-01 2004-09-14
-#> 21987    TORRIS      SA1     GENERATOR      SCHEDULED 2013-12-15 2014-07-01
-#> 21988    TORRIS      SA1     GENERATOR      SCHEDULED 2017-07-18 2018-07-01
-#> 21989    TORRIS      SA1     GENERATOR      SCHEDULED 2006-07-01 2007-01-16
-#> 21990    TORRIS      SA1     GENERATOR      SCHEDULED 2010-07-01 2010-10-27
-#> 21991    TORRIS      SA1     GENERATOR      SCHEDULED 2007-01-16 2007-07-01
-#> 21992    TORRIS      SA1     GENERATOR      SCHEDULED 2007-07-01 2007-07-17
-#> 21993    TORRIS      SA1     GENERATOR      SCHEDULED 2010-05-25 2010-07-01
-#> 21994    TORRIS      SA1     GENERATOR      SCHEDULED 2009-07-01 2010-02-09
-#> 21995    TORRIS      SA1     GENERATOR      SCHEDULED 2010-10-27 2011-01-18
-#> 21996    TORRIS      SA1     GENERATOR      SCHEDULED 2022-07-01 2022-09-30
-#> 21997   BARKIPS      SA1     GENERATOR      SCHEDULED 2024-07-01 2025-07-01
-#> 21998    TORRIS      SA1     GENERATOR      SCHEDULED 2011-07-01 2012-07-01
-#> 21999    TORRIS      SA1     GENERATOR      SCHEDULED 2017-07-18 2018-07-01
-#> 22000    TORRIS      SA1     GENERATOR      SCHEDULED 2004-09-14 2004-10-26
-#> 22001    TORRIS      SA1     GENERATOR      SCHEDULED 2007-07-01 2007-07-17
-#> 22002    TORRIS      SA1     GENERATOR      SCHEDULED 2013-07-01 2013-12-15
-#> 22003    TORRIS      SA1     GENERATOR      SCHEDULED 2020-07-01 2020-09-30
-#> 22004    TORRIS      SA1     GENERATOR  NON-SCHEDULED 2000-07-01 2001-07-01
-#> 22005      WPWF      SA1     GENERATOR  NON-SCHEDULED 2018-07-01 2019-07-01
+#> 21876    TORRIS      SA1     GENERATOR      SCHEDULED 2001-10-16 2001-11-05
+#> 21877     NBHWF      SA1     GENERATOR SEMI-SCHEDULED 2023-04-26 2023-07-01
+#> 21878     NBHWF      SA1     GENERATOR SEMI-SCHEDULED 2025-07-01 2026-07-01
+#> 21879    TORRIS      SA1     GENERATOR      SCHEDULED 2013-07-01 2013-12-15
+#> 21880    TORRIS      SA1     GENERATOR      SCHEDULED 2023-04-26 2023-07-01
+#> 21881    TORRIS      SA1     GENERATOR      SCHEDULED 1998-10-25 1998-11-29
+#> 21882    TORRIS      SA1     GENERATOR      SCHEDULED 2013-07-01 2013-12-15
+#> 21883    TORRIS      SA1     GENERATOR      SCHEDULED 2003-10-16 2003-10-22
+#> 21884    TORRIS      SA1     GENERATOR      SCHEDULED 2013-12-15 2014-07-01
+#> 21885    TORRIS      SA1     GENERATOR  NON-SCHEDULED 2005-07-01 2006-07-01
+#> 21886    TORRIS      SA1     GENERATOR      SCHEDULED 2009-07-01 2010-02-09
+#> 21887    TORRIS      SA1     GENERATOR      SCHEDULED 2002-07-09 2003-07-01
+#> 21888    TORRIS      SA1     GENERATOR      SCHEDULED 2022-09-30 2023-04-26
+#> 21889    TORRIS      SA1     GENERATOR      SCHEDULED 1998-11-29 1999-07-01
+#> 21890    TORRIS      SA1     GENERATOR      SCHEDULED 2001-07-01 2001-09-13
+#> 21891    TORRIS      SA1     GENERATOR      SCHEDULED 2001-10-16 2001-11-05
+#> 21892    TORRIS      SA1     GENERATOR      SCHEDULED 1998-11-29 1999-07-01
+#> 21893    TORRIS      SA1     GENERATOR      SCHEDULED 1998-10-25 1998-11-29
+#> 21894   HALLWF2      SA1     GENERATOR SEMI-SCHEDULED 2017-06-29 2017-07-01
+#> 21895    TORRIS      SA1     GENERATOR      SCHEDULED 2026-07-01 2999-12-31
+#> 21896    TORRIS      SA1     GENERATOR      SCHEDULED 2001-10-16 2001-11-05
+#> 21897    TORRIS      SA1     GENERATOR      SCHEDULED 1999-07-01 2000-07-01
+#> 21898    TORRIS      SA1     GENERATOR      SCHEDULED 2003-12-03 2004-07-01
+#> 21899    TORRIS      SA1     GENERATOR      SCHEDULED 2010-02-09 2010-05-25
+#> 21900    TORRIS      SA1     GENERATOR      SCHEDULED 2023-07-01 2023-10-09
+#> 21901    TORRIS      SA1     GENERATOR      SCHEDULED 2007-07-01 2007-07-17
+#> 21902    TIBESS      SA1     GENERATOR      SCHEDULED 2024-07-01 2024-07-12
+#> 21903    TORRIS      SA1     GENERATOR      SCHEDULED 2020-09-30 2021-07-01
+#> 21904    TORRIS      SA1     GENERATOR      SCHEDULED 2003-07-01 2003-10-16
+#> 21905    TORRIS      SA1     GENERATOR      SCHEDULED 2024-06-03 2024-07-01
+#> 21906   BARKIPS      SA1     GENERATOR      SCHEDULED 2026-07-01 2999-12-31
+#> 21907    TORRIS      SA1     GENERATOR      SCHEDULED 2002-04-01 2002-07-01
+#> 21908    TORRIS      SA1     GENERATOR      SCHEDULED 2002-07-01 2002-07-09
+#> 21909    TORRIS      SA1     GENERATOR      SCHEDULED 2016-07-01 2017-06-29
+#> 21910    TORRIS      SA1     GENERATOR      SCHEDULED 2013-12-15 2014-07-01
+#> 21911      WPWF      SA1     GENERATOR SEMI-SCHEDULED 2022-07-01 2023-04-26
+#> 21912    HALLWF      SA1     GENERATOR SEMI-SCHEDULED 2023-04-26 2023-07-01
+#> 21913    TORRIS      SA1     GENERATOR      SCHEDULED 1999-07-01 2000-07-01
+#> 21914    TORRIS      SA1     GENERATOR  NON-SCHEDULED 2002-07-01 2002-07-09
+#> 21915    TORRIS      SA1     GENERATOR      SCHEDULED 2008-07-01 2009-07-01
+#> 21916    TORRIS      SA1     GENERATOR      SCHEDULED 2011-04-14 2011-07-01
+#> 21917     NBHWF      SA1     GENERATOR SEMI-SCHEDULED 2019-10-15 2020-07-01
+#> 21918    TORRIS      SA1     GENERATOR      SCHEDULED 2009-07-01 2010-02-09
+#> 21919    TORRIS      SA1     GENERATOR      SCHEDULED 2017-06-29 2017-07-01
+#> 21920   BARKIPS      SA1     GENERATOR      SCHEDULED 2020-06-10 2020-07-01
+#> 21921   BARKIPS      SA1     GENERATOR      SCHEDULED 2019-10-15 2020-06-10
+#> 21922    TORRIS      SA1     GENERATOR      SCHEDULED 2015-07-01 2016-07-01
+#> 21923    TORRIS      SA1     GENERATOR      SCHEDULED 2000-07-01 2001-07-01
+#> 21924    TORRIS      SA1     GENERATOR      SCHEDULED 2019-10-15 2020-07-01
+#> 21925    TORRIS      SA1     GENERATOR      SCHEDULED 2002-07-01 2002-07-09
+#> 21926    TORRIS      SA1     GENERATOR  NON-SCHEDULED 2004-07-01 2004-09-14
+#> 21927    TORRIS      SA1     GENERATOR      SCHEDULED 2010-02-09 2010-07-01
+#> 21928    TORRIS      SA1     GENERATOR      SCHEDULED 2010-02-09 2010-05-25
+#> 21929    TORRIS      SA1     GENERATOR      SCHEDULED 2007-07-17 2008-07-01
+#> 21930    TORRIS      SA1     GENERATOR      SCHEDULED 2010-07-01 2010-10-27
+#> 21931    TORRIS      SA1     GENERATOR      SCHEDULED 2023-10-09 2024-06-03
+#> 21932    TORRIS      SA1     GENERATOR      SCHEDULED 2000-07-01 2001-07-01
+#> 21933    TORRIS      SA1     GENERATOR      SCHEDULED 2008-07-01 2009-07-01
+#> 21934    TORRIS      SA1     GENERATOR      SCHEDULED 2007-07-17 2008-07-01
+#> 21935    TORRIS      SA1     GENERATOR      SCHEDULED 2019-10-15 2020-07-01
+#> 21936    TORRIS      SA1     GENERATOR      SCHEDULED 2011-07-01 2012-07-01
+#> 21937    TORRIS      SA1     GENERATOR      SCHEDULED 2007-07-17 2008-07-01
+#> 21938    TORRIS      SA1     GENERATOR      SCHEDULED 2001-09-13 2001-10-16
+#> 21939     NBHWF      SA1     GENERATOR SEMI-SCHEDULED 2017-07-18 2018-07-01
+#> 21940     BLUFF      SA1     GENERATOR SEMI-SCHEDULED 2024-07-01 2025-07-01
+#> 21941    TIBESS      SA1     GENERATOR      SCHEDULED 2024-07-12 2024-07-31
+#> 21942    TORRIS      SA1     GENERATOR  NON-SCHEDULED 1999-07-01 2000-07-01
+#> 21943    HALLWF      SA1     GENERATOR SEMI-SCHEDULED 2021-07-01 2022-07-01
+#> 21944   HALLWF2      SA1     GENERATOR SEMI-SCHEDULED 2023-07-01 2024-06-03
+#> 21945    TORRIS      SA1     GENERATOR      SCHEDULED 2003-10-22 2003-12-03
+#> 21946    TIBESS      SA1          LOAD      SCHEDULED 2024-07-01 2024-07-12
+#> 21947    TORRIS      SA1     GENERATOR      SCHEDULED 2004-07-01 2004-09-14
+#> 21948    TORRIS      SA1     GENERATOR      SCHEDULED 2019-10-15 2020-07-01
+#> 21949   HALLWF2      SA1     GENERATOR SEMI-SCHEDULED 2026-07-01 2999-12-31
+#> 21950    TORRIS      SA1     GENERATOR      SCHEDULED 2009-07-01 2010-02-09
+#> 21951    TORRIS      SA1     GENERATOR      SCHEDULED 2013-07-01 2013-12-15
+#> 21952    TORRIS      SA1     GENERATOR      SCHEDULED 1998-11-29 1999-07-01
+#> 21953    TORRIS      SA1     GENERATOR  NON-SCHEDULED 2004-10-26 2005-07-01
+#> 21954    TORRIS      SA1     GENERATOR      SCHEDULED 2014-07-01 2015-07-01
+#> 21955    TORRIS      SA1     GENERATOR      SCHEDULED 2015-07-01 2016-07-01
+#> 21956    TORRIS      SA1     GENERATOR      SCHEDULED 2002-07-01 2002-07-09
+#> 21957    TORRIS      SA1     GENERATOR      SCHEDULED 2002-07-09 2003-07-01
+#> 21958    TORRIS      SA1     GENERATOR      SCHEDULED 2019-10-15 2020-07-01
+#> 21959     NBHWF      SA1     GENERATOR SEMI-SCHEDULED 2018-07-01 2019-07-01
+#> 21960      WPWF      SA1     GENERATOR SEMI-SCHEDULED 2026-07-01 2999-12-31
+#> 21961    TORRIS      SA1     GENERATOR      SCHEDULED 2017-06-29 2017-07-01
+#> 21962    TORRIS      SA1     GENERATOR      SCHEDULED 2017-06-29 2017-07-01
+#> 21963    HALLWF      SA1     GENERATOR SEMI-SCHEDULED 2017-07-18 2018-07-01
+#> 21964     BLUFF      SA1     GENERATOR SEMI-SCHEDULED 2024-06-03 2024-07-01
+#> 21965    TORRIS      SA1     GENERATOR      SCHEDULED 2008-07-01 2009-07-01
+#> 21966    TORRIS      SA1     GENERATOR      SCHEDULED 2010-07-01 2010-10-27
+#> 21967    TORRIS      SA1     GENERATOR      SCHEDULED 2007-07-17 2008-07-01
+#> 21968     NBHWF      SA1     GENERATOR SEMI-SCHEDULED 2024-07-01 2025-07-01
+#> 21969    TORRIS      SA1     GENERATOR      SCHEDULED 2012-07-01 2013-07-01
+#> 21970    TORRIS      SA1     GENERATOR      SCHEDULED 2013-12-15 2014-07-01
+#> 21971    TORRIS      SA1     GENERATOR      SCHEDULED 2024-06-03 2024-07-01
+#> 21972    TORRIS      SA1     GENERATOR      SCHEDULED 2001-11-05 2002-04-01
+#> 21973     BLUFF      SA1     GENERATOR SEMI-SCHEDULED 2025-07-01 2026-07-01
+#> 21974    TORRIS      SA1     GENERATOR      SCHEDULED 2018-07-01 2019-07-01
+#> 21975    TORRIS      SA1     GENERATOR      SCHEDULED 2004-10-26 2005-07-01
+#> 21976    TORRIS      SA1     GENERATOR      SCHEDULED 2011-01-18 2011-04-14
+#> 21977    TORRIS      SA1     GENERATOR      SCHEDULED 2001-07-01 2001-09-13
+#> 21978    TORRIS      SA1     GENERATOR      SCHEDULED 2021-07-01 2021-09-30
+#> 21979    TORRIS      SA1     GENERATOR      SCHEDULED 2021-09-30 2022-07-01
+#> 21980    TORRIS      SA1     GENERATOR  NON-SCHEDULED 2003-10-22 2004-07-01
+#> 21981   HALLWF2      SA1     GENERATOR SEMI-SCHEDULED 2025-07-01 2026-07-01
+#> 21982    TORRIS      SA1     GENERATOR      SCHEDULED 2010-02-09 2010-07-01
+#> 21983    TORRIS      SA1     GENERATOR      SCHEDULED 2023-07-01 2023-10-09
+#> 21984    HALLWF      SA1     GENERATOR SEMI-SCHEDULED 2020-07-01 2021-07-01
+#> 21985    TORRIS      SA1     GENERATOR      SCHEDULED 2002-07-01 2002-07-09
+#> 21986    TORRIS      SA1     GENERATOR      SCHEDULED 2003-10-16 2003-10-22
+#> 21987     NBHWF      SA1     GENERATOR SEMI-SCHEDULED 2026-07-01 2999-12-31
+#> 21988    TORRIS      SA1     GENERATOR      SCHEDULED 2020-07-01 2020-09-30
+#> 21989    TORRIS      SA1     GENERATOR      SCHEDULED 2018-07-01 2019-07-01
+#> 21990    TORRIS      SA1     GENERATOR      SCHEDULED 2005-07-01 2006-07-01
+#> 21991    TORRIS      SA1     GENERATOR      SCHEDULED 2013-12-15 2014-07-01
+#> 21992    TORRIS      SA1     GENERATOR      SCHEDULED 2017-07-18 2018-07-01
+#> 21993    TORRIS      SA1     GENERATOR      SCHEDULED 2006-07-01 2007-01-16
+#> 21994    TORRIS      SA1     GENERATOR      SCHEDULED 2010-07-01 2010-10-27
+#> 21995    TORRIS      SA1     GENERATOR      SCHEDULED 2007-01-16 2007-07-01
+#> 21996    TORRIS      SA1     GENERATOR      SCHEDULED 2007-07-01 2007-07-17
+#> 21997    TORRIS      SA1     GENERATOR      SCHEDULED 2010-05-25 2010-07-01
+#> 21998    TORRIS      SA1     GENERATOR      SCHEDULED 2009-07-01 2010-02-09
+#> 21999    TORRIS      SA1     GENERATOR      SCHEDULED 2010-10-27 2011-01-18
+#> 22000    TORRIS      SA1     GENERATOR      SCHEDULED 2022-07-01 2022-09-30
+#> 22001    TORRIS      SA1     GENERATOR      SCHEDULED 2024-07-01 2025-07-01
+#> 22002    TORRIS      SA1     GENERATOR      SCHEDULED 2025-07-01 2026-07-01
+#> 22003    TORRIS      SA1     GENERATOR      SCHEDULED 2017-07-18 2018-07-01
+#> 22004    TORRIS      SA1     GENERATOR      SCHEDULED 2004-09-14 2004-10-26
+#> 22005    TORRIS      SA1     GENERATOR      SCHEDULED 2007-07-01 2007-07-17
 #> 22006    TORRIS      SA1     GENERATOR      SCHEDULED 2013-07-01 2013-12-15
-#> 22007    TORRIS      SA1     GENERATOR      SCHEDULED 2004-07-01 2004-09-14
-#> 22008    TORRIS      SA1     GENERATOR      SCHEDULED 2022-07-01 2022-09-30
-#> 22009    TORRIS      SA1     GENERATOR      SCHEDULED 2001-11-05 2002-04-01
-#> 22010    TORRIS      SA1     GENERATOR      SCHEDULED 1999-07-01 2000-07-01
-#> 22011    TORRIS      SA1     GENERATOR      SCHEDULED 2007-07-01 2007-07-17
-#> 22012    TORRIS      SA1     GENERATOR      SCHEDULED 2013-07-01 2013-12-15
-#> 22013    TORRIS      SA1     GENERATOR      SCHEDULED 2017-07-01 2017-07-18
-#> 22014    TORRIS      SA1     GENERATOR      SCHEDULED 2002-07-09 2003-07-01
-#> 22015    TORRIS      SA1     GENERATOR      SCHEDULED 1998-10-25 1998-11-29
-#> 22016    TIBESS      SA1          LOAD      SCHEDULED 2023-11-21 2024-06-03
-#> 22017    TORRIS      SA1     GENERATOR      SCHEDULED 2007-07-17 2008-07-01
-#> 22018    TORRIS      SA1     GENERATOR      SCHEDULED 2009-07-01 2010-02-09
-#> 22019    TORRIS      SA1     GENERATOR      SCHEDULED 2004-10-26 2005-07-01
-#> 22020   HALLWF2      SA1     GENERATOR SEMI-SCHEDULED 2021-07-01 2022-07-01
-#> 22021    TORRIS      SA1     GENERATOR      SCHEDULED 2003-07-01 2003-10-22
-#> 22022    TORRIS      SA1     GENERATOR      SCHEDULED 2012-07-01 2013-07-01
-#> 22023    TORRIS      SA1     GENERATOR      SCHEDULED 2017-07-01 2017-07-18
-#> 22024    TORRIS      SA1     GENERATOR      SCHEDULED 2010-10-27 2011-01-18
-#> 22025    TORRIS      SA1     GENERATOR      SCHEDULED 2017-07-01 2017-07-18
-#> 22026     NBHWF      SA1     GENERATOR SEMI-SCHEDULED 2022-07-01 2023-04-26
-#> 22027    TORRIS      SA1     GENERATOR      SCHEDULED 2005-07-01 2006-07-01
-#> 22028    TORRIS      SA1     GENERATOR      SCHEDULED 2011-01-18 2011-04-14
+#> 22007    TORRIS      SA1     GENERATOR      SCHEDULED 2020-07-01 2020-09-30
+#> 22008    TORRIS      SA1     GENERATOR  NON-SCHEDULED 2000-07-01 2001-07-01
+#> 22009      WPWF      SA1     GENERATOR  NON-SCHEDULED 2018-07-01 2019-07-01
+#> 22010    TORRIS      SA1     GENERATOR      SCHEDULED 2013-07-01 2013-12-15
+#> 22011    TORRIS      SA1     GENERATOR      SCHEDULED 2004-07-01 2004-09-14
+#> 22012    TORRIS      SA1     GENERATOR      SCHEDULED 2022-07-01 2022-09-30
+#> 22013    TORRIS      SA1     GENERATOR      SCHEDULED 2001-11-05 2002-04-01
+#> 22014    TORRIS      SA1     GENERATOR      SCHEDULED 1999-07-01 2000-07-01
+#> 22015    TORRIS      SA1     GENERATOR      SCHEDULED 2007-07-01 2007-07-17
+#> 22016    TORRIS      SA1     GENERATOR      SCHEDULED 2015-07-01 2016-07-01
+#> 22017    TORRIS      SA1     GENERATOR      SCHEDULED 2017-07-01 2017-07-18
+#> 22018    TORRIS      SA1     GENERATOR      SCHEDULED 2002-07-09 2003-07-01
+#> 22019    TORRIS      SA1     GENERATOR      SCHEDULED 1998-10-25 1998-11-29
+#> 22020    TIBESS      SA1          LOAD      SCHEDULED 2023-11-21 2024-06-03
+#> 22021    TORRIS      SA1     GENERATOR      SCHEDULED 2007-07-17 2008-07-01
+#> 22022    TORRIS      SA1     GENERATOR      SCHEDULED 2009-07-01 2010-02-09
+#> 22023    TORRIS      SA1     GENERATOR      SCHEDULED 2004-10-26 2005-07-01
+#> 22024   HALLWF2      SA1     GENERATOR SEMI-SCHEDULED 2021-07-01 2022-07-01
+#> 22025    TORRIS      SA1     GENERATOR      SCHEDULED 2003-07-01 2003-10-22
+#> 22026    TORRIS      SA1     GENERATOR      SCHEDULED 2012-07-01 2013-07-01
+#> 22027    TORRIS      SA1     GENERATOR      SCHEDULED 2017-07-01 2017-07-18
+#> 22028    TORRIS      SA1     GENERATOR      SCHEDULED 2017-07-18 2018-07-01
 #> 22029    TORRIS      SA1     GENERATOR      SCHEDULED 2017-07-01 2017-07-18
-#> 22030    TORRIS      SA1     GENERATOR      SCHEDULED 2003-07-01 2003-10-22
-#> 22031    TORRIS      SA1     GENERATOR      SCHEDULED 2002-07-09 2003-07-01
+#> 22030    TORRIS      SA1     GENERATOR      SCHEDULED 2004-07-01 2004-09-14
+#> 22031    TORRIS      SA1     GENERATOR      SCHEDULED 2005-07-01 2006-07-01
 #> 22032    TORRIS      SA1     GENERATOR      SCHEDULED 2011-01-18 2011-04-14
-#> 22033    TORRIS      SA1     GENERATOR      SCHEDULED 2008-07-01 2009-07-01
-#> 22034    TORRIS      SA1     GENERATOR      SCHEDULED 2017-07-25 2018-07-01
-#> 22035    TORRIS      SA1     GENERATOR      SCHEDULED 2022-09-30 2023-04-26
-#> 22036    TORRIS      SA1     GENERATOR      SCHEDULED 2007-01-16 2007-07-01
-#> 22037    TORRIS      SA1     GENERATOR      SCHEDULED 2006-07-01 2007-01-16
-#> 22038    TORRIS      SA1     GENERATOR      SCHEDULED 2002-07-01 2002-07-09
-#> 22039    TORRIS      SA1     GENERATOR      SCHEDULED 2017-07-25 2018-07-01
-#> 22040    TORRIS      SA1     GENERATOR      SCHEDULED 2014-07-01 2015-07-01
+#> 22033    TORRIS      SA1     GENERATOR      SCHEDULED 2017-07-01 2017-07-18
+#> 22034    TORRIS      SA1     GENERATOR      SCHEDULED 2003-07-01 2003-10-22
+#> 22035    TORRIS      SA1     GENERATOR      SCHEDULED 2002-07-09 2003-07-01
+#> 22036    TORRIS      SA1     GENERATOR      SCHEDULED 2011-01-18 2011-04-14
+#> 22037    TORRIS      SA1     GENERATOR      SCHEDULED 2008-07-01 2009-07-01
+#> 22038    TORRIS      SA1     GENERATOR      SCHEDULED 2017-07-25 2018-07-01
+#> 22039    TORRIS      SA1     GENERATOR      SCHEDULED 2022-09-30 2023-04-26
+#> 22040    TORRIS      SA1     GENERATOR      SCHEDULED 2007-01-16 2007-07-01
 #> 22041    TORRIS      SA1     GENERATOR      SCHEDULED 2006-07-01 2007-01-16
-#> 22042     NBHWF      SA1     GENERATOR SEMI-SCHEDULED 2024-06-03 2024-07-01
-#> 22043    TORRIS      SA1     GENERATOR  NON-SCHEDULED 1998-11-29 1999-07-01
-#> 22044    TORRIS      SA1     GENERATOR      SCHEDULED 2010-02-09 2010-07-01
-#> 22045    TORRIS      SA1     GENERATOR      SCHEDULED 2011-01-18 2011-04-14
-#> 22046     BLUFF      SA1     GENERATOR SEMI-SCHEDULED 2026-07-01 2999-12-31
-#> 22047    HALLWF      SA1     GENERATOR SEMI-SCHEDULED 2024-06-03 2024-07-01
-#> 22048   HALLWF2      SA1     GENERATOR SEMI-SCHEDULED 2020-07-01 2021-07-01
-#> 22049    TORRIS      SA1     GENERATOR      SCHEDULED 2016-07-01 2017-06-29
-#> 22050    TORRIS      SA1     GENERATOR      SCHEDULED 2001-11-05 2002-04-01
-#> 22051    TORRIS      SA1     GENERATOR      SCHEDULED 2001-09-13 2001-10-16
-#> 22052     BLUFF      SA1     GENERATOR SEMI-SCHEDULED 2020-07-01 2021-07-01
-#> 22053    HALLWF      SA1     GENERATOR SEMI-SCHEDULED 2019-10-15 2020-07-01
-#> 22054    TORRIS      SA1     GENERATOR  NON-SCHEDULED 2013-07-01 2013-12-15
-#> 22055    TIBESS      SA1          LOAD      SCHEDULED 2023-07-01 2023-08-09
-#> 22056    TORRIS      SA1     GENERATOR      SCHEDULED 2006-07-01 2007-01-16
-#> 22057    TIBESS      SA1          LOAD      SCHEDULED 2023-04-26 2023-07-01
-#> 22058    TORRIS      SA1     GENERATOR      SCHEDULED 2007-07-01 2007-07-17
-#> 22059      WPWF      SA1     GENERATOR  NON-SCHEDULED 2020-07-01 2021-07-01
-#> 22060    TORRIS      SA1     GENERATOR      SCHEDULED 1998-10-25 1998-11-29
-#> 22061      WPWF      SA1     GENERATOR  NON-SCHEDULED 2019-07-01 2019-10-15
-#> 22062    TORRIS      SA1     GENERATOR      SCHEDULED 2018-07-01 2019-07-01
-#> 22063    TORRIS      SA1     GENERATOR      SCHEDULED 2000-07-01 2001-07-01
-#> 22064    TORRIS      SA1     GENERATOR      SCHEDULED 2002-07-09 2003-07-01
-#> 22065    TORRIS      SA1     GENERATOR      SCHEDULED 2019-07-01 2019-10-15
-#> 22066     BLUFF      SA1     GENERATOR SEMI-SCHEDULED 2021-07-01 2022-07-01
+#> 22042   BARKIPS      SA1     GENERATOR      SCHEDULED 2024-07-01 2025-07-01
+#> 22043    TORRIS      SA1     GENERATOR      SCHEDULED 2017-07-25 2018-07-01
+#> 22044    TORRIS      SA1     GENERATOR      SCHEDULED 2014-07-01 2015-07-01
+#> 22045    TORRIS      SA1     GENERATOR      SCHEDULED 2006-07-01 2007-01-16
+#> 22046     NBHWF      SA1     GENERATOR SEMI-SCHEDULED 2024-06-03 2024-07-01
+#> 22047    TORRIS      SA1     GENERATOR  NON-SCHEDULED 1998-11-29 1999-07-01
+#> 22048    TORRIS      SA1     GENERATOR      SCHEDULED 2010-02-09 2010-07-01
+#> 22049    TORRIS      SA1     GENERATOR      SCHEDULED 2011-01-18 2011-04-14
+#> 22050     BLUFF      SA1     GENERATOR SEMI-SCHEDULED 2026-07-01 2999-12-31
+#> 22051    HALLWF      SA1     GENERATOR SEMI-SCHEDULED 2024-06-03 2024-07-01
+#> 22052   HALLWF2      SA1     GENERATOR SEMI-SCHEDULED 2020-07-01 2021-07-01
+#> 22053    TORRIS      SA1     GENERATOR      SCHEDULED 2016-07-01 2017-06-29
+#> 22054    TORRIS      SA1     GENERATOR      SCHEDULED 2001-11-05 2002-04-01
+#> 22055    TORRIS      SA1     GENERATOR      SCHEDULED 2001-09-13 2001-10-16
+#> 22056    TORRIS      SA1     GENERATOR      SCHEDULED 2011-07-01 2012-07-01
+#> 22057    HALLWF      SA1     GENERATOR SEMI-SCHEDULED 2019-10-15 2020-07-01
+#> 22058    TORRIS      SA1     GENERATOR  NON-SCHEDULED 2013-07-01 2013-12-15
+#> 22059    TIBESS      SA1          LOAD      SCHEDULED 2023-07-01 2023-08-09
+#> 22060    TORRIS      SA1     GENERATOR      SCHEDULED 2006-07-01 2007-01-16
+#> 22061    TIBESS      SA1          LOAD      SCHEDULED 2023-04-26 2023-07-01
+#> 22062    TORRIS      SA1     GENERATOR      SCHEDULED 2007-07-01 2007-07-17
+#> 22063      WPWF      SA1     GENERATOR  NON-SCHEDULED 2020-07-01 2021-07-01
+#> 22064    TORRIS      SA1     GENERATOR      SCHEDULED 1998-10-25 1998-11-29
+#> 22065      WPWF      SA1     GENERATOR  NON-SCHEDULED 2019-07-01 2019-10-15
+#> 22066    TORRIS      SA1     GENERATOR      SCHEDULED 2018-07-01 2019-07-01
 #> 22067    TORRIS      SA1     GENERATOR      SCHEDULED 2000-07-01 2001-07-01
-#> 22068   HALLWF2      SA1     GENERATOR SEMI-SCHEDULED 2023-04-26 2023-07-01
-#> 22069    TORRIS      SA1     GENERATOR      SCHEDULED 2007-07-01 2007-07-17
-#> 22070    TORRIS      SA1     GENERATOR      SCHEDULED 2002-07-09 2003-07-01
-#> 22071    TORRIS      SA1     GENERATOR      SCHEDULED 2008-07-01 2009-07-01
-#> 22072    HALLWF      SA1     GENERATOR SEMI-SCHEDULED 2022-07-01 2023-04-26
-#> 22073    TORRIS      SA1     GENERATOR      SCHEDULED 2002-04-01 2002-07-01
-#> 22074    TORRIS      SA1     GENERATOR      SCHEDULED 2004-07-01 2004-09-14
-#> 22075   BARKIPS      SA1     GENERATOR      SCHEDULED 2024-06-03 2024-07-01
-#> 22076    HALLWF      SA1     GENERATOR SEMI-SCHEDULED 2018-07-01 2019-07-01
-#> 22077    TORRIS      SA1     GENERATOR      SCHEDULED 2021-09-30 2022-07-01
-#> 22078    TORRIS      SA1     GENERATOR      SCHEDULED 2002-04-01 2002-07-01
-#> 22079    TORRIS      SA1     GENERATOR      SCHEDULED 2021-07-01 2021-09-30
-#> 22080    TORRIS      SA1     GENERATOR      SCHEDULED 2010-07-01 2010-10-27
-#> 22081    TORRIS      SA1     GENERATOR      SCHEDULED 2010-10-27 2011-01-18
-#> 22082    TORRIS      SA1     GENERATOR      SCHEDULED 2011-04-14 2011-07-01
-#> 22083    TORRIS      SA1     GENERATOR      SCHEDULED 2001-10-16 2001-11-05
-#> 22084    TORRIS      SA1     GENERATOR      SCHEDULED 2004-10-26 2005-07-01
-#> 22085    TORRIS      SA1     GENERATOR      SCHEDULED 2010-07-01 2010-10-27
-#> 22086    TORRIS      SA1     GENERATOR      SCHEDULED 2016-07-01 2017-06-29
-#> 22087    TORRIS      SA1     GENERATOR      SCHEDULED 2004-09-14 2004-10-26
-#> 22088    TORRIS      SA1     GENERATOR      SCHEDULED 2017-06-29 2017-07-01
-#> 22089    TORRIS      SA1     GENERATOR      SCHEDULED 2003-10-22 2004-07-01
-#> 22090    TORRIS      SA1     GENERATOR      SCHEDULED 2017-06-29 2017-07-01
-#> 22091    TORRIS      SA1     GENERATOR      SCHEDULED 2021-07-01 2021-09-30
-#> 22092     BLUFF      SA1     GENERATOR SEMI-SCHEDULED 2022-07-01 2023-04-26
-#> 22093    TORRIS      SA1     GENERATOR      SCHEDULED 2020-07-01 2020-09-30
-#> 22094    TIBESS      SA1          LOAD      SCHEDULED 2023-08-09 2023-11-21
-#> 22095   HALLWF2      SA1     GENERATOR SEMI-SCHEDULED 2017-07-18 2018-07-01
-#> 22096    TORRIS      SA1     GENERATOR      SCHEDULED 2007-07-17 2008-07-01
-#> 22097    TORRIS      SA1     GENERATOR      SCHEDULED 2019-07-01 2019-10-15
-#> 22098    TORRIS      SA1     GENERATOR      SCHEDULED 2014-07-01 2015-07-01
-#> 22099    TORRIS      SA1     GENERATOR      SCHEDULED 2006-07-01 2007-01-16
-#> 22100    TORRIS      SA1     GENERATOR      SCHEDULED 2007-01-16 2007-07-01
-#> 22101    TORRIS      SA1     GENERATOR      SCHEDULED 2001-09-13 2001-10-16
-#> 22102   HALLWF2      SA1     GENERATOR SEMI-SCHEDULED 2018-07-01 2019-07-01
-#> 22103    TORRIS      SA1     GENERATOR      SCHEDULED 2015-07-01 2016-07-01
-#> 22104    HALLWF      SA1     GENERATOR SEMI-SCHEDULED 2019-07-01 2019-10-15
-#> 22105      WPWF      SA1     GENERATOR  NON-SCHEDULED 2021-07-01 2021-12-09
-#> 22106     BLUFF      SA1     GENERATOR SEMI-SCHEDULED 2023-07-01 2024-06-03
-#> 22107    TORRIS      SA1     GENERATOR      SCHEDULED 2005-07-01 2006-07-01
-#> 22108    TORRIS      SA1     GENERATOR      SCHEDULED 2012-07-01 2013-07-01
-#> 22109    TORRIS      SA1     GENERATOR      SCHEDULED 2011-01-18 2011-04-14
-#> 22110    TORRIS      SA1     GENERATOR      SCHEDULED 2007-01-16 2007-07-01
-#> 22111    TORRIS      SA1     GENERATOR      SCHEDULED 2014-07-01 2015-07-01
-#> 22112     NBHWF      SA1     GENERATOR SEMI-SCHEDULED 2023-07-01 2024-06-03
-#> 22113      WPWF      SA1     GENERATOR  NON-SCHEDULED 2017-07-01 2017-07-18
-#> 22114    TORRIS      SA1     GENERATOR      SCHEDULED 2024-07-01 2025-07-01
-#> 22115    TORRIS      SA1     GENERATOR      SCHEDULED 2022-07-01 2022-09-30
-#> 22116    HALLWF      SA1     GENERATOR SEMI-SCHEDULED 2024-07-01 2025-07-01
-#> 22117    TORRIS      SA1     GENERATOR      SCHEDULED 2017-07-01 2017-07-18
-#> 22118    TORRIS      SA1     GENERATOR      SCHEDULED 2012-07-01 2013-07-01
-#> 22119    TORRIS      SA1     GENERATOR      SCHEDULED 2017-07-18 2018-07-01
-#> 22120    TORRIS      SA1     GENERATOR      SCHEDULED 2020-09-30 2021-07-01
-#> 22121    TORRIS      SA1     GENERATOR      SCHEDULED 2020-07-01 2020-09-30
-#> 22122    TORRIS      SA1     GENERATOR      SCHEDULED 2007-01-16 2007-07-01
-#> 22123    TORRIS      SA1     GENERATOR  NON-SCHEDULED 2001-07-01 2002-04-01
-#> 22124    TORRIS      SA1     GENERATOR      SCHEDULED 1999-07-01 2000-07-01
-#> 22125    TORRIS      SA1     GENERATOR      SCHEDULED 2001-11-05 2002-04-01
-#> 22126    TORRIS      SA1     GENERATOR      SCHEDULED 2015-07-01 2016-07-01
-#> 22127    TORRIS      SA1     GENERATOR      SCHEDULED 2010-10-27 2011-01-18
-#> 22128    TORRIS      SA1     GENERATOR      SCHEDULED 2018-07-01 2019-07-01
-#> 22129    TORRIS      SA1     GENERATOR      SCHEDULED 2008-07-01 2009-07-01
-#> 22130    TORRIS      SA1     GENERATOR      SCHEDULED 2011-04-28 2011-07-01
-#> 22131    TORRIS      SA1     GENERATOR      SCHEDULED 2000-07-01 2001-07-01
-#> 22132    TORRIS      SA1     GENERATOR      SCHEDULED 2017-07-18 2017-07-25
-#> 22133    TORRIS      SA1     GENERATOR      SCHEDULED 2023-04-26 2023-07-01
-#> 22134    TORRIS      SA1     GENERATOR      SCHEDULED 2011-07-01 2012-07-01
-#> 22135    TORRIS      SA1     GENERATOR  NON-SCHEDULED 2002-04-01 2002-07-01
-#> 22136    TORRIS      SA1     GENERATOR      SCHEDULED 2004-10-26 2005-07-01
-#> 22137    TORRIS      SA1     GENERATOR      SCHEDULED 2017-07-01 2017-07-18
-#> 22138    TORRIS      SA1     GENERATOR      SCHEDULED 2011-01-18 2011-04-14
-#> 22139    TORRIS      SA1     GENERATOR      SCHEDULED 2013-12-15 2014-07-01
-#> 22140    TORRIS      SA1     GENERATOR      SCHEDULED 2015-07-01 2016-07-01
-#> 22141    TORRIS      SA1     GENERATOR      SCHEDULED 2009-07-01 2010-02-09
-#> 22142    TORRIS      SA1     GENERATOR      SCHEDULED 2001-07-01 2001-09-13
-#> 22143    TORRIS      SA1     GENERATOR      SCHEDULED 2019-07-01 2019-10-15
-#> 22144     BLUFF      SA1     GENERATOR SEMI-SCHEDULED 2017-07-18 2018-07-01
-#> 22145    TORRIS      SA1     GENERATOR      SCHEDULED 2005-07-01 2006-07-01
-#> 22146      WPWF      SA1     GENERATOR SEMI-SCHEDULED 2025-07-01 2026-07-01
-#> 22147    TORRIS      SA1     GENERATOR      SCHEDULED 1998-11-29 1999-07-01
-#> 22148    TORRIS      SA1     GENERATOR      SCHEDULED 2011-07-01 2012-07-01
-#> 22149    TORRIS      SA1     GENERATOR      SCHEDULED 2016-07-01 2017-06-29
-#> 22150    TORRIS      SA1     GENERATOR      SCHEDULED 2017-07-01 2017-07-18
-#> 22151    TORRIS      SA1     GENERATOR      SCHEDULED 2003-10-22 2004-07-01
-#> 22152    TORRIS      SA1     GENERATOR      SCHEDULED 2006-07-01 2007-01-16
-#> 22153    TORRIS      SA1     GENERATOR      SCHEDULED 2010-10-27 2011-01-18
-#> 22154    TORRIS      SA1     GENERATOR      SCHEDULED 2001-10-16 2001-11-05
-#> 22155    TORRIS      SA1     GENERATOR      SCHEDULED 2002-04-01 2002-07-01
-#> 22156     BLUFF      SA1     GENERATOR SEMI-SCHEDULED 2019-10-15 2020-07-01
-#> 22157    TIBESS      SA1     GENERATOR      SCHEDULED 2023-08-09 2023-11-21
-#> 22158    TORRIS      SA1     GENERATOR      SCHEDULED 2006-07-01 2007-01-16
-#> 22159   BARKIPS      SA1     GENERATOR      SCHEDULED 2023-07-01 2024-06-03
-#> 22160   HALLWF2      SA1     GENERATOR SEMI-SCHEDULED 2022-07-01 2023-04-26
-#> 22161    TORRIS      SA1     GENERATOR      SCHEDULED 2020-07-01 2020-09-30
-#> 22162   HALLWF2      SA1     GENERATOR SEMI-SCHEDULED 2024-06-03 2024-07-01
-#> 22163    TORRIS      SA1     GENERATOR      SCHEDULED 2004-09-14 2004-10-26
-#> 22164    TORRIS      SA1     GENERATOR      SCHEDULED 2011-04-14 2011-07-01
-#> 22165    TORRIS      SA1     GENERATOR      SCHEDULED 2017-07-01 2017-07-18
-#> 22166    TORRIS      SA1     GENERATOR      SCHEDULED 2001-10-16 2001-11-05
-#> 22167    TORRIS      SA1     GENERATOR      SCHEDULED 2019-10-15 2020-07-01
-#> 22168    TORRIS      SA1     GENERATOR      SCHEDULED 2001-07-01 2001-09-13
-#> 22169    TORRIS      SA1     GENERATOR      SCHEDULED 2013-12-15 2014-07-01
-#> 22170    TORRIS      SA1     GENERATOR      SCHEDULED 2003-07-01 2003-10-22
-#> 22171    TORRIS      SA1     GENERATOR      SCHEDULED 2020-09-30 2021-07-01
-#> 22172    TORRIS      SA1     GENERATOR      SCHEDULED 2018-07-01 2019-07-01
-#> 22173    HALLWF      SA1     GENERATOR SEMI-SCHEDULED 2025-07-01 2026-07-01
-#> 22174    TORRIS      SA1     GENERATOR      SCHEDULED 1999-07-01 2000-07-01
-#> 22175    TORRIS      SA1     GENERATOR      SCHEDULED 2017-07-25 2018-07-01
-#> 22176    TORRIS      SA1     GENERATOR      SCHEDULED 2019-10-15 2020-07-01
-#> 22177    TORRIS      SA1     GENERATOR      SCHEDULED 2020-07-01 2020-09-30
-#> 22178     BLUFF      SA1     GENERATOR SEMI-SCHEDULED 2019-07-01 2019-10-15
-#> 22179      WPWF      SA1     GENERATOR  NON-SCHEDULED 2019-10-15 2020-07-01
-#> 22180      WPWF      SA1     GENERATOR SEMI-SCHEDULED 2023-04-26 2023-07-01
-#> 22181      WPWF      SA1     GENERATOR  NON-SCHEDULED 2017-07-18 2018-07-01
-#> 22182    TORRIS      SA1     GENERATOR      SCHEDULED 2002-07-01 2002-07-09
-#> 22183    TORRIS      SA1     GENERATOR      SCHEDULED 2001-07-01 2001-09-13
-#> 22184    TORRIS      SA1     GENERATOR      SCHEDULED 2010-02-09 2010-05-25
-#> 22185    TORRIS      SA1     GENERATOR      SCHEDULED 2019-10-15 2020-07-01
-#> 22186   HALLWF2      SA1     GENERATOR SEMI-SCHEDULED 2019-07-01 2019-10-15
-#> 22187    TORRIS      SA1     GENERATOR      SCHEDULED 2023-04-26 2023-07-01
-#> 22188    TORRIS      SA1     GENERATOR      SCHEDULED 2014-07-01 2015-07-01
+#> 22068    TORRIS      SA1     GENERATOR      SCHEDULED 2002-07-09 2003-07-01
+#> 22069    TORRIS      SA1     GENERATOR      SCHEDULED 2019-07-01 2019-10-15
+#> 22070     NBHWF      SA1     GENERATOR SEMI-SCHEDULED 2022-07-01 2023-04-26
+#> 22071    TORRIS      SA1     GENERATOR      SCHEDULED 2000-07-01 2001-07-01
+#> 22072   HALLWF2      SA1     GENERATOR SEMI-SCHEDULED 2023-04-26 2023-07-01
+#> 22073    TORRIS      SA1     GENERATOR      SCHEDULED 2007-07-01 2007-07-17
+#> 22074    TORRIS      SA1     GENERATOR      SCHEDULED 2002-07-09 2003-07-01
+#> 22075    TORRIS      SA1     GENERATOR      SCHEDULED 2008-07-01 2009-07-01
+#> 22076    HALLWF      SA1     GENERATOR SEMI-SCHEDULED 2022-07-01 2023-04-26
+#> 22077    TORRIS      SA1     GENERATOR      SCHEDULED 2002-04-01 2002-07-01
+#> 22078    TORRIS      SA1     GENERATOR      SCHEDULED 2004-07-01 2004-09-14
+#> 22079   BARKIPS      SA1     GENERATOR      SCHEDULED 2024-06-03 2024-07-01
+#> 22080    HALLWF      SA1     GENERATOR SEMI-SCHEDULED 2018-07-01 2019-07-01
+#> 22081    TORRIS      SA1     GENERATOR      SCHEDULED 2021-09-30 2022-07-01
+#> 22082    TORRIS      SA1     GENERATOR      SCHEDULED 2002-07-01 2002-07-09
+#> 22083    TORRIS      SA1     GENERATOR      SCHEDULED 2021-07-01 2021-09-30
+#> 22084    TORRIS      SA1     GENERATOR      SCHEDULED 2010-07-01 2010-10-27
+#> 22085    TORRIS      SA1     GENERATOR      SCHEDULED 2010-10-27 2011-01-18
+#> 22086    TORRIS      SA1     GENERATOR      SCHEDULED 2011-04-14 2011-07-01
+#> 22087    TORRIS      SA1     GENERATOR      SCHEDULED 2001-10-16 2001-11-05
+#> 22088    TORRIS      SA1     GENERATOR      SCHEDULED 2004-10-26 2005-07-01
+#> 22089    TORRIS      SA1     GENERATOR      SCHEDULED 2010-07-01 2010-10-27
+#> 22090    TORRIS      SA1     GENERATOR      SCHEDULED 2016-07-01 2017-06-29
+#> 22091    TORRIS      SA1     GENERATOR      SCHEDULED 2004-09-14 2004-10-26
+#> 22092    TORRIS      SA1     GENERATOR      SCHEDULED 2017-06-29 2017-07-01
+#> 22093    TORRIS      SA1     GENERATOR      SCHEDULED 2003-10-22 2004-07-01
+#> 22094    TORRIS      SA1     GENERATOR      SCHEDULED 2017-06-29 2017-07-01
+#> 22095    TORRIS      SA1     GENERATOR      SCHEDULED 2021-07-01 2021-09-30
+#> 22096    TORRIS      SA1     GENERATOR      SCHEDULED 2020-09-30 2021-07-01
+#> 22097    TORRIS      SA1     GENERATOR      SCHEDULED 2020-07-01 2020-09-30
+#> 22098    TIBESS      SA1          LOAD      SCHEDULED 2023-08-09 2023-11-21
+#> 22099   HALLWF2      SA1     GENERATOR SEMI-SCHEDULED 2017-07-18 2018-07-01
+#> 22100    TORRIS      SA1     GENERATOR      SCHEDULED 2007-07-17 2008-07-01
+#> 22101    TORRIS      SA1     GENERATOR      SCHEDULED 2019-07-01 2019-10-15
+#> 22102    TORRIS      SA1     GENERATOR      SCHEDULED 2014-07-01 2015-07-01
+#> 22103    TORRIS      SA1     GENERATOR      SCHEDULED 2006-07-01 2007-01-16
+#> 22104    TORRIS      SA1     GENERATOR      SCHEDULED 2007-01-16 2007-07-01
+#> 22105    TORRIS      SA1     GENERATOR      SCHEDULED 2001-09-13 2001-10-16
+#> 22106   HALLWF2      SA1     GENERATOR SEMI-SCHEDULED 2018-07-01 2019-07-01
+#> 22107    TORRIS      SA1     GENERATOR      SCHEDULED 2015-07-01 2016-07-01
+#> 22108    HALLWF      SA1     GENERATOR SEMI-SCHEDULED 2019-07-01 2019-10-15
+#> 22109      WPWF      SA1     GENERATOR  NON-SCHEDULED 2021-07-01 2021-12-09
+#> 22110     BLUFF      SA1     GENERATOR SEMI-SCHEDULED 2020-07-01 2021-07-01
+#> 22111    TORRIS      SA1     GENERATOR      SCHEDULED 2005-07-01 2006-07-01
+#> 22112    TORRIS      SA1     GENERATOR      SCHEDULED 2012-07-01 2013-07-01
+#> 22113    TORRIS      SA1     GENERATOR      SCHEDULED 2011-01-18 2011-04-14
+#> 22114    TORRIS      SA1     GENERATOR      SCHEDULED 2007-01-16 2007-07-01
+#> 22115    TORRIS      SA1     GENERATOR      SCHEDULED 2014-07-01 2015-07-01
+#> 22116     NBHWF      SA1     GENERATOR SEMI-SCHEDULED 2023-07-01 2024-06-03
+#> 22117      WPWF      SA1     GENERATOR  NON-SCHEDULED 2017-07-01 2017-07-18
+#> 22118    TORRIS      SA1     GENERATOR      SCHEDULED 2024-07-01 2025-07-01
+#> 22119    TORRIS      SA1     GENERATOR      SCHEDULED 2022-07-01 2022-09-30
+#> 22120    HALLWF      SA1     GENERATOR SEMI-SCHEDULED 2024-07-01 2025-07-01
+#> 22121    TORRIS      SA1     GENERATOR      SCHEDULED 2017-07-01 2017-07-18
+#> 22122    TORRIS      SA1     GENERATOR      SCHEDULED 2012-07-01 2013-07-01
+#> 22123    TORRIS      SA1     GENERATOR      SCHEDULED 2017-07-18 2018-07-01
+#> 22124    TORRIS      SA1     GENERATOR      SCHEDULED 2020-09-30 2021-07-01
+#> 22125    TORRIS      SA1     GENERATOR      SCHEDULED 2020-07-01 2020-09-30
+#> 22126     BLUFF      SA1     GENERATOR SEMI-SCHEDULED 2021-07-01 2022-07-01
+#> 22127    TORRIS      SA1     GENERATOR  NON-SCHEDULED 2001-07-01 2002-04-01
+#> 22128    TORRIS      SA1     GENERATOR      SCHEDULED 1999-07-01 2000-07-01
+#> 22129    TORRIS      SA1     GENERATOR      SCHEDULED 2001-11-05 2002-04-01
+#> 22130    TORRIS      SA1     GENERATOR      SCHEDULED 2015-07-01 2016-07-01
+#> 22131    TORRIS      SA1     GENERATOR      SCHEDULED 2010-10-27 2011-01-18
+#> 22132    TORRIS      SA1     GENERATOR      SCHEDULED 2018-07-01 2019-07-01
+#> 22133    TORRIS      SA1     GENERATOR      SCHEDULED 2008-07-01 2009-07-01
+#> 22134    TORRIS      SA1     GENERATOR      SCHEDULED 2011-04-28 2011-07-01
+#> 22135    TORRIS      SA1     GENERATOR      SCHEDULED 2000-07-01 2001-07-01
+#> 22136    TORRIS      SA1     GENERATOR      SCHEDULED 2017-07-18 2017-07-25
+#> 22137     BLUFF      SA1     GENERATOR SEMI-SCHEDULED 2022-07-01 2023-04-26
+#> 22138    TORRIS      SA1     GENERATOR      SCHEDULED 2011-07-01 2012-07-01
+#> 22139    TORRIS      SA1     GENERATOR  NON-SCHEDULED 2002-04-01 2002-07-01
+#> 22140    TORRIS      SA1     GENERATOR      SCHEDULED 2004-10-26 2005-07-01
+#> 22141    TORRIS      SA1     GENERATOR      SCHEDULED 2017-07-01 2017-07-18
+#> 22142    TORRIS      SA1     GENERATOR      SCHEDULED 2011-01-18 2011-04-14
+#> 22143    TORRIS      SA1     GENERATOR      SCHEDULED 2013-12-15 2014-07-01
+#> 22144    TORRIS      SA1     GENERATOR      SCHEDULED 2015-07-01 2016-07-01
+#> 22145    TORRIS      SA1     GENERATOR      SCHEDULED 2009-07-01 2010-02-09
+#> 22146    TORRIS      SA1     GENERATOR      SCHEDULED 2001-07-01 2001-09-13
+#> 22147    TORRIS      SA1     GENERATOR      SCHEDULED 2019-07-01 2019-10-15
+#> 22148     BLUFF      SA1     GENERATOR SEMI-SCHEDULED 2017-07-18 2018-07-01
+#> 22149    TORRIS      SA1     GENERATOR      SCHEDULED 2005-07-01 2006-07-01
+#> 22150      WPWF      SA1     GENERATOR SEMI-SCHEDULED 2025-07-01 2026-07-01
+#> 22151    TORRIS      SA1     GENERATOR      SCHEDULED 1998-11-29 1999-07-01
+#> 22152    TORRIS      SA1     GENERATOR      SCHEDULED 2011-07-01 2012-07-01
+#> 22153    TORRIS      SA1     GENERATOR      SCHEDULED 2016-07-01 2017-06-29
+#> 22154    TORRIS      SA1     GENERATOR      SCHEDULED 2017-07-01 2017-07-18
+#> 22155    TORRIS      SA1     GENERATOR      SCHEDULED 2003-10-22 2004-07-01
+#> 22156    TORRIS      SA1     GENERATOR      SCHEDULED 2006-07-01 2007-01-16
+#> 22157    TORRIS      SA1     GENERATOR      SCHEDULED 2010-10-27 2011-01-18
+#> 22158    TORRIS      SA1     GENERATOR      SCHEDULED 2001-10-16 2001-11-05
+#> 22159    TORRIS      SA1     GENERATOR      SCHEDULED 2002-04-01 2002-07-01
+#> 22160     BLUFF      SA1     GENERATOR SEMI-SCHEDULED 2019-10-15 2020-07-01
+#> 22161    TIBESS      SA1     GENERATOR      SCHEDULED 2023-08-09 2023-11-21
+#> 22162    TORRIS      SA1     GENERATOR      SCHEDULED 2006-07-01 2007-01-16
+#> 22163   BARKIPS      SA1     GENERATOR      SCHEDULED 2023-07-01 2024-06-03
+#> 22164   HALLWF2      SA1     GENERATOR SEMI-SCHEDULED 2022-07-01 2023-04-26
+#> 22165    TORRIS      SA1     GENERATOR      SCHEDULED 2020-07-01 2020-09-30
+#> 22166     BLUFF      SA1     GENERATOR SEMI-SCHEDULED 2023-07-01 2024-06-03
+#> 22167    TORRIS      SA1     GENERATOR      SCHEDULED 2004-09-14 2004-10-26
+#> 22168    TORRIS      SA1     GENERATOR      SCHEDULED 2011-04-14 2011-07-01
+#> 22169    TORRIS      SA1     GENERATOR      SCHEDULED 2017-07-01 2017-07-18
+#> 22170    TORRIS      SA1     GENERATOR      SCHEDULED 2001-10-16 2001-11-05
+#> 22171    TORRIS      SA1     GENERATOR      SCHEDULED 2019-10-15 2020-07-01
+#> 22172    TORRIS      SA1     GENERATOR      SCHEDULED 2001-07-01 2001-09-13
+#> 22173    TORRIS      SA1     GENERATOR      SCHEDULED 2013-12-15 2014-07-01
+#> 22174    TORRIS      SA1     GENERATOR      SCHEDULED 2003-07-01 2003-10-22
+#> 22175    TORRIS      SA1     GENERATOR      SCHEDULED 2020-09-30 2021-07-01
+#> 22176    TORRIS      SA1     GENERATOR      SCHEDULED 2018-07-01 2019-07-01
+#> 22177    HALLWF      SA1     GENERATOR SEMI-SCHEDULED 2025-07-01 2026-07-01
+#> 22178    TORRIS      SA1     GENERATOR      SCHEDULED 1999-07-01 2000-07-01
+#> 22179    TORRIS      SA1     GENERATOR      SCHEDULED 2017-07-25 2018-07-01
+#> 22180    TORRIS      SA1     GENERATOR      SCHEDULED 2019-10-15 2020-07-01
+#> 22181    TORRIS      SA1     GENERATOR      SCHEDULED 2007-01-16 2007-07-01
+#> 22182    TORRIS      SA1     GENERATOR      SCHEDULED 2010-10-27 2011-01-18
+#> 22183      WPWF      SA1     GENERATOR  NON-SCHEDULED 2019-10-15 2020-07-01
+#> 22184      WPWF      SA1     GENERATOR SEMI-SCHEDULED 2023-04-26 2023-07-01
+#> 22185      WPWF      SA1     GENERATOR  NON-SCHEDULED 2017-07-18 2018-07-01
+#> 22186    TORRIS      SA1     GENERATOR      SCHEDULED 2002-07-01 2002-07-09
+#> 22187    TORRIS      SA1     GENERATOR      SCHEDULED 2001-07-01 2001-09-13
+#> 22188    TORRIS      SA1     GENERATOR      SCHEDULED 2010-02-09 2010-05-25
 #> 22189    TORRIS      SA1     GENERATOR      SCHEDULED 2019-10-15 2020-07-01
-#> 22190    TORRIS      SA1     GENERATOR      SCHEDULED 2018-07-01 2019-07-01
-#> 22191    TORRIS      SA1     GENERATOR      SCHEDULED 2017-07-18 2017-07-25
-#> 22192    TORRIS      SA1     GENERATOR      SCHEDULED 2013-12-15 2014-07-01
-#> 22193    TORRIS      SA1     GENERATOR      SCHEDULED 2014-07-01 2015-07-01
-#> 22194      WPWF      SA1     GENERATOR  NON-SCHEDULED 2017-06-29 2017-07-01
-#> 22195    TORRIS      SA1     GENERATOR      SCHEDULED 2018-07-01 2019-07-01
-#> 22196   BARKIPS      SA1     GENERATOR      SCHEDULED 2022-07-01 2023-04-26
-#> 22197    TORRIS      SA1     GENERATOR      SCHEDULED 2018-07-01 2019-07-01
-#> 22198    TORRIS      SA1     GENERATOR      SCHEDULED 2021-09-30 2022-07-01
-#> 22199    TORRIS      SA1     GENERATOR      SCHEDULED 1998-10-25 1998-11-29
-#> 22200    TIBESS      SA1     GENERATOR      SCHEDULED 2023-07-01 2023-08-09
-#> 22201    TORRIS      SA1     GENERATOR      SCHEDULED 2021-07-01 2021-09-30
-#> 22202    TORRIS      SA1     GENERATOR      SCHEDULED 2023-04-26 2023-07-01
-#> 22203    TORRIS      SA1     GENERATOR      SCHEDULED 2005-07-01 2006-07-01
-#> 22204    TORRIS      SA1     GENERATOR      SCHEDULED 2004-10-26 2005-07-01
-#> 22205     BLUFF      SA1     GENERATOR SEMI-SCHEDULED 2018-07-01 2019-07-01
-#> 22206    TORRIS      SA1     GENERATOR      SCHEDULED 2019-07-01 2019-10-15
-#> 22207     BLUFF      SA1     GENERATOR SEMI-SCHEDULED 2023-04-26 2023-07-01
-#> 22208    TORRIS      SA1     GENERATOR      SCHEDULED 2004-07-01 2004-09-14
-#> 22209    TORRIS      SA1     GENERATOR      SCHEDULED 2016-07-01 2017-06-29
-#> 22210    TORRIS      SA1     GENERATOR      SCHEDULED 2000-07-01 2001-07-01
-#> 22211    TORRIS      SA1     GENERATOR      SCHEDULED 1998-11-29 1999-07-01
-#> 22212    TORRIS      SA1     GENERATOR      SCHEDULED 2009-07-01 2010-02-09
-#> 22213    TORRIS      SA1     GENERATOR      SCHEDULED 2003-10-22 2004-07-01
-#> 22214    TORRIS      SA1     GENERATOR      SCHEDULED 2017-07-18 2017-07-25
-#> 22215    TORRIS      SA1     GENERATOR      SCHEDULED 2011-07-01 2012-07-01
-#> 22216    TORRIS      SA1     GENERATOR      SCHEDULED 2011-07-01 2012-07-01
-#> 22217    TORRIS      SA1     GENERATOR      SCHEDULED 2019-07-01 2019-10-15
-#> 22218    TORRIS      SA1     GENERATOR      SCHEDULED 2016-07-01 2017-06-29
-#> 22219    TORRIS      SA1     GENERATOR      SCHEDULED 2019-07-01 2019-10-15
-#> 22220    TORRIS      SA1     GENERATOR      SCHEDULED 2022-09-30 2023-04-26
-#> 22221    TIBESS      SA1 BIDIRECTIONAL      SCHEDULED 2024-07-12 2024-07-31
-#> 22222    TORRIS      SA1     GENERATOR      SCHEDULED 2007-07-17 2008-07-01
-#> 22223    TIBESS      SA1     GENERATOR      SCHEDULED 2023-11-21 2024-06-03
-#> 22224    TIBESS      SA1     GENERATOR      SCHEDULED 2023-04-26 2023-07-01
-#> 22225    TORRIS      SA1     GENERATOR      SCHEDULED 1998-11-29 1999-07-01
-#> 22226    TORRIS      SA1     GENERATOR      SCHEDULED 2020-09-30 2021-07-01
-#> 22227    TORRIS      SA1     GENERATOR      SCHEDULED 2004-09-14 2004-10-26
-#> 22228   HALLWF2      SA1     GENERATOR SEMI-SCHEDULED 2017-07-01 2017-07-18
-#> 22229    TORRIS      SA1     GENERATOR      SCHEDULED 1998-10-25 1998-11-29
-#> 22230    TORRIS      SA1     GENERATOR      SCHEDULED 2017-07-25 2018-07-01
-#> 22231    TORRIS      SA1     GENERATOR      SCHEDULED 2002-07-01 2002-07-09
-#> 22232    TORRIS      SA1     GENERATOR      SCHEDULED 2010-05-25 2010-07-01
-#> 22233    TORRIS      SA1     GENERATOR      SCHEDULED 2026-07-01 2999-12-31
-#> 22234    TORRIS      SA1     GENERATOR      SCHEDULED 2010-07-01 2010-10-27
-#> 22235    TORRIS      SA1     GENERATOR      SCHEDULED 2001-11-05 2002-04-01
-#> 22236    TORRIS      SA1     GENERATOR      SCHEDULED 2022-07-01 2022-09-30
-#> 22237    TIBESS      SA1 BIDIRECTIONAL      SCHEDULED 2024-07-31 2025-07-01
-#> 22238    TORRIS      SA1     GENERATOR      SCHEDULED 2013-12-15 2014-07-01
-#> 22239    TORRIS      SA1     GENERATOR      SCHEDULED 2012-07-01 2013-07-01
-#> 22240    TORRIS      SA1     GENERATOR      SCHEDULED 2015-07-01 2016-07-01
-#> 22241    TORRIS      SA1     GENERATOR      SCHEDULED 2023-10-09 2024-06-03
-#> 22242    TORRIS      SA1     GENERATOR      SCHEDULED 2023-07-01 2023-10-09
-#> 22243    TIBESS      SA1     GENERATOR      SCHEDULED 2024-06-03 2024-07-01
-#> 22244    TORRIS      SA1     GENERATOR      SCHEDULED 2021-07-01 2021-09-30
-#> 22245    TORRIS      SA1     GENERATOR      SCHEDULED 2024-06-03 2024-07-01
-#> 22246    TORRIS      SA1     GENERATOR      SCHEDULED 2001-09-13 2001-10-16
-#> 22247   BARKIPS      SA1     GENERATOR      SCHEDULED 2020-07-01 2021-07-01
-#> 22248    TORRIS      SA1     GENERATOR      SCHEDULED 2020-07-01 2020-09-30
-#> 22249    TORRIS      SA1     GENERATOR      SCHEDULED 2010-07-01 2010-10-27
-#> 22250    TORRIS      SA1     GENERATOR      SCHEDULED 2017-06-29 2017-07-01
-#> 22251    TORRIS      SA1     GENERATOR      SCHEDULED 2011-01-18 2011-04-14
-#> 22252    TORRIS      SA1     GENERATOR      SCHEDULED 2011-04-14 2011-04-28
-#> 22253    TORRIS      SA1     GENERATOR      SCHEDULED 2007-07-17 2008-07-01
-#> 22254   HALLWF2      SA1     GENERATOR SEMI-SCHEDULED 2019-10-15 2020-07-01
-#> 22255    TORRIS      SA1     GENERATOR      SCHEDULED 2010-02-09 2010-07-01
-#> 22256    TORRIS      SA1     GENERATOR      SCHEDULED 2011-04-14 2011-07-01
-#> 22257    TORRIS      SA1     GENERATOR      SCHEDULED 2021-09-30 2022-07-01
-#> 22258   HALLWF2      SA1     GENERATOR SEMI-SCHEDULED 2024-07-01 2025-07-01
-#> 22259    TORRIS      SA1     GENERATOR      SCHEDULED 2008-07-01 2009-07-01
-#> 22260   BARKIPS      SA1     GENERATOR      SCHEDULED 2023-04-26 2023-07-01
-#> 22261    TORRIS      SA1     GENERATOR      SCHEDULED 2001-10-16 2001-11-05
-#> 22262    TORRIS      SA1     GENERATOR      SCHEDULED 2011-04-14 2011-07-01
-#> 22263    TORRIS      SA1     GENERATOR      SCHEDULED 2017-06-29 2017-07-01
+#> 22190   HALLWF2      SA1     GENERATOR SEMI-SCHEDULED 2019-07-01 2019-10-15
+#> 22191    TORRIS      SA1     GENERATOR      SCHEDULED 2023-04-26 2023-07-01
+#> 22192    TORRIS      SA1     GENERATOR      SCHEDULED 2014-07-01 2015-07-01
+#> 22193    TORRIS      SA1     GENERATOR      SCHEDULED 2019-10-15 2020-07-01
+#> 22194    TORRIS      SA1     GENERATOR      SCHEDULED 2018-07-01 2019-07-01
+#> 22195    TORRIS      SA1     GENERATOR      SCHEDULED 2017-07-18 2017-07-25
+#> 22196    TORRIS      SA1     GENERATOR      SCHEDULED 2013-12-15 2014-07-01
+#> 22197    TORRIS      SA1     GENERATOR      SCHEDULED 2002-04-01 2002-07-01
+#> 22198      WPWF      SA1     GENERATOR  NON-SCHEDULED 2017-06-29 2017-07-01
+#> 22199    TORRIS      SA1     GENERATOR      SCHEDULED 2018-07-01 2019-07-01
+#> 22200   BARKIPS      SA1     GENERATOR      SCHEDULED 2022-07-01 2023-04-26
+#> 22201    TORRIS      SA1     GENERATOR      SCHEDULED 2018-07-01 2019-07-01
+#> 22202    TORRIS      SA1     GENERATOR      SCHEDULED 2021-09-30 2022-07-01
+#> 22203    TORRIS      SA1     GENERATOR      SCHEDULED 1998-10-25 1998-11-29
+#> 22204    TIBESS      SA1     GENERATOR      SCHEDULED 2023-07-01 2023-08-09
+#> 22205    TORRIS      SA1     GENERATOR      SCHEDULED 2021-07-01 2021-09-30
+#> 22206    TORRIS      SA1     GENERATOR      SCHEDULED 2023-04-26 2023-07-01
+#> 22207    TORRIS      SA1     GENERATOR      SCHEDULED 2005-07-01 2006-07-01
+#> 22208   HALLWF2      SA1     GENERATOR SEMI-SCHEDULED 2024-06-03 2024-07-01
+#> 22209    TORRIS      SA1     GENERATOR      SCHEDULED 2020-07-01 2020-09-30
+#> 22210    TORRIS      SA1     GENERATOR      SCHEDULED 2019-07-01 2019-10-15
+#> 22211     BLUFF      SA1     GENERATOR SEMI-SCHEDULED 2019-07-01 2019-10-15
+#> 22212    TORRIS      SA1     GENERATOR      SCHEDULED 2004-07-01 2004-09-14
+#> 22213    TORRIS      SA1     GENERATOR      SCHEDULED 2016-07-01 2017-06-29
+#> 22214    TORRIS      SA1     GENERATOR      SCHEDULED 2000-07-01 2001-07-01
+#> 22215     BLUFF      SA1     GENERATOR SEMI-SCHEDULED 2023-04-26 2023-07-01
+#> 22216    TORRIS      SA1     GENERATOR      SCHEDULED 2009-07-01 2010-02-09
+#> 22217    TORRIS      SA1     GENERATOR      SCHEDULED 2003-10-22 2004-07-01
+#> 22218    TORRIS      SA1     GENERATOR      SCHEDULED 2017-07-18 2017-07-25
+#> 22219    TORRIS      SA1     GENERATOR      SCHEDULED 1998-11-29 1999-07-01
+#> 22220    TORRIS      SA1     GENERATOR      SCHEDULED 2011-07-01 2012-07-01
+#> 22221    TORRIS      SA1     GENERATOR      SCHEDULED 2019-07-01 2019-10-15
+#> 22222    TORRIS      SA1     GENERATOR      SCHEDULED 2016-07-01 2017-06-29
+#> 22223    TORRIS      SA1     GENERATOR      SCHEDULED 2004-09-14 2004-10-26
+#> 22224    TORRIS      SA1     GENERATOR      SCHEDULED 2022-09-30 2023-04-26
+#> 22225    TIBESS      SA1 BIDIRECTIONAL      SCHEDULED 2024-07-12 2024-07-31
+#> 22226    TORRIS      SA1     GENERATOR      SCHEDULED 2007-07-17 2008-07-01
+#> 22227    TORRIS      SA1     GENERATOR      SCHEDULED 2019-07-01 2019-10-15
+#> 22228    TIBESS      SA1     GENERATOR      SCHEDULED 2023-04-26 2023-07-01
+#> 22229    TORRIS      SA1     GENERATOR      SCHEDULED 1998-11-29 1999-07-01
+#> 22230    TORRIS      SA1     GENERATOR      SCHEDULED 2020-09-30 2021-07-01
+#> 22231    TIBESS      SA1     GENERATOR      SCHEDULED 2023-11-21 2024-06-03
+#> 22232    TORRIS      SA1     GENERATOR      SCHEDULED 2011-07-01 2012-07-01
+#> 22233    TORRIS      SA1     GENERATOR      SCHEDULED 1998-10-25 1998-11-29
+#> 22234    TORRIS      SA1     GENERATOR      SCHEDULED 2017-07-25 2018-07-01
+#> 22235    TORRIS      SA1     GENERATOR      SCHEDULED 2004-10-26 2005-07-01
+#> 22236   HALLWF2      SA1     GENERATOR SEMI-SCHEDULED 2017-07-01 2017-07-18
+#> 22237    TORRIS      SA1     GENERATOR      SCHEDULED 2026-07-01 2999-12-31
+#> 22238     BLUFF      SA1     GENERATOR SEMI-SCHEDULED 2018-07-01 2019-07-01
+#> 22239    TORRIS      SA1     GENERATOR      SCHEDULED 2002-07-01 2002-07-09
+#> 22240    TORRIS      SA1     GENERATOR      SCHEDULED 2010-05-25 2010-07-01
+#> 22241    TIBESS      SA1 BIDIRECTIONAL      SCHEDULED 2024-07-31 2025-07-01
+#> 22242    TORRIS      SA1     GENERATOR      SCHEDULED 2010-07-01 2010-10-27
+#> 22243    TORRIS      SA1     GENERATOR      SCHEDULED 2001-11-05 2002-04-01
+#> 22244    TORRIS      SA1     GENERATOR      SCHEDULED 2022-07-01 2022-09-30
+#> 22245    TORRIS      SA1     GENERATOR      SCHEDULED 2023-10-09 2024-06-03
+#> 22246    TORRIS      SA1     GENERATOR      SCHEDULED 2013-12-15 2014-07-01
+#> 22247    TORRIS      SA1     GENERATOR      SCHEDULED 2012-07-01 2013-07-01
+#> 22248    TORRIS      SA1     GENERATOR      SCHEDULED 2013-07-01 2013-12-15
+#> 22249    TORRIS      SA1     GENERATOR      SCHEDULED 2024-06-03 2024-07-01
+#> 22250    TORRIS      SA1     GENERATOR      SCHEDULED 2023-07-01 2023-10-09
+#> 22251    TIBESS      SA1     GENERATOR      SCHEDULED 2024-06-03 2024-07-01
+#> 22252    TORRIS      SA1     GENERATOR      SCHEDULED 2021-07-01 2021-09-30
+#> 22253    TORRIS      SA1     GENERATOR      SCHEDULED 2010-07-01 2010-10-27
+#> 22254    TORRIS      SA1     GENERATOR      SCHEDULED 2001-09-13 2001-10-16
+#> 22255   BARKIPS      SA1     GENERATOR      SCHEDULED 2020-07-01 2021-07-01
+#> 22256    TORRIS      SA1     GENERATOR      SCHEDULED 2020-07-01 2020-09-30
+#> 22257    TORRIS      SA1     GENERATOR      SCHEDULED 2014-07-01 2015-07-01
+#> 22258    TORRIS      SA1     GENERATOR      SCHEDULED 2017-06-29 2017-07-01
+#> 22259    TORRIS      SA1     GENERATOR      SCHEDULED 2011-01-18 2011-04-14
+#> 22260    TORRIS      SA1     GENERATOR      SCHEDULED 2011-04-14 2011-04-28
+#> 22261    TORRIS      SA1     GENERATOR      SCHEDULED 2023-04-26 2023-07-01
+#> 22262   HALLWF2      SA1     GENERATOR SEMI-SCHEDULED 2019-10-15 2020-07-01
+#> 22263    TORRIS      SA1     GENERATOR      SCHEDULED 2010-02-09 2010-07-01
+#> 22264    TORRIS      SA1     GENERATOR      SCHEDULED 2011-04-14 2011-07-01
+#> 22265    TORRIS      SA1     GENERATOR      SCHEDULED 2021-09-30 2022-07-01
+#> 22266   HALLWF2      SA1     GENERATOR SEMI-SCHEDULED 2024-07-01 2025-07-01
+#> 22267    TORRIS      SA1     GENERATOR      SCHEDULED 2015-07-01 2016-07-01
+#> 22268    TORRIS      SA1     GENERATOR      SCHEDULED 2007-07-17 2008-07-01
+#> 22269   BARKIPS      SA1     GENERATOR      SCHEDULED 2023-04-26 2023-07-01
+#> 22270    TORRIS      SA1     GENERATOR      SCHEDULED 2001-10-16 2001-11-05
+#> 22271    TORRIS      SA1     GENERATOR      SCHEDULED 2008-07-01 2009-07-01
+#> 22272    TORRIS      SA1     GENERATOR      SCHEDULED 2011-04-14 2011-07-01
+#> 22273    TORRIS      SA1     GENERATOR      SCHEDULED 2017-06-29 2017-07-01
 options(op)
 # }
 ```

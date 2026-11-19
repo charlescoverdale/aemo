@@ -75,15 +75,12 @@ try({
   head(g)
 })
 #> ℹ Downloading <https://nemweb.com.au/Data_Archive/Wholesale_Electricity/MMSDM/2…
-#> ✖ Downloading <https://nemweb.com.au/Data_Archive/Wholesale_Electricity/MMSDM/2…
-#> 
-#> ℹ Downloading <https://nemweb.com.au/Data_Archive/Wholesale_Electricity/MMSDM/2…
 #> ✔ Downloading <https://nemweb.com.au/Data_Archive/Wholesale_Electricity/MMSDM/2…
 #> 
 #> # aemo_tbl: NEM generic constraint equations (GENCONDATA)
 #> # Source:   https://nemweb.com.au/Data_Archive/Wholesale_Electricity/MMSDM
 #> # Licence:  AEMO Copyright Permissions Notice
-#> # Retrieved: 2026-11-01 14:07 UTC 
+#> # Retrieved: 2026-11-19 08:27 UTC 
 #> # Rows: 0  Cols: 29
 #> 
 #>  [1] effectivedate           versionno               genconid               

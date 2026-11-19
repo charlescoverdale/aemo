@@ -80,31 +80,28 @@ try({
   head(s)
 })
 #> ℹ Downloading <https://nemweb.com.au/Data_Archive/Wholesale_Electricity/MMSDM/2…
-#> ✖ Downloading <https://nemweb.com.au/Data_Archive/Wholesale_Electricity/MMSDM/2…
-#> 
-#> ℹ Downloading <https://nemweb.com.au/Data_Archive/Wholesale_Electricity/MMSDM/2…
 #> ✔ Downloading <https://nemweb.com.au/Data_Archive/Wholesale_Electricity/MMSDM/2…
 #> 
 #> # aemo_tbl: NEM SPDINTERCONNECTORCONSTRAINT (SPD constraint coefficients)
 #> # Source:   https://nemweb.com.au/Data_Archive/Wholesale_Electricity/MMSDM
 #> # Licence:  AEMO Copyright Permissions Notice
-#> # Retrieved: 2026-11-01 14:07 UTC 
+#> # Retrieved: 2026-11-19 08:29 UTC 
 #> # Rows: 6  Cols: 6
 #> 
-#>   interconnectorid effectivedate versionno            genconid factor
-#> 1        NSW1-QLD1    2026-09-01         1 #R036715_001_RAMP_F  0.506
-#> 2        NSW1-QLD1    2026-09-01         1 #R036715_001_RAMP_V  0.506
-#> 3        N-Q-MNSP1    2026-09-01         1 #R036715_002_RAMP_V  0.211
-#> 4        N-Q-MNSP1    2026-09-01         1 #R036715_003_RAMP_V  0.319
-#> 5        NSW1-QLD1    2026-09-01         1 #R036715_003_RAMP_V  0.255
-#> 6        N-Q-MNSP1    2026-09-01         1 #R036715_003_RAMP_F  0.319
+#>   interconnectorid effectivedate versionno        genconid factor
+#> 1         NSW1-SA1    2026-10-01         1     I_SV_SN_750     -1
+#> 2             V-SA    2026-10-01         1     I_SV_SN_750     -1
+#> 3         NSW1-SA1    2026-10-01         1 I_SV_SN_750_DYN     -1
+#> 4             V-SA    2026-10-01         1 I_SV_SN_750_DYN     -1
+#> 5         NSW1-SA1    2026-10-01         1     I_SV_SN_800     -1
+#> 6             V-SA    2026-10-01         1     I_SV_SN_800     -1
 #>           lastchanged
-#> 1 2026/09/01 03:10:57
-#> 2 2026/09/01 03:10:57
-#> 3 2026/09/01 03:10:57
-#> 4 2026/09/01 03:10:58
-#> 5 2026/09/01 03:10:58
-#> 6 2026/09/01 03:10:58
+#> 1 2026/10/01 00:06:09
+#> 2 2026/10/01 00:06:09
+#> 3 2026/10/01 00:06:09
+#> 4 2026/10/01 00:06:09
+#> 5 2026/10/01 00:06:09
+#> 6 2026/10/01 00:06:09
 options(op)
 # }
 ```

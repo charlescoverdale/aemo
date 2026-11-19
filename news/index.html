@@ -7,7 +7,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">aemo</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.4.3</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.4.3.9000</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,7 +38,11 @@
     </div>
 
     <div class="section level2">
-<h2 class="pkg-version" data-toc-text="0.4.3" id="aemo-043">aemo 0.4.3<a class="anchor" aria-label="anchor" href="#aemo-043"></a></h2>
+<h2 class="pkg-version" data-toc-text="development version" id="aemo-development-version">aemo (development version)<a class="anchor" aria-label="anchor" href="#aemo-development-version"></a></h2>
+<ul><li>Documentation links to the NEMweb home page now point at AEMO’s NEMweb market data page (<a href="https://www.aemo.com.au/energy-systems/electricity/national-electricity-market-nem/data-nem/market-data-nemweb" class="external-link uri">https://www.aemo.com.au/energy-systems/electricity/national-electricity-market-nem/data-nem/market-data-nemweb</a>). <code>nemweb.com.au</code> now answers its root with a 301 redirect there (and the plain-HTTP root with 403), which R CMD check –as-cran flagged as moved URLs in DESCRIPTION and the Rd files. Data downloads still use <code>https://nemweb.com.au/Reports/...</code> and are unchanged.</li>
+</ul></div>
+    <div class="section level2">
+<h2 class="pkg-version" data-toc-text="0.4.3" id="aemo-043">aemo 0.4.3<a class="anchor" aria-label="anchor" href="#aemo-043"></a></h2><p class="text-muted">CRAN release: 2026-11-01</p>
 <p>Bug-fix release. Most queries for data more than about two days old failed, the download cache never worked, <code><a href="../reference/aemo_bids.html">aemo_bids()</a></code> failed for every date and <code><a href="../reference/aemo_mlf.html">aemo_mlf()</a></code> outside July. Live tests that would have shown this were being skipped.</p>
 <div class="section level3">
 <h3 id="queries-older-than-two-days-work-again-0-4-3">Queries older than two days work again<a class="anchor" aria-label="anchor" href="#queries-older-than-two-days-work-again-0-4-3"></a></h3>

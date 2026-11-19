@@ -10,13 +10,14 @@ Source:
 [`inst/CITATION`](https://github.com/charlescoverdale/aemo/blob/main/inst/CITATION)
 
 Coverdale, C. (2026). aemo: Download Australian Energy Market Operator
-Data. R package version 0.4.3. https://cran.r-project.org/package=aemo
+Data. R package version 0.4.3.9000.
+https://cran.r-project.org/package=aemo
 
     @Manual{,
       title = {aemo: Download Australian Energy Market Operator Data},
       author = {Charles Coverdale},
       year = {2026},
-      note = {R package version 0.4.3},
+      note = {R package version 0.4.3.9000},
       url = {https://cran.r-project.org/package=aemo},
     }
 

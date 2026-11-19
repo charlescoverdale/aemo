@@ -40,8 +40,9 @@ and PASA forecasts, FCAS markets, and gas markets across the NEM.
 
 ## Data source
 
-Data is published by AEMO at <https://nemweb.com.au> under the AEMO
-Copyright Permissions Notice
+Data is published by AEMO via NEMweb
+<https://www.aemo.com.au/energy-systems/electricity/national-electricity-market-nem/data-nem/market-data-nemweb>
+under the AEMO Copyright Permissions Notice
 <https://www.aemo.com.au/privacy-and-legal-notices/copyright-permissions>.
 
 ## See also

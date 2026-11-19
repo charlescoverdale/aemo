@@ -73,15 +73,15 @@ try({
 #> # aemo_tbl: AEMO rooftop PV actual NSW1
 #> # Source:   https://nemweb.com.au
 #> # Licence:  AEMO Copyright Permissions Notice
-#> # Retrieved: 2026-11-01 14:07 UTC 
+#> # Retrieved: 2026-11-19 08:29 UTC 
 #> # Rows: 2  Cols: 7
 #> 
-#>     interval_datetime regionid power  qi        type         lastchanged
-#> 1 2026-11-01 23:30:00     NSW1     0   1 MEASUREMENT 2026/11/01 23:49:02
-#> 2 2026-11-01 23:30:00     NSW1     0 0.6   SATELLITE 2026/11/01 23:50:21
+#>     interval_datetime regionid   power  qi        type         lastchanged
+#> 1 2026-11-19 17:30:00     NSW1 737.125   1 MEASUREMENT 2026/11/19 17:48:58
+#> 2 2026-11-19 17:30:00     NSW1 767.494 0.6   SATELLITE 2026/11/19 17:50:23
 #>        settlementdate
-#> 1 2026-11-01 23:30:00
-#> 2 2026-11-01 23:30:00
+#> 1 2026-11-19 17:30:00
+#> 2 2026-11-19 17:30:00
 options(op)
 # }
 ```

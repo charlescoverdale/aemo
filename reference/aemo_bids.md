@@ -89,7 +89,7 @@ try({
 #> Error in aemo_fetch_report_range(current_dir = "/Reports/Current/Bidmove_Complete/",  : 
 #>   No NEMweb files matched the requested range.
 #> ℹ Check `start` and `end`, or the pattern "BIDMOVE_COMPLETE".
-#> ℹ NEMweb holds this report from "2025-09-02"; earlier data is in MMSDM (see
+#> ℹ NEMweb holds this report from "2025-10-02"; earlier data is in MMSDM (see
 #>   `aemo_nemweb_download()`).
 options(op)
 # }
