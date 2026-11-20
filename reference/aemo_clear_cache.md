@@ -24,7 +24,7 @@ Other configuration:
 # \donttest{
 op <- options(aemo.cache_dir = tempdir())
 aemo_clear_cache()
-#> Removed 2 cached files from /tmp/RtmpJP7oFf.
+#> Removed 2 cached files from /tmp/Rtmp1leL0y.
 options(op)
 # }
 ```

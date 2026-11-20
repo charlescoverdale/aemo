@@ -8,7 +8,9 @@
   `nemweb.com.au` now answers its root with a 301 redirect there (and
   the plain-HTTP root with 403), which R CMD check –as-cran flagged as
   moved URLs in DESCRIPTION and the Rd files. Data downloads still use
-  `https://nemweb.com.au/Reports/...` and are unchanged.
+  `https://nemweb.com.au/Reports/...` and are unchanged. A historical
+  NEWS entry that still linked the plain-HTTP root is now plain text, so
+  the incoming URL check no longer flags it.
 
 ## aemo 0.4.3
 
@@ -285,8 +287,8 @@ Version starts at 0.4.0 to sit strictly above the last archived version
 
 ### Data source
 
-Data is published by AEMO at <http://nemweb.com.au> under the AEMO
-Copyright Permissions Notice
+Data is published by AEMO at `nemweb.com.au` under the AEMO Copyright
+Permissions Notice
 <https://www.aemo.com.au/privacy-and-legal-notices/copyright-permissions>.
 Downloads are cached to `tools::R_user_dir("aemo", "cache")` on first
 use, with SHA-256 content verification on reuse.

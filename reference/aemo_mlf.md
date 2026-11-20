@@ -117,7 +117,7 @@ try({
 #> # aemo_tbl: NEM Marginal Loss Factors (MLF)
 #> # Source:   https://nemweb.com.au/Data_Archive/Wholesale_Electricity/MMSDM
 #> # Licence:  AEMO Copyright Permissions Notice
-#> # Retrieved: 2026-11-19 08:27 UTC 
+#> # Retrieved: 2026-11-20 08:42 UTC 
 #> # Rows: 6  Cols: 8
 #> 
 #>      mlf effectivedate versionno connectionpointid regionid         lastchanged

@@ -59,7 +59,7 @@ try({
 #> # aemo_tbl: NEM participants + DUIDs (MMSDM, 2026-11)
 #> # Source:   https://nemweb.com.au/Data_Archive/Wholesale_Electricity/MMSDM
 #> # Licence:  AEMO Copyright Permissions Notice
-#> # Retrieved: 2026-11-19 08:28 UTC 
+#> # Retrieved: 2026-11-20 08:44 UTC 
 #> # Rows: 3,101  Cols: 10
 #> 
 #>       participantid participantclassid

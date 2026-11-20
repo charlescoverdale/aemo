@@ -35,9 +35,9 @@ print(x)
 #> # aemo_tbl: Demo
 #> # Source:   https://nemweb.com.au
 #> # Licence:  AEMO Copyright Permissions Notice
-#> # Retrieved: 2026-11-19 08:29 UTC 
+#> # Retrieved: 2026-11-20 08:45 UTC 
 #> # Rows: 1  Cols: 3
 #> 
 #>        settlementdate region rrp
-#> 1 2026-11-19 08:29:26   NSW1  80
+#> 1 2026-11-20 08:45:02   NSW1  80
 ```
